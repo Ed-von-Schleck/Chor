@@ -5,3 +5,4 @@
 !*.midi
 !*.ps
 !.gitignore
+!index.html
