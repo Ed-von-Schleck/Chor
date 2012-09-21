@@ -1,1 +1,13 @@
-My GitHub Page
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      $.ajax('https://api.github.com/repos/Ed-von-Schleck/Chor/contents/').done(function(msg){
+        console.log(msg);
+      });
+    </script>
+  </body>
+</html>
