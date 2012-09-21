@@ -1,0 +1,7 @@
+*
+!*/
+!*.ly
+!*.pdf
+!*.midi
+!*.ps
+!.gitignore
