@@ -6,3 +6,4 @@
 !*.ps
 !.gitignore
 !index.html
+!generate.py
