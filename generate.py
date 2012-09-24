@@ -36,7 +36,7 @@ REGEXES = {
   "composer": re.compile(r"composer\s?=\s?\"([^\"]+)\""),
   "arranger": re.compile(r"arranger\s?=\s?\"([^\"]+)\""),
 }
-TAG_REGEX = re.compile(r"(title|subtitle|composer|arranger)\s?=\s?\"([^\"]+)\"")
+
 def main():
   categories = {}
   for root, dirs, files in os.walk(".",  topdown=True):
@@ -55,24 +55,11 @@ def main():
         path = os.path.join(root, stem)
         categories[category][path] = {}
         with io.open(os.path.join(root, f), encoding="utf-8") as lyfile:
-          header = []
-          for line in lyfile:
-            if r"\header" in line:
-              while not "}" in line:
-                line = next(lyfile)
-                header.append(line)
-              break
-          for line in header:
-            search = TAG_REGEX.search(line)
-            if search is not None:
-              categories[category][path][search.group(1)] = search.group(2)
-          """
-          header = "\n".join(header)
+          lytext = lyfile.read()
           categories[category][path] = {
-            tag: regex.search(header).group(1)
+            tag: regex.search(lytext).group(1)
             for (tag, regex) in REGEXES.items()
-            if regex.search(header) is not None}
-          """
+            if regex.search(lytext) is not None}
 
     with io.open("index.html", mode="w", encoding="utf-8") as htmlfile:
       htmlfile.write("""<!doctype html>
