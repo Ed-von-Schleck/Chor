@@ -29,6 +29,7 @@ import os
 import os.path
 import re
 import io
+from collections import OrderedDict
 
 TAG_REGEX = re.compile(r"(title|subtitle|composer|arranger)\s?=\s?\"([^\"]+)\"")
 def main():
@@ -60,7 +61,7 @@ def main():
             search = TAG_REGEX.search(line)
             if search is not None:
               categories[category][path][search.group(1)] = search.group(2)
-
+    categories = OrderedDict(sorted(categories.items(), key=lambda t: t[0]))
     with io.open("index.html", mode="w", encoding="utf-8") as htmlfile:
       htmlfile.write("""<!doctype html>
 <html>
