@@ -31,6 +31,8 @@ import re
 import io
 from collections import OrderedDict
 from xml.etree import ElementTree
+import time
+import rfc822
 
 TAG_REGEX = re.compile(r"(title|subtitle|composer|arranger)\s?=\s?\"([^\"]+)\"")
 def main():
@@ -68,6 +70,7 @@ def main():
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="./feed.rss">
     <style>
       body {
         font-family: sans-serif;
@@ -251,6 +254,29 @@ def main():
         htmlfile.write("</li>\n")
       htmlfile.write("</ul>\n")
     htmlfile.write("""</div>\n</body></html>""")
+    rss_root = ElementTree.Element("rss", attrib={"version": "2.0"})
+    channel_attribs = {
+      "title": "Physikerchor",
+      "link": "http://ed-von-schleck.github.com/Chor/",
+      "description": "Songs vom Physikerchor an der Universität Karlsruhe",
+      "language": "de-de",
+      "pubDate": rfc822.formatdate(time.time()),
+      "lastBuildDate": rfc822.formatdate(time.time()),
+      "generator": "Ed's Fine Made-From-Scratch NIH-Syndrome RSS Feed Generator",
+
+    }
+    channel = ElementTree.Element("channel", attrib=channel_attribs)
+    rss_root.append(channel)
+    for category, songs in categories.items():
+      for path, song in songs.items():
+        song_attribs = {
+          "title": song["title"],
+          "category": category,
+          "pubDate": rfc822.formatdate(time.time()),
+          "link": path + ".pdf"
+        }
+        channel.append(ElementTree.Element("channel", attrib=song_attribs))
+    ElementTree.ElementTree(rss_root).write("feed.rss",  encoding="utf-8", xml_declaration=True)
 
   return 0
 
