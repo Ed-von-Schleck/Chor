@@ -70,7 +70,7 @@ def main():
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="./feed.rss">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="feed.rss">
     <style>
       body {
         font-family: sans-serif;
@@ -247,9 +247,9 @@ def main():
           htmlfile.write("<p>%s</p>"%song["composer"])
         if "arranger" in song:
           htmlfile.write("<p>%s</p>"%song["arranger"])
-        htmlfile.write("<a href=\"%s\"><img class=\"pdf\"src=\"pdf.png\" alt=\"PDF icon\"></a>"%(path + ".pdf"))
-        htmlfile.write("<a href=\"%s\"><img class=\"midi\"src=\"midi.png\" alt=\"midi icon\"></a>"%(path + ".midi"))
-        htmlfile.write("<a href=\"%s\"><img class=\"ly\"src=\"text.png\" alt=\"Lilypond icon\"></a>"%(path + ".ly"))
+        htmlfile.write("<a href=\"%s\"><img class=\"pdf\" src=\"pdf.png\" alt=\"PDF icon\"></a>"%(path + ".pdf"))
+        htmlfile.write("<a href=\"%s\"><img class=\"midi\" src=\"midi.png\" alt=\"midi icon\"></a>"%(path + ".midi"))
+        htmlfile.write("<a href=\"%s\"><img class=\"ly\" src=\"text.png\" alt=\"Lilypond icon\"></a>"%(path + ".ly"))
         htmlfile.write("</div>")
         htmlfile.write("</li>\n")
       htmlfile.write("</ul>\n")
