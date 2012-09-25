@@ -255,27 +255,28 @@ def main():
       htmlfile.write("</ul>\n")
     htmlfile.write("""</div>\n</body></html>""")
     rss_root = ElementTree.Element("rss", attrib={"version": "2.0"})
-    channel_attribs = {
-      "title": "Physikerchor",
-      "link": "http://ed-von-schleck.github.com/Chor/",
-      "description": "Songs vom Physikerchor an der Universität Karlsruhe",
-      "language": "de-de",
-      "pubDate": rfc822.formatdate(time.time()),
-      "lastBuildDate": rfc822.formatdate(time.time()),
-      "generator": "Ed's Fine Made-From-Scratch NIH-Syndrome RSS Feed Generator",
+    channel = ElementTree.Element("channel")
+    channel.extend([
+      ElementTree.Element("title", text="Physikerchor"),
+      ElementTree.Element("link", text="http://ed-von-schleck.github.com/Chor/"),
+      ElementTree.Element("description", text="Songs vom Physikerchor an der Universität Karlsruhe"),
+      ElementTree.Element("language", text="de-de"),
+      ElementTree.Element("pubDate", text=rfc822.formatdate(time.time())),
+      ElementTree.Element("lastBuildDate", text=rfc822.formatdate(time.time())),
+      ElementTree.Element("generator", text="Ed's Fine Made-From-Scratch NIH-Syndrome RSS Feed Generator")
+    ])
 
-    }
-    channel = ElementTree.Element("channel", attrib=channel_attribs)
     rss_root.append(channel)
     for category, songs in categories.items():
       for path, song in songs.items():
-        song_attribs = {
-          "title": song["title"],
-          "category": category,
-          "pubDate": rfc822.formatdate(time.time()),
-          "link": path + ".pdf"
-        }
-        channel.append(ElementTree.Element("channel", attrib=song_attribs))
+        song_element = ElementTree.Element("item")
+        song_element.extend([
+          ElementTree.Element("title", text=song["title"]),
+          ElementTree.Element("category", text=category),
+          ElementTree.Element("pubDate", text=rfc822.formatdate(time.time())),
+          ElementTree.Element("link", text=path + ".pdf"),
+        ])
+        channel.append(song_element)
     ElementTree.ElementTree(rss_root).write("feed.rss",  encoding="utf-8", xml_declaration=True)
 
   return 0
