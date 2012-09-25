@@ -52,6 +52,7 @@ def main():
           categories[category] = {}
         path = os.path.join(root, stem)
         categories[category][path] = {}
+        categories[category][path]["mtime"] = os.path.getmtime(os.path.join(root, f))
         with io.open(os.path.join(root, f), encoding="utf-8") as lyfile:
           header = []
           for line in lyfile:
@@ -273,13 +274,22 @@ def main():
         item = ElementTree.Element("item")
         for tag, text in [("title", song["title"]),
                            ("category", category),
-                           ("pubDate", rfc822.formatdate(time.time())),
+                           ("pubDate", rfc822.formatdate(song["mtime"])),
                            ("link", path + ".pdf")]:
           element = ElementTree.Element(tag)
           element.text = text
           item.append(element)
         channel.append(item)
-    ElementTree.ElementTree(rss_root).write("feed.rss",  encoding="utf-8", xml_declaration=True)
+    rss_tree = ElementTree.ElementTree(rss_root)
+
+
+    data = [(elem.findtext("pubDate"), elem) for elem in rss_tree.find("channel")]
+    data.sort()
+
+    # insert the last item from each tuple
+    container[:] = [item[-1] for item in data]
+
+    rss_tree.write("feed.rss",  encoding="utf-8", xml_declaration=True)
 
   return 0
 

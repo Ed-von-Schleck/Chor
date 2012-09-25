@@ -73,7 +73,7 @@ soprano = \relative c {
   r2 c,4 es
   
   g4. g8~ g2
-  r4. bes8~ bes4 a8 g~
+  r2 bes4 a8 g~
   g1
   r2 f4 a
   
