@@ -30,6 +30,7 @@ import os.path
 import re
 import io
 from collections import OrderedDict
+from xml.etree import ElementTree
 
 TAG_REGEX = re.compile(r"(title|subtitle|composer|arranger)\s?=\s?\"([^\"]+)\"")
 def main():
@@ -62,8 +63,8 @@ def main():
             if search is not None:
               categories[category][path][search.group(1)] = search.group(2)
     categories = OrderedDict(sorted(categories.items(), key=lambda t: t[0]))
-    with io.open("index.html", mode="w", encoding="utf-8") as htmlfile:
-      htmlfile.write("""<!doctype html>
+  with io.open("index.html", mode="w", encoding="utf-8") as htmlfile:
+    htmlfile.write("""<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -167,7 +168,7 @@ def main():
         overflow: hidden;
       }
       ul#content li {
-        width: 350px;
+        width: 300px;
         float: left;
         box-shadow: 0 -1px 1px black;
         margin: 0.8em.5em;
@@ -224,32 +225,33 @@ def main():
     <h1>Physikerchor</h1>
 
 """)
-      htmlfile.write("<ul id=\"toc\">")
-      for category, songs in categories.items():
-        htmlfile.write("<li><a href=\"#%s\">%s</a></li>\n"%(category, category))
-      htmlfile.write("</ul></header>\n")
-      htmlfile.write("<div id=\"all_songs\">\n")
-      htmlfile.write("<a class=\"download\" href=\"https://github.com/Ed-von-Schleck/Chor/zipball/master\">Alle Songs als Zipfile <img src=\"download.png\" alt=\"Zip Icon\"></a>")
-      htmlfile.write("<a class=\"download\" href=\"https://github.com/Ed-von-Schleck/Chor\">Alle Songs auf Github <img src=\"github-icon.png\" alt=\"Github Icon\"></a>")
-      for category, songs in categories.items():
-        htmlfile.write("<h2 id=\"%s\">%s</h2>\n<ul id=\"content\">"%(category, category))
-        for path, song in songs.items():
-          htmlfile.write("<li>")
-          htmlfile.write("<h3>%s</h3>"%song["title"])
-          if "subtitle" in song:
-            htmlfile.write("<h4>%s</h4>"%song["subtitle"])
-          htmlfile.write("<div class=\"song_body\">")
-          if "composer" in song:
-            htmlfile.write("<p>%s</p>"%song["composer"])
-          if "arranger" in song:
-            htmlfile.write("<p>%s</p>"%song["arranger"])
-          htmlfile.write("<a href=\"%s\"><img class=\"pdf\"src=\"pdf.png\" alt=\"PDF icon\"></a>"%(path + ".pdf"))
-          htmlfile.write("<a href=\"%s\"><img class=\"midi\"src=\"midi.png\" alt=\"midi icon\"></a>"%(path + ".midi"))
-          htmlfile.write("<a href=\"%s\"><img class=\"ly\"src=\"text.png\" alt=\"Lilypond icon\"></a>"%(path + ".ly"))
-          htmlfile.write("</div>")
-          htmlfile.write("</li>\n")
-        htmlfile.write("</ul>\n")
-      htmlfile.write("""</div>\n</body></html>""")
+    htmlfile.write("<ul id=\"toc\">")
+    for category, songs in categories.items():
+      htmlfile.write("<li><a href=\"#%s\">%s</a></li>\n"%(category, category))
+    htmlfile.write("</ul></header>\n")
+    htmlfile.write("<div id=\"all_songs\">\n")
+    htmlfile.write("<a class=\"download\" href=\"https://github.com/Ed-von-Schleck/Chor/zipball/master\">Alle Songs als Zipfile <img src=\"download.png\" alt=\"Zip Icon\"></a>")
+    htmlfile.write("<a class=\"download\" href=\"https://github.com/Ed-von-Schleck/Chor\">Alle Songs auf Github <img src=\"github-icon.png\" alt=\"Github Icon\"></a>")
+    for category, songs in categories.items():
+      htmlfile.write("<h2 id=\"%s\">%s</h2>\n<ul id=\"content\">"%(category, category))
+      for path, song in songs.items():
+        htmlfile.write("<li>")
+        htmlfile.write("<h3>%s</h3>"%song["title"])
+        if "subtitle" in song:
+          htmlfile.write("<h4>%s</h4>"%song["subtitle"])
+        htmlfile.write("<div class=\"song_body\">")
+        if "composer" in song:
+          htmlfile.write("<p>%s</p>"%song["composer"])
+        if "arranger" in song:
+          htmlfile.write("<p>%s</p>"%song["arranger"])
+        htmlfile.write("<a href=\"%s\"><img class=\"pdf\"src=\"pdf.png\" alt=\"PDF icon\"></a>"%(path + ".pdf"))
+        htmlfile.write("<a href=\"%s\"><img class=\"midi\"src=\"midi.png\" alt=\"midi icon\"></a>"%(path + ".midi"))
+        htmlfile.write("<a href=\"%s\"><img class=\"ly\"src=\"text.png\" alt=\"Lilypond icon\"></a>"%(path + ".ly"))
+        htmlfile.write("</div>")
+        htmlfile.write("</li>\n")
+      htmlfile.write("</ul>\n")
+    htmlfile.write("""</div>\n</body></html>""")
+
   return 0
 
 if __name__ == '__main__':
