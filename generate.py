@@ -275,13 +275,13 @@ def main():
         for tag, text in [("title", song["title"]),
                            ("category", category),
                            ("pubDate", rfc822.formatdate(song["mtime"])),
-                           ("link", path + ".pdf")]:
+                           ("link", path + ".pdf"),
+                           ("guid", path + ".pdf?mtime=" + song["mtime"])]:
           element = ElementTree.Element(tag)
           element.text = text
           item.append(element)
         channel.append(item)
     rss_tree = ElementTree.ElementTree(rss_root)
-
 
     data = [(elem.findtext("pubDate"), elem) for elem in rss_tree.find("channel")]
     data.sort()

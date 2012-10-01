@@ -78,7 +78,7 @@ soprano = \relative c {
   r2 f4 a
   
   c4. bes8~ bes2
-  r8 bes8~ bes4 a4 g
+  r4 bes a g
   bes4. bes8~ bes2
   r2 bes4 bes
   
@@ -98,12 +98,12 @@ soprano = \relative c {
   r2 f4 a
   
   c4. bes8~ bes2
-  r8 bes8~ bes4 a4 g
+  r4 bes a g
   bes4. c,8~ c2
   r2 r8 bes'8~ bes g8
   
   bes4. bes8 r4 bes8 bes~
-  bes bes~ bes4 bes a8 g~
+  bes4 bes bes a8 g~
   g1
   \key b \major
   r4 fis fis fis
