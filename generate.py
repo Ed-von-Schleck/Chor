@@ -276,20 +276,20 @@ def main():
                            ("category", category),
                            ("pubDate", rfc822.formatdate(song["mtime"])),
                            ("link", path + ".pdf"),
-                           ("guid", path + ".pdf?mtime=" + song["mtime"])]:
+                           ("guid", path + ".pdf?mtime=" + str(song["mtime"]))]:
           element = ElementTree.Element(tag)
           element.text = text
           item.append(element)
         channel.append(item)
-    rss_tree = ElementTree.ElementTree(rss_root)
+    #rss_tree = ElementTree.ElementTree(rss_root)
 
-    data = [(elem.findtext("pubDate"), elem) for elem in rss_tree.find("channel")]
-    data.sort()
+    #data = [(elem.findtext("pubDate"), elem) for elem in rss_tree.find("channel")]
+    #data.sort()
 
     # insert the last item from each tuple
-    container[:] = [item[-1] for item in data]
+    #container[:] = [item[-1] for item in data]
 
-    rss_tree.write("feed.rss",  encoding="utf-8", xml_declaration=True)
+    #rss_tree.write("feed.rss",  encoding="utf-8", xml_declaration=True)
 
   return 0
 
