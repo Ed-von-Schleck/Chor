@@ -55,6 +55,7 @@ def main():
         categories[category][path]["mtime"] = os.path.getmtime(os.path.join(root, f))
         with io.open(os.path.join(root, f), encoding="utf-8") as lyfile:
           header = []
+          print(os.path.join(root, f))
           for line in lyfile:
             if r"\header" in line:
               while not "}" in line:
