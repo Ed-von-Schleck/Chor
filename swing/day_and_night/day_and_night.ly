@@ -281,7 +281,7 @@ g1~
 %%%%%Refrain2%%%%%%
 g4 r4 g g
 g1~
-g4. r8 \times 2/3{g4 f es}
+g4 r4 \times 2/3{g4 f es}
 g4 \times 2/3{g4 g8~} g2~
 g4 r4 g \times 2/3{g4 bes8~}
 bes4 \times 2/3{c4 bes8} c4 \times 2/3{bes4 c8~}
@@ -362,11 +362,11 @@ c1~
 %%%%%Refrain2%%%%%%
 c4 r4 c c
 es1~
-es4. r8 \times 2/3{d4 d c}
+es4 r4 \times 2/3{d4 d c}
 c4 \times 2/3{c4 c8~} c2~
-c4 r4 e \times 2/3{e4 d8~}
-d1~
-d4~d8 r8 \times 2/3{d4 d c}
+c4 r4 e \times 2/3{e4 es8~}
+es1~
+es4~es8 r8 \times 2/3{d4 d c}
 c4 \times 2/3{c4 c8~} c2~
 %%%Schluss
 c4 r4 \times 2/3{r4 c8~} \times 2/3{c4 c8}
@@ -440,7 +440,7 @@ c1~
 %%%%%Refrain2%%%%%%
 c4 r4 c c
 bes1~
-bes4. r8 \times 2/3{bes4 bes bes}
+bes4 r4 \times 2/3{bes4 bes bes}
 c4 \times 2/3{c4 c8~} c2~
 c4 r4 c \times 2/3{c4 bes8~}
 bes1~
@@ -521,7 +521,7 @@ e1~
 %%%%%Refrain2%%%%%%
 e4 r4 e e
 es1~
-es4. r8 \times 2/3{es4 es es}
+es4 r4 \times 2/3{es4 es es}
 e4 \times 2/3{e4 e8~} e2~
 e4 r4 e \times 2/3{e4 es8~}
 es1~
