@@ -140,7 +140,7 @@ a a4. g8 a b~b c~c4 b8 a }
 % Strophe 4 %
 g4. g8 g4 a8 g~g e~e4 r4 e8 e
 a4 a a4 b8 a~a e~e4 r4 e4
-a4 a8 a~a4 b4  c8 c~c2 b4
+a4 a8 a~a4 b4  c8 c~c4 r4 b4
 g4 g4 c4 b a8 e8~e4 r4 e
 
 g4. g8 g4 a8 g~g e~e4 r4 e
@@ -206,7 +206,7 @@ c, f4. f8 f g~g a~a4 g8 f }
 % Strophe 4%
 e4. e8 e4 e8 e~e c~c4 r4 c8 c
 c4 c c4 d8 c~c c~c4 r4 c4
-f4  f8 f8~f4 g a8 a~a2  g4
+f4  f8 f8~f4 g a8 a~a4 r4  g4
 e e4 e4 e c8 c~c4 r4 c
 
 e4. e8 e4 e8 e~e c~c4 r4 c
@@ -269,7 +269,7 @@ g4 g
 % Strophe 4%
 g4. g8 c4 a8 g~g g~g4 r4 g8 g
 a4 a a4 a8 a~a a~a4 r4 a4
-c4 c8 c~c4  c c8 c~c2  c4
+c4 c8 c~c4  c c8 c~c4 r4  c4
 c c4 g4 g a8 a8~a4 r4 a
 
 g4. g8 c4 a8 g~g g~g4 r4 g
@@ -333,7 +333,7 @@ f f4. f8 f f~f f~f4 f8 f}
 % Strophe 4%
 c4. c8 c4 c8 c~c c~c4 r4 c8 c
 a4 a a4 a8 a~a a~a4 r4 a'4
-f4  f8 f8~f4  f f8 f~f2 f4
+f4  f8 f8~f4  f f8 f~f4 r4 f4
 c c4 c4 e a,8 a~a4 r4 a
 
 c4. c8 c4 c8 c~c c~c4 r4 c
