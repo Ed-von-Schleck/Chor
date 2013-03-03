@@ -1,7 +1,7 @@
-\version "2.12.2"
+\version "2.16.2"
 
 %Größe der Partitur
-#(set-global-staff-size 16.5)
+#(set-global-staff-size 16)
 
 #(set-default-paper-size "a4")
 
@@ -181,13 +181,13 @@ and the bell's were ring -- ing out for Christ -- mas Day.
 
 VerseSop = \lyricmode {
 \VerseOneF
-You were hand -- some
+You were hand -- some, when the band fin -- ished play -- ing they howled out for more.
 Si -- na -- tra was swing -- ing all the drunks they were sing -- ing, 
+we kissed on a cor -- ner then danced through the night. 
 \Refrain
-You're a bum you're a punk
-You scum bag, you mag -- got, you cheap lous -- sy fag -- got
+\VerseTwoF
 \Refrain
-\VerseThreeF 
+\VerseThreeF
 \Refrain
 }
 
@@ -294,11 +294,11 @@ e8 fis gis b gis gis16 gis b8 gis e fis4 \stemUp{b16 b}
 b8 gis e fis e fis gis fis e cis4 e8 
 e fis gis b gis e fis gis fis e4 \stemUp{b'16 b
 
-b8 cis} r8 r4. r4. r4.
-r4. r4. r4. r4 gis8
+b8 cis} r8 r4. r4. r4 e,16 fis
+gis8 fis e cis a cis b cis dis e4 gis8
 b8. cis16 b8 gis8 e b'16 b
-b8 gis e fis e r8
-r4. r4. r4. r4 b'8
+b8 gis e fis e fis8
+gis8 fis e cis a cis b cis dis e4 b'8
 %%% Refrain %%%
 cis8 r8 cis16 cis cis8 dis4 e8 e4 dis cis8
 b8 gis4 e fis8 gis4. r8 e fis
@@ -309,11 +309,11 @@ e4
 \cueDuring #"klavier" #UP {  R4. R4. R4. R4. }
 \cueDuring #"klavier" #UP { R4. R4. R4. R4 }
  \stemUp{b'16 b}
- b4 cis16 b gis8 r8 r8 r4. r4.
-r4. r4. r4. r4 gis8
+ b4 cis16 b gis8 r8 r8 r4. r4 e16 fis
+gis8 fis e cis a cis b cis dis e4 gis8
 b8. cis16 b8 gis8 e b'8
-b8 gis e fis e r8
-r4. r4. r4. r4 b'8
+b8 gis e fis e fis16 fis
+gis8 fis e cis a cis b cis dis e4 b'8
 %%% Refrain %%%
 cis8 r8 cis16 cis cis8 dis4 e8 e4 dis cis8
 b8 gis4 e fis8 gis4. r8 e fis
@@ -389,7 +389,7 @@ e4 dis8~dis4. r4. r4.
 r4. r4. r4. r4.
 r4. r4. r4 e8~e fis e
 e4 e8 e4 e8 e4 b8 cis4 cis8
-dis4. e4. r4. r4 gis8
+dis4. e4. r4. r4 e8
 %%% Refrain %%%
 a8 r8 a16 a a8 a4 gis8 gis4 fis e8
 e8 e4 cis fis8 e4. r8 cis cis
@@ -505,8 +505,8 @@ e8 e e a, a a b b b e4 e8
 e8. e16 e8 b8 b b16 b a8 a a b b b 
 e e e a, a a b b b e4 gis8
 %%% Refrain %%%
-a8 r8 a16 a a8 fis4 cis8 cis4 dis a8
-e'8 e4 a,8 (e') dis8 cis4. r8 b' a
+a8 r8 a16 a a8 fis4 cis8 cis4 dis e8
+e8 e4 a,8 (e') dis8 cis4. r8 b' a
 gis4 gis8 cis, a b~b r8 b b b e~
 e4. s4. s4. s4.
 \PauseSEinTakt
@@ -515,10 +515,10 @@ e4. s4. s4. s4.
 r4. r8 e8 e e e e dis4 e16 e
 e8 e e a, a a b b b e4 e8
 e8. e16 e8 b b b  a a a b b b16 b
-e8 e e a, a a b b b e4 e8
+e8 e e a, a a b b b e4 gis8
 %%% Refrain %%%
-a8 r8 a16 a a8 fis4 cis8 cis4 dis a8
-e'8 e4 a,8 (e') dis8 cis4. r8 b' a
+a8 r8 a16 a a8 fis4 cis8 cis4 dis e8
+e8 e4 a,8 (e') dis8 cis4. r8 b' a
 gis4 gis8 cis, a b~b r8 b b b e~
 e4. s4. s4. s4.
 \PauseSEinTakt
@@ -531,10 +531,10 @@ b4 b8~b4. r4 b8~b e dis
 fis8 e e~e4 r8  r4 e8 e8 fis4
 a8 a a~a4. r4 a,8~a8 b cis
 e4 e8 e4 dis8 cis4 b8 a4 cis8
-b4. e4. r4. r4 e8
+b4. e4. r4. r4 gis8
 %%% Refrain %%%
-a8 r8 a16 a a8 fis4 cis8 cis4 dis a8
-e'8 e4 a,8 (e') dis8 cis4. r8 b' a
+a8 r8 a16 a a8 fis4 cis8 cis4 dis e8
+e8 e4 a,8 (e') dis8 cis4. r8 b' a
 gis4 gis8 cis, a b~b r8 b b b e~
 e4. s4. s4. s4.
 \bar "|."

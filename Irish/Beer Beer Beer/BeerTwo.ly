@@ -1,6 +1,6 @@
 \version "2.16.2"
 
-%Größe der Partitur
+%Gr√∂√üe der Partitur
 #(set-global-staff-size 17.5)
 
 #(set-default-paper-size "a4")
@@ -441,10 +441,10 @@ sopranVerse = \lyricmode{
 \Refrain
 }
 altVerse = \lyricmode{
-%\VerseOne
-%\Refrain
-%\VerseTwo
-%\Refrain
+\VerseOne
+\Refrain
+\VerseTwo
+\Refrain
 }
 tenorVerse = \lyricmode{
 \VerseOne
@@ -504,7 +504,7 @@ bassVerse = \lyricmode{
   \layout {
     \context {
       \Staff
-      \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 8)
+      \override VerticalAxisGroup #'minimum-Y-extent = #'(-2 . 2)
     }
 
   }

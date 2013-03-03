@@ -1,11 +1,11 @@
-\version "2.14.2"
+\version "2.12.3"
 
 \header {
   title = "Turn Turn Turn"
   composer = "? (The Byrds)"
   arranger = "Ed von Schleck"
 }
-
+#(set-global-staff-size 17.5)
 \paper {
   #(set-paper-size "a4")
   ragged-last-bottom = ##f
@@ -363,11 +363,11 @@ bass = \relative c {
   c8 e~ e f
   
   g4.( f8) f4.( e8)
-  c4.( b8) b4 r
-  c8 e~ e a g4 g
-  f4.( e8) c4.( b8)
+  e4.( g8) g4 r
+  c,8 e~ e a g4 g
+  f4.( e8) e4.( g8)
   
-  b2 r8 d~ d f~
+  g2 r8 d~ d f~
   f f~ f4 e8 e~ e d~
   d d~ d d r8 b~ b b
   b c2..
@@ -392,11 +392,11 @@ bass = \relative c {
     c8 e~ e f
   
   g4.( f8) f4.( e8)
-  c4.( b8) b4 r
-  c8 e~ e a g4 g
-  f4.( e8) c4.( b8)
+  e4.( g8) g4 r
+  c,8 e~ e a g4 g
+  f4.( e8) e4.( g8)
   
-  b2 r8 f'~ f f~
+  g2 r8 f~ f f~
   f f~ f4 e8 e~ e d~
   d d~ d d r8 b~ b b
   b c2..
@@ -421,11 +421,11 @@ bass = \relative c {
     c8 e~ e f
   
   g4.( f8) f4.( e8)
-  c4.( b8) b4 r
-  c8 e~ e a g4 g
-  f4.( e8) c4.( b8)
+  e4.( g8) g4 r
+  c,8 e~ e a g4 g
+  f4.( e8) e4.( g8)
   
-  b2 r8 f'~ f f~
+  g2 r8 f~ f f~
   f f~ f4 e8 e~ e d~
   d d~ d d r8 b~ b b
   b c2..
@@ -450,11 +450,11 @@ bass = \relative c {
     c8 e~ e f
   
   g4.( f8) f4.( e8)
-  c4.( b8) b4 r
-  c8 e~ e a g4 g
-  f4.( e8) c4.( b8)
+  e4.( g8) g4 r
+  c,8 e~ e a g4 g
+  f4.( e8) e4.( g8)
   
-  b2 r8 f'~ f f~
+  g2 r8 f~ f f~
   f f~ f4 e8 e~ e d~
   d d~ d d r8 b~ b b
   b c2..

@@ -1,4 +1,4 @@
-\version "2.13.39"
+\version "2.16.2"
 
 \header {
   title = "The Galaxy Song"
@@ -231,8 +231,8 @@ bass = \relative c {
   
   a4 a8 a4 a8 e4 e8~ e e e
   a8 a4 a a8 e4 e8 r e e
-  a4 a8 a4 a8 a,4 a8 ais4 ais8
-  e'2. r2 r8 b
+  a4 a8 a4 a8 a4 a8 ais4 ais8
+  e2. r2 r8 b
   
   e4 e8 e e b~ b4 b8 b4 b8
   e e r r e e b b4 r b8
@@ -252,8 +252,8 @@ bass = \relative c {
   %%%%%%%%%
   a8 a a~ a a e r4 e8 e4 e8
   a4 a8 a a e~ e4. r8 e e
-  a4 a8 a a a,~ a4 a8 ais4 ais8
-  e'2. r2 r8 b
+  a4 a8 a a a~ a4 a8 ais4 ais8
+  e2. r2 r8 b
   
   e4 e8 e e b b4 r8 b4 b8
   e4 e8 e e b~ b r b b4 b8
@@ -273,8 +273,8 @@ bass = \relative c {
   %%%%%%%%%
   a8 a a~ a a e~ e r e8~ e e e
   a4 a8~ a a a e4 e8~ e r e8
-  a4 a8 a4 a8 a,4 a8 ais4 ais8
-  e'2. r2 r8 b
+  a4 a8 a4 a8 a4 a8 ais4 ais8
+  e2. r2 r8 b
   
   e4 e8 e e b~ b4 r8 r4 b8
   e e e8~ e4 e8 b4. r4 b8
