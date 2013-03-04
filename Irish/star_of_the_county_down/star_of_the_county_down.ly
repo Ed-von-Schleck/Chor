@@ -90,7 +90,7 @@ alto = \relative c' {
   
   b4 b b a8 g
   f f~ f4 f e8 f
-  g4 e8 e e4 d8 b
+  g4 e e d8 b
   d2 r4 b
   
   e4 e e e8 e
@@ -126,7 +126,7 @@ tenor = \relative c' {
   
   d4 d d c8 b
   c c~ c4 c c8 c
-  b4 b8 b b4 b8 b
+  b4 b b b8 b
   b2 r4 b4
   
   e4 e e e8 e
@@ -161,7 +161,7 @@ bass = \relative c {
   
   g4 g g g8 g
   f f~ f4 f e8 d
-  e4 e8 e e4 d8 d
+  e4 e e d8 d
   d2 r4 b4
   
   e4 e b' b8 b
