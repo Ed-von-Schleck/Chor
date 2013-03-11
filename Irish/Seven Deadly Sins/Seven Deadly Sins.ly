@@ -154,17 +154,17 @@ bes2 es2
 Refrain = \lyricmode {
 Sail a -- way where no ball and chain
 can keep us from the roa -- rin' waves.
-To -- ge -- ther un -- di -- vi -- ded
+T' -- ge -- ther un -- di -- vi -- ded
 but for -- e -- ver we'll be free.
 So sail a -- way a -- board our rig
 the moon is full and so are we.
 Se -- ven drun -- ken pi -- rates
-we're the se -- ven dead -- ly sins!
+we're the se -- ven dead -- ly sins_!
 }
 
 RefrainAdd = \lyricmode {
 Se -- ven drun -- ken pi -- rates
-we're the se -- ven dead -- ly sins!
+we're the se -- ven dead -- ly sins_!
 }
 
 VerseOne = \lyricmode{
@@ -173,9 +173,9 @@ and left us some -- what re -- e -- lin'.
 John -- ny strummed his Tom -- my gun
 left blas -- tin' through the cei -- ling.
 What be -- came of re -- bels
-who sang for you and me?
+who sang for you and me_?
 Grapp -- lin' with their de -- mons
-in the search for li -- ber -- ty!
+in the search for li -- ber -- ty_!
 }
 
 VerseTwo = \lyricmode{
@@ -183,7 +183,7 @@ Suf -- fer -- ers who suf -- fer all
 can swim up -- on the des -- ert.
 Ava -- rice has ra -- vaged all
 in spite of good in -- ten -- tions.
-Don't fill your mouth with glut -- tony
+Don't fill y' mouth with glut -- tony
 for pride will sure -- ly swell.
 But no -- thing's un -- for -- gi -- ven in the four cor -- ners of hell.
 }
@@ -253,7 +253,7 @@ g4 g8. es16 as4 as
 g4  g8. es16 f8 d c bes
 es16 g8. g8. es16 as4 as
 g8 es  d f es2
-s1*18
+
 
 }
 \addQuote "geige" { \geige }
@@ -309,6 +309,7 @@ bes16 bes8. bes8 bes es,4 r4
 
 es'8 es es bes c bes bes c
 bes16 bes8. bes8 bes es,4 
+%interlude
 \cueDuring #"geige" #UP { R4 }
 \cueDuring #"geige" #UP { R1 }
 \cueDuring #"geige" #UP { R1 }
@@ -337,6 +338,7 @@ bes16 bes8. bes8 bes es,4 r4
 
 es'8 es es bes c bes bes c
 bes16 bes8. bes8 bes es,4 
+%interlude
 \cueDuring #"geige" #UP { R4 }
 \cueDuring #"geige" #UP { R1 }
 \cueDuring #"geige" #UP { R1 }
@@ -358,6 +360,7 @@ f8 ges~ges f~f4 des8 des
 es f~f es~es  des des des 
 bes4 bes bes bes
 des2. r4
+%interlude
  \cueDuring #"geige" #UP { R1 }
  \cueDuring #"geige" #UP { R1 }
  \cueDuring #"geige" #UP { R1 }
@@ -392,9 +395,8 @@ bes16 bes8. bes8 bes es,4 r4
 \bar ":|:"
 es'8 es es bes c bes bes c
 bes16 bes8. bes8 bes es,4 r4
-\bar ": |"
-\bar "|."
 
+ \bar ":|"
 }
 
 
@@ -508,8 +510,8 @@ f16 es8. es8 d es4 r4
 
 g8 g g g as as as as
 f16 es8. es8 d es4 r4
-\bar ": |"
-\bar "|."
+
+
 }
 
 
@@ -623,8 +625,7 @@ bes16 bes8. bes8 bes g4 r4
 \bar ":|:"
 es'8 es es es es es es es
 bes16 bes8. bes8 bes g4 r4
-\bar ": |"
-\bar "|."
+
 }
 
 
@@ -740,20 +741,10 @@ bes16 bes8. bes8 bes es,4 r4
 
 es'8 es es es as, as as as
 bes16 bes8. bes8 bes es,4 r4
-\bar ": |"
-\bar "|."
+
 }
 
 
-
-
-%%%%%% Piano %%%%%%
-rh = \relative c'' {
-\clef treble
-}
- lh = \relative c {
-\clef bass
-}
 
 Ablauf = \lyricmode{
 \Refrain

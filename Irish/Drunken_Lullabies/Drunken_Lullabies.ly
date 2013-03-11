@@ -1,7 +1,7 @@
-\version "2.12.3"
+\version "2.16.2"
 
 %Größe der Partitur
-#(set-global-staff-size 17.5)
+#(set-global-staff-size 18)
 
 #(set-default-paper-size "a4")
 
@@ -39,13 +39,41 @@ g g
 e:m e:m 
 c c 
 e:m d
-
+%refrain
 c1 g
 c d
 g2 c 
 e1:m
 g2 d2 
 g1
+
+%bridge
+g1 c g c g
+c2 d g e:m
+c d
+g1 c g c d
+g2 c 
+e1:m
+g2 d
+g1
+%strophe
+g1 g
+e:m e:m
+c c
+e:m d
+
+g g
+e:m e:m 
+c c 
+e:m d
+%refrain
+c1 g
+c d
+g2 c 
+e1:m
+g2 d2 
+g1
+g1 d g
 
 }
 
@@ -78,7 +106,7 @@ Cause we drunk -- en lul -- la -- bies.
 }
 
 VerseTwo = \lyricmode{
-  \set stanza = "2."
+ \set stanza = "2."
 _ I  watch and stare as Ro -- sin's eyes
 turn a dar -- ker shade of red.
 And the bul -- let with this snip -- er
@@ -103,7 +131,7 @@ sing -- in'  drunk -- en lul -- la -- bies.
 
 VerseThree = \lyricmode{
   \set stanza = "3."
-I sit in_and dwell on fac  --  es past
+I sit in and dwell on fac  --  es past
 like memo -- ries seem to fade.
 No co -- lour left but black and white and soon
 will all turn grey.
@@ -169,7 +197,7 @@ e8 d~d b~b r8 g a
 b d~d4 a4. g8
 g2 r4 b4
 %Strophe3
-d8 e~e d~d4 d
+d8 e e d~d4 d
 d8 e~e d~d4 c4
 b4 b b a8 g~ 
 g2 r4  g4
@@ -260,7 +288,7 @@ b8 b~b g~g r8 g g
 g g~g4 fis4. g8
 g2 r4 g
 %Strophe3
-b8 b~b b~b4 b
+b8 b b b~b4 b
 b8 b~b b~b4 g4
 g g g g8 g~ 
 g2 r4  g4
@@ -328,7 +356,7 @@ e4 e e g
 fis2 r4 g8 a
 g4 g4 g4 g8 g
 g8 g~g g~g r8 e e
-d b~b4 a4. b8
+d b~b4 a4. a8
 }
 \alternative{
 {b2 r2}
@@ -350,10 +378,10 @@ e8 e~e e e4 e
 fis2 r4  g8 a
 g4 g4 g4 g8 g
 g8 g~g g~g r8 e e
-d b~b4 a4. b8
+d b~b4 a4. a8
 b2 r4 d
 %Strophe3
-g8 g8~g g~g4 g4
+g8 g8 g g~g4 g4
 d8 d~d d~d4 d4
 e4 e e  e8 b~ 
 b2 r4  d4
@@ -382,10 +410,10 @@ g8 g~g g~g r8 e e
 
 }
 \alternative{
-{d b~b4 a4. b8
+{d b~b4 a4. a8
 b2 r4 d8 d}
 {d b~b2.
-a2. b4
+a2. a4
 b2 r2}
 }
 
@@ -418,7 +446,7 @@ c4 c c c
 d2 r4  d8 d
 g,4 b4 c4 c8 c
 e8 e~e e~e r8 d c
-b g~g4 d4. g8
+b g~g4 d4. d8
 }
 \alternative{
 {g2 r2}
@@ -440,10 +468,10 @@ c8 c~c c e4 e
 d2 r4 d8 d
 g,4 b4 c4 c8 c
 e8 e~e e~e r8 d c
-b g~g4 d4. g8
+b g~g4 d4. d8
 g2 r4 g
 %Strophe3
-g8 g~g g~g4 g
+g8 g g g~g4 g
 g8 g~g g~g4 g4
 e e e  e8 e~ 
 e2 r4  b'4
@@ -471,21 +499,15 @@ g,4 b4 c4 c8 c
 e8 e~e e~e r8 d c
 }
 \alternative{
-{b g~g4 d4. g8
+{b g~g4 d4. d8
 g2 r4 d'8 d}
 {b g8~g2.
-d2. g4
+d2. d4
 g2 r2}
 }
 \bar "|."
 }
 
-
-
-sopranoVerseOne = \lyricmode{
-\VerseOne
-
-}
 
 sopranoVerseTwo = \lyricmode{
 \VerseTwo
@@ -503,15 +525,6 @@ altoVerseOne = \lyricmode{
 \RefrainTwo
 }
 
-altoVerseTwo = \lyricmode{
-\VerseTwo
-
-}
-
-tenorVerseOne = \lyricmode{
-\VerseOne
-
-}
 
 tenorVerseTwo = \lyricmode{
 \VerseTwo
@@ -529,14 +542,11 @@ bassVerseOne = \lyricmode{
 \RefrainTwo
 }
 
-bassVerseTwo = \lyricmode{
-\VerseTwo
-
-}
 
 \score {
 \transpose g es{
   \new ChoirStaff <<
+   \new ChordNames \set chordChanges = ##t \harmonies
     \new Staff = "sa" \with {
       midiInstrument = "choir aahs"
       instrumentName = \markup \center-column { "Sopran" "Alt" }
@@ -546,13 +556,13 @@ bassVerseTwo = \lyricmode{
     >>
     \new Lyrics \with {
       alignAboveContext = "sa"
-    } \lyricsto "soprano" \sopranoVerseOne
+    } \lyricsto "soprano" \VerseOne
     \new Lyrics \with {
       alignAboveContext = "sa"
     } \lyricsto "soprano" \sopranoVerseTwo
   
     \new Lyrics \lyricsto "alto" \altoVerseOne
-    \new Lyrics \lyricsto "alto" \altoVerseTwo
+    \new Lyrics \lyricsto "alto" \VerseTwo
  
     \new Staff = "tb" \with {
       midiInstrument = "choir aahs"
@@ -564,25 +574,26 @@ bassVerseTwo = \lyricmode{
     >>
     \new Lyrics \with {
       alignAboveContext = "tb"
-    } \lyricsto "tenor" \tenorVerseOne
+    } \lyricsto "tenor" \VerseOne
     \new Lyrics \with {
       alignAboveContext = "tb"
     } \lyricsto "tenor" \tenorVerseTwo
 
     \new Lyrics \lyricsto "bass" \bassVerseOne
-    \new Lyrics \lyricsto "bass" \bassVerseTwo
+    \new Lyrics \lyricsto "bass" \VerseTwo
 
   >>
   }
   \layout {
       \override Score.PaperColumn #'keep-inside-line = ##t
-    \context {
-      \Staff
-      \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 3)
-            \Lyrics
-      \override LyricSpace #'minimum-distance = #2.0
-  
+          \context {
+      \Lyrics
+      \override LyricSpace #'minimum-distance = #1.0
     }
+    
+   % \context {
+     % \Staff
+     % \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1) }
   }
   \midi {
     \context {
