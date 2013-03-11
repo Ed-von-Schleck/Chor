@@ -5,8 +5,6 @@
 
 #(set-default-paper-size "a4")
 
-%Abschalten von Point&Click
-#(ly:set-option 'point-and-click #f)
 
 
 \header {
