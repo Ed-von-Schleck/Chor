@@ -544,7 +544,7 @@ bassVerseOne = \lyricmode{
 
 
 \score {
-\transpose g es{
+\transpose g d{
   \new ChoirStaff <<
    \new ChordNames \set chordChanges = ##t \harmonies
     \new Staff = "sa" \with {

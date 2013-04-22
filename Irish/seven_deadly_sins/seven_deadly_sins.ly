@@ -254,7 +254,6 @@ g4  g8. es16 f8 d c bes
 es16 g8. g8. es16 as4 as
 g8 es  d f es2
 
-
 }
 \addQuote "geige" { \geige }
 
