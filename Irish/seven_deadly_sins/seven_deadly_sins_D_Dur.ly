@@ -223,36 +223,39 @@ in the search for li -- ber -- ty!
 
 geige = \relative c''{
 s1*7
-s2. r8 as16 bes
-ces8 bes as g as ces~ces  as16 bes
-ces8 bes as g as es'~es  as,16 bes
-ces8 bes as g as fes es4
-es8 e f g as4 s4
+s2. r8 g16 a
+bes8 a g fis g bes~bes g16 a
+bes8 a g fis g d'~d  g,16 a
+bes8 a g fis g es d4
+d8 es e fis g4 s4
 s1*25
-s2. r8 as16 bes
-ces8 bes as g as ces~ces  as16 bes
-ces8 bes as g as es'~es  as,16 bes
-ces8 bes as g as fes es4
-es8 e f g as4 r4
+s2. r8 g16 a
+bes8 a g fis g bes~bes g16 a
+bes8 a g fis g d'~d  g,16 a
+bes8 a g fis g es d4
+d8 es e fis g4 r4
 s1*17
-s2. r8 as16 bes
-ces8 bes as g as ces~ces  as16 bes
-ces8 bes as g as es'~es  as,16 bes
-ces8 bes as g as fes es4
-es8 e f g as4 r8 as16 bes
-ces8 bes as g as ces~ces  as16 bes
-ces8 bes as g as es'~es  as,16 bes
-ces8 bes as g as fes es4
-es8 e f g as4 r4
+s2. r8 g16 a
+bes8 a g fis g bes~bes g16 a
+bes8 a g fis g d'~d  g,16 a
+bes8 a g fis g es d4
+d8 es e fis g4 r8 g16 a
+
+bes8 a g fis g bes~bes g16 a
+bes8 a g fis g d'~d  g,16 a
+bes8 a g fis g es d4
+d8 es e fis g4 r4
 s1*8
-g'4 g8. es16 as4 as
-g4  g8. es16 f8 d c bes
-es16 g8. g8. es16 as4 as
-g8 es  d f es2
-g4 g8. es16 as4 as
-g4  g8. es16 f8 d c bes
-es16 g8. g8. es16 as4 as
-g8 es  d f es2
+%interlude%
+fis'4 fis8. d16 g4 g
+fis4  fis8. d16 e8 cis b a
+d16 fis8. fis8. d16 g4 g
+fis8 d  cis e d2
+
+fis4 fis8. d16 g4 g
+fis4  fis8. d16 e8 cis b a
+d16 fis8. fis8. d16 g4 g
+fis8 d  cis e d2
 
 }
 \addQuote "geige" { \geige }
@@ -268,12 +271,14 @@ es8 es16 es~es8 bes8 c bes bes bes
 g bes bes bes c bes bes r8
 es es es bes c bes bes c
 bes16 bes8. bes8 bes es,4 
+\transpose es d{
 \cueDuring #"geige" #UP { R4 }
 \cueDuring #"geige" #UP { R1 }
 \cueDuring #"geige" #UP { R1 }
 \cueDuring #"geige" #UP { R1 }
 \cueDuring #"geige" #UP { R2 }
 \cueDuring #"geige" #UP { R4 }
+}
 bes'8 bes
 %Strophe1
 g bes bes bes  c bes bes bes
@@ -309,11 +314,13 @@ bes16 bes8. bes8 bes es,4 r4
 es'8 es es bes c bes bes c
 bes16 bes8. bes8 bes es,4 
 %interlude
+\transpose es d{
 \cueDuring #"geige" #UP { R4 }
 \cueDuring #"geige" #UP { R1 }
 \cueDuring #"geige" #UP { R1 }
 \cueDuring #"geige" #UP { R1 }
 \cueDuring #"geige" #UP { R1 }
+}
 %Strophe3
 g8 bes bes bes  c bes bes bes
 g bes bes bes c4 bes8  r8
@@ -337,6 +344,7 @@ bes16 bes8. bes8 bes es,4 r4
 
 es'8 es es bes c bes bes c
 bes16 bes8. bes8 bes es,4 
+\transpose es d{
 %interlude
 \cueDuring #"geige" #UP { R4 }
 \cueDuring #"geige" #UP { R1 }
@@ -349,6 +357,7 @@ bes16 bes8. bes8 bes es,4
 \cueDuring #"geige" #UP { R1 }
 \cueDuring #"geige" #UP { R2 }
 \cueDuring #"geige" #UP { R8 }
+}
 as8 as as
 %Bridge
 bes4 bes bes bes 
@@ -360,6 +369,7 @@ es f~f es~es  des des des
 bes4 bes bes bes
 des2. r4
 %interlude
+\transpose es d{
  \cueDuring #"geige" #UP { R1 }
  \cueDuring #"geige" #UP { R1 }
  \cueDuring #"geige" #UP { R1 }
@@ -369,6 +379,7 @@ des2. r4
  \cueDuring #"geige" #UP { R1 }
  \cueDuring #"geige" #UP { R2 }
  \cueDuring #"geige" #UP { R4 }
+ }
  bes'8 bes
   %Strophe4
 g bes bes bes  c bes bes bes
@@ -765,7 +776,7 @@ Ablauf = \lyricmode{
 \book {
 \score {
 <<
-\transpose es es{
+\transpose es d{
   \new ChoirStaff <<
   \new ChordNames \set chordChanges = ##t \harmonies
      \new Lyrics = "sopranos"  \with {}
