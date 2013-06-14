@@ -1,10 +1,12 @@
 \version "2.12.02"
+date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 \header {
   title = "Bohemian Rhapsody"
   composer = "Text und Musik: Freddie Mercury"
   arranger = "Arrangement: Andreas Fiebig"
+  subtitle = \date
 }
-#(set-global-staff-size 18)
+#(set-global-staff-size 17)
 #(set-default-paper-size "a4")
 
 global = {
@@ -295,7 +297,7 @@ g2 (a4~a8 b16 c
 b2.) r4 
 c1\< (c4 ) r4 c4 (d)
 \key c \major
-e16  \! \f e~e8~e4. r8 d4 (c2. )r4
+e16  \! \f e~e8~e4. r8 d4 (c2 b4 )r4
 d2. r4
 b1 \< (c2 \! \f  g \p
 a4) r4 f2 (
@@ -313,12 +315,11 @@ g2 (a4~a8 b16 c
 b2.) r4 
 c1\< (c4 ) r4 c4 (d)
 \key c \major
-e16  \! \f e~e8~e4. r8 d4 (c2. )r4
+e16  \! \f e~e8~e4. r8 d4 (c2 b4 )r4
 d2. r4
 b1 \< (c2.) \! \f  g4\>
 (c,1\!)
 R1*6
-\key fis \major
 }
 altBallade = \relative c'{
 r1
@@ -347,8 +348,6 @@ a2 (f4)  r4
 d1\< (g2.) \! \f  d4 \>
 (c1\!)
 R1*6
-\key fis \major
-\bar "|."
 }
 tenorBallade = \relative c''{
 r1
@@ -388,7 +387,6 @@ g \< d' d e e16 f f8 f g
 f16 (e~e8~e2.) \! \ff
 r1
 R1*6
-\key fis \major
 }
 bassBallade = \relative c'{
 r1
@@ -397,8 +395,8 @@ a,1~a2 (d4) r4
 g2 ( fis e2.) r4
 a2 \< (c4 g fis2. ) r4
 \key c \major
-c16\! \f c~c8~c4. r8 b4( a2.) r4
-d2. r4
+c'16\! \f c~c8~c4. r8 b4( a2.) r4
+d,2. r4
 g1\< ( c2 \! \f b2\p a4) r4
 f2 (c) r2
  \time 2/4
@@ -412,13 +410,11 @@ a,1~a2 (d4) r4
 g2 ( fis e2.) r4
 a2 \< (c4 g fis2. ) r4
 \key c \major
-c16\! \f c~c8~c4. r8 b4
-a8 a e' g b4 a
+c'16\! \f c~c8~c4. r8 b4
+a8 a e g b4 a
 d,2. r4
 g1\< ( c2. \! \f )b4\> (a1\!)
 R1*6
-\key fis \major
- \bar "|."
 }
 %%%%%%%%%%%Piano%%%%%%%%%%%%%%%%%%%
 rhBallade = \relative c'{
@@ -553,10 +549,6 @@ b'''4 a
 <d,,, d'>4. <des des'>8 <c c'>4 <b b'>4
 <g g'>8 <g g'>8 <g g'>8 <g g'>8 <g g'>8 
 <g g'>8 <g g'>8 <g g'>8
-
-
-
-
 }
 
 
@@ -569,38 +561,262 @@ harmoniesOper = \chordmode {
 \germanChords 
 fis1
 fis4 fis8:m5- fis8 fis4 fis8:m5- fis8
+b8 fis b fis fis:m5- fis b fis
+bes4 f4:7 a cis
+fis1 fis2.
+c2
+as8 g8 fis8 g8
+as8 g8 fis8 g8
+f8 c8 c8:m5- c8
+f8 c8 c8:m5- c8
+f8. g16:7 c4
+d4:7 g
+f8 c c:m5- d:m7
+as8 g8 fis8 g8
+as8 g8 fis8 g8
+c8 g c8. g16
+g4~g16 c8.
+c8 g c g
+g4~g16 c8.
+c8 g c g
+g4~g16 c8.
+
+
 }
 %%%%%%%%%%%Text%%%%%%%%%%%%
 SopranOper = \lyricmode{
-Sca -- ra -- mouche
+I see a lit -- le sil -- hou -- et -- to of a man.
+Sca -- ra -- mouche, Sca -- ra -- mouche
+will you do the fan -- dan -- go?
+Thun -- der -- bolt and light -- ning
+ve -- ry ve -- ry frighte -- ning me.
+Ga -- li -- le -- o
+Ga -- li -- le -- o
+Ga -- li -- le -- o Fi -- ga -- ro
+oh
+He's just a poor boy from a poor fa -- mi -- ly
+spare him his life from this mon -- stro -- si -- ty.
+No! Let him go.
+Let him go. 
+Let him go.
+Will not let you go.
+Let me go. Will not let you go oh
 }
 AltOper = \lyricmode{
 I see a lit -- le sil -- hou -- et -- to of a man.
-Sca -- ra -- mouche
+Sca -- ra -- mouche, Sca -- ra -- mouche
+will you do the fan -- dan -- go?
+Thun -- der -- bolt and light -- ning
+ve -- ry ve --ry frighte -- ning me.
+Ga -- li -- le -- o
+Ga -- li -- le -- o
+Ma -- gni -- fi -- co
+He's just a poor boy from a poor fa -- mi -- ly
+spare him his life from this mon -- stro -- si -- ty.
+No! Let him go.
+Let him go. 
+Let him go.
+Will not let you go. Let me go.
+Will not let you go oh
 }
 TenorOper = \lyricmode{
-Sca -- ra -- mouche
+Sca -- ra -- mouche, Sca -- ra -- mouche
+will you do the fan -- dan -- go?
+Thun -- der -- bolt and light -- ning
+ve -- ry ve -- ry frighte -- ning me.
+Ga -- li -- le -- o
+Ga -- li -- le -- o
+Ga -- li -- le -- o Fi -- ga -- ro
+oh
+He's just a poor boy from a poor fa -- mi -- ly
+spare him his life from this mon -- stro -- si -- ty.
+Bis -- mi -- lah! We will not let you go.
+Bis -- mi -- lah! We will not let you go.
+Bis -- mi -- lah! We will not let you go.
+Will not let you go. Will not let you go oh
 }
 BassOper = \lyricmode{
-Sca -- ra -- mouche
+Sca -- ra -- mouche, Sca -- ra -- mouche
+will you do the fan -- dan -- go?
+Thun -- der -- bolt and light -- ning
+ve -- ry ve -- ry frighte -- ning me.
+Ga -- li -- le -- o
+Ga -- li -- le -- o
+Ga -- li -- le -- o Fi -- ga -- ro
+oh. But I'm just a poor boy and no -- bo -- dy loves me.
+He's just a poor boy from a poor fa -- mi -- ly
+spare him his life from this mon -- stro -- si -- ty.
+Ea -- sy come, ea -- sy go, will you let me go?
+Bis -- mi -- lah! We will not let you go.
+Bis -- mi -- lah! We will not let you go.
+Bis -- mi -- lah! We will not let you go.
+Ne -- ver, ne -- ver, ne -- ver, ne -- ver, ne -- ver, ne -- ver 
+let me go! oh
 }
 %%%%%%%%%%%Musik%%%%%%%%%%
-sopranOper = \relative c'{
-r1
-r2 r4 r8 fis16\staccato fis16\staccato
- }
-altOper = \relative c''{
+sopranOper = \relative c''{
+\key fis \major
 r1
 b8\staccato ais16\staccato ais\staccato a\staccato a\staccato ais\staccato ais\staccato
-b\staccato b\staccato ais\staccato ais\staccato a8\staccato  fis16\staccato cis16\staccato
+b\staccato b\staccato ais\staccato ais\staccato a8  fis16\staccato fis16\staccato
+b8->\staccato fis16\staccato  fis\staccato b8->\staccato fis16\staccato  fis\staccato 
+fis16\staccato  fis\staccato fis8->\staccato b8->\staccato fis8->\staccato
+f16\staccato f16\staccato f16\staccato f16\staccato a8\staccato a8\staccato
+e'16\staccato e16\staccato e16\staccato e16\staccato eis8\staccato eis8\staccato
+%galileo
+fis8->\staccato cis16\staccato cis16\staccato d16\staccato cis8. r8 cis16\staccato cis16\staccato  d16\staccato cis8. 
+\time 3/4
+r8 cis16\staccato cis16\staccato d16\staccato cis16\staccato b16\staccato a16\staccato
+gis16\staccato r16 r8
+\time 2/4
+\key c \major
+r16 e16~e4.~e2
+r2
+c'8 c16 c c8 c
+c16 c c8 c16 c c8
+a8 a16 b g8 g16 g
+fis8 fis16 fis g8 r8
+r2 r2 r2
+r4 c8. r16
+r8 r r16 c16\staccato  c16\staccato  c16~c4 r 
+r8 r r16 c16\staccato  c16\staccato  c16~c4 r 
+r8 r r16 c16\staccato  c16\staccato   c16\staccato
+g16\staccato g16\staccato g16\staccato g16\staccato 
+g16\staccato c16\staccato c16\staccato c16\staccato
+g16\staccato g16\staccato g16\staccato g16\staccato
+g16\staccato r8.
+r16 g16~g8~g8~g8
+%no
+as8\staccato ges8\staccato ges8\staccato as8\staccato
+g8\staccato b8\staccato c8\staccato r8
+
+ \bar "|."
+ }
+altOper = \relative c''{
+\key fis \major
+r1
+b8\staccato ais16\staccato ais\staccato a\staccato a\staccato ais\staccato ais\staccato
+b\staccato b\staccato ais\staccato ais\staccato a8  cis,16\staccato cis16\staccato
+fis8->\staccato cis16\staccato  cis\staccato fis8->\staccato cis16\staccato  cis\staccato 
+c16\staccato  c\staccato cis8->\staccato fis8->\staccato cis8->\staccato
+d16\staccato d16\staccato d16\staccato d16\staccato es8\staccato es8\staccato
+e16\staccato e16\staccato e16\staccato e16\staccato eis8\staccato eis8\staccato
+%galileo
+fis8->\staccato cis'16\staccato cis16\staccato d16\staccato cis8. r8 cis16\staccato cis16\staccato  d16\staccato cis8. 
+\time 3/4
+r4 r4 r16 g g g
+\time 2/4
+\key c \major
+g2 r2 r2
+a8 g16 g ges8 g
+a16 a g8 ges16 ges g8
+f8 f16 g e8 e16 e
+d8 d16 d d8 r8
+r2 r2 r2
+r4
+<< { \voiceOne g8. r16
+r8 r r16 g16\staccato  g16\staccato  g16~g4 r 
+r8 r r16 g16\staccato  g16\staccato  g16~g4 r 
+r8 r r16 g16\staccato  g16\staccato   g16\staccato
+d16\staccato e16\staccato f16\staccato e16\staccato 
+d16\staccato g16\staccato  g16\staccato  g16\staccato
+d16\staccato e16\staccato f16\staccato e16\staccato e16\staccato r8.
+}
+\new Voice {
+\voiceTwo e8. r16
+r8 r r16 e16\staccato  e16\staccato  e16~e4 r 
+r8 r r16 e16\staccato  e16\staccato  e16~e4 r 
+r8 r r16 e16\staccato  e16\staccato   e16\staccato
+d16\staccato e16\staccato f16\staccato e16\staccato 
+d16\staccato g16\staccato  g16\staccato  g16\staccato
+d16\staccato e16\staccato f16\staccato e16\staccato e16\staccato r8.
+}
+>>
+\oneVoice
+r8 r16 es16~es8~es8
+%no
+es8\staccato fes8\staccato es8\staccato f8\staccato
+g8\staccato d8\staccato e8\staccato r8
+
+ \bar "|."
 }
 tenorOper = \relative c''{
+\key fis \major
 r1
 r2 r4 r8 ais16\staccato ais16\staccato
+dis8->\staccato ais16\staccato  ais\staccato dis8->\staccato ais16\staccato  ais\staccato 
+a16\staccato  a\staccato ais8->\staccato dis8->\staccato ais8->\staccato
+bes16\staccato bes16\staccato bes16\staccato bes16\staccato a8\staccato a8\staccato
+cis16\staccato cis16\staccato cis16\staccato cis16\staccato cis8\staccato cis8\staccato
+%galileo
+cis8->\staccato r8 r fis,16\staccato fis16\staccato g16\staccato fis8. r8 fis16\staccato fis16\staccato
+\time 3/4
+ g16\staccato fis16\staccato fis16\staccato fis16\staccato g16\staccato fis16\staccato
+e16\staccato d16\staccato cis4
+\time 2/4
+\key c \major
+r16 r r c'~c4~c2
+r2
+f8 e16 e es8 e
+f16 f e8 es16 es e8
+c8 c16 d c8 c16 c
+c8 c16 c b8 r8
+r2 r2 r4. g8\staccato
+c g\staccato r8. b16
+b16\staccato c16\staccato d16\staccato c16\staccato b16\staccato r8.
+r8 g8\staccato c g16\staccato b16\staccato
+b16\staccato c16\staccato d16\staccato c16\staccato b16\staccato r8.
+r8 g8\staccato c g16\staccato b16\staccato
+b16\staccato c16\staccato d16\staccato c16\staccato b16\staccato r8.
+b16\staccato c16\staccato d16\staccato c16\staccato b16\staccato r8.
+b16\staccato c16\staccato d16\staccato c16\staccato b16\staccato r8.
+r4 r16 des16~des8
+%no
+ces8\staccato des8\staccato ces8\staccato d8\staccato
+es8\staccato d8\staccato c8\staccato r8
+
+ \bar "|."
 }
 bassOper = \relative c{
+\key fis \major
 r1
 r2 r4 r8 fis16\staccato fis16\staccato
+b8->\staccato fis16\staccato  fis\staccato b8->\staccato fis16\staccato  fis\staccato 
+fis16\staccato  fis\staccato fis8->\staccato b8->\staccato fis8->\staccato
+bes,16\staccato bes16\staccato bes16\staccato bes16\staccato f'8\staccato f8\staccato
+a16\staccato a16\staccato a16\staccato a16\staccato b8\staccato b8\staccato
+%galileo
+ais8->\staccato r8 r fis16\staccato fis16\staccato g16\staccato fis8. r8 fis16\staccato fis16\staccato
+\time 3/4
+ g16\staccato fis16\staccato fis16\staccato fis16\staccato g16\staccato fis16\staccato
+e16\staccato d16\staccato cis4
+\time 2/4
+\key c \major
+r4 r16 a'16 r g
+as8 g16 g fis8 g16 g
+as8 g16 g fis8 g
+c8 c16 c c8 c
+c16 c c8 c16 c c8
+f,8 f16 f e8 e16 e
+d8 d16 d g8 r8
+r2
+as16 as g8fis16 fis g8
+as16 as g g fis8 g8\staccato
+c, g\staccato r8. g'16
+g16\staccato g16\staccato g16\staccato g16\staccato g16\staccato r8.
+r8 g8\staccato c, g16\staccato g'16\staccato
+g16\staccato g16\staccato g16\staccato g16\staccato g16\staccato r8.
+r8 g8\staccato c, g16\staccato g'16\staccato
+g16\staccato g16\staccato g16\staccato g16\staccato g16\staccato r8.
+g16\staccato g16\staccato r16 g16\staccato g16\staccato 
+r16 g16\staccato g16\staccato
+e16\staccato d16\staccato f16\staccato e16\staccato g16\staccato fis16\staccato
+b16\staccato b16\staccato
+bes4. bes8
+as8\staccato ges8\staccato ces8\staccato bes8\staccato
+es,8\staccato g8\staccato c,16\staccato g16\staccato g16\staccato g16\staccato
+
+ \bar "|."
 }
 %%%%%%%%%%%Piano%%%%%%%%%%%%%%%%%%%
 rhOper = \relative c'{
@@ -676,27 +892,27 @@ harmonies = \chordmode {
 \germanChords 
 \harmoniesIntro
 \harmoniesBallade
-%\harmoniesOper
+\harmoniesOper
 }
 sopranMusik =  \relative c'' {
 \sopranIntro
 \sopranBallade
-%\sopranOper
+\sopranOper
 }
 altMusik =  \relative c' {
 \altIntro
 \altBallade
-%\altOper
+\altOper
 }
 tenorMusik =  \relative c'' {
 \tenorIntro
 \tenorBallade
-%\tenorOper
+\tenorOper
 }
 bassMusik = \relative c' {
 \bassIntro
 \bassBallade
-%\bassOper
+\bassOper
 }
 %%%%%%Text%%%%%%%%%%%%%%
 sopranText = \lyricmode{
@@ -721,12 +937,12 @@ bassText = \lyricmode{
 }
 %%%%%%%%%%Piano%%%%%%%%
 RightHand = \relative c'{
-%\rhIntro
-%\rhBallade
+\rhIntro
+\rhBallade
 }
 LeftHand = \relative c {
-%\lhIntro
-%\lhBallade
+\lhIntro
+\lhBallade
  }
 
 
@@ -764,7 +980,7 @@ LeftHand = \relative c {
        \new Voice = "bass" { \voiceTwo \bassMusik }
      >>
      \new Lyrics \lyricsto "bass" \bassText
-  % \new PianoStaff  <<   \new Staff = "up" { \global \RightHand }  \new Staff = "down" { \global \LeftHand }  >>
+   \new PianoStaff  <<   \new Staff = "up" { \global \RightHand }  \new Staff = "down" { \global \LeftHand }  >>
  >>
       
   \layout {
@@ -773,5 +989,5 @@ LeftHand = \relative c {
     %  \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
     }
   }
- % \midi {   \context {  \Score tempoWholesPerMinute = #(ly:make-moment 72 4) }  }
+  \midi {   \context {  \Score tempoWholesPerMinute = #(ly:make-moment 72 4) }  }
 }	
