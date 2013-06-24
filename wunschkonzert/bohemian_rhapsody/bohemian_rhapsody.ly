@@ -1409,7 +1409,7 @@ LeftHand = \relative c {
        \new Voice = "bass" { \voiceTwo \bassMusik }
      >>
      \new Lyrics \lyricsto "bass" \bassText
-   \new PianoStaff  <<   \new Staff = "up" { \global \RightHand }  \new Staff = "down" { \global \LeftHand }  >>
+  % \new PianoStaff  <<   \new Staff = "up" { \global \RightHand }  \new Staff = "down" { \global \LeftHand }  >>
  >>
       
   \layout {
