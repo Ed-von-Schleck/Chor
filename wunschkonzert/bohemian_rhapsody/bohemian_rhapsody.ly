@@ -206,8 +206,8 @@ lhIntro = \relative c {
 \time 5/4 r1 r4
 \time 4/4
 e,1 g c a1
-d1 r r 
-c2 b bes a r1
+d1 gis4 g fis g gis g fis g
+c,2 b bes a r1
 <g g'>2 
 \clef treble
 e'''4 d 
@@ -425,9 +425,9 @@ rhBallade = \relative c'{
 <c e>8 a c e b' a, a' a,
 <a c g'> a c e <d fis> c d fis
 <g b>8 d g b e d, d' d,
-<c e>8 a c e b' a, a' a,
+<g b>8 e g b fis' e, e' e,
 \clef bass
-<a c> a c e <as, c> e' <g, c> e' 
+<a, c> a c e <as, c> e' <g, c> e' 
 <fis, c'> fis c' e <fis, c'> e' <e, c'> e'
 \key c \major
 \clef treble
@@ -450,9 +450,9 @@ rhBallade = \relative c'{
 <c e>8 a c e b' a, a' a,
 <a c g'> a c e <d fis> c d fis
 <g b>8 d g b e d, d' d,
-<c e>8 a c e b' a, a' a,
+<g b>8 e g b fis' e, e' e,
 \clef bass
-<a c> a c e <as, c> e' <g, c> e' 
+<a, c> a c e <as, c> e' <g, c> e' 
 <fis, c'> fis c' e <fis, c'> e' <e, c'> e'
 \key c \major
 \clef treble
@@ -472,7 +472,7 @@ g16 g, a32 b c d \times 2/3{e16 f [g]}  a8~
 a4 r8 b,16 c a8 b16 c a8 b16 c
 <d, f d'>4 \times 2/3{ r8 d f} f4 d'4
 <d, f bes>2
-\times 2/3{r16 bes' d} \times 2/3{f d bes}
+\times 2/3{r16 bes d} \times 2/3{f d bes}
 \times 2/3{r16 bes d} \times 2/3{f d bes}
 
 }
@@ -561,9 +561,8 @@ b'''4 a
 <d,,, d'>4. <des des'>8 <c c'>4 <b b'>4
 <g g'>8 <g g'>8 <g g'>8 <g g'>8 <g g'>8 
 <g g'>8 <g g'>8 <g g'>8
-<c c'>2 <b b'>2 <a a'>4 r4 \clef treble b'''4 a
-\clef bass 
-<d,,, d'>4. <cis cis'>8 <c c'>4 <b b'>4
+<c c'>2 <b b'>2 <a a'>1
+<d d'>4. <cis cis'>8 <c c'>4 <b b'>4
 <g' g'>1 <c c'>2 <b b'>2
 <a a'>1
 <d d'>4. <cis cis'>8 <c c'>4 <b b'>4
@@ -869,13 +868,13 @@ e,8 e g4 r8 g8 g4 r8 g8 g2~g  \! \ff
 rhOper = \relative c'{
 \clef treble
 \key fis \major
-<fis ais cis>8 <fis ais cis>8 <fis ais cis>8 <fis ais cis>8
+<fis, ais cis>8 <fis ais cis>8 <fis ais cis>8 <fis ais cis>8
 <fis ais cis>8 <fis ais cis>8 <fis ais cis>8 <fis ais cis>8
 <fis b dis> <fis ais cis> <fis a c> <fis ais cis>
 <fis b dis> <fis ais cis> <fis a c> <fis ais cis>
 <fis b dis>8 <fis ais cis>16 <fis ais cis>16 <fis b dis>8 <fis ais cis>16 <fis ais cis>16
 <fis a c>16 <fis a c>16 <fis ais cis>8 <fis b dis>8 <fis ais cis>
-<f bes d>8 <f bes d>8 <fis a c>8  <fis a c>8
+<f' bes d>8 <f bes d>8 <fis a c>8  <fis a c>8
 <a cis e>8  <a cis e>8  <gis b eis>8  <gis b eis>8
 %galileo
 <ais cis fis>8 r8 r4 r2
@@ -883,29 +882,29 @@ rhOper = \relative c'{
 r8 fis16 fis g fis e d cis r16 r8
 \time 2/4
 \key c \major
-r2 <bis dis gis>8 <b d g> <ais cis g'> <b d g>
-<bis dis gis> <b d g> <ais cis g'> <b d g>
+r2 <bis dis gis>8 <b d g> <ais cis fis> <b d g>
+<bis dis gis> <b d g> <ais cis fis> <b d g>
 <c f a>8 <c e g>16 <c e g> <c es ges>8 <c e g>
 <c f a>16 <c f a>16 <c e g>8 <c es ges> <c e g>
 <c f a> <c f a>16 <c g' c>16 <c e g>8 <c e g>
-<c d fis>8 <c d fis> <b d g>8 g'16 g
+<c d fis>8 <c d fis> <b d g>16 r16 g'16 g
 <f a>16 c' <e, g> c' <dis, fis> c' <d, f> c'
 <bis, dis gis>8 <b d g> <ais cis g'> <b d g>
 <bis dis gis>8 <b d g> <ais cis g'> <g' b>
 <g c>8 <g b> <c, e g>8 r16 <g' c>
-<g b>16 <g c> <g d> <g c> <g b> r16 r8
+<g b>16 <g c> <g d'> <g c> <g b> r16 r8
 r8 <g b>8 <g c>8 <g b>16 <g b>
-<g b>16 <g c> <g d> <g c> <g b> r16 r8
+<g b>16 <g c> <g d'> <g c> <g b> r16 r8
 r8 <g b>8 <g c>8 <g b>16 <g b>
-<g b>16 <g c> <g d> <g c> <g b> r16 r8
+<g b>16 <g c> <g d'> <g c> <g b> r16 r8
 %never
-<g b>16 <g c> <g d> <g c> <g b> r16 r8
-<g b>16 <g c> <g d> <g c> <g b> r16 r8
+<g b>16 <g c> <g d'> <g c> <g b> r16 r8
+<g b>16 <g c> <g d'> <g c> <g b> r16 r8
 r2 r r
 r4 r8 <c, e g>16 <c e g>
-<c f a>16 <c e g> b a g16 r16 r8
+<c f a>16 <c e g> f e d16 r16 r8
 <c e g>8. <c e g>16 <c f a>8 <c f a>
-<b dis fis>16 <b dis fis>16 <b dis fis>16 <b dis fis>16 <b e g>8 <b e g>
+<b dis fis a>16 <b dis fis a>16 <b dis fis a>16 <b dis fis a>16 <b e g>8 <b e g>
 <f' g b>2 <f g b>2 <f g b>2 
 <f g b>8 <f g b>8 <f g b>8 <f g b>8
 }
@@ -918,14 +917,14 @@ lhOper = \relative c,,{
 r8 fis'16 fis g fis e d cis r16 r8
 \time 2/4
 \key c \major
-r2 r2 r2
+r2 gis'8 g fis g gis g fis g
 <c, c'>8 <c c'>16 <c c'>16 <c c'>8 <c c'>8
 <c c'>16 <c c'>16 <c c'>8 <c c'>8 <c c'>8
 <f f'>8. <f f'>16 <e e'>8. <e e'>16
-<d d'>16 <cis cis'>16 <b b'>16 <a a'>16 <g g'>8 r8
-r2 r2
-r4 r8 <g g'>8
-<c c'>8 <g g'> <c c'>8. <g g'>16
+d16 c b a g r r8
+r2
+gis'8 g fis g gis g fis <g g'>8
+<c, c'>8 <g g'> <c c'>8. <g g'>16
 <g g'>16 <g g'>16 <g g'>16 <g g'>16 <g g'>16 r16 r8
 r8 <g g'>8 <c c'>8 <g g'>16 <g g'>16
 <g g'>16 <g g'>16 <g g'>16 <g g'>16 <g g'>16 r16 r8
@@ -933,11 +932,11 @@ r8 <g g'>8 <c c'>8 <g g'>16 <g g'>16
 <g g'>16 <g g'>16 <g g'>16 <g g'>16 <g g'>16 r16 r8
 <g g'>16 <g g'>16 <g g'>16 <g g'>16 <g g'>16 r16 r8
 <g g'>16 <g g'>16 <g g'>16 <g g'>16 <g g'>16 r16 r8 r2
-<g' g'>8 <fis fis'> <b b'> <ais ais'> <dis dis'> <g, g'> <c c'> r8
-r4 r8 <c c'>16 <c c'> 
-<f, f'>16 <c c'> <b b'> <a a'> <g g'>16 r16 r8
-<c c'>8. <c c'>16 <f f'>8 <f f'>8
-<b b'>16 <a a'> <g g'> <fis fis'> <e e'>8 <e e'>
+<g g'>8 <fis fis'> <b b'> <ais ais'> <es' es'> <g, g'> <c c'> r8
+r4 r8 c16 c 
+f16 e d c b r16 r8
+<c c'>8. <c c'>16 <f, f'>8 <f f'>8
+<b, b'>16 <b b'> <b b'> <b b'> <e e'>8 <e e'>
 <g g'>8 <g g'>8 <g g'>8 <g g'>8
 <g g'>8 <g g'>8 <g g'>8 <g g'>8
 <g g'>8 <g g'>8 <g g'>8 <g g'>8
@@ -1084,18 +1083,16 @@ r1 r1 r2
 rhRock = \relative c'{
 \time 12/8
 \key c \major
-<c c'>4 <e, e'>4 <f f'>4 <g g'>4 <a a'>8 <b b'>8 <c c'>4
-<c c'>4 <e, e'>4 <f f'>4 <g g'>8 <a a'>8 <g g'>2
-<c c'>4 <e, e'>4 <f f'>4 <g g'>4 <a a'>8 <b b'>8 <c c'>4
-<d d'>4 <fis, fis'>4 <g g'>4 <a a'>8 <b b'>8 <a a'>2
-<b d f g>4.  <b d f g>4. <b d f g>4. <b d f g>4.
-<b d f g>4. <b d f g>4. <c e g>4. <c e g>4.
-<b d f g>4. <b d f g>4. g'4 f8 g f d
+<e g c>4 e4 f g a8 b c4
+<e, g c>4 e4 f g8 a g2
+<e g c>4 e f g a8 b c4
+<d, fis a d>4 fis4 g a8 b a2
+%Vers
+r1. r1. r4. r4. <b, d f g>4 f'8 g f d
 \time 6/8
-bes4 <d f bes>2
+bes4 <d f bes>4 <d f bes>4
 \time 12/8
-<b d f g>4.  <b d f g>4. <b d f g>4. <b d f g>4.
-<b d f g>4. <b d f g>4. <bes c e g> <bes c e g>
+r1. r1.
 <a c f>4. <a c f>4.  <a c f>2.
 < d f a>4. < d f a>4. < d f a>4. < d f a>4.
 <b d g>4. <b d g>4. e4 d8~d8 b a
@@ -1104,11 +1101,11 @@ bes4 <d f bes>2
 < d f a>4 < d f a>4  < d f a>4 <b d g>4. <b d g>4.
 < d f a>4 < d f a>4  < d f a>4 <b d g>4. <b d g>4.
 %zwischen
-<c c'>4 <e, e'>4 <f f'>4 <g g'>4 <a a'>8 <b b'>8 <c c'>4
-<c c'>4 <e, e'>4 <f f'>4 <g g'>8 <a a'>8 <g g'>2
-<c c'>4 <e, e'>4 <f f'>4 <g g'>4 <a a'>8 <b b'>8 <c c'>4
-<d d'>4 <fis, fis'>4 <g g'>4 <a a'>4 <b b'>8 <c c'>8 <d d'>4
-es8 f g4 f8 g a4 g8 a ais4
+<e g c>4 e4 f g a8 b c4
+<e, g c> e f g8 a g2
+<e g c>4 e f g a8 b c4 
+<d, fis a d>4 fis g a b8 c d4
+es,8 f g4 f8 g a4 g8 a ais4
 bis8 cis dis eis fis gis ais gis ais bis cis4
 f,,8 g a bes c d es d es f g4
 \ottava #1
@@ -1125,12 +1122,14 @@ lhRock = \relative c,{
 <c c'>4. <c c'>4. <c c'>4. <c c'>4.
 <c c'>4. <c c'>4. <c c'>4. <c c'>4.
 <d d'>4. <d d'>4. <d d'>4. <d d'>4.
-g4. g g g g g c c
-g g g g8 f d
+<g, g'>4.<g g'>4. <g g'>4. <g g'>4.
+<g g'>4. <g g'>4. <c' c'>4. <c c'>4.
+<g, g'>4. <g g'> <g g'> g'8 f d
 \time 6/8
-bes4 bes2
+<bes bes'>4 <bes bes'>4 <bes bes'>4
 \time 12/8
-g'4. g g g g g c c
+<g g'>4. <g g'> <g g'> <g g'>
+<g g'> <g g'> c' c
 f f r4 f4 e
 d4. d d d g, g g g
 d' d d d g, g g g
@@ -1268,17 +1267,17 @@ rhOutro = \relative c'{
  b, e g
  <f a>8 g f c <c e> c c' c,
  <c e> a <c e> a <g b> e' e, e'
- <a c> a c e <g, b> e g, b
+ <a, c> a c e <g b> e g, b
  <a c e> a c e
- <f, as c>2\glissando \fermata
- <f a? c>2\glissando <f a c>2 \fermata
- <e' g>8 c e g <f a> b <f a> b 
+ <f, as c>2\arpeggio \fermata
+ <f a? c>2\arpeggio <f a c>2\arpeggio \fermata
+ <e'' g>8 c e g <f a> b <f a> b 
  <e, g> c e g
  <d fis a> b' <d, fis a> b'
 <b, d g> b d g <bes, d g> a' g a
 \key d \major
-<a, cis e> a c e g f f e
-e cis a g d' f d' d,
+<a, cis e> a cis e g fis fis e
+e cis a g d' fis d' d,
 <g b> d' <fis, a> d' <eis, gis> d' <e, g> d'
 <a, d fis>1\ppp
  
@@ -1287,7 +1286,7 @@ lhOutro = \relative c{
 \key c \major
 c4 c b b
 a a gis a
-gis a g16 a e d
+gis a g16 f e d
 c4
 <b b'>2 <e e'>
 <f f'>4. <f f'>8 <c c'>4. c'16 b
@@ -1300,65 +1299,65 @@ r1 d1\ppp
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%ALL%%%%%%%%%%%
 harmonies = \chordmode {
 \germanChords 
-%\harmoniesIntro
-%\harmoniesBallade
+\harmoniesIntro
+\harmoniesBallade
 \harmoniesOper
 \harmoniesRock
 \harmoniesOutro
 }
 sopranMusik =  \relative c'' {
-%\sopranIntro
-%\sopranBallade
+\sopranIntro
+\sopranBallade
 \sopranOper
 \sopranRock
 \sopranOutro
 }
 altMusik =  \relative c' {
-%\altIntro
-%\altBallade
+\altIntro
+\altBallade
 \altOper
 \altRock
 \altOutro
 }
 tenorMusik =  \relative c'' {
-%\tenorIntro
-%\tenorBallade
+\tenorIntro
+\tenorBallade
 \tenorOper
 \tenorRock
 \tenorOutro
 }
 bassMusik = \relative c' {
-%\bassIntro
-%\bassBallade
+\bassIntro
+\bassBallade
 \bassOper
 \bassRock
 \bassOutro
 }
 %%%%%%Text%%%%%%%%%%%%%%
 sopranText = \lyricmode{
-%\SopranIntro
-%\SopranBallade
+\SopranIntro
+\SopranBallade
 \SopranOper 
 \RockText
 \SopranOutro
 }
 altText = \lyricmode{
-%\AltIntro
-%\AltBallade
+\AltIntro
+\AltBallade
 \AltOper 
 \RockText
 \AltOutro
 }
 tenorText = \lyricmode{
-%\TenorIntro
-%\TenorBallade
+\TenorIntro
+\TenorBallade
 \TenorOper
 \RockText
 \TenorOutro
 }
 bassText = \lyricmode{
-%\BassIntro
-%\BassBallade
+\BassIntro
+\BassBallade
 \BassOper
 \RockText
 \BassOutro
@@ -1410,12 +1409,13 @@ LeftHand = \relative c {
        \new Voice = "bass" { \voiceTwo \bassMusik }
      >>
      \new Lyrics \lyricsto "bass" \bassText
- %  \new PianoStaff  <<   \new Staff = "up" { \global \RightHand }  \new Staff = "down" { \global \LeftHand }  >>
+   \new PianoStaff  <<   \new Staff = "up" { \global \RightHand }  \new Staff = "down" { \global \LeftHand }  >>
  >>
       
   \layout {
     \context {
-      %\Staff
+     \Staff
+      \RemoveEmptyStaves
     %  \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
     }
   }
