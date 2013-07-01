@@ -226,7 +226,7 @@ sopMusic = \relative c' {
 
   d4 e8 e f4 g
   a d e f
-  e d8 c~ c4 a8 c~
+  e d8 c~ c a~ a c~
   c r a g~ g f~ f4
 
   g4. a8~ a4 d,4~
@@ -382,7 +382,7 @@ altoMusic = \relative c' {
   d2 r4 d
   f4 f f f
   d1
-  e2 r4 e
+  e2 r4 c
 
   d4 e f e
   f f f f
@@ -396,7 +396,7 @@ altoMusic = \relative c' {
 
   a'1^~
   a4 r a a
-  a2. a8 a~
+  a2~ a8 a~ a a~
   a r a g~ g f~ f4
 
   g4. f8~ f4 d~
@@ -566,7 +566,7 @@ tenorMusic = \relative c' {
 
   f1~
   f4 r f f
-  e2. e8 e~
+  e2~ e8 e8~ e e~
   e r e e~ e d~ d4
 
   d4. bes8~ bes4 bes~
@@ -733,7 +733,7 @@ bassMusic = \relative c {
 
   d'1~
   d4 r d d
-  c2. c8 c~
+  c2~ c8 c8~ c c~
   c r a a~ a a~ a4
 
   bes4. bes8~ bes4 bes~
