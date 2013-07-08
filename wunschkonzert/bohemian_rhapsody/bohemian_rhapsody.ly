@@ -889,6 +889,16 @@ r2 <bis dis gis>8 <b d g> <ais cis fis> <b d g>
 <c f a> <c f a>16 <c g' c>16 <c e g>8 <c e g>
 <c d fis>8 <c d fis> <b d g>16 r16 g'16 g
 <f a>16 c' <e, g> c' <dis, fis> c' <d, f> c'
+<<<<<<< HEAD
+<bis, dis gis>8 <b d g> <ais cis fis> <b d g>
+<bis dis gis>8 <b d g> <ais cis fis> <g' b>
+%bismila
+<e g c>8 <d g b> <c e g>8 r16 <g' c>
+<g b>16 <g c> <g d'> <g c> <g b> r16 r8
+r8 <g b>8 <e g c>8 <d g b>16 <g b>
+<g b>16 <g c> <g d'> <g c> <g b> r16 r8
+r8 <g b>8 <e g c>8 <d g b>16 <g b>
+=======
 <bis, dis gis>8 <b d g> <ais cis g'> <b d g>
 <bis dis gis>8 <b d g> <ais cis g'> <g' b>
 <g c>8 <g b> <c, e g>8 r16 <g' c>
@@ -896,13 +906,18 @@ r2 <bis dis gis>8 <b d g> <ais cis fis> <b d g>
 r8 <g b>8 <g c>8 <g b>16 <g b>
 <g b>16 <g c> <g d'> <g c> <g b> r16 r8
 r8 <g b>8 <g c>8 <g b>16 <g b>
+>>>>>>> 5b5a504df0215ee5edd665e8399549bfa09b47dc
 <g b>16 <g c> <g d'> <g c> <g b> r16 r8
 %never
 <g b>16 <g c> <g d'> <g c> <g b> r16 r8
 <g b>16 <g c> <g d'> <g c> <g b> r16 r8
 r2 r r
 r4 r8 <c, e g>16 <c e g>
+<<<<<<< HEAD
+<c f a>16 <c e g> f e d r16 r8
+=======
 <c f a>16 <c e g> f e d16 r16 r8
+>>>>>>> 5b5a504df0215ee5edd665e8399549bfa09b47dc
 <c e g>8. <c e g>16 <c f a>8 <c f a>
 <b dis fis a>16 <b dis fis a>16 <b dis fis a>16 <b dis fis a>16 <b e g>8 <b e g>
 <f' g b>2 <f g b>2 <f g b>2 
@@ -921,10 +936,17 @@ r2 gis'8 g fis g gis g fis g
 <c, c'>8 <c c'>16 <c c'>16 <c c'>8 <c c'>8
 <c c'>16 <c c'>16 <c c'>8 <c c'>8 <c c'>8
 <f f'>8. <f f'>16 <e e'>8. <e e'>16
+<<<<<<< HEAD
+d'16 c b a g8 r
+r2 r2
+r4 r8 <g g'>8
+<c c'>8 <g g'> <c c'>8. <g g'>16
+=======
 d16 c b a g r r8
 r2
 gis'8 g fis g gis g fis <g g'>8
 <c, c'>8 <g g'> <c c'>8. <g g'>16
+>>>>>>> 5b5a504df0215ee5edd665e8399549bfa09b47dc
 <g g'>16 <g g'>16 <g g'>16 <g g'>16 <g g'>16 r16 r8
 r8 <g g'>8 <c c'>8 <g g'>16 <g g'>16
 <g g'>16 <g g'>16 <g g'>16 <g g'>16 <g g'>16 r16 r8
@@ -932,11 +954,19 @@ r8 <g g'>8 <c c'>8 <g g'>16 <g g'>16
 <g g'>16 <g g'>16 <g g'>16 <g g'>16 <g g'>16 r16 r8
 <g g'>16 <g g'>16 <g g'>16 <g g'>16 <g g'>16 r16 r8
 <g g'>16 <g g'>16 <g g'>16 <g g'>16 <g g'>16 r16 r8 r2
+<<<<<<< HEAD
+<g' g'>8 <fis fis'> <b b'> <ais ais'> <es' es'> <g, g'> <c c'> r8
+r4 r8 c16 c
+f e d c b r16 r8
+<c c'>8. <c c'>16 <f f'>8 <f f'>8
+<b, b'>16 <b b'> < b b'> <b b'> <e e'>8 <e e'>
+=======
 <g g'>8 <fis fis'> <b b'> <ais ais'> <es' es'> <g, g'> <c c'> r8
 r4 r8 c16 c 
 f16 e d c b r16 r8
 <c c'>8. <c c'>16 <f, f'>8 <f f'>8
 <b, b'>16 <b b'> <b b'> <b b'> <e e'>8 <e e'>
+>>>>>>> 5b5a504df0215ee5edd665e8399549bfa09b47dc
 <g g'>8 <g g'>8 <g g'>8 <g g'>8
 <g g'>8 <g g'>8 <g g'>8 <g g'>8
 <g g'>8 <g g'>8 <g g'>8 <g g'>8
@@ -1409,7 +1439,11 @@ LeftHand = \relative c {
        \new Voice = "bass" { \voiceTwo \bassMusik }
      >>
      \new Lyrics \lyricsto "bass" \bassText
+<<<<<<< HEAD
+   \new PianoStaff  <<   \new Staff = "up" { \global \RightHand }  \new Staff = "down" { \global \LeftHand }  >>
+=======
   % \new PianoStaff  <<   \new Staff = "up" { \global \RightHand }  \new Staff = "down" { \global \LeftHand }  >>
+>>>>>>> 5b5a504df0215ee5edd665e8399549bfa09b47dc
  >>
       
   \layout {

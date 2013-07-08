@@ -1,4 +1,4 @@
-\version "2.12.02"
+\version "2.16.0"
 date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 \header {
   title = "Bohemian Rhapsody"
@@ -607,7 +607,7 @@ g2 g2
 }
 %%%%%%%%%%%Text%%%%%%%%%%%%
 SopranOper = \lyricmode{
-I see a lit -- le sil -- hou -- et -- to of a man.
+I see a litt -- le sil -- hou -- et -- to of a man.
 Sca -- ra -- mouche, Sca -- ra -- mouche
 will you do the fan -- dan -- go?
 Thun -- der -- bolt and light -- ning
@@ -628,7 +628,7 @@ Ma -- ma -- mi -- a let me go. Bee -- el -- ze -- bub has a
 de -- vil put a -- side for me __ for me __ for me! __
 }
 AltOper = \lyricmode{
-I see a lit -- le sil -- hou -- et -- to of a man.
+I see a litt -- le sil -- hou -- et -- to of a man.
 Sca -- ra -- mouche, Sca -- ra -- mouche
 will you do the fan -- dan -- go?
 Thun -- der -- bolt and light -- ning
@@ -977,7 +977,7 @@ Just got -- ta get out just got -- ta get right out -- ta here
 sopranRock = \relative c''{
 \tempo 4 = 88
 \time 4/4
-r1*4
+r1 r1 r1 r1
 \times 2/3{r4 \f f,8~} \times 2/3{f8 f4} \times 2/3{f4 e8~} \times 2/3{e8 e4}   
 \times 2/3{e4 d8~} \times 2/3{d8 d4} \times 2/3{e4 e8~} \times 2/3{e8 e4} 
 d2. r4
@@ -995,13 +995,14 @@ e4~\times 2/3{e4 (f8~)} f2
 \times 2/3{f4 f8} \times 2/3{f8 f g~} g4 r4
 \times 2/3{f4 f8} \times 2/3{f8 f4} \times 2/3{g4 g8~} \times 2/3{g8 g4}
 e2 r2
-r1*8
+r1 r1 r1 r1
+r1 r1 r1 r1
 \time 20/8
 r1 r1 r2
 }
 altRock = \relative c'{
 \time 4/4
-r1*4
+r1 r1 r1 r1
 \times 2/3{r4 \f f8~} \times 2/3{f8 f4} \times 2/3{f4 e8~} \times 2/3{e8 e4}   
 \times 2/3{e4 d8~} \times 2/3{d8 d4} \times 2/3{d4 c8~} \times 2/3{c8 c4} 
 \times 2/3{b4 (c8} d2) r4
@@ -1018,13 +1019,14 @@ b4 b4~b r
 \times 2/3{c4 c8} \times 2/3{c8 c d~} d4 r4
 \times 2/3{c4 c8} \times 2/3{c8 c4} \times 2/3{d4 c8~} \times 2/3{c8 b4}
 c2 r2
-r1*8
+r1 r1 r1 r1
+r1 r1 r1 r1
 \time 20/8
 r1 r1 r2
 }
 tenorRock = \relative c''{
 \time 4/4
-r1*4
+r1 r1 r1 r1
 \times 2/3{r4 \f b8~} \times 2/3{b8 b4}  \times 2/3{b4 b8~}  \times 2/3{b8 b4}  
 \times 2/3{b4 b8~} \times 2/3{b8 b4} \times 2/3{d4 c8~}  \times 2/3{c8 c4}
 \times 2/3{b4 (c8} d2) r4
@@ -1041,13 +1043,14 @@ a4 a4~a r
 \times 2/3{a4 a8} \times 2/3{a8 a b~} b4 r4
 \times 2/3{a4 a8} \times 2/3{a8 a4} \times 2/3{b4 g8~} \times 2/3{g8 g4}
 g2 r2
-r1*8
+r1 r1 r1 r1 
+r1 r1 r1 r1
 \time 20/8
 r1 r1 r2
 }
 bassRock = \relative c'{
 \time 4/4
-r1*4
+r1 r1 r1 r1
 \times 2/3{r4 \f g8~} \times 2/3{g8 g4}  \times 2/3{g4 g8~}  \times 2/3{g8 g4} 
 \times 2/3{g4 g8~} \times 2/3{g8 g4} \times 2/3{g4 g8~}  \times 2/3{g8 g4}
 g2. r4
@@ -1064,7 +1067,8 @@ g4 g4~g r
 \times 2/3{d4 d8} \times 2/3{d8 d g~} g4 r4
 \times 2/3{d4 d8} \times 2/3{d8 d4} \times 2/3{g4 g8~} \times 2/3{g8 g4}
 c,2 r2
-r1*8
+r1 r1 r1 r1
+r1 r1 r1 r1
 \time 20/8
 r1 r1 r2
 }
@@ -1411,5 +1415,5 @@ LeftHand = \relative c {
     %  \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
     }
   }
-  \midi {   \context {  \Score tempoWholesPerMinute = #(ly:make-moment 72 4) }  }
+  \midi {   \tempo 4 = 72  }
 }	
