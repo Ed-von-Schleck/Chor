@@ -1,4 +1,4 @@
-\version "2.12.02"
+\version "2.16.0"
 date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 \header {
   title = "Bohemian Rhapsody"
@@ -607,7 +607,7 @@ g2 g2
 }
 %%%%%%%%%%%Text%%%%%%%%%%%%
 SopranOper = \lyricmode{
-I see a lit -- le sil -- hou -- et -- to of a man.
+I see a litt -- le sil -- hou -- et -- to of a man.
 Sca -- ra -- mouche, Sca -- ra -- mouche
 will you do the fan -- dan -- go?
 Thun -- der -- bolt and light -- ning
@@ -628,7 +628,7 @@ Ma -- ma -- mi -- a let me go. Bee -- el -- ze -- bub has a
 de -- vil put a -- side for me __ for me __ for me! __
 }
 AltOper = \lyricmode{
-I see a lit -- le sil -- hou -- et -- to of a man.
+I see a litt -- le sil -- hou -- et -- to of a man.
 Sca -- ra -- mouche, Sca -- ra -- mouche
 will you do the fan -- dan -- go?
 Thun -- der -- bolt and light -- ning
@@ -889,16 +889,6 @@ r2 <bis dis gis>8 <b d g> <ais cis fis> <b d g>
 <c f a> <c f a>16 <c g' c>16 <c e g>8 <c e g>
 <c d fis>8 <c d fis> <b d g>16 r16 g'16 g
 <f a>16 c' <e, g> c' <dis, fis> c' <d, f> c'
-<<<<<<< HEAD
-<bis, dis gis>8 <b d g> <ais cis fis> <b d g>
-<bis dis gis>8 <b d g> <ais cis fis> <g' b>
-%bismila
-<e g c>8 <d g b> <c e g>8 r16 <g' c>
-<g b>16 <g c> <g d'> <g c> <g b> r16 r8
-r8 <g b>8 <e g c>8 <d g b>16 <g b>
-<g b>16 <g c> <g d'> <g c> <g b> r16 r8
-r8 <g b>8 <e g c>8 <d g b>16 <g b>
-=======
 <bis, dis gis>8 <b d g> <ais cis g'> <b d g>
 <bis dis gis>8 <b d g> <ais cis g'> <g' b>
 <g c>8 <g b> <c, e g>8 r16 <g' c>
@@ -906,18 +896,13 @@ r8 <g b>8 <e g c>8 <d g b>16 <g b>
 r8 <g b>8 <g c>8 <g b>16 <g b>
 <g b>16 <g c> <g d'> <g c> <g b> r16 r8
 r8 <g b>8 <g c>8 <g b>16 <g b>
->>>>>>> 5b5a504df0215ee5edd665e8399549bfa09b47dc
 <g b>16 <g c> <g d'> <g c> <g b> r16 r8
 %never
 <g b>16 <g c> <g d'> <g c> <g b> r16 r8
 <g b>16 <g c> <g d'> <g c> <g b> r16 r8
 r2 r r
 r4 r8 <c, e g>16 <c e g>
-<<<<<<< HEAD
-<c f a>16 <c e g> f e d r16 r8
-=======
 <c f a>16 <c e g> f e d16 r16 r8
->>>>>>> 5b5a504df0215ee5edd665e8399549bfa09b47dc
 <c e g>8. <c e g>16 <c f a>8 <c f a>
 <b dis fis a>16 <b dis fis a>16 <b dis fis a>16 <b dis fis a>16 <b e g>8 <b e g>
 <f' g b>2 <f g b>2 <f g b>2 
@@ -936,17 +921,10 @@ r2 gis'8 g fis g gis g fis g
 <c, c'>8 <c c'>16 <c c'>16 <c c'>8 <c c'>8
 <c c'>16 <c c'>16 <c c'>8 <c c'>8 <c c'>8
 <f f'>8. <f f'>16 <e e'>8. <e e'>16
-<<<<<<< HEAD
-d'16 c b a g8 r
-r2 r2
-r4 r8 <g g'>8
-<c c'>8 <g g'> <c c'>8. <g g'>16
-=======
 d16 c b a g r r8
 r2
 gis'8 g fis g gis g fis <g g'>8
 <c, c'>8 <g g'> <c c'>8. <g g'>16
->>>>>>> 5b5a504df0215ee5edd665e8399549bfa09b47dc
 <g g'>16 <g g'>16 <g g'>16 <g g'>16 <g g'>16 r16 r8
 r8 <g g'>8 <c c'>8 <g g'>16 <g g'>16
 <g g'>16 <g g'>16 <g g'>16 <g g'>16 <g g'>16 r16 r8
@@ -954,19 +932,11 @@ r8 <g g'>8 <c c'>8 <g g'>16 <g g'>16
 <g g'>16 <g g'>16 <g g'>16 <g g'>16 <g g'>16 r16 r8
 <g g'>16 <g g'>16 <g g'>16 <g g'>16 <g g'>16 r16 r8
 <g g'>16 <g g'>16 <g g'>16 <g g'>16 <g g'>16 r16 r8 r2
-<<<<<<< HEAD
-<g' g'>8 <fis fis'> <b b'> <ais ais'> <es' es'> <g, g'> <c c'> r8
-r4 r8 c16 c
-f e d c b r16 r8
-<c c'>8. <c c'>16 <f f'>8 <f f'>8
-<b, b'>16 <b b'> < b b'> <b b'> <e e'>8 <e e'>
-=======
 <g g'>8 <fis fis'> <b b'> <ais ais'> <es' es'> <g, g'> <c c'> r8
 r4 r8 c16 c 
 f16 e d c b r16 r8
 <c c'>8. <c c'>16 <f, f'>8 <f f'>8
 <b, b'>16 <b b'> <b b'> <b b'> <e e'>8 <e e'>
->>>>>>> 5b5a504df0215ee5edd665e8399549bfa09b47dc
 <g g'>8 <g g'>8 <g g'>8 <g g'>8
 <g g'>8 <g g'>8 <g g'>8 <g g'>8
 <g g'>8 <g g'>8 <g g'>8 <g g'>8
@@ -975,32 +945,26 @@ f16 e d c b r16 r8
 %%%%%%%%%%%ROCK%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 harmoniesRock = \chordmode {
 \germanChords 
-c1 c2
-c1 c2
-c1 c2
-d1 d2
-g1:7 g2:7
-g2.:7 c2.
-g1:7 g2:7
-bes2.
-g1:7 g2:7
-g2.:7 c2.
-f1 f2
-d1:m d2:m
-g1 g2
-d1:m d2:m
-g1 g2
-d2:m~d8:m g2.~g8
-d2.:m  g2.
-c1 c2
-c1 c2
-c1 c2
-d1 d2
-es2 f2. fis4
-gis1 gis2
-f1:9 f2:9
-g1:7 g2:7
-g1: g2
+c1 c c d
+g1:7
+g2:7 c2
+g1:7
+bes2
+g1:7
+g2:7 c2
+f1
+d1:m
+g1
+d1:m
+g1
+d4:m \times 2/3 {d4:m g8} g2
+d2:m  g2
+c1 c c d
+es4 f2 fis4
+gis1
+f1:9
+g1:7
+g1:
 g1~g1~g2
 }
 RockText = \lyricmode{
@@ -1011,104 +975,102 @@ Just got -- ta get out just got -- ta get right out -- ta here
 }
 %%%%%%%%%%%Musik%%%%%%%%%%
 sopranRock = \relative c''{
-\tempo 4.= 132  
-\time 12/8
-R1.*4
-r4 f,8~f \f f~f f~f e~e e~e
-e~e d~d d~d d~d e~e e~e
-d4 (d8 d4.~d4.) r4.
-\time 6/8
-r4 r4 r4
-\time 12/8
-r4 f8~f f~f f~f e~e e~e
-e~e d~d d~d d~d e~e e~e
-f4 (g8 a4.~a4.) r4.
-e2(\glissando f1)
+\tempo 4 = 88
+\time 4/4
+r1 r1 r1 r1
+\times 2/3{r4 \f f,8~} \times 2/3{f8 f4} \times 2/3{f4 e8~} \times 2/3{e8 e4}   
+\times 2/3{e4 d8~} \times 2/3{d8 d4} \times 2/3{e4 e8~} \times 2/3{e8 e4} 
+d2. r4
 
-e4 (d8) d4.~d4. r4.
-r4 f8~f  f8~f  f8~f  f8~f  f8~f
-e4 (d8) d4.~d4. r4.
-f4 f8 f f g2 r4.
-f4 f8 f f~f g~g g~g g~g
-e4.~e4. r4. r4.
-R1.*8
+\time 2/4
+r4 r4
+\time 4/4
+\times 2/3{r4 f8~} \times 2/3{f8 f4} \times 2/3{f4 e8~} \times 2/3{e8 e4}   
+\times 2/3{e4 d8~} \times 2/3{d8 d4} \times 2/3{e4 e8~} \times 2/3{e8 e4}
+\times 2/3{f4 (g8} a4~a) r4
+e4~\times 2/3{e4 (f8~)} f2
+\times 2/3{e4 (d8)} d4~d r
+\times 2/3{r4 f8~} \times 2/3{f8 f4} \times 2/3{f4 f8~} \times 2/3{f8 f4} 
+\times 2/3{e4 (d8)} d4~d r
+\times 2/3{f4 f8} \times 2/3{f8 f g~} g4 r4
+\times 2/3{f4 f8} \times 2/3{f8 f4} \times 2/3{g4 g8~} \times 2/3{g8 g4}
+e2 r2
+r1 r1 r1 r1
+r1 r1 r1 r1
 \time 20/8
 r1 r1 r2
- \bar "|."
 }
 altRock = \relative c'{
-\time 12/8
-R1.*4
-r4 f8~f \f f~f f~f e~e e~e
-e~e d~d d~d d~d c~c c~c
-b4 (c8 d4.~d4.) r4.
-\time 6/8
-r4 r4 r4
-\time 12/8
-r4 f8~f f~f f~f e~e e~e
-e~e d~d d~d d~d c~c c~c
-f4 (g8 a4.~a4.) r4.
-c,1.
-
-b4 (b8) b4.~b4. r4.
-r4 d8~d  d8~d  d8~d  d8~d  d8~d
-e4 (d8) d4.~d4. r4.
-c4 c8 c c d2 r4.
-c4 c8 c c~c d~d c~c b~b
-c4.~c4. r4. r4.
-R1.*8
+\time 4/4
+r1 r1 r1 r1
+\times 2/3{r4 \f f8~} \times 2/3{f8 f4} \times 2/3{f4 e8~} \times 2/3{e8 e4}   
+\times 2/3{e4 d8~} \times 2/3{d8 d4} \times 2/3{d4 c8~} \times 2/3{c8 c4} 
+\times 2/3{b4 (c8} d2) r4
+\time 2/4
+r4 r4
+\time 4/4
+\times 2/3{r4 f8~} \times 2/3{f8 f4} \times 2/3{f4 e8~} \times 2/3{e8 e4}   
+\times 2/3{e4 d8~} \times 2/3{d8 d4} \times 2/3{d4 c8~} \times 2/3{c8 c4}
+\times 2/3{f4 (g8} a4~a) r4
+d,4~\times 2/3{d4 (c8~)} c2
+b4 b4~b r
+\times 2/3{r4 d8~} \times 2/3{d8 d4} \times 2/3{d4 d8~} \times 2/3{d8 d4} 
+\times 2/3{e4 (d8)} d4~d r
+\times 2/3{c4 c8} \times 2/3{c8 c d~} d4 r4
+\times 2/3{c4 c8} \times 2/3{c8 c4} \times 2/3{d4 c8~} \times 2/3{c8 b4}
+c2 r2
+r1 r1 r1 r1
+r1 r1 r1 r1
 \time 20/8
 r1 r1 r2
 }
 tenorRock = \relative c''{
-\time 12/8
-R1.*4
-r4 b8~b \f b~b b~b b~b b~b
-b~b b~b b~b d~d c~c c~c
-b4 (c8 d4.~d4.) r4.
-\time 6/8
-r4 r4 r4
-\time 12/8
-r4 b8~b b~b b~b b~b b~b
-b~b b~b b~b d~d c~c a~a
-c4 (c8 c4.~c4.) r4.
-a1. 
-
-g4 (g8) g4.~g4. r4.
-r4 a8~a  a8~a  a8~a  a8~a  a8~a
-g4 (g8) g4.~g4. r4.
-a4 a8 a a b2 r4.
-a4 a8 a a~a b~b g~g g~g
-g4.~g4. r4. r4.
-R1.*8
+\time 4/4
+r1 r1 r1 r1
+\times 2/3{r4 \f b8~} \times 2/3{b8 b4}  \times 2/3{b4 b8~}  \times 2/3{b8 b4}  
+\times 2/3{b4 b8~} \times 2/3{b8 b4} \times 2/3{d4 c8~}  \times 2/3{c8 c4}
+\times 2/3{b4 (c8} d2) r4
+\time 2/4
+r4 r4
+\time 4/4
+\times 2/3{r4 b8~} \times 2/3{b8 b4}  \times 2/3{b4 b8~}  \times 2/3{b8 b4}  
+\times 2/3{b4 b8~} \times 2/3{b8 b4} \times 2/3{d4 c8~}  \times 2/3{c8 a4}
+c2. r4
+a1
+g4 g4~g4 r
+\times 2/3{r4 a8~} \times 2/3{a8 a4} \times 2/3{a4 a8~} \times 2/3{a8 a4} 
+a4 a4~a r
+\times 2/3{a4 a8} \times 2/3{a8 a b~} b4 r4
+\times 2/3{a4 a8} \times 2/3{a8 a4} \times 2/3{b4 g8~} \times 2/3{g8 g4}
+g2 r2
+r1 r1 r1 r1 
+r1 r1 r1 r1
 \time 20/8
 r1 r1 r2
- \bar "|."
 }
 bassRock = \relative c'{
-\time 12/8
-R1.*4
-r4 g8~g \f g~g g~g g~g g~g
-g~g g~g g~g g~g g~g g~g
-g4 (g8 g4.~g4.) r4.
-\time 6/8
-r4 r4 r4
-\time 12/8
-r4 g8~g g~g g~g g~g g~g
-g~g g~g g~g g~g g~g g~g
-f4 (f8 f4.~f4.) r4.
-d1.
-
-g4 (g8) g4.~g4. r4.
-r4 d8~d  d8~d  d8~d  d8~d  d8~d
-g4 (g8) g4.~g4. r4.
-d4 d8 d d g2 r4.
-d4 d8 d d~d g~g g~g g~g
-c,4.~c4. r4. r4.
-R1.*8
+\time 4/4
+r1 r1 r1 r1
+\times 2/3{r4 \f g8~} \times 2/3{g8 g4}  \times 2/3{g4 g8~}  \times 2/3{g8 g4} 
+\times 2/3{g4 g8~} \times 2/3{g8 g4} \times 2/3{g4 g8~}  \times 2/3{g8 g4}
+g2. r4
+\time 2/4
+r4 r4 
+\time 4/4
+\times 2/3{r4 g8~} \times 2/3{g8 g4}  \times 2/3{g4 g8~}  \times 2/3{g8 g4} 
+\times 2/3{g4 g8~} \times 2/3{g8 g4} \times 2/3{g4 g8~}  \times 2/3{g8 g4}
+f2. r4
+d1
+g4 g4~g4 r
+\times 2/3{r4 d8~} \times 2/3{d8 d4} \times 2/3{d4 d8~} \times 2/3{d8 d4} 
+g4 g4~g r
+\times 2/3{d4 d8} \times 2/3{d8 d g~} g4 r4
+\times 2/3{d4 d8} \times 2/3{d8 d4} \times 2/3{g4 g8~} \times 2/3{g8 g4}
+c,2 r2
+r1 r1 r1 r1
+r1 r1 r1 r1
 \time 20/8
 r1 r1 r2
- \bar "|."
 }
 rhRock = \relative c'{
 \time 12/8
@@ -1234,6 +1196,7 @@ c1 r1 r1
 r1 r1
 r1
 r1
+ \bar "|."
 }
 altOutro = \relative c'{
 \key c \major  
@@ -1250,6 +1213,7 @@ c1 r1 r1
 r1 r1
 b8\ppp b a a gis4 d' \fermata
 r1
+ \bar "|."
 }
 tenorOutro = \relative c''{
 \key c \major  
@@ -1266,6 +1230,7 @@ c1 r1 r1
 r1 r1
 b8\ppp b a a gis4 d'\fermata
 r1
+ \bar "|."
 }
 bassOutro = \relative c'{
 \key c \major  
@@ -1282,6 +1247,7 @@ c1 r1 r1
 r1 r1
 b'8\ppp b a a gis4 d'\fermata
 r1
+ \bar "|."
 }
 
 rhOutro = \relative c'{ 
@@ -1439,11 +1405,7 @@ LeftHand = \relative c {
        \new Voice = "bass" { \voiceTwo \bassMusik }
      >>
      \new Lyrics \lyricsto "bass" \bassText
-<<<<<<< HEAD
-   \new PianoStaff  <<   \new Staff = "up" { \global \RightHand }  \new Staff = "down" { \global \LeftHand }  >>
-=======
   % \new PianoStaff  <<   \new Staff = "up" { \global \RightHand }  \new Staff = "down" { \global \LeftHand }  >>
->>>>>>> 5b5a504df0215ee5edd665e8399549bfa09b47dc
  >>
       
   \layout {
@@ -1453,5 +1415,5 @@ LeftHand = \relative c {
     %  \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
     }
   }
-  \midi {   \context {  \Score tempoWholesPerMinute = #(ly:make-moment 72 4) }  }
+  \midi {   \tempo 4 = 72  }
 }	
