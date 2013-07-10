@@ -124,6 +124,7 @@ But e -- ven in si -- lence I heard the words:
 An oath we shall swear by the name of the one 'till
 the world's end in -- side.
 The doom of the Nol -- dor drew near.
+The words of a ba -- nished king
 I swear re -- venge
 Filled with an -- ger a -- flamed our hearts.
 Full of hate full of pride
@@ -142,14 +143,26 @@ Full of hate full of pride
 Ah we screamed for re -- venge
 } 
 VerseThreeTenor = \lyricmode{
-Free -- ly you came and
-free -- ly shall de -- part.
+Vala he is that's what you said
+Then your oath's been sworn in vain.
 Ne -- ver trust the nor -- thern winds
 Ne -- ver turn your back on friends.
 Oh I'm heir of the high lord!
 The e -- ne -- my of mine
-isn't he of your kind and
+i -- sn't he of your kind and
 fi -- nal -- ly you may fol -- low me.
+ah __
+}
+VerseThreeSop = \lyricmode{
+Free -- ly you came and
+free -- ly shall de -- part.
+Ne -- ver trust the nor -- thern winds
+Ne -- ver turn your back on friends
+You bet -- ter don't trust him.
+The e -- ne -- my of mine
+i -- sn't he of your kind and
+fi -- nal -- ly you may fol -- low me
+ah __ Fare -- well he said.
 }
 
 VerseThree = \lyricmode{
@@ -157,11 +170,11 @@ Vala he is that's what you said
 Then your oath's been sworn in vain.
 Ne -- ver trust the nor -- thern winds
 Ne -- ver turn your back on friends
-Oh I'm heir of the high lord!
 You bet -- ter don't trust him.
 The e -- ne -- my of mine
-isn't he of your kind and
+i -- sn't he of your kind and
 fi -- nal -- ly you may fol -- low me
+ah __ Fare -- well he said.
 }
 
 VerseThreeBass = \lyricmode{
@@ -170,21 +183,33 @@ Then your oath's been sworn in vain
 Ne -- ver trust the nor -- thern winds
 Ne -- ver turn your back on friends.
 Oh I'm heir of the high lord!
-You bet -- ter don't trust him.
 The e -- ne -- my of mine
-isn't he of your kind and
+i -- sn't he of your kind and
 fi -- nal -- ly you may fol -- low me
+ah
 }
 
+SchlussF = \lyricmode{
+ah ah
+}
+SchlussM = \lyricmode{
+Back to where it all be -- gan.
+Back to where it all be -- gan.
+}
 
-
+SchlussAh = \lyricmode{
+ah ah ah ah
+}
 SopText = \lyricmode{
 \VerseOneSop
 \Refrain
 \VerseTwo
 \BridgeSop
 \Refrain
-\VerseThree
+\VerseThreeSop
+\Refrain
+\SchlussF
+\SchlussAh
 }
 
 AltText = \lyricmode{
@@ -194,6 +219,9 @@ AltText = \lyricmode{
 \BridgeAlt
 \Refrain
 \VerseThree
+\Refrain
+\SchlussF
+\SchlussAh
 }
 
 TenText = \lyricmode{
@@ -203,6 +231,9 @@ TenText = \lyricmode{
 \BridgeTenor
 \Refrain
 \VerseThreeTenor
+\Refrain
+\SchlussM
+\SchlussAh
 }
 
 BassText = \lyricmode{
@@ -212,6 +243,9 @@ BassText = \lyricmode{
 \BridgeBass
 \Refrain
 \VerseThreeBass
+\Refrain
+\SchlussM
+\SchlussAh
 }
 
 harmonies = \chordmode {
@@ -245,7 +279,6 @@ c4.:m g4.:m
 c4.:m d:1^3
 g2:m es4
 bes2. bes2. es
-
 %Vers
 g4.:m bes f2.
 g4.:m bes f2.
@@ -268,13 +301,9 @@ bes c4.:m d
 g2.:m es
 bes4. es4. 
 bes f
-%%%Solo
-f2. f2. f2. f2.
-f2. f2. f2. f2.
-f2. f2. f2. f2.
-f2. f2. f2. f2.
-f2. f2. f2. f2.
-f2. f2. f2. f2.
+g2.:m 
+%Solo
+R2.*23
 %%Strophe
 g2.:m g:m
 bes2. f
@@ -285,13 +314,41 @@ g2.:m
 bes4. f
 d g4.:m
 bes4. f
-c:m g:m
-
+%3/8
+c4.:m  
+%6/8
+g2.:m g:m
+f es4. f
+g2.:m bes f es4. f
+%Refrain
+g2.:m es
+bes c4.:m d
+g2.:m es
+bes c4.:m d
+g2.:m es
+bes4. es4. 
+bes f
+g2.:m
+%schluss
+g:m es
+g:m d:7
+es d
+es d
+g:m es g:m d:7
+es d es d g:m
 }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %16 r
 RSix = \relative c''{
-r2. r r r r r r r
-r2. r r r r r r r
+\compressFullBarRests
+R2.*16  
+}
+SoloR = \relative c''{
+\compressFullBarRests
+r2.*22
+}
+Ende = \relative c''{
+R2.*9
 }
 soloMusik = \relative c'{
 f4\p as8 c as f
@@ -320,6 +377,7 @@ es8 f es16 es es8 f s8
 
 
 sopMusik = \relative c''{
+\global
 s2.s2. s2. s2. s2. s2. s2.
 s2
 s8
@@ -372,11 +430,11 @@ g,4. s4.
 %solo
 s2. s2. s2. s2. s2. s2.
 s2 s8 g8
-d'8. d16 d8 d c bes
+d'8. d16 d8 d8. c16 bes8
 c4. r4 g8
-d'8. d16 d8 d c bes
+d'16 d8. d8 d c bes
 c16 a f4 r4 g8
-d'8. d16 d8 d c bes
+d'8. d16 d8 d8. c16 bes8
 c4.~c8 r8 c
 bes4 d8 d4 f8
 f4 c8 c8 r8 c8
@@ -414,19 +472,55 @@ bes4. r4 g8
 d'4 g8 g4 g8
 f8 r8 d8 c4 d8 
 g,4. r4.
-R2.*23
-g8 a bes bes a g
-g4. r8 g a
-bes4 d8 c4 bes8 
-a2.
+\SoloR
+s2.
+r2. 
+g8 \(a bes
+d4 g,8
+bes4 d8 c4 bes8 a2.\)
+
 r4. bes16 bes bes8 bes
 bes a g~g4 r8
 r4. bes16 bes bes8 bes
-c d c~c4 r8
+c d c r4.
+r2 r8 bes
+bes16 bes bes8 bes bes8 r8 g8
+f16 f f8 f f4 f16 f
+a8 a a bes8 r8 bes8
+bes4 bes8 c8. a16 a8
+\time 3/8
+c4 c8
+\time 6/8
+bes2.~ bes2.
+a2.
+(g4.) r4 c8
+d4 bes8 bes4.
+R2.*3
+%Refrain
+  \key g \minor
+d4.\!\ff (\(d8. c16 bes8)
+bes4. (bes8. a16 g8)\)
+bes8. c16 d8 d c bes
+c4 bes8 a4 r8
+d4. (\(d8. c16 bes8)
+bes4. (bes8. a16 g8)\)
+bes8. c16 d8 d c bes
+c4 bes8 a4 r8
+d4. (d8. c16 bes8)
+bes4. r4 g8
+d'4 g8 g4 g8
+f8 r8 d8 c4 d8 
+g,4. ~g4 r8
+d'2. (es)
+d (a2) r4
+bes4. (g) bes (a) 
+bes (g) es' (d)
+\Ende
 \bar"|."
 }
 
 altoMusik = \relative c'' {
+ \global
 s2. s s  s s s s
 s4. r4 c8
 c4\p bes8 as4 g8 
@@ -477,11 +571,11 @@ d4. s4.
 
 s2. s2. s2. s2. s2.
 s2. s2 s8 g8
-bes8.\f bes16 bes8 f f f
+bes8.\f bes16 bes8 f8. f16 f8
 a4. r4 g8
-bes8. bes16 bes8 f f f
+bes16 bes8. bes8 f f f
 f16 f f4 r4 g8
-bes8. bes16 bes8 f f f
+bes8. bes16 bes8 f8. f16 f8
 a4.~a8 r8 a
 g4 bes8 bes4 bes8
 a4 f8 f8 r8 e8
@@ -518,20 +612,51 @@ bes4. (bes8. a16 g8)
 g4. (bes8. a16) g8
 bes4 bes8 bes4 bes8
 bes8 r8 bes8 f4 f8 
-d4. s4.
-R2.*23
+d4. r4.
+\SoloR 
+R2.^\markup { \abs-fontsize #13 \bold 22 }
 %%Strophe
-bes8 c d d d d
+d8\mf d d d d d
 d4. r8 bes8 c
 d4 f8 f4 f8
 f2.
-
 r4. g16 g g8 g
 g g g~g4 r8
 r4. f16 f f8 f
-f f a~a4 r8
-
-
+f f a r4.
+r2 r8 d,
+d16 d d8 d d8 r8 bes8
+d16 d d8 d c4 a16 a
+d8 d d d8 r8 d8
+f4 f8 f8. f16 f8
+\time 3/8
+g4 g8
+\time 6/8
+g2.\> ~g2.
+f2.
+(g4.)  r4\! a8\mp
+bes4 f8 f4.
+R2.*3
+%Refrain
+ \key g \minor
+bes4. (bes8. a16 g8)
+g4. (g8. f16 es8)
+f8. f16 f8 f f f
+g4 g8 fis4 r8
+bes4. (bes8. a16 g8)
+g4. (g8. f16 es8)
+f8. f16 f8 f f f
+g4 g8 fis4 r8
+bes4. (bes8. a16 g8)
+g4. (bes8. a16) g8
+bes4 bes8 bes4 bes8
+bes8 r8 bes8 f4 f8 
+d4. ~d4 r8
+g2. (c)
+g (fis2) r4
+g2. g4. (fis)
+g2. g4. (fis)
+\Ende
 
 }
 
@@ -564,7 +689,6 @@ d8 (c4~c8) r8 c8
 \< d4. d d d
 r8 d8 d d d d
 c2.  
-
 %Refrain
  \key g \minor
 d4. \!\ff ~d4. 
@@ -584,11 +708,11 @@ bes8 r8 bes8 a4 a8
 bes4. s4.
 s2. s2. s2. s2. s2.
 s2. s2 s8 g8
-d'8.\f d16 d8 d d d
+d'8.\f d16 d8 d8. d16 d8
 c4. r4 g8
-d'8. d16 d8 d d d
+d'16 d8. d8 d d d
 c16 c c4 r4 g8
-d'8. d16 d8 d d d
+d'8. d16 d8 d8. d16 d8
 c4.~c8 r8 c
 bes4 bes8 bes4 d8
 c4 c8 c8 r8 c8 
@@ -597,14 +721,14 @@ c4 c8 c8 r8 c8
 c8 \mf c c c c4
 c8 c~c16 c16 c8 r8 c8
 c b a d c b
-e d c b b b
+e d c d c b
 c2. 
 c2 r8 c8
 c2~c8 r8
 r2 r8 a
 a bes c d c d  
-c4. r4.
-r2.
+c4. r4 f,8\f
+g8 g g a16 g16~g g16~g8
 c4. c4 c8
 d4. g,4 g8
 g g g a4 g8
@@ -628,18 +752,56 @@ es4. (g8. f16) es8
 d4 d8 es4 es8
 bes8 r8 bes8 a4 a8 
 bes4. r4.
-R2.*24
+\SoloR
+s2.
 %%Strophe
-g8 a bes
-d4 g,8
-bes4 d8 c4 bes8 a2.
+bes8 a g bes a g
+g4. r8 g a
+bes4 d8 c4 bes8 
+a2.
+
+
 
 r4. d16 d d8 d
 d c bes~bes4 r8
 r4. d16 d d8 d
-c c c~c4 r8
+c c c r8 g a
+bes8. bes16 bes8 bes f4
+r2 r8 g8
+bes16 bes bes8 bes a4 f16 f
+fis8 fis fis g8 r8 g8
+bes4 bes8 a8. c16 c8
+\time 3/8
+es4 es8
+\time 6/8
+d2.~d2.
+\appoggiatura d8
+c2. (\appoggiatura c8 bes4.) r4.
+R2.*4
+%Refrain
+ \key g \minor
+d4. \!\ff ~d4. 
+es4.~es4.
+d8. d16 d8 d d d
+es4 es8 d4 r8
 
-
+d4.~d4. 
+es4.~es4.
+d8. d16 d8 d d d
+es4 es8 d4 r8
+d4.~d4. 
+es4. (g8. f16) es8
+d4 d8 es4 es8
+bes8 r8 bes8 a4 a8 
+bes4.~bes4 r8
+%schluss
+g8 bes d~d r8 bes
+es c a~a r4
+g8 bes d~d r8 bes
+c a fis~fis r4
+es4. (g) bes (a)
+es4. (g) bes (a)
+\Ende
 }
 
 
@@ -692,11 +854,11 @@ g4. r4.
 
 R2.*6
 r2 r8 g8
-g8. g16 g8 bes bes bes
+g8. g16 g8 bes8. bes16 bes8
 f4. r4 g8
-g8. g16 g8 bes bes bes
+g16 g8. g8 bes bes bes
 f16 f f4 r4 g8
-g8. g16 g8 bes bes bes
+g8. g16 g8 bes8. bes16 bes8
 f4.~f8 r8 f
 g4 g8 g4 bes8
 c4 a8 a8 r8 a8
@@ -704,8 +866,8 @@ c4 a8 a8 r8 a8
 \key a \minor
 a8 a a a a4
 a8 a~a16 a16 a8 r8 a,8
-\(a8 b c d e g 
-a a a g g g\)
+\(a8 b c d a' g 
+a b c g g g\)
 f2.\( f2 r8 f
 f2~f8 r8\)
 r2 r8 f\mp
@@ -734,19 +896,54 @@ es4.~es4 es8
 bes'4 bes8 es,4 es8
 d8 r8 bes8 f'4 f8 
 g4. r4.
-R2.*23
-g8 g g g a bes
+\SoloR
+R2.^\markup { \abs-fontsize #13 \bold 22 }
+g8\mf a bes g a bes
 bes4.
 r8 g g
 bes4 bes8 bes4 bes8 
-f2.
+c2.
 
 r4. g16 g g8 g
 g g g~g4 r8
 r4. bes16 bes bes8 bes
-a a f~f4 r8
-}
+a a f r8 g g
+g,8. g16 g8 g bes4
+r2 r8 g
 
+bes16 bes bes8 bes f'4 f16 f
+d8 d d g,8 r8 g8
+d'4 d8 f8. f16 f8
+\time 3/8
+c'4 c8
+\time 6/8
+g2.\> ~g2.
+f2. (es4.) r4.\!
+R2.*4
+%Refrain
+ \key g \minor
+g4.~g4.  
+es4.~es4.
+bes'8. bes16 bes8 bes8 bes bes
+c4 c8   d4 r8
+g,4.~g4.  
+es4.~es4.
+bes'8. bes16 bes8 bes8 bes bes
+c4 c8   d4 r8
+g,4.~g4.  
+es4.~es4 es8
+bes'4 bes8 es,4 es8
+d8 r8 bes8 f'4 f8 
+g4.~g4 r8
+%schluss
+g8 bes d~d r8 bes
+es c a~a r4
+g8 bes d~d r8 bes
+c a fis~fis r4
+es2. c4. (d)
+es2. c4. (d)
+\Ende
+}
 
 
 
