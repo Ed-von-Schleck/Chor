@@ -183,7 +183,7 @@ sopMusic = \relative c' {
   e fis a r8 a
   a4 a a cis
   b2_\markup{ \italic rit.} a8 a4 fis8
-  e2.\fermata
+  a2.\fermata
   \bar "|."
 
 }
