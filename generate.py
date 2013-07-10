@@ -32,7 +32,7 @@ import io
 from collections import OrderedDict
 from xml.etree import ElementTree
 import time
-import rfc822
+import email.utils
 
 TAG_REGEX = re.compile(r"(title|subtitle|composer|arranger)\s?=\s?\"([^\"]+)\"")
 def main():
@@ -262,8 +262,8 @@ def main():
                       ("link", "http://ed-von-schleck.github.com/Chor/"),
                       ("description", "Songs vom Physikerchor an der Universität Karlsruhe"),
                       ("language", "de-de"),
-                      ("pubDate", rfc822.formatdate(time.time())),
-                      ("lastBuildDate", rfc822.formatdate(time.time())),
+                      ("pubDate", email.utils.formatdate(time.time())),
+                      ("lastBuildDate", email.utils.formatdate(time.time())),
                       ("generator", "Ed's Fine Made-From-Scratch NIH-Syndrome RSS Feed Generator")]:
       element = ElementTree.Element(tag)
       element.text = text
@@ -275,7 +275,7 @@ def main():
         item = ElementTree.Element("item")
         for tag, text in [("title", song["title"]),
                            ("category", category),
-                           ("pubDate", rfc822.formatdate(song["mtime"])),
+                           ("pubDate", email.utils.formatdate(song["mtime"])),
                            ("link", path + ".pdf"),
                            ("guid", path + ".pdf?mtime=" + str(song["mtime"]))]:
           element = ElementTree.Element(tag)
