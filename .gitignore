@@ -7,6 +7,6 @@
 !.gitignore
 !index.html
 !generate.py
-!update.sh
+!update*.sh
 !*.png
 !feed.rss
