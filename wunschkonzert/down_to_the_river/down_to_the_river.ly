@@ -339,7 +339,7 @@ tenorMusic = \relative c {
   % Strophe
   a4 a cis cis8 cis
   cis cis cis4 cis r
-  b8 b b b b4 cis
+  b8 b b a b4 cis
   cis d cis a
 
   a a cis r8 cis
@@ -361,7 +361,7 @@ tenorMusic = \relative c {
   % Strophe
   a4 a cis cis8 cis
   cis cis cis4 cis r
-  b8 b b b b4 cis
+  b8 b b a b4 cis
   cis d cis a
 
   a a cis r8 cis
@@ -398,7 +398,7 @@ tenorMusic = \relative c {
   % Strophe
   a4 a cis cis8 cis
   cis cis cis4 cis r
-  b8 b b b b4 cis
+  b8 b b a b4 cis
   cis d cis a
 
   a a cis r8 cis
