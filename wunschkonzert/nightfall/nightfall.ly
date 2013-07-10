@@ -636,7 +636,7 @@ g2.\> ~g2.
 f2.
 (g4.)  r4\! a8\mp
 bes4 f8 f4.
-R2.*2 R2.
+R2.*3
 %Refrain
  \key g \minor
 bes4. (bes8. a16 g8)
