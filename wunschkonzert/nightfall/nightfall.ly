@@ -143,7 +143,7 @@ Full of hate full of pride
 Ah we screamed for re -- venge
 } 
 VerseThreeTenor = \lyricmode{
-Vala he is that's what you said
+Va -- la he's that's what you said
 Then your oath's been sworn in vain.
 Ne -- ver trust the nor -- thern winds
 Ne -- ver turn your back on friends.
@@ -166,7 +166,7 @@ ah __ Fare -- well he said.
 }
 
 VerseThree = \lyricmode{
-Vala he is that's what you said
+Va -- la he's that's what you said
 Then your oath's been sworn in vain.
 Ne -- ver trust the nor -- thern winds
 Ne -- ver turn your back on friends
@@ -178,7 +178,7 @@ ah __ Fare -- well he said.
 }
 
 VerseThreeBass = \lyricmode{
-Vala he is that's what you said
+Va -- la he's that's what you said
 Then your oath's been sworn in vain
 Ne -- ver trust the nor -- thern winds
 Ne -- ver turn your back on friends.
@@ -277,7 +277,7 @@ g2.:m
 c4.:m g4.:m
 c4.:m g4.:m
 c4.:m d:1^3
-g2:m es4
+g2.:m
 bes2. bes2. es
 %Vers
 g4.:m bes f2.
@@ -364,12 +364,12 @@ s2. s2. s2. s2. s2. s2. s2. s2.
 s2. s2. s2. s2. s2. s2. s2. s2.
 s2. s2. s2. s2. s2. s2. s2. s2.
 s2. s2. s2. s2. s2. s2. s2. s2.
-s2. s2. s2. r2.
+s2. s2. s2. s2.
 g'16 bes a g f d g8 g, g' 
 es8 d c d4 g,8
 es'8 d c d4 g,8
 es'8 d c a4.
-d16 es d c bes g c8 es4
+d16 es d c bes a g8 c8 es8
 d16 es d c bes a d4 d16 d 
 d16 c c bes c bes c4 d16 c
 es8 f es16 es es8 f s8
@@ -404,35 +404,35 @@ bes8 bes bes bes es bes
 c2. r2.
 as8 as bes c bes as
  bes4.~bes4 r8
-g8 \f g g g a bes
-bes4. g4 g8
+g8 \mf g g g a bes
+bes4. g4 \breathe g8
 d'4.~d8 es d
 d8 (c4~c8) r8 a
 bes4. \< c d bes
 r8 bes bes bes c d
-c4 (bes8 c4 d8)
+c4 (bes8 c4 )r8
 %Refrain
   \key g \minor
 d4.\!\ff (\(d8. c16 bes8)
-bes4. (bes8. a16 g8)\)
+bes4. (bes8. a16 g8)
 bes8. c16 d8 d c bes
-c4 bes8 a4 r8
+c4 bes8 a4\) r8
 d4. (\(d8. c16 bes8)
-bes4. (bes8. a16 g8)\)
+bes4. (bes8. a16 g8)
 bes8. c16 d8 d c bes
-c4 bes8 a4 r8
-d4. (d8. c16 bes8)
+c4 bes8 a4\) r8
+d4. (\(d8. c16 bes8)
 bes4. r4 g8
 d'4 g8 g4 g8
 f8 r8 d8 c4 d8 
-g,4. s4.
+g,4.\) s4.
 
 %solo
 s2. s2. s2. s2. s2. s2.
 s2 s8 g8
 d'8. d16 d8 d8. c16 bes8
 c4. r4 g8
-d'16 d8. d8 d c bes
+d'8 d8. d16 d8 c bes
 c16 a f4 r4 g8
 d'8. d16 d8 d8. c16 bes8
 c4.~c8 r8 c
@@ -446,32 +446,32 @@ e8 e~e16 f  e8  r8 e8
 c d e d4 \)r8
  a8 a a a a a
  g g g g g g
- g2~g8 r8
+ g2~g4
  r2 r8 f8
 c' bes a bes a f
 f4. r4.
 r2.c'4. c4 c8
-c8 (b4) r4. 
+c16 (b8.) r8 r4. 
 r2.
 r4. a4 b8
-g4. c4 d8
-d4. d4 d8
+g4 r8 c4 d8
+d4 r8 d4 d8
 d8 d d c4 r8
 %Refrain
   \key g \minor
 d4.\!\ff (\(d8. c16 bes8)
-bes4. (bes8. a16 g8)\)
+bes4. (bes8. a16 g8)
 bes8. c16 d8 d c bes
-c4 bes8 a4 r8
+c4 bes8 a4\) r8
 d4. (\(d8. c16 bes8)
-bes4. (bes8. a16 g8)\)
+bes4. (bes8. a16 g8)
 bes8. c16 d8 d c bes
-c4 bes8 a4 r8
-d4. (d8. c16 bes8)
+c4 bes8 a4\) r8
+d4. (\(d8. c16 bes8)
 bes4. r4 g8
 d'4 g8 g4 g8
 f8 r8 d8 c4 d8 
-g,4. r4.
+g,4.\) r4.
 \SoloR
 s2.
 r2. 
@@ -480,14 +480,14 @@ d4 g,8
 bes4 d8 c4 bes8 a2.\)
 
 r4. bes16 bes bes8 bes
-bes a g~g4 r8
+bes a g~g4.
 r4. bes16 bes bes8 bes
 c d c r4.
 r2 r8 bes
 bes16 bes bes8 bes bes8 r8 g8
 f16 f f8 f f4 f16 f
 a8 a a bes8 r8 bes8
-bes4 bes8 c8. a16 a8
+bes4 bes8 c8 r8 a16 a
 \time 3/8
 c4 c8
 \time 6/8
@@ -499,22 +499,22 @@ R2.*3
 %Refrain
   \key g \minor
 d4.\!\ff (\(d8. c16 bes8)
-bes4. (bes8. a16 g8)\)
+bes4. (bes8. a16 g8)
 bes8. c16 d8 d c bes
-c4 bes8 a4 r8
+c4 bes8 a4\) r8
 d4. (\(d8. c16 bes8)
-bes4. (bes8. a16 g8)\)
+bes4. (bes8. a16 g8)
 bes8. c16 d8 d c bes
-c4 bes8 a4 r8
-d4. (d8. c16 bes8)
+c4 bes8 a4\) r8
+d4. (\(d8. c16 bes8)
 bes4. r4 g8
 d'4 g8 g4 g8
 f8 r8 d8 c4 d8 
-g,4. ~g4 r8
-d'2. (es)
-d (a2) r4
-bes4. (g) bes (a) 
-bes (g) es' (d)
+g,4.~g4\) r8
+d'2. (es2) r4
+d2. (a2) r4
+bes4.\( (g) bes (a)\) 
+bes\( (g) es' (d)\)
 \Ende
 \bar"|."
 }
@@ -547,7 +547,7 @@ f4.~f4 r8
 f8 f g as g f
 g4.~g4 r8
 d8 d d g g g 
-g4. g4 g8
+g4. g4 \breathe g8
 bes4.~bes8 bes8 bes
 bes (a4~a8) r8 a8
 g4. a bes g
@@ -573,7 +573,7 @@ s2. s2. s2. s2. s2.
 s2. s2 s8 g8
 bes8.\f bes16 bes8 f8. f16 f8
 a4. r4 g8
-bes16 bes8. bes8 f f f
+bes8 bes8. bes16 f8 f f
 f16 f f4 r4 g8
 bes8. bes16 bes8 f8. f16 f8
 a4.~a8 r8 a
@@ -587,16 +587,16 @@ e8 e~e16 f  e8 r8 e8
 c a c b a g\)
 a2.\(
 g2 r8 g8
-f4 f8 f f r8\)
+f4 f8 f f4\)
 r2 r8 f8\mp
 c' bes a bes a f
 f4. r4.
 r2.
 f4.\f e4 e8
-g4. r4. 
+g4 r8 r4. 
 r2. r4. f4\< f8
-e4. g4 g8 
-g4. g4 g8
+e4 r8 g4 g8 
+g4 r8 g4 g8
 bes8 bes bes f4 r8\!
 %Refrain
  \key g \minor
@@ -620,15 +620,15 @@ d8\mf d d d d d
 d4. r8 bes8 c
 d4 f8 f4 f8
 f2.
-r4. g16 g g8 g
-g g g~g4 r8
+r4. g16\f g g8 g
+g g g~g4.
 r4. f16 f f8 f
 f f a r4.
 r2 r8 d,
 d16 d d8 d d8 r8 bes8
 d16 d d8 d c4 a16 a
 d8 d d d8 r8 d8
-f4 f8 f8. f16 f8
+f4 f8 f8 r8 f16 f
 \time 3/8
 g4 g8
 \time 6/8
@@ -652,10 +652,10 @@ g4. (bes8. a16) g8
 bes4 bes8 bes4 bes8
 bes8 r8 bes8 f4 f8 
 d4. ~d4 r8
-g2. (c)
-g (fis2) r4
-g2. g4. (fis)
-g2. g4. (fis)
+g2.\p (c2) r4
+g2. (fis2) r4
+g2.\p\< g4. (fis)\!
+g2.\p\< g4. (fis)\!
 \Ende
 
 }
@@ -682,13 +682,13 @@ as4.~as4 r8
 c8 c c c c c 
 es4.~es4 r8
 
-bes8\f bes bes bes c d
-d4. bes4 d8
+bes8\mf bes bes bes c d
+d4. bes4\breathe d8
 f4.~f8 es d
 d8 (c4~c8) r8 c8
 \< d4. d d d
 r8 d8 d d d d
-c2.  
+c4.~c4 r8  
 %Refrain
  \key g \minor
 d4. \!\ff ~d4. 
@@ -710,7 +710,7 @@ s2. s2. s2. s2. s2.
 s2. s2 s8 g8
 d'8.\f d16 d8 d8. d16 d8
 c4. r4 g8
-d'16 d8. d8 d d d
+d'8 d8. d16 d8 d d
 c16 c c4 r4 g8
 d'8. d16 d8 d8. d16 d8
 c4.~c8 r8 c
@@ -724,17 +724,17 @@ c b a d c b
 e d c d c b
 c2. 
 c2 r8 c8
-c2~c8 r8
+c2~c4
 r2 r8 a
 a bes c d c d  
 c4. r4 f,8\f
 g8 g g a16 g16~g g16~g8
 c4. c4 c8
-d4. g,4 g8
+d4 r8 g,4 g8
 g g g a4 g8
 g4 r8 c4 d8
-c4. e4 d8
-d4. d4 e8
+c4 r8 e4 d8
+d4 r8 d4 e8
 f8 e d c4 r8
 %Refrain
  \key g \minor
@@ -763,14 +763,14 @@ a2.
 
 
 r4. d16 d d8 d
-d c bes~bes4 r8
+d c bes~bes4.
 r4. d16 d d8 d
 c c c r8 g a
 bes8. bes16 bes8 bes f4
 r2 r8 g8
 bes16 bes bes8 bes a4 f16 f
 fis8 fis fis g8 r8 g8
-bes4 bes8 a8. c16 c8
+bes4 bes8 a8 r8 c16 c
 \time 3/8
 es4 es8
 \time 6/8
@@ -828,35 +828,35 @@ f8 f f f f f
 es4.~es4 r8
 
 g8 g g g g g 
-g4. g4 bes8
+g4. g4\breathe bes8
 bes4.~bes8 bes bes
 f4.~f8 r8 f
 bes4. a g g
 r8 bes bes bes bes bes
-a4 (bes8 a4.)
+a4 (bes8 a4) r8
 
 
 %Refrain
  \key g \minor
-g4.~g4.  
+g4.~g4.\(  
 es4.~es4.
 bes'8. bes16 bes8 bes8 bes bes
-c4 c8   d4 r8
-g,4.~g4.  
+c4 c8 d4\) r8
+g,4.~g4.\(  
 es4.~es4.
 bes'8. bes16 bes8 bes8 bes bes
-c4 c8   d4 r8
-g,4.~g4.  
+c4 c8 d4\) r8
+g,4.~g4.\(  
 es4.~es4 es8
 bes'4 bes8 es,4 es8
 d8 r8 bes8 f'4 f8 
-g4. r4.
+g4.\) r4.
 
 R2.*6
 r2 r8 g8
 g8. g16 g8 bes8. bes16 bes8
 f4. r4 g8
-g16 g8. g8 bes bes bes
+g8 g8. g16 bes8 bes bes
 f16 f f4 r4 g8
 g8. g16 g8 bes8. bes16 bes8
 f4.~f8 r8 f
@@ -869,33 +869,33 @@ a8 a~a16 a16 a8 r8 a,8
 \(a8 b c d a' g 
 a b c g g g\)
 f2.\( f2 r8 f
-f2~f8 r8\)
+f2~f4\)
 r2 r8 f\mp
 f f f f f bes
 a4. r4 f8\f
 g8 g g a16 g16~g g16~g8
 f4.\f a4 a8
-g4. g4 g8
+g4 r8 g4 g8
 g g g a4 g8
 g4 r8 f4\< f8
-c4. c'4 b8 
-g4.g4 g8
+c4 r8 c'4 b8 
+g4 r8 g4 g8
 bes bes bes f4 r8\!
 %Refrain
  \key g \minor
-g4.~g4.  
+g4.~g4.\(  
 es4.~es4.
 bes'8. bes16 bes8 bes8 bes bes
-c4 c8   d4 r8
-g,4.~g4.  
+c4 c8 d4\) r8
+g,4.~g4.\(  
 es4.~es4.
 bes'8. bes16 bes8 bes8 bes bes
-c4 c8   d4 r8
-g,4.~g4.  
+c4 c8 d4\) r8
+g,4.~g4.\(  
 es4.~es4 es8
 bes'4 bes8 es,4 es8
 d8 r8 bes8 f'4 f8 
-g4. r4.
+g4.\) r4.
 \SoloR
 R2.^\markup { \abs-fontsize #13 \bold 22 }
 g8\mf a bes g a bes
@@ -904,16 +904,16 @@ r8 g g
 bes4 bes8 bes4 bes8 
 c2.
 
-r4. g16 g g8 g
-g g g~g4 r8
+r4. g16\f g g8 g
+g g g~g4.
 r4. bes16 bes bes8 bes
-a a f r8 g g
-g,8. g16 g8 g bes4
+a a f r8 g a
+bes8. bes16 bes8 bes f4
 r2 r8 g
 
-bes16 bes bes8 bes f'4 f16 f
-d8 d d g,8 r8 g8
-d'4 d8 f8. f16 f8
+bes,16 bes bes8 bes f'4 f16 f
+d8 d d g8 r8 g8
+d4 d8 f8 r8 f16 f
 \time 3/8
 c'4 c8
 \time 6/8
@@ -922,26 +922,26 @@ f2. (es4.) r4.\!
 R2.*4
 %Refrain
  \key g \minor
-g4.~g4.  
+g4.~g4.\(  
 es4.~es4.
 bes'8. bes16 bes8 bes8 bes bes
-c4 c8   d4 r8
-g,4.~g4.  
+c4 c8 d4\) r8
+g,4.~g4.\(  
 es4.~es4.
 bes'8. bes16 bes8 bes8 bes bes
-c4 c8   d4 r8
-g,4.~g4.  
+c4 c8 d4\) r8
+g,4.~g4.\(  
 es4.~es4 es8
 bes'4 bes8 es,4 es8
 d8 r8 bes8 f'4 f8 
-g4.~g4 r8
+g4.~g4\) r8
 %schluss
-g8 bes d~d r8 bes
+g8\p bes d~d r8 bes
 es c a~a r4
 g8 bes d~d r8 bes
 c a fis~fis r4
-es2. c4. (d)
-es2. c4. (d)
+es2.\(\p\< c4. (d)\)\!
+es2.\(\p\< c4. (d)\)\!
 \Ende
 }
 
