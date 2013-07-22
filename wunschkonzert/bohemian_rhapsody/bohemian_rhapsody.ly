@@ -1,4 +1,4 @@
-\version "2.16.0"
+\version "2.14.2"
 date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 \header {
   title = "Bohemian Rhapsody"
@@ -1165,18 +1165,24 @@ No -- thing real -- ly mat -- ters to me.
 }
 AltOutro = \lyricmode{
 uh __ uh yeah uh yeah
+A -- ny one can see. 
+No -- thing real -- ly mat -- ters
 No -- thing real -- ly mat -- ters to me.
 A -- ny way the wind blows
 }
 TenorOutro = \lyricmode{
 uh __ uh yeah uh yeah
 No -- thing real -- ly mat -- ters.
+A -- ny one can see. 
+No -- thing real -- ly mat -- ters
 No -- thing real -- ly mat -- ters to me.
 A -- ny way the wind blows
 }
 BassOutro = \lyricmode{
 uh __ uh yeah uh yeah
 No -- thing real -- ly mat -- ters.
+A -- ny one can see. 
+No -- thing real -- ly mat -- ters
 No -- thing real -- ly mat -- ters to me.
 A -- ny way the wind blows
 }
@@ -1203,10 +1209,9 @@ altOutro = \relative c'{
 \time 4/4   
 g'2\f (g a) b4 a
 b4 a r2
-r1 r1 
-r1
-r1
-r1
+r1 r1 r1
+e8 e e e e4 r4
+e8 e e e f f4.\fermata
 e8 \p\> d d c c a4 \fermata \!b8 \pp 
 c1 r1 r1
 \key d \major
@@ -1222,9 +1227,9 @@ e2\f (d c) e4 e
 e16 (f8.) e4 r2
 r1 r1
 a,8\mf b c e, g g~g r8
-r1
-r1
-f8\p\> f f f f f4 \fermata \! g8 \pp
+c8 c c c b4 r4
+c8 c c c c c4.\fermata
+c8\p\> b b a a a4 \fermata \! g8 \pp
 c1 r1 r1
 \key d \major
 r1 r1
@@ -1239,10 +1244,10 @@ c2\f (b a) gis4 a
 gis4 a r2  
 r1 r1
 a8\mf b c e, g g~g r8
-r1
-r1
-g,8 \p\> g g g g g4 \fermata \! g8 \pp
-c1 r1 r1
+a8 a a a e4 r4
+a8 a a a f f4.\fermata
+g8 \p\> g g g g g4 \fermata \! g8 \pp
+c,1 r1 r1
 \key d \major
 r1 r1
 b'8\ppp b a a gis4 d'\fermata
@@ -1415,5 +1420,5 @@ LeftHand = \relative c {
     %  \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
     }
   }
-  \midi {   \tempo 4 = 72  }
+%  \midi {   \tempo 4 = 72  }
 }	
