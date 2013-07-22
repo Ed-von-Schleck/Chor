@@ -11,7 +11,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
   arranger = "Arrangement: Andreas Fiebig"
 }
 global = {
-  \key as \minor
+  \key f \minor
   \time 6/8
   \tempo 4.= 60
 }
@@ -250,96 +250,101 @@ BassText = \lyricmode{
 
 harmonies = \chordmode {
 \germanChords 
-as2.:m g:m5-
-as2.:m g:m5-
-fes es
-fes es
+f2.:m e:m5-
+f2.:m e:m5-
+des c
+des c
 %Verse
-as:m  fes as:m es
-fes es fes es
-as:m fes as:m ges
-as:m fes as:m ges as:m
+f:m  des f:m c
+des c des c
+f:m des f:m es
+f:m des f:m es f:m
 %%Like
-fes as:m ges
-as:m fes as:m ges
-bes:m bes:m des as8:sus4 as4~as4.
-bes2.:m bes:m des as
+des f:m es
+f:m des f:m es
+g:m g:m bes f8:sus4 f4~f4.
+g2.:m g:m bes f
 %%Refrain
-bes:m ges
-des es4.:m f
-bes2.:m ges
-des es4.:m f
-bes2.:m ges
-des4. ges4. 
-des as
+g:m es
+bes c4.:m d
+g2.:m es
+bes c4.:m d
+g2.:m es
+bes4. es4. 
+bes f
 %Solo
-bes2.:m 
-es4.:m bes4.:m
-es4.:m bes4.:m
-es4.:m f:1^3
-bes2.:m
-des2. des2. ges
+g2.:m 
+c4.:m g4.:m
+c4.:m g4.:m
+c4.:m d:1^3
+g2.:m
+bes2. bes2. es
 %Vers
-bes4.:m des as2.
-bes4.:m des as2.
-bes4.:m des as2.
-bes2:m~bes8:m des8
-as2.
+g4.:m bes f2.
+g4.:m bes f2.
+g4.:m bes f2.
+g2:m~g8:m bes8
+f2.
 %Bridge
-c2.:m c2.:m  c2.:m  c4.:m bes4. 
-as2. as2.:2 as2.:2 as2.:2 as2.
-as2.
-bes2.
-as4. c4.:m
-bes2.bes2.
-bes4. as es2. bes des4. as4.
+a2.:m a2.:m  a2.:m  a4.:m g4. 
+f2. f2.:2 f2.:2 f2.:2 f2.
+f2.
+g2.
+f4. a4.:m
+g2.g2.
+g4. f c2. g bes4. f4.
 %%Refrain
-bes2.:m ges
-des es4.:m f
-bes2.:m ges
-des es4.:m f
-bes2.:m ges
-des4. ges4. 
-des as
-bes2.:m 
+g2.:m es
+bes c4.:m d
+g2.:m es
+bes c4.:m d
+g2.:m es
+bes4. es4. 
+bes f
+g2.:m 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%Solo
-f bes:m f
-des4. ges des as
-des ges des as
+d g:m d
+bes4. es bes f bes es bes f
+g4. d f4. c g d f4. g
+g4.:m c4.:m d d g4.:m c4.:m d d
 
-R2.*13
+g4.:m c4.:m d:m g:m
+f bes c d
+g4.:m c4.:m  f d:m
+g4.:m c4.:m  f d:m
+
 %%Strophe
-bes2.:m bes:m
-des2. as
-bes:m bes:m
-des as
-bes4.:m des
-bes2.:m
-des4. as
-f bes4.:m
-des4. as
+g2.:m g:m
+bes2. f
+g:m g:m
+bes f
+g4.:m bes
+g2.:m
+bes4. f
+d g4.:m
+bes4. f
 %3/8
-es4.:m  
+c4.:m  
 %6/8
-bes2.:m bes:m
-as ges4. as
-bes2.:m des as ges4. as
+g2.:m g:m
+f es4. f
+g2.:m bes f es4. f
 %Refrain
-bes2.:m ges
-des es4.:m f
-bes2.:m ges
-des es4.:m f
-bes2.:m ges
-des4. ges4. 
-des as
-bes2.:m
+g2.:m es
+bes c4.:m d
+g2.:m es
+bes c4.:m d
+g2.:m es
+bes4. es4. 
+bes f
+g2.:m
 %schluss
-bes:m ges
-bes:m f:7
-ges f
-ges f
-bes:m ges bes:m f:7
-ges f ges f bes:m
+g:m es
+g:m d:7
+es d
+es d
+g:m es g:m d:7
+es d es d g:m
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 StrophenPausen = \relative c''{
@@ -366,40 +371,60 @@ r2.*22
 Ende = \relative c''{
 R2.*9
 }
-soloMusik = \relative c''{
-as4\p ces8 es ces as
-fes' des  bes~bes des fes
-as,4 ces8 es ces as
-des bes g~g4.
-fes'4 es8 des4 ces8 
-bes4.~bes4 r8
-as'4 ges8 fes4 ges8 
-es4.~es4 s8
+soloMusik = \relative c'{
+f4\p as8 c as f
+des' bes  g~g bes des
+f,4 as8 c as f
+bes g e~e4.
+des'4 c8 bes4 as8 
+g4.~g4 r8
+f'4 es8 des4 es8 
+c4.~c4 s8
 s2. s2. s2. s2. s2. s2. s2. s2.
 s2. s2. s2. s2. s2. s2. s2. s2.
 s2. s2. s2. s2. s2. s2. s2. s2.
 s2. s2. s2. s2. s2. s2. s2. s2.
 s2. s2. s2. s2. s2. s2. s2. s2.
 s2. s2. s2. s2.
-bes'16 des c bes as f bes8 bes, bes' 
-ges8 f es f4 bes,8
-ges'8 f es f4 bes,8
-ges'8 f es c4.
-f16 ges f es des c bes8 es8 ges8
-f16 ges f es des c f4 f16 f 
-f16 es es des es des es4 f16 es
-ges8 as ges16 ges ges8 as s8
+g'16 bes a g f d g8 g, g' 
+es8 d c d4 g,8
+es'8 d c d4 g,8
+es'8 d c a4.
+d16 es d c bes a g8 c8 es8
+d16 es d c bes a d4 d16 d 
+d16 c c bes c bes c4 d16 c
+es8 f es16 es es8 d s8
 \StrophenPausen
-bes,8 f' f ges f f
-des16 f es8 des
-c16 es des8 c
-bes8 f' f ges f f
-des16 f es8 des
-c16 es des8 c
-des8  f f ges as ges
-f des f es c as
-des8  f f ges as ges
-f des f es c as
+g,8 d' d es d d
+bes16 d c8 bes
+a16 c bes8 a
+g8 d' d es d d
+bes16 d c8 bes
+a16 c bes8 a
+bes8  d d es f es
+d bes d c a f
+bes8  d d es f es
+d bes d c a f
+ \break
+g d' e d4 b8 
+c8. d16 c b c8 b g
+g d' e d4 b8 
+c8.  d16 c b g4.
+g8. g'16 f8 es d c
+d4 es8 d8  bes8 g8
+g8. g'16 f8 es d c
+d16  g f es d c d4.
+g16 f es d c bes c d es f es d
+d c bes a g f g a bes c bes a
+
+bes8 a16 bes c d es8 d c
+d16 c bes c d es d4.
+d,8 d'16 c d8 bes8 a g
+c,8 c'16 bes c8 a8 g f
+d8 d'16 c d8 bes8 a g
+c,8 c'16 bes c8 a8 g f
+
+
 
 }
 
@@ -409,140 +434,144 @@ sopMusik = \relative c''{
 s2.s2. s2. s2. s2. s2. s2.
 s2
 s8
-es8
-es4 des8 ces4 bes8 
-ces4. as4 es8
-as4 as8 as4 ces8
-bes4. r4.
-as4 as8 as4 as8
-g8 g as bes4.
-r4 as8 as bes as 
+c8
+c4 bes8 as4 g8 
+as4. f4 c8
+f4 f8 f4 as8
 g4. r4.
-as8.\mp \< as16 as8 as bes ces
-ces2.
-r8 es,8 es es as ces
-des8. des16 des8 des ces bes
-es8. es16 es8 es des ces
-ces4.\! \f \> r4 as8 
-ces8 ces ces ces bes as
-ges4 as8 bes4 ges8 
-as4.\! \mf r4.
+f4 f8 f4 f8
+e8 e f g4.
+r4 f8 f g f 
+e4. r4.
+f8. \< f16 f8 f g as
+as2.
+r8 c,8 c c f as
+bes8. bes16 bes8 bes as g
+c8. c16 c8 c bes as
+as4.\! \f \> r4 f8 
+as8 as as as g f
+es4 f8 g4 es8 
+f4.\! \mf r4.
 r2. r2.
-des8 des des des ges des
-es2. r2.
-ces8 ces des es des ces
- des4.~des4 r8
-bes8 \mf bes bes bes c des
-des4. bes4 \breathe bes8
-f'4.~f8 ges f
-f8 (es4~es8) r8 c
-des4. \< es f des
-r8 des des des es f
-es4 (des8 es4 )r8
+bes8 bes bes bes es bes
+c2. r2.
+as8 as bes c bes as
+ bes4.~bes4 r8
+g8 \mf g g g a bes
+bes4. g4 \breathe g8
+d'4.~d8 es d
+d8 (c4~c8) r8 a
+bes4. \< c d bes
+r8 bes bes bes c d
+c4 (bes8 c4 )r8
 %Refrain
-  \key bes \minor
-f4.\!\ff (\(f8. es16 des8)
-des4. (des8. c16 bes8)
-des8. es16 f8 f es des
-es4 des8 c4\) r8
-f4. (\(f8. es16 des8)
-des4. (des8. c16 bes8)
-des8. es16 f8 f es des
-es4 des8 c4\) r8
-f4. (\(f8. es16 des8)
-des4. r4 bes8
-f'4 bes8 bes4 bes8
-as8 r8 f8 es4 f8 
-bes,4.\) s4.
+  \key g \minor
+d4.\!\ff (\(d8. c16 bes8)
+bes4. (bes8. a16 g8)
+bes8. c16 d8 d c bes
+c4 bes8 a4\) r8
+d4. (\(d8. c16 bes8)
+bes4. (bes8. a16 g8)
+bes8. c16 d8 d c bes
+c4 bes8 a4\) r8
+d4. (\(d8. c16 bes8)
+bes4. r4 g8
+d'4 g8 g4 g8
+f8 r8 d8 c4 d8 
+g,4.\) s4.
 
 %solo
 s2. s2. s2. s2. s2. s2.
-s2 s8 bes8
-f'8. f16 f8 f8. es16 des8
-es4. r4 bes8
-f'8 f8. f16 f8 es des
-es16 c as4 r4 bes8
-f'8. f16 f8 f8. es16 des8
-es4.~es8 r8 es
-des4 f8 f4 as8
-as4 es8 es8 r8 es8
+s2 s8 g8
+d'8. d16 d8 d8. c16 bes8
+c4. r4 g8
+d'8 d8. d16 d8 c bes
+c16 a f4 r4 g8
+d'8. d16 d8 d8. c16 bes8
+c4. r4 c8
+bes4 d8 d4 f8
+f4 c8 c8 r8 c8
  %Bridge
-\key c \minor
- c8\mf c c bes bes4
-g8 g~g16 as  g8  r8 g8
-\(g' f es d c d 
-es f g f4 \)r8
- c8 c c c c c
- bes bes bes bes bes bes
- bes2~bes4
- r2 r8 as8
-es' des c des c as
-as4. r4.
-r2.es'4. es4 es8
-es16 (d8.) r8 r4. 
+\key a \minor
+ a8\mf a a g g4
+e8 e~e16 f  e8  r8 e8
+\(e' d c b a b 
+c d e d4 \)r8
+ a8 a a a a a
+ g g g g g g
+ g2~g4
+ r2 r8 f8
+c' bes a bes a f
+f4. r4.
+r2.c'4. c4 c8
+c16 (b8.) r8 r4. 
 r2.
-r4. c4 d8
-bes4 r8 es4 f8
-f4 r8 f4 f8
-f8 f f es4 r8
+r4. a4 b8
+g4 r8 c4 d8
+d4 r8 d4 d8
+d8 d d c4 r8
 %Refrain
-  \key bes \minor
-f4.\!\ff (\(f8. es16 des8)
-des4. (des8. c16 bes8)
-des8. es16 f8 f es des
-es4 des8 c4\) r8
-f4. (\(f8. es16 des8)
-des4. (des8. c16 bes8)
-des8. es16 f8 f es des
-es4 des8 c4\) r8
-f4. (\(f8. es16 des8)
-des4. r4 bes8
-f'4 bes8 bes4 bes8
-as8 r8 f8 es4 f8 
-bes,4.\) r4.
-\SoloR
-s2.
+  \key g \minor
+d4.\!\ff (\(d8. c16 bes8)
+bes4. (bes8. a16 g8)
+bes8. c16 d8 d c bes
+c4 bes8 a4\) r8
+d4. (\(d8. c16 bes8)
+bes4. (bes8. a16 g8)
+bes8. c16 d8 d c bes
+c4 bes8 a4\) r8
+d4. (\(d8. c16 bes8)
+bes4. r4 g8
+d'4 g8 g4 g8
+f8 r8 d8 c4 d8 
+g,4.\) r4.
+r2.*10
+\break
+r2.*9
+\break
+r2.*4
+%\SoloR
 r2. 
-bes8 \(c des
-f4 bes,8
-des4 f8 es4 des8 c2.\)
+g8 \(a bes
+d4 g,8
+bes4 d8 c4 bes8 a2.\)
 
-r4. des16 des des8 des
-des c bes~bes4.
-r4. des16 des des8 des
-es f es r4.
-r2 r8 des
-des16 des des8 des des8 r8 bes8
-as16 as as8 as as4 as16 as
-c8 c c des8 r8 des8
-des4 des8 es8 r8 c16 c
+r4. bes16 bes bes8 bes
+bes a g~g4.
+r4. bes16 bes bes8 bes
+c d c r4.
+r2 r8 bes
+bes16 bes bes8 bes bes8 r8 g8
+f16 f f8 f f4 f16 f
+a8 a a bes8 r8 bes8
+bes4 bes8 c4 \breathe a16 a
 \time 3/8
-es4 es8
+c4 c8
 \time 6/8
-des2.~ des2.
-c2.
-(bes4.) r4 es8
-f4 des8 des4.
+bes2.~ bes2.
+a2.
+(g4.) r4 c8
+d4 bes8 bes4.
 R2.*3
 %Refrain
-  \key bes \minor
-f4.\!\ff (\(f8. es16 des8)
-des4. (des8. c16 bes8)
-des8. es16 f8 f es des
-es4 des8 c4\) r8
-f4. (\(f8. es16 des8)
-des4. (des8. c16 bes8)
-des8. es16 f8 f es des
-es4 des8 c4\) r8
-f4. (\(f8. es16 des8)
-des4. r4 bes8
-f'4 bes8 bes4 bes8
-as8 r8 f8 es4 f8 
-bes,4.~bes4\) r8
-f'2. (ges2) r4
-f2. (c2) r4
-des4.\( (bes) des (c)\) 
-des\( (bes) ges' (f)\)
+  \key g \minor
+d4.\!\ff (\(d8. c16 bes8)
+bes4. (bes8. a16 g8)
+bes8. c16 d8 d c bes
+c4 bes8 a4\) r8
+d4. (\(d8. c16 bes8)
+bes4. (bes8. a16 g8)
+bes8. c16 d8 d c bes
+c4 bes8 a4\) r8
+d4. (\(d8. c16 bes8)
+bes4. r4 g8
+d'4 g8 g4 g8
+f8 r8 d8 c4 d8 
+g,4.~g4\) r8
+d'2. (es2) r4
+d2. (a2) r4
+bes4.\( (g) bes (a)\) 
+bes\( (g) es' (d)\)
 \Ende
 \bar"|."
 }
@@ -550,140 +579,144 @@ des\( (bes) ges' (f)\)
 altoMusik = \relative c'' {
  \global
 s2. s s  s s s s
-s4. r4 es8
-es4\p des8 ces4 bes8 
-ces4. as4 es8
-es4 es8 es4 as8
-g4. r4.
-fes4 fes8 fes4 fes8
-es8 es es es4.
-r4 fes8 fes des des 
-es4. r4.
-es8. es16 es8 es es es
-as8 r8 ces ces bes as
-as2. (bes)
-ces8. ces16 ces8 ces bes as
-as4. r4 as8 
-es8 es es es es es
-ges4 ges8 ges4 ges8
-es4. r4.
-r2.
-as8 as as as as es
-ges4.~ges4 r8
-as8 as bes ces bes as
-as4.~as4 r8
-as8 as bes ces bes as
-bes4.~bes4 r8
-f8 f f bes bes bes 
-bes4. bes4 \breathe bes8
-des4.~des8 des8 des
-des (c4~c8) r8 c8
-bes4. c des bes
-r8 as as as as as 
-as2.
-%Refrain
- \key bes \minor
-des4. (des8. c16 bes8)
-bes4. (bes8. as16 ges8)
-as8. as16 as8 as as as
-bes4 bes8 a4 r8
-des4. (des8. c16 bes8)
-bes4. (bes8. as16 ges8)
-as8. as16 as8 as as as
-bes4 bes8 a4 r8
-des4. (des8. c16 bes8)
-bes4. (des8. c16) bes8
+s4. r4 c8
+c4\p bes8 as4 g8 
+as4. f4 c8
+c4 c8 c4 f8
+e4. r4.
 des4 des8 des4 des8
-des8 r8 des8 as4 as8 
-f4. s4.
+c8 c c c4.
+r4 des8 des bes bes 
+c4. r4.
+c8. c16 c8 c c c
+f8 r8 as as g f
+f2. (g4.~g4) r8
+as8. as16 as8 as g f
+f4. r4 f8 
+c8 c c c c c
+es4 es8 es4 es8
+c4. r4.
+r2.
+f8 f f f f c
+es4.~es4 r8
+f8 f g as g f
+f4.~f4 r8
+f8 f g as g f
+g4.~g4 r8
+d8 d d g g g 
+g4. g4 \breathe g8
+bes4.~bes8 bes8 bes
+bes (a4~a8) r8 a8
+g4. a bes g
+r8 f f f f f 
+f4.~f4 r8
+%Refrain
+ \key g \minor
+bes4. (bes8. a16 g8)
+g4. (g8. f16 es8)
+f8. f16 f8 f f f
+g4 g8 fis4 r8
+bes4. (bes8. a16 g8)
+g4. (g8. f16 es8)
+f8. f16 f8 f f f
+g4 g8 fis4 r8
+bes4. (bes8. a16 g8)
+g4. (bes8. a16) g8
+bes4 bes8 bes4 bes8
+bes8 r8 bes8 f4 f8 
+d4. s4.
 
 s2. s2. s2. s2. s2.
-s2. s2 s8 bes8
-des8.\f des16 des8 as8. as16 as8
-c4. r4 bes8
-des8 des8. des16 as8 as as
-as16 as as4 r4 bes8
-des8. des16 des8 as8. as16 as8
-c4.~c8 r8 c
-bes4 des8 des4 des8
-c4 as8 as8 r8 g8
+s2. s2 s8 g8
+bes8.\f bes16 bes8 f8. f16 f8
+a4. r4 g8
+bes8 bes8. bes16 f8 f f
+f16 f f4 r4 g8
+bes8. bes16 bes8 f8. f16 f8
+a4. r4 a8
+g4 bes8 bes4 bes8
+a4 f8 f8 r8 e8
 %Bridge
-\key c \minor
-c8 c c bes bes4
-g8 g~g16 as  g8 r8 g8
-\(c g c d g, d' 
-es c es d c bes\)
-c2.\(
-bes2 r8 bes8
-as4 as8 as as4\)
-r2 r8 as8\mp
-es' des c des c as
-as4. r4.
-r2.
-as4.\f g4 g8
-bes4 r8 r4. 
-r2. r4. as4\< as8
-g4 r8 bes4 bes8 
-bes4 r8 bes4 bes8
-des8 des des as4 r8\!
-%Refrain
- \key bes \minor
-des4. (des8. c16 bes8)
-bes4. (bes8. as16 ges8)
-as8. as16 as8 as as as
-bes4 bes8 a4 r8
-des4. (des8. c16 bes8)
-bes4. (bes8. as16 ges8)
-as8. as16 as8 as as as
-bes4 bes8 a4 r8
-des4. (des8. c16 bes8)
-bes4. (des8. c16) bes8
-des4 des8 des4 des8
-des8 r8 des8 as4 as8 
+\key a \minor
+a8 a a g g4
+e8 e~e16 f  e8 r8 e8
+\(a e a b e, b' 
+c a c b a g\)
+a2.\(
+g2 r8 g8
+f4 f8 f f4\)
+r2 r8 f8\mp
+c' bes a bes a f
 f4. r4.
-\SoloR 
-R2.^\markup { \abs-fontsize #13 \bold 22 }
+r2.
+f4.\f e4 e8
+g4 r8 r4. 
+r2. r4. f4\< f8
+e4 r8 g4 g8 
+g4 r8 g4 g8
+bes8 bes bes f4 r8\!
+%Refrain
+ \key g \minor
+bes4. (bes8. a16 g8)
+g4. (g8. f16 es8)
+f8. f16 f8 f f f
+g4 g8 fis4 r8
+bes4. (bes8. a16 g8)
+g4. (g8. f16 es8)
+f8. f16 f8 f f f
+g4 g8 fis4 r8
+bes4. (bes8. a16 g8)
+g4. (bes8. a16) g8
+bes4 bes8 bes4 bes8
+bes8 r8 bes8 f4 f8 
+d4. r4.
+r2.*10
+\break
+r2.*9
+\break
+r2.*4
+%\SoloR 
 %%Strophe
-f8\mf f f f f f
-f4. r8 des8 es
-f4 as8 as4 as8
-as2.
-r4. bes16\f bes bes8 bes
-bes bes bes~bes4.
-r4. as16 as as8 as
-as as c r4.
-r2 r8 f,
-f16 f f8 f f8 r8 des8
-f16 f f8 f es4 c16 c
-f8 f f f8 r8 f8
-as4 as8 as8 r8 as16 as
+d8\mf d d d d d
+d4. r8 bes8 c
+d4 f8 f4 f8
+f2.
+r4. g16\f g g8 g
+g g g~g4.
+r4. f16 f f8 f
+f f a r4.
+r2 r8 d,
+d16 d d8 d d8 r8 bes8
+d16 d d8 d c4 a16 a
+d8 d d d8 r8 d8
+f4 f8 f4\breathe f16 f
 \time 3/8
-bes4 bes8
+g4 g8
 \time 6/8
-bes2.\> ~bes2.
-as2.
-(bes4.)  r4\! c8\mp
-des4 as8 as4.
+g2.\> ~g2.
+f2.
+(g4.)  r4\! a8\mp
+bes4 f8 f4.
 R2.*3
 %Refrain
- \key bes \minor
-des4. (des8. c16 bes8)
-bes4. (bes8. as16 ges8)
-as8. as16 as8 as as as
-bes4 bes8 a4 r8
-des4. (des8. c16 bes8)
-bes4. (bes8. as16 ges8)
-as8. as16 as8 as as as
-bes4 bes8 a4 r8
-des4. (des8. c16 bes8)
-bes4. (des8. c16) bes8
-des4 des8 des4 des8
-des8 r8 des8 as4 as8 
-f4. ~f4 r8
-bes2.\p (es2) r4
-bes2. (a2) r4
-bes2.\p\< bes4. (a)\!
-bes2.\p\< bes4. (a)\!
+ \key g \minor
+bes4. (bes8. a16 g8)
+g4. (g8. f16 es8)
+f8. f16 f8 f f f
+g4 g8 fis4 r8
+bes4. (bes8. a16 g8)
+g4. (g8. f16 es8)
+f8. f16 f8 f f f
+g4 g8 fis4 r8
+bes4. (bes8. a16 g8)
+g4. (bes8. a16) g8
+bes4 bes8 bes4 bes8
+bes8 r8 bes8 f4 f8 
+d4. ~d4 r8
+g2.\p (c2) r4
+g2. (fis2) r4
+g2.\p\< g4. (fis)\!
+g2.\p\< g4. (fis)\!
 \Ende
 
 }
@@ -691,285 +724,292 @@ bes2.\p\< bes4. (a)\!
 
 tenorMusik = \relative c' {
 \RSix
-ces8. \mp \<  ces16 ces8 ces des es
-fes2.
-r8 es8 es es es es
-ges8. ges16 ges8 ges ges ges
+as8. \<  as16 as8 as bes c
+des2.
+r8 c8 c c c c
 es8. es16 es8 es es es
-fes4.\! \f \> r4 fes8 
-ces8 ces ces ces ces ces
-des4.  r4 bes8
+c8. c16 c8 c c c
+des4.\! \f \> r4 des8 
+as8 as as as as as
+bes4.  r4 g8
 
-es8.\! \mf es16 es8 es des es
-fes4 r8 fes8 es des
-des es des ces des ces
-bes4.~bes4 r8
+c8.\! \mf c16 c8 c bes c
+des4 r8 des8 c bes
+bes c bes as bes as
+g4.~g4 r8
 
-ces8 ces des es des ces
-ces4.~ces4 r8 
-es8 es es es es es 
-ges4.~ges4 r8
+as8 as bes c bes as
+as4.~as4 r8 
+c8 c c c c c 
+es4.~es4 r8
 
-des8\mf des des des es f
-f4. des4\breathe f8
-as4.~as8 ges f
-f8 (es4~es8) r8 es8
-\< f4. f f f
-r8 f8 f f f f
-es4.~es4 r8  
+bes8\mf bes bes bes c d
+d4. bes4\breathe d8
+f4.~f8 es d
+d8 (c4~c8) r8 c8
+\< d4. d d d
+r8 d8 d d d d
+c4.~c4 r8  
 %Refrain
- \key bes \minor
-f4. \!\ff ~f4. 
-ges4.~ges4.
-f8. f16 f8 f f f
-ges4 ges8 f4 r8
+ \key g \minor
+d4. \!\ff ~d4. 
+es4.~es4.
+d8. d16 d8 d d d
+es4 es8 d4 r8
 
-f4.~f4. 
-ges4.~ges4.
-f8. f16 f8 f f f
-ges4 ges8 f4 r8
+d4.~d4. 
+es4.~es4.
+d8. d16 d8 d d d
+es4 es8 d4 r8
 
-f4.~f4. 
-ges4. (bes8. as16) ges8
-f4 f8 ges4 ges8
-des8 r8 des8 c4 c8 
-des4. s4.
+d4.~d4. 
+es4. (g8. f16) es8
+d4 d8 es4 es8
+bes8 r8 bes8 a4 a8 
+bes4. s4.
 s2. s2. s2. s2. s2.
-s2. s2 s8 bes8
-f'8.\f f16 f8 f8. f16 f8
-es4. r4 bes8
-f'8 f8. f16 f8 f f
-es16 es es4 r4 bes8
-f'8. f16 f8 f8. f16 f8
-es4.~es8 r8 es
-des4 des8 des4 f8
-es4 es8 es8 r8 es8 
+s2. s2 s8 g8
+d'8.\f d16 d8 d8. d16 d8
+c4. r4 g8
+d'8 d8. d16 d8 d d
+c16 c c4 r4 g8
+d'8. d16 d8 d8. d16 d8
+c4. r4 c8
+bes4 bes8 bes4 d8
+c4 c8 c8 r8 c8 
 %Bridge
-\key c \minor
-es8 \mf es es es es4
-es8 es~es16 es16 es8 r8 es8
-es d c f es d
-g f es f es d
-es2. 
-es2 r8 es8
-es2~es4
-r2 r8 c
-c des es f es f  
-es4. r4 as,8\f
-bes8 bes bes c16 bes16~bes bes16~bes8
-es4. es4 es8
-f4 r8 bes,4 bes8
-bes bes bes c4 bes8
-bes4 r8 es4 f8
-es4 r8 g4 f8
-f4 r8 f4 g8
-as8 g f es4 r8
+\key a \minor
+c8 \mf c c c c4
+c8 c~c16 c16 c8 r8 c8
+c b a d c b
+e d c d c b
+c2. 
+c2 r8 c8
+c2~c4
+r2 r8 a
+a bes c d c d  
+c4. r4 f,8\f
+g8 g g a16 g16~g g16~g8
+c4. c4 c8
+d4 r8 g,4 g8
+g g g a4 g8
+g4 r8 c4 d8
+c4 r8 e4 d8
+d4 r8 d4 e8
+f8 e d c4 r8
 %Refrain
- \key bes \minor
-f4. \!\ff ~f4. 
-ges4.~ges4.
-f8. f16 f8 f f f
-ges4 ges8 f4 r8
+ \key g \minor
+d4. \!\ff ~d4. 
+es4.~es4.
+d8. d16 d8 d d d
+es4 es8 d4 r8
 
-f4.~f4. 
-ges4.~ges4.
-f8. f16 f8 f f f
-ges4 ges8 f4 r8
-f4.~f4. 
-ges4. (bes8. as16) ges8
-f4 f8 ges4 ges8
-des8 r8 des8 c4 c8 
-des4. r4.
-\SoloR
-s2.
+d4.~d4. 
+es4.~es4.
+d8. d16 d8 d d d
+es4 es8 d4 r8
+d4.~d4. 
+es4. (g8. f16) es8
+d4 d8 es4 es8
+bes8 r8 bes8 a4 a8 
+bes4. r4.
+r2.*10
+\break
+r2.*9
+\break
+r2.*4
+
 %%Strophe
-des8 c bes des c bes
-bes4. r8 bes c
-des4 f8 es4 des8 
-c2.
+bes8 a g bes a g
+g4. r8 g a
+bes4 d8 c4 bes8 
+a2.
 
 
 
-r4. f16 f f8 f
-f es des~des4.
-r4. f16 f f8 f
-es es es r8 bes c
-des8. des16 des8 des as4
-r2 r8 bes8
-des16 des des8 des c4 as16 as
-a8 a a bes8 r8 bes8
-des4 des8 c8 r8 es16 es
+r4. d16 d d8 d
+d c bes~bes4.
+r4. d16 d d8 d
+c c c r8 g a
+bes8. bes16 bes8 bes f4
+r2 r8 g8
+bes16 bes bes8 bes a4 f16 f
+fis8 fis fis g8 r8 g8
+bes4 bes8 a4\breathe c16 c
 \time 3/8
-ges4 ges8
+es4 es8
 \time 6/8
-f2.~f2.
-\appoggiatura f8
-es2. (\appoggiatura es8 des4.) r4.
+d2.~d2.
+\appoggiatura d8
+c2. (\appoggiatura c8 bes4.) r4.
 R2.*4
 %Refrain
- \key bes \minor
-f4. \!\ff ~f4. 
-ges4.~ges4.
-f8. f16 f8 f f f
-ges4 ges8 f4 r8
+ \key g \minor
+d4. \!\ff ~d4. 
+es4.~es4.
+d8. d16 d8 d d d
+es4 es8 d4 r8
 
-f4.~f4. 
-ges4.~ges4.
-f8. f16 f8 f f f
-ges4 ges8 f4 r8
-f4.~f4. 
-ges4. (bes8. as16) ges8
-f4 f8 ges4 ges8
-des8 r8 des8 c4 c8 
-des4.~des4 r8
+d4.~d4. 
+es4.~es4.
+d8. d16 d8 d d d
+es4 es8 d4 r8
+d4.~d4. 
+es4. (g8. f16) es8
+d4 d8 es4 es8
+bes8 r8 bes8 a4 a8 
+bes4.~bes4 r8
 %schluss
-bes8 des f~f r8 des
-ges es c~c r4
-bes8 des f~f r8 des
+g8 bes d~d r8 bes
 es c a~a r4
-ges4. (bes) des (c)
-ges4. (bes) des (c)
+g8 bes d~d r8 bes
+c a fis~fis r4
+es4. (g) bes (a)
+es4. (g) bes (a)
 \Ende
 }
 
 
 
 
-bassMusik = \relative c' {
+bassMusik = \relative c {
 \RSix
-as8. as16 as8 as as as
-fes2.
-r8 ces'8 ces ces ces ces
-ges8. ges16 ges8 ges ges ges
-as8. as16 as8 as as as
-fes4. r4 fes8 
-as8 as as as as as
-bes4. r4 bes8 
-ces8. ces16 ces8 ces bes as
-fes2.
-as8 as as as as as
-ges4.~ges4 r8
+f8. f16 f8 f f f
+des2.
+r8 as'8 as as as as
+es8. es16 es8 es es es
+f8. f16 f8 f f f
+des4. r4 des8 
+f8 f f f f f
+g4. r4 g8 
+as8. as16 as8 as g f
+des2.
+f8 f f f f f
+es4.~es4 r8
 
-as8 as as as as as
-fes4.~fes4 r8
-as8 as as as as as 
-ges4.~ges4 r8
+f8 f f f f f
+des4.~des4 r8
+f8 f f f f f 
+es4.~es4 r8
 
-bes8 bes bes bes bes bes 
-bes4. bes4\breathe des8
-des4.~des8 des des
-as4.~as8 r8 as
-des4. c bes bes
-r8 des des des des des
-c4 (des8 c4) r8
+g8 g g g g g 
+g4. g4\breathe bes8
+bes4.~bes8 bes bes
+f4.~f8 r8 f
+bes4. a g g
+r8 bes bes bes bes bes
+a4 (bes8 a4) r8
 
 
 %Refrain
- \key bes \minor
-bes4.~bes4.\(  
-ges4.~ges4.
-des'8. des16 des8 des8 des des
-es4 es8 f4\) r8
-bes,4.~bes4.\(  
-ges4.~ges4.
-des'8. des16 des8 des8 des des
-es4 es8 f4\) r8
-bes,4.~bes4.\(  
-ges4.~ges4 ges8
-des'4 des8 ges,4 ges8
-f8 r8 des8 as'4 as8 
-bes4.\) r4.
+ \key g \minor
+g4.~g4.\(  
+es4.~es4.
+bes'8. bes16 bes8 bes8 bes bes
+c4 c8 d4\) r8
+g,4.~g4.\(  
+es4.~es4.
+bes'8. bes16 bes8 bes8 bes bes
+c4 c8 d4\) r8
+g,4.~g4.\(  
+es4.~es4 es8
+bes'4 bes8 es,4 es8
+d8 r8 bes8 f'4 f8 
+g4.\) r4.
 
 R2.*6
-r2 r8 bes8
-bes8. bes16 bes8 des8. des16 des8
-as4. r4 bes8
-bes8 bes8. bes16 des8 des des
-as16 as as4 r4 bes8
-bes8. bes16 bes8 des8. des16 des8
-as4.~as8 r8 as
-bes4 bes8 bes4 des8
-es4 c8 c8 r8 c8
+r2 r8 g8
+g8. g16 g8 bes8. bes16 bes8
+f4. r4 g8
+g8 g8. g16 bes8 bes bes
+f16 f f4 r4 g8
+g8. g16 g8 bes8. bes16 bes8
+f4. r4 f8
+g4 g8 g4 bes8
+c4 a8 a8 r8 a8
 %Bridge
-\key c \minor
-c8 c c c c4
-c8 c~c16 c16 c8 r8 c,8
-\(c8 d es f c' bes 
-c d es bes bes bes\)
-as2.\( as2 r8 as
-as2~as4\)
-r2 r8 as\mp
-as as as as as des
-c4. r4 as8\f
-bes8 bes bes c16 bes16~bes bes16~bes8
-as4.\f c4 c8
-bes4 r8 bes4 bes8
-bes bes bes c4 bes8
-bes4 r8 as4\< as8
-es4 r8 es'4 d8 
-bes4 r8 bes4 bes8
-des des des as4 r8\!
+\key a \minor
+a8 a a a a4
+a8 a~a16 a16 a8 r8 a,8
+\(a8 b c d a' g 
+a b c g g g\)
+f2.\( f2 r8 f
+f2~f4\)
+r2 r8 f\mp
+f f f f f bes
+a4. r4 f8\f
+g8 g g a16 g16~g g16~g8
+f4.\f a4 a8
+g4 r8 g4 g8
+g g g a4 g8
+g4 r8 f4\< f8
+c4 r8 c'4 b8 
+g4 r8 g4 g8
+bes bes bes f4 r8\!
 %Refrain
- \key bes \minor
-bes4.~bes4.\(  
-ges4.~ges4.
-des'8. des16 des8 des8 des des
-es4 es8 f4\) r8
-bes,4.~bes4.\(  
-ges4.~ges4.
-des'8. des16 des8 des8 des des
-es4 es8 f4\) r8
-bes,4.~bes4.\(  
-ges4.~ges4 ges8
-des'4 des8 ges,4 ges8
-f8 r8 des8 as'4 as8 
-bes4.\) r4.
-\SoloR
-R2.^\markup { \abs-fontsize #13 \bold 22 }
-bes8\mf c des bes c des
-des4.
-r8 bes bes
-des4 des8 des4 des8 
-es2.
+ \key g \minor
+g4.~g4.\(  
+es4.~es4.
+bes'8. bes16 bes8 bes8 bes bes
+c4 c8 d4\) r8
+g,4.~g4.\(  
+es4.~es4.
+bes'8. bes16 bes8 bes8 bes bes
+c4 c8 d4\) r8
+g,4.~g4.\(  
+es4.~es4 es8
+bes'4 bes8 es,4 es8
+d8 r8 bes8 f'4 f8 
+g4.\) r4.
+r2.*10
+\break
+r2.*9
+\break
+r2.*4
+g8\mf a bes g a bes
+bes4.
+r8 g g
+bes4 bes8 bes4 bes8 
+c2.
 
-r4. bes16\f bes bes8 bes
-bes bes bes~bes4.
-r4. des16 des des8 des
-c c as r8 bes c
-des8. des16 des8 des as4
-r2 r8 bes
+r4. g16\f g g8 g
+g g g~g4.
+r4. bes16 bes bes8 bes
+a a f r8 g a
+bes8. bes16 bes8 bes f4
+r2 r8 g
 
-des,16 des des8 des as'4 as16 as
-f8 f f bes8 r8 bes8
-f4 f8 as8 r8 as16 as
+bes,16 bes bes8 bes f'4 f16 f
+d8 d d g8 r8 g8
+d4 d8 f4\breathe f16 f
 \time 3/8
-es'4 es8
+c'4 c8
 \time 6/8
-bes2.\> ~bes2.
-as2. (ges4.) r4.\!
+g2.\> ~g2.
+f2. (es4.) r4.\!
 R2.*4
 %Refrain
- \key bes \minor
-bes4.~bes4.\(  
-ges4.~ges4.
-des'8. des16 des8 des8 des des
-es4 es8 f4\) r8
-bes,4.~bes4.\(  
-ges4.~ges4.
-des'8. des16 des8 des8 des des
-es4 es8 f4\) r8
-bes,4.~bes4.\(  
-ges4.~ges4 ges8
-des'4 des8 ges,4 ges8
-f8 r8 des8 as'4 as8 
-bes4.~bes4\) r8
+ \key g \minor
+g4.~g4.\(  
+es4.~es4.
+bes'8. bes16 bes8 bes8 bes bes
+c4 c8 d4\) r8
+g,4.~g4.\(  
+es4.~es4.
+bes'8. bes16 bes8 bes8 bes bes
+c4 c8 d4\) r8
+g,4.~g4.\(  
+es4.~es4 es8
+bes'4 bes8 es,4 es8
+d8 r8 bes8 f'4 f8 
+g4.~g4\) r8
 %schluss
-bes8\p des f~f r8 des
-ges es c~c r4
-bes8 des f~f r8 des
+g8\p bes d~d r8 bes
 es c a~a r4
-ges2.\(\p\< es4. (f)\)\!
-ges2.\(\p\< es4. (f)\)\!
+g8 bes d~d r8 bes
+c a fis~fis r4
+es2.\(\p\< c4. (d)\)\!
+es2.\(\p\< c4. (d)\)\!
 \Ende
 }
 
