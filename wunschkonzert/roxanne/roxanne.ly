@@ -13,11 +13,66 @@ global = {
   \key g \minor
   \time 4/4 
 }
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%Text%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 harmonies = \chordmode {
+\germanChords 
+g1:m g d g:m d c:m7 f g:m g:m
+c:m7 f g:m g:m/f
+c:m7 f g:m g:m
+%%Bridge
+g:m g:m
+fis:m5- fis:m5- g:m g:m 
+c:m7 c2:sus4 c:m d1:sus2 7
+d1:sus2 7
+%%%%%%%%%%Refrain%%%%%%%%%%%
+g1:m g:m c:m d
+g:m g:m c:m7 f
+g1:m g:m c:m d
+g:m g:m c:m7 f
+bes d g:m d2:sus4 6 d
+es1 c:m7 c2:m f/c
+c4:m7 d2.
+%%%%%%%%%%%%%%%solo%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%Refrain%%%%%%%%%%%%%
+e1:m e:m a:m b
+e:m e:m a:m7 d
+g:m g:m c:m d
+g:m g:m c:m7
+f1
+g1:m g1:m g1:m d
+g1:m g1:m g1:m d
+g1:m g1:m g1:m d
+g1:m g1:m g1:m d
+g1:m
 }
-%%%%%%%%Text%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%Text%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+SopSchluss = \lyricmode{
+Ah __
+Ah __
+Ah __
+Ah __
+}
+AltSchluss = \lyricmode{
+Ah __
+Ah __
+Ah __
+Feel -- ings I can't fight.
+Ah __
+Ah __
+}
+TenorSchluss = \lyricmode{
+Why does my heart cry
+Ah __
+Ah __
+Ah __
+}
+BassSchluss = \lyricmode{
+Ah __
+Ah __
+Ah __
+Ah __
+Ah __
+}
 Bridge = \lyricmode{
 His eyes up -- on your face.
 His hand up -- on your hand.
@@ -41,6 +96,8 @@ Rox -- anne you don't have to sell your bo -- dy to the night.
 Refrain = \lyricmode{
 Why does my heart cries?
 Feel -- ings I can't fight.
+Why does my heart cries?
+Feel -- ings I can't fight.
 You're free to leave me but just don't de -- ceive me
 and please be -- lieve me when I say I love you.
 }
@@ -56,12 +113,18 @@ You're free to leave me but just don't de -- ceive me
 and please be -- lieve me when I say I love you.
 }
 bassSoloText  = \lyricmode{
+Rox -- anne
+Rox -- anne
+Rox -- anne
+Rox -- anne
 Rox -- anne you don't have to put on that red light.
 You don't have to wear that dress to night.
 Rox -- anne you don't have to put on that red light.
 Rox -- anne you don't have to wear that dress to night.
-
+Rox -- anne
+Rox -- anne
 }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%Musik%%%%%%%%%%
 sopranMusik =  \relative c' {
 \global
@@ -75,12 +138,18 @@ r d es4. d8
 d4 es es r
 r4 es g4. g8 
 f2 es
-d1~\<
-d2 r2\!
+d2\<(g2
+a2) r2\!
 %%%%%%%%%%%%%%%Refrain%%%%%%%%%%%%%%%%%%
-g1\f a2 bes
-c1 d2 r2
-g,1 a2 bes
+bes1\f a2 g
+es'1 d2 r
+bes1
+a2 g
+g'1 f2 r
+%Wied
+d1 c2 bes
+c1 a2 r2
+d1 c2 bes
 es1 
 c2 r2
 d2 d4. d8
@@ -102,8 +171,29 @@ a2 bes c1
 a2 r2
 g1 
 a2 bes 
-bes1
+es1
 f2 r2
+%schluss
+g1
+(f2 e4 es
+d2 c4 d8 es
+d4 c bes a)
+r2 g'2
+
+(f2 e4 es
+d2 c4 d8 es
+d4 c bes a)
+r2 g'2
+
+(f2 e4 es
+d2 c4 d8 es
+d4 c bes a)
+r2 g'2
+
+(f2 e4 es
+d2 c4 d8 es
+d4 c bes a
+g1)
 }
 altMusik =  \relative c' {
 \global
@@ -117,14 +207,22 @@ r bes bes4. bes8
 bes4 bes bes r
 r4 es es4. es8 
 c2 c
-c1~
-c2 r2
+c1
+(d2) r2
 %%%%%%%%%%%%%%%Refrain%%%%%%%%%%%%%%%%%%
-d1 d2 d
+d1 
+d2 g
+bes1
+a2 r2
+d,1 
+d2 g
+bes1
+a2 r2
+d,1 d2 d
 g1
 fis2 r
-d1 d2 d
-bes'1 a2 r2
+g1 g2 g
+bes1 a2 r2
 f2 f4. f8
 a2 a4 bes
 g4 r4 g4. g8
@@ -144,9 +242,21 @@ d,1
 d2 d g1
 fis2 r2
 d1 
-d2 d 
-es1
-c2 r2
+d2 g 
+bes1
+a2 r2
+%schluss
+bes1~bes r2 g2 (fis1
+g2 bes2~bes1)
+r2 g2 (fis2) r2
+bes1 
+a2 g 
+g1 fis1
+g2 (bes2~bes1)
+r2 g2 (fis1
+d1)
+
+
 }
 tenorMusik =  \relative c' {
 \global
@@ -175,11 +285,20 @@ a4 a a r
 r g g4. g8 
 g4 g g r
 r4 bes bes4. bes8 
-g2 g
-a1~\<
-a2 r2\!
+bes2 bes
+a2\< (g2
+fis2) r2\!
 %%%%%%%%%%%%%%%Refrain%%%%%%%%%%%%%%%%%%
-bes1\f a2 g
+g2\f (bes)
+c d
+g1 
+fis2 r2 
+d1 
+d2 d
+es1 
+f2 r2
+%Wied
+bes,1 a2 g
 es'1
 d2 r
 bes1 a2 g
@@ -205,6 +324,20 @@ es'1 d2 r2
 bes1
 a2 g 
 g'1 f2 r2
+%Schluss
+bes,1 
+a2 g
+es'1 
+d2 r2
+d1~d1~d2( c4 bes a1)
+r2 d2~d1~d2( c4 bes a1)
+r2 d2~d1~d2( c4 bes a1
+bes1)
+
+
+
+
+
 }
 bassMusik = \relative c' {
 \global
@@ -232,17 +365,26 @@ r4 fis fis4. fis8
 fis4 fis fis r
 r g g4. g8 
 g4 g g r
-r4 g g4. g8 
-c,2 c
+r4 g c,4. c8 
+c2 c
 d1~
 %%%%%%%%%%Refrain%%%%%%
-d2 r8 bes'4.~
-bes8 g4. r2
-r1
-r1
-r2 r8 bes4.~
-bes8 g4. r2
-r1 r1 r1
+d2 r2
+g1 
+g2 bes
+c1 
+d2 r2
+g,1 
+a2 bes
+c1
+f,2 r2
+%Wied
+g1 a2 bes 
+c1 
+d2 r2
+g,1 a2 bes 
+c1 
+f,2 r2
 bes2 bes4. f8
 fis2 fis4 fis
 g4 r4 g4. g8
@@ -265,14 +407,32 @@ g,1
 g2 g
 c1
 f,2 r2
+%schluss
+g1~g1~g2 r d1
+(g1~g1~g2) r d1
+(g1~g1~g2) r d1
+(g1~g1~g2) r d1
+(g1)
+
 }
 bassSolo = \relative c' {
 r1 r1 r1 r1 r1 r1 s1 s1 s1 s1
 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1
-s1 s1 s1 s1 s1 s1 s1 s1 s1 s1
-s1 s1 s1 s1 s1 s1 s1 s1 s1 s1
-s1 s1 
-%s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1
+s1 s1 s1 s1 s1 s1
+r2 r8 bes4.~
+bes8 g4. r2
+r1
+r1
+r2 r8 bes4.~
+bes8 g4. r2
+r1 r1
+r2 r8 bes4.~
+bes8 g4. r2
+r1
+r1
+r2 r8 bes4.~
+bes8 g4. r2
+r1 r1 r1 r1 r1 r1 r1 r1 r1 r1
 r2 r8 g4.~
 \key e \minor
 g8 e4. r2
@@ -292,6 +452,15 @@ bes8 g4. r2
 r2 f8 g g f
 \times 2/3{g4 a bes} g4 a~
 a4 r r2
+r1 r1 r1 r1
+r2 bes2~
+bes1~
+bes4 g2. r1
+r1 r1 r1 r1
+r1 r4 bes2.~
+bes4 g2. r1 r1
+
+
 }
 %%%%%%%%%%%%%%%%%%%%%%% Piano %%%%%%%%%%%%%%%%%%%%
 rhIntro = \relative c'{
@@ -300,52 +469,33 @@ lhIntro = \relative c {
 \clef bass
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%ALL%%%%%%%%%%%
-harmonies = \chordmode {
-\germanChords 
-g1:m g d g:m d c:m7 f g:m g:m
-c:m7 f g:m g:m/f
-c:m7 f g:m g:m
-%%Bridge
-g:m g:m
-fis:m5- fis:m5- g:m g:m 
-c:m7 c2:sus4 c:m d1:sus2 7
-d1:sus2 7
-%%%%%%%%%%Refrain%%%%%%%%%%%
-g1:m g:m c:m d
-g:m g:m c:m7 f
-bes d g:m d2:sus4 6 d
-es1 c:m7 c2:m f/c
-c4:m7 d2.
-%%%%%%%%%%%%%%%solo%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%Refrain%%%%%%%%%%%%%
-e1:m e:m a:m b
-e:m e:m a:m7 d
-g:m g:m c:m d
-g:m g:m c:m7
-f2 d
-}
 %%%%%%Text%%%%%%%%%%%%%%
 sopranText = \lyricmode{
 \Bridge 
 \Refrain
 \RefrainTwo
+\SopSchluss
 }
 altText = \lyricmode{
 \Bridge 
 \Refrain
 \RefrainTwo
+\AltSchluss
 }
 tenorText = \lyricmode{
 \TenorIntro
 \Bridge 
 \Refrain
 \RefrainTwo
+\TenorSchluss
 }
 bassText = \lyricmode{
 \BassIntro
 \Bridge 
-\RefrainBass
+\Refrain
+\RefrainTwo
+\BassSchluss
 }
 %%%%%%%%%%Piano%%%%%%%%
 RightHand = \relative c'{
