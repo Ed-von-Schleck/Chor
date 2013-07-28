@@ -6,7 +6,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
   arranger = "Arrangement: Andreas Fiebig"
   subtitle = \date
 }
-#(set-global-staff-size 16)
+#(set-global-staff-size 18)
 #(set-default-paper-size "a4")
 
 global = {
@@ -15,7 +15,15 @@ global = {
 }
 harmonies = \chordmode {
 \germanChords 
-g1:m g d g:m d c:m7 f g:m g:m
+g4:m
+g1:m g:m fis:m5- fis:m5-
+g1:m g:m fis:m5- fis:m5-
+g:m g:m/f es:7+ d:7 g:m
+g:m/f
+g2:m
+
+%strophe
+g1:m g:m d g:m d c:m7 f g:m g:m
 c:m7 f g:m g:m/f
 c:m7 f g:m g:m
 %%Bridge
@@ -32,7 +40,12 @@ bes d g:m d2:sus4 6 d
 es1 c:m7 c2:m f/c
 c4:m7 d2.
 %%%%%%%%%%%%%%%solo%%%%%%%%%%%%
-
+e1:m e:m dis:m5- dis:m5-
+e1:m e:m dis:m5- dis:m5-
+e:m e:m e:m e:m
+b:m b:m b:m b:m
+b:m b:m b:m b:m
+b:m b:m b:m b:m
 %%%%%%%%%%%%%%%%Refrain%%%%%%%%%%%%%
 e1:m e:m a:m b
 e:m e:m a:m7 d
@@ -128,6 +141,14 @@ Rox -- anne
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%Musik%%%%%%%%%%
 sopranMusik =  \relative c' {
 \global
+\partial 4
+r4 
+\compressFullBarRests
+R1*14
+\time 2/4
+r2
+\time 4/4
+%Strophe
 R1*17
 %%%Bridge%%%%
 r4 d4 es4. d8 
@@ -162,6 +183,8 @@ es4 r4 f2
 es4 d2.
 %%%%%solo%%%%
 \key e \minor
+\compressFullBarRests
+R1*24
 g1 fis2 e e1
 dis2 r2
 g1 fis2 e g1 fis2 r2
@@ -197,6 +220,13 @@ g1)
 }
 altMusik =  \relative c' {
 \global
+\partial 4
+r4 
+R1*14
+\time 2/4
+r2
+\time 4/4
+%Strophe
 R1*17
 %%%Bridge%%%%
 r4 bes4\p bes4. bes8 
@@ -233,6 +263,8 @@ g4 r4 a2
 g4 fis2.
 %%%%%solo%%%%
 \key e \minor
+\compressFullBarRests
+R1*24
 g1 a2 b c1
 b2 r2
 g1 a2 b c1
@@ -260,6 +292,13 @@ d1)
 }
 tenorMusik =  \relative c' {
 \global
+\partial 4
+r4 
+R1*14
+\time 2/4
+r2
+\time 4/4
+%Strophe
 bes1\f 
 g2 r2
 r2 bes8 a g f
@@ -313,6 +352,8 @@ bes4 r4 a2
 bes4 a2.
 %%%%%solo%%%%
 \key e \minor
+\compressFullBarRests
+R1*24
 e'1 e2 e e1
 fis2 r2
 e1 e2 e e1
@@ -341,6 +382,14 @@ bes1)
 }
 bassMusik = \relative c' {
 \global
+\partial 4
+r4
+\compressFullBarRests
+R1*14
+\time 2/4
+r2
+\time 4/4
+%Strophe
 bes1 
 g2 r2
 r2 bes8 a g f
@@ -395,6 +444,8 @@ c4 r4 c2
 c4 d2.
 %%%%%solo%%%%
 \key e \minor
+\compressFullBarRests
+R1*24
 e1 fis2 g
 a1 b2 r2
 e,1 fis2 g
@@ -416,6 +467,13 @@ g1~g1~g2 r d1
 
 }
 bassSolo = \relative c' {
+  \partial 4
+r4 
+R1*14
+\time 2/4
+r2
+\time 4/4
+%Strophe
 r1 r1 r1 r1 r1 r1 s1 s1 s1 s1
 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1
 s1 s1 s1 s1 s1 s1
@@ -433,8 +491,10 @@ r1
 r2 r8 bes4.~
 bes8 g4. r2
 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1
-r2 r8 g4.~
 \key e \minor
+\compressFullBarRests
+R1*24
+g1~ 
 g8 e4. r2
 r2 d8 e e d
 \times2/3{e4 fis g} e4 fis~
@@ -534,5 +594,5 @@ LeftHand = \relative c {
       \override VerticalAxisGroup #'minimum-Y-extent = #'(-2 . 2)
     }
   }
- %  \midi {   \tempo 4 = 72  }
+   \midi {}
 }
