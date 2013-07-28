@@ -537,8 +537,6 @@ as4 f2. r1
 r1 r1 r1 r1
 r1 r4 as2.~
 as4 f2. r1 r1
-
-
 }
 %%%%%%%%%%%%%%%%%%%%%%% Piano %%%%%%%%%%%%%%%%%%%%
 rhIntro = \relative c'{
