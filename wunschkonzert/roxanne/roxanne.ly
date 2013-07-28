@@ -291,7 +291,7 @@ f2 as2~as1)
 r2 f2 (e2) r2
 as1 
 g2 f 
-f1 e1
+f1 e2 r2
 f2 (as2~as1)
 r2 f2 (e1
 c1)
