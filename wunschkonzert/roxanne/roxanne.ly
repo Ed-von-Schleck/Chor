@@ -10,53 +10,52 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 #(set-default-paper-size "a4")
 
 global = {
-  \key g \minor
+  \key f \minor
   \time 4/4 
+  \tempo 4 = 144
 }
 harmonies = \chordmode {
 \germanChords 
-g4:m
-g1:m g:m fis:m5- fis:m5-
-g1:m g:m fis:m5- fis:m5-
-g:m g:m/f es:7+ d:7 g:m
-g:m/f
-g2:m
+f4:m
+f1:m
+f2:m
 
 %strophe
-g1:m g:m d g:m d c:m7 f g:m g:m
-c:m7 f g:m g:m/f
-c:m7 f g:m g:m
+f1:m f:m c f:m c bes:m7 es f:m f:m
+bes:m7 es f:m f:m/es
+bes:m7 es f:m f:m
 %%Bridge
-g:m g:m
-fis:m5- fis:m5- g:m g:m 
-c:m7 c2:sus4 c:m d1:sus2 7
-d1:sus2 7
+f:m f:m
+e:m5- e:m5- f:m f:m 
+bes:m7 bes2:sus4 bes:m c1:sus4 7
+c1
 %%%%%%%%%%Refrain%%%%%%%%%%%
-g1:m g:m c:m d
-g:m g:m c:m7 f
-g1:m g:m c:m d
-g:m g:m c:m7 f
-bes d g:m d2:sus4 6 d
-es1 c:m7 c2:m f/c
-c4:m7 d2.
+f1:m f:m bes:m c
+f:m f:m bes:m7 es
+f1:m f:m bes:m c
+f:m f:m bes:m7 es
+as c f:m c2:sus4 6 c
+des1 bes:m7 bes2:m es/bes
+bes4:m7 c2.
 %%%%%%%%%%%%%%%solo%%%%%%%%%%%%
-e1:m e:m dis:m5- dis:m5-
-e1:m e:m dis:m5- dis:m5-
-e:m e:m e:m e:m
-b:m b:m b:m b:m
-b:m b:m b:m b:m
-b:m b:m b:m b:m
+d1:m d:m
+%e1:m e:m dis:m5- dis:m5-
+%e1:m e:m dis:m5- dis:m5-
+%e:m e:m e:m e:m
+%b:m b:m b:m b:m
+%b:m b:m b:m b:m
+%b:m b:m b:m b:m
 %%%%%%%%%%%%%%%%Refrain%%%%%%%%%%%%%
-e1:m e:m a:m b
-e:m e:m a:m7 d
-g:m g:m c:m d
-g:m g:m c:m7
-f1
-g1:m g1:m g1:m d
-g1:m g1:m g1:m d
-g1:m g1:m g1:m d
-g1:m g1:m g1:m d
-g1:m
+d1:m d:m g:m a
+d:m d:m g:m7 c
+f:m f:m bes:m c
+f:m f:m bes:m7
+es1
+f1:m f1:m f1:m c
+f1:m f1:m f1:m c
+f1:m f1:m f1:m c
+f1:m f1:m f1:m c
+f1:m
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%Text%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 SopSchluss = \lyricmode{
@@ -143,150 +142,159 @@ sopranMusik =  \relative c' {
 \global
 \partial 4
 r4 
-\compressFullBarRests
-R1*14
+\huge
+R1^"14"
 \time 2/4
+\normalsize
 r2
 \time 4/4
 %Strophe
 R1*17
 %%%Bridge%%%%
-r4 d4 es4. d8 
-d4 es es r
-r4 d es4. d8
-d4 es es r
-r d es4. d8 
-d4 es es r
-r4 es g4. g8 
-f2 es
-d2\<(g2
-a2) r2\!
+r4 c4 des4. c8 
+c4 des des r
+r4 c des4. c8
+c4 des des r
+r c des4. c8 
+c4 des des r
+r4 des f4. f8 
+es2 des
+c1\<(
+g'2) r2\!
 %%%%%%%%%%%%%%%Refrain%%%%%%%%%%%%%%%%%%
-bes1\f a2 g
-es'1 d2 r
-bes1
-a2 g
-g'1 f2 r
+as1\f g2 f
+des'1 c2 r
+as1
+g2 f
+f'1 es2 r
 %Wied
-d1 c2 bes
-c1 a2 r2
-d1 c2 bes
-es1 
-c2 r2
-d2 d4. d8
-d2 c4 bes
-bes4 r4 bes4. bes8
-bes2 a4 g
-r4 g2 g4
-es'4 es es es 
-es4 r4 f2
-es4 d2.
+c1 bes2 as
+bes1 g2 r2
+c1 bes2 as
+des1 
+bes2 r2
+c2 c4. c8
+c2 bes4 as
+as4 r4 as4. as8
+as2 g4 f
+r4 f2 f4
+des'4 des des des 
+des4 r4 es2
+des4 c2.
 %%%%%solo%%%%
-\key e \minor
+\key d \minor
 \compressFullBarRests
-R1*24
-g1 fis2 e e1
-dis2 r2
-g1 fis2 e g1 fis2 r2
-\key g \minor
-g,1 
-a2 bes c1
-a2 r2
-g1 
-a2 bes 
-es1
-f2 r2
+\huge
+R1^"23"
+\normalsize
+r1
+f1 e2 d d1
+cis2 r2
+f1 e2 d f1 e2 r2
+\key f \minor
+f,1 
+g2 as bes1
+g2 r2
+f1 
+g2 as 
+des1
+es2 r2
 %schluss
-g1
-(f2 e4 es
-d2 c4 d8 es
-d4 c bes a)
-r2 g'2
+f1
+(es2 d4 des
+c2 bes4 c8 des
+c4 bes as g)
+r2 f'2
 
-(f2 e4 es
-d2 c4 d8 es
-d4 c bes a)
-r2 g'2
+(es2 d4 des
+c2 bes4 c8 des
+c4 bes as g)
+r2 f'2
 
-(f2 e4 es
-d2 c4 d8 es
-d4 c bes a)
-r2 g'2
+(es2 d4 des
+c2 bes4 c8 des
+c4 bes as g)
+r2 f'2
 
-(f2 e4 es
-d2 c4 d8 es
-d4 c bes a
-g1)
+(es2 d4 des
+c2 bes4 c8 des
+c4 bes as g
+f1)
 }
 altMusik =  \relative c' {
 \global
 \partial 4
-r4 
-R1*14
+r4
+\huge
+R1
 \time 2/4
+\normalsize
 r2
 \time 4/4
 %Strophe
 R1*17
 %%%Bridge%%%%
-r4 bes4\p bes4. bes8 
-bes4 bes bes r
-r4 d c4. d8
-d4 c c r
-r bes bes4. bes8 
-bes4 bes bes r
-r4 es es4. es8 
-c2 c
-c1
-(d2) r2
+r4 as4\p as4. as8 
+as4 as as r
+r4 c bes4. c8
+c4 bes bes r
+r as as4. as8 
+as4 as as r
+r4 des des4. des8 
+bes2 bes
+bes1
+(c2) r2
 %%%%%%%%%%%%%%%Refrain%%%%%%%%%%%%%%%%%%
-d1 
-d2 g
-bes1
-a2 r2
-d,1 
-d2 g
-bes1
-a2 r2
-d,1 d2 d
-g1
-fis2 r
-g1 g2 g
-bes1 a2 r2
-f2 f4. f8
-a2 a4 bes
-g4 r4 g4. g8
-g2 fis4 g
-r4 es2 es4
-g4 g g g 
-g4 r4 a2
-g4 fis2.
+c1 
+c2 f
+as1
+g2 r2
+c,1 
+c2 f
+as1
+g2 r2
+c,1 c2 c
+f1
+e2 r
+f1 f2 f
+as1 g2 r2
+es2 es4. es8
+g2 g4 as
+f4 r4 f4. f8
+f2 e4 f
+r4 des2 des4
+f4 f f f 
+f4 r4 g2
+f4 e2.
 %%%%%solo%%%%
-\key e \minor
+\key d \minor
 \compressFullBarRests
-R1*24
-g1 a2 b c1
-b2 r2
-g1 a2 b c1
+\huge
+R1
+\normalsize
+r1
+f1\f g2 a bes1
 a2 r2
-\key g \minor
-d,1 
-d2 d g1
-fis2 r2
-d1 
-d2 g 
-bes1
-a2 r2
+f1 g2 a bes1
+g2 r2
+\key f \minor
+c,1 
+c2 c f1
+e2 r2
+c1 
+c2 f 
+as1
+g2 r2
 %schluss
-bes1~bes r2 g2 (fis1
-g2 bes2~bes1)
-r2 g2 (fis2) r2
-bes1 
-a2 g 
-g1 fis1
-g2 (bes2~bes1)
-r2 g2 (fis1
-d1)
+as1~as r2 f2 (e1
+f2 as2~as1)
+r2 f2 (e2) r2
+as1 
+g2 f 
+f1 e1
+f2 (as2~as1)
+r2 f2 (e1
+c1)
 
 
 }
@@ -294,86 +302,91 @@ tenorMusik =  \relative c' {
 \global
 \partial 4
 r4 
-R1*14
+\huge
+R1^"14"
 \time 2/4
+\normalsize
 r2
 \time 4/4
 %Strophe
-bes1\f 
-g2 r2
-r2 bes8 a g f
-\times 2/3{g4 a bes} g4 a~
-a4 r r2
-r8 bes4 g8 g4 f8 bes
-bes4 r4 r8 g8 g bes~
-bes a g a4 g8 f g
-g g4. r8 c4.~
-c8 g4. r2
-r2 f8 g g f
-g4 a8 bes8~bes4 f8 g~
-g4 r4 r8 c4.~
-c8 g4. r2
-r2 f8 g g g 
-des'4 c8 bes \times 2/3{g4 g f}
-g2. r4
-%%%Bridge%%%%
-r4 g4\p g4. g8 
-g4 g g r
-r4 a a4. a8
-a4 a a r
-r g g4. g8 
-g4 g g r
-r4 bes bes4. bes8 
-bes2 bes
-a2\< (g2
-fis2) r2\!
-%%%%%%%%%%%%%%%Refrain%%%%%%%%%%%%%%%%%%
-g2\f (bes)
-c d
-g1 
-fis2 r2 
-d1 
-d2 d
-es1 
+as1\f 
 f2 r2
+r2 as8 g f es
+\times 2/3{f4 g as} f4 g~
+g4 r r2
+r8 as4 f8 f4 es8 as
+as4 r4 r8 f8 f as~
+as g f g4 f8 es f
+f f4. r8 bes4.~
+bes8 f4. r2
+r2 es8 f f es
+f4 g8 as8~as4 es8 f~
+f4 r4 r8 bes4.~
+bes8 f4. r2
+r2 es8 f f f 
+ces'4 bes8 as \times 2/3{f4 f es}
+f2. r4
+%%%Bridge%%%%
+r4 f4\p f4. f8 
+f4 f f r
+r4 g g4. g8
+g4 g g r
+r f f4. f8 
+f4 f f r
+r4 as as4. as8 
+as2 as
+g2\< (f2
+e2) r2\!
+%%%%%%%%%%%%%%%Refrain%%%%%%%%%%%%%%%%%%
+f2\f (as)
+bes c
+f1 
+e2 r2 
+c1 
+c2 c
+des1 
+es2 r2
 %Wied
-bes,1 a2 g
-es'1
-d2 r
-bes1 a2 g
-g'1 f2 r2
-d2 d4. d8
-d2 d4 d
-d4 r4 d4. d8
-d2 d4 c
-r4 bes2 bes4
-bes4 bes bes bes 
-bes4 r4 a2
-bes4 a2.
+as,1 g2 f
+des'1
+c2 r
+as1 g2 f
+f'1 es2 r2
+c2 c4. c8
+c2 c4 c
+c4 r4 c4. c8
+c2 c4 bes
+r4 as2 as4
+as4 as as as 
+as4 r4 g2
+as4 g2.
 %%%%%solo%%%%
-\key e \minor
+\key d \minor
 \compressFullBarRests
-R1*24
-e'1 e2 e e1
-fis2 r2
-e1 e2 e e1
-d2 r2
-\key g \minor
-bes1 
-a2 g
-es'1 d2 r2
-bes1
-a2 g 
-g'1 f2 r2
+\huge
+R1^"23" 
+\normalsize
+r1
+d'1 d2 d d1
+e2 r2
+d1 d2 d d1
+c2 r2
+\key f \minor
+as1 
+g2 f
+des'1 c2 r2
+as1
+g2 f 
+f'1 es2 r2
 %Schluss
-bes,1 
-a2 g
-es'1 
-d2 r2
-d1~d1~d2( c4 bes a1)
-r2 d2~d1~d2( c4 bes a1)
-r2 d2~d1~d2( c4 bes a1
-bes1)
+as,1 
+g2 f
+des'1 
+c2 r2
+c1~c1~c2( bes4 as g1)
+r2 c2~c1~c2( bes4 as g1)
+r2 c2~c1~c2( bes4 as g1
+as1)
 
 
 
@@ -384,141 +397,146 @@ bassMusik = \relative c' {
 \global
 \partial 4
 r4
-\compressFullBarRests
-R1*14
+\huge
+R1
 \time 2/4
+\normalsize
 r2
 \time 4/4
 %Strophe
-bes1 
-g2 r2
-r2 bes8 a g f
-\times 2/3{g4 a bes} g4 a~
-a4 r r2
-r8 bes4 g8 g4 f8 bes
-bes4 r4 r8 g8 g bes~
-bes a g a4 g8 f g
-g g4. r8 c4.~
-c8 g4. r2
-r2 f8 g g f
-g4 a8 bes8~bes4 f8 g~
-g4 r4 r8 c4.~
-c8 g4. r2
-r2 f8 g g g 
-des'4 c8 bes \times 2/3{g4 g f}
-g2. r4
+as1 
+f2 r2
+r2 as8 g f es
+\times 2/3{f4 g as} f4 g~
+g4 r r2
+r8 as4 f8 f4 es8 as
+as4 r4 r8 f8 f as~
+as g f g4 f8 es f
+f f4. r8 bes4.~
+bes8 f4. r2
+r2 es8 f f es
+f4 g8 as8~as4 es8 f~
+f4 r4 r8 bes4.~
+bes8 f4. r2
+r2 es8 f f f 
+ces'4 bes8 as \times 2/3{f4 f es}
+f2. r4
 %%%Bridge%%%%
-r4 g4 g4. g8 
-g4 g g r
-r4 fis fis4. fis8
-fis4 fis fis r
-r g g4. g8 
-g4 g g r
-r4 g c,4. c8 
-c2 c
-d1~
+r4 f4 f4. f8 
+f4 f f r
+r4 e e4. e8
+e4 e e r
+r f f4. f8 
+f4 f f r
+r4 f bes,4. bes8 
+bes2 bes
+c1~
 %%%%%%%%%%Refrain%%%%%%
-d2 r2
-g1 
-g2 bes
-c1 
-d2 r2
-g,1 
-a2 bes
-c1
-f,2 r2
+c2 r2
+f1 
+f2 as
+bes1 
+c2 r2
+f,1 
+g2 as
+bes1
+es,2 r2
 %Wied
-g1 a2 bes 
-c1 
-d2 r2
-g,1 a2 bes 
-c1 
-f,2 r2
-bes2 bes4. f8
-fis2 fis4 fis
-g4 r4 g4. g8
-d2 d4 d
-r4 es2 es4
-c4 c c c 
-c4 r4 c2
-c4 d2.
+f1 g2 as 
+bes1 
+c2 r2
+f,1 g2 as 
+bes1 
+es,2 r2
+as2 as4. es8
+e2 e4 e
+f4 r4 f4. f8
+c2 c4 c
+r4 des2 des4
+bes4 bes bes bes 
+bes4 r4 bes2
+bes4 c2.
 %%%%%solo%%%%
-\key e \minor
-\compressFullBarRests
-R1*24
-e1 fis2 g
-a1 b2 r2
-e,1 fis2 g
-a1 d,2 r2
-\key g \minor
-g1 
-g2 g c1
-d2 r2
-g,1
-g2 g
-c1
-f,2 r2
+\key d \minor
+\huge
+R1
+\normalsize
+r1
+d1\f e2 f
+g1 a2 r2
+d,1 e2 f
+g1 c,2 r2
+\key f \minor
+f1 
+f2 f bes1
+c2 r2
+f,1
+f2 f
+bes1
+es,2 r2
 %schluss
-g1~g1~g2 r d1
-(g1~g1~g2) r d1
-(g1~g1~g2) r d1
-(g1~g1~g2) r d1
-(g1)
+f1~f1~f2 r c1
+(f1~f1~f2) r c1
+(f1~f1~f2) r c1
+(f1~f1~f2) r c1
+(f1)
 
 }
 bassSolo = \relative c' {
   \partial 4
 r4 
-R1*14
+\huge
+R1^"14"
 \time 2/4
+\normalsize
 r2
 \time 4/4
 %Strophe
 r1 r1 r1 r1 r1 r1 s1 s1 s1 s1
 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1
 s1 s1 s1 s1 s1 s1
-r2 r8 bes4.~
-bes8 g4. r2
+r2 r8 as4.~
+as8 f4. r2
 r1
 r1
-r2 r8 bes4.~
-bes8 g4. r2
+r2 r8 as4.~
+as8 f4. r2
 r1 r1
-r2 r8 bes4.~
-bes8 g4. r2
+r2 r8 as4.~
+as8 f4. r2
 r1
 r1
-r2 r8 bes4.~
-bes8 g4. r2
+r2 r8 as4.~
+as8 f4. r2
 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1
-\key e \minor
-\compressFullBarRests
-R1*24
-g1~ 
-g8 e4. r2
-r2 d8 e e d
-\times2/3{e4 fis g} e4 fis~
-fis4 r4 r2
+\key d \minor
+R1
 r1
-r2 d8 e e d
-\times2/3{e4 fis g} e4 fis~
-fis4 r4 r8 bes4.~
-\key g \minor
-bes8 g4. r2
-r2 fis8 g g fis
-\times 2/3{g4 a bes} g4 a~
-a4 r r8 bes4.~
-bes8 g4. r2
-r2 f8 g g f
-\times 2/3{g4 a bes} g4 a~
-a4 r r2
+f1~ 
+f8 d4. r2
+r2 c8 d d c
+\times2/3{d4 e f} d4 e~
+e4 r4 r2
+r1
+r2 c8 d d c
+\times2/3{d4 e f} d4 e~
+e4 r4 r8 as4.~
+\key f \minor
+as8 f4. r2
+r2 e8 f f e
+\times 2/3{f4 g as} f4 g~
+g4 r r8 as4.~
+as8 f4. r2
+r2 es8 f f es
+\times 2/3{f4 g as} f4 g~
+g4 r r2
 r1 r1 r1 r1
-r2 bes2~
-bes1~
-bes4 g2. r1
+r2 as2~
+as1~
+as4 f2. r1
 r1 r1 r1 r1
-r1 r4 bes2.~
-bes4 g2. r1 r1
+r1 r4 as2.~
+as4 f2. r1 r1
 
 
 }
