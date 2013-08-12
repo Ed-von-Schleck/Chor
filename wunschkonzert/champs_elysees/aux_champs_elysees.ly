@@ -12,7 +12,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 global = {
   \key g \major
   \time 4/4 
-  \tempo 4 = 110
+  \tempo 4 = 100
 }
 harmonies = \chordmode {
 \germanChords 
