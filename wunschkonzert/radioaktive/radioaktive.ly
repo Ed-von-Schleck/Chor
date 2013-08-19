@@ -1,7 +1,7 @@
 \version "2.14.2"
 date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 \header {
-  title = "Radioaktive"
+  title = "Radioactive"
   composer = "Text und Musik: Imagine Dragons"
   arranger = "Arrangement: Andreas Fiebig"
   subtitle = \date

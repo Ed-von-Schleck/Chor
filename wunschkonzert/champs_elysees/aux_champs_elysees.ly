@@ -87,20 +87,20 @@ a4:m7 \times 2/3{d4:7 g8} g2
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%Text%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 VerseOne = \lyricmode{
 Je m'ba -- la -- dais sur l'a -- ve -- nue ma cœur ou -- vert à l'in -- con -- nu
-j'a -- vais en -- vie de dire bon -- jour à n'im -- por -- te qui.
+j'a -- vais __ en -- vie de dire bon -- jour à n'im -- por -- te qui.
 N'im -- por -- te qui et ce fut toi, je t'ai dit n'im -- por -- te quoi
 il suf -- fi -- sait de te par -- ler, pour t'ap -- pri -- voi -- ser.  
 }
 Refrain = \lyricmode{
 Aux Champs __ E -- ly -- sées, aux Champs __ E -- ly -- sées.
 Au so -- leil, sous la pluie, à mi -- di ou à mi -- nuit
-il __ y_a tout ce que vous vou -- lez aux Champs __ E -- ly -- sées.
+il __ y __ a tout ce_que vous vou -- lez aux Champs __ E -- ly -- sées.
 }
 RefrainTwo = \lyricmode{
 Aux Champs __ E -- ly -- sées, ba ba ba ba ba aux Champs __ E -- ly -- sées
 ba ba ba ba ba.
 Au so -- leil, sous la pluie, à mi -- di ou à mi -- nuit
-il __ y_a tout ce que vous vou -- lez aux Champs __ E -- ly -- sées.
+il __ y __ a tout ce_que vous vou -- lez aux Champs __ E -- ly -- sées.
 }
 VerseTwo = \lyricmode{
 Tu m'as dit J'ai ren -- dez -- vous dans __ un sous -- sol
