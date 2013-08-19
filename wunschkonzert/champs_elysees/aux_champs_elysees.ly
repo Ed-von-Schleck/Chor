@@ -1,7 +1,7 @@
 \version "2.14.2"
 date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 \header {
-  title = "Aux Champs Elyées"
+  title = "Aux Champs Elysées"
   composer = "Text und Musik: Mike Wilsh & Mike Deighan"
   arranger = "Arrangement: Andreas Fiebig"
   subtitle = \date
