@@ -31,6 +31,13 @@ see how the sun shines bright -- ly
 in the ci -- ty on the streets where once was pi -- ty
 Mis -- ter Blue Sky is liv -- ing here to -- day. Hey __  
 }
+SoloVers=\lyricmode{
+_ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _
+_ _ _
+}
 VersThree = \lyricmode{
 Hey you with the pret -- ty face
 Wel -- come to the hu -- man race.
@@ -93,12 +100,20 @@ Bridge = \lyricmode{
 Mis -- ter blue sky ah __ mis -- ter blue sky ah __
 mis -- ter blue sky.
 }
-BAFrauen = \lyricmode{
-Ba ba ba ba ba ba 
-ba ba ba ba ba ba
-ba ba ba ba ba ba
-ba ba
-ba ba
+Ba = \lyricmode{
+Ba ba ba ba
+ba ba ba ba
+ba ba ba ba
+ba ba ba ba
+ba ba ba ba
+ba ba ba ba
+}
+BABass = \lyricmode{
+Ba ba ba ba
+ba ba ba ba 
+ba ba ba ba
+ba ba ba ba 
+ba ba ba  
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%Musik%%%%%%%%%%
 sopranMusik =  \relative c'' {
@@ -147,10 +162,22 @@ r2 c4 a
 g4 a8 bes~bes2
 r1
 %solo
-r1 r1
-R1*12
+r1 r2 f8 g a bes
+a1 
+a2 g4 f
+a d c f,
+a2 a
+g4 f r8 d f4
+g4 a d, f
+g4 f8 g~g4 f8 g~
+g4 a g a8 g
+f2 r4 f8 g
+a4 bes a g
+a1
+bes4 a8 g f2
+
 %VersThree
-c4 c c c
+c'4 c c c
 c8 a8 d4 r r
 a a a a
 b2 cis
@@ -225,8 +252,8 @@ r4 c8 bes c4 f,
 r4 d bes'2
 r4 a8 g a4 f |}
 \alternative{
-  {g1 f}
-  {g1~g f~f~f}
+  {g1 f2 r2}
+  {g1~g f~f2 r4 f f1}
 }
 \bar "|."
 }
@@ -242,7 +269,7 @@ d d r8 d d e~
 e4 e e e8 cis~
 cis4 cis cis cis8 d~
 d4 r f f8 f~
-f4 d8 d~d d4 c8~
+f4 d8 c~c d4 c8~
 c4 r r8 f( f e~
 e4) r2.
 %VersTwo
@@ -278,7 +305,9 @@ g4 f8 es~es2
 r1
 %solo
 r1 r1
-R1*12
+s1 s1 s1 s1 
+s1 s1 s1 s1 
+s1 s1 s1 s1 
 %VersThree
 f4 f f f
 f8 f8 f4 r r
@@ -303,7 +332,7 @@ g4 f8 es~es2
 r1
 %Refrain2
 d2 f 
-g4 a8 f~f4 r4
+g4 f8 c~c4 r4
 d4 e8 f~f4 d
 c4 d8 c~c4 r4
 g'4 g8 g~g4 g
@@ -339,7 +368,7 @@ g4 f8 es~es2
 r1
 %Refrain2
 d2 f 
-g4 a8 f~f4 r4
+g4 f8 c~c4 r4
 d4 e8 f~f4 d
 c4 d8 c~c4 r4
 g'4 g8 g~g4 g
@@ -347,15 +376,15 @@ f4 f8 f (c4) r4
 es4 d8 es~es4 c
 bes4 bes8 bes~bes4 r4
 \repeat volta 4 {
-r4 a' a2
-r4 c8 bes c4 a
+r4 f' a2
+r4 a8 a c4 a
 r4 f bes2
-r4 a8 g a4 f
+r4 f8 g a4 f
 r4 d g2
-r4 f8 e f4 c |}
+r4 f8 g f4 c |}
 \alternative{
-  {es1 f}
-  {es1~es f~f~f}
+  {es1 d2 r2}
+  {es1~es d~d2 r4 d c1}
 }
 }
 
@@ -371,7 +400,7 @@ b b r8 b b b~
 b4 b b b8 a~
 a4 a g g8 f~
 f4 r d' d8 c~
-c4 g8 a~a bes4 a8~
+c4 bes8 a~a bes4 a8~
 a4 r r8 c( c c~
 c4 )r2.
 %VersTwo
@@ -432,8 +461,8 @@ bes4 a8 g~g2
 r1
 %Refrain2
 a2 d 
-c4 c8 c~c4 r4
-bes4 c8 d~d4 bes
+c4 c8 a~a4 r4
+d4 c8 d~d4 bes
 c4 bes8 a~a4 r4
 d4 d8 d~d4 d
 c4 d8 c (a4) r4
@@ -462,7 +491,7 @@ f4 e d e
 r2 f4 f8 f~
 f4 es des es
 %Refrain
-d4 r2.
+d?4  r2.
 r4 a bes8 c4 d8~
 d4 bes bes8 bes r c~
 c4 c8 c~c c4.
@@ -472,23 +501,24 @@ bes4 a8 g~g2
 r1
 %Refrain2
 a2 d 
-c4 c8 c~c4 r4
-bes4 c8 d~d4 bes
+c4 c8 a~a4 r4
+d4 c8 d~d4 bes
 c4 bes8 a~a4 r4
 d4 d8 d~d4 d
 c4 d8 c (a4) r4
 bes4 bes8 bes~bes4 g
 f4 g8 f~f4 r4
 \repeat volta 4 {
-r4 a f'2
-r4 e8 d e4 a,
-r4 a d2
-r4 c8 bes c4 f,
-r4 d bes'2
-r4 a8 g a4 f |}
+d'2 r4 d
+c2 r8 e d c
+d2 r4 d
+c2 r8 c bes a
+bes2 r4 bes
+c2 a
+ |}
 \alternative{
-  {g1 f}
-  {g1~g f~f~f}
+  {bes1 bes2 r4 bes4}
+  {bes1~bes bes~bes2 r4 bes a1}
 }
 }
 
@@ -523,8 +553,8 @@ c4 )r2.
 %Refrain
 r4 d d8 d4 f8~
 f4 f f8 f4 bes8~
-bes4 bes bes8 bes r f~
-f4 f8 f~f a4.
+bes4 bes bes8 bes r a~
+a4 f8 f~f a4.
 g2 g
 r2 a4 f
 es4 es8 es~es2
@@ -532,8 +562,8 @@ r1
 %Refrain
 r4 d d8 d4 f8~
 f4 f f8 f4 bes8~
-bes4 bes bes8 bes r f~
-f4 f8 f~f a4.
+bes4 bes bes8 bes r a~
+a4 f8 f~f a4.
 g2 g
 r2 a4 f
 es4 es8 es~es2
@@ -590,10 +620,10 @@ r2 g2
 bes1 (c2) r2
 des1 (es)
 %Refrain
-r4 d? a8 g4 f8~
+r4 d a8 g4 f8~
 f4 f f8 f4 bes8~
-bes4 bes bes8 bes r f~
-f4 f8 f~f a4.
+bes4 bes bes8 bes r a~
+a4 f8 f~f a4.
 g2 g
 r2 a4 f
 es4 es8 es~es2
@@ -606,17 +636,17 @@ f4 f8 f~f4 r4
 g4 a8 bes~bes4 bes
 f4 f8 f (f4) r4
 g4 f8 es~es4 es
-bes4 bes8 bes r4 bes4
+bes4 bes8 bes~bes4 r4
 \repeat volta 4 {
 d2 r4 d
-f2 r4 f
-bes,2 r4 bes
+a'2 r4 a,
+bes2 r4 bes
 f'2 r4 f
 g2 r4 g
-f2 r4 f |}
+f2 f |}
 \alternative{
-  {es1 bes}
-  {es1~es f~f~f}
+  {es1 bes2 r4 bes}
+  {es1~es bes~bes2 r4 bes f'1}
 }
 \bar "|."
 }
@@ -639,9 +669,9 @@ d1:m g e:m a
 bes c f c
 
 %Refrain
-d1:m f bes f
+d1:m f bes:7+ f
 g:m f es bes
-d1:m f bes f
+d1:m f bes:7+ f
 g:m f es bes
 
 c1 c
@@ -653,7 +683,7 @@ f1 f f e2:m7 a
 d1:m g e:m a
 bes c f c
 %Refrain
-d1:m f bes f
+d1:m f bes:7+ f
 g:m f es bes
 d1:m f bes f
 g:m f es bes
@@ -667,12 +697,12 @@ f1 f f e2:m7 a
 d1:m g e:m a
 bes c des es
 %Refrain
-d1:m f bes f
+d1:m f bes:7+ f
 g:m f es bes
 d1:m f bes f
 g:m f es bes
 %%$$$$$$$$$$$$$$$$$$$BA
-d1:m f bes f
+d1:m f1:/a bes:7+ f
 g:m f es bes
 es es bes bes f
 }
@@ -683,6 +713,7 @@ sopranText = \lyricmode{
 \VersTwo
 \Refrain
 \Refrain
+\SoloVers
 \VersThree
 \Refrain
 \RefrainTwo
@@ -690,7 +721,7 @@ sopranText = \lyricmode{
 \VersFourSop
 \Refrain
 \RefrainTwo
-\BAFrauen
+\Ba
 }
 altText = \lyricmode{
 \VersOne  
@@ -704,7 +735,7 @@ altText = \lyricmode{
 \VersFourAlt
 \Refrain
 \RefrainTwo
-\BAFrauen
+\Ba
 }
 tenorText = \lyricmode{
 \VersOne  
@@ -718,6 +749,7 @@ tenorText = \lyricmode{
 \VersFourTenor
 \RefrainTenorTwo
 \RefrainTwo
+\Ba
 }
 bassText = \lyricmode{
 \VersOne  
@@ -731,6 +763,7 @@ bassText = \lyricmode{
 \VersFourBass
 \Refrain
 \RefrainTwo
+\BABass
 }
 %%%%%%%%%%Piano%%%%%%%%
 RightHand = \relative c'{
