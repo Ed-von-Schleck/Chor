@@ -27,7 +27,7 @@ f:m f:m/es
 f2:m
 
 %strophe
-f1:m f:m c f:m c bes:m7 es f:m f:m
+f1:m f:m c des:7+ c bes:m7 es f:m f:m
 bes:m7 es f:m f:m/es
 bes:m7 es f:m f:m
 %%Bridge
@@ -46,9 +46,8 @@ bes4:m7 c2.
 %%%%%%%%%%%%%%%solo%%%%%%%%%%%%
 d1:m d:m a a
 d1:m d:m a a
-d1:m d:m a a
-d1:m d1:m
-a a
+d1:m d:m/c d:m/bes
+a:7 a:7
 %%%%%%%%%%%%%%%%Refrain%%%%%%%%%%%%%
 d1:m d:m g:m a
 d:m d:m g:m7 c
@@ -189,7 +188,7 @@ des4 c2.
 \key d \minor
 \compressFullBarRests
 \huge
-R1*15
+R1*12
 \normalsize
 r1
 f1 e2 d d1
@@ -224,6 +223,7 @@ r2 f'2
 c2 bes4 c8 des
 c4 bes as g
 f1)
+\bar "|."
 }
 altMusik =  \relative c' {
 \global
@@ -274,7 +274,7 @@ f4 e2.
 \key d \minor
 \compressFullBarRests
 \huge
-R1*15
+R1*12
 \normalsize
 r1
 f1\f g2 a bes1
@@ -368,7 +368,7 @@ as4 g2.
 \key d \minor
 \compressFullBarRests
 \huge
-R1*15
+R1*12
 \normalsize
 r1
 d'1 d2 d d1
@@ -458,7 +458,7 @@ bes4 c2.
 %%%%%solo%%%%
 \key d \minor
 \huge
-R1*15
+R1*12
 \normalsize
 r1
 d1\f e2 f
@@ -509,7 +509,7 @@ r2 r8 as4.~
 as8 f4. r2
 r1 r1 r1 r1 r1 r1 r1 r1 r1 r1
 \key d \minor
-R1*16
+R1*13
 f1~ 
 f8 d4. r2
 r2 c8 d d c
@@ -558,7 +558,7 @@ RightHand = \relative c{
  %Strophe
  r1
  <f as c>4. <f as des>8 <f as des>4 <f as c>4
- r8 <g bes c>8 <g bes des>8 <g bes d>8 <g bes es>4 <g bes des>8 <g bes d>8
+ r8 <g bes c>8 <g bes des>8 <g bes d>8 <g bes es>4 <g bes d>8 <g bes des>8
  <f as c>4. <f as des>8 <f as des>4 <f as c>4
  r8  <e g bes c> <e g bes des>8 <e g bes d>  <e g bes es>4 <e g bes d>8 <e g bes des>
  <f as c>4. <f as des>8 <f as des>4 <f as c>4
@@ -584,28 +584,28 @@ r8 <es g bes>8  <es g b>8 <es g c>8 <es g des'>4 <es g des'>8 <es g bes>8
  r8 <g c bes>8 q q q q q q
  q q q q <e g bes c> q q q
  %Ref
- <f as c>8 des' c b f' g f e
- <as, c f>8 e' es d des c b c
- <bes des f>8 g' f e g as g f
- <c e g>8 as' g ges f e es d16 des
- <f, as c>8 des' c b f' g f e
- <as, c f>8 e' es d des c b c
+ <f f'>8 <des' des'> <c c'> <b b'> f' g f e
+ f e es d des c b c
+ f8 g f e g as g f
+ g8 as g c, des e f g 
+ c,8 des c b f' g f e
+ f e es d des c b c
  <bes des>8 es des c as' g f as
- <es g bes>8 as g f es des c bes
+ bes as g f es des c bes
  
- <f as c>8 des' c b f' g f e
- <as, c f>8 e' es d des c b c
- <bes des f>8 g' f e g as g f
- <c e g>8 as' g ges f e es d16 des
+ c8 des c b f' g f e
+ f e es d des c b c
+ f g f e g as g f
+ g as g c, des e f g
  <f, as c>8 des' c b f' g f e
  <as, c f>8 e' es d des c b c
  <bes des>8 es des c as' g f as
- <es g bes>8 as g f es des c bes
+ bes as g f es des c bes
  <c c'>8 <des des'>4  <c c'>8 <des des'>4 <c c'>8 <des des'>
  <bes bes'>8 <c c'>4 <bes bes'>8 <c c'>4 <bes bes'>8 <c c'>
  <as as'>8 <bes bes'>4 <as as'>8 <bes bes'>4 <as as'>8 <bes bes'>
- <bes bes'>8 <as as'>4 <bes bes'>8 <as as'>4 <bes bes'>8 <c c'>
- <f, f'>8 <g g'>4  <f f'>8 <g g'>4  <f f'>8 <g g'>
+ <g g'>8 <as as'>4 <g g'>8 <as as'>4 <g g'>8 <as as'>
+ <f f'>8 <g g'>4  <f f'>8 <g g'>4  <f f'>8 <g g'>
  <as as'>8 <bes bes'>4 <as as'>8 <bes bes'>4 <as as'>8 <bes bes'>
  <f f'>8 <g g'>4  <f f'>8 <g g'>4  <f f'>8 <g g'>
  <g g'>8 <as as'>4  <g g'>8 <as as'>4  <g g'>4
@@ -620,50 +620,47 @@ r8 <es g bes>8  <es g b>8 <es g c>8 <es g des'>4 <es g des'>8 <es g bes>8
  <cis e g a>4. <cis e g bes>8 <cis e g bes>4  <cis e g a>4
   r4 r8  <cis e g bes>8  <cis e g bes>4  <cis e g a>4
  %%%%%%
-r8 <d f a> q <d f bes> q <d f a> q q
- q <d f d'> q <d f des'> <d f c'> <d f b> <d f bes> <d f a>
- r8 <e g a>8 q <e g bes> q <e a g> q q
- q <e g e'> q <e g d'> <e g cis> <e g bes> q <e g a>
- r8 <d f a> q <d f bes> q <d f a> q q
- q <d f d'> q <d f des'> <d f c'> <d f b> <d f bes> <d f a>
+<f a d>4 q q q
+q q q q
+q q q q
  
- r8 <e a g>8 q q q q q q
- q q q q <cis e g a> q q q
+ r8 <a g cis>8 q q q q q q
+ q q q q <g a cis e> q q q
  %%%%%%%%%%%%%%%%Refrain
   <d f a>8 bes' a gis d' e d cis
  <f, a d>8 cis' c b bes a gis a
  <g bes d>8 e' d cis e f e d
- <a cis e>8 f' e es d cis c b16 bes
+ e f e a, bes cis d e
 
  <d, f a>8 bes' a gis d' e d cis
  <d f>8 e es d cis c b bes
  <g bes>8 c bes a f' e d f
  g8 f e d c bes a g
  \key f \minor
-  <f as c>8 des' c b f' g f e
- <as, c f>8 e' es d des c b c
- <bes des f>8 g' f e g as g f
- <c e g>8 as' g ges f e es d16 des
- <f, as c>8 des' c b f' g f e
- <as, c f>8 e' es d des c b c
+ c des c b f' g f e
+ f e es d des c b c
+ f g f e g as g f
+ g as g c, des e f g
+ c, des c b f' g f e
+ f e es d des c b c
  <bes des>8 es des c as' g f as
 r8 g as bes c bes as g
 <f, as c f>2 q
 <f as c es>2 <f as d>4 <f as des>
 <f as c>2 <f bes>4 <f c'>8 <f des'>
-<f as c>4 <f  bes> <e as> <e g>
+<e g c>4 <g  bes> <e as> <e g>
 <as, c f>2 <f' as c f>
 <f as c es>2 <f as d>4 <f as des>
 <f as c>2 <f bes>4 <f c'>8 <f des'>
-<f as c>4 <f  bes> <e as> <e g>
+<e g c>4 <g  bes> <e as> <e g>
 <as, c f>2 <f' as c f>
 <f as c es>2 <f as d>4 <f as des>
 <f as c>2 <f bes>4 <f c'>8 <f des'>
-<f as c>4 <f  bes> <e as> <e g>
+<e g c>4 <g  bes> <e as> <e g>
 <as, c f>2 <f' as c f>
 <f as c es>2 <f as d>4 <f as des>
 <f as c>2 <f bes>4 <f c'>8 <f des'>
-<f as c>4 <f  bes> <e as> <e g>
+<e g c>4 <g  bes> <e as> <e g>
 <as, c f>2 r2
 }
 LeftHand = \relative c {
@@ -713,30 +710,31 @@ bes,2. bes4
 des1
 c2 e f g
 %Refrain
-f,2.~f8 c'
+f1
 f,4 g as des
 bes2.~bes8 des
 c4 bes as g
-f2.~f8 c'
-f,4 g as des
+f1
+f4 g as des
 bes2 f'
 es bes
 
-f2.~f8 c'
-f,4 g as des
+f1
+f4 g as des
 bes2.~bes8 des
 c4 bes as g
-f2.~f8 c'
-f,4 g as des
+f1
+f4 g as des
 bes2 f'
 es bes
 as4 bes c es
 e2 g,4 as
 f g as des
 c2 e,4 g
-des'2 g,4 des'
+des'2. as4
 des as des as
-bes2 bes c c
+bes2 bes 
+bes4 c4 c2
 %solo
 \key d \minor
 d2 r4 r8 \times 2/3{a16 b cis}
@@ -747,50 +745,46 @@ d2 r4 r8 \times 2/3{a16 b cis}
 d2 r4 d4
 cis2 r4 r8 \times 2/3{a16 b c}
 cis2 a4 cis
-d2 r4 r8 \times 2/3{a16 b cis}
-d2 r2
-cis r4 r8 \times 2/3{a16 b c}
-cis2 r
-d2 r4 r8 \times 2/3{a16 b cis}
-d2 r
-
-a2 cis d e
+d2. r8 d
+c2. r8 c
+bes2. r8 bes8
+a2 cis 
+d2 e
 %Refrain
- d,2.~d8 a'
-d,4 e f bes
+ d1
+d4 e f bes
 g2.~g8 bes
 a4 g f e
-d2.~d8 a'
-d,4 e f d
-g2 d'
+d1
+d4 e f d
+g,2 d'
 c g
 \key f \minor
-f2.~f8 c'
-f,4 g as c
+f1
+f4 g as c
 bes2.~bes8 des
 c4 bes as g
-f2.~f8 c'
-f,4 g as des
+f1
+f4 g as des
 bes2 f'
 es bes
 <f f'>4 q q q
 q q q q
 q q q q
-q q q q
-q q q q 
-q q q q
-q q q q
-q q q q
-q q q q 
+<c c'>4 q q q
+<f f'>4 q q q 
 q q q q
 q q q q
+<c c'>4 q q q
+<f f'>4 q q q 
 q q q q
-q q q q 
+q q q q
+<c c'>4 q q q
+<f f'>4 q q q 
 q q q q
 q q q q
-q q q q
-
-q2  r2
+<c c'>4 q q q
+<f f'>2  r2
 
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%ALL%%%%%%%%%%%
