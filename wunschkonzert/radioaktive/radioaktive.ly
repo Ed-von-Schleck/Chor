@@ -6,7 +6,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
   arranger = "Arrangement: Andreas Fiebig"
   subtitle = \date
 }
-#(set-global-staff-size 17)
+#(set-global-staff-size 16.5)
 #(set-default-paper-size "a4")
 
 global = {
@@ -41,8 +41,8 @@ harmonies = \chordmode {
   f1:m as es bes
   f1:m as es bes
 %Bridge
-  f1 es es bes
-  f1 es es bes
+  f1:m es es bes
+  f1:m es es bes
 %Refrain
   f1:m as es bes
   f1:m as es bes
@@ -63,13 +63,13 @@ I wipe my brow and I sweat my rust,
 I'm brea -- thing in, the che -- mi -- cals
 oh __
 I'm break -- ing in, shap -- ing up,
-e -- ject -- ing out on the pri -- son bus.
+then check -- ing out on the pri -- son bus.
 This is it, the a -- po -- ca -- lypse.
 oh __
 }
 RefrainA = \lyricmode{
 I feel it in my bones
-e -- nough to make my sys -- tems go.
+e -- nough to make my sys -- tems blow.
 Wel -- come to the new age,
 to the new age
 wel -- come to the new age,
@@ -101,10 +101,10 @@ Ra -- di -- o -- ac -- tive
 VerseTwo = \lyricmode{
 I raise my flags, don my clothes,
 It's a re -- vo -- lu -- tion I sup -- pose.
-We'll paint it red, to fit right in.
+We're paint -- ed red, to fit right in.
 oh __
 I'm break -- ing in, shap -- ing up,
-e -- ject -- ing out on the pri -- son bus.
+then check -- ing out on the pri -- son bus.
 This is it, the a -- po -- ca -- lypse.
 oh __
 }
