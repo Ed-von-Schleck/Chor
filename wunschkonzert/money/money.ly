@@ -149,7 +149,7 @@ a'16 b c e a,16 b c e a,16 b c e a,16 b c e
 a,16 b c e a,16 b c e a,16 b c e  
 }
 Bridge = \relative c'{
-e8 f d e c d b e
+e8^"a tempo" f d e c d b e
 f d e c d b c4
 
 }
@@ -169,10 +169,11 @@ r2 b8 b4 b8
 %%%%%%%%
 a8 a4 a8~a4 r8 a
 a a4 c8~c4 r4
-r8 bes bes4 a8 a4 f8 
-f8 f4 f8~f4 r8 f
-f8 f f f a a a a 
-a b b a fis c' c (b)
+r8 bes bes4 c8 c4 c8 
+b8 b4 c8~c4 r8 f,
+\override TextSpanner #'(bound-details left text) = "rit."
+f8\startTextSpan f f f a a a a 
+a b b a fis c' c (b\stopTextSpan)
 \Bridge
 %%%%%%%%%Refrain
 a8 b c a b c r4
@@ -375,7 +376,7 @@ r2 gis8 gis4 a8
 (a2) r4 r8 a8
 a a a a a a a a
 gis gis gis gis e e e4
-r2 f8 f4 a8 
+r2 gis8 gis4 a8 
 (a2) r4. a8
 %%%%
 a8 a4 a8~a4 r8 a
@@ -405,7 +406,7 @@ r4 e8 e gis gis4 a8~
 {
 a4 r r2
 r1
-r4 e8 e e e4 a8~
+r4 e8 e gis gis4 a8~
 a4 s2.
 s2. s8 a8
 }
@@ -429,7 +430,7 @@ bes8 bes bes bes bes bes r4
 r4 f8 f a a4 bes8~
 bes4 r r2
 r1
-r4 f8 f f f4 bes8~
+r4 f8 f a a4 bes8~
 bes4 s2.
 }
 

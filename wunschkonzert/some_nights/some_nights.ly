@@ -19,6 +19,16 @@ global = {
   \tempo 4 = 105
 }
 
+\paper {
+  top-system-spacing #'basic-distance = #10
+  score-system-spacing #'basic-distance = #20
+  system-system-spacing #'basic-distance = #-20
+  last-bottom-spacing #'basic-distance = #10
+
+  %system-system-spacing = #'((padding . 0) (basic-distance . 0.1))
+  %ragged-last-bottom = ##f
+  %ragged-bottom = ##f
+}
 
 %%%%%%%%Text%%%%%%%%%%%%%%%%%%%%%
 Intro = \lyricmode{
@@ -34,12 +44,12 @@ What do I stand for? What do I stand for?
 Most nights I don't know an -- y
 }
 FIntroOh = \lyricmode{
-more, oh, whoa, oh, whoa, oh, 
-whoa, oh, whoa, oh, whoa, oh
+more, whoa, whoa, whoa, whoa, oh, 
+whoa, whoa, whoa, whoa, whoa, oh
 }
 Oh = \lyricmode{
-whoa, oh, whoa, oh, whoa, oh,
-whoa, oh, whoa, oh, whoa, oh
+whoa, whoa, whoa, whoa, whoa, oh,
+whoa, whoa, whoa, whoa, whoa, oh
 }
 
 TenorVersOne = \lyricmode{
@@ -91,29 +101,29 @@ c2 g
 c2 g
 e1:m d1
 %%%%%%%%%%%%%Refrain
-g1
-c4. g8 g2
-c4. g8 g2
-d1
-g1
-c4. g8 g2
-c4. g8 g2
-d1
+%g1
+%c4. g8 g2
+%c4. g8 g2
+%d1
+%g1
+%c4. g8 g2
+%c4. g8 g2
+%d1
 
-g1
-c4. g8 g2
-c4. g8 g2
-d1
-g1
-c4. g8 g2
-c4. g8 g2
-d1
+%g1
+%c4. g8 g2
+%c4. g8 g2
+%d1
+%g1
+%c4. g8 g2
+%c4. g8 g2
+%d1
 %%BassVers
-d1
-c4. g8 g2
-c4. g8 g2
-c4. g8 g2
-d1
+%d1
+%c4. g8 g2
+%c4. g8 g2
+%c4. g8 g2
+%d1
 %%%%%%%%%%%%Re
 g1 
 c4. g8 g2
@@ -129,7 +139,7 @@ c4. g8 g2
 d1
 c4. g8 g2 
 c4. g8 g2
-e2:m c4. d8 
+e2:m c2
 d1
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%Musik%%%%%%%%%%
@@ -413,62 +423,62 @@ lhIntro = \relative c {
 
 sopranMusik =  \relative c'' {
 \sopranIntro
-\sopranOh
-\sopranOh
-\sopranAlright
+%\sopranOh
+%\sopranOh
+%\sopranAlright
 \sopranRe
 }
 altMusik =  \relative c' {
 \altIntro
-\altOh
-\altOh
-\altAlright
+%\altOh
+%\altOh
+%\altAlright
 \altRe
 }
 tenorMusik =  \relative c'' {
 \MenIntro
-\tenorOh
-\tenVersOne
-\tenorAlright
+%\tenorOh
+%\tenVersOne
+%\tenorAlright
 \tenorRe
 }
 bassMusik = \relative c' {
 \MenIntro
-\bassOh
-\bassOh
-\bassVers
+%\bassOh
+%\bassOh
+%\bassVers
 \bassRe
 }
 sopranText = \lyricmode{
 \Intro
 \IntroPartTwo
-\FIntroOh
-\Oh
-\SAlright
+%\FIntroOh
+%\Oh
+%\SAlright
 \SopVers
 \IntroPartTwo
 }
 altText = \lyricmode{
 \Intro
 \IntroPartTwo
-\FIntroOh
-\Oh
-\Alright
+%\FIntroOh
+%\Oh
+%\Alright
 \SopVers
 \IntroPartTwo
 }
 tenorText = \lyricmode{
-\Oh
-\TenorVersOne
-\Alright
+%\Oh
+%\TenorVersOne
+%\Alright
 \SopVers
 \IntroPartTwo
 
 }
 bassText = \lyricmode{
-\Oh
-\Oh
-\BassVers
+%\Oh
+%\Oh
+%\BassVers
 \SopVers
 \IntroPartTwo
 }
@@ -518,6 +528,7 @@ LeftHand = \relative c {
     \Staff
       \RemoveEmptyStaves
       \override VerticalAxisGroup #'remove-first = ##t
+      
     }
   }
   \midi {   }
