@@ -125,7 +125,7 @@ sopMusic = \relative c'' {
   c)
 
   g4 e g e
-  g e' e2~
+  g( e') e2~
   e1
   r2. f,4
   r f( g2)
