@@ -651,7 +651,7 @@ b16 a a g a g a8 r4 r16 a a a
 sopschluss= \relative c''{
 g4. (b8) r4 b8 (d) 
 e4. (d8) r4 b8 (d) 
-e4. (d8) r4 b8 (a) r1
+e4. (d8) r4 b8 (a) r1 
 
 g4. (b8) r4 b8  (d) 
 e4. (d8) r4 b8 (d) 
