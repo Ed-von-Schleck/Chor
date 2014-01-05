@@ -156,7 +156,7 @@ Who the fuck wants to die a -- lone all dried up in the des -- ert sun?
 }
 
 SisterVerse = \lyricmode{
-My heart is break -- ing for my sis -- ter and the con that she call love.
+My heart is break -- ing for my sis -- ter and the con that she called love.
 When I look in -- to my neph -- ew's eyes
 you would -- n't be -- lieve the most a -- ma -- zing things that can come from
 some ter -- ri -- ble nights.

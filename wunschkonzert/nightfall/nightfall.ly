@@ -343,7 +343,7 @@ g:m es
 g:m d:7
 es d
 es d
-g:m es g:m d:7
+g:m g:m g:m d:7
 es d es d g:m
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -475,8 +475,8 @@ bes4. (bes8. a16 g8)
 bes8. c16 d8 d c bes
 c4 bes8 a4\) r8
 d4. (\(d8. c16 bes8)
-bes4. r4 g8
-d'4 g8 g4 g8
+bes4. r4 bes8
+d4 g8 g4 g8
 f8 r8 d8 c4 d8 
 g,4.\) s4.
 
@@ -521,8 +521,8 @@ bes4. (bes8. a16 g8)
 bes8. c16 d8 d c bes
 c4 bes8 a4\) r8
 d4. (\(d8. c16 bes8)
-bes4. r4 g8
-d'4 g8 g4 g8
+bes4. r4 bes8
+d4 g8 g4 g8
 f8 r8 d8 c4 d8 
 g,4.\) r4.
 r2.*10
@@ -564,15 +564,23 @@ bes4. (bes8. a16 g8)
 bes8. c16 d8 d c bes
 c4 bes8 a4\) r8
 d4. (\(d8. c16 bes8)
-bes4. r4 g8
-d'4 g8 g4 g8
+bes4. r4 bes8
+d4 g8 g4 g8
 f8 r8 d8 c4 d8 
-g,4.~g4\) r8
+g,4.\) r4.
 d'2. (es2) r4
 d2. (a2) r4
 bes4.\( (g) bes (a)\) 
 bes\( (g) es' (d)\)
-\Ende
+g,4 bes8 d8 bes g
+es' c a4 c8 es
+g,4 bes8 d bes g
+c a fis~fis r4
+es'4 d8 c4 bes8
+a4. r4.
+g'4 f8 es4 f8
+d8 es d d16 es d c d f
+<bes, d g>2.\arpeggio
 \bar"|."
 }
 
@@ -712,12 +720,13 @@ bes4. (bes8. a16 g8)
 g4. (bes8. a16) g8
 bes4 bes8 bes4 bes8
 bes8 r8 bes8 f4 f8 
-d4. ~d4 r8
+d4. r4.
 g2.\p (c2) r4
 g2. (fis2) r4
 g2.\p\< g4. (fis)\!
 g2.\p\< g4. (fis)\!
-\Ende
+s2. s2. s2. s2.
+s2. s2. s2. s2. s2.
 
 }
 
@@ -858,7 +867,7 @@ d4.~d4.
 es4. (g8. f16) es8
 d4 d8 es4 es8
 bes8 r8 bes8 a4 a8 
-bes4.~bes4 r8
+bes4. r4.
 %schluss
 g8 bes d~d r8 bes
 es c a~a r4
@@ -979,7 +988,7 @@ a a f r8 g a
 bes8. bes16 bes8 bes f4
 r2 r8 g
 
-bes,16 bes bes8 bes f'4 f16 f
+bes16 bes bes8 bes f4 f16 f
 d8 d d g8 r8 g8
 d4 d8 f4\breathe f16 f
 \time 3/8
@@ -1002,7 +1011,7 @@ g,4.~g4.\(
 es4.~es4 es8
 bes'4 bes8 es,4 es8
 d8 r8 bes8 f'4 f8 
-g4.~g4\) r8
+g4.\) r4.
 %schluss
 g8\p bes d~d r8 bes
 es c a~a r4

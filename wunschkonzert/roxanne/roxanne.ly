@@ -21,7 +21,7 @@ f1:m
 f2:m
 
 %strophe
-f1:m f:m c f:m c bes:m7 es f:m f:m
+f1:m f:m es:6 des:7+ c bes:m7 es f:m f:m
 bes:m7 es f:m f:m/es
 bes:m7 es f:m f:m
 %%Bridge
@@ -106,17 +106,17 @@ Rox -- anne you don't have to wear that dress to night.
 Rox -- anne you don't have to sell your bo -- dy to the night.
 }
 Refrain = \lyricmode{
-Why does my heart cries?
+Why does my heart cry?
 Feel -- ings I can't fight.
-Why does my heart cries?
+Why does my heart cry?
 Feel -- ings I can't fight.
 You're free to leave me but just don't de -- ceive me
 and please be -- lieve me when I say I love you.
 }
 RefrainTwo = \lyricmode{
-Why does my heart cries?
+Why does my heart cry?
 Feel -- ings I can't fight.
-Why does my heart cries?
+Why does my heart cry?
 Feel -- ings I can't fight.
 }
 RefrainBass = \lyricmode{
@@ -179,7 +179,7 @@ as4 r4 as4. as8
 as2 g4 f
 r4 f2 f4
 des'4 des des des 
-des4 r4 es2
+des4 r4 es4 r
 des4 c2.
 %%%%%solo%%%%
 \key d \minor
@@ -200,9 +200,9 @@ g2 as
 des1
 es2 r2
 %schluss
-f1
-(es2 d4 des
-c2 bes4 c8 des
+as,1
+(bes2 c
+des2 bes2
 c4 bes as g)
 r2 f'2
 
@@ -258,13 +258,13 @@ f1
 e2 r
 f1 f2 f
 as1 g2 r2
-es2 es4. es8
+es2\p es4. es8
 g2 g4 as
 f4 r4 f4. f8
 f2 e4 f
 r4 des2 des4
 f4 f f f 
-f4 r4 g2
+f4 r4 g4 r
 f4 e2.
 %%%%%solo%%%%
 \key d \minor
@@ -287,12 +287,12 @@ as1
 g2 r2
 %schluss
 as1~as r2 f2 (e1
-f2 as2~as1)
+as1~as1)
 r2 f2 (e2) r2
 as1 
 g2 f 
 f1 e2 r2
-f2 (as2~as1)
+ (as1~as1)
 r2 f2 (e1
 c1)
 
@@ -309,8 +309,8 @@ R1^"14"
 r2
 \time 4/4
 %Strophe
-as1\f 
-f2 r2
+as1\p\< 
+f2\!\f r2
 r2 as8 g f es
 \times 2/3{f4 g as} f4 g~
 g4 r r2
@@ -324,7 +324,7 @@ f4 g8 as8~as4 es8 f~
 f4 r4 r8 bes4.~
 bes8 f4. r2
 r2 es8 f f f 
-ces'4 bes8 as \times 2/3{f4 f es}
+ces'4 bes8 as f f es f8~ 
 f2. r4
 %%%Bridge%%%%
 r4 f4\p f4. f8 
@@ -352,13 +352,13 @@ des'1
 c2 r
 as1 g2 f
 f'1 es2 r2
-c2 c4. c8
+c2\p c4. c8
 c2 c4 c
 c4 r4 c4. c8
 c2 c4 bes
 r4 as2 as4
 as4 as as as 
-as4 r4 g2
+as4 r4 g4 r
 as4 g2.
 %%%%%solo%%%%
 \key d \minor
@@ -419,7 +419,7 @@ f4 g8 as8~as4 es8 f~
 f4 r4 r8 bes4.~
 bes8 f4. r2
 r2 es8 f f f 
-ces'4 bes8 as \times 2/3{f4 f es}
+ces'4 bes8 as f f es f8~
 f2. r4
 %%%Bridge%%%%
 r4 f4 f4. f8 
@@ -454,7 +454,7 @@ f4 r4 f4. f8
 c2 c4 c
 r4 des2 des4
 bes4 bes bes bes 
-bes4 r4 bes2
+bes4 r4 bes4 r
 bes4 c2.
 %%%%%solo%%%%
 \key d \minor

@@ -94,7 +94,7 @@ il suf -- fi -- sait de te par -- ler, pour t'ap -- pri -- voi -- ser.
 Refrain = \lyricmode{
 Aux Champs __ E -- ly -- sées, aux Champs __ E -- ly -- sées.
 Au so -- leil, sous la pluie, à mi -- di ou à mi -- nuit
-il __ y __ a tout ce_que vous vou -- lez aux Champs __ E -- ly -- sées.
+il __ y __ a tout ce__que vous vou -- lez aux Champs __ E -- ly -- sées.
 }
 RefrainTwo = \lyricmode{
 Aux Champs __ E -- ly -- sées, ba ba ba ba ba aux Champs __ E -- ly -- sées
@@ -131,13 +131,13 @@ sopranMusik =  \relative c' {
 \global
 R1*3 r2 r4
 \times 2/3{r4 d8}
-\times 2/3{b'8 d b~} \times 2/3{b8 r b} \times 2/3{a8 b a~} \times 2/3{a8 r8 a}
-\times 2/3{g8 a g~} \times 2/3{g8 r g} \times 2/3{f8 g f~} \times 2/3{f8 r8 f}
+\times 2/3{b'8 d b~} \times 2/3{b4  b8} \times 2/3{a8 b a~} \times 2/3{a8 r8 a}
+\times 2/3{g8 a g~} \times 2/3{g4 g8} \times 2/3{f8 g f~} \times 2/3{f8 r8 f}
 \times 2/3{e4 g8} \times 2/3{a4 g8} \times 2/3{b4 g8} \times 2/3{g4 g8}
 \times 2/3{a4 a8} \times 2/3{b4 a8~} a4 \times 2/3{r4 d,8}
 
 \times 2/3{b'8 d b~} \times 2/3{b8 r4} \times 2/3{a8 b a~} \times 2/3{a8 r4}
-\times 2/3{g8 a g~} \times 2/3{g8 r g} \times 2/3{f8 g f~} \times 2/3{f8 r8 f}
+\times 2/3{g8 a g~} \times 2/3{g4 g8} \times 2/3{f8 g f~} \times 2/3{f8 r8 f}
 \times 2/3{e4 g8} \times 2/3{a4 g8} \times 2/3{b8 g g~} \times 2/3{g r e8}
 \times 2/3{g4 g8} \times 2/3{a4 g8~} g4 r
 %%Refrain%%
@@ -148,13 +148,13 @@ c2 \times 2/3{b4 g8} \times 2/3{b4 a8~} a2 r
 \times 2/3{e4 g8} \times 2/3{a4 g8} \times 2/3{b8 g g8} \times 2/3{r4 e8}
 \times 2/3{g4 g8} \times 2/3{a4 g8~} g4 r
 %Strophe%
-\times 2/3{b8 d b~} \times 2/3{b8 r b} \times 2/3{a8 b a~} \times 2/3{a8 r8 a}
-\times 2/3{g8 a g~} \times 2/3{g8 r g} \times 2/3{f8 g f~} \times 2/3{f8 r8 f}
+\times 2/3{b8 d b~} \times 2/3{b4 b8} \times 2/3{a8 b a~} \times 2/3{a8 r8 a}
+\times 2/3{g8 a g~} \times 2/3{g4 g8} \times 2/3{f8 g f~} \times 2/3{f8 r8 f}
 \times 2/3{e4 g8} \times 2/3{a4 g8} \times 2/3{b4 g8} \times 2/3{g4 g8}
 \times 2/3{a4 a8} \times 2/3{b4 a8~} a4 \times 2/3{r4 d,8}
 
-\times 2/3{b'8 d b~} \times 2/3{b8 r b} \times 2/3{a8 b a~} \times 2/3{a8 r a}
-\times 2/3{g8 a g~} \times 2/3{g8 r g} \times 2/3{f8 g f~} \times 2/3{f8 r8 f}
+\times 2/3{b'8 d b~} \times 2/3{b4 b8} \times 2/3{a8 b a~} \times 2/3{a8 r a}
+\times 2/3{g8 a g~} \times 2/3{g4 g8} \times 2/3{f8 g f~} \times 2/3{f8 r8 f}
 \times 2/3{e4 g8} \times 2/3{a4 g8} \times 2/3{b8 g g~} \times 2/3{g r e8}
 g4 \times 2/3{a4 g8~} g4 r
 %%Refrain%%
@@ -168,19 +168,19 @@ c2 \times 2/3{b4 g8} \times 2/3{b4 a8~} a2 r
 \times 2/3{c4 c8} \times 2/3{c4 c8} \times 2/3{b4 a8~} a4
 \times 2/3{b4 d8} \times 2/3{b4 g8~} g2
 \times 2/3{c4 c8} \times 2/3{c4 c8} \times 2/3{b4 g8} \times 2/3{a4 g8~}
-g2 r
+g2\!\mf r
 \times 2/3{c4 c8} \times 2/3{c4 c8} \times 2/3{a4 a8~} a4
 \times 2/3{b4 b8} \times 2/3{b4 b8~} b2
 \times 2/3{c4 c8} \times 2/3{c4 c8} \times 2/3{b4 b8} \times 2/3{a4 g8~}
 g2 r2
 %Strophe%
-\times 2/3{b8 d b~} \times 2/3{b8 r b} \times 2/3{a8 b a~} \times 2/3{a8 r8 a}
-\times 2/3{g8 a g~} \times 2/3{g8 r g} \times 2/3{f8 g f~} \times 2/3{f8 r8 f}
+\times 2/3{b8 d b~} \times 2/3{b4 b8} \times 2/3{a8 b a~} \times 2/3{a8 r8 a}
+\times 2/3{g8 a g~} \times 2/3{g4 g8} \times 2/3{f8 g f~} \times 2/3{f8 r8 f}
 \times 2/3{e4 g8} \times 2/3{a4 g8} \times 2/3{b4 g8} \times 2/3{g4 g8}
 \times 2/3{a4 a8} \times 2/3{b4 a8~} a4 \times 2/3{r4 d,8}
 
-\times 2/3{b'8 d b~} \times 2/3{b8 r b} \times 2/3{a8 b a~} \times 2/3{a8 r4}
-\times 2/3{g8 a g~} \times 2/3{g8 r g} \times 2/3{f8 g f~} \times 2/3{f8 r8 f}
+\times 2/3{b'8 d b~} \times 2/3{b4 b8} \times 2/3{a8 b a~} \times 2/3{a8 r4}
+\times 2/3{g8 a g~} \times 2/3{g4 g8} \times 2/3{f8 g f~} \times 2/3{f8 r8 f}
 \times 2/3{e4 g8} \times 2/3{a4 g8} \times 2/3{b8 g g~} \times 2/3{g r4}
 \times 2/3{g4 g8} \times 2/3{a4 g8~} g4 r
 %%Refrain%%
@@ -198,13 +198,13 @@ altMusik =  \relative c' {
 \global
 R1*3 r2 r4
 \times 2/3{r4 d8}
-\times 2/3{g8 g g~} \times 2/3{g8 r g} \times 2/3{fis8 fis fis~} \times 2/3{fis8 r8 fis}
-\times 2/3{e8 e e~} \times 2/3{e8 r e} \times 2/3{d8 d d~} \times 2/3{d8 r8 d}
+\times 2/3{g8 g g~} \times 2/3{g4 g8} \times 2/3{fis8 fis fis~} \times 2/3{fis8 r8 fis}
+\times 2/3{e8 e e~} \times 2/3{e4 e8} \times 2/3{d8 d d~} \times 2/3{d8 r8 d}
 \times 2/3{c4 c8} \times 2/3{c4 c8} \times 2/3{d4 d8} \times 2/3{d4 d8}
 \times 2/3{c4 c8} \times 2/3{d4 fis8~} fis4 \times 2/3{r4 d8}
 
 \times 2/3{g8 g g~} \times 2/3{g8 r4} \times 2/3{fis8 fis fis~} \times 2/3{fis8 r4}
-\times 2/3{e8 e e~} \times 2/3{e8 r e} \times 2/3{d8 d d~} \times 2/3{d8 r8 d}
+\times 2/3{e8 e e~} \times 2/3{e4 e8} \times 2/3{d8 d d~} \times 2/3{d8 r8 d}
 \times 2/3{c4 c8} \times 2/3{c4 c8} \times 2/3{d8 d d~} \times 2/3{d8 r e8}
 \times 2/3{e4 e8} \times 2/3{fis4 g8~} g4 r
 %%Refrain%%
@@ -215,13 +215,13 @@ e2 \times 2/3{g4 e8} \times 2/3{d4 cis8~} cis2 r
 \times 2/3{c4 e8} \times 2/3{es4 es8} \times 2/3{d8 d d8} \times 2/3{r4 e8}
 \times 2/3{e4 e8} \times 2/3{fis4 g8~} g4 r
 %Strophe%
-\times 2/3{g8 g g~} \times 2/3{g8 r g} \times 2/3{fis8 fis fis~} \times 2/3{fis8 r8 fis}
-\times 2/3{e8 e e~} \times 2/3{e8 r e} \times 2/3{d8 d d~} \times 2/3{d8 r8 d}
+\times 2/3{g8 g g~} \times 2/3{g4 g8} \times 2/3{fis8 fis fis~} \times 2/3{fis8 r8 fis}
+\times 2/3{e8 e e~} \times 2/3{e4 e8} \times 2/3{d8 d d~} \times 2/3{d8 r8 d}
 \times 2/3{c4 c8} \times 2/3{c4 c8} \times 2/3{d4 d8} \times 2/3{d4 d8}
 \times 2/3{c4 c8} \times 2/3{d4 fis8~} fis4 \times 2/3{r4 d8}
 
-\times 2/3{g8 g g~} \times 2/3{g8 r g} \times 2/3{fis8 fis fis~} \times 2/3{fis8 r fis}
-\times 2/3{e8 e e~} \times 2/3{e8 r e} \times 2/3{d8 d d~} \times 2/3{d8 r8 d}
+\times 2/3{g8 g g~} \times 2/3{g4 g8} \times 2/3{fis8 fis fis~} \times 2/3{fis8 r fis}
+\times 2/3{e8 e e~} \times 2/3{e4 e8} \times 2/3{d8 d d~} \times 2/3{d8 r8 d}
 \times 2/3{c4 c8} \times 2/3{c4 c8}  \times 2/3{d8 d d~} \times 2/3{d8 r e8}
 e4 \times 2/3{fis4 g8~} g4 r
 %%Refrain%%
@@ -232,22 +232,22 @@ e2 \times 2/3{g4 e8} \times 2/3{d4 cis8~} cis2 r
 \times 2/3{c4 e8} \times 2/3{es4 es8} \times 2/3{d8 d d8} \times 2/3{r4 e8}
 \times 2/3{e4 e8} \times 2/3{fis4 g8~} g4 r
 %Bridge$
-\times 2/3{e4 e8} \times 2/3{e4 e8} \times 2/3{fis4 fis8~} fis4
-\times 2/3{fis4 fis8} \times 2/3{fis4 e8~} e2
-\times 2/3{e4 e8} \times 2/3{e4 e8} \times 2/3{fis4 e8} \times 2/3{fis4 g8~}
+\times 2/3{e4\p e8} \times 2/3{e4 e8} \times 2/3{fis4 fis8~} fis4
+\times 2/3{fis4\f fis8} \times 2/3{fis4 e8~} e2
+\times 2/3{e4\p\< e8} \times 2/3{e4 e8} \times 2/3{fis4 e8} \times 2/3{fis4 g8~}
 g2 r
-\times 2/3{e4 e8} \times 2/3{e4 e8} \times 2/3{fis4 fis8~} fis4
-\times 2/3{fis4 fis8} \times 2/3{fis4 e8~} e2
-\times 2/3{e4 e8} \times 2/3{e4 e8} \times 2/3{d4 d8} \times 2/3{d4 d8~}
-d2 r2
+\times 2/3{e4\f e8} \times 2/3{e4 e8} \times 2/3{fis4 fis8~} fis4
+\times 2/3{fis4\p fis8} \times 2/3{fis4 e8~} e2
+\times 2/3{e4\< e8} \times 2/3{e4 e8} \times 2/3{d4 d8} \times 2/3{d4 d8~}
+d2\!\mf r2
 %Strophe%
-\times 2/3{g8 g g~} \times 2/3{g8 r g} \times 2/3{fis8 fis fis~} \times 2/3{fis8 r8 fis}
-\times 2/3{e8 e e~} \times 2/3{e8 r e} \times 2/3{d8 d d~} \times 2/3{d8 r8 d}
+\times 2/3{g8 g g~} \times 2/3{g4 g8} \times 2/3{fis8 fis fis~} \times 2/3{fis8 r8 fis}
+\times 2/3{e8 e e~} \times 2/3{e4 e8} \times 2/3{d8 d d~} \times 2/3{d8 r8 d}
 \times 2/3{c4 c8} \times 2/3{c4 c8} \times 2/3{d4 d8} \times 2/3{d4 d8}
 \times 2/3{c4 c8} \times 2/3{d4 fis8~} fis4 \times 2/3{r4 d8}
 
-\times 2/3{g8 g g~} \times 2/3{g8 r g} \times 2/3{fis8 fis fis~} \times 2/3{fis8 r4}
-\times 2/3{e8 e e~} \times 2/3{e8 r e} \times 2/3{d8 d d~} \times 2/3{d8 r8 d}
+\times 2/3{g8 g g~} \times 2/3{g4 g8} \times 2/3{fis8 fis fis~} \times 2/3{fis8 r4}
+\times 2/3{e8 e e~} \times 2/3{e4 e8} \times 2/3{d8 d d~} \times 2/3{d8 r8 d}
 \times 2/3{c4 c8} \times 2/3{c4 c8} \times 2/3{d8 d d~} \times 2/3{d8 r4}
 \times 2/3{e4 e8} \times 2/3{fis4 g8~} g4 r
 %%Refrain%%
@@ -264,13 +264,13 @@ tenorMusik =  \relative c' {
 \global
 R1*3 r2 r4
 \times 2/3{r4 d8}
-\times 2/3{d8 d d~} \times 2/3{d8 r d} \times 2/3{dis8 dis dis~} \times 2/3{dis8 r8 dis}
-\times 2/3{e8 b b~} \times 2/3{b8 r b} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
+\times 2/3{d8 d d~} \times 2/3{d4 d8} \times 2/3{dis8 dis dis~} \times 2/3{dis8 r8 dis}
+\times 2/3{e8 b b~} \times 2/3{b4 b8} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
 \times 2/3{g4 g8} \times 2/3{g4 g8} \times 2/3{g4 g8} \times 2/3{g4 g8}
 \times 2/3{a4 a8} \times 2/3{a4 c8~} c4 \times 2/3{r4 d8}
 
 \times 2/3{d8 d d~} \times 2/3{d8 r4} \times 2/3{dis8 dis dis~} \times 2/3{dis8 r4}
-\times 2/3{e8 b b~} \times 2/3{b8 r b} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
+\times 2/3{e8 b b~} \times 2/3{b4 b8} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
 \times 2/3{g4 g8} \times 2/3{g4 g8} \times 2/3{g8 g g8~} \times 2/3{g8 r g8}
 \times 2/3{c4 c8} \times 2/3{c4 b8~} b4 r
 %%Refrain%%
@@ -281,13 +281,13 @@ c2 \times 2/3{d4 c8} \times 2/3{b4 a8~} a2 r
 \times 2/3{g4 g8} \times 2/3{a4 a8} \times 2/3{g8 g g8} \times 2/3{r4 g8}
 \times 2/3{c4 c8} \times 2/3{c4 b8~} b4 r
 %Strophe%
-\times 2/3{d8 d d~} \times 2/3{d8 r d} \times 2/3{dis8 dis dis~} \times 2/3{dis8 r8 dis}
-\times 2/3{e8 b b~} \times 2/3{b8 r b} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
+\times 2/3{d8 d d~} \times 2/3{d4 d8} \times 2/3{dis8 dis dis~} \times 2/3{dis8 r8 dis}
+\times 2/3{e8 b b~} \times 2/3{b4 b8} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
 \times 2/3{g4 g8} \times 2/3{g4 g8} \times 2/3{g4 g8} \times 2/3{g4 g8}
 \times 2/3{a4 a8} \times 2/3{a4 c8~} c4 \times 2/3{r4 d8}
 
-\times 2/3{d8 d d~} \times 2/3{d8 r d} \times 2/3{dis8 dis dis~} \times 2/3{dis8 r dis}
-\times 2/3{e8 b b~} \times 2/3{b8 r b} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
+\times 2/3{d8 d d~} \times 2/3{d4 d8} \times 2/3{dis8 dis dis~} \times 2/3{dis8 r dis}
+\times 2/3{e8 b b~} \times 2/3{b4 b8} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
 \times 2/3{g4 g8} \times 2/3{g4 g8} \times 2/3{g8 g g8~} \times 2/3{g r g8}
 c4  \times 2/3{c4 b8~} b4 r
 %%Refrain%%
@@ -307,13 +307,13 @@ b2 r
 \times 2/3{c4 c8} \times 2/3{c4 c8} \times 2/3{b4 g8} \times 2/3{a4 g8~}
 g2 r2
 %Strophe%
-\times 2/3{d'8 d d~} \times 2/3{d8 r d} \times 2/3{dis8 dis dis~} \times 2/3{dis8 r8 dis}
-\times 2/3{e8 b b~} \times 2/3{b8 r b} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
+\times 2/3{d'8 d d~} \times 2/3{d4 d8} \times 2/3{dis8 dis dis~} \times 2/3{dis8 r8 dis}
+\times 2/3{e8 b b~} \times 2/3{b4 b8} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
 \times 2/3{g4 g8} \times 2/3{g4 g8} \times 2/3{g4 g8} \times 2/3{g4 g8}
 \times 2/3{a4 a8} \times 2/3{a4 c8~} c4 \times 2/3{r4 d8}
 
-\times 2/3{d8 d d~} \times 2/3{d8 r d} \times 2/3{dis8 dis dis~} \times 2/3{dis8 r4}
-\times 2/3{e8 b b~} \times 2/3{b8 r b} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
+\times 2/3{d8 d d~} \times 2/3{d4 d8} \times 2/3{dis8 dis dis~} \times 2/3{dis8 r4}
+\times 2/3{e8 b b~} \times 2/3{b4 b8} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
 \times 2/3{g4 g8} \times 2/3{g4 g8} \times 2/3{g8 g g8~} \times 2/3{g8 r4}
 \times 2/3{c4 c8} \times 2/3{c4 b8~} b4 r
 %%Refrain%%
@@ -332,13 +332,13 @@ bassMusik = \relative c {
 \global
 R1*3 r2 r4
 \times 2/3{r4 d8}
-\times 2/3{g8 g g~} \times 2/3{g8 r g} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
-\times 2/3{e,8 e e~} \times 2/3{e8 r e} \times 2/3{g8 g g~} \times 2/3{g8 r8 g}
+\times 2/3{g8 g g~} \times 2/3{g4 g8} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
+\times 2/3{e,8 e e~} \times 2/3{e4 e8} \times 2/3{g8 g g~} \times 2/3{g8 r8 g}
 \times 2/3{c,4 c8} \times 2/3{c4 c8} \times 2/3{b4 b8} \times 2/3{b4 b8}
 \times 2/3{a4 a8} \times 2/3{a4 d8~} d4 \times 2/3{r4 d8}
 
 \times 2/3{g8 g g~} \times 2/3{g8 r4} \times 2/3{b8 b b~} \times 2/3{b8 r4}
-\times 2/3{e,8 e e~} \times 2/3{e8 r e} \times 2/3{g8 g g~} \times 2/3{g8 r8 g}
+\times 2/3{e,8 e e~} \times 2/3{e4 e8} \times 2/3{g8 g g~} \times 2/3{g8 r8 g}
 \times 2/3{c,4 c8} \times 2/3{c4 c8} \times 2/3{b8 b b8~} \times 2/3{b8 r g'8}
 \times 2/3{a4 a8} \times 2/3{d,4 g8~} g4 r
 %%Refrain%%
@@ -349,13 +349,13 @@ c2 \times 2/3{g'4 g8} \times 2/3{g4 a8~} a2 r
 \times 2/3{c,4 c8} \times 2/3{c4 c8} \times 2/3{b8 b b8} \times 2/3{r4 g'8}
 \times 2/3{a4 a8} \times 2/3{d,4 g8~} g4 r
 %Strophe%
-\times 2/3{g8 g g~} \times 2/3{g8 r g} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
-\times 2/3{e,8 e e~} \times 2/3{e8 r e} \times 2/3{g8 g g~} \times 2/3{g8 r8 g}
+\times 2/3{g8 g g~} \times 2/3{g4 g8} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
+\times 2/3{e,8 e e~} \times 2/3{e4 e8} \times 2/3{g8 g g~} \times 2/3{g8 r8 g}
 \times 2/3{c,4 c8} \times 2/3{c4 c8} \times 2/3{b4 b8} \times 2/3{b4 b8}
 \times 2/3{a4 a8} \times 2/3{a4 d8~} d4 \times 2/3{r4 d8}
 
-\times 2/3{g8 g g~} \times 2/3{g8 r g} \times 2/3{b8 b b~} \times 2/3{b8 r b}
-\times 2/3{e,8 e e~} \times 2/3{e8 r e} \times 2/3{g8 g g~} \times 2/3{g8 r8 g}
+\times 2/3{g8 g g~} \times 2/3{g4 g8} \times 2/3{b8 b b~} \times 2/3{b8 r b}
+\times 2/3{e,8 e e~} \times 2/3{e4 e8} \times 2/3{g8 g g~} \times 2/3{g8 r8 g}
 \times 2/3{c,4 c8} \times 2/3{c4 c8}  \times 2/3{b8 b b8~} \times 2/3{b8 r g'8}
 a4 \times 2/3{d,4 g8~} g4 r
 %%Refrain%%
@@ -366,22 +366,22 @@ c2 \times 2/3{g'4 g8} \times 2/3{g4 a8~} a2 r
 \times 2/3{c,4 c8} \times 2/3{c4 c8} \times 2/3{b8 b b8} \times 2/3{r4 g'8}
 \times 2/3{a4 a8} \times 2/3{d,4 g8~} g4 r
 %Bridge%
-\times 2/3{c,4 c8} \times 2/3{c4 c8} \times 2/3{d4 d8~} d4
-\times 2/3{b'4 b8} \times 2/3{b4 e,8~} e4 (d)
-\times 2/3{c4 c8} \times 2/3{c4 c8} \times 2/3{d4 e8} \times 2/3{d4 g8~}
-g4 d g, r
-\times 2/3{c4 c8} \times 2/3{c4 c8} \times 2/3{d4 d8~} d4
-\times 2/3{b4 b8} \times 2/3{b4 e8~} e4 (d)
-\times 2/3{c4 c8} \times 2/3{c4 c8} \times 2/3{d4 e8} \times 2/3{fis4 g8~}
-g2 r2
+\times 2/3{c,4\p c8} \times 2/3{c4 c8} \times 2/3{d4 d8~} d4
+\times 2/3{b'4\f b8} \times 2/3{b4 e,8~} e4 (d)
+\times 2/3{c4\p\< c8} \times 2/3{c4 c8} \times 2/3{d4 e8} \times 2/3{d4 g8~}
+g4\!\mf d g, r
+\times 2/3{c4\f c8} \times 2/3{c4 c8} \times 2/3{d4 d8~} d4
+\times 2/3{b4\p b8} \times 2/3{b4 e8~} e4 (d)
+\times 2/3{c4\< c8} \times 2/3{c4 c8} \times 2/3{d4 e8} \times 2/3{fis4 g8~}
+g2\!\mf r2
 %Strophe%
-\times 2/3{g8 g g~} \times 2/3{g8 r g} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
-\times 2/3{e,8 e e~} \times 2/3{e8 r e} \times 2/3{g8 g g~} \times 2/3{g8 r8 g}
+\times 2/3{g8 g g~} \times 2/3{g4 g8} \times 2/3{b8 b b~} \times 2/3{b8 r8 b}
+\times 2/3{e,8 e e~} \times 2/3{e4 e8} \times 2/3{g8 g g~} \times 2/3{g8 r8 g}
 \times 2/3{c,4 c8} \times 2/3{c4 c8} \times 2/3{b4 b8} \times 2/3{b4 b8}
 \times 2/3{a4 a8} \times 2/3{a4 d8~} d4 \times 2/3{r4 d8}
 
-\times 2/3{g8 g g~} \times 2/3{g8 r g} \times 2/3{b8 b b~} \times 2/3{b8 r4}
-\times 2/3{e,8 e e~} \times 2/3{e8 r e} \times 2/3{g8 g g~} \times 2/3{g8 r8 g}
+\times 2/3{g8 g g~} \times 2/3{g4 g8} \times 2/3{b8 b b~} \times 2/3{b8 r4}
+\times 2/3{e,8 e e~} \times 2/3{e4 e8} \times 2/3{g8 g g~} \times 2/3{g8 r8 g}
 \times 2/3{c,4 c8} \times 2/3{c4 c8} \times 2/3{b8 b b8~} \times 2/3{b8 r4}
 \times 2/3{a'4 a8} \times 2/3{d,4 g8~} g4 r
 %Refrain%
