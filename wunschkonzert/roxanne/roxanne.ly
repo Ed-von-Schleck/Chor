@@ -61,7 +61,7 @@ f1:m
 SopSchluss = \lyricmode{
 Ah __
 Ah __
-Ah __
+Feel -- ings I can't fight.
 Ah __
 }
 AltSchluss = \lyricmode{
@@ -81,8 +81,10 @@ Ah __
 BassSchluss = \lyricmode{
 Ah __
 Ah __
+Rox -- anne
 Ah __
 Ah __
+Rox -- anne
 Ah __
 }
 Bridge = \lyricmode{
@@ -209,12 +211,10 @@ r2 f'2
 (es2 d4 des
 c2 bes4 c8 des
 c4 bes as g)
-r2 f'2
-
-(es2 d4 des
-c2 bes4 c8 des
-c4 bes as g)
-r2 f'2
+as1
+bes2 c des (bes)
+c4 (bes as g
+as4) r4 f'2
 
 (es2 d4 des
 c2 bes4 c8 des
@@ -292,7 +292,7 @@ r2 f2 (e2) r2
 as1 
 g2 f 
 f1 e2 r2
- (as1~as1)
+as1~as
 r2 f2 (e1
 c1)
 
@@ -476,10 +476,11 @@ bes1
 es,2 r2
 %schluss
 f1~f1~f2 r c1
-(f1~f1~f2) r c1
-(f1~f1~f2) r c1
+(f4) r4 as2~as1~as4 f2. r2 c2
 (f1~f1~f2) r c1
 (f1)
+r4 as2.~as4 f2.
+c1 (f1)
 
 }
 bassSolo = \relative c' {
@@ -530,7 +531,14 @@ as8 f4. r2
 r2 es8 f f es
 \times 2/3{f4 g as} f4 g~
 g4 r r2
-r1 r1 r1 r1
+r1 r1 
+s1 s1 s1 s1
+s1 s1 s1 s1
+s1 s1 s1 s1
+s1 s1 s1
+}
+bassSoloOld = \relative c' {
+r1 r1
 r2 as2~
 as1~
 as4 f2. r1
