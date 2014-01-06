@@ -214,15 +214,15 @@ altoMusic = \relative c' {
 
 
   % Refrain
-  <b e>2 q4 <cis e>
-  <cis e> <e a> <b e>8( <cis e>4) r8
-  <cis e>4 <b e>8( <cis e>) <d fis>2
-  q8 q4. <a d>8( <a cis>4) r8
+  e2 e4 e
+  e a e4. r8
+  e4 e4 <d fis>2
+  q8 q4. d8( e4) r8
 
-  <b e>2 q4 <cis e>
-  <cis e> <e a> <b e>8( <cis e>4) r8
-  <cis e>4 <b e>8 <cis e> q q <a d>( <a cis>)
-  q2 r
+  e2 e4 e
+  e a e4. r8
+  e4 e8 e e e d( cis)
+  <a cis>2 r
 
   R1*15
 
@@ -276,15 +276,15 @@ altoMusic = \relative c' {
   R1*8
 
   % Refrain
-  <b e>2 q4 <cis e>
-  <cis e> <e a> <b e>8( <cis e>4) r8
-  <cis e>4 <b e>8( <cis e>) <d fis>2
-  q8 q4. <a d>8( <a cis>4) r8
+  e2 e4 e
+  e a e4. r8
+  e4 e <d fis>2
+  q8 q4. d8( e4) r8
 
-  <b e>2 q4 <cis e>
-  <cis e> <e a> <b e>8( <cis e>4) r8
-  <cis e>4 <b e>8 <cis e> q q <a d>( <a cis>)
-  q2 r4 cis
+  e2 e4 e
+  e a e4. r8
+  e4 e8 e e e d( cis)
+  <a cis>2 r4 cis
 
   % Strophe
   cis4 d e e8 e
@@ -498,12 +498,12 @@ bassMusic = \relative c {
 
   cis d e r8 e
   fis4 d cis e
-  gis2 fis8 fis4 d8
-  cis2. r4
+  <e gis>2 <d fis>8 q4 <a d>8
+  <a cis>2. r4
 
   % Refrain
   R1*7
-  r2. e4
+  r2. e'4
 
   % Strophe
   e4 fis a a8 a

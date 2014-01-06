@@ -389,26 +389,11 @@ a:m
 instrumentalMusic = \relative c''{
 \set fontSize = #-2
 bes4. f'4 bes,8 a4. f'4 g8 bes,4.~bes8 bes c d4 es16 d c4.
-s2. s s s s s s s
-s2. s s s s s s s s s
-s2. s s s s s s s
-s2. s s s s s s s s s
-s2. s s s s s s s
-s2. s s s s s s s
-s s s s
-s2. s s s s s s s
-s2. s s s s s s s
+s2.*72
 
 c8_[ c16  b c b] g8. d8. g8_[ f e] c8._[ d8.] 
 e8_[ c'16 b c b] g8._[ f8.] a8_[ b c ]c8._[ d]
 e8_[f16 e f e] c8._[ f,] c'_[b] g e f4 g8 g4 c8 c4. b
-
-s2. s s s s s s s
-s2. s s s s s s s
-s2. s s s s s s s s 
-
-
-
 }
 
 SoloMusic= \relative c''{
@@ -537,8 +522,8 @@ bes4. r8 g g d'4 (c8) d4.
 c8 c8 b16 a~a8 g g
 f f e d8 r8  f8 
 c'8 c16 b ~ b8 a4 a8
-c c e d8 r8 g,8
-d'8. e c g 
+c c e d8 r8 d8
+d8. e c g 
 d' e f e 
 c4. r8 a a e'4 (d8) e4 r8
 \bar "||"
@@ -610,10 +595,10 @@ g'8 g16 d ~ d8 es4 es8
 f f f f8 r8 f8
 g8. g g f 
 a f f d 
-es4. r8  g g es4 (g8) a4 r8
+es4. r8  g g es4 (g8) fis4 r8
 
 %Vers2
-d,8 d d16 d16~d8 bes c 
+d8 d d16 d16~d8 bes c 
 d16 d8 d8. d8 r4
 R1*6/8 r4. r4 d8
 d g g g g g
@@ -640,7 +625,7 @@ a'8 a16 e ~ e8 f4 f8
 g g g g8 r8 g8
 a8. a a g 
 b g g g 
-f4. r8  a a f4 (a8) b4 r8
+f4. r8  a a f4 (a8) gis4 r8
 
 
 
@@ -655,9 +640,9 @@ bes8 bes16 bes16~bes8 bes4 bes8
 f g bes a4 r8
 g8. g g f 
 a f f4 f8
-es4. r8 f f es4 (g8) a4.
+es4. r8 g g es4 (g8) fis4.
 \key c \major
-s2. s s s s s s s 
+s2.*8
 
 
 
@@ -671,7 +656,7 @@ a'8 a16 e ~ e8 f4 f8
 g g g g8 r8 g8
 a8. a a g 
 b c g e
-f4. r8  g g f4 (a8) b4 r8
+f4. r8  g g f4 (a8) gis4 r8
 
 
 
@@ -701,15 +686,9 @@ a'8 a16 b ~ b8 a4 a8
 e f e g4 r8
 a8. a a g 
 b4 c8 g4 e8 
-f4.(a8) r8  f8 f4 (g8 e4) gis8 a2.
-
-
-
-
-
+f4.(a8) r8  a8
+f4 (g8 e4) gis8 a2.
 \bar "|."
-
-
 }
 
 
@@ -884,10 +863,10 @@ g8 g16 g ~ g8 es4 es8
 f f g a8 r8 a8
 g8. d es es 
 f f d d 
-es4. r8  es es g4. fis4 r8
+es4. r8  es es g4. d4 r8
 
 %Vers3
-R1*6/8 r4. r4 bes,16 bes
+r2. r4. r4 bes16 bes
 f'8 es d16 c~c8 bes4  
 bes8 bes d c8 r8 f8 
 g g g g g g
@@ -911,7 +890,7 @@ a8 a16 a ~ a8 f4 f8
 g e c d8 r8 g8
 a8. e f f 
 g g e e 
-f4. r8  f f a4. gis4 r8
+f4. r8  f f a4. e4 r8
 
 %Ref3
 \bar "||"
@@ -924,18 +903,18 @@ g8 g16 es ~ es8 es4 es8
 bes bes es f4 r8
 g8. d es es 
 f f d4 d8 
-es4. r8  es es g4. fis4.
+es4. r8  es es g4. d4.
 R1*6/8*8
 \key c \major
 
 %Ref4
-a8 a a16 f~f8  f8 f 
+a'8 a a16 f~f8  f8 f 
 c c c g'8 r8  g8 
 a8 a16 a ~ a8 f4 f8
 g e c d8 r8 g8
 a8. e f f 
 g g e e 
-f4. r8  f f a4. gis4 r8
+f4. r8  f f a4. e4 r8
 \bar "||"
 \key bes \major
 
