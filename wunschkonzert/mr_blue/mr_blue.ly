@@ -146,7 +146,7 @@ g4 )r2.
 %Refrain
 r4 d f8 g4 a8~
 a4 d, f8 g4 a8~
-a4 d, f8 g r a~
+a4 d, f8 g4 a8~
 a4 c8 c~c c4.
 f2 d
 r2 c4 a
@@ -185,14 +185,14 @@ d4 r f,8 d f g~
 g8 a4. d,4 f
 g4 e g e
 g a g a8 f~
-f4 r d' d 
+f4 r d' d8 c8~ 
 c8 c4. c4 c8 c~
 c4 r r8 bes( a g~
 g4 )r2.
 %Refrain
 r4 d f8 g4 a8~
 a4 d, f8 g4 a8~
-a4 d, f8 g r a~
+a4 d, f8 g4 a8~
 a4 c8 c~c c4.
 f2 d
 r2 c4 a
@@ -253,7 +253,7 @@ r4 d bes'2
 r4 a8 g a4 f |}
 \alternative{
   {g1 f2 r2}
-  {g1~g f~f2 r4 f f1}
+  {g1~g f~f2_\markup{ \italic rit. } r4 f f1\fermata}
 }
 \bar "|."
 }
@@ -288,7 +288,7 @@ e4 )r2.
 %Refrain
 r4 d d8 d4 c8~
 c4 d d8 d4 f8~
-f4 d d8 d r f~
+f4 d d8 d4  f8~
 f4 g8 g~g f4.
 bes2 bes
 r2 f4 f
@@ -317,14 +317,14 @@ a4 r4 d,8 d d d~
 d8 d4. d4 d
 e4 e e e
 e e e e8 f~
-f4 r bes bes 
+f4 r bes bes8 g8~ 
 g8 g4. g4 g8 a~
 a4 r r8 f( f e~
 e4 )r2.
 %Refrain
 r4 d d8 d4 c8~
 c4 d d8 d4 f8~
-f4 d d8 d r f~
+f4 d d8 d4 f8~
 f4 g8 g~g f4.
 bes2 bes
 r2 f4 f
@@ -356,9 +356,9 @@ r2 g~
 g2 (b
 a) r2
 bes1 (g2) r2
-as1 (bes)
+as1\< (bes)
 %Refrain
-r4 d, d8 d4 c8~
+r4\!\> d, d8 d4\! c8~
 c4 d d8 d4 f8~
 f4 d d8 d r f~
 f4 g8 g~g f4.
@@ -419,7 +419,7 @@ c4 )r2.
 %Refrain
 r4 d, f8 g4 a8~
 a4 a bes8 c4 d8~
-d4 bes bes8 bes r c~
+d4 bes bes8 bes4 c8~
 c4 c8 c~c c4.
 d2 d
 f d
@@ -446,14 +446,14 @@ f4 r4 a,8 a a b~
 b8 b4. b4 b
 b4 b b b
 cis cis cis cis8 d~
-d4 r f f
+d4 r f f8 f8~
 f8 e4. d4 e8 f~
 f4 r r8 c( c c~
 c4 )r2.
 %Refrain
 r4 d, f8 g4 a8~
 a4 a bes8 c4 d8~
-d4 bes bes8 bes r c~
+d4 bes bes8 bes4 c8~
 c4 c8 c~c c4.
 d2 d
 f d
@@ -483,9 +483,9 @@ f8 f4 f8~f4 r4
 r4 f f f
 e2 e4. d8~
 d4 r f f8 e~
-e8 d4. d4 d8 e~
+e8 d8 r4 d4 d8 e~
 e4 e8 e~e e4 d8~
-d cis4. cis4 cis8 d~
+d cis8 r4 cis4 cis8 d~
 d4 r f4 f8 f~
 f4 e d e
 r2 f4 f8 f~
@@ -518,7 +518,7 @@ c2 a
  |}
 \alternative{
   {bes1 bes2 r4 bes4}
-  {bes1~bes bes~bes2 r4 bes a1}
+  {bes1~bes bes~bes2 r4 bes a1\fermata}
 }
 }
 
@@ -553,8 +553,8 @@ c4 )r2.
 %Refrain
 r4 d d8 d4 f8~
 f4 f f8 f4 bes8~
-bes4 bes bes8 bes r a~
-a4 f8 f~f a4.
+bes4 bes bes8 bes4 f8~
+f4 f8 f~f a4.
 g2 g
 r2 a4 f
 es4 es8 es~es2
@@ -580,14 +580,14 @@ d4 r4 d,8 d d g~
 g8 g4. g4 f
 e4 e e e
 a a a a8 bes~
-bes4 r bes bes
+bes4 r bes bes8 c8~
 c8 c4. c4 c8 f,~
 f4 r r8 f( f c~
 c4 )r2.
 %Refrain
 r4 d d8 d4 f8~
 f4 f f8 f4 bes8~
-bes4 bes bes8 bes r f~
+bes4 bes bes8 bes4 f8~
 f4 f8 f~f a4.
 g2 g
 r2 a4 f
@@ -646,7 +646,7 @@ g2 r4 g
 f2 f |}
 \alternative{
   {es1 bes2 r4 bes}
-  {es1~es bes~bes2 r4 bes f'1}
+  {es1~es bes~bes2_\markup{ \italic rit. } r4 bes f'1}
 }
 \bar "|."
 }

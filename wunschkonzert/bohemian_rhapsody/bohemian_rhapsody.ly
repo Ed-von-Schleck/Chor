@@ -129,7 +129,7 @@ a2 r8 d,8 d e
 %easy
 dis8 \< dis d4\staccato \> cis8 \< cis d4\staccato \>
 dis8 \< dis d4\staccato \> cis8 \< cis d4\staccato \>
-e8 e e e d4 g4
+e8\mp e e e d4 g4
 g8 g g g fis4 c8 a
 d2 \p r4 fis8 (g)
 g2 r2 
@@ -249,14 +249,14 @@ bes2 g2:m7
 SopranBallade = \lyricmode{
 oh __ oh __ oh __ ah __ oh __
 Ma -- ma  uh __ oh __ 
-ah __  oh __ 
+ah __ ah __  oh __ 
 oh __ oh __ oh __ ah __ oh __
 Ma -- ma  uh __ oh __  ah __ oh __
 }
 AltBallade = \lyricmode{
 oh __ oh __ oh __ ah __ oh __
 Ma -- ma  uh __ oh __ 
-ah __  oh __
+ah __ ah __  oh __
 oh __ oh __ oh __ ah __ oh __ 
 Ma -- ma  uh __ oh __ 
 ah __  oh__
@@ -282,7 +282,7 @@ been born at all.
 BassBallade = \lyricmode{
 oh __ oh __ oh __  ah __
 Ma -- ma uh __ oh __ 
- ah __ oh __ 
+ ah __ ah __ oh __ 
  oh __ oh __ oh __  ah __
  Ma -- ma uh __  A -- ny -- way the wind blows.  oh __ 
 ah __  oh __
@@ -297,10 +297,10 @@ g2 (a4~a8 b16 c
 b2.) r4 
 c1\< (c4 ) r4 c4 (d)
 \key c \major
-e16  \! \f e~e8~e4. r8 d4 (c2 b4 )r4
+e16  \! \f e~e8~e2  d4\mf (c2 b4 )r4
 d2. r4
-b1 \< (c2 \! \f  g \p
-a4) r4 f2 (
+b1 \< (c2) \! \f  g \p
+(a4) r4 f2 (
 e2) r2 
 \time 2/4
 r2
@@ -315,7 +315,7 @@ g2 (a4~a8 b16 c
 b2.) r4 
 c1\< (c4 ) r4 c4 (d)
 \key c \major
-e16  \! \f e~e8~e4. r8 d4 (c2 b4 )r4
+e16  \! \f e~e8~e2 d4 (c2 b4 )r4
 d2. r4
 b1 \< (c2.) \! \f  g4\>
 (c,1\!)
@@ -328,10 +328,10 @@ e1~e2 (d4) r4
 d1 (g2. r4)
 e1\< (e4) r4 fis2
 \key c \major
-g16  \! \f  g~g8~g4. r8 g4 ( a2.) r4
+g16  \! \f  g~g8~g2  g4\mf ( a2.) r4
 a2 (f4)  r4
-d1\< (g2 \! \f  d \p
-c4) r4 c2~c2 r2
+d1\< (g2) \! \f  d \p
+(c4) r4 c2~c2 r2
 \time 2/4
 r2
 \time 4/4
@@ -343,7 +343,7 @@ e1~e2 (d4) r4
 d1 (g2. r4)
 e1\< (e4) r4 fis2
 \key c \major
-g16  \! \f  g~g8~g4. r8 g4 ( a2.) r4
+g16  \! \f  g~g8~g2 g4 ( a2.) r4
 a2 (f4)  r4
 d1\< (g2.) \! \f  d4 \>
 (c1\!)
@@ -355,12 +355,12 @@ b16 \mf b16~b8~b2 r8 g
 a8 b16 b~b2 r8 b16 b16
 c16 d16~d c~c b~b a~a8 r8 a b
 c16 d~d c~c b~b a~a4 r4
-b16 a (b8~b4.) r8 b d
+b16 a (b8~b2)  b8 d
 fis8. e16 e2 r8 e
 g8 \< g g g g8. e16 c16 (b8.) 
 a16 a16~a8~a2 r4
 \key c \major
-e'16 \!  \ff e~e8~e4. r8 d8 (e16 f e2.)  r8 e16 e
+e'16 \!  \ff e~e8~e2  d8\mf (e16 f e2.)  r8 e16 e
 f8. e16 e8 d16 d~d4 r8 g,
 g \< d' d e16 e8. f8 f g16 f~
 f8 \! \ff e  r8 d16 \> e g4.\! \mp d16 e
@@ -385,8 +385,7 @@ e'16 \!  \ff e~e8~e4. r8 d8 (e16 f e2.)  r4
 f8. e16 e8 d16 d~d4 r8 g,
 g \< d' d e e16 f f8 f g
 f16 (e~e8~e2.) \! \ff
-r1
-R1*6
+r1 r1 r1 r1 r1 r1 r1
 }
 bassBallade = \relative c'{
 r1
@@ -395,9 +394,9 @@ a,1~a2 (d4) r4
 g2 ( fis e2.) r4
 a2 \< (c4 g fis2. ) r4
 \key c \major
-c'16\! \f c~c8~c4. r8 b4( a2.) r4
+c'16\! \f c~c8~c2 b4\mf( a2.) r4
 d,2. r4
-g1\< ( c2 \! \f b2\p a4) r4
+g1\< ( c2) \! \f b2\p (a4) r4
 f2 (c) r2
  \time 2/4
  r2
@@ -410,7 +409,7 @@ a,1~a2 (d4) r4
 g2 ( fis e2.) r4
 a2 \< (c4 g fis2. ) r4
 \key c \major
-c'16\! \f c~c8~c4. r8 b4
+c'16\! \f c~c8~c2 b4
 a8 a e g b4 a
 d,2. r4
 g1\< ( c2. \! \f )b4\> (a1\!)
@@ -705,10 +704,10 @@ r8 cis16\staccato cis16\staccato d16\staccato cis16\staccato b16\staccato a16\st
 gis16\staccato r16 r8
 \time 2/4
 \key c \major
-r16 e16~e4.~e2 \>
-r2 \!
+r16 e16~e4. r2
+r2 
 c'8 \f c16 c c8 c
-c16 c c8 c16 c c8
+c16 c c8 c16 c c16 r
 a8 a16 b g8 g16 g
 fis8 fis16 fis g8 r8
 r2 r2 r2
@@ -726,11 +725,11 @@ b,8\staccato \ff cis8\staccato dis8\staccato f8\staccato
 g8\staccato b8\staccato c8\staccato r8
 r4 r8  g16\staccato \mf g16\staccato
 a16\staccato g16\staccato  f16\staccato e16\staccato
-d16\staccato r g8 \<
+d16\staccato r g8 
 c8. c16 c r16 c\staccato c\staccato
 b16\staccato b16\staccato b16\staccato b16\staccato
-e8 e d4 r8 d8 d4 r8 d8
-g2~g \! \ff
+e8 e d4\p r8 d8\< d4 r8 d8
+<d g>2~<d g>2 \! \ff
  }
 altOper = \relative c''{
 \key fis \major
@@ -749,7 +748,7 @@ r4 r4 r16 g g g
 \key c \major
 g2 \> r2 \! r2
 a8 \f g16 g ges8 g
-a16 a g8 ges16 ges g8
+a16 a g8 ges16 ges g16 r
 f8 f16 g e8 e16 e
 d8 d16 d d8 r8
 r2 r2 r2
@@ -760,7 +759,7 @@ r8 r r16 e16\staccato  e16\staccato  e16~e4 r
 r8 r r16 e16\staccato  e16\staccato   e16\staccato
 d16\staccato e16\staccato f16\staccato e16\staccato 
 d16\staccato e16\staccato  e16\staccato  e16\staccato
-d16\staccato e16\staccato f16\staccato e16\staccato e16\staccato r8.
+d16\staccato e16\staccato f16\staccato e16\staccato d16\staccato r8.
 
 r8 r16 es16~es8~es8
 %no
@@ -768,10 +767,10 @@ b8\staccato \ff cis8\staccato dis8\staccato d8\staccato
 es8\staccato d8\staccato c8\staccato r8
 r4 r8  e16\staccato \mf e16\staccato
 f16\staccato e16\staccato  d16\staccato c16\staccato
-b16\staccato r d8 \<
+b16\staccato r d8 
 g8. g16 a r16 a\staccato a\staccato
 a16\staccato a16\staccato a16\staccato a16\staccato
-g8 g f8. (e16 d16) r16 f8 a8. (g16 f16) r16 g8
+g8 g f8.\p (e16\< d16) r16 f8 a8. (g16 f16) r16 g8
 b2~b  \! \ff
 
 }
@@ -787,13 +786,13 @@ cis16\staccato cis16\staccato cis16\staccato cis16\staccato cis8\staccato cis8\s
 cis8->\staccato r8 r fis,16\staccato fis16\staccato g16\staccato fis8. r8 fis16\staccato fis16\staccato
 \time 3/4
  g16\staccato fis16\staccato fis16\staccato fis16\staccato g16\staccato fis16\staccato
-e16\staccato d16\staccato cis4
+e16\staccato d16\staccato cis16 r8.
 \time 2/4
 \key c \major
-r16 r r c'~c4~c2 \>
-r2 \!
+r16 r r c'~c4 r2
+r2 
 f8 \f e16 e es8 e
-f16 f e8 es16 es e8
+f16 f e8 es16 es e16 r
 c8 c16 d c8 c16 c
 c8 c16 c b8 r8
 r2 r2 r4. g8\staccato \f
@@ -811,10 +810,10 @@ b8\staccato \ff ais8\staccato b8\staccato bes8\staccato
 bes8\staccato b8\staccato c8\staccato r8
 r4 r8  c16\staccato \mf c16\staccato
 c16\staccato c16\staccato  a16\staccato g16\staccato
-g16\staccato r b8 \<
+g16\staccato r b8 
 e8. e16 f r16 f\staccato f\staccato
 fis16\staccato fis16\staccato fis16\staccato fis16\staccato
-e8 e b4 r8 b8 b4 r8 b8 
+e8 e b4\p r8 b8\< b4 r8 b8 
 d2~d  \! \ff
 
 }
@@ -830,14 +829,14 @@ a16\staccato a16\staccato a16\staccato a16\staccato b8\staccato b8\staccato
 ais8->\staccato r8 r fis16\staccato fis16\staccato g16\staccato fis8. r8 fis16\staccato fis16\staccato
 \time 3/4
  g16\staccato fis16\staccato fis16\staccato fis16\staccato g16\staccato fis16\staccato
-e16\staccato d16\staccato cis4
+e16\staccato d16\staccato cis16 r8.
 \time 2/4
 \key c \major
 r4 r16 a'16 \p r g
 gis8 g16 g fis8 g16 g
 gis8 g16 g fis8 g
 c8 \f c16 c c8 c
-c16 c c8 c16 c c8
+c16 c c8 c16 c c16 r
 f,8 f16 f e8 e16 e
 d8 d16 d g8 r8
 r2
@@ -859,10 +858,10 @@ r2 r4 r16 g16\staccato \mf g16\staccato g16\staccato
 a16\staccato g16\staccato g16\staccato g16\staccato
 a16\staccato g16\staccato c,16\staccato c16\staccato 
 f16\staccato c16\staccato f16\staccato g16\staccato 
-g16\staccato r16 g8 \<
+g16\staccato r16 g8 
 c8. c16 f,16 r16 f\staccato a\staccato
 b16\staccato b16\staccato b16\staccato b16\staccato 
-e,8 e g4 r8 g8 g4 r8 g8 g2~g  \! \ff
+e,8 e g4\p r8 g8\< g4 r8 g8 g2~g  \! \ff
 }
 %%%%%%%%%%%Piano%%%%%%%%%%%%%%%%%%%
 rhOper = \relative c'{
@@ -979,14 +978,14 @@ sopranRock = \relative c''{
 \time 4/4
 r1 r1 r1 r1
 \times 2/3{r4 \f f,8~} \times 2/3{f8 f4} \times 2/3{f4 e8~} \times 2/3{e8 e4}   
-\times 2/3{e4 d8~} \times 2/3{d8 d4} \times 2/3{e4 e8~} \times 2/3{e8 e4} 
+\times 2/3{e4 d8~} \times 2/3{d8 d4} \times 2/3{d4 e8~} \times 2/3{e8 e4} 
 d2. r4
 
 \time 2/4
 r4 r4
 \time 4/4
 \times 2/3{r4 f8~} \times 2/3{f8 f4} \times 2/3{f4 e8~} \times 2/3{e8 e4}   
-\times 2/3{e4 d8~} \times 2/3{d8 d4} \times 2/3{e4 e8~} \times 2/3{e8 e4}
+\times 2/3{e4 d8~} \times 2/3{d8 d4} \times 2/3{d4 e8~} \times 2/3{e8 e4}
 \times 2/3{f4 (g8} a4~a) r4
 e4~\times 2/3{e4 (f8~)} f2
 \times 2/3{e4 (d8)} d4~d r
@@ -1039,7 +1038,7 @@ c2. r4
 a1
 g4 g4~g4 r
 \times 2/3{r4 a8~} \times 2/3{a8 a4} \times 2/3{a4 a8~} \times 2/3{a8 a4} 
-a4 a4~a r
+b4 b4~b r
 \times 2/3{a4 a8} \times 2/3{a8 a b~} b4 r4
 \times 2/3{a4 a8} \times 2/3{a8 a4} \times 2/3{b4 g8~} \times 2/3{g8 g4}
 g2 r2
@@ -1194,7 +1193,7 @@ sopranOutro = \relative c''{
 c2\f  (d c) b4 c
 b c4 r2
 r1 r1 r1 
-e8 d c b g4 r4 
+e8 d c b g4. r8 
 e'8  c d e c\glissando as4.\fermata
 e8\p\> d d c c a4 \fermata \! b8 \pp
 c1 r1 r1
@@ -1210,7 +1209,7 @@ altOutro = \relative c'{
 g'2\f (g a) b4 a
 b4 a r2
 r1 r1 r1
-e8 e e e e4 r4
+e8 e e e e4. r8
 e8 e e e f f4.\fermata
 e8 \p\> d d c c a4 \fermata \!b8 \pp 
 c1 r1 r1
@@ -1227,7 +1226,7 @@ e2\f (d c) e4 e
 e16 (f8.) e4 r2
 r1 r1
 a,8\mf b c e, g g~g r8
-c8 c c c b4 r4
+c8 c c c b4. r8
 c8 c c c c c4.\fermata
 c8\p\> b b a a a4 \fermata \! g8 \pp
 c1 r1 r1
@@ -1244,7 +1243,7 @@ c2\f (b a) gis4 a
 gis4 a r2  
 r1 r1
 a8\mf b c e, g g~g r8
-a8 a a a e4 r4
+a8 a a a e4. r8
 a8 a a a f f4.\fermata
 g8 \p\> g g g g g4 \fermata \! g8 \pp
 c,1 r1 r1

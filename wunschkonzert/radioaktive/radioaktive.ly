@@ -140,7 +140,7 @@ sopranMusik =  \relative c' {
   r4 c' c c
   c c c c
   es4 es es es
-  d d d2
+  d d d4 r
   c8 bes c bes c4 f,
   r4 c'8 bes c4 f,
   c'8 bes c bes c4 f,
@@ -244,7 +244,7 @@ altMusik =  \relative c' {
   r4 \f as' as as
   as as as as
   g4 g g g
-  f f f2
+  f f f4 r
   f8 f f f f4 f
   r4 es8 es es4 f
   es8 f g f es4 f
@@ -299,7 +299,7 @@ altMusik =  \relative c' {
   f2 f8 f4 es8~ 
   es2 r
   g g8 f f4~
-  f1
+  f2 r2
 %Refrain
   r4\f as as as
   as as as as
@@ -346,7 +346,7 @@ tenorMusik =  \relative c {
   r4 f' f f
   es es c c
   es4 es es es
-  d d bes2
+  d d bes4 r
   c8 c c c as4 as
   r4 c8 c c4 c
   bes8 bes bes bes bes4 bes
@@ -401,7 +401,7 @@ tenorMusik =  \relative c {
   c2 c8 c4 bes8~ 
   bes2 r
   bes bes8 bes bes4~
-  bes1
+  bes2 r2
 %Refrain
   r4 f' f f
   es es c c
@@ -449,7 +449,7 @@ bassMusik = \relative c {
   f f f f
   as as as as
   es4 es es es
-  bes' bes bes2
+  bes' bes bes4 r
   as8 as as as f4 f
   r4 as8 as as4 as
   es8 es es es es4 es
