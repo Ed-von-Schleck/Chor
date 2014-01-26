@@ -47,7 +47,7 @@ verseOne = \lyricmode {
 }
 
 verseOneAlto = \lyricmode {
-  Ah __ ah __ ah __ eme -- rald green
+  Ah __ eme -- rald green
 
   Your smile is like a breath of spring
   your voice is soft like sum -- mer rain
@@ -63,8 +63,8 @@ verseOneAlto = \lyricmode {
 }
 
 verseOneMen = \lyricmode {
-  Ah __ ah __ ah __ eme -- rald green
-  Ah __ ah __ ah __ Jo -- lene
+  Ah __ eme -- rald green
+  Ah __ Jo -- lene
 
   He talks a -- bout you in his sleep
   ah __ 
@@ -149,7 +149,7 @@ sopMusic = \relative c' {
   b a a b a g16 fis~ fis8 g
   fis16( e8.~ e2) r8 e
 
-  e e e e g16 g~ g g~ g8 r16 g16
+  e e e e g16 g~ g g r8 g
   a8 a a a b b b8 b16 b
   a8 a a16 a~ a8 a a16 g~ g4
   r8 fis4 e8~ e2~
@@ -246,9 +246,9 @@ altoMusic = \relative c' {
 
   % Strophe 1
 
-  e2( d)
-  fis( g)
-  fis( d8) r d d
+  e2( d
+  fis g
+  fis d8) r d d
   b2. r8 e
 
   e8 e e e d16 d8 d16~ d8 r16 d
@@ -261,7 +261,7 @@ altoMusic = \relative c' {
   fis8) r fis g fis e16 d~ d8 d
   b2. r4
 
-  e2.. r16 e
+  e2. r8 e
   fis8 fis fis fis fis fis fis r
   e2( dis)
   r8 b4 c8~ c2~
@@ -297,8 +297,8 @@ altoMusic = \relative c' {
   e e16 e~ e8 e d d16 d~ d8 r16 d16
   e8 e16 e16~ e e~ e g~ g g~ g g~ g8 g16 g
   e16 e~ e8 e e16 fis~ fis8 fis16 fis~ fis4
-  r8 a4 cis8~ cis2~
-  cis2 r4 r16 e,8.
+  r8 a4 a8~ a2~
+  a2 r4 r16 e8.
 
   % Refrain 3
   e4 r16 g8. g4 r16 a8.
@@ -360,15 +360,15 @@ tenorMusic = \relative c {
 
   % Strophe 1
 
-  b1
-  d2( b)
-  a2~ a8 r fis a
+  b1(
+  d2 b
+  a2~ a8) r fis a
   g2. r4
 
 
-  b1
-  d4( c b g)
-  a2. r8 a
+  b1(
+  d4 c b g
+  a2.) r8 a
   g2. r8 b
 
   b b16 b~ b8 b c16 c8 c16~ c8 r8
@@ -376,7 +376,7 @@ tenorMusic = \relative c {
   a8) r a a a a16 a~ a8 a
   g2. r4
 
-  b2( bes4.) r16 bes
+  b2( bes4) r8 bes
   a8 a d d dis dis dis8. r16
   c2( b)
   r8 fis4 g8~ g2~
@@ -475,15 +475,15 @@ bassMusic = \relative c {
 
   % Strophe 1
 
-  e2( g)
-  d( e)
-  d( b8) r b b
+  e2( g
+  d e
+  d b8) r b b
   e2. r4
 
 
-  e2( g)
-  d( e)
-  d( b4) r8 b
+  e2( g
+  d e
+  d b4) r8 b
   e2. r8 e
 
   e e16 e~ e8 e c16 c8 c16~ c8 r8
@@ -491,7 +491,7 @@ bassMusic = \relative c {
   d8) r d d b b16 b~ b8 b
   e2. r4
 
-  e2(  cis4.) r16 cis
+  e2( cis4) r8 cis
   d8 d d d dis fis b8. r16
   c2( b)
   r8 fis4 c8~ c2~
@@ -527,8 +527,8 @@ bassMusic = \relative c {
   c c16 c~ c8 c b b16 b~ b8 r16 b16
   a8 a16 a16~ a a~ a g~ g g~ g g~ g8 g16 g
   fis16 fis~ fis8 fis fis16 b~ b8 b16 b~ b4
-  r8 b4 a8~ a2~
-  a2 r4 r16 e8.
+  r8 b4 cis8~ cis2~
+  cis2 r4 r16 e,8.
 
   % Refrain 3
   e4 r16 g8. g4 r16 d8.
@@ -576,12 +576,12 @@ chordNames = \chordmode {
   e2:m g d e:m d b:m e1:m
   e2:m g d e:m d b:m e1:m
   e2:m c d e:m d b:m e1:m
-  e2:m cis:dim7 d b c b4:7 b:aug e1*2:m
+  e2:m cis:dim7 d b c b4:7 b:aug c1*2
 
   e2:m b/dis d a1:7.9/cis
   c2 b:7 e1*2:m
   e2:m b/dis d a1:7.9/cis
-  c2 b:m7 e1*2:m
+  c4:maj7 a:m d b:m7 e1*2:m
 
   e2:m g d e4:m e a2:m d4 b:m e1:m
   c2 g/b a:m g fis:m7 b:7 a1*2

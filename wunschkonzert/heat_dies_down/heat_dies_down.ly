@@ -6,13 +6,15 @@
   arranger = "Ed von Schleck"
 }
 
-#(set-global-staff-size 19)
+#(set-global-staff-size 18)
 
 \paper {
   top-system-spacing #'basic-distance = #10
   score-system-spacing #'basic-distance = #20
   system-system-spacing #'basic-distance = #20
   last-bottom-spacing #'basic-distance = #10
+
+  page-count = #5
 
   %system-system-spacing = #'((padding . 0) (basic-distance . 0.1))
   %ragged-last-bottom = ##f
@@ -151,7 +153,7 @@ sopMusic = \relative c' {
   d,2 r4 d
   a'4 a a a
   d,1
-  e2. r8 c
+  e2 r4 c
 
   d4 e8 e f4 g
   a d e f
@@ -161,7 +163,7 @@ sopMusic = \relative c' {
   g4. a8~ a4 d,4~
   d2 r8 d f4
   g4. a8~ a4 c,4~
-  c2 r4. c8
+  c2 r4 c
 
   d4 e8 e f4 g
   a d e f
@@ -222,7 +224,7 @@ sopMusic = \relative c' {
   d,2 r4 d
   a'4 a a a
   d,1
-  e2. r8 c
+  e2 r4 c
 
   d4 e8 e f4 g
   a d e f
@@ -232,7 +234,7 @@ sopMusic = \relative c' {
   g4. a8~ a4 d,4~
   d2 r4 f
   g4. a8~ a4 c,4~
-  c2 r4. c8
+  c2 r4 c
 
   d4 e f g
   a d e f
@@ -321,7 +323,7 @@ altoMusic = \relative c' {
   d2 r4 d
   f f f f
   d1
-  c2. r8 c
+  c2 r4 c
 
   a'1^~
   a4 r a a
@@ -331,7 +333,7 @@ altoMusic = \relative c' {
   g4. f8~ f4 d~
   d2 r8 d f4
   g4. e8~ e4 c~
-  c2 r4. c8
+  c2 r4 c
  
   a'1^~
   a2 r4 a
@@ -392,7 +394,7 @@ altoMusic = \relative c' {
   d2 r4 d
   f f f f
   d1
-  c2. r8 c
+  c2 r4 c
 
   a'1^~
   a4 r a a
@@ -402,7 +404,7 @@ altoMusic = \relative c' {
   g4. f8~ f4 d~
   d2 r4 f
   g4. e8~ e4 c~
-  c2 r4. c8
+  c2 r4 c
  
   a'1^~
   a4 r a a
@@ -429,27 +431,27 @@ altoMusic = \relative c' {
   a4 a a a8 a
   a8 a~ a a~ a r a a
   g4 f d d8 d
-  e f~ f d~ d r g g
+  e f~ f d~ d r4.
 
-  r2 f4 f(
-  e) e4 r4 f8 f
-  r2 f4 f(
-  g) g4 r4 g8 g
+  r4 f8 f f4 f(
+  e) e4 r2
+  r4 f8 f f4 f(
+  g) g4 r2
 
-  r2 f4 f(
-  e) e4 r4 f8 f
-  r2 f4 f(
-  g) g4 r4 g8 g
+  r4 f8 f f4 f(
+  e) e4 r2
+  r4 f8 f f4 f(
+  g) g4 r2
 
-  r2 f4 f(
-  e) e4 r4 f8 f
-  r2 f4 f(
-  g) g4 r4 g8 g
+  r4 f8 f f4 f(
+  e) e4 r2
+  r4 f8 f f4 f(
+  g) g4 r2
 
-  r2 f4 f(
-  e) e4 r4 f8 f
-  r2 f4 f(
-  g) g2.(
+  r4 f8 f f4 f(
+  e) e4 r2
+  r4 f8 f f4 f(
+  g) g4(
 
   f1)
 
@@ -491,7 +493,7 @@ tenorMusic = \relative c' {
   bes2 r4 d
   d d d c
   bes1
-  g2. r8 c
+  g2 r4 c
 
   f1~
   f4 r f f
@@ -501,7 +503,7 @@ tenorMusic = \relative c' {
   d4. bes8~ bes4 bes~
   bes2 r8 bes bes4
   c4. c8~ c4 c~
-  c2 r4. c8
+  c2 r4 c
 
   f1~
   f2 r4 f
@@ -562,7 +564,7 @@ tenorMusic = \relative c' {
   bes2 r4 d
   d d d c
   bes1
-  g2. r8 c
+  g2 r4 c
 
   f1~
   f4 r f f
@@ -572,7 +574,7 @@ tenorMusic = \relative c' {
   d4. bes8~ bes4 bes~
   bes2 r4 bes
   c4. c8~ c4 c~
-  c2 r4. c8
+  c2 r4 c
 
   f1~
   f4 r f f
@@ -603,22 +605,22 @@ tenorMusic = \relative c' {
 
   a4 a2.(
   c4) r c4 c8 c
-  d4 d2.(
+  c4 d2.(
   d4) r d4 d8 c
 
   a4 a2.(
   c4) r c4 c8 c
-  d4 d2.(
+  c4 d2.(
   d4) r d4 d8 c
 
   a4 a2.(
   c4) r c4 c8 c
-  d4 d2.(
+  c4 d2.(
   d4) r d4 d8 c
 
   a4 a2.(
   c4) r c4 c8 c
-  d4 d2.(
+  c4 d2.(
   d4) r d2~
   d1
 
@@ -659,7 +661,7 @@ bassMusic = \relative c {
   bes2 r4 bes
   bes4 bes d f
   g1
-  c,2. r8 g'8
+  c,2 r4 g'
 
   d'1~
   d4 r d d
@@ -669,7 +671,7 @@ bassMusic = \relative c {
   bes4. bes8~ bes4 bes~
   bes2 r8 bes bes4
   a4. a8~ a4 a~
-  a2 r4. a8
+  a2 r4 a
 
   d1~
   d2 r4 d
@@ -729,7 +731,7 @@ bassMusic = \relative c {
   bes2 r4 bes
   bes4 bes d f
   g1
-  c,2. r8 g'8
+  c,2 r4 g'
 
   d'1~
   d4 r d d
@@ -739,7 +741,7 @@ bassMusic = \relative c {
   bes4. bes8~ bes4 bes~
   bes2 r4 bes
   a4. a8~ a4 a~
-  a2 r4. a8
+  a2 r4 a
 
   d1~
   d4 r4 d d
@@ -766,26 +768,26 @@ bassMusic = \relative c {
   d4 d d d8 d
   a a~ a a~ a r a a
   bes4 bes bes bes8 bes
-  g g~ g g~ g r g g
+  g g~ g g~ g r4.
 
-  r2 d4 d
-  a'2 r4 a8 a
-  r2 bes4 bes4
-  g2 r4 g8 g
+  r4 d8 d d4 d
+  a'2 r2
+  r4 bes8 bes bes4 bes4
+  g2 r2
 
-  r2 d4 d
-  a'2 r4 a8 a
-  r2 bes4 bes4
-  g2 r4 g8 g
+  r4 d8 d d4 d
+  a'2 r2
+  r4 bes8 bes bes4 bes4
+  g2 r2
 
-  r2 d4 d
-  a'2 r4 a8 a
-  r2 bes4 bes4
-  g2 r4 g8 g
+  r4 d8 d d4 d
+  a'2 r2
+  r4 bes8 bes bes4 bes4
+  g2 r2
 
-  r2 d4 d
-  a'2 r4 a8 a
-  r2 bes4 bes4
+  r4 d8 d d4 d
+  a'2 r2
+  r4 bes8 bes bes4 bes4
   g1(
 
   d1)
@@ -802,8 +804,41 @@ bassWords = \lyricmode {
   \hookline
 }
 
-\score {
-  \new ChoirStaff <<
+chordNames = \chordmode {
+  \global
+  \germanChords
+  s1*2
+
+  d1*2:m a:m bes g1:m a:m
+  d1*2:m a:m bes g1:m c
+  d1*2:m a:m bes a:m
+  d1*2:m a:m bes a:m
+
+  d1*4:m7
+
+  d1:m a:m bes g:m
+  d1:m a:m bes g:m
+  d1:m a:m bes g:m
+  d1:m a:m bes g:m g:79
+
+  d1*2:m a:m bes g1:m a:m
+  d1*2:m a:m bes g1:m c
+  d1*2:m a:m bes a:m
+  d1*2:m a:m bes a:m
+
+  d1*4:m7
+
+  d1:m a:m b g:m
+  d1:m a:m b g:m
+  d1:m a:m b g:m
+  d1:m a:m b g:m
+  d1:m a:m b g:m
+  d1:m a:m b g:m
+  d:m
+
+}
+chordsPart = \new ChordNames \chordNames
+choirPart = \new ChoirStaff <<
     \new Lyrics = "sopranos" \with {
       % this is needed for lyrics above a staff
       \override VerticalAxisGroup #'staff-affinity = #DOWN
@@ -838,6 +873,11 @@ bassWords = \lyricmode {
     \context Lyrics = "altos" \lyricsto "altos" \altoWords
     \context Lyrics = "tenors" \lyricsto "tenors" \tenorWords
     \context Lyrics = "basses" \lyricsto "basses" \bassWords
+  >>
+\score {
+  <<
+    \chordsPart
+    \choirPart
   >>
   \midi { }
   \layout { }

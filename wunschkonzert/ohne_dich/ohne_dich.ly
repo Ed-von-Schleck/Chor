@@ -215,12 +215,12 @@ sopMusic = \relative c' {
 
   r8 c16 c c8 c16 c~ c a8 b16~ b c d8~
   d16 r b b b8 b16 b~ b g8 a16~ a b8 c16~
-  c r c c c8 c16 c~ c a8 a16~ a b16 c8~
+  c8 c16 c c8 c16 c~ c a8 a16~ a b16 c8~
   c16 r c8 c e d4 c8 c~
 
   c16 r c16 c c8 c16 c~ c a8 b16~ b c d8~
   d16 r b b b8 b16 b~ b g8 a16~ a b8 c16~
-  c r c c c8 c16 c~ c a8 a16~ a b16 c8~
+  c8 c16 c c8 c16 c~ c a8 a16~ a b16 c8~
   c16 r c8 c e d4 c8 c~
 
   c2. r4
@@ -254,22 +254,22 @@ sopMusic = \relative c' {
 
   r8 c16 c c8 c16 c~ c a8 b16~ b c d8~
   d16 r b b b8 b16 b~ b g8 a16~ a b8 c16~
-  c r c c c8 c16 c~ c a8 a16~ a b16 c8~
+  c8 c16 c c8 c16 c~ c a8 a16~ a b16 c8~
   c16 r c8 c e d4 c8 c~
 
   c16 r c16 c c8 c16 c~ c a8 b16~ b c d8~
   d16 r b b b8 b16 b~ b g8 a16~ a b8 c16~
-  c r c c c8 c16 c~ c a8 a16~ a b16 c8~
+  c8 c16 c c8 c16 c~ c a8 a16~ a b16 c8~
   c16 r c8 c e d4 c8 c~
 
   c16 r c16 c c8 c16 c~ c a8 b16~ b c d8~
   d16 r b b b8 b16 b~ b g8 a16~ a b8 c16~
-  c r c c c8 c16 c~ c a8 a16~ a b16 c8~
+  c8 c16 c c8 c16 c~ c a8 a16~ a b16 c8~
   c16 r c8 c e d4 c8 c~
 
   c16 r c16 c c8 c16 c~ c a8 b16~ b c d8~
   d16 r b b b8 b16 b~ b g8 a16~ a b8 c16~
-  c r c c c8 c16 c~ c a8 a16~ a b16 c8~
+  c8 c16 c c8 c16 c~ c a8 a16~ a b16 c8~
   c16 r c8 c e d4 c8 c~
 
   c2 r4..
@@ -313,12 +313,12 @@ altoMusic = \relative c' {
 
   r8 g16 g g8 g16 e~ e e8 e16~ e e g8~
   g16 r g g g8 g16 g~ g g8 g16~ g g8 a16~
-  a r a a a8 a16 a~ a a8 a16~ a g16 a8~
+  a8 a16 a a8 a16 a~ a a8 a16~ a g16 a8~
   a16 r a8 a a g4 g8 g~
 
   g16 r g16 g g8 g16 e~ e e8 e16~ e e g8~
   g16 r g g g8 g16 g~ g g8 g16~ g g8 a16~
-  a r a a a8 a16 a~ a a8 a16~ a g16 a8~
+  a8 a16 a a8 a16 a~ a a8 a16~ a g16 a8~
   a16 r a8 a a g4 g8 g~
   g2. r4
   R1*2
@@ -341,7 +341,7 @@ altoMusic = \relative c' {
   g16 g8 g16~ g g g8 g4 r8 g16 g
   g8. g16 g8 g16 g16~ g4 r8 g16 g
 
-  g16 g g g g8( a~ a2)
+  g16 g g g g8( f~ f2)
   r4. a8 f16 f8 c16~ c8 c
   f4.( e8~ e4) r4
   d4.( e8~ e4) r4
@@ -350,22 +350,22 @@ altoMusic = \relative c' {
 
   r8 g16 g g8 g16 e~ e e8 e16~ e e g8~
   g16 r g g g8 g16 g~ g g8 g16~ g g8 a16~
-  a r a a a8 a16 a~ a a8 a16~ a g16 a8~
+  a8 a16 a a8 a16 a~ a a8 a16~ a g16 a8~
   a16 r a8 a a g4 g8 g~
 
   g16 r g16 g g8 g16 e~ e e8 e16~ e e g8~
   g16 r g g g8 g16 g~ g g8 g16~ g g8 a16~
-  a r a a a8 a16 a~ a a8 a16~ a g16 a8~
+  a8 a16 a a8 a16 a~ a a8 a16~ a g16 a8~
   a16 r a8 a a g4 g8 g~
 
   g16 r g16 g g8 g16 e~ e e8 e16~ e e g8~
   g16 r g g g8 g16 g~ g g8 g16~ g g8 a16~
-  a r a a a8 a16 a~ a a8 a16~ a g16 a8~
+  a8 a16 a a8 a16 a~ a a8 a16~ a g16 a8~
   a16 r a8 a a g4 g8 g~
 
   g16 r g16 g g8 g16 e~ e e8 e16~ e e g8~
   g16 r g g g8 g16 g~ g g8 g16~ g g8 a16~
-  a r a a a8 a16 a~ a a8 a16~ a g16 a8~
+  a8 a16 a a8 a16 a~ a a8 a16~ a g16 a8~
   a16 r a8 a a g4 g8 g~
 
   g2 r4..
@@ -407,12 +407,12 @@ tenorMusic = \relative c' {
 
   r8 e'16 e e8 e16 c~ c c8 c16~ c c b8~
   b16 r e e e8 e16 d~ d d8 d16~ d d8 c16~
-  c r c c c8 c16 c~ c c8 c16~ c e16 f8~
+  c8 c16 c c8 c16 c~ c c8 c16~ c e16 f8~
   f16 r f8 f f f4 f8 e~
 
   e16 r e16 e e8 e16 c~ c c8 c16~ c c b8~
   b16 r e e e8 e16 d~ d d8 d16~ d d8 c16~
-  c r c c c8 c16 c~ c c8 c16~ c e16 f8~
+  c8 c16 c c8 c16 c~ c c8 c16~ c e16 f8~
   f16 r f8 f f f4 f8 e~
 
   e2. r4
@@ -436,7 +436,7 @@ tenorMusic = \relative c' {
   f16 f8 f16~ f f e8 e4 r8 e16 e
   d8. d16 d8 d16 e16~ e4 r8 e16 e
 
-  c16 c c c f2.
+  c16 c c c c2.
   r4. c8 c16 c8 a16~ a8 a
   g2. r4
   g2. r4
@@ -445,22 +445,22 @@ tenorMusic = \relative c' {
 
   r8 e'16 e e8 e16 c~ c c8 c16~ c c b8~
   b16 r e e e8 e16 d~ d d8 d16~ d d8 c16~
-  c r c c c8 c16 c~ c c8 c16~ c e16 f8~
+  c8 c16 c c8 c16 c~ c c8 c16~ c e16 f8~
   f16 r f8 f f f4 f8 e~
 
   e16 r e16 e e8 e16 c~ c c8 c16~ c c b8~
   b16 r e e e8 e16 d~ d d8 d16~ d d8 c16~
-  c r c c c8 c16 c~ c c8 c16~ c e16 f8~
+  c8 c16 c c8 c16 c~ c c8 c16~ c e16 f8~
   f16 r f8 f f f4 f8 e~
 
   e16 r e16 e e8 e16 c~ c c8 c16~ c c b8~
   b16 r e e e8 e16 d~ d d8 d16~ d d8 c16~
-  c r c c c8 c16 c~ c c8 c16~ c e16 f8~
+  c8 c16 c c8 c16 c~ c c8 c16~ c e16 f8~
   f16 r f8 f f f4 f8 e~
 
   e16 r e16 e e8 e16 c~ c c8 c16~ c c b8~
   b16 r e e e8 e16 d~ d d8 d16~ d d8 c16~
-  c r c c c8 c16 c~ c c8 c16~ c e16 f8~
+  c8 c16 c c8 c16 c~ c c8 c16~ c e16 f8~
   f16 r f8 f f f4 f8 e~
 
   e2 r4..
@@ -499,12 +499,12 @@ bassMusic = \relative c {
 
   r8 c'16 c c8 c16 a~ a a8 a16~ a a e8~
   e16 r e e e8 e16 e~ e e8 e16~ e e8 f16~
-  f r f f f8 f16 e~ e e8 e16~ e e16 d8~
+  f8 f16 f f8 f16 e~ e e8 e16~ e e16 d8~
   d16 r d8 d d g4 g8 c~
 
   c16 r c16 c c8 c16 a~ a a8 a16~ a a e8~
   e16 r e e e8 e16 e~ e e8 e16~ e e8 f16~
-  f r f f f8 f16 e~ e e8 e16~ e e16 d8~
+  f8 f16 f f8 f16 e~ e e8 e16~ e e16 d8~
   d16 r d8 d d g4 g8 c~
 
   c2. r4
@@ -537,22 +537,22 @@ bassMusic = \relative c {
 
   r8 c'16 c c8 c16 a~ a a8 a16~ a a e8~
   e16 r e e e8 e16 e~ e e8 e16~ e e8 f16~
-  f r f f f8 f16 e~ e e8 e16~ e e16 d8~
+  f8 f16 f f8 f16 e~ e e8 e16~ e e16 d8~
   d16 r d8 d d g4 g8 c~
 
   c16 r c16 c c8 c16 a~ a a8 a16~ a a e8~
   e16 r e e e8 e16 e~ e e8 e16~ e e8 f16~
-  f r f f f8 f16 e~ e e8 e16~ e e16 d8~
+  f8 f16 f f8 f16 e~ e e8 e16~ e e16 d8~
   d16 r d8 d d g4 g8 c~
 
   c16 r c16 c c8 c16 a~ a a8 a16~ a a e8~
   e16 r e e e8 e16 e~ e e8 e16~ e e8 f16~
-  f r f f f8 f16 e~ e e8 e16~ e e16 d8~
+  f8 f16 f f8 f16 e~ e e8 e16~ e e16 d8~
   d16 r d8 d d g4 g8 c~
 
   c16 r c16 c c8 c16 a~ a a8 a16~ a a e8~
   e16 r e e e8 e16 e~ e e8 e16~ e e8 f16~
-  f r f f f8 f16 e~ e e8 e16~ e e16 d8~
+  f8 f16 f f8 f16 e~ e e8 e16~ e e16 d8~
   d16 r d8 d d g4 g8 c~
 
   c2 r4..
