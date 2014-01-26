@@ -18,6 +18,12 @@ harmonies = \chordmode {
 \germanChords 
 f4:m
 f1:m
+f1:m
+c c
+f:m f:m
+c c
+f:m f:m/es des:7+ c
+f:m f:m/es
 f2:m
 
 %strophe
@@ -38,13 +44,10 @@ as c f:m c2:sus4 6 c
 des1 bes:m7 bes2:m es/bes
 bes4:m7 c2.
 %%%%%%%%%%%%%%%solo%%%%%%%%%%%%
-d1:m d:m
-%e1:m e:m dis:m5- dis:m5-
-%e1:m e:m dis:m5- dis:m5-
-%e:m e:m e:m e:m
-%b:m b:m b:m b:m
-%b:m b:m b:m b:m
-%b:m b:m b:m b:m
+d1:m d:m a a
+d1:m d:m a a
+d1:m d:m/c d:m/bes
+a:7 a:7
 %%%%%%%%%%%%%%%%Refrain%%%%%%%%%%%%%
 d1:m d:m g:m a
 d:m d:m g:m7 c
@@ -58,14 +61,35 @@ f1:m f1:m f1:m c
 f1:m
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%Text%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Vorspiel=\lyricmode{
+_ _ _ _ _ _ _
+_ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _
+
+}
+Zspiel=\lyricmode{
+_ _ _ _ _ _ _
+_ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _
+_ _
+
+}
 SopSchluss = \lyricmode{
-Ah __
+Why does my heart cry
 Ah __
 Feel -- ings I can't fight.
 Ah __
 }
 AltSchluss = \lyricmode{
-Ah __
+Why __
 Ah __
 Ah __
 Feel -- ings I can't fight.
@@ -79,7 +103,7 @@ Ah __
 Ah __
 }
 BassSchluss = \lyricmode{
-Ah __
+Why __
 Ah __
 Rox -- anne
 Ah __
@@ -142,18 +166,31 @@ Rox -- anne
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%Musik%%%%%%%%%%
 sopranMusik =  \relative c' {
 \global
-\partial 4
-r4 
-\huge
-R1^"14"
-\time 2/4
-\normalsize
-r2
+ \partial 4
+ \teeny
+ r4
+ <f as c>4. <f as des>8 <f as des>4 <f as c>4
+ r8 <f as c> <f as des> <f as d> <f as c es>4 <f as d>8 <f as des>
+ <e g bes c>4. <e g bes des>8 <e g bes des>4  <e g bes c>4
+ r4 r8  <e g bes des>8  <e g bes des>4  <e g bes c>4
+ <f as c f>4. <f as des>8 <f as des>4 <f as c>4 
+  r8 <f as c> <f as des> <f as d> <f as c es>4 <f as d>8 <f as des>
+ <e g bes c>4. <e g bes des>8 <e g bes des>4  <e g bes c>4
+  r4 r8  <e g bes des>8  <e g bes des>4  <e g bes c>4
+ <as c f>4 q q q
+ q q q q 
+ q q q q
+ <g bes c e>4 q q q
+ <as c f>4 q q q
+ q q q q
+ \time 2/4
+ <as c f>2
 \time 4/4
+\normalsize
 %Strophe
 R1*17
 %%%Bridge%%%%
-r4 c4 des4. c8 
+r4 c,4 des4. c8 
 c4 des des r
 r4 c des4. c8
 c4 des des r
@@ -186,11 +223,25 @@ des4 c2.
 %%%%%solo%%%%
 \key d \minor
 \compressFullBarRests
-\huge
-R1^"23"
+\teeny
+  <d, f a>4. <d f bes>8 <d f bes>4 <d f a>4
+ r8 <d f a> <d f bes> <d f b> <d f a c>4 <d f b>8 <d f bes>
+ <cis e g a>4. <cis e g bes>8 <cis e g bes>4  <cis e g a>4
+ r4 r8  <cis e g bes>8  <cis e g bes>4  <cis e g a>4
+ <d f a d>4. <d f bes>8 <d f bes>4 <d f a>4 
+  r8 <d f a> <d f bes> <d f b> <d f a c>4 <d f b>8 <d f bes>
+ <cis e g a>4. <cis e g bes>8 <cis e g bes>4  <cis e g a>4
+  r4 r8  <cis e g bes>8  <cis e g bes>4  <cis e g a>4
+ %%%%%%
+<f a d>4 q q q
+q q q q
+q q q q
+ 
+ r8 <a g cis>8 q q q q q q
+ q q q q <g a cis e> q q q
+ 
 \normalsize
-r1
-f1 e2 d d1
+f'1 e2 d d1
 cis2 r2
 f1 e2 d f1 e2 r2
 \key f \minor
@@ -203,30 +254,32 @@ des1
 es2 r2
 %schluss
 as,1
-(bes2 c
-des2 bes2
-c4 bes as g)
+bes2 c
+des1
+c4( bes as g)
 r2 f'2
 
 (es2 d4 des
 c2 bes4 c8 des
 c4 bes as g)
 as1
-bes2 c des (bes)
+bes2 c des1
 c4 (bes as g
-as4) r4 f'2
+f4) r4 f'2
 
 (es2 d4 des
 c2 bes4 c8 des
 c4 bes as g
 f1)
-}
+\bar"|."}
 altMusik =  \relative c' {
 \global
 \partial 4
-r4
-\huge
-R1
+\teeny
+s4
+\normalsize
+s1 s1 s1 s1 s1 s1 s1
+s1 s1 s1 s1 s1 s1 s1
 \time 2/4
 \normalsize
 r2
@@ -269,10 +322,9 @@ f4 e2.
 %%%%%solo%%%%
 \key d \minor
 \compressFullBarRests
-\huge
-R1
+s1 s1 s1 s1 s1 s1 s1
+s1 s1 s1 s1 s1 s1 
 \normalsize
-r1
 f1\f g2 a bes1
 a2 r2
 f1 g2 a bes1
@@ -303,7 +355,7 @@ tenorMusik =  \relative c' {
 \partial 4
 r4 
 \huge
-R1^"14"
+R1*14
 \time 2/4
 \normalsize
 r2
@@ -363,10 +415,8 @@ as4 g2.
 %%%%%solo%%%%
 \key d \minor
 \compressFullBarRests
-\huge
-R1^"23" 
+R1*13
 \normalsize
-r1
 d'1 d2 d d1
 e2 r2
 d1 d2 d d1
@@ -398,7 +448,7 @@ bassMusik = \relative c' {
 \partial 4
 r4
 \huge
-R1
+R1*14
 \time 2/4
 \normalsize
 r2
@@ -458,10 +508,8 @@ bes4 r4 bes4 r
 bes4 c2.
 %%%%%solo%%%%
 \key d \minor
-\huge
-R1
+R1*13
 \normalsize
-r1
 d1\f e2 f
 g1 a2 r2
 d,1 e2 f
@@ -477,9 +525,9 @@ es,2 r2
 %schluss
 f1~f1~f2 r c1
 (f4) r4 as2~as1~as4 f2. r2 c2
-(f1~f1~f2) r c1
+(f1~f1~f2) r g1
 (f1)
-r4 as2.~as4 f2.
+as1 f
 c1 (f1)
 
 }
@@ -556,8 +604,10 @@ lhIntro = \relative c {
 
 %%%%%%Text%%%%%%%%%%%%%%
 sopranText = \lyricmode{
+\Vorspiel
 \Bridge 
 \Refrain
+\Zspiel
 \RefrainTwo
 \SopSchluss
 }
@@ -601,13 +651,13 @@ LeftHand = \relative c {
       \new Voice = "tenors" { \voiceOne << \global \tenorMusik >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusik >> }
     >>
-    \new Staff = solo <<
-      \clef bass
-       \new Voice = "bassSolo" { \voiceTwo << \global \bassSolo >> }
-    >>
+   % \new Staff = solo <<
+    %  \clef bass
+     %  \new Voice = "bassSolo" { \voiceTwo << \global \bassSolo >> }
+   % >>
     \new Lyrics \with { alignAboveContext = men } \lyricsto tenors \tenorText
     \new Lyrics \with { alignBelowContext = men } \lyricsto basses \bassText
-     \new Lyrics \with { alignBelowContext = solo } \lyricsto bassSolo \bassSoloText
+  %   \new Lyrics \with { alignBelowContext = solo } \lyricsto bassSolo \bassSoloText
   % \new PianoStaff  <<   \new Staff = "up" { \global \RightHand }  \new Staff = "down" { \global \LeftHand }  >>
   >>  
 >>
