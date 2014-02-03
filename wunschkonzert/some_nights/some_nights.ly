@@ -63,40 +63,31 @@ but here they come a -- gain to jack my style.
  
 %%%%%%%%%%%%%%
 SAlright = \lyricmode {
-whoa __ whoa __ whoa __ whoa
-who I am? 
+whoa __ whoa __  
 who I am?
-who I am? 
 who I am?
 well
 }
 AAlright = \lyricmode {
-whoa __ whoa __ whoa __ whoa
-who I am? oh 
-who I am?
-who I am?
+whoa __ whoa __ 
+who
 who I am?
 who I am?
 well
 }
 TAlright = \lyricmode {
-whoa __ whoa __ whoa __ whoa
-who I am? oh 
+whoa __ whoa __ 
 who I am?
 who I am?
 who I am?
-who I am? well
+well
 }
 
 BassVers = \lyricmode {
 That's al -- right.
 I found a mar -- tyr in my bed to -- night.
 She stops my bones from won -- de -- ring just who I am,
-who I am? who I am? oh 
-who I am?
-who I am?
-who I am?
-who I am?
+who I am? 
 well
 }
 %%%%%%%%%%%%%%%%%%
@@ -210,12 +201,9 @@ d1
 c4. g8 g2
 c4. g8 g2
 c4. g8 g2
-d1:sus4
-%%ALRIGHT
-c4. g8 g2
-c4. g8 g2
-c1
 d1
+%%ALRIGHT
+
 %%%%%%%%%%%%Re
 g1 
 c4 d8 g8 g2
@@ -234,35 +222,11 @@ c4. g8 g2
 e2:m c2
 d1
 %%%comeOn
-d1
-%c1 g d d
-%c g d d
-%c g d d
-%%%Ref
-c4. g8 g2
-c4. g8 g2
-c4. g8 g2
-d1
-c4. g8 g2
-c4. g8 g2
-c4. g8 g2
-d1
+
 %%sister
 c1 g c a:m
 c a:m d d d
 %%Ref
-g1
-c4. g8 g2
-c4. g8 g2
-d1
-g1
-c4. g8 g2
-c4. g8 g2
-d1
-g1
-c4. g8 g2
-c4. g8 g2
-d1
 g1
 c4. g8 g2
 c4. g8 g2
@@ -272,18 +236,7 @@ g1
 c4. g8 g2
 c4. g8 g2
 d1
-g1
-c4. g8 g2
-c4. g8 g2
-d1
-g1
-c4. g8 g2
-c4. g8 g2
-d1
-g1
-c4. g8 g2
-c4. g8 g2
-d1
+
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%Musik%%%%%%%%%%
 
@@ -377,7 +330,7 @@ e4. (d) r4 b8 (a) r1
 }
 sopranOh =  \relative c'' {
 
-g4. (b8) r4 b8 (d) 
+g4.\f (b8) r4 b8 (d) 
 e4. (d8) r4 b8 (d) 
 e4. (d8) r4 b8 (a~) a2 r2
 
@@ -387,7 +340,7 @@ e4. (d8) r4 b8 (a~) a2 r2
 }
 altOh =  \relative c' {
 
-d4. (g8) r4 g8 (b) 
+d4.\f (g8) r4 g8 (b) 
 g4. (b8) r4 b8 (g) 
 g4. (b8) r4 g8 (fis~) fis2 r2
 
@@ -397,7 +350,7 @@ g4. (b8) r4 g8 (fis~) fis2 r2
 }
 tenorOh =  \relative c'' {
 
-b4. (d8) r4 d4 
+b4.\f (d8) r4 d4 
 c4. (d8) r4 d4 
 c4. (d8) r4 d4~ d2 r2
 
@@ -406,7 +359,7 @@ c4. (d8) r4 d4
 c4. (d8) r4 d4~d2 r2
 }
 bassOh =  \relative c' {
-g2 r4 g4 
+g2\f r4 g4 
 c4. (g8) r4 g8 (b) 
 c4. (g8) r4 d4~d2 r2
 
@@ -431,51 +384,37 @@ r2\mf r8 b (a) g
 g4 r4 r r16 e g g
 c8 c16 g~g8 g8 g8 g e16 (d) r d
 c'8 c d8. d16 b8 b a8 a
-b16 a a16 r16 r8 b16 a a8 r8 d,8 d8
-r8 g~g2 r8 g8
-c,16 c8 c16~c8 (g'8~g4) r4 
-c4.\< g4. c,4
-d16 d d r r8
-d16 d d8 r8 d4\!\f
+b16\< a a16 r16 r8 b16 a a8 r8 d4\!
 }
 sopranAlright =  \relative c'' {
 r1
 c4.\mf (b8~b4) r
 c4. (b8~b4) r
-c4. (b8~b4) r
-d2 r2 
-r1 
-r2. e16\< d d r16
-r8 e16 d d8 r8 r2
-e16 d d r16 r8 e16 d d8 r8 d4\! \f
+r1
+d16\< d d r r8
+d16 d d8 r8 a4\!
 }
 altAlright =  \relative c'' {
 r1
 g4. (g8~g4) r
 g4. (g8~g4) r
-g4. (g8~g4) r
-g2 r4  b16 (g) g8
-r8 b8~b8 (g a8 g) r8 b8
-c16 g8 g16~g8(e16 d~d4) r4
-c'4.\< b4. g4
-fis16 fis fis r r8
-fis16 fis fis8 r8 fis4\!\f
+
+r2 d8\<(e fis g)
+a16 a a r r8
+a16 a a8 r8 fis4\!
 }
 tenorAlright =  \relative c'' {
 r1
 e4. (d8~d4) r
 e4. (d8~d4) r
-e4. (d8~d4) r 
-d2 r4 d8 d
-r8 d8~d8 (e d4) r8 d8
-c16 c8 c16~c8 (b8~b4) r4
-c4.\< d4. e4
+
+g,8\<(a b c) d4 d4
 d16 d d r r8
-d16 d d8 r8 d4\!\f
+d16 d d8 r8 d4\!
 }
 %%%%%%%%%%%%%%%%%%%
 sopranRe = \relative c''{
-g8. g16~g8 g b (d) d g
+g8.\f g16~g8 g b (d) d g
 e (d) d b~b16 (a g8) r8 g
 e'8 e e d b8 (a) a a~
 a a8~a4 r4 r8 a8
@@ -493,8 +432,7 @@ r8  e' e d b4 a8 (g)
 r8 e' e d b4 a8 (g)
 
 e8.\mf e16~e4 r8 c'8~c a
-b8 (a8~a4) r2
-r1
+b8 (a8~a4) r4 
 
 %r8 g8 e' d~
 %%%ComeON
@@ -513,7 +451,7 @@ r1
 
 }
 altRe = \relative c''{
-g8. g16~g8 g g4 g8 b
+g8.\f g16~g8 g g4 g8 b
 c (b) a g~g4 r8 g
 g8 g g b g4 g8 g~
 g fis8~fis4 r4 r8 fis8
@@ -533,7 +471,7 @@ r8  g c c g4 fis8 (g)
 r8 c c b g4 fis8 (g)
 
 e8. e16~e4 r8 g8~g g
-g8 (fis8~fis4) r2
+g8 (fis8~fis4)
 }
 \new Voice { \voiceTwo
 g16 g8.
@@ -546,9 +484,9 @@ r8  g g g d4 d
 r8 g g g d4 d
 
 e8. e16~e4 r8 e8~e d
-d2 r2
+d2 
 }>> \oneVoice
-r1
+r4
 %%%ComeOn
 %r8 r16 g g g g8 r2
 %r8 g g g g g16 g~g8 r8
@@ -567,7 +505,7 @@ r1
 }
 
 tenorRe = \relative c''{
-d8. d16~d8 d d (b) b d
+d8.\f d16~d8 d d (b) b d
 c (b) d d~d16 (c b8) r8 d
 e8 e e d d4 d8 d~
 d d8~d4 r4 r8 d8
@@ -584,8 +522,7 @@ d8. d16 r4 r8 c8 (d4)
 r8 c8 c d d4 d
 r8 c8 c d b4 d
 b8. b16~b4 r8 c8~c d8
-d2 r2
-r1
+d2 r4
 %r8 d d e~
 %%%%%ComeOn%%%
 %e2 r8 e e d~
@@ -607,7 +544,7 @@ r1
 
 }
 bassRe = \relative c'{
-g8. g16~g8 g g (b) g d
+g8.\f g16~g8 g g (b) g d
 c (d) fis g~g4 r8 g
 c8 c c b g4 g8 d~
 d d8~d4 r4 r8 d8
@@ -625,8 +562,7 @@ d8. d16 r4 r8 e8 (d4)
 r8 c8 c d g4 g
 r8 c,8 c d g4 g
 g8. g16~g4 r8 c8~c d8
-d2  r2
-r1
+d2  r4
 %d, d c~
 %%%ComeOn
 %c2 r8 c c g'~
@@ -644,29 +580,14 @@ r1
 }
 
 tenorVersTwo= \relative c''{
-g8 g16 g16~g g8. e'8 g e4
-e8 d16 b e8 d16 b d8. e16 d8 r8
-e8 d16 c e8 d16 c d8 d g, b
-b16 a8 a16~a16 g a8 r4 r8 g8
-g16 g8 g16~g16 g8. e'8 g e4
-e16 e8 e16 e8 d16 b d8. d16 b4
-r8 e16 d e8 d16 b d8. d16 g,8 b
-b16 a a g a g a8 r4 r16 a\mp a a
+r16 a\mp a a
 
 
 
 }
 %%%%%%%%%%%%%%%%%%%%%%%%
 sopschluss= \relative c''{
-g4. (b8) r4 b8 (d) 
-e4. (d8) r4 b8 (d) 
-e4. (d8) r4 b8 (a) r1 
-
-g4. (b8) r4 b8  (d) 
-e4. (d8) r4 b8 (d) 
-e4. (d8) r4 b8 (a~) a2
-r4 r16
-a\mp a a
+r16 a\mp a a
 c8 c c8. d16 b8 b r8 g16 g
 a8 g16 g~g8 b b4 r8 d,16 d
 c'8 c d8. d16 b8 b a4 
@@ -675,17 +596,11 @@ r8 g g e g4 g8 g~
 g4 r8 e16 g e8 e4 (g8 
 a2) r2
 r4 r8 a a8. a16~a8 a 
-a2. r4
+a2. r4^"      
+   ad lib."
 }
 altschluss= \relative c'{
-d4. (g8) r4 g8 (b) 
-g4. (b8) r4 b8 (g) 
-g4. (b8) r4 g8 (fis) r1
-
-d4. (g8) r4 g8 (b) 
-g4. (b8) r4 b8 (g) 
-g4. (b8) r4 g8 (fis~) fis2
-r4 r16 fis\mp fis fis
+r16 fis\mp fis fis
 e8 e e8. e16 d8 d r8 d16 d 
 d8 d16 d~d8 d8 d4 r8 d16 d
 e8 e g8. g16 g8 d d4
@@ -712,14 +627,7 @@ a2. r4
 
 }
 bassschluss= \relative c'{
-g2 r4 g4 
-c4. (g8) r4 g8 (b) 
-c4. (g8) r4 d4 r1
-
-g2 r4 g4 
-c4. (g8) r4 g8 (b) 
-c4. (g8) r4 d4~d2
-r4 r16 d\mp d d
+r16 d,\mp d d
 c8 c c8. c16 g'8 g r8 g16 g
 g8 g16 g~g8 g8 g4 r8 g16 g
 c,8 c e8. e16 g8 g g4
@@ -760,10 +668,9 @@ sopranMusik =  \relative c'' {
 \sopranAlright
 \sopranRe
 \sopschluss
-\sopranOh
-\sopranOh
-\sopranOh
-\sopranOh
+\repeat volta 2 { 
+\sopranOh}
+
  \bar "|."
 }
 altMusik =  \relative c' {
@@ -773,9 +680,6 @@ altMusik =  \relative c' {
 \altAlright
 \altRe
 \altschluss
-\altOh
-\altOh
-\altOh
 \altOh
 }
 tenorMusik =  \relative c'' {
@@ -787,9 +691,6 @@ tenorMusik =  \relative c'' {
 \tenorVersTwo
 \tenschluss
 \tenorOh
-\tenorVersThree
-\tenorOh
-\tenorOh
 }
 bassMusik = \relative c' {
 \MenIntro
@@ -799,10 +700,7 @@ bassMusik = \relative c' {
 \bassRe
 \bassschluss
 \bassOh
-\bassOh
-\bassOh
-\bassOh
- \bar "|."
+ \bar ":|"
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 sopranText = \lyricmode{
@@ -815,11 +713,7 @@ an -- y
 \SopVers
 \IntroPartTwo
 %\SopranComeOn
-\Oh
 \SisterVerse
-\Oh
-\Oh
-\Oh
 \Oh
 }
 altText = \lyricmode{
@@ -832,12 +726,9 @@ an -- y
 \SopVers
 \IntroPartTwo
 %\AltComeOn
-\Oh
 \SisterVerse
 \Oh
-\Oh
-\Oh
-\Oh
+
 
 }
 tenorText = \lyricmode{
@@ -847,11 +738,7 @@ tenorText = \lyricmode{
 \SopVers
 \IntroPartTwo
 %\TenorComeOn
-\TenorVerseTwo
 \SisterVerse
-\Oh
-\TenorVerseThree
-\Oh
 \Oh
 }
 bassText = \lyricmode{
@@ -861,12 +748,9 @@ bassText = \lyricmode{
 \SopVers
 \IntroPartTwo
 %\BassComeOn
-\Oh
 \SisterVerse
 \Oh
-\Oh
-\Oh
-\Oh
+
 
 }
 %%%%%%%%%%Piano%%%%%%%%
