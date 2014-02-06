@@ -8,11 +8,11 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 }
 #(set-global-staff-size 16.7)
 #(set-default-paper-size "a4")
-
 global = {
   \key g \major
   \time 4/4
 }
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%INTRO%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
