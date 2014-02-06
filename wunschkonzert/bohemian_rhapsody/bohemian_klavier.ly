@@ -11,12 +11,12 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
 global = {
   \key g \major
-  \time 4/4 
+  \time 4/4
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%INTRO%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 harmoniesIntro = \chordmode {
-\germanChords 
+\germanChords
 g1
 a1:7~a4:7
 d2:7 a4:m7 d2:7
@@ -24,7 +24,7 @@ g1~g4
 e1:m
 g1:7
 c
-a1:m7 
+a1:m7
 d1:7
 gis4 g fis g
 gis4 g fis g
@@ -42,7 +42,7 @@ Caught in a land -- slide
 e -- scape from re -- a -- li -- ty.
 O -- pen your eyes.
 Look up to the skies and see.
-oh __   poor boy.  Be -- cause I'm
+oh __ poor boy. Be -- cause I'm
 ea -- sy come ea -- sy go.
 Lit -- tle high lit -- tle low.
 woah __ the wind blows
@@ -56,7 +56,7 @@ Caught in a land -- slide no
 e -- scape from re -- a -- li -- ty.
 O -- pen your eyes.
 Look up to the skies and see.
-woah __ poor boy. Be -- cause I'm 
+woah __ poor boy. Be -- cause I'm
 ea -- sy come ea -- sy go.
 Lit -- tle high lit -- tle low.
 A -- ny way the wind blows
@@ -91,29 +91,29 @@ Woah the wind blows
 does -- n't real -- ly mat -- ter to me.
 }
 %%%%%%%%%%%Musik%%%%%%%%%%
-sopranIntro =  \relative c'' {
+sopranIntro = \relative c'' {
 \tempo 4= 75
 \global
-r8 \p\< g  g g g4 g \! \mf
+r8 \p\< g g g g4 g \! \mf
 \time 5/4
 r4 g8 \mp g g g e16 e~e8~e4
 r8 fis \p \< fis fis g4 fis \! \mf r8 fis
 g \mp g g g d8 d~d4 r4
 \time 4/4
 g8 g b b~b4 r8 b
-b  \< b b b~b \! \mf b4 c8\p \< ~
+b \< b b b~b \! \mf b4 c8\p \< ~
 c2~c4 r4
-c2\!  \mf r4 b4
+c2\! \mf r4 b4
 a2 r8 a b g
 %easy
 gis8 \< gis g4\staccato \> fis8 \< fis g4\staccato \>
 gis8 \< gis g4\staccato \> fis8 \< fis g4\staccato \>
 g4.\mp \< g8 g4 b
 des8 \! \mf des des des c4 a8 fis
-a2  \p r4 fis8 (g) 
+a2 \p r4 fis8 (g)
 g2 r2
 }
- altIntro =  \relative c' {
+ altIntro = \relative c' {
 \global
 r8 \p d d d d4 e
 \time 5/4
@@ -123,7 +123,7 @@ d d e d c b~b4 r4
 \time 4/4
 e8 e g g~g4 r8 g
 g g g g~g d4\< g8~
-g2~g4 r4 
+g2~g4 r4
 g2 \! \mf r4 g4
 a2 r8 d,8 d e
 %easy
@@ -132,11 +132,11 @@ dis8 \< dis d4\staccato \> cis8 \< cis d4\staccato \>
 e8\mp e e e d4 g4
 g8 g g g fis4 c8 a
 d2 \p r4 fis8 (g)
-g2 r2 
+g2 r2
 }
-tenorIntro =  \relative c'' {
-\global 
-r8 \mf b  b c d4 d
+tenorIntro = \relative c'' {
+\global
+r8 \mf b b c d4 d
 \time 5/4
 r4 cis8 cis d cis b16 a~a8~a4
 r8 c8 c c c4 c r8 c8
@@ -144,13 +144,13 @@ b8 b c b a g~g4 r
 \time 4/4
 g8 g g g~g4 r8 g
 b b c d~d g,4 \< e'8
-~e2~e4 r4 
+~e2~e4 r4
 e8 \! \f e e e~e e4 r8
-d8 d e d a16 a~a8 r8 g \mf 
+d8 d e d a16 a~a8 r8 g \mf
 %easy
 bis8 \< bis b4\staccato \> ais8 \< ais b4\staccato \>
 bis8 \< bis b4\staccato \> ais8 \< ais b4\staccato \>
-c4. \mp \< c8 b4 d 
+c4. \mp \< c8 b4 d
 des8 \! \mf des des des d4 a8 a
 c2 \p r2
 r1
@@ -164,16 +164,16 @@ r8 a8 a a a4 d, d8 d
 g8 g a g fis g~g4 r
 \time 4/4
 e8 e e e~e4 r8 e8
-g8 g g f~f f4 
- \<e8~e2~e4 r4 
-a2 \! \mf r4  g
- fis2 r8 fis g g 
+g8 g g f~f f4
+ \<e8~e2~e4 r4
+a2 \! \mf r4 g
+ fis2 r8 fis g g
 %easy
 gis8 \< gis g4\staccato \> fis8 \< fis g4\staccato \>
 gis8 \< gis g4\staccato \> fis8 \< fis g4\staccato \>
-e4. \mp \< e8 g4 b 
+e4. \mp \< e8 g4 b
 bes8 \! \mf bes bes bes a4 d,8 d
-fis2 \p r2 
+fis2 \p r2
 r1
 }
 %%%%%%%%%%%%%%%%%%%%%%% Piano %%%%%%%%%%%%%%%%%%%%
@@ -191,11 +191,11 @@ g'8 c, e g <f a> c <e g> c
 <c e> a <a c g'> <a c e>~<a c e>4 r4
 <d fis>8 a <a d fis>4 r2
 %easy
-<gis bis dis>4 <g b d>4 <fis ais cis>4 <g b d>4 
-<gis bis dis>4 <g b d>4 <fis ais cis>4<g b d>4 
+<gis bis dis>4 <g b d>4 <fis ais cis>4 <g b d>4
+<gis bis dis>4 <g b d>4 <fis ais cis>4<g b d>4
 <e' g>8 c <e g c> c <d g> b <d g> b
 <des e g> bes <des e g> bes <c d fis> a <c d fis>4~
-<c d fis>8 a c d  <d fis a c>2\arpeggio
+<c d fis>8 a c d <d fis a c>2\arpeggio
 <g b>8 d g b e e, d' d,
 }
 lhIntro = \relative c {
@@ -208,9 +208,9 @@ lhIntro = \relative c {
 e,1 g c a1
 d1 gis4 g fis g gis g fis g
 c,2 b bes a r1
-<g g'>2 
+<g g'>2
 \clef treble
-e'''4 d 
+e'''4 d
 }
 
 
@@ -218,8 +218,8 @@ e'''4 d
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%BALLADE%%%%%%%%%%%%%%%
 harmoniesBallade = \chordmode {
-\germanChords 
-g1 g1 e:m  a:m 
+\germanChords
+g1 g1 e:m a:m
 a2:m7 d:7
 g1 e:m a2:m7 as4:5+ c4
 fis1:m5- 7
@@ -228,38 +228,38 @@ g1 c2 g2
 a2:m f:m
 c1
 d2
-g1 
+g1
 g
-g1 e:m  a:m 
+g1 e:m a:m
 a2:m7 d:7
 g1 e:m a2:m7 as4:5+ c4
 fis1:m5- 7
 c1 a:m d:m
 g1 c2 g2
-a1:m 
+a1:m
 %inter
 d1:m
 g1
 c2 g
 a1:m
-d1:m 
+d1:m
 bes2 g2:m7
 }
 %%%%%%%%%%%%%%%%%Text%%%%%%%%%%%%%%%%%%
 SopranBallade = \lyricmode{
 oh __ oh __ oh __ ah __ oh __
-Ma -- ma  uh __ oh __ 
-ah __ ah __  oh __ 
+Ma -- ma uh __ oh __
+ah __ ah __ oh __
 oh __ oh __ oh __ ah __ oh __
-Ma -- ma  uh __ oh __  ah __ oh __
+Ma -- ma uh __ oh __ ah __ oh __
 }
 AltBallade = \lyricmode{
 oh __ oh __ oh __ ah __ oh __
-Ma -- ma  uh __ oh __ 
-ah __ ah __  oh __
-oh __ oh __ oh __ ah __ oh __ 
-Ma -- ma  uh __ oh __ 
-ah __  oh__
+Ma -- ma uh __ oh __
+ah __ ah __ oh __
+oh __ oh __ oh __ ah __ oh __
+Ma -- ma uh __ oh __
+ah __ oh__
 }
 TenorBallade = \lyricmode{
 Ma -- ma just killed a man.
@@ -267,7 +267,7 @@ Put a gun a -- gainst his head pulled my
 trig -- ger now he's dead.
 Ma -- ma life had just be -- gun but now I've gone
 and thrown it all a -- way.
-Ma -- ma  uh __
+Ma -- ma uh __
 did -- n't mean to make you cry.
 If I'm not back a -- gain this time to -- mor -- row
 car -- ry on car -- ry on as if no -- thing real -- ly mat -- ters.
@@ -277,60 +277,60 @@ sends shi -- vers down my spine, bo -- dy's a -- ching all the time.
 Good -- bye Eve -- ry -- bo -- dy. I've got to go.
 Go -- ta leave you all be -- hind and face the truth.
 Ma -- ma uh __ I don't wan -- na die. I some -- times wish I'd ne -- ver
-been born at all.  
+been born at all.
 }
 BassBallade = \lyricmode{
-oh __ oh __ oh __  ah __
-Ma -- ma uh __ oh __ 
- ah __ ah __ oh __ 
- oh __ oh __ oh __  ah __
- Ma -- ma uh __  A -- ny -- way the wind blows.  oh __ 
-ah __  oh __
+oh __ oh __ oh __ ah __
+Ma -- ma uh __ oh __
+ ah __ ah __ oh __
+ oh __ oh __ oh __ ah __
+ Ma -- ma uh __ A -- ny -- way the wind blows. oh __
+ah __ oh __
 }
 %%%%%%%%%%%Musik%%%%%%%%%%
 sopranBallade = \relative c''{
 r1
-g2 \mp  (a4~a8 b16 c
-b2.) r4 
+g2 \mp (a4~a8 b16 c
+b2.) r4
 a1 (g2 fis4) r4
 g2 (a4~a8 b16 c
-b2.) r4 
+b2.) r4
 c1\< (c4 ) r4 c4 (d)
 \key c \major
-e16  \! \f e~e8~e2  d4\mf (c2 b4 )r4
+e16 \! \f e~e8~e2 d4\mf (c2 b4 )r4
 d2. r4
-b1 \< (c2) \! \f  g \p
+b1 \< (c2) \! \f g \p
 (a4) r4 f2 (
-e2) r2 
+e2) r2
 \time 2/4
 r2
 \time 4/4
 \key g \major
 r1
 r1
-g2 \mp  (a4~a8 b16 c
-b2.) r4 
+g2 \mp (a4~a8 b16 c
+b2.) r4
 a1 (g2 fis4) r4
 g2 (a4~a8 b16 c
-b2.) r4 
+b2.) r4
 c1\< (c4 ) r4 c4 (d)
 \key c \major
-e16  \! \f e~e8~e2 d4 (c2 b4 )r4
+e16 \! \f e~e8~e2 d4 (c2 b4 )r4
 d2. r4
-b1 \< (c2.) \! \f  g4\>
+b1 \< (c2.) \! \f g4\>
 (c,1\!)
 R1*6
 }
 altBallade = \relative c'{
 r1
-d1 \mp  (g2. )r4
+d1 \mp (g2. )r4
 e1~e2 (d4) r4
 d1 (g2. r4)
 e1\< (e4) r4 fis2
 \key c \major
-g16  \! \f  g~g8~g2  g4\mf ( a2.) r4
-a2 (f4)  r4
-d1\< (g2) \! \f  d \p
+g16 \! \f g~g8~g2 g4\mf ( a2.) r4
+a2 (f4) r4
+d1\< (g2) \! \f d \p
 (c4) r4 c2~c2 r2
 \time 2/4
 r2
@@ -338,14 +338,14 @@ r2
 \key g \major
 r1
 r1
-d1 \mp  (g2. )r4
+d1 \mp (g2. )r4
 e1~e2 (d4) r4
 d1 (g2. r4)
 e1\< (e4) r4 fis2
 \key c \major
-g16  \! \f  g~g8~g2 g4 ( a2.) r4
-a2 (f4)  r4
-d1\< (g2.) \! \f  d4 \>
+g16 \! \f g~g8~g2 g4 ( a2.) r4
+a2 (f4) r4
+d1\< (g2.) \! \f d4 \>
 (c1\!)
 R1*6
 }
@@ -355,16 +355,16 @@ b16 \mf b16~b8~b2 r8 g
 a8 b16 b~b2 r8 b16 b16
 c16 d16~d c~c b~b a~a8 r8 a b
 c16 d~d c~c b~b a~a4 r4
-b16 a (b8~b2)  b8 d
+b16 a (b8~b2) b8 d
 fis8. e16 e2 r8 e
-g8 \< g g g g8. e16 c16 (b8.) 
+g8 \< g g g g8. e16 c16 (b8.)
 a16 a16~a8~a2 r4
 \key c \major
-e'16 \!  \ff e~e8~e2  d8\mf (e16 f e2.)  r8 e16 e
+e'16 \! \ff e~e8~e2 d8\mf (e16 f e2.) r8 e16 e
 f8. e16 e8 d16 d~d4 r8 g,
 g \< d' d e16 e8. f8 f g16 f~
-f8 \! \ff e  r8 d16 \> e g4.\! \mp d16 e
-c4 r8 g16 g as8 bes  \times 2/3{ as8 bes as}
+f8 \! \ff e r8 d16 \> e g4.\! \mp d16 e
+c4 r8 g16 g as8 bes \times 2/3{ as8 bes as}
 g2 r2
  \time 2/4
  r2
@@ -378,10 +378,10 @@ c16 d16~d c~c b~b a~a8 r8 a b
 c16 d~d c~c b~b b16 (a4) r4
 b16 b16~b8~b a16 g a b~b8 r8 d8
 fis8. e16 e2 r8 d16 e
-g8 \< g g g g8. e16 c16 (b8.) 
+g8 \< g g g g8. e16 c16 (b8.)
 a16 a16~a8~a2 r4
 \key c \major
-e'16 \!  \ff e~e8~e4. r8 d8 (e16 f e2.)  r4
+e'16 \! \ff e~e8~e4. r8 d8 (e16 f e2.) r4
 f8. e16 e8 d16 d~d4 r8 g,
 g \< d' d e e16 f f8 f g
 f16 (e~e8~e2.) \! \ff
@@ -416,7 +416,7 @@ g1\< ( c2. \! \f )b4\> (a1\!)
 R1*6
 }
 %%%%%%%%%%%Piano%%%%%%%%%%%%%%%%%%%
-rhBallade = \relative c'{ 
+rhBallade = \relative c'{
 \clef treble
 <g' b>8 d g b e d, d' d,
 <g b>8 d g b e d, d' d,
@@ -426,17 +426,17 @@ rhBallade = \relative c'{
 <g b>8 d g b e d, d' d,
 <g b>8 e g b fis' e, e' e,
 \clef bass
-<a, c> a c e <as, c> e' <g, c> e' 
+<a, c> a c e <as, c> e' <g, c> e'
 <fis, c'> fis c' e <fis, c'> e' <e, c'> e'
 \key c \major
 \clef treble
 <c e>8 c <e g c> c <e g> c <b d> g'
 <a, c> a c e b' a, a' a,
 <d f>8 d <d f> <des f> <c f> c <b f'> b
-<g b>4  <b d> <b e> <b f'>
+<g b>4 <b d> <b e> <b f'>
 <c e>8 c <e g c> c <e g> c <b d> g'
 <c, e> a <c e> a <f as c>2\arpeggio
-<e' g>8 c e g  <f a> c' <e, g> c'
+<e' g>8 c e g <f a> c' <e, g> c'
 \time 2/4
 <es, ges> c' <d, f> c'
 \time 4/4
@@ -451,23 +451,23 @@ rhBallade = \relative c'{
 <g b>8 d g b e d, d' d,
 <g b>8 e g b fis' e, e' e,
 \clef bass
-<a, c> a c e <as, c> e' <g, c> e' 
+<a, c> a c e <as, c> e' <g, c> e'
 <fis, c'> fis c' e <fis, c'> e' <e, c'> e'
 \key c \major
 \clef treble
 <c e>8 c <e g c> c <e g> c <b d> g'
 <a, c> a c e b' a, a' a,
 <d f>8 d <d f> <des f> <c f> c <b f'> b
-<g b>4  <b d> <b e> <b f'>
+<g b>4 <b d> <b e> <b f'>
 <e g>8 c <e g c> c <d g> b <d g> e
 %Zwischenspiel
 <c e a>8 a c e a b16 c a8 b16 c <d, f a d>8 d <d f>8 r8
 d'16 e f g a4
-g16 f e32 f \times 2/3{e32 f e} 
+g16 f e32 f \times 2/3{e32 f e}
 \times 2/3{d16 e d} \times 2/3{c16 d c}
 \times 2/3{b16 c b} \times 2/3{a16 b a} g4
 r8 \times 2/3{r16 a b} \times 2/3{c16 d e} \times 2/3{f16 g8~}
-g16 g, a32 b c d \times 2/3{e16 f [g]}  a8~
+g16 g, a32 b c d \times 2/3{e16 f [g]} a8~
 a4 r8 b,16 c a8 b16 c a8 b16 c
 <d, f d'>4 \times 2/3{ r8 d f} f4 d'4
 <d, f bes>2
@@ -475,43 +475,43 @@ a4 r8 b,16 c a8 b16 c a8 b16 c
 \times 2/3{r16 bes d} \times 2/3{f d bes}
 
 }
-lhBallade = \relative c'{  
+lhBallade = \relative c'{
 \clef bass
-<g, g'>2 
+<g, g'>2
 \clef treble
-e'''4 d 
+e'''4 d
 \clef bass
-<g,,, g'>2 
+<g,,, g'>2
 \clef treble
-e'''4 d 
+e'''4 d
 \clef bass
-<e,,, e'>2 
+<e,,, e'>2
 \clef treble
-fis'''4 e 
+fis'''4 e
 \clef bass
-<a,,, a'>2 
+<a,,, a'>2
 \clef treble
 b'''4 a
 \clef bass
-a,,,2 d 
-<g, g'>2 
+a,,,2 d
+<g, g'>2
 \clef treble
-e'''4 d 
+e'''4 d
 \clef bass
-<e,,, e'>2 
+<e,,, e'>2
 \clef treble
-fis'''4 e 
+fis'''4 e
 \clef bass
 <a,,, a'>2 <as as'>4 <g g'>
-<fis fis'>2 <fis fis'>4  <e e'>4
+<fis fis'>2 <fis fis'>4 <e e'>4
 \key c \major
 <c c'>2. <b b'>4
-<a a'>2 
+<a a'>2
 \clef treble
 b'''4 a
 \clef bass
 <d,,, d'>4. <des des'>8 <c c'>4 <b b'>4
-<g g'>8 <g g'>8 <g g'>8 <g g'>8 <g g'>8 
+<g g'>8 <g g'>8 <g g'>8 <g g'>8 <g g'>8
 <g g'>8 <g g'>8 <g g'>8
 <c c'>2 <b b'>2 <a a'>2 <f' f'>2
 c'2 r2
@@ -520,45 +520,45 @@ c'2 r2
   \time 4/4
  \key g \major
  %Vers2
-<g g'>2 
+<g g'>2
 \clef treble
-e'''4 d 
+e'''4 d
 \clef bass
-<g,,, g'>2 
+<g,,, g'>2
 \clef treble
-e'''4 d 
+e'''4 d
 \clef bass
-<g,,, g'>2 
+<g,,, g'>2
 \clef treble
-e'''4 d 
+e'''4 d
 \clef bass
-<e,,, e'>2 
+<e,,, e'>2
 \clef treble
-fis'''4 e 
+fis'''4 e
 \clef bass
-<a,,, a'>2 
+<a,,, a'>2
 \clef treble
 b'''4 a
 \clef bass
-a,,,2 d 
-<g, g'>2 
+a,,,2 d
+<g, g'>2
 \clef treble
-e'''4 d 
+e'''4 d
 \clef bass
-<e,,, e'>2 
+<e,,, e'>2
 \clef treble
-fis'''4 e 
+fis'''4 e
 \clef bass
 <a,,,, a'>2 <as as'>4 <g g'>
 <fis fis'>2 <fis fis'>4 <e e'>4
 \key c \major
 <c' c'>2. <b b'>4
-<a a'>2 
+<a a'>2
 \clef treble
 b'''4 a
 \clef bass
 <d,,, d'>4. <des des'>8 <c c'>4 <b b'>4
-<g g'>8 <g g'>8 <g g'>8 <g g'>8 <g g'>8 
+<g g'>8 <g g'>8 <g g'>8 <g g'>8 <g g'>8
 <g g'>8 <g g'>8 <g g'>8
 <c c'>2 <b b'>2 <a a'>1
 <d d'>4. <cis cis'>8 <c c'>4 <b b'>4
@@ -571,7 +571,7 @@ b'''4 a
 
 %%%%%%%%%%%OPER%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 harmoniesOper = \chordmode {
-\germanChords 
+\germanChords
 fis1
 fis4 fis8:m5- fis8 fis4 fis8:m5- fis8
 b8 fis b fis fis:m5- fis b fis
@@ -618,7 +618,7 @@ oh
 He's just a poor boy from a poor fa -- mi -- ly
 spare him his life from this mon -- stro -- si -- ty.
 No! Let him go.
-Let him go. 
+Let him go.
 Let him go.
 Will not let you go.
 Let me go. Will not let you go oh
@@ -638,7 +638,7 @@ Ma -- gni -- fi -- co
 He's just a poor boy from a poor fa -- mi -- ly
 spare him his life from this mon -- stro -- si -- ty.
 No! Let him go.
-Let him go. 
+Let him go.
 Let him go.
 Will not let you go. Let me go.
 Will not let you go oh
@@ -680,7 +680,7 @@ Ea -- sy come, ea -- sy go, will you let me go?
 Bis -- mi -- lah! We will not let you go.
 Bis -- mi -- lah! We will not let you go.
 Bis -- mi -- lah! We will not let you go.
-Ne -- ver, ne -- ver, ne -- ver, ne -- ver, ne -- ver, ne -- ver 
+Ne -- ver, ne -- ver, ne -- ver, ne -- ver, ne -- ver, ne -- ver
 let me go!
 Oh ma -- ma -- mi -- a, ma -- ma -- mi -- a
 Ma -- ma -- mi -- a let me go. Bee -- el -- ze -- bub has a
@@ -692,30 +692,30 @@ sopranOper = \relative c''{
 \key fis \major
 r1
 b8\staccato \mf ais16\staccato ais\staccato a\staccato a\staccato ais\staccato ais\staccato
-b\staccato b\staccato ais\staccato ais\staccato a8  fis16\staccato fis16\staccato
-b8->\staccato fis16\staccato  fis\staccato b8->\staccato fis16\staccato  fis\staccato 
-fis16\staccato  fis\staccato fis8->\staccato b8->\staccato fis8->\staccato
+b\staccato b\staccato ais\staccato ais\staccato a8 fis16\staccato fis16\staccato
+b8->\staccato fis16\staccato fis\staccato b8->\staccato fis16\staccato fis\staccato
+fis16\staccato fis\staccato fis8->\staccato b8->\staccato fis8->\staccato
 f16\staccato \f f16\staccato f16\staccato f16\staccato a8\staccato a8\staccato
 e'16\staccato e16\staccato e16\staccato e16\staccato eis8\staccato eis8\staccato
 %galileo
-fis8->\staccato cis16\staccato cis16\staccato d16\staccato cis8. r8 cis16\staccato cis16\staccato  d16\staccato cis8. 
+fis8->\staccato cis16\staccato cis16\staccato d16\staccato cis8. r8 cis16\staccato cis16\staccato d16\staccato cis8.
 \time 3/4
 r8 cis16\staccato cis16\staccato d16\staccato cis16\staccato b16\staccato a16\staccato
 gis16\staccato r16 r8
 \time 2/4
 \key c \major
 r16 e16~e4. r2
-r2 
+r2
 c'8 \f c16 c c8 c
 c16 c c8 c16 c c16 r
 a8 a16 b g8 g16 g
 fis8 fis16 fis g8 r8
 r2 r2 r2
 r4 c8. \f r16
-r8 r r16 c16\staccato  c16\staccato  c16~c4 r 
-r8 r r16 c16\staccato  c16\staccato  c16~c4 r 
-r8 r r16 c16\staccato  c16\staccato   c16\staccato
-g16\staccato g16\staccato g16\staccato g16\staccato 
+r8 r r16 c16\staccato c16\staccato c16~c4 r
+r8 r r16 c16\staccato c16\staccato c16~c4 r
+r8 r r16 c16\staccato c16\staccato c16\staccato
+g16\staccato g16\staccato g16\staccato g16\staccato
 g16\staccato c16\staccato c16\staccato c16\staccato
 g16\staccato g16\staccato g16\staccato g16\staccato
 g16\staccato r8.
@@ -723,9 +723,9 @@ r16 g16~g8~g4
 %no
 b,8\staccato \ff cis8\staccato dis8\staccato f8\staccato
 g8\staccato b8\staccato c8\staccato r8
-r4 r8  g16\staccato \mf g16\staccato
-a16\staccato g16\staccato  f16\staccato e16\staccato
-d16\staccato r g8 
+r4 r8 g16\staccato \mf g16\staccato
+a16\staccato g16\staccato f16\staccato e16\staccato
+d16\staccato r g8
 c8. c16 c r16 c\staccato c\staccato
 b16\staccato b16\staccato b16\staccato b16\staccato
 e8 e d4\p r8 d8\< d4 r8 d8
@@ -735,13 +735,13 @@ altOper = \relative c''{
 \key fis \major
 r1
 b8\staccato \mf ais16\staccato ais\staccato a\staccato a\staccato ais\staccato ais\staccato
-b\staccato b\staccato ais\staccato ais\staccato a8  cis,16\staccato cis16\staccato
-fis8->\staccato cis16\staccato  cis\staccato fis8->\staccato cis16\staccato  cis\staccato 
-c16\staccato  c\staccato cis8->\staccato fis8->\staccato cis8->\staccato
+b\staccato b\staccato ais\staccato ais\staccato a8 cis,16\staccato cis16\staccato
+fis8->\staccato cis16\staccato cis\staccato fis8->\staccato cis16\staccato cis\staccato
+c16\staccato c\staccato cis8->\staccato fis8->\staccato cis8->\staccato
 d16\staccato \f d16\staccato d16\staccato d16\staccato es8\staccato es8\staccato
 e16\staccato e16\staccato e16\staccato e16\staccato eis8\staccato eis8\staccato
 %galileo
-fis8->\staccato cis'16\staccato cis16\staccato d16\staccato cis8. r8 cis16\staccato cis16\staccato  d16\staccato cis8. 
+fis8->\staccato cis'16\staccato cis16\staccato d16\staccato cis8. r8 cis16\staccato cis16\staccato d16\staccato cis8.
 \time 3/4
 r4 r4 r16 g g g
 \time 2/4
@@ -754,32 +754,32 @@ d8 d16 d d8 r8
 r2 r2 r2
 r4
  e8. \f r16
-r8 r r16 e16\staccato  e16\staccato  e16~e4 r 
-r8 r r16 e16\staccato  e16\staccato  e16~e4 r 
-r8 r r16 e16\staccato  e16\staccato   e16\staccato
-d16\staccato e16\staccato f16\staccato e16\staccato 
-d16\staccato e16\staccato  e16\staccato  e16\staccato
+r8 r r16 e16\staccato e16\staccato e16~e4 r
+r8 r r16 e16\staccato e16\staccato e16~e4 r
+r8 r r16 e16\staccato e16\staccato e16\staccato
+d16\staccato e16\staccato f16\staccato e16\staccato
+d16\staccato e16\staccato e16\staccato e16\staccato
 d16\staccato e16\staccato f16\staccato e16\staccato d16\staccato r8.
 
 r8 r16 es16~es8~es8
 %no
 b8\staccato \ff cis8\staccato dis8\staccato d8\staccato
 es8\staccato d8\staccato c8\staccato r8
-r4 r8  e16\staccato \mf e16\staccato
-f16\staccato e16\staccato  d16\staccato c16\staccato
-b16\staccato r d8 
+r4 r8 e16\staccato \mf e16\staccato
+f16\staccato e16\staccato d16\staccato c16\staccato
+b16\staccato r d8
 g8. g16 a r16 a\staccato a\staccato
 a16\staccato a16\staccato a16\staccato a16\staccato
 g8 g f8.\p (e16\< d16) r16 f8 a8. (g16 f16) r16 g8
-b2~b  \! \ff
+b2~b \! \ff
 
 }
 tenorOper = \relative c''{
 \key fis \major
 r1
 r2 r4 r8 ais16\staccato \mf ais16\staccato
-dis8->\staccato ais16\staccato  ais\staccato dis8->\staccato ais16\staccato  ais\staccato 
-a16\staccato  a\staccato ais8->\staccato dis8->\staccato ais8->\staccato
+dis8->\staccato ais16\staccato ais\staccato dis8->\staccato ais16\staccato ais\staccato
+a16\staccato a\staccato ais8->\staccato dis8->\staccato ais8->\staccato
 bes16\staccato \f bes16\staccato bes16\staccato bes16\staccato a8\staccato a8\staccato
 cis16\staccato cis16\staccato cis16\staccato cis16\staccato cis8\staccato cis8\staccato
 %galileo
@@ -790,7 +790,7 @@ e16\staccato d16\staccato cis16 r8.
 \time 2/4
 \key c \major
 r16 r r c'~c4 r2
-r2 
+r2
 f8 \f e16 e es8 e
 f16 f e8 es16 es e16 r
 c8 c16 d c8 c16 c
@@ -808,21 +808,21 @@ r4 r16 des16~des8
 %no
 b8\staccato \ff ais8\staccato b8\staccato bes8\staccato
 bes8\staccato b8\staccato c8\staccato r8
-r4 r8  c16\staccato \mf c16\staccato
-c16\staccato c16\staccato  a16\staccato g16\staccato
-g16\staccato r b8 
+r4 r8 c16\staccato \mf c16\staccato
+c16\staccato c16\staccato a16\staccato g16\staccato
+g16\staccato r b8
 e8. e16 f r16 f\staccato f\staccato
 fis16\staccato fis16\staccato fis16\staccato fis16\staccato
-e8 e b4\p r8 b8\< b4 r8 b8 
-d2~d  \! \ff
+e8 e b4\p r8 b8\< b4 r8 b8
+d2~d \! \ff
 
 }
 bassOper = \relative c{
 \key fis \major
 r1
 r2 r4 r8 fis16\staccato \mf fis16\staccato
-b8->\staccato fis16\staccato  fis\staccato b8->\staccato fis16\staccato  fis\staccato 
-fis16\staccato  fis\staccato fis8->\staccato b8->\staccato fis8->\staccato
+b8->\staccato fis16\staccato fis\staccato b8->\staccato fis16\staccato fis\staccato
+fis16\staccato fis\staccato fis8->\staccato b8->\staccato fis8->\staccato
 bes,16\staccato \f bes16\staccato bes16\staccato bes16\staccato f'8\staccato f8\staccato
 a16\staccato a16\staccato a16\staccato a16\staccato b8\staccato b8\staccato
 %galileo
@@ -848,20 +848,20 @@ r8 g8\staccato c, g16\staccato g'16\staccato
 g16\staccato g16\staccato g16\staccato g16\staccato g16\staccato r8.
 r8 g8\staccato c, g16\staccato g'16\staccato
 g16\staccato g16\staccato g16\staccato g16\staccato g16\staccato r8.
-g16\staccato g16\staccato r16 g16\staccato g16\staccato 
+g16\staccato g16\staccato r16 g16\staccato g16\staccato
 r16 g16\staccato g16\staccato
 d16\staccato e16\staccato f16\staccato e16\staccato g16\staccato fis16\staccato
 b16\staccato b16\staccato
-bes2 
+bes2
 %No
-r2 r4 r16 g16\staccato \mf g16\staccato g16\staccato 
+r2 r4 r16 g16\staccato \mf g16\staccato g16\staccato
 a16\staccato g16\staccato g16\staccato g16\staccato
-a16\staccato g16\staccato c,16\staccato c16\staccato 
-f16\staccato c16\staccato f16\staccato g16\staccato 
-g16\staccato r16 g8 
+a16\staccato g16\staccato c,16\staccato c16\staccato
+f16\staccato c16\staccato f16\staccato g16\staccato
+g16\staccato r16 g8
 c8. c16 f,16 r16 f\staccato a\staccato
-b16\staccato b16\staccato b16\staccato b16\staccato 
-e,8 e g4\p r8 g8\< g4 r8 g8 g2~g  \! \ff
+b16\staccato b16\staccato b16\staccato b16\staccato
+e,8 e g4\p r8 g8\< g4 r8 g8 g2~g \! \ff
 }
 %%%%%%%%%%%Piano%%%%%%%%%%%%%%%%%%%
 rhOper = \relative c'{
@@ -873,8 +873,8 @@ rhOper = \relative c'{
 <fis b dis> <fis ais cis> <fis a c> <fis ais cis>
 <fis b dis>8 <fis ais cis>16 <fis ais cis>16 <fis b dis>8 <fis ais cis>16 <fis ais cis>16
 <fis a c>16 <fis a c>16 <fis ais cis>8 <fis b dis>8 <fis ais cis>
-<f' bes d>8 <f bes d>8 <fis a c>8  <fis a c>8
-<a cis e>8  <a cis e>8  <gis b eis>8  <gis b eis>8
+<f' bes d>8 <f bes d>8 <fis a c>8 <fis a c>8
+<a cis e>8 <a cis e>8 <gis b eis>8 <gis b eis>8
 %galileo
 <ais cis fis>8 r8 r4 r2
 \time 3/4
@@ -904,11 +904,11 @@ r4 r8 <c, e g>16 <c e g>
 <c f a>16 <c e g> f e d16 r16 r8
 <c e g>8. <c e g>16 <c f a>8 <c f a>
 <b dis fis a>16 <b dis fis a>16 <b dis fis a>16 <b dis fis a>16 <b e g>8 <b e g>
-<f' g b>2 <f g b>2 <f g b>2 
+<f' g b>2 <f g b>2 <f g b>2
 <f g b>8 <f g b>8 <f g b>8 <f g b>8
 }
 lhOper = \relative c,,{
-\key fis \major  
+\key fis \major
 <fis' fis'>4 r2. r1 r1
 <f f'>8. <f f'>16 <f f'>8. <f f'>16 <e e'>8. <e e'>16 <cis cis'>4
 <fis fis'>8 r8 r4 r2
@@ -932,7 +932,7 @@ r4 r4
 <g g'>16 <g g'>16 <g g'>16 <g g'>16 <g g'>16 r16 r8
 <g g'>16 <g g'>16 <g g'>16 <g g'>16 <g g'>16 r16 r8 r2
 <g g'>8 <fis fis'> <b b'> <ais ais'> <es' es'> <g, g'> <c c'> r8
-r4 r8 c16 c 
+r4 r8 c16 c
 f16 e d c b r16 r8
 <c c'>8. <c c'>16 <f, f'>8 <f f'>8
 <b, b'>16 <b b'> <b b'> <b b'> <e e'>8 <e e'>
@@ -943,7 +943,7 @@ f16 e d c b r16 r8
 }
 %%%%%%%%%%%ROCK%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 harmoniesRock = \chordmode {
-\germanChords 
+\germanChords
 c1 c c d
 g1:7
 g2:7 c2
@@ -957,7 +957,7 @@ g1
 d1:m
 g1
 d4:m \times 2/3 {d4:m g8} g2
-d2:m  g2
+d2:m g2
 c1 c c d
 es4 f2 fis4
 gis1
@@ -969,27 +969,27 @@ g1~g1~g2
 RockText = \lyricmode{
 So you think you can stone me and spit in my eye.
 So you think you can love me and leave me to die.
-Oh __  ba -- by can't do this to me ba -- by
-Just got -- ta get out just got -- ta get right out -- ta here  
+Oh __ ba -- by can't do this to me ba -- by
+Just got -- ta get out just got -- ta get right out -- ta here
 }
 %%%%%%%%%%%Musik%%%%%%%%%%
 sopranRock = \relative c''{
 \tempo 4 = 88
 \time 4/4
 r1 r1 r1 r1
-\times 2/3{r4 \f f,8~} \times 2/3{f8 f4} \times 2/3{f4 e8~} \times 2/3{e8 e4}   
-\times 2/3{e4 d8~} \times 2/3{d8 d4} \times 2/3{d4 e8~} \times 2/3{e8 e4} 
+\times 2/3{r4 \f f,8~} \times 2/3{f8 f4} \times 2/3{f4 e8~} \times 2/3{e8 e4}
+\times 2/3{e4 d8~} \times 2/3{d8 d4} \times 2/3{d4 e8~} \times 2/3{e8 e4}
 d2. r4
 
 \time 2/4
 r4 r4
 \time 4/4
-\times 2/3{r4 f8~} \times 2/3{f8 f4} \times 2/3{f4 e8~} \times 2/3{e8 e4}   
+\times 2/3{r4 f8~} \times 2/3{f8 f4} \times 2/3{f4 e8~} \times 2/3{e8 e4}
 \times 2/3{e4 d8~} \times 2/3{d8 d4} \times 2/3{d4 e8~} \times 2/3{e8 e4}
 \times 2/3{f4 (g8} a4~a) r4
 e4~\times 2/3{e4 (f8~)} f2
 \times 2/3{e4 (d8)} d4~d r
-\times 2/3{r4 f8~} \times 2/3{f8 f4} \times 2/3{f4 f8~} \times 2/3{f8 f4} 
+\times 2/3{r4 f8~} \times 2/3{f8 f4} \times 2/3{f4 f8~} \times 2/3{f8 f4}
 \times 2/3{e4 (d8)} d4~d r
 \times 2/3{f4 f8} \times 2/3{f8 f g~} g4 r4
 \times 2/3{f4 f8} \times 2/3{f8 f4} \times 2/3{g4 g8~} \times 2/3{g8 g4}
@@ -1002,18 +1002,18 @@ r1 r1 r2
 altRock = \relative c'{
 \time 4/4
 r1 r1 r1 r1
-\times 2/3{r4 \f f8~} \times 2/3{f8 f4} \times 2/3{f4 e8~} \times 2/3{e8 e4}   
-\times 2/3{e4 d8~} \times 2/3{d8 d4} \times 2/3{d4 c8~} \times 2/3{c8 c4} 
+\times 2/3{r4 \f f8~} \times 2/3{f8 f4} \times 2/3{f4 e8~} \times 2/3{e8 e4}
+\times 2/3{e4 d8~} \times 2/3{d8 d4} \times 2/3{d4 c8~} \times 2/3{c8 c4}
 \times 2/3{b4 (c8} d2) r4
 \time 2/4
 r4 r4
 \time 4/4
-\times 2/3{r4 f8~} \times 2/3{f8 f4} \times 2/3{f4 e8~} \times 2/3{e8 e4}   
+\times 2/3{r4 f8~} \times 2/3{f8 f4} \times 2/3{f4 e8~} \times 2/3{e8 e4}
 \times 2/3{e4 d8~} \times 2/3{d8 d4} \times 2/3{d4 c8~} \times 2/3{c8 c4}
 \times 2/3{f4 (g8} a4~a) r4
 d,4~\times 2/3{d4 (c8~)} c2
 b4 b4~b r
-\times 2/3{r4 d8~} \times 2/3{d8 d4} \times 2/3{d4 d8~} \times 2/3{d8 d4} 
+\times 2/3{r4 d8~} \times 2/3{d8 d4} \times 2/3{d4 d8~} \times 2/3{d8 d4}
 \times 2/3{e4 (d8)} d4~d r
 \times 2/3{c4 c8} \times 2/3{c8 c d~} d4 r4
 \times 2/3{c4 c8} \times 2/3{c8 c4} \times 2/3{d4 c8~} \times 2/3{c8 b4}
@@ -1026,23 +1026,23 @@ r1 r1 r2
 tenorRock = \relative c''{
 \time 4/4
 r1 r1 r1 r1
-\times 2/3{r4 \f b8~} \times 2/3{b8 b4}  \times 2/3{b4 b8~}  \times 2/3{b8 b4}  
-\times 2/3{b4 b8~} \times 2/3{b8 b4} \times 2/3{d4 c8~}  \times 2/3{c8 c4}
+\times 2/3{r4 \f b8~} \times 2/3{b8 b4} \times 2/3{b4 b8~} \times 2/3{b8 b4}
+\times 2/3{b4 b8~} \times 2/3{b8 b4} \times 2/3{d4 c8~} \times 2/3{c8 c4}
 \times 2/3{b4 (c8} d2) r4
 \time 2/4
 r4 r4
 \time 4/4
-\times 2/3{r4 b8~} \times 2/3{b8 b4}  \times 2/3{b4 b8~}  \times 2/3{b8 b4}  
-\times 2/3{b4 b8~} \times 2/3{b8 b4} \times 2/3{d4 c8~}  \times 2/3{c8 a4}
+\times 2/3{r4 b8~} \times 2/3{b8 b4} \times 2/3{b4 b8~} \times 2/3{b8 b4}
+\times 2/3{b4 b8~} \times 2/3{b8 b4} \times 2/3{d4 c8~} \times 2/3{c8 a4}
 c2. r4
 a1
 g4 g4~g4 r
-\times 2/3{r4 a8~} \times 2/3{a8 a4} \times 2/3{a4 a8~} \times 2/3{a8 a4} 
+\times 2/3{r4 a8~} \times 2/3{a8 a4} \times 2/3{a4 a8~} \times 2/3{a8 a4}
 b4 b4~b r
 \times 2/3{a4 a8} \times 2/3{a8 a b~} b4 r4
 \times 2/3{a4 a8} \times 2/3{a8 a4} \times 2/3{b4 g8~} \times 2/3{g8 g4}
 g2 r2
-r1 r1 r1 r1 
+r1 r1 r1 r1
 r1 r1 r1 r1
 \time 20/8
 r1 r1 r2
@@ -1050,18 +1050,18 @@ r1 r1 r2
 bassRock = \relative c'{
 \time 4/4
 r1 r1 r1 r1
-\times 2/3{r4 \f g8~} \times 2/3{g8 g4}  \times 2/3{g4 g8~}  \times 2/3{g8 g4} 
-\times 2/3{g4 g8~} \times 2/3{g8 g4} \times 2/3{g4 g8~}  \times 2/3{g8 g4}
+\times 2/3{r4 \f g8~} \times 2/3{g8 g4} \times 2/3{g4 g8~} \times 2/3{g8 g4}
+\times 2/3{g4 g8~} \times 2/3{g8 g4} \times 2/3{g4 g8~} \times 2/3{g8 g4}
 g2. r4
 \time 2/4
-r4 r4 
+r4 r4
 \time 4/4
-\times 2/3{r4 g8~} \times 2/3{g8 g4}  \times 2/3{g4 g8~}  \times 2/3{g8 g4} 
-\times 2/3{g4 g8~} \times 2/3{g8 g4} \times 2/3{g4 g8~}  \times 2/3{g8 g4}
+\times 2/3{r4 g8~} \times 2/3{g8 g4} \times 2/3{g4 g8~} \times 2/3{g8 g4}
+\times 2/3{g4 g8~} \times 2/3{g8 g4} \times 2/3{g4 g8~} \times 2/3{g8 g4}
 f2. r4
 d1
 g4 g4~g4 r
-\times 2/3{r4 d8~} \times 2/3{d8 d4} \times 2/3{d4 d8~} \times 2/3{d8 d4} 
+\times 2/3{r4 d8~} \times 2/3{d8 d4} \times 2/3{d4 d8~} \times 2/3{d8 d4}
 g4 g4~g r
 \times 2/3{d4 d8} \times 2/3{d8 d g~} g4 r4
 \times 2/3{d4 d8} \times 2/3{d8 d4} \times 2/3{g4 g8~} \times 2/3{g8 g4}
@@ -1086,19 +1086,19 @@ R1*3
 \time 4/4
 r1 r1 r1
 < d f a>4 q q q
-<b d g>4 q q q 
+<b d g>4 q q q
 < d f a>4 q q q
-<b d g>4 q q q 
+<b d g>4 q q q
 < d f a>4 q <b d g>4 <b d g>4
 < d f a>4 q <b d g>4 <b d g>4
 %zwischen
 \times 2/3{<e g c>4 e8~} \times 2/3{e8 f4} \times 2/3{g4 a8} \times 2/3{b8 c4}
 \times 2/3{<e, g c>4 e8~} \times 2/3{e8 f4} \times 2/3{g8 a g8~} g4
 \times 2/3{<e g c>4 e8~} \times 2/3{e8 f4} \times 2/3{g4 a8} \times 2/3{ b8 c4}
-\times 2/3{<d, fis a d>4 fis8~} \times 2/3{fis8 g4} \times 2/3{a4 b8} \times 2/3{c8 d4} 
+\times 2/3{<d, fis a d>4 fis8~} \times 2/3{fis8 g4} \times 2/3{a4 b8} \times 2/3{c8 d4}
 
 \times 2/3{es,8 f g~} \times 2/3{g8 f g} \times 2/3{a4 g8} \times 2/3{a8 ais4}
-\times 2/3{bis8 cis dis} \times 2/3{eis8 fis gis} \times 2/3{ais8 gis ais} 
+\times 2/3{bis8 cis dis} \times 2/3{eis8 fis gis} \times 2/3{ais8 gis ais}
 \times 2/3{bis8 cis4}
 \times 2/3{f,,8 g a} \times 2/3{bes8 c d} \times 2/3{es8 d es} \times 2/3{f8 g4}
 \ottava #1
@@ -1126,7 +1126,7 @@ q q q q
 f f f f
 r1 r1 r1 r1
 d4 d g g
-d d  g g
+d d g g
 <c,, c'>4 q q q
 q q q q
 q q q q
@@ -1140,12 +1140,12 @@ g8 a b a b c d c d e f e f g a g b g d' g,
 }
 %%%%%%%%%%%OUTRO%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 harmoniesOutro = \chordmode {
-\germanChords 
+\germanChords
 c2 g a:m
 e4:7 a:m
 e:7 a:m g c
-b2 e:m 
-f c 
+b2 e:m
+f c
 a:m e:m
 a:m e:m
 a:m f:m
@@ -1159,13 +1159,13 @@ g1 d
 }
 SopranOutro = \lyricmode{
 uh __ uh yeah uh yeah
-A -- ny one can see. 
+A -- ny one can see.
 No -- thing real -- ly mat -- ters
 No -- thing real -- ly mat -- ters to me.
 }
 AltOutro = \lyricmode{
 uh __ uh yeah uh yeah
-A -- ny one can see. 
+A -- ny one can see.
 No -- thing real -- ly mat -- ters
 No -- thing real -- ly mat -- ters to me.
 A -- ny way the wind blows
@@ -1173,7 +1173,7 @@ A -- ny way the wind blows
 TenorOutro = \lyricmode{
 uh __ uh yeah uh yeah
 No -- thing real -- ly mat -- ters.
-A -- ny one can see. 
+A -- ny one can see.
 No -- thing real -- ly mat -- ters
 No -- thing real -- ly mat -- ters to me.
 A -- ny way the wind blows
@@ -1181,7 +1181,7 @@ A -- ny way the wind blows
 BassOutro = \lyricmode{
 uh __ uh yeah uh yeah
 No -- thing real -- ly mat -- ters.
-A -- ny one can see. 
+A -- ny one can see.
 No -- thing real -- ly mat -- ters
 No -- thing real -- ly mat -- ters to me.
 A -- ny way the wind blows
@@ -1190,12 +1190,12 @@ A -- ny way the wind blows
 sopranOutro = \relative c''{
 \key c \major
 \tempo 4 = 75
-\time 4/4  
-c2\f  (d c) b4 c
+\time 4/4
+c2\f (d c) b4 c
 b c4 r2
-r1 r1 r1 
-e8 d c b g4. r8 
-e'8  c d e c\glissando as4.\fermata
+r1 r1 r1
+e8 d c b g4. r8
+e'8 c d e c\glissando as4.\fermata
 e8\p\> d d c c a4 \fermata \! b8 \pp
 c1 r1 r1
 \key d \major
@@ -1205,14 +1205,14 @@ r1
  \bar "|."
 }
 altOutro = \relative c'{
-\key c \major  
-\time 4/4   
+\key c \major
+\time 4/4
 g'2\f (g a) b4 a
 b4 a r2
 r1 r1 r1
 e8 e e e e4. r8
 e8 e e e f f4.\fermata
-e8 \p\> d d c c a4 \fermata \!b8 \pp 
+e8 \p\> d d c c a4 \fermata \!b8 \pp
 c1 r1 r1
 \key d \major
 r1 r1
@@ -1221,8 +1221,8 @@ r1
  \bar "|."
 }
 tenorOutro = \relative c''{
-\key c \major  
-\time 4/4   
+\key c \major
+\time 4/4
 e2\f (d c) e4 e
 e16 (f8.) e4 r2
 r1 r1
@@ -1238,10 +1238,10 @@ r1
  \bar "|."
 }
 bassOutro = \relative c'{
-\key c \major  
-\time 4/4   
+\key c \major
+\time 4/4
 c2\f (b a) gis4 a
-gis4 a r2  
+gis4 a r2
 r1 r1
 a8\mf b c e, g g~g r8
 a8 a a a e4. r8
@@ -1255,7 +1255,7 @@ r1
  \bar "|."
 }
 
-rhOutro = \relative c'{ 
+rhOutro = \relative c'{
   \time 4/4
  
  <c e>16 g c e g4
@@ -1272,7 +1272,7 @@ rhOutro = \relative c'{
  <a c e> a c e
  <f, as c>2\arpeggio \fermata
  <f a? c>2\arpeggio <f a c>2\arpeggio \fermata
- <e'' g>8 c e g <f a> b <f a> b 
+ <e'' g>8 c e g <f a> b <f a> b
  <e, g> c e g
  <d fis a> b' <d, fis a> b'
 <b, d g> b d g <bes, d g> a' g a
@@ -1299,28 +1299,28 @@ r1 d1\ppp
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%ALL%%%%%%%%%%%
 harmonies = \chordmode {
-\germanChords 
+\germanChords
 \harmoniesIntro
 \harmoniesBallade
 \harmoniesOper
 \harmoniesRock
 \harmoniesOutro
 }
-sopranMusik =  \relative c'' {
+sopranMusik = \relative c'' {
 \sopranIntro
 \sopranBallade
 \sopranOper
 \sopranRock
 \sopranOutro
 }
-altMusik =  \relative c' {
+altMusik = \relative c' {
 \altIntro
 \altBallade
 \altOper
 \altRock
 \altOutro
 }
-tenorMusik =  \relative c'' {
+tenorMusik = \relative c'' {
 \tenorIntro
 \tenorBallade
 \tenorOper
@@ -1338,14 +1338,14 @@ bassMusik = \relative c' {
 sopranText = \lyricmode{
 \SopranIntro
 \SopranBallade
-\SopranOper 
+\SopranOper
 \RockText
 \SopranOutro
 }
 altText = \lyricmode{
 \AltIntro
 \AltBallade
-\AltOper 
+\AltOper
 \RockText
 \AltOutro
 }
@@ -1387,12 +1387,12 @@ LeftHand = \relative c {
      }<<
       \new Voice = "soprano" { \voiceOne \sopranMusik }
     >>
-    \new Lyrics  \lyricsto "soprano" \sopranText
+    \new Lyrics \lyricsto "soprano" \sopranText
     
-   %  \new Staff = "alto" \with {midiInstrument = #"acoustic grand"
-   %  instrumentName = \markup \center-column { "Alt" }
+   % \new Staff = "alto" \with {midiInstrument = #"acoustic grand"
+   % instrumentName = \markup \center-column { "Alt" }
     % }<<
-     %  \new Voice = "alto" { \voiceTwo \altMusik }
+     % \new Voice = "alto" { \voiceTwo \altMusik }
      %>>
      %\new Lyrics \lyricsto "alto" \altText
      
@@ -1410,16 +1410,16 @@ LeftHand = \relative c {
       % \new Voice = "bass" { \voiceTwo \bassMusik }
      %>>
      %\new Lyrics \lyricsto "bass" \bassText
-   \new PianoStaff  <<   \new Staff = "up" { \global \RightHand } 
-                         \new Staff = "down" { \global \LeftHand }  >>
+   \new PianoStaff << \new Staff = "up" { \global \RightHand }
+                         \new Staff = "down" { \global \LeftHand } >>
  >>
       
   \layout {
     \context {
      \Staff
       \RemoveEmptyStaves
-    %  \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
+    % \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
     }
   }
-%  \midi {   \tempo 4 = 72  }
-}	
+% \midi { \tempo 4 = 72 }
+} 
