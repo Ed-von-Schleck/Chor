@@ -1,7 +1,7 @@
 \version "2.14.2"
 date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 \header {
-  title = "Bohemian Rhapsody"
+  title = "Bohemian Rhapsody mit Klavierstimme"
   composer = "Text und Musik: Freddie Mercury"
   arranger = "Arrangement: Andreas Fiebig"
   subtitle = \date
