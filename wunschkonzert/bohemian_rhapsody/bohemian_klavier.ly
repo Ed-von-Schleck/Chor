@@ -14,6 +14,7 @@ global = {
   \time 4/4
 }
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%INTRO%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 harmoniesIntro = \chordmode {
 \germanChords
