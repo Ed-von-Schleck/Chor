@@ -271,7 +271,7 @@ altMusik = \relative c' {
         e\> e e e
         d fis fis fis
         e fis e e\!
-	 
+	  
 	
 
 %%%%%%% fafafa
