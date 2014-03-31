@@ -16,10 +16,6 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
      \tempo 4 = 150
   }
 
-Refrain = \markup { \italic { Refrain } }
-Wdh = \markup { \italic { da Refrain al } \musicglyph #"scripts.segno" }
-rit = \markup { \italic rit. }
-Wdhb = \markup { \italic { da Refrain al } \musicglyph #"scripts.coda" }
 
 harmonies = \chordmode {
 \germanChords
@@ -305,7 +301,7 @@ sopranMusik = \relative c'' {
   es4 es es8 es4 es8~
   es4 d c8 bes4 d8~
   d8 r8 r2.
-  d4 es8 d4. r4
+  d4 es8 d8~d4 r4
   es4 es es8 es4 es8~
   es4 bes4 bes bes8 c8~
   c8 r8 c4 c8 bes4 es8~
@@ -441,7 +437,7 @@ altMusik = \relative c' {
   g4 g g8 g4 g8~
   g4 bes a8 g4 f8~
   f r f4 f f 
-  f4 g8 f4. r4
+  f4 g8 f8~f4 r4
   g g g8 g4 f8~
   f4 f f g8 a8~
   a8 r8 g4 g8 g4 g8~
@@ -742,7 +738,7 @@ bassMusik = \relative c {
   es4 es es8 es4 c8~
   c4 d f8 g4 bes8~
   bes8 r8 bes4 bes bes
-  bes4 bes8 bes4. r4
+  bes4 bes8 bes8~bes4 r4
   c4 c c8 c4 bes8~
   bes4 bes bes bes8 f~
   f8 r8 es4 es d8 c8~
