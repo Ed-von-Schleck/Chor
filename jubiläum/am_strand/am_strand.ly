@@ -7,7 +7,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
    subtitle = \date
 }
 
-#(set-global-staff-size 17.6)
+#(set-global-staff-size 18)
 #(set-default-paper-size "a4")
 
   global = {
@@ -166,7 +166,7 @@ uhAlt = \lyricmode {
 VerseTwo =\lyricmode {
   Ich sah dich zur Ar -- beit ge -- hen,
   drei -- ßig Jah -- re warst du dei -- ner Fir -- ma treu
-  jetzt ham sie die ge -- kün -- digt,
+  jetzt ham sie dir ge -- kün -- digt,
   frist -- los nach all die- ser Zeit.
   So viel zum The -- ma Dank -- bar -- keit.
   Du hat -- test gleich nen Herz -- in -- farkt und jetzt liegst du im Sarg
@@ -202,7 +202,7 @@ sopranMusik = \relative c'' {
   cis1
   (b
   a8) r cis4 cis cis
-  cis b a b
+  b a fis a
   d1 (cis b)
   r2. a4
   fis a a a
@@ -276,17 +276,17 @@ sopranMusik = \relative c'' {
   fis2. r4
   
  %%%Bridge
-  r4 fis8~fis4 fis8~fis4
-  fis4~fis8 gis8~gis4 a4
+  r4 r8 fis8~fis4 fis4
+  fis4. gis8~gis4 a4
   cis4 r8 cis8~cis4 cis4
-  cis4~cis8 b8~b4 cis4
+  cis4. b8~b4 cis4
   e2 d
   r2 a4 a
   e'2 d a b
   cis4 r8 fis,8~fis4 fis4
-  fis4~fis8 gis8~gis4 a4
+  fis4. gis8~gis4 a4
   cis4 r8 cis8~cis4 cis4
-  cis4~cis8 b8~b4 cis4
+  cis4. b8~b4 cis4
   e2 d
   r2 a4 a
   e'2 d a b
@@ -303,7 +303,7 @@ sopranMusik = \relative c'' {
   d8 r8 r2.
   d4 es8 d8~d4 r4
   es4 es es8 es4 es8~
-  es4 bes4 bes bes8 c8~
+  es4 bes4 bes8 bes4 c8~
   c8 r8 c4 c8 bes4 es8~
   es4 f es8 d4 c8~
   c1
@@ -314,14 +314,14 @@ sopranMusik = \relative c'' {
   es4 es es8 es4 es8~
   es4 d c8 bes4 d8~
   d8 r8 r2.
-  r4 d4 d d
+  r4 d4 c bes
   es4 es es8 es4 es8~
   es4 bes4 bes bes8 c8~
   c4 r8 c8 c bes4 es8~
   es4 f es d8 c8~
   c2 r2
   bes4. bes4. c4 
-  d2 r2
+  d4 r2.
  }
   
  
@@ -339,7 +339,7 @@ altMusik = \relative c' {
   e1\f 
   (b'4 a gis fis
   e8) r e4 e e
-  e e e gis
+  e e e e
   fis4 (b a gis
   a cis b a
   gis1)
@@ -361,7 +361,7 @@ altMusik = \relative c' {
   gis4 r8 fis fis fis4 fis8~
   fis4 a fis fis8 gis~gis2 r2
   a4. a4. d,4 
-  e2 r2
+  e4 r4 r2
 %%%%%%%%%%%%%uh
   r1 r1
   r2 d
@@ -403,7 +403,7 @@ altMusik = \relative c' {
   gis4 r8 fis fis fis4 fis8~
   fis4 a fis fis8 gis~gis2 r2
   a4. a4. d,4 
-  e2 r2
+  e4 r4 r2
 %%%%%%%%%%%%%uh
   r1 r1
   r2 d
@@ -420,7 +420,7 @@ altMusik = \relative c' {
   fis fis
   f f
   f f
-  e4 r4 cis2
+  e2  cis2
   cis2 cis
   e e
   e e
@@ -439,7 +439,7 @@ altMusik = \relative c' {
   f r f4 f f 
   f4 g8 f8~f4 r4
   g g g8 g4 f8~
-  f4 f f g8 a8~
+  f4 f f8 g4 a8~
   a8 r8 g4 g8 g4 g8~
   g4 g g8 g4 a8~a1
   r1
@@ -447,15 +447,15 @@ altMusik = \relative c' {
   r4 f4. g4 f8~
   f8 r f4 f8 f4 g8~	
   g4 g g8 g4 g8~
-  g4 f f8 f4 f8~
+  g4 bes a8 g4 f8~
   f r f4. g4 f8~
-  f8 r8 bes4 bes bes
+  f8 r8 f4 es d
   g g g8 g4 f8~
   f4 f f g8 a8~
   a4 r8 g g g4 g8~
   g4 g g g8 a~a2 r2
   bes4. bes4. es,4 
-  f2 r2
+  f4 r2.
   
 }  
 
@@ -476,7 +476,7 @@ tenorMusik = \relative c' {
         a1 
         (gis4 a b2
         cis8) r8 a4 a a
-        a b a b
+        b a a a
         d1 (e2 d4 cis b1)
         r2.  a4
         b b b b
@@ -499,7 +499,7 @@ tenorMusik = \relative c' {
         d4 cis b a8 b~
         b2 r2
         d4. cis4. b4
-	a2 a
+	a4 r4 a2
 %%%%%%% uhuhuh	
         e' cis
         b2. cis4
@@ -546,7 +546,7 @@ tenorMusik = \relative c' {
         d4 cis b a8 b~
         b2 r2
         d4. cis4. b4
-	a2 a
+	a4 r4 a2
 %%%%%%% uhuhuh	
         e' cis
         b2. cis4
@@ -565,13 +565,13 @@ tenorMusik = \relative c' {
         b cis
         c c 
         c d
-        cis4 r4 a2 
+        cis2  a2 
         b a
         gis fis
         gis b
         a1
         r2
-        b4 cis
+        b4 b
         c2 c 
         c d
         cis4 (d cis d
@@ -589,7 +589,7 @@ tenorMusik = \relative c' {
 	
         r4 bes4 c4 d4 
 	es4 es es8 es4 es8~
-	es4 d c bes8 c8~ 
+	es4 d c8 bes4 c8~ 
         c8 r8 g4 c8 d4 es8~
         es4 d c8 bes4 c8~
         c1
@@ -597,8 +597,8 @@ tenorMusik = \relative c' {
 %%%%%%% lieg am strand
 	d4 r2.
 	r4 d4 es8 d4 bes8~
-	bes4 bes bes8 bes4 bes8~
-	bes4 bes bes8 bes4 d8~
+	bes4 bes bes8 bes4 c8~
+	c4 bes c8 es4 d8~
 	d8 r d4. es4 d8~
 	d8
         
@@ -609,7 +609,7 @@ tenorMusik = \relative c' {
         es4 d c bes8 c~
         c2 r2
         es4. d4. c4
-	bes2 r2
+	bes4 r2.
 
 }
 
@@ -628,7 +628,7 @@ bassMusik = \relative c {
   a, (b cis d
   e fis e gis
   a8) r8 a4 a a
-  a gis fis e
+  gis fis d cis
   b4 (d cis b 
   a2 b4 cis  
   e1) 
@@ -653,7 +653,7 @@ bassMusik = \relative c {
   e2 r2
   fis4. e4. d4
 %%%%uh
-  a'2 a2
+  a'4 r4 a2
   gis2 a4 gis
   fis e cis e
   r4 d a' fis 
@@ -700,7 +700,7 @@ bassMusik = \relative c {
   e2 r2
   fis4. e4. d4
 %%%%uh
-  a'2 a2
+  a'4 r4 a2
   gis2 a4 gis
   fis e cis e
   r4 d a' fis 
@@ -719,7 +719,7 @@ bassMusik = \relative c {
   d d
   a' a
   a a
-  a4 r fis2
+  a2 fis2
   fis fis
   cis cis
   cis cis
@@ -740,16 +740,16 @@ bassMusik = \relative c {
   bes8 r8 bes4 bes bes
   bes4 bes8 bes8~bes4 r4
   c4 c c8 c4 bes8~
-  bes4 bes bes bes8 f~
+  bes4 bes bes8 bes4 f8~
   f8 r8 es4 es d8 c8~
   c4 d es8 g4 f8~
   f1
 %%%%%%% ich lieg am Strand
   r1
   r4 bes4. bes4 bes8~
-  bes4 bes bes8 bes4 es,8~
-  es4 es es8 es4 es8~
-  es4 es es8 f4 bes8~
+  bes8 r8 bes4 bes8 bes4 es,8~  
+  es4 es es8 es4 c8~
+  c4 d f8 g4 bes8~
   bes8 r8 bes4. bes4 bes8~
   bes8 r8 bes4 bes bes
   c4 c c8 c4 bes8~
@@ -758,7 +758,7 @@ bassMusik = \relative c {
   c4 d es g8 f8~
   f2 r2
   g4. f4. es4
-  bes'2 r2
+  bes'4 r2.
   \bar "|."
     
 }  
