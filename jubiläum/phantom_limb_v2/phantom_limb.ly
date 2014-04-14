@@ -194,9 +194,9 @@ r2. r8 g
 b2~b8 (b) b4
 c4 c8 c8~c c~c a~
 a4 r8 a8 a a~a a16 a 
-b2 r2
+<b e>2 r2
 <e a>8 <e gis>8~<e gis>4~<e gis>4 <e gis>
-e4 c8 c~c c8 a4~
+e4 e8 d~d c8 a4~
 a2 r2
 }
   
@@ -220,7 +220,7 @@ e4 e8 e~e e~e d8~
 d4 r8 d8 d d~d d16 fis 
 g2 r2
 b8 b8~b4~b4 b
-c4 c8 g~g e8 d4~
+c4 c,8 c~c c8 d4~
 d2 r2
 }
 
