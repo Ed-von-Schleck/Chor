@@ -6,17 +6,17 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
   arranger = "Arrangement: Andreas Fiebig"
   subtitle = \date
 }
-#(set-global-staff-size 18)
+#(set-global-staff-size 16.5)
 #(set-default-paper-size "a4")
 
 global = {
   \key c \major
   \time 4/4 
-% \tempo 4 = 130
+\tempo 4 = 85
 }
 harmonies = \chordmode {
 \germanChords 
-c1 c1 c c
+c1 c1 c a:m
 g/b g f/a c/g g
 g:m d:m bes f
 d:m bes2 a:m/c
@@ -27,10 +27,10 @@ c:7/g f f:m5- c/e
 f:m6 c/g e:m f
 
 g1:7
-c/e e:5+ f d:7/dis 
-c2/g e:5+ f2.:7+ fis4:5-7
+c/e e:5+ f d:7/fis 
+c2/g e:5+ f2.:7+ fis4:m5- 7
 g1:6 g2 g/f 
-c/e e:5+ f2. g4:9
+c/e e:5+ f2. g4:sus4 7 9
 c1
 
 }
@@ -42,14 +42,28 @@ And don't be a -- fraid of the dark.
 At the end of a storm,
 is a gol -- den sky,
 And a sweet sil -- ver song of a lark. 
-}
-walkOn = \lyricmode{
+
 Walk on through the wind,
 Walk on through the rain,
 Though your dreams be tossed and blown
 }
-never = \lyricmode{
-Walk On! Walk On! With hope in your heart,
+walkOnSopran = \lyricmode{
+Walk on! Walk on! With hope in your heart,
+And you'll ne -- ver walk a -- lone.
+You'll ne -- ver walk a -- lone. 
+}
+walkOnAlt = \lyricmode{
+Walk on! Walk on! Walk on! With hope in your heart,
+And you'll ne -- ver walk a -- lone.
+You'll ne -- ver walk a -- lone. 
+}
+walkOnTenor  = \lyricmode{
+Walk on! Walk on! Walk on! With hope walk on in your heart,
+And you'll ne -- ver walk a -- lone.
+You'll ne -- ver walk a -- lone. 
+}
+walkOnBass = \lyricmode{
+Walk on! Walk on! Walk on! Walk on1 With hope walk on in your heart,
 And you'll ne -- ver walk a -- lone.
 You'll ne -- ver walk a -- lone. 
 }
@@ -57,49 +71,50 @@ You'll ne -- ver walk a -- lone.
 sopranMusik =  \relative c' {
 \global
 r1 r2 r4 e8 d
-c2. e8 d
-c2. e8 f 
+c2.  \breathe e8 d
+c2.   \breathe e8 f 
 g2 d
 d2. r8 d8
 f2 g4 f
 e2 g4. e8
 d1
 
-r2 d4 e
+r2 d4\mp e
 f2 d4 d
 d2 d4 f
 a2 f2
-f2 g4 a
+f2  \breathe  g4 a
 bes2 a4 c
-g2 f4 c'
+g2 \breathe  f4 c'
 e,1
-r2. r8 e
+r2. e4\<
 a2. g8 a
-b2. r8 b8
+b2. \breathe b4
 c2. b8 c
-d2. c8 d
-e2 c
-g2. r8 e
-a1 
-r2. r8 b8
-c2. r8 c
-c2. r8 c
+d2.  \breathe  c8 d
+e2\!\f \> c
+g2 r4 e4
+a1\!\mp 
+
+r2 r4 b\<
+c2 r4 c
+c2 r4 c
 c2. b8 c
-d2. c8 d
+d2 r4 c8 d
 e2 e
 e2. e4
-e1
-r2 d2
-g2 e
-c2. a4
-g1
+e1\!
+r2 d2\ff
+<c g'>2 <c e>
+c2.\breathe a4\>
+g1\!\mp
 
 }
 altMusik =  \relative c' {
 \global
-r1 r2 r4 c8 b
-c2. c8 d
-c2. c8 c 
+r1 r2 r4 c8\p b
+c2.  \breathe  c8 d
+a2. \breathe  c8 c 
 d2 d
 d2. r8 d8
 c2 c4 c
@@ -110,17 +125,42 @@ r2 d4 d
 d2 a4 a
 bes2 bes4 d
 c2 c
-d2 g4 f
+d2 \breathe  d4 d
 d2 e4 e
-d2 c4 f
+d2 \breathe  c4 f
 e1
+
+r2. c4
+f2. f8 f
+f2. \breathe as4
+g2 (as4) as8 g
+f4 ( g as)  \breathe  as8 as
+g2 g
+e2 r4 e
+f1
+
+r1
+r4 e4 g g
+gis4 gis gis gis
+a2. g8 a
+a2 r4 a8 a
+g2 gis
+a2. a4
+b1
+r2 b
+g2 gis 
+a2.\breathe f4
+e1
+
+
+
 
 }
 tenorMusik =  \relative c' {
 \global
 r1 r2 r4 g8 g
-g2. g8 g
-e2. g8 a 
+g2. \breathe  g8 g
+e2. \breathe  g8 a 
 g4 (d') d4 (c)
 b2. r8 b8
 a2 a4 a
@@ -131,18 +171,42 @@ r2 bes4 bes
 a2 f4 f
 f2 f4 bes
 a2 a
-a2 d,4 f
+a2 \breathe  a4 a
 f2 a4 a
-bes2 f4 a
+bes2 \breathe  f4 a
 gis1
+
+r2. g4
+f4 (g a) b8 c
+d2.  \breathe  d4
+c4 (d e) d8 c
+c2.  \breathe  c8 c
+c2 c
+b2 r4 b
+c1
+
+r2 r4 d4
+c e, g c
+e2 r4 c4
+c4 c c b8 a 
+d2 r4 d8 d
+c2 c
+c2. c4
+d1
+r2 d
+c c 
+c2.\breathe c4
+c1
+
+
 
 
 }
 bassMusik = \relative c {
 \global
 r1 r2 r4 c8 d
-e2. c8 b
-c2. c8 c
+e2. \breathe  c8 b
+a2. \breathe  c8 c
 b4 (g') g2
 g2. r8 g8
 a2 a4 f
@@ -153,10 +217,34 @@ r2 g4 g
 d2 d4 d
 bes2 bes4 bes
 f'2 f 
-d2 d4 d
-bes2 c4 c
-bes2 a4 a
+d2 \breathe  e4 f
+bes,2 c4 c
+bes2 \breathe  a4 a
 e'1
+
+r2. e4
+f2. f8 f
+as4 (g f)  \breathe  f
+e2. e8 e
+f2.  \breathe  f8 f
+g2 g
+e2 r4 g4
+f1
+
+r2 r4 f
+e4 e e e
+e e e e
+f f f f8 f
+fis2 r4 fis8 fis
+g2 e
+f2. fis4
+g1
+r2 f
+e2 e
+f2.\breathe g4
+c,1
+
+
 }
 %%%%%%%%%%%%%%%%%%%%%%% Piano %%%%%%%%%%%%%%%%%%%%
 rhIntro = \relative c'{
@@ -169,17 +257,19 @@ lhIntro = \relative c {
 %%%%%%Text%%%%%%%%%%%%%%
 sopranText = \lyricmode{
 \Verse
-\walkOn
-\never
+\walkOnSopran
 }
 altText = \lyricmode{
 \Verse
+\walkOnAlt
 }
 tenorText = \lyricmode{
 \Verse  
+\walkOnTenor
 }
 bassText = \lyricmode{
 \Verse
+\walkOnBass
 }
 %%%%%%Musik%%%%%%%%%%%%%%
 
@@ -212,10 +302,10 @@ LeftHand = \relative c {
 >>
   \layout {
     \context {
-      \Staff
-      \RemoveEmptyStaves
-      \override VerticalAxisGroup #'minimum-Y-extent = #'(-2 . 2)
+       \Staff
+      \override VerticalAxisGroup #'minimum-Y-extent = #'(-1 . 1)
+
     }
   }
-   \midi {}
+   \midi {tempoWholesPerMinute = #(ly:make-moment 85 4)}
 }
