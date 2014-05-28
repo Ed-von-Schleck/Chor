@@ -44,8 +44,8 @@ is a gol -- den sky,
 And a sweet sil -- ver song of a lark. 
 
 Walk on through the wind,
-Walk on through the rain,
-Though your dreams be tossed and blown
+walk on through the rain,
+though your dreams be tossed and blown.
 }
 walkOnSopran = \lyricmode{
 Walk on! Walk on! With hope in your heart,
