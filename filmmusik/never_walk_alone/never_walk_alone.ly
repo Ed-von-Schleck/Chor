@@ -108,7 +108,7 @@ r2 d2\ff
 <c g'>2 <c e>
 c2.\breathe a4\>
 g1\!\mp
-
+\bar"|."
 }
 altMusik =  \relative c' {
 \global
@@ -243,7 +243,6 @@ r2 f
 e2 e
 f2.\breathe g4
 c,1
-
 
 }
 %%%%%%%%%%%%%%%%%%%%%%% Piano %%%%%%%%%%%%%%%%%%%%
