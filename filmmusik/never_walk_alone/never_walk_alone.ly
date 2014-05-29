@@ -49,22 +49,22 @@ though your dreams be tossed and blown.
 }
 walkOnSopran = \lyricmode{
 Walk on! Walk on! With hope in your heart,
-And you'll ne -- ver walk a -- lone.
+and you'll ne -- ver walk a -- lone.
 You'll ne -- ver walk a -- lone. 
 }
 walkOnAlt = \lyricmode{
 Walk on! Walk on! Walk on! With hope in your heart,
-And you'll ne -- ver walk a -- lone.
+and you'll ne -- ver walk a -- lone.
 You'll ne -- ver walk a -- lone. 
 }
 walkOnTenor  = \lyricmode{
 Walk on! Walk on! Walk on! With hope walk on in your heart,
-And you'll ne -- ver walk a -- lone.
+and you'll ne -- ver walk a -- lone.
 You'll ne -- ver walk a -- lone. 
 }
 walkOnBass = \lyricmode{
 Walk on! Walk on! Walk on! Walk on1 With hope walk on in your heart,
-And you'll ne -- ver walk a -- lone.
+and you'll ne -- ver walk a -- lone.
 You'll ne -- ver walk a -- lone. 
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%Musik%%%%%%%%%%
