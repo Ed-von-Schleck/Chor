@@ -6,7 +6,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
   arranger = "Arrangement: Andreas Fiebig"
   subtitle = \date
 }
-#(set-global-staff-size 16.5)
+#(set-global-staff-size 15.8)
 #(set-default-paper-size "a4")
 
 global = {
@@ -50,22 +50,22 @@ though your dreams be tossed and blown.
 walkOnSopran = \lyricmode{
 Walk on! Walk on! With hope in your heart,
 and you'll ne -- ver walk a -- lone.
-You'll ne -- ver walk a -- lone. 
+You'll ne -- ver walk a -- lone. lone.
 }
 walkOnAlt = \lyricmode{
 Walk on! Walk on! Walk on! With hope in your heart,
 and you'll ne -- ver walk a -- lone.
-You'll ne -- ver walk a -- lone. 
+You'll ne -- ver walk a -- lone. lone.
 }
 walkOnTenor  = \lyricmode{
 Walk on! Walk on! Walk on! With hope walk on in your heart,
 and you'll ne -- ver walk a -- lone.
-You'll ne -- ver walk a -- lone. 
+You'll ne -- ver walk a -- lone. lone.
 }
 walkOnBass = \lyricmode{
 Walk on! Walk on! Walk on! Walk on1 With hope walk on in your heart,
 and you'll ne -- ver walk a -- lone.
-You'll ne -- ver walk a -- lone. 
+You'll ne -- ver walk a -- lone. lone.
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%Musik%%%%%%%%%%
 sopranMusik =  \relative c' {
@@ -96,6 +96,7 @@ e2\!\f \> c
 g2 r4 e4
 a1\!\mp 
 
+\repeat volta 2 { 
 r2 r4 b\<
 c2 r4 c
 c2 r4 c
@@ -107,7 +108,11 @@ e1\!
 r2 d2\ff
 <c g'>2 <c e>
 c2.\breathe a4\>
-g1\!\mp
+ }
+\alternative {
+{g1\!\mp}
+{g1}
+}
 \bar"|."
 }
 altMusik =  \relative c' {
@@ -139,6 +144,7 @@ g2 g
 e2 r4 e
 f1
 
+\repeat volta 2 { 
 r1
 r4 e4 g g
 gis4 gis gis gis
@@ -150,7 +156,11 @@ b1
 r2 b
 g2 gis 
 a2.\breathe f4
-e1
+ }
+\alternative {
+{e1}
+{e1}
+}
 
 
 
@@ -185,6 +195,7 @@ c2 c
 b2 r4 b
 c1
 
+\repeat volta 2 { 
 r2 r4 d4
 c e, g c
 e2 r4 c4
@@ -194,9 +205,13 @@ c2 c
 c2. c4
 d1
 r2 d
-c c 
+<c g'> <c e> 
 c2.\breathe c4
-c1
+ }
+\alternative {
+  {c1}
+  {c1}
+}
 
 
 
@@ -231,6 +246,7 @@ g2 g
 e2 r4 g4
 f1
 
+\repeat volta 2 { 
 r2 r4 f
 e4 e e e
 e e e e
@@ -242,7 +258,11 @@ g1
 r2 f
 e2 e
 f2.\breathe g4
-c,1
+ }
+\alternative {
+  {c,1}
+  {c}
+}
 
 }
 %%%%%%%%%%%%%%%%%%%%%%% Piano %%%%%%%%%%%%%%%%%%%%
