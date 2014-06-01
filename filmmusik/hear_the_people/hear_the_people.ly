@@ -8,7 +8,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
   arranger = "Arrangement: Andreas Fiebig"
  
 }
-#(set-global-staff-size 16  )
+#(set-global-staff-size 16 )
 #(set-default-paper-size "a4")
 
 global = {
