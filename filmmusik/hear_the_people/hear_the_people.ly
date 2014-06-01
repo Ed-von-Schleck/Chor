@@ -2,11 +2,13 @@
 date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 \header {
   title = "Do you hear the people sing?"
-  composer = "Claude-Michel Schönberg"
+  subtitle = "from the Musical Les Misérables" 
+  subsubtitle = \date
+  composer = "Text und Musik: Claude-Michel Schönberg"
   arranger = "Arrangement: Andreas Fiebig"
-  subtitle = \date
+ 
 }
-#(set-global-staff-size 16.5)
+#(set-global-staff-size 16)
 #(set-default-paper-size "a4")
 
 global = {
@@ -18,17 +20,17 @@ harmonies = \chordmode {
 \germanChords 
 f1 f f bes2/f f d:m g:m
 c1:sus4 f bes2/f f d:m g4:m c:7
-f2. e4
+f2. d4
 %%Verse
-a1:m e:m d:m a:m
-f4 f:7+ f:6 d:m7
-g1
+g1:m d:m c:m g:m
+es4 es:7+ es:6 c:m7
+f1
 
 %%%refarin
-c1 f2/c c a:m d:m
-g1:sus4 c f2/c c a:m d4:m g:7
-c2. e4 
-c1
+bes1 es2/bes bes g:m c:m
+f1:sus4 bes es2/bes bes g:m c4:m f:7
+bes2. d4 
+bes1
 
 
 }
@@ -76,29 +78,29 @@ r1 r2 r4 \times 2/3{a4 g8}
 \times 2/3{f4 g8} \times 2/3{a4 bes8} c4 \times 2/3{a8 g f}
 \times 2/3{e4 d8} \times 2/3{e4 f8} c4 \times 2/3{d8 c bes} 
 \times 2/3{a4 c8} \times 2/3{f4 a8} \times 2/3{g8 fis g} \times 2/3{bes4 e,8}
-f2  r4 \times 2/3{e4 e8}
+f2  r4 \times 2/3{d4 d8}
 
 %%%%
- \key c \major
+ \key bes \major
  \repeat volta 2 { 
-\times 2/3{a4 gis8} \times 2/3{a4 b8} \times 2/3{c4 b8} \times 2/3{a4 c8}
-\times 2/3{b4 a8} \times 2/3{g4 a8} b4 \times 2/3{b4 c8} 
-\times 2/3{d4 c8} \times 2/3{b4 c8} \times 2/3{d4 c8} \times 2/3{b4 c8}
-\times 2/3{c4 b8~} \times 2/3{b8 a b } c4 \times 2/3{r4 a8}
-\times 2/3{c8 b a}  \times 2/3{c8 b a}   \times 2/3{c8 b a}  \times 2/3{c8 b c} 
+\times 2/3{g4 fis8} \times 2/3{g4 a8} \times 2/3{bes4 a8} \times 2/3{g4 bes8}
+\times 2/3{a4 g8} \times 2/3{f4 g8} a4 \times 2/3{a4 bes8} 
+\times 2/3{c4 bes8} \times 2/3{a4 bes8} \times 2/3{c4 bes8} \times 2/3{a4 bes8}
+\times 2/3{bes4 a8~} \times 2/3{a8 g a } bes4 \times 2/3{r4 g8}
+\times 2/3{bes8 a g}  \times 2/3{bes8 a g}   \times 2/3{bes8 a g}  \times 2/3{bes8 a bes} 
 
-d4 r4 r4 \times 2/3{e4 d8}
-\times 2/3{c4 d8} \times 2/3{e4 f8} g4 \times 2/3{e8 d c}
-\times 2/3{b4 a8 } \times 2/3{b4 c8} g4 \times 2/3{a8 g f}
-\times 2/3{e4 g8} \times 2/3{c4 e8} \times 2/3{d4 cis8} \times 2/3{d4 a8}
-\times 2/3{c4 b8} \times 2/3{b4 c8} d8 r8 \times 2/3{e4 d8}
-\times 2/3{c4 d8} \times 2/3{e4 f8} g4 \times 2/3{e8 d c}
-\times 2/3{b4 a8} \times 2/3{b4 c8} g4 \times 2/3{a8 g f} 
-\times 2/3{e4 g8} \times 2/3{c4 e8} \times 2/3{d8 cis d} \times 2/3{f4 b,8}
+c4 r4 r4 \times 2/3{d4 c8}
+\times 2/3{bes4 c8} \times 2/3{d4 es8} f4 \times 2/3{d8 c bes}
+\times 2/3{a4 g8 } \times 2/3{a4 bes8} f4 \times 2/3{g8 f es}
+\times 2/3{d4 f8} \times 2/3{bes4 d8} \times 2/3{c4 b8} \times 2/3{c4 g8}
+\times 2/3{bes4 a8} \times 2/3{a4 bes8} c8 r8 \times 2/3{d4 c8}
+\times 2/3{bes4 c8} \times 2/3{d4 es8} f4 \times 2/3{d8 c bes}
+\times 2/3{a4 g8} \times 2/3{a4 bes8} f4 \times 2/3{g8 f es} 
+\times 2/3{d4 f8} \times 2/3{bes4 d8} \times 2/3{c8 b c} \times 2/3{es4 a,8}
  }
 \alternative {
- {c2 r4 \times 2/3{e,4 e8} }
- {c'2 r2}
+ {bes2 r4 \times 2/3{d,4 d8} }
+ {bes'2 r2}
 }
 
 \bar"|."
@@ -115,30 +117,30 @@ r1 r2 r4 \times 2/3{c4 c8}
 \times 2/3{c4 c8} \times 2/3{c4 c8} c4 \times 2/3{c8 c c}
 \times 2/3{d4 d8 } \times 2/3{c4 c8} c4 \times 2/3{bes8 a g}
 \times 2/3{a4 a8} \times 2/3{d4 d8} \times 2/3{d8 d d} \times 2/3{e4 e8}
-c2 r4 \times 2/3{e4 e8}
+c2 r4 \times 2/3{d4 d8}
 
 %%%
- \key c \major
+ \key bes \major
  \repeat volta 2 { 
-\times 2/3{e4 e8} \times 2/3{e4 e8} \times 2/3{e4 e8} \times 2/3{e4 e8}
-\times 2/3{e4 e8} \times 2/3{e4 e8} e4 \times 2/3{e4 e8}
-\times 2/3{f4 f8} \times 2/3{f4 f8} \times 2/3{f4 f8} \times 2/3{f4 f8}
-\times 2/3{e4 e8~} \times 2/3{e8 e e } e4 \times 2/3{r4 e8}
-\times 2/3{a8 g f} \times 2/3{a8 g a} \times 2/3{a8 g f} \times 2/3{f8 f f}
+\times 2/3{d4 d8} \times 2/3{d4 d8} \times 2/3{d4 d8} \times 2/3{d4 d8}
+\times 2/3{d4 d8} \times 2/3{d4 d8} d4 \times 2/3{d4 d8}
+\times 2/3{es4 es8} \times 2/3{es4 es8} \times 2/3{es4 es8} \times 2/3{es4 es8}
+\times 2/3{d4 d8~} \times 2/3{d8 d d } d4 \times 2/3{r4 d8}
+\times 2/3{g8 f es} \times 2/3{g8 f g} \times 2/3{g8 f es} \times 2/3{es8 es es}
 
 %%%
-b4 r4 r4 \times 2/3{g4 g8}
-\times 2/3{g4 g8} \times 2/3{g4 g8} g4 \times 2/3{g8 g g}
-\times 2/3{a4 a8 } \times 2/3{g4 g8} g4 \times 2/3{f8 e d}
-\times 2/3{e4 e8} \times 2/3{a4 a8} \times 2/3{a4 a8} \times 2/3{a4 a8}
-\times 2/3{g4 g8} \times 2/3{g4 g8} g8 r8 \times 2/3{g4 g8}
-\times 2/3{g4 g8} \times 2/3{g4 g8} g4 \times 2/3{g8 g g}
-\times 2/3{a4 a8 } \times 2/3{g4 g8} g4 \times 2/3{f8 e d}
-\times 2/3{e4 e8} \times 2/3{a4 a8} \times 2/3{a8 a a} \times 2/3{b4 b8}
+a4 r4 r4 \times 2/3{f4 f8}
+\times 2/3{f4 f8} \times 2/3{f4 f8} f4 \times 2/3{f8 f f}
+\times 2/3{g4 g8 } \times 2/3{f4 f8} f4 \times 2/3{es8 d c}
+\times 2/3{d4 d8} \times 2/3{g4 g8} \times 2/3{g4 g8} \times 2/3{g4 g8}
+\times 2/3{f4 f8} \times 2/3{f4 f8} f8 r8 \times 2/3{f4 f8}
+\times 2/3{f4 f8} \times 2/3{f4 f8} f4 \times 2/3{f8 f f}
+\times 2/3{g4 g8 } \times 2/3{f4 f8} f4 \times 2/3{es8 d c}
+\times 2/3{d4 d8} \times 2/3{g4 g8} \times 2/3{g8 g g} \times 2/3{a4 a8}
  }
 \alternative {
- {g2 r4 \times 2/3{e4 e8} }
- {g2 r2}
+ {f2 r4 \times 2/3{d4 d8} }
+ {f2 r2}
 }
 
 
@@ -156,29 +158,29 @@ r1 r2 r4 \times 2/3{c4 bes8}
 \times 2/3{a4 bes8} \times 2/3{c4 bes8} a4 \times 2/3{f8 g a}
 \times 2/3{bes4 bes8 } \times 2/3{bes4 bes8} a4 \times 2/3{f8 f f }
 \times 2/3{f4 f8} \times 2/3{a4 a8} \times 2/3{d,8 d d} \times 2/3{g4 g8}
-a2 r4 \times 2/3{gis4 gis8}
+a2 r4 \times 2/3{a4 a8}
 
 %%%
-\key c \major
+\key bes \major
 \repeat volta 2 { 
-\times 2/3{c4 b8} \times 2/3{c4 b8} \times 2/3{a4 b8} \times 2/3{c4 c8}
-\times 2/3{g4 a8} \times 2/3{b4 b8} b4  \times 2/3{b4 a8} 
-\times 2/3{a4 a8} \times 2/3{a4 a8} \times 2/3{a4 a8} \times 2/3{a4 a8}
-\times 2/3{c4 c8~} \times 2/3{c8 c c } c4 \times 2/3{r4 c8}
-\times 2/3{a8 b c } \times 2/3{c8 d e} \times 2/3{f8 d d} \times 2/3{d8 d d}
-d4 r4 r4 \times 2/3{g4 f8}
+\times 2/3{bes4 a8} \times 2/3{bes4 a8} \times 2/3{g4 a8} \times 2/3{bes4 bes8}
+\times 2/3{f4 g8} \times 2/3{a4 a8} a4  \times 2/3{a4 g8} 
+\times 2/3{g4 g8} \times 2/3{g4 g8} \times 2/3{g4 g8} \times 2/3{g4 g8}
+\times 2/3{bes4 bes8~} \times 2/3{bes8 bes bes } bes4 \times 2/3{r4 bes8}
+\times 2/3{g8 a bes } \times 2/3{bes8 c d} \times 2/3{es8 c c} \times 2/3{c8 c c}
+c4 r4 r4 \times 2/3{f4 es8}
 
-\times 2/3{e4 f8} \times 2/3{g4 f8} e4 \times 2/3{c8 d e}
-\times 2/3{f4 f8 } \times 2/3{f4 f8} e4 \times 2/3{c8 c c }
-\times 2/3{c4 c8} \times 2/3{c4 c8} \times 2/3{a4 a8} \times 2/3{a4 a8}
-\times 2/3{d4 d8} \times 2/3{d4 d8} d8 r8 \times 2/3{g4 f8} 
-\times 2/3{e4 f8} \times 2/3{g4 f8} e4 \times 2/3{c8 d e}
-\times 2/3{f4 f8 } \times 2/3{f4 f8} e4 \times 2/3{c8 c c }
-\times 2/3{c4 c8} \times 2/3{c4 c8} \times 2/3{a8 a a} \times 2/3{d4 d8}
+\times 2/3{d4 es8} \times 2/3{f4 es8} d4 \times 2/3{bes8 c d}
+\times 2/3{es4 es8 } \times 2/3{es4 es8} d4 \times 2/3{bes8 bes bes }
+\times 2/3{bes4 bes8} \times 2/3{bes4 bes8} \times 2/3{g4 g8} \times 2/3{g4 g8}
+\times 2/3{c4 c8} \times 2/3{c4 c8} c8 r8 \times 2/3{f4 es8} 
+\times 2/3{d4 es8} \times 2/3{f4 es8} d4 \times 2/3{bes8 c d}
+\times 2/3{es4 es8 } \times 2/3{es4 es8} d4 \times 2/3{bes8 bes bes }
+\times 2/3{bes4 bes8} \times 2/3{bes4 bes8} \times 2/3{g8 g g} \times 2/3{c4 c8}
  }
 \alternative {
- {e2 r4 \times 2/3{gis,4 gis8} }
- {e'2 r2}
+ {d2 r4 \times 2/3{a4 a8} }
+ {d2 r2}
  }
 
 
@@ -195,30 +197,30 @@ r1 r2 r4 \times 2/3{f4 f8}
 \times 2/3{f4 f8} \times 2/3{f4 g8} a4 \times 2/3{f8 f f}
 \times 2/3{f4 f8 } \times 2/3{e4 d8} f4 \times 2/3{bes,8 c c}
 \times 2/3{d4 d8} \times 2/3{d4 d8} \times 2/3{bes8 bes  bes} \times 2/3{c4 c8}
-f2 r4 \times 2/3{e4 e8}
+f2 r4 \times 2/3{fis4 fis8}
 
 %%
-\key c \major
+\key bes \major
 \repeat volta 2 { 
-\times 2/3{a4 b8} \times 2/3{a4 a8} \times 2/3{a4 a8} \times 2/3{a4 a8}
-\times 2/3{e4 e8} \times 2/3{e4 e8} e4 \times 2/3{e4 e8}
-\times 2/3{d4 d8} \times 2/3{d4 d8} \times 2/3{d4 d8} \times 2/3{d4 d8}
-\times 2/3{a'4 a8~} \times 2/3{a8 a a } a4 \times 2/3{r4 a8}
-\times 2/3{f8 f f } \times 2/3{f8 f f }  \times 2/3{f8 f f }  \times 2/3{d8 d d }
-g4 r4 r4 \times 2/3{c4 c8}
+\times 2/3{g4 a8} \times 2/3{g4 g8} \times 2/3{g4 g8} \times 2/3{g4 g8}
+\times 2/3{d4 d8} \times 2/3{d4 d8} d4 \times 2/3{d4 d8}
+\times 2/3{c4 c8} \times 2/3{c4 c8} \times 2/3{c4 c8} \times 2/3{c4 c8}
+\times 2/3{g'4 g8~} \times 2/3{g8 g g } g4 \times 2/3{r4 g8}
+\times 2/3{es8 es es } \times 2/3{es8 es es }  \times 2/3{es8 es es }  \times 2/3{c8 c c }
+f4 r4 r4 \times 2/3{bes4 bes8}
 
-\times 2/3{c4 c8} \times 2/3{c4 c8} c4 \times 2/3{c8 c c}
-\times 2/3{c4 c8 } \times 2/3{b4 a8} c4 \times 2/3{f,8 g g}
-\times 2/3{a4 a8} \times 2/3{a4 a8} \times 2/3{f4 f8} \times 2/3{f4 f8}
-\times 2/3{g4 g8} \times 2/3{g4 a8} b8 r8 \times 2/3{c4 c8}
-\times 2/3{c4 c8} \times 2/3{c4 c8} c4 \times 2/3{c8 c c}
-\times 2/3{c4 c8 } \times 2/3{b4 a8} c4 \times 2/3{f,8 g g}
-\times 2/3{a4 a8} \times 2/3{a4 a8} \times 2/3{f8 f f} \times 2/3{g4 g8}
+\times 2/3{bes4 bes8} \times 2/3{bes4 bes8} bes4 \times 2/3{bes8 bes bes}
+\times 2/3{bes4 bes8 } \times 2/3{a4 g8} bes4 \times 2/3{es,8 f f}
+\times 2/3{g4 g8} \times 2/3{g4 g8} \times 2/3{es4 es8} \times 2/3{es4 es8}
+\times 2/3{f4 f8} \times 2/3{f4 g8} a8 r8 \times 2/3{bes4 bes8}
+\times 2/3{bes4 bes8} \times 2/3{bes4 bes8} bes4 \times 2/3{bes8 bes bes}
+\times 2/3{bes4 bes8 } \times 2/3{a4 g8} bes4 \times 2/3{es,8 f f}
+\times 2/3{g4 g8} \times 2/3{g4 g8} \times 2/3{es8 es es} \times 2/3{f4 f8}
 
  }
 \alternative {
- {c2 r4 \times 2/3{e,4 e8} }
- {c'2 r2}
+ {bes2 r4 \times 2/3{fis4 fis8} }
+ {bes2 r2}
 }
 
 }

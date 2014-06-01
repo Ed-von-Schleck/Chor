@@ -2,9 +2,11 @@
 date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 \header {
   title = "You'll never walk alone"
-  composer = "Richard Rodgers"
+  subtitle = "from the Musical Carousel"
+  subsubtitle = \date
+  composer = "Musik: Richard Rodgers"
+  poet = "Text: Oscar Hammerstein II"
   arranger = "Arrangement: Andreas Fiebig"
-  subtitle = \date
 }
 #(set-global-staff-size 15.8)
 #(set-default-paper-size "a4")
