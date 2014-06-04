@@ -35,8 +35,16 @@ cis2:m gis:m
 gis1:m b:m
 fis:m cis:m
 gis:m b:m
-fis:m fis:m fis:m
-cis cis 
+fis:m cis:m gis:sus4
+cis:m 
+\time 5/4
+gis1:sus4 gis4:sus4
+\time 4/4
+%%bridge
+cis1:m cis:m gis:m fis
+e2. fis4 gis1:m
+ais1:m5-7
+dis
 
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%Text%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -52,6 +60,18 @@ im Wal -- de.
 Wart -- e nur, bal -- de
 ruh -- est du auch.
 }
+VerseTwoSop = \lyricmode{
+Ü -- ber al -- len Gi -- pfeln
+Ist Ruh,
+ü -- ber al -- len Wi -- pfeln
+Spü -- rest du
+kaum ei -- nen Hauch;
+Die Vö -- g'lein schwei -- gen 
+schwei -- gen  im Wal -- de.
+Wart -- e nur, bal -- de
+ruh -- est du
+}
+
 VerseTwo = \lyricmode{
 Ü -- ber al -- len Gi -- pfeln
 Ist Ruh,
@@ -59,13 +79,25 @@ Ist Ruh,
 Spü -- rest du
 kaum ei -- nen Hauch;
 Die Vö -- g'lein schwei -- gen 
-Vö -- g'lein schwei -- gen, schwei -- gen 
-im Wal -- de.
+schwei -- gen  im Wal -- de.
+Wart -- e nur, bal -- de
+ruh -- est du ruh -- est du
 }
-MenAh = \lyricmode {
+BridgeOne = \lyricmode {
 ah __ ah __ ah __ ah __
-
 }
+
+BridgeTwoA = \lyricmode{
+ah __ ah __ ah __ 
+ah __ ah __ ah __ 
+ah __ ah __ ah __ 
+}
+BridgeTwoB = \lyricmode{
+ah __ ah __ 
+ah __ ah __
+ah __ ah __
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%Musik%%%%%%%%%%
 sopranMusik =  \relative c' {
@@ -102,10 +134,36 @@ e2 dis4 e
 gis,2 (b4) r8 \breathe b8 
 d2 (cis4) d
 fis,2 a \breathe
-e'2 (dis4) e
+e'2 dis4 e
 gis,2 b
 d2 cis4 d
 fis,2 a \breathe
+e'2 (dis4 e)
+fis2 dis
+r1
+\time 5/4
+r2 r2.
+\time 4/4
+
+%%%bridge
+\key cis \minor
+r4 gis,8 (fis) gis4. (a8)
+gis1
+r4 b8 (ais) b4. (cis8) 
+ais1
+r4 gis8 (fis) gis4 (ais)
+dis,1
+r4 cis'8 (b) cis4 (ais)
+dis,2 (ais')
+r4 dis8 (cis) dis4. (e8) 
+dis1
+r4 ais8 (gis) a4. (b) 
+gis1
+r4 gis8 (fis) gis4 (ais)
+dis1
+r4 cis8 (b) cis4 ais
+dis,2 (ais')
+gis1
 
 
 
@@ -136,20 +194,37 @@ e1
 R1*7
 
 \key fis \minor
-a4. a8 a4 a
+a4. a8 gis4 fis
 a2 a4 a
 a1 (a2.) a8 a
 a2. gis4 
 fis2 fis
 a4 a a2
-cis2 b4 cis
+gis2 gis4 gis
 gis2. r8 b8
-b2. b4
+b2 (cis4) b4
 fis2 fis
-cis'2 (b4) cis4
+gis2 gis4 gis4
 gis2 gis
 b2 b4 b
 fis2 fis
+gis1 
+gis2 gis
+gis1
+\time 5/4
+gis2 gis2.
+\time 4/4
+
+
+%%%bridge
+\key cis \minor
+r4 e8 (dis) e2~
+e1
+r4 gis8 (fis) gis4. (ais8) 
+fis1
+r4 gis8 (fis) gis4 (ais)
+dis,1
+
 
 }
 tenorMusik =  \relative c' {
@@ -165,7 +240,7 @@ fis2. r8 fis8
 a2 (g4) a
 e2 a
 b2. b4
-fis2 fis
+fis2 b
 a2 g4 a
 e2 a
 a2 a4 a
@@ -180,22 +255,38 @@ a1) r2 c,4 (b'
 a2) r2 d,2 (b')
 
 \key fis \minor
-cis4. cis8 cis4 cis
+cis4. cis8 b4 a
 cis2 cis4 cis
 d1 (cis2.) cis8 cis
 cis2. b4
 a2 a
 d4 d cis2
-e2 dis4 e
+cis2 dis4 cis
 dis2. r8 dis8
 fis2 (e4) fis
-cis2 fis
-gis2. gis4
+cis2 cis
+cis2 dis4 cis4
 dis2 dis
 fis2 e4 fis
-cis2 fis
+cis2 cis
+cis2 (dis4 cis)
+dis2 dis \breathe
+e2 (dis4 e)
+\time 5/4
+fis2 dis2.
+\time 4/4
 
+
+%bridge
+\key cis \minor
+r4 gis,8 (fis) gis4. (a8)
+gis1
+r4 b8 (cis) dis4. (cis8)
+ais1
 }
+
+
+
 bassMusik = \relative c' {
 \global
 a4. a8 a4 a
@@ -234,10 +325,27 @@ cis'2 b4 cis
 b2. r8 b8
 b2. b4
 a2 fis2
-cis'2 (dis4) cis
-b2 gis
+cis'2 b4 cis
+b2 b
 b2 b4 b
 a2 fis
+gis1 
+gis2 gis
+gis1 
+\time 5/4
+gis2 gis2.
+\time 4/4
+
+%bridge
+\key cis \minor
+r4 cis,8 (dis) cis2~ 
+cis1
+r4 gis'8 (ais) gis2
+ais1
+r4 gis8 (e) b4 (ais)
+gis1
+
+
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%ALL%%%%%%%%%%%
@@ -245,21 +353,25 @@ a2 fis
 %%%%%%Text%%%%%%%%%%%%%%
 sopranText =  \lyricmode{
 \VerseOne
-\VerseTwo
+\VerseTwoSop
+\BridgeTwoA
 }
 altText =  \lyricmode{
 \VerseOne
 \VerseTwo
+\BridgeTwoB
 }
 tenorText =  \lyricmode{
 \VerseOne
-\MenAh
+\BridgeOne
 \VerseTwo
+\BridgeTwoA
 }  
 bassText =  \lyricmode{
 \VerseOne
-\MenAh
+\BridgeOne
 \VerseTwo
+\BridgeTwoB
 }  
 
 %%%%%%Musik%%%%%%%%%%%%%%
