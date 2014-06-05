@@ -8,51 +8,71 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
   subtitle = \date
   subsubtitle = "from Valkyrie"
 }
-#(set-global-staff-size 18)
+#(set-global-staff-size 16.5)
 #(set-default-paper-size "a4")
 
 global = {
-  \key a \minor
+  \key bes \minor
   \time 4/4 
   \tempo 4 = 80
 }
 harmonies = \chordmode {
 \germanChords 
+bes1:m bes:m ges bes:m
+bes:m bes:m ges2 bes:m
+f2:m c:m
+c1:m es:m
+bes:m f:m
+c:m es:m
+bes:m bes:m bes:m
+f f 
+%Bridge
+bes:m bes:m f:m f:m ges ges es es
+%fis moll
+g1:m g:m es g:m
+g:m g:m es2 g:m
+d2:m a:m
+a1:m c:m
+g:m d:m
+a:m c:m
+g:m d:m a:m
+d:m 
+\time 5/4
+a1:m a4:m
+\time 4/4
+%%bridge
+d1:m d:m a:m g
+f2. g4 a1:m
+d1:m6
+e
+a:m c
+g f
+f2. g4
+a1:m
+d:m6
+e
+a:m
+%%
 a1:m a:m f a:m
 a:m a:m f2 a:m
 e2:m b:m
 b1:m d:m
 a:m e:m
 b:m d:m
-a:m a:m a:m
-e e 
-%Bridge
-a:m a:m e:m e:m f f d d
-%fis moll
-fis1:m fis:m d fis:m
-fis:m fis:m d2 fis:m
-cis2:m gis:m
-gis1:m b:m
-fis:m cis:m
-gis:m b:m
-fis:m cis:m gis:sus4
-cis:m 
-\time 5/4
-gis1:sus4 gis4:sus4
-\time 4/4
-%%bridge
-cis1:m cis:m gis:m fis
-e2. fis4 gis1:m
-ais1:m5-7
-dis
+a2:m g
+d1:m7 d:m6
+e a:m
+
+
+
 
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%Text%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 VerseOne = \lyricmode{
 Ü -- ber al -- len Gi -- pfeln
-Ist Ruh,
+ist Ruh,
 ü -- ber al -- len Wi -- pfeln
-Spü -- rest du
+spü -- rest du
 kaum ei -- nen Hauch;
 Die Vö -- g'lein schwei -- gen 
 Vö -- g'lein schwei -- gen, schwei -- gen 
@@ -62,9 +82,9 @@ ruh -- est du auch.
 }
 VerseTwoSop = \lyricmode{
 Ü -- ber al -- len Gi -- pfeln
-Ist Ruh,
+ist Ruh,
 ü -- ber al -- len Wi -- pfeln
-Spü -- rest du
+spü -- rest du
 kaum ei -- nen Hauch;
 Die Vö -- g'lein schwei -- gen 
 schwei -- gen  im Wal -- de.
@@ -72,39 +92,143 @@ Wart -- e nur, bal -- de
 ruh -- est du
 }
 
+VerseThree = \lyricmode{
+ü -- ber al -- len Wi -- pfeln
+spü -- rest du
+kaum ei -- nen Hauch;
+Die Vö -- g'lein schwei -- gen 
+schwei -- gen  im Wal -- de.
+Wart -- e nur, bal -- de
+ruh -- est du auch.
+}
+
 VerseTwo = \lyricmode{
 Ü -- ber al -- len Gi -- pfeln
-Ist Ruh,
+ist Ruh,
 ü -- ber al -- len Wi -- pfeln
-Spü -- rest du
+spü -- rest du
 kaum ei -- nen Hauch;
 Die Vö -- g'lein schwei -- gen 
 schwei -- gen  im Wal -- de.
 Wart -- e nur, bal -- de
 ruh -- est du ruh -- est du
 }
-BridgeOne = \lyricmode {
+BridgeMen = \lyricmode {
 ah __ ah __ ah __ ah __
 }
 
-BridgeTwoA = \lyricmode{
+BridgeSop = \lyricmode{
 ah __ ah __ ah __ 
 ah __ ah __ ah __ 
+ruh -- est du
 ah __ ah __ ah __ 
+ah __ ah __ ah __ 
+ruh -- est du auch.
 }
-BridgeTwoB = \lyricmode{
-ah __ ah __ 
-ah __ ah __
-ah __ ah __
+BridgeAlt = \lyricmode{
+ah __ ah __ ah __ 
+ah __ ah __ ah __
+ruh -- est du
+ah __ ah __ ah __ 
+ah __ ah __ ah __ 
+ruh -- est du auch.
 }
 
+BridgeTenor = \lyricmode{
+ah __ ah __ ah __ 
+ah __ ah __ ruh -- est du 
+ah __ ah __ ah __ 
+ah __  ah __ ruh -- est du auch.
+}
 
+BridgeBass = \lyricmode{
+ah __ ah __ ah __ 
+ah __ ah __ ruh -- est du 
+ah __ ah __ ah __ 
+ah __  ah __ ruh -- est du auch.
+}
+
+VerseThreeAlt = \lyricmode{
+Ü -- ber al -- len Gi -- pfeln
+ist Ruh,
+ü -- ber al -- len Wi -- pfeln
+spü -- rest du
+kaum ei -- nen Hauch;
+Die Vö -- g'lein schwei -- gen 
+schwei -- gen  im Wal -- de.
+Wart -- e nur, bal -- de
+ruh -- est du auch
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%Musik%%%%%%%%%%
 sopranMusik =  \relative c' {
 \global
-e4. e8 e4 e
-e2 e4 e
-f1 (e2.) \breathe e8 e
+f4. f8 f4 f
+f2 f4 f
+ges1 (f2.) \breathe f8 f
+f2. f4 
+f2 f2
+bes4 bes f2
+as2 g4 as
+c,2 (es4) r8 \breathe es8 
+ges2 (f4) ges
+bes,2 des \breathe
+as'2 (g4) as
+c,2 es
+ges2 f4 ges
+bes,2 des \breathe
+des'2 c4 des
+es2 c \breathe
+f,1
+c'2 c
+bes1
+R1*7
+
+\key g \minor
+d4. d8 d4 d
+d2 d4 d
+es1 (d2.) \breathe d8 d
+d2. d4 
+d2 d2
+g4 g d2
+f2 e4 f
+a,2 (c4) r8 \breathe c8 
+es2 (d4) es
+g,2 bes \breathe
+f'2 e4 f
+a,2 c
+es2 d4 es
+g,2 bes \breathe
+f'2 (e4 f)
+g2 e
+r1
+\time 5/4
+r2 r2.
+\time 4/4
+
+%%%bridge
+\key d \minor
+r4 a,8 (g a4. bes8)
+a1
+r4 c8 (b c4. d8) 
+b1
+r4 a8 (g a4 b)
+e,1
+r4 d'8 (c d4 b)
+e,2 b'
+r4 e8 (d e4. f8) 
+e1
+r4 b8 (a b4. c8) 
+a1
+r4 a8 (g a4 b)
+e,1
+r4 d'8 (c d4 b)
+e,2 b'
+a1
+
+%%
+\key a \minor
+r1 r r
+r2. \breathe e8 e
 e2. e4 
 e2 e2
 a4 a e2
@@ -112,59 +236,13 @@ g2 fis4 g
 b,2 (d4) r8 \breathe d8 
 f2 (e4) f
 a,2 c \breathe
-g'2 (fis4) g
+g'2 fis4 g
 b,2 d
 f2 e4 f
-a,2 c \breathe
-c'2 b4 c
-d2 b
-e,1
-b'2 b
-a1
-R1*7
-
-\key fis \minor
-cis4. cis8 cis4 cis
-cis2 cis4 cis
-d1 (cis2.) \breathe cis8 cis
-cis2. cis4 
-cis2 cis2
-fis4 fis cis2
-e2 dis4 e
-gis,2 (b4) r8 \breathe b8 
-d2 (cis4) d
-fis,2 a \breathe
-e'2 dis4 e
-gis,2 b
-d2 cis4 d
-fis,2 a \breathe
-e'2 (dis4 e)
-fis2 dis
-r1
-\time 5/4
-r2 r2.
-\time 4/4
-
-%%%bridge
-\key cis \minor
-r4 gis,8 (fis) gis4. (a8)
-gis1
-r4 b8 (ais) b4. (cis8) 
-ais1
-r4 gis8 (fis) gis4 (ais)
-dis,1
-r4 cis'8 (b) cis4 (ais)
-dis,2 (ais')
-r4 dis8 (cis) dis4. (e8) 
-dis1
-r4 ais8 (gis) a4. (b) 
-gis1
-r4 gis8 (fis) gis4 (ais)
-dis1
-r4 cis8 (b) cis4 ais
-dis,2 (ais')
-gis1
-
+a2 b \breathe
+c2 (b4 c) 
+d1 b
+a
 
 
 \bar"|."
@@ -172,67 +250,169 @@ gis1
 }
 altMusik =  \relative c' {
 \global
-c4. c8 c4 c
+des4. des8 des4 des
+des2 des4 des
+des1 (des2.) des8 des
+des2. es4 
+f2 f
+ges4 ges f2
+f2 es4 f
+c2. r8 es8
+es2. es4
+bes2 bes
+f'2 (es4) f4
+c2 c
+es2 es4 es
+bes2 bes
+f'2 es4 f
+ges2 es
+f1 
+f2 f 
+f1
+R1*7
+
+\key g \minor
+bes4. bes8 a4 g
+bes2 bes4 bes
+bes1 (bes2.) bes8 bes
+bes2. a4 
+g2 g
+bes4 bes bes2
+a2 a4 a
+a2. r8 c8
+c2 (d4) c4
+g2 g
+a2 a4 a4
+a2 a
 c2 c4 c
-c1 (c2.) c8 c
-c2. d4 
+g2 g
+a1 
+a2 a
+a1
+\time 5/4
+a2 a2.
+\time 4/4
+
+
+%%%bridge
+\key d \minor
+r4 f8 (e f4. g8)
+f1
+r4 e8 (d e4. f8) 
+g1
+r4 f8 (e f4 d)
+c1
+r4 f8 (e d2)
+e2 e
+r4 c'8 (b c4.a8)
+g1
+r4 d8 (c d4. e8)
+c1
+r4 f8 (e f4 d)
+c1
+r4 f8 (e d2)
+e2 e
+e1
+
+%%
+\key a \minor
+e4. e8 e4 e
+e2 e4 e
+f1 (e2.) \breathe e8 e
+
+
+e2. e4 
 e2 e
 f4 f e2
 e2 d4 e
 b2. r8 d8
 d2. d4
 a2 a
-e'2 (d4) e4
+e'2 d4 e4
 b2 b
 d2 d4 d
-a2 a
-e'2 d4 e
-f2 d
-e1 
-e2 e 
-e1
-R1*7
-
-\key fis \minor
-a4. a8 gis4 fis
-a2 a4 a
-a1 (a2.) a8 a
-a2. gis4 
-fis2 fis
-a4 a a2
-gis2 gis4 gis
-gis2. r8 b8
-b2 (cis4) b4
-fis2 fis
-gis2 gis4 gis4
-gis2 gis
-b2 b4 b
-fis2 fis
-gis1 
-gis2 gis
-gis1
-\time 5/4
-gis2 gis2.
-\time 4/4
-
-
-%%%bridge
-\key cis \minor
-r4 e8 (dis) e2~
-e1
-r4 gis8 (fis) gis4. (ais8) 
-fis1
-r4 gis8 (fis) gis4 (ais)
-dis,1
-
+e2 d
+f1
+f1
+e
+e
 
 }
 tenorMusik =  \relative c' {
 \global
-a4. a8 a4 a
-a2 a4 a
-a1 (a2.) a8 a
-a2. b4
+bes4. bes8 bes4 bes
+bes2 bes4 bes
+bes1 (bes2.) bes8 bes
+bes2. c4
+des2 des
+des4 des des2
+c2 c4 c
+g2. r8 g8
+bes2 (as4) bes
+f2 bes
+c2. c4
+g2 c
+bes2 as4 bes
+f2 bes
+bes2 bes4 bes
+bes2 bes
+r2 c4 (bes)
+c2 c
+bes1
+
+r2 f4 (bes
+as1) r2 as4 (c
+bes1) r2 des,4 (c'
+bes2) r2 es,2 (c')
+
+\key g \minor
+d4. d8 c4 bes
+d2 d4 d
+es1 (d2.) d8 d
+d2. c4
+bes2 bes
+es4 es d2
+d2 e4 d
+e2. r8 e8
+g2 (f4) g
+d2 d
+d2 e4 d4
+e2 e
+g2 f4 g
+d2 d
+d1
+e2 e \breathe
+d1
+\time 5/4
+c2 c2.
+\time 4/4
+
+
+%bridge
+\key d \minor
+r1
+r4 d8 (c d4. c8)
+a1
+r4 d8 (c d4. b8)
+c2. (b4)
+a1
+r4 d8 (c a2)
+gis2 gis
+r1
+r4 c,4 (g'4. c,8)
+b1
+r4 
+e8 (d e4. f8)
+d1
+r4 e4 (a4. e8)
+a1
+gis2 gis2
+a1
+
+\key a \minor
+R1*3
+r2. c8 c
+c2. c4
 c2 c
 c4 c c2
 b2 b4 b
@@ -242,108 +422,105 @@ e2 a
 b2. b4
 fis2 b
 a2 g4 a
-e2 a
-a2 a4 a
-a2 a
-r2 b4 (a)
-b2 b
+a2 g
 a1
-
-r2 e4 (a
-g1) r2 g4 (b
-a1) r2 c,4 (b'
-a2) r2 d,2 (b')
-
-\key fis \minor
-cis4. cis8 b4 a
-cis2 cis4 cis
-d1 (cis2.) cis8 cis
-cis2. b4
-a2 a
-d4 d cis2
-cis2 dis4 cis
-dis2. r8 dis8
-fis2 (e4) fis
-cis2 cis
-cis2 dis4 cis4
-dis2 dis
-fis2 e4 fis
-cis2 cis
-cis2 (dis4 cis)
-dis2 dis \breathe
-e2 (dis4 e)
-\time 5/4
-fis2 dis2.
-\time 4/4
+a
+gis
+a
 
 
-%bridge
-\key cis \minor
-r4 gis,8 (fis) gis4. (a8)
-gis1
-r4 b8 (cis) dis4. (cis8)
-ais1
 }
 
 
 
 bassMusik = \relative c' {
 \global
-a4. a8 a4 a
-a2 a4 a
-a1 (a2.) a8 a
+bes4. bes8 bes4 bes
+bes2 bes4 bes
+bes1 (bes2.) bes8 bes
+bes2. bes4 
+bes2 bes2
+ges4 ges bes2
+f2 g4 f
+es2. r8 es8
+es2. es4
+des2 bes2
+f'2 (g4) f
+es2 c
+es2 es4 es
+des2 bes
+bes2 bes4 bes
+bes2 bes
+r2 c'4 (bes)
+a2 a
+bes1
+
+r2 f4 (bes
+as1) r2 as4 (c
+bes1) r2 des,4 (c'
+bes2) r2 es,2 (c')
+
+\key g \minor
+g4. g8 g4 g
+g2 g4 g
+g1 (g2.) g8 g
+g2. g4 
+g2 g2
+es4 es g2
+d'2 c4 d
+c2. r8 c8
+c2. c4
+bes2 g2
+d'2 c4 d
+c2 c
+c2 c4 c
+bes2 g
+a1 
+a2 a
+f2 (e4 f) 
+\time 5/4
+g2 e2.
+\time 4/4
+
+%bridge
+\key d \minor
+r1
+r4 d2.
+a'1
+r4 g2.
+a2. (g4)
+a1
+r4 a4 (f2)
+e2 e
+r1
+r4 c4 (g'4. c,8)
+b1
+r4 
+e8 (d e4. f8)
+d1
+r4 e4 (a4. e8)
+d2 (f)
+e2 e
+a1
+
+
+\key a \minor
+R1*3
+r2. a8 a
 a2. a4 
 a2 a2
 f4 f a2
 e2 fis4 e
 d2. r8 d8
 d2. d4
-c2 a2
-e'2 (fis4) e
+c2 c2
+e2 fis4 e
 d2 b
 d2 d4 d
-c2 a
-a2 a4 a
-a2 a
-r2 b'4 (a)
-gis2 gis
-a1
-
-r2 e4 (a
-g1) r2 g4 (b
-a1) r2 c,4 (b'
-a2) r2 d,2 (b')
-
-\key fis \minor
-fis4. fis8 fis4 fis
-fis2 fis4 fis
-fis1 (fis2.) fis8 fis
-fis2. fis4 
-fis2 fis2
-d4 d fis2
-cis'2 b4 cis
-b2. r8 b8
-b2. b4
-a2 fis2
-cis'2 b4 cis
-b2 b
-b2 b4 b
-a2 fis
-gis1 
-gis2 gis
-gis1 
-\time 5/4
-gis2 gis2.
-\time 4/4
-
-%bridge
-\key cis \minor
-r4 cis,8 (dis) cis2~ 
-cis1
-r4 gis'8 (ais) gis2
-ais1
-r4 gis8 (e) b4 (ais)
-gis1
+c2 b
+d1
+d1
+e a,
 
 
 }
@@ -354,24 +531,31 @@ gis1
 sopranText =  \lyricmode{
 \VerseOne
 \VerseTwoSop
-\BridgeTwoA
+\BridgeSop
+\VerseThree
+
 }
 altText =  \lyricmode{
 \VerseOne
 \VerseTwo
-\BridgeTwoB
+\BridgeAlt
+\VerseThreeAlt
+
 }
 tenorText =  \lyricmode{
 \VerseOne
-\BridgeOne
+\BridgeMen
 \VerseTwo
-\BridgeTwoA
+\BridgeTenor
+\VerseThree
+
 }  
 bassText =  \lyricmode{
 \VerseOne
-\BridgeOne
+\BridgeMen
 \VerseTwo
-\BridgeTwoB
+\BridgeBass
+\VerseThree
 }  
 
 %%%%%%Musik%%%%%%%%%%%%%%
@@ -379,23 +563,23 @@ bassText =  \lyricmode{
 %%%%%Piano%%%%%%%%
 RightHand = \relative c'{
 R1*19
-r8 e8 (d e) c (b c a)
-r8 e'8 (d e) c (b c a)
-r8 g'8 (fis g) e (d e b)
-r8 g'8 (fis g) e (d e b)
-r8 a'8 (g a) f (e f c)
-r8 a'8 (g a) f (e f c)
-r8 a'8 (g a) f (e f d)
-r8 a'8 (g a) f (e f b)
-cis1
+r8 f8 (es f) des (c des bes)
+r8 f'8 (es f) des (c des bes)
+r8 as'8 (g as) f (es f c)
+r8 as'8 (g as) f (es f c)
+r8 bes'8 (as bes) ges (f ges des)
+r8 bes'8 (as bes) ges (f ges des)
+r8 bes'8 (as bes) ges (f ges es)
+r8 bes'8 (as bes) ges (f ges c)
+d1
 
 }
 LeftHand = \relative c' {
 \clef bass
 R1*19
-a1 a e e
-f f d d
-cis
+bes1 bes f f
+ges ges es es
+d
 }
 \score {
 <<
@@ -415,7 +599,7 @@ cis
  
     \new Lyrics \with { alignAboveContext = men } \lyricsto tenors \tenorText
     \new Lyrics \with { alignBelowContext = men } \lyricsto basses \bassText
-   \new PianoStaff  <<   \new Staff = "up" { \global \RightHand }  \new Staff = "down" { \global \LeftHand }  >>
+  % \new PianoStaff  <<   \new Staff = "up" { \global \RightHand }  \new Staff = "down" { \global \LeftHand }  >>
   >>  
 >>
   \layout {
