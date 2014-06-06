@@ -38,7 +38,7 @@ a:m c:m
 g:m d:m a:m
 d:m 
 \time 5/4
-a1:m a4:m
+a1:sus4 a4:sus4
 \time 4/4
 %%bridge
 d1:m d:m a:m g
@@ -189,13 +189,13 @@ d2 d4 d
 es1 (d2.) \breathe d8 d
 d2. d4 
 d2 d2
-g4 g d2
+g4 g d2\breathe
 f2 e4 f
 a,2 (c4) r8 \breathe c8 
 es2 (d4) es
 g,2 bes \breathe
 f'2 e4 f
-a,2 c
+a,2\> c\!
 es2 d4 es
 g,2 bes \breathe
 f'2 (e4 f)
@@ -215,6 +215,8 @@ r4 a8 (g a4 b)
 e,1
 r4 d'8 (c d4 b)
 e,2 b'
+
+\key a \minor
 r4 e8 (d e4. f8) 
 e1
 r4 b8 (a b4. c8) 
@@ -226,7 +228,7 @@ e,2 b'
 a1
 
 %%
-\key a \minor
+
 r1 r r
 r2. \breathe e8 e
 e2. e4 
@@ -250,47 +252,47 @@ a
 }
 altMusik =  \relative c' {
 \global
-des4. des8 des4 des
+des4.\p \< des8 des4 des
 des2 des4 des
-des1 (des2.) des8 des
+des1\!\> (des2.)des8 des  \! \<
 des2. es4 
 f2 f
-ges4 ges f2
-f2 es4 f
-c2. r8 es8
-es2. es4
-bes2 bes
+ges4 \!\>ges f2\!
+f2\mp es4 f\>
+c2. r8\! es8\<
+es2. es4\!
+bes2\> bes\! \<
 f'2 (es4) f4
-c2 c
+c2\!\> c\! \<
 es2 es4 es
-bes2 bes
-f'2 es4 f
-ges2 es
-f1 
-f2 f 
-f1
+bes2\! \>bes\!
+f'2 \mp \<es4 f
+ges2\!\mf es\>\!
+f1\mp 
+f2\mf \> f 
+f1 \!\p
 R1*7
 
 \key g \minor
-bes4. bes8 a4 g
+bes4.\mf  \<bes8 a4 g
 bes2 bes4 bes
-bes1 (bes2.) bes8 bes
-bes2. a4 
+bes1\!\> (bes2.) bes8 bes\!\<
+bes2. a4
 g2 g
-bes4 bes bes2
-a2 a4 a
-a2. r8 c8
-c2 (d4) c4
-g2 g
-a2 a4 a4
-a2 a
-c2 c4 c
-g2 g
-a1 
-a2 a
+bes4\!\> bes bes2
+a2\!\f a4 a\>
+a2. r8\!\< a8
+g2 (f4) g4
+g2\!\> g
+a2\!\< a4 a4
+a2\! a
+g2\mf f4 g
+g2\< g
 a1
+a2 \!\ff a
+f2 (e4 f)\mf
 \time 5/4
-a2 a2.
+g2 e2.
 \time 4/4
 
 
@@ -304,6 +306,8 @@ r4 f8 (e f4 d)
 c1
 r4 f8 (e d2)
 e2 e
+
+\key a \minor
 r4 c'8 (b c4.a8)
 g1
 r4 d8 (c d4. e8)
@@ -315,10 +319,10 @@ e2 e
 e1
 
 %%
-\key a \minor
-e4. e8 e4 e
+
+e4.\mp\< e8 e4 e
 e2 e4 e
-f1 (e2.) \breathe e8 e
+f1 \! \mf \>(e2.) \breathe e8 e\!
 
 
 e2. e4 
@@ -342,18 +346,18 @@ tenorMusik =  \relative c' {
 \global
 bes4. bes8 bes4 bes
 bes2 bes4 bes
-bes1 (bes2.) bes8 bes
+bes1 (bes2.)\breathe bes8 bes
 bes2. c4
 des2 des
 des4 des des2
 c2 c4 c
-g2. r8 g8
+g2. r8\breathe g8
 bes2 (as4) bes
-f2 bes
+f2 bes \breathe
 c2. c4
 g2 c
 bes2 as4 bes
-f2 bes
+f2 bes \breathe
 bes2 bes4 bes
 bes2 bes
 r2 c4 (bes)
@@ -368,23 +372,23 @@ bes2) r2 es,2 (c')
 \key g \minor
 d4. d8 c4 bes
 d2 d4 d
-es1 (d2.) d8 d
+es1 (d2.)\breathe d8 d
 d2. c4
 bes2 bes
-es4 es d2
+es4 es d2\breathe
 d2 e4 d
 e2. r8 e8
-g2 (f4) g
-d2 d
+c2. c4
+d2 d\breathe
 d2 e4 d4
 e2 e
-g2 f4 g
-d2 d
+c2 c4 c
+d2 d\breathe
 d1
 e2 e \breathe
 d1
 \time 5/4
-c2 c2.
+e2 d2.
 \time 4/4
 
 
@@ -398,6 +402,8 @@ c2. (b4)
 a1
 r4 d8 (c a2)
 gis2 gis
+
+\key a \minor
 r1
 r4 c,4 (g'4. c,8)
 b1
@@ -409,7 +415,7 @@ a1
 gis2 gis2
 a1
 
-\key a \minor
+
 R1*3
 r2. c8 c
 c2. c4
@@ -419,13 +425,15 @@ b2 b4 b
 fis2. r8 fis8
 a2 (g4) a
 e2 a
-b2. b4
+\breathe
+b2 b4 b4
 fis2 b
 a2 g4 a
 a2 g
-a1
-a
-gis
+\breathe
+a2 (b4 a) 
+b2 (a)
+gis1
 a
 
 
@@ -444,9 +452,9 @@ ges4 ges bes2
 f2 g4 f
 es2. r8 es8
 es2. es4
-des2 bes2
-f'2 (g4) f
-es2 c
+des2 des2
+f2 (g4) f
+es2 es
 es2 es4 es
 des2 bes
 bes2 bes4 bes
@@ -455,13 +463,13 @@ r2 c'4 (bes)
 a2 a
 bes1
 
-r2 f4 (bes
-as1) r2 as4 (c
-bes1) r2 des,4 (c'
-bes2) r2 es,2 (c')
+r2 f4\mf\> (bes
+as1) r2\! as4\mf\> (c
+bes1) r2\! des,4\mf\> (c'
+bes2) r2 \!es,2\mf (c')
 
 \key g \minor
-g4. g8 g4 g
+g4. \mf g8 g4 g
 g2 g4 g
 g1 (g2.) g8 g
 g2. g4 
@@ -474,24 +482,26 @@ bes2 g2
 d'2 c4 d
 c2 c
 c2 c4 c
-bes2 g
+bes2 bes
 a1 
 a2 a
-f2 (e4 f) 
+d,1 
 \time 5/4
-g2 e2.
+a'2 a2.
 \time 4/4
 
 %bridge
 \key d \minor
 r1
-r4 d2.
+r4 d,2.\mf
 a'1
 r4 g2.
 a2. (g4)
 a1
 r4 a4 (f2)
 e2 e
+
+\key a \minor
 r1
 r4 c4 (g'4. c,8)
 b1
@@ -504,7 +514,7 @@ e2 e
 a1
 
 
-\key a \minor
+
 R1*3
 r2. a8 a
 a2. a4 
