@@ -25,9 +25,16 @@ g1:m bes2:m c4 f:m
 as1:m e2:m cis:m
 b4:m g:m b:m g:m
 \time 3/4
-d2 e
+d2:m e4
 \time 4/4
-d1:m d:m
+fis1:m dis:m
+fis1:m dis:m
+c:m as2:m f:m
+\time 2/4
+f2:m
+\time 4/4
+as4:m fes as:m fes
+as2:m es4 as:m
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%Text%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Intro = \lyricmode{
@@ -44,16 +51,36 @@ This is Hal -- low -- een, ev -- 'ry -- bod -- y make a scene.
 Trick or treat 'til the neigh -- bors gon -- na die of fright.
 It's our town. Ev -- 'ry -- bod -- y scream.
 }
-Verse = \lyricmode{
+VerseOne = \lyricmode{
 I am the one hid -- ing un -- der your bed, teeth ground sharp and eyes glow -- ing red!
+}
+VerseTwo = \lyricmode{
+I am the one hid -- ing un -- der your stairs,
+fin -- gers like snakes and spi -- ders in my hair!
 }
 ThisAlt = \lyricmode{
 this is Hal -- low -- een! Hal -- low -- een! Hal -- low -- een!
 This is Hal -- low -- een!
 }
-This= \lyricmode{
+This = \lyricmode{
 This is Hal -- low -- een, this is Hal -- low -- een! Hal -- low -- een! Hal -- low -- een!
 This is Hal -- low -- een!
+}
+HalloBridgeSop = \lyricmode {
+Hal -- low -- een!  Hal -- low -- een!
+Hal -- low -- een!  Hal -- low -- een!
+}
+HalloBridge = \lyricmode {
+This is Hal -- low -- een,
+this is Hal -- low -- een.
+Hal -- low -- een!  Hal -- low -- een!
+Hal -- low -- een!  Hal -- low -- een!
+}
+Vampires = \lyricmode {
+In this town we call home,
+ev -- 'ry -- one hail to the
+punp -- kin song!
+
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%Musik%%%%%%%%%%
 sopranMusik =  \relative c'' {
@@ -73,21 +100,33 @@ fis16 fis fis fis g8 r
 \time 3/4
 r2.
 \time 4/4
-a8 a16 a a8 a16 a a a a8 a r8
-a8 a a a a a16 a a8 r
+cis,8 cis16 cis cis8 cis16 cis cis cis cis8 cis r8
+dis8 dis dis dis dis dis16 dis dis8 r
 \xNotesOn
-a8 a a16 a a8 a8 a a16 a a8 
+a'8 a a16 a a8 a8 a a16 a a8 
+ais16 ais ais8 ais16 ais ais8 ais8 ais ais16 ais ais8
 \xNotesOff
+
+%%Halloween
+
+r1
+ces16 bes as8 ces16 bes as8 as16 g f8 as16 g16 f8 
+\time 2/4
+r2
+\time 4/4
+ces'8 ces ces4 ces8 ces ces4
+ces16 ces ces8 ces bes16 as g8 es as4
+
 
 \bar"|."
 
 }
-altMusik =  \relative c'' {
+altMusik =  \relative c' {
 \global
 R1*5
-g8 g g g g16 as f8 f r8
-f16 f f8 f16 f f8 f16 (g) as8 g r8
-c,8 d es8 d16 (c) d8 c8 d8 r
+es8 es es es es16 f d8 d r8
+d16 d d8 d16 d d8 d16 (es) f8 es r8
+es8 es es8 d16 (c) d8 c8 d8 r
 d8 d d d8 es c c (b)
 
 d8 d d16 d d8 d8 d d16 d d8
@@ -100,36 +139,73 @@ f8 f f a, gis a16 (b)
 \time 4/4
 cis4 r4 
 \xNotesOn
-d8 d d16 d d8 d16 d d8 d16 d d8 d d d16 d d8
+fis,8 fis fis16 fis fis8 
+ais16 ais ais8 ais16 ais ais8 ais ais ais16 ais ais8
 \xNotesOff
+cis8 cis16 cis cis8 cis16 cis cis cis cis8 cis r8
+dis16 dis dis8 dis dis
+dis16 dis dis dis dis8 r
+
+%%%Halloween
+es8 es es16 d c8 es8 es es16 d c8 
+es16 es es8 es16 es es8 c16 c c8 c16 c c8 
+\time 2/4
+r2
+\time 4/4
+es8 es fes4 es8 es fes4
+es16 es es8 es es16 es es8 es es4
+
 }
+
+
+
+
+
+
+
+
 tenorMusik =  \relative c' {
 \global
 R1*5
-g8 g g g g16 as f8 f r8
-f16 f f8 f16 f f8 f16 (g) as8 g r8
-g8 g g8 g16 (as) bes8 as16 (g) f8 r
+g8 g g g g16 f f8 f r8
+f16 f f8 f16 f f8 f f8 g r8
+g8 g g8 g16 (f) f8 es f8 r
 f8 f f f8 g g g4
 
 bes8 bes bes16 bes bes8 bes bes bes16 bes bes8
 bes8 bes bes bes16 bes g8 c c r
 ces8 ces ces16 ces ces8 ces16 ces ces ces ces ces ces8
 b8 b b b16 b b16 b b b b b b8
-b8 b bes r b16 b b b bes8 r 
+b8 b g r b16 b b b g8 r 
 \time 3/4
-a8 a a f e8 e
+r2.
 \time 4/4
 \xNotesOn
-a8 a a16 a a8 a a a16 a a8
-a16 a a8 a16 a a8  a a a16 a a8
+fis8 fis fis16 fis fis8 fis8 fis fis16 fis fis8
+dis16 dis dis8 dis16 dis dis8 dis dis dis16 dis dis8
+fis8 fis fis16 fis fis8 fis8 fis fis16 fis fis8
+dis16 dis dis8 dis16 dis dis8 dis dis dis16 dis dis8
 \xNotesOff
+
+%%Halloween
+
+g8 g g16 g g8 g8 g g16 g g8
+as16 as as8 as16 as as8 c16 c c8 c16 c c8
+\time 2/4
+r2
+\time 4/4
+as8 as as4 as8 as as4
+as16 as as8 as as16 as bes8 bes ces4
+
+
+
 }
-bassMusik = \relative c' {
+bassMusik = \relative c {
 \global
 R1*5
-g8 g g g g16 as f8 f r8
-f16 f f8 f16 f f8 f16 (g) as8 g r8
-c,8 d es8 d16 (c) bes8 c8 d8 r
+c8 c c c c16 f f8 f r8
+f16 f f8 f16 f f8 f f8 c r8
+c8 c c8 c8 bes8 c8 d8 r
 d8 d d d8 c c g4
 g'8 g g16 g g8 g g g16 g g8 
 bes,8 bes bes bes16 bes c8 e f8 r
@@ -137,13 +213,24 @@ as8 as as16 as as8 as16 as as as as as as8
 g8 g g e16 e cis cis cis cis cis cis cis8
 b8 b bes r b16 b b b bes8 r
 \time 3/4
-d8 d d d e8 e
+r2.
 \time 4/4
 \xNotesOn
-d8 d d16 d d8 d8 d d16 d d8
-d16 d d8 d16 d d8 d d d16 d d8
+fis'8 fis fis16 fis fis8 fis8 fis fis16 fis fis8
+dis16 dis dis8 dis16 dis dis8 dis dis dis16 dis dis8
+fis8 fis fis16 fis fis8 fis8 fis fis16 fis fis8
+dis16 dis dis8 dis16 dis dis8 dis dis dis16 dis dis8
 \xNotesOff
 
+%Halloween
+
+c8 c c16 c c8 c8 c c16 c c8
+as'16 as as8 as16 as as8 f16 f f8  f16 f f8
+\time 2/4
+r2
+\time 4/4
+as8 as as4 as8 as as4
+as16 as as8 ces,8 des16 des es8 es as4
 }
 %%%%%%%%%%%%%%%%%%%%%%% Piano %%%%%%%%%%%%%%%%%%%%
 rhIntro = \relative c'{
@@ -157,25 +244,38 @@ lhIntro = \relative c {
 sopranText =  \lyricmode{
 \Intro
 \Halloween
-\Verse
+\VerseOne
+\This
+\HalloBridgeSop
+\Vampires
+
 }
 altText =  \lyricmode{
 \Intro
 \Halloween
 in this town of Hal -- low -- en!
 \ThisAlt
+\VerseTwo
+\HalloBridge
+\Vampires
+
 }
 tenorText =  \lyricmode{
 \Intro
 \Halloween
-in this town of Hal -- low
 \This
+\This
+\HalloBridge
+\Vampires
+
 } 
 bassText =  \lyricmode{
 \Intro
 \Halloween
- in this town of Hal -- low
 \This
+\This
+\HalloBridge
+\Vampires
 }
 
 %%%%%%Musik%%%%%%%%%%%%%%
