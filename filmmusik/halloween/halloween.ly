@@ -58,7 +58,8 @@ VerseTwo = \lyricmode{
 I am the one hid -- ing un -- der your stairs,
 fin -- gers like snakes and spi -- ders in my hair!
 }
-ThisAlt = \lyricmode{
+ThisTenor = \lyricmode{
+ 
 this is Hal -- low -- een! Hal -- low -- een! Hal -- low -- een!
 This is Hal -- low -- een!
 }
@@ -135,11 +136,11 @@ es8 es es16 es es8 es16 es es es es es es8
 e8 e e b16 b cis16 cis cis cis cis cis cis8
 d8 d d r8 d16 d d d d8 r
 \time 3/4
-f8 f f a, gis a16 (b)
+r2.
 \time 4/4
-cis4 r4 
 \xNotesOn
-fis,8 fis fis16 fis fis8 
+fis,8 fis fis16 fis fis8
+fis8 fis fis16 fis fis8 
 ais16 ais ais8 ais16 ais ais8 ais ais ais16 ais ais8
 \xNotesOff
 cis8 cis16 cis cis8 cis16 cis cis cis cis8 cis r8
@@ -178,10 +179,11 @@ ces8 ces ces16 ces ces8 ces16 ces ces ces ces ces ces8
 b8 b b b16 b b16 b b b b b b8
 b8 b g r b16 b b b g8 r 
 \time 3/4
-r2.
+f8 f f a gis a16 (b)
 \time 4/4
+cis4 r4 
 \xNotesOn
-fis8 fis fis16 fis fis8 fis8 fis fis16 fis fis8
+fis,8 fis fis16 fis fis8
 dis16 dis dis8 dis16 dis dis8 dis dis dis16 dis dis8
 fis8 fis fis16 fis fis8 fis8 fis fis16 fis fis8
 dis16 dis dis8 dis16 dis dis8 dis dis dis16 dis dis8
@@ -253,8 +255,7 @@ sopranText =  \lyricmode{
 altText =  \lyricmode{
 \Intro
 \Halloween
-in this town of Hal -- low -- en!
-\ThisAlt
+\This
 \VerseTwo
 \HalloBridge
 \Vampires
@@ -263,7 +264,8 @@ in this town of Hal -- low -- en!
 tenorText =  \lyricmode{
 \Intro
 \Halloween
-\This
+in this town of Hal -- low -- en!
+\ThisTenor
 \This
 \HalloBridge
 \Vampires

@@ -137,6 +137,7 @@ sopranText =  \lyricmode{
 \Intro
 }
 altText =  \lyricmode{
+\Intro
 ah __ ah __
 }
 tenorText =  \lyricmode{
