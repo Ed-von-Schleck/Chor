@@ -7,7 +7,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
   arranger = "Arrangement: Andreas Fiebig"
   subsubtitle = \date
 }
-#(set-global-staff-size 17.2)
+#(set-global-staff-size 17)
 #(set-default-paper-size "a4")
 
 global = {
