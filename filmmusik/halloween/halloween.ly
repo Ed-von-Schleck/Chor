@@ -2,9 +2,10 @@
 date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 \header {
   title = "This is Halloween"
+  subtitle = "from The Nightmare Before Christmas"
   composer = "Text und Musik: Danny Elfman"
   arranger = "Arrangement: Andreas Fiebig"
-  subtitle = \date
+  subsubtitle = \date
 }
 #(set-global-staff-size 17.2)
 #(set-default-paper-size "a4")

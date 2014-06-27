@@ -263,8 +263,9 @@ LeftHand = \relative c {
       >>
     \new Lyrics \with { alignAboveContext = women } \lyricsto sopranos \VerseOne
     \new Lyrics \with { alignAboveContext = women } \lyricsto sopranos \VerseTwo
-    \new Lyrics \with { alignBelowContext = women } \lyricsto altos \VerseOne
+  
      \new Lyrics \with { alignBelowContext = women } \lyricsto altos \VerseTwo
+      \new Lyrics \with { alignBelowContext = women } \lyricsto altos \VerseOne
     \new Staff = men <<
       \clef bass
       \new Voice = "tenors" { \voiceOne << \global \tenorMusik >> }
@@ -273,8 +274,10 @@ LeftHand = \relative c {
     
     \new Lyrics \with { alignAboveContext = men } \lyricsto tenors \VerseOne
     \new Lyrics \with { alignAboveContext = men } \lyricsto tenors \VerseTwo
+    
+     \new Lyrics \with { alignBelowContext = men } \lyricsto basses \VerseTwo
     \new Lyrics \with { alignBelowContext = men } \lyricsto basses \VerseOne
-    \new Lyrics \with { alignBelowContext = men } \lyricsto basses \VerseTwo
+   
 
   % \new PianoStaff  <<   \new Staff = "up" { \global \RightHand }  \new Staff = "down" { \global \LeftHand }  >>
   >>  
