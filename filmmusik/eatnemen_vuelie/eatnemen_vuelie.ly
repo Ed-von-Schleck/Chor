@@ -4,7 +4,8 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
   title = "Eatnemen Vuelie"
   composer = "Music: Frode Fjellheim & Silesian Traditional"
   arranger = "Arrangement: Andreas Fiebig"
-  subtitle = \date
+  subtitle = "from W. Disney's Frozen"
+  subsubtitle = \date
 }
 #(set-global-staff-size 18)
 #(set-default-paper-size "a4")
