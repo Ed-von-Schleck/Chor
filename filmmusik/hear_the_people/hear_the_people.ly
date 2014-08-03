@@ -152,12 +152,12 @@ tenorMusik =  \relative c' {
 r1 r2 r4 \times 2/3{c4 bes8}
 \times 2/3{a4 bes8} \times 2/3{c4 bes8} a4 \times 2/3{f8 g a}
 \times 2/3{bes4 bes8 } \times 2/3{bes4 bes8} a4 \times 2/3{f8 f f }
-\times 2/3{f4 f8} \times 2/3{f4 f8} \times 2/3{d4 d8} \times 2/3{d4 d8}
+\times 2/3{f4 f8} \times 2/3{f4 f8} \times 2/3{g4 a8} \times 2/3{bes4 bes8}
 \times 2/3{g4 g8} \times 2/3{g4 g8} g8 r8 \times 2/3{c4 bes8} 
 
 \times 2/3{a4 bes8} \times 2/3{c4 bes8} a4 \times 2/3{f8 g a}
 \times 2/3{bes4 bes8 } \times 2/3{bes4 bes8} a4 \times 2/3{f8 f f }
-\times 2/3{f4 f8} \times 2/3{a4 a8} \times 2/3{d,8 d d} \times 2/3{g4 g8}
+\times 2/3{f4 f8} \times 2/3{a4 a8} \times 2/3{g8 a bes} \times 2/3{bes4 bes8}
 a2 r4 \times 2/3{a4 a8}
 
 %%%
@@ -172,11 +172,11 @@ c4 r4 r4 \times 2/3{f4 es8}
 
 \times 2/3{d4 es8} \times 2/3{f4 es8} d4 \times 2/3{bes8 c d}
 \times 2/3{es4 es8 } \times 2/3{es4 es8} d4 \times 2/3{bes8 bes bes }
-\times 2/3{bes4 bes8} \times 2/3{bes4 bes8} \times 2/3{g4 g8} \times 2/3{g4 g8}
+\times 2/3{bes4 bes8} \times 2/3{bes4 bes8} \times 2/3{c4 d8} \times 2/3{es4 es8}
 \times 2/3{c4 c8} \times 2/3{c4 c8} c8 r8 \times 2/3{f4 es8} 
 \times 2/3{d4 es8} \times 2/3{f4 es8} d4 \times 2/3{bes8 c d}
 \times 2/3{es4 es8 } \times 2/3{es4 es8} d4 \times 2/3{bes8 bes bes }
-\times 2/3{bes4 bes8} \times 2/3{bes4 bes8} \times 2/3{g8 g g} \times 2/3{c4 c8}
+\times 2/3{bes4 bes8} \times 2/3{bes4 bes8} \times 2/3{d8 d es} \times 2/3{es4 es8}
  }
 \alternative {
  {d2 r4 \times 2/3{a4 a8} }
@@ -190,12 +190,12 @@ bassMusik = \relative c {
 \global
 r1 r2 r4 \times 2/3{f4 f8}
 \times 2/3{f4 f8} \times 2/3{f4 g8} a4 \times 2/3{f8 f f}
-\times 2/3{f4 f8 } \times 2/3{e4 d8} f4 \times 2/3{bes,8 c c}
+\times 2/3{f4 f8 } \times 2/3{e4 d8} f4 \times 2/3{f8 f f}
 \times 2/3{d4 d8} \times 2/3{d4 d8} \times 2/3{bes4 bes8} \times 2/3{bes4 bes8}
 \times 2/3{c4 c8} \times 2/3{c4 d8} e8 r8 \times 2/3{f4 f8} 
 
 \times 2/3{f4 f8} \times 2/3{f4 g8} a4 \times 2/3{f8 f f}
-\times 2/3{f4 f8 } \times 2/3{e4 d8} f4 \times 2/3{bes,8 c c}
+\times 2/3{f4 f8 } \times 2/3{e4 d8} f4 \times 2/3{f8 f f}
 \times 2/3{d4 d8} \times 2/3{d4 d8} \times 2/3{bes8 bes  bes} \times 2/3{c4 c8}
 f2 r4 \times 2/3{fis4 fis8}
 
@@ -210,11 +210,11 @@ f2 r4 \times 2/3{fis4 fis8}
 f4 r4 r4 \times 2/3{bes4 bes8}
 
 \times 2/3{bes4 bes8} \times 2/3{bes4 bes8} bes4 \times 2/3{bes8 bes bes}
-\times 2/3{bes4 bes8 } \times 2/3{a4 g8} bes4 \times 2/3{es,8 f f}
+\times 2/3{bes4 bes8 } \times 2/3{a4 g8} bes4 \times 2/3{bes8 bes bes}
 \times 2/3{g4 g8} \times 2/3{g4 g8} \times 2/3{es4 es8} \times 2/3{es4 es8}
 \times 2/3{f4 f8} \times 2/3{f4 g8} a8 r8 \times 2/3{bes4 bes8}
 \times 2/3{bes4 bes8} \times 2/3{bes4 bes8} bes4 \times 2/3{bes8 bes bes}
-\times 2/3{bes4 bes8 } \times 2/3{a4 g8} bes4 \times 2/3{es,8 f f}
+\times 2/3{bes4 bes8 } \times 2/3{a4 g8} bes4 \times 2/3{bes8 bes bes}
 \times 2/3{g4 g8} \times 2/3{g4 g8} \times 2/3{es8 es es} \times 2/3{f4 f8}
 
  }
