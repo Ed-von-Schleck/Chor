@@ -12,8 +12,8 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
 global = {
   \key c \minor
-  \time 2/2 
-  \tempo 2 = 90
+  \time 4/4
+  \tempo 4 = 105
 }
 harmonies = \chordmode {
 \germanChords 
@@ -33,6 +33,21 @@ e1:m e:m e2:m d2 e1:m
 e1:m d d1 d d e:m
 e:m d d c d2 e:m
 
+fis1:m  fis:m e2 fis:m fis1:m
+e e1 e fis:m
+fis:m fis:m 
+e e 
+d e2 fis:m
+fis2:m gis:m
+
+gis1:m gis:m fis gis:m
+gis1:m fis fis1 gis:m
+
+gis1:m gis:m fis gis:m
+gis1:m fis fis1 gis:m
+gis:m gis:m gis:m fis
+fis e fis2 gis2:m 
+gis2:m bes:m
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%Text%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -56,16 +71,18 @@ they shaped and wrought, and light they caught
 to hide in gems on hilt of sword.
 }
 VerseFour = \lyricmode {
-On silver necklaces they strung
-The flowering stars, on crowns they hung
-The dragon-fire, in twisted wire
-They meshed the light of moon and sun.
+On sil -- ver neck -- la -- ces they strung
+the flower -- ing stars, on crowns they hung
+the dra -- gon fire, in twis -- ted wire
+they meshed the light of moon and sun.
 }
-VerseFive = \lyricmode {
-Far over the misty mountains cold
-To dungeouns deep and caverns old
-We must away, ere break of day,
-To claim our long-forgotten gold.
+VerseFiveSop = \lyricmode {
+  _ _ _ _ _ _ _ _
+   _ _ _ _ _ _ _ _ _
+Far o -- ver the Mi -- sty Moun -- tains cold
+to dun -- geons deep and ca -- verns old
+we must a -- way ere break of day
+to claim our long for -- got -- ten gold.
 }
 VerseSix = \lyricmode {
 Goblets they carved there for themselves
@@ -114,11 +131,56 @@ g4 (a8 g) fis4 e
 fis1
 r4 g4 a4 fis
 b1~
-b4 g a4 e
+b4 g a4. e8
 fis1
 r4 b,4 d4 fis
 g2. g4 
 fis4. d8 e2
+\key fis \minor
+r1
+
+fis4 cis'8 cis cis4 cis 
+b4 b cis2
+r4 cis4 cis cis 
+b1
+e2 e4 cis
+b1
+r4 fis4 b4 dis
+cis1
+r4 cis4 cis4. cis8
+b1
+r4 a gis e
+a2. a4 
+b4. gis8 fis2
+r1
+\key gis \minor 
+\set fontSize = #-3 
+r2 dis4 fis 
+gis2. b4
+cis4 dis8 (cis) b4 ais 
+gis1
+r4 dis4 gis ais
+ais1~ 
+ais4 b cis b8 (ais) 
+gis1
+\set fontSize = #-0
+r2 dis4 fis 
+gis2. b4
+cis4 dis8 (cis) b4 ais 
+gis1
+r4 dis4 gis ais
+ais1~ 
+ais4 b cis b8 (ais) 
+gis1
+r4 b4 cis4 ais
+dis1~
+dis4 b cis4. gis8
+ais1
+r4 dis,4 fis4 ais
+b2. b4 
+ais4. fis8 gis2~
+gis2 r2
+
 %\bar"|."
 
 }
@@ -153,13 +215,33 @@ d2 d4 d
 d1
 r4 e d d
 g1~
-g4 e e e
+g4 e e4. e8
 d1
 r4 b b d
 e2. e4
 d4. d8 b2
-
-
+\key fis \minor
+r1
+r8 cis cis e fis4 fis
+e e cis2
+r4 e4 fis e  
+e1
+a4 (gis8 fis) e4 e
+e1
+r4 fis fis fis
+gis1
+r4 a4 e4. e8
+e1
+r4 e e e
+d2. fis4
+e4. e8 cis2
+r1
+\key gis \minor
+s1 s s s s s s s
+r2 dis2~ 
+dis2. gis4
+(ais2 fis 
+dis1)
 
 }
 tenorMusik =  \relative c' {
@@ -195,12 +277,31 @@ a2 a4 a
 a1
 r4 b a a
 b1~
-b4 b c c
+b4 b c4. c8
 a1
 r4 b b a
 g2. g4
 a4. a8 g2
-
+\key fis \minor
+r1
+r8 a a gis fis4 fis
+gis gis a2
+r4 gis a  b4
+b1
+cis4 (b8 cis) b4 b
+b1
+r4 cis4 cis dis
+e1
+r4 cis b4. a8
+b1
+r4 cis b gis
+fis2. fis4
+gis4. gis8 a2
+r1
+\key gis \minor
+R1*8
+r2 b2~
+b1 cis1 (b)
 }
 bassMusik = \relative c {
 \global
@@ -250,12 +351,31 @@ d2 d4 d
 d1
 r4 e4 fis fis
 e1~
-e4 e e e
+e4 e e4. e8
 d1
 r4 d d d
 c2. c4
 d4. d8 e2
-
+\key fis \minor
+r4 cis cis e 
+fis2 a4 (b8 a)
+gis4 e fis2
+r4 cis4 fis gis
+gis1
+a4 (b8 a) gis4 fis 
+gis1
+r4 a4 b4 gis
+cis1
+r4 a b4. fis8
+gis1
+r4 cis,4 e4 gis
+a2. r8 a 
+gis4. e8 fis2
+r1
+\key gis \minor
+R1*8
+r2 gis2~
+gis1 fis1 (gis)
 
 }
 bassTwoMotif = \relative c {
@@ -267,6 +387,8 @@ c~c~c~c
 bes~bes as
 bes2 c2~
 c1
+R1
+s1
 }
 bassTwoMusik = \relative c {
 \global
@@ -283,20 +405,25 @@ lhIntro = \relative c {
 %%%%%%Text%%%%%%%%%%%%%%
 sopranText =  \lyricmode{
 \VerseThree
+\VerseFour
+\VerseFiveSop
 }
 altText =  \lyricmode{
 \VerseTwo
 \VerseThree
+\VerseFour
 
 }
 tenorText =  \lyricmode{
 \VerseTwo
 \VerseThree
+\VerseFour
 }  
 bassText =  \lyricmode{
 \VerseOne
 \VerseTwo
 \VerseThree
+\VerseFour
 }  
 
 bassTwoMotifT  = \lyricmode {
@@ -319,7 +446,7 @@ LeftHand = \relative c {
 <<
   \transpose d d{
   \new ChoirStaff <<
-    \new ChordNames \set chordChanges = ##t \harmonies
+   \new ChordNames \set chordChanges = ##t \harmonies
     \new Staff = women <<
       \new Voice = "sopranos" { \voiceOne << \global \sopranMusik >> }
       \new Voice = "altos" { \voiceTwo << \global \altMusik >> }
