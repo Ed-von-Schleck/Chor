@@ -40,22 +40,36 @@ fis:m
 e e 
 d e2 fis:m
 
-gis1:m gis:m fis gis:m
-gis1:m fis fis1 gis:m
+fis1:m fis:m e fis:m
+fis1:m e e1 fis:m
+
+fis1:m fis:m e fis:m
+fis1:m e e1 fis:m
+fis:m fis:m fis:m e
+e d e2 fis2:m 
+fis2:m gis:m
 
 gis1:m gis:m fis gis:m
-gis1:m fis fis1 gis:m
-gis:m gis:m gis:m fis
-fis e fis2 gis2:m 
-gis2:m bes:m
+gis1:m fis fis1 fis fis gis:m
+gis:m fis fis e fis gis2:m bes:m 
 
 bes1:m bes:m as bes:m
-bes1:m as as1 as as bes:m
-bes:m as as ges as bes:m bes:m
-
-bes1:m as bes:m
 bes1:m  as1 as as as bes:m
 bes:m as as ges as2 bes2:m bes1:m
+
+bes1:m bes:m bes2:m es4 bes4:m bes1:m
+bes1:m  as1 as  bes:m bes2:m as2
+bes1:m bes:m
+as as ges as2 bes2:m bes2:m c:m
+
+c1:m c:m bes c:m
+c1:m bes bes1 c:m
+c:m c:m c:m bes
+bes as bes2 c2:m 
+c1:m
+
+c1:m c:m bes c:m
+c1:m bes bes1 c:m
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%Text%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -116,18 +130,44 @@ the dra -- gon's ire more fierce than fire
 laid low their tow -- ers and hou -- ses frail.
 }
 VerseNine = \lyricmode {
-The mountain smoked beneath the moon;
-(The mountain smoked beneath the moon)
-The dwarves, they heard the tramp of doom.
-They fled their hall to dying fall
-(They fled their hall to dying fall)
-Beneath his feet, beneath the moon.
+The moun -- tain smoked be -- neath the moon
+the dwarves they heard the tramp of doom.
+They fled their hall to dy -- ing fall
+be -- neath his feet be -- neath the moon.
+}
+VerseNineAlt = \lyricmode {
+The moun -- tain smoked be -- neath the moon
+be -- neath the moon
+they heard the tramp of doom.
+They fled their hall to dy -- ing fall
+ah __
+be -- neath the moon.
+}
+VerseNineTenor = \lyricmode {
+The moun -- tain smoked be -- neath the moon
+they heard the tramp of doom.
+They fled their hall to dy -- ing fall
+be -- neath his feet be -- neath the moon.
 }
 VerseTen = \lyricmode {
-Far over the misty mountains grim
-To dungeons deep and caverns dim
-We must away, ere break of day,
-To win our harps and gold from him!
+n __ n __ n __
+we must a -- way ere break of day
+to win our harps and gold from him.
+}
+VerseTenBass = \lyricmode {
+Far o -- ver the mis -- ty moun -- tains grim
+to dun -- geons deep and ca -- verns dim
+we must a -- way ere break of day
+to win our harps and gold from him.
+}
+
+Outro = \lyricmode{
+Far o -- ver the Mi -- sty Moun -- tains cold
+to dun -- geons deep and ca -- verns old.
+}
+OutroSop = \lyricmode{
+Far o -- ver the Mi -- sty Moun -- tains cold
+deep and ca -- verns old.
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%Musik%%%%%%%%%%
 sopranMusik =  \relative c' {
@@ -148,45 +188,45 @@ gis1
 r4 cis,4 e4 gis
 a2. r8 a 
 gis4. e8 fis2
-\key gis \minor 
 \set fontSize = #-3 
-r2 dis4 fis 
-gis2. b4
-cis4 dis8 (cis) b4 ais 
+r2 cis4 e 
+fis2. a4
+b4 cis8 (b) a4 gis 
+fis1
+r4 cis4 fis gis
+gis1~ 
+gis4 a b a8 (gis) 
+fis1
+\set fontSize = #-0
+r1 fis1 gis fis r
+gis~gis fis
+r4 a4 b4 gis
+cis1~
+cis4 a b4. fis8
+gis1
+r4 cis,4 e4 gis
+a2. b8 (a) 
+gis4 e fis2~
+fis2 r2
+\key gis \minor
+r4 dis4 dis4 fis 
+gis gis2. 
+b4 (cis8 b ais4) fis4  
 gis1
 r4 dis4 gis ais
-ais1~ 
-ais4 b cis b8 (ais) 
-gis1
-\set fontSize = #-0
-r1 gis1 ais gis r
-ais~ais gis
+ais4 ais2. 
+b4 (cis8 b8 ais4) gis  
+ais1
 r4 b4 cis4 ais
-dis1~
-dis4 b cis4. gis8
+dis1
+r4 b cis4. gis8
 ais1
 r4 dis,4 fis4 ais
-b2. cis8 (b) 
-ais4 fis gis2~
+b4 b2. 
+ais4. fis8 gis2~
 gis2 r2
-\key bes \minor
-r4 f4 f4 as 
-bes bes2. 
-des4 (es8 des c4) as4  
-bes1
-r4 f4 bes c
-c4 c2. 
-des4 (es8 des8 c4) bes  
-c1
-r4 des4 es4 c
-f1
-r4 des es4. bes8
-c1
-r4 f,4 as4 c
-des4 des2. 
-c4. as8 bes2~
-bes2 r2
 %%%%
+\key bes \minor
 r4 f4 f4 as 
 bes bes2. 
 des4 (es8 des c4) as4  
@@ -203,8 +243,49 @@ r4 f,4 as4 c
 des4 des2 r8 des 
 c4. as8 bes2~
 bes2 r2
+%%%
+r4 f4 f4 as 
+bes1 
+r4 des es des8 (c)   
+bes1
+r4 f4 bes c
+c1 
+r4 des4 es des8 (c)   
+bes1
+r4 des4 es4 c
+f1
+r4 des es4. bes8
+c1
+r4 f,4 as4 c
+des2~des4. \fermata \breathe des8 
+c4. as8 bes2~
+bes2 r2
+\key c \minor
+r1 r r
+g1
+r1
+d1~
+d
+es
 
-%\bar"|."
+r4 es4 f4 d
+g1~
+g4 es f4. c8
+d1
+r4 g,4 bes4 d 
+es2. as4 
+bes4. bes8 c2~
+c2 r2
+%%
+r2 g,4 bes 
+c2. es4
+f4 g8 (f) es4 d 
+c2 (d4 bes
+c4) r2.
+d2 ( es2 f4)
+es f es8 (d)
+c1~c1 \fermata
+\bar"|."
 
 }
 altMusik =  \relative c' {
@@ -243,45 +324,46 @@ e1
 r4 cis4 cis e
 d2. r8 d
 e4. e8 cis2
-\key gis \minor
+
 \set fontSize = #-3 
-r2 dis4 fis 
-gis2. b4
-cis4 dis8 (cis) b4 ais 
-gis1
-r4 dis4 gis ais
-ais1~ 
-ais4 b cis b8 (ais) 
-gis1
-\set fontSize = #-0
-r1 dis fis dis r
-fis~fis dis
-r4 fis ais ais
-b1~
-b4 gis gis4. e8
+r2 cis4 e 
+fis2. a4
+b4 cis8 (b) a4 gis 
 fis1
-r4 dis dis fis
-e2. e4
-fis4 fis dis2~
-dis2 r
-\key bes \minor
-r4 f f f
-f f2.
-as2. es4 
-f1
-r4 f f f
-as4 as2.
-as2. as4 
-as1
-r4 as as as
-f1
-r4 f4 f4. f8
-as1
-r4 f f es
-ges ges2.
-as4. as8 f2~ 
-f2 r2
+r4 cis4 fis gis
+gis1~ 
+gis4 a b a8 (gis) 
+fis1
+\set fontSize = #-0
+r1 cis e cis r
+e~e cis
+r4 cis gis' gis
+a1~
+a4 fis fis4. d8
+e1
+r4 cis cis e
+d2. d4
+e4 e cis2~
+cis2 r
+\key gis \minor
+r4 dis dis dis
+dis dis2.
+fis2. cis4 
+dis1
+r4 dis dis dis
+fis4 fis2.
+fis2. fis4 
+fis1
+r4 fis fis fis
+dis1
+r4 dis4 dis4. dis8
+fis1
+r4 dis dis cis
+e e2.
+fis4. fis8 dis2~ 
+dis2 r2
 %%
+\key bes \minor
 r4 des des es
 des des2.
 es4. (f8 es4) c
@@ -298,6 +380,45 @@ r4 f f es
 ges ges2 r8 ges
 as4. as8 f2~
 f2 r2
+%%%
+r4 des des f 
+f1
+r4 f g f
+f des es ges
+f2 r4 f
+as1
+r4 as as as
+f1
+r4 f as as
+f1
+r4 f f4. f8
+as1
+r1
+des,8 (c es des f es ges) as
+as4. es8 f2~ 
+f2 r
+\key c \minor
+r1 r r
+es1
+r bes~bes
+c
+r4 c c c
+es1~
+es4 c c4. c8
+bes1
+r4 g4 bes4 d
+c2. es4 
+f4. f8 es2~
+es2 r2
+%%
+r2 g,4 bes 
+c2. es4
+f4 g8 (f) es4 d 
+c1
+r4 c c c
+bes1
+r4 bes bes es8 (d)
+c1~c1
 
 }
 tenorMusik =  \relative c' {
@@ -353,43 +474,44 @@ b1
 r4 gis gis b
 a2. r8 a
 b4. b8 a2
-\key gis \minor
+
 R1*8
-r2 dis,4 fis 
-gis2. b4
-cis4 dis8 (cis) b4 ais 
-gis1
-r4 dis4 gis ais
-ais1~ 
-ais4 b cis b8 (ais) 
-gis1
-r4 cis4 cis cis
-dis1~
-dis4 dis4 e4. cis8
+r2 cis,4 e 
+fis2. a4
+b4 cis8 (b) a4 gis 
+fis1
+r4 cis4 fis gis
+gis1~ 
+gis4 a b a8 (gis) 
+fis1
+r4 fis4 b b
+cis1~
+cis4 cis4 d4. b8
+b1
+r4 gis gis b
+a2. fis4
+b4 b a2~
+a2 r
+\key gis \minor
+r4 b b b
+b b2.
+cis2. ais4 
+b1
+r4 b b cis
+cis4 cis2.
+cis2. cis4 
 cis1
-r4 ais ais cis
-b2. b4
-cis4 cis b2~
-b2 r
-\key bes \minor
-r4 des des des
-des des2.
-es2. c4 
-des1
-r4 des des es
-es4 es2.
-es2. es4 
-es1
-r4 es es es
-des1
-r4 f es4. des8
-c1
-r4 c c as
-bes bes2.
-es4. es8
-des2~ 
-des r
+r4 cis cis cis
+b1
+r4 dis cis4. b8
+ais1
+r4 ais ais fis
+gis gis2.
+cis4. cis8
+b2~ 
+b r
 %%
+\key bes \minor
 r4 bes bes as
 bes bes2.
 es4 (c8 bes as4) as
@@ -406,6 +528,46 @@ r4 c c as
 bes bes2 r8 bes
 es4. es8 des2~ 
 des2 r
+%%%
+r1
+r4 des es des8 (c)
+bes1
+r4 bes c es
+des2 r4 des
+es1
+r4 des c bes8 (as)
+des1
+r4 des c es
+des1
+r4 f es4. des8
+c1
+r4 c c c
+bes2~bes4. \fermata \breathe bes8
+c4. c8 des2~
+des r
+\key c \minor
+r1 r r
+g,1
+r f~f g
+r4 g as bes 
+c1~
+c4 bes as4. as8
+f1
+r4 g4 g g
+as2. es'4
+d4. bes8 c2~
+c2 r
+%%
+r2 g,4 bes 
+c2. es4
+f4 g8 (f) es4 d 
+g1
+r4 g g g
+f1
+r4 es f es8 (d) 
+c1~c1 \fermata
+
+
 
 
 }
@@ -441,7 +603,7 @@ r4 d4 d c
 d1~
 d4 d d d
 c1
-r4 a c e
+r4 a c c
 bes2. bes4
 c4. c8 
 d2~
@@ -478,42 +640,43 @@ e1
 r4 e e e
 fis2. r8 fis
 e4. e8 fis2
-\key gis \minor
+
 R1*8
-r2 dis4 fis 
-gis2. b4
-cis4 dis8 (cis) b4 ais 
-gis1
-r4 dis4 gis ais
-ais1~ 
-ais4 b cis b8 (ais) 
-gis1
-r4 fis fis ais 
+r2 cis4 e 
+fis2. a4
+b4 cis8 (b) a4 gis 
+fis1
+r4 cis4 fis gis
 gis1~ 
-gis4 gis gis4. gis8 
+gis4 a b a8 (gis) 
+fis1
+r4 fis e gis 
+fis1~ 
+fis4 fis fis4. fis8 
+e1
+r4 e e e
+fis2. d4
+e e fis2~
+fis2 r
+\key gis \minor
+r4 gis gis gis
+gis gis2.
+fis2. ais4 
+gis1
+r4 gis gis gis
+ais4 ais2.
+fis2. fis4 
+fis1
+r4 fis ais ais
+gis1
+r4 gis gis4. gis8 
 fis1
 r4 fis fis fis
-gis2. gis4
-fis fis gis2~
-gis2 r
-\key bes \minor
-r4 bes bes bes
-bes bes2.
-as2. c4 
-bes1
-r4 bes bes bes
-c4 c2.
-as2. as4 
-as1
-r4 as c c
-bes1
-r4 bes bes4. bes8 
-as1
-r4 as as as
-ges ges2.
-as4. c8 bes2~
-bes2 r2
+e e2.
+fis4. ais8 gis2~
+gis2 r2
 %%%
+\key bes \minor
 r4 f des c
 bes bes2.
 as2. c4
@@ -530,6 +693,49 @@ r4 as as as
 ges ges2 r8 ges
 as4. as8 bes2~ 
 bes2 r
+%%
+r4 bes bes f 
+bes,1
+r4 bes bes bes 
+bes1
+r4 des f bes
+as1
+r4 as as as
+bes1
+r4 bes c c
+bes1
+r4 bes bes4. bes8 
+as1
+r4 as as as
+ges2~ges4.  ges8
+as4. c8 bes2~
+bes r
+\key c \minor
+r2 g,4 bes 
+c2. es4
+f4 g8 (f) es4 d 
+c1
+r4 g4 c d
+d1~ 
+d4 es f es8 (d) 
+c1
+r4 c c c
+c1~ 
+c4 c c4. c8
+bes1
+r4 bes bes bes
+as2. c4
+bes4. d8 c2~
+c2 r
+%%
+r2 g4 bes 
+c2. es4
+f4 g8 (f) es4 d 
+c1
+r4 g4 c d
+d1
+r4 bes bes bes 
+c1~c1
 }
 
 bassTwoMotif = \relative c {
@@ -565,6 +771,9 @@ sopranText =  \lyricmode{
 \VerseFive
 \VerseSeven
 \VerseEight
+\VerseNine
+\VerseTen
+\OutroSop
 }
 altText =  \lyricmode{
 \VerseThree
@@ -572,6 +781,9 @@ altText =  \lyricmode{
 \VerseFive
 \VerseSeven
 \VerseEight
+\VerseNineAlt
+\VerseTen
+\Outro
 
 }
 tenorText =  \lyricmode{
@@ -581,6 +793,9 @@ tenorText =  \lyricmode{
 \VerseFiveMen
 \VerseSeven
 \VerseEight
+\VerseNineTenor
+\VerseTen
+\Outro
 }  
 bassText =  \lyricmode{
 \VerseOne
@@ -590,6 +805,9 @@ bassText =  \lyricmode{
 \VerseFiveMen
 \VerseSeven
 \VerseEight
+\VerseNine
+\VerseTenBass
+\Outro
 }  
 
 bassTwoMotifT  = \lyricmode {
