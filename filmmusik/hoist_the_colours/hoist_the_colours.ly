@@ -28,7 +28,7 @@ a:m a:m a:m e
 e e e e e e e a:m
 %%% Ref
 a:m a:m a:m a:m a:m a:m
-a4:m  e:m f
+a:m 
 e2. e
 b:m e b:m e
 e e a:m a:m
@@ -39,10 +39,10 @@ a:m
 %% VersTwo
 a:m a:m f a:m 
 a:m a:m f2 d4:m e2.
-e e e e e e e a:m
+e e e:7 e e e e a:m
 %%% Ref
 a:m a:m a:m a:m a:m a:m
-a4 e:m f
+a4:m e:m f
 e2. e
 b:m e b:m e
 e e a:m a:m
@@ -50,7 +50,7 @@ e e a:m a:m
 a:m
 %%% Ref
 a:m a:m a:m a:m a:m a:m
-a4 e:m f
+a:m
 e2. e
 b:m e b:m e
 e e a:m a:m
@@ -145,7 +145,7 @@ c4 (b) a
 b2.
 r
 b e, b'2 b4
-e,8 e~e2
+e,8 e~e2 \breathe
 b'4 (c) b
 e,2 gis4
 a2.~a2 r4
@@ -176,7 +176,7 @@ c4 (b) a
 b2.
 r
 b e, b'2 b4
-e,8 e~e2
+e,8 e~e2 \breathe
 b'4 (c) b
 e,2 gis4
 
@@ -186,13 +186,13 @@ e,2 gis4
   {a2.~a2 r4 | }
 }
 %%%Refrain
-a2. e a2 a4 e8 e~e2
+a2. e a2 a4 e8 e~e2 \breathe
 a2 a4 
 c4 (b) a
 b2.
 r
 b e, b'2 b4
-e,8 e~e2
+e,8 e~e2 \breathe
 b'4 (c) b
 e,2 gis4
 a2.~a2.   
@@ -213,7 +213,7 @@ c2 c4
 c4 (d) c
 e2.
 r2 e4
-gis2 ais4 
+e2 e4 
 gis2 e4
 e2 e4
 b2 r4
@@ -222,10 +222,10 @@ c2 b4
 c2.
 %%%
 r2.
-c e c e
+c e c e \breathe
 e2 e4
 e2 a4
-gis2.
+e2.
 r2.
 fis e
 fis2 fis4
@@ -245,15 +245,15 @@ f4 f f
 e2.
 r2 e8 e
 e2 e8 e
-f2 f8 f
+e2 e8 e
 e4 e e
-e2 e4
+e2  \breathe e4
 e2 b4
 c2 b4
 c2.
 r2.
 %%%
-c e c2 c4 e8 e~e2
+c e c2 c4 e8 e~e2 \breathe
 e2 e4
 e2 a4
 gis2.
@@ -298,7 +298,7 @@ a2 a4
 a2 a4
 b2.
 r2 gis4
-b2 gis4
+b2 cis4
 b2 gis4
 b2 b4
 gis2 r4
@@ -307,14 +307,14 @@ a2 b4
 a2.
 %%%
 r2.
-a c a c
+a c a c \breathe
 c2 c4
-a4 (b) c
-e2.
+c2 c4
+b2.
 r2.
 d b 
 d2 d4
-b8 b~b2
+b8 b~b2 \breathe
 b4 (a) gis
 a2 b4 
 a2.~a2 r4
@@ -334,19 +334,19 @@ r2 gis8 gis
 b2 cis8 cis
 d2 d8 d
 e4 e e
-b2 b4
+b2 \breathe b4
 b (a) gis
 a2 b4 a2.
 r2.
 %%
-a c a2 a4 c8 c~c2
+a c a2 a4 c8 c~c2 \breathe
 c2 c4
 a4 (b) c
 e2.
 r2.
 d b 
 d2 d4
-b8 b~b2
+b8 b~b2 \breathe
 b4 (a) gis
 a2 b4 
 }
@@ -354,14 +354,14 @@ a2 b4
   {a2.~a2 a4}
   {a2.~a2 r4}
 }
-a2. c a2 a4 c8 c~c2
+a2. c a2 a4 c8 c~c2 \breathe
 c2 c4
 a4 (b) c
 e2.
 r2.
 d b 
 d2 d4
-b8 b~b2
+b8 b~b2 \breathe
 b4 (a) gis
 a2 b4 
 a2.~a2.
@@ -380,7 +380,7 @@ a2 a4
 a2 a4
 e'2.
 r2 e4
-e2 e4
+gis2 gis4
 e2 gis4
 gis2 e4
 e2 r4
@@ -394,20 +394,20 @@ a,
 a'
 a,
 a'2 a4
-a4 (g) f
-e2.
+a2 a4
+gis2.
 r2.
-b'2.
+b2.
 gis
 b2 b4
 gis8 gis~gis2
-e2 e4 
+gis4 (e) e4 
 e2 e4
 a,2.~a2 r4
 a2.~a~a~a~a~a~a~a
 \repeat volta 2 { 
 a'4. a8 a4
-g2 g8 g
+a2 a8 a
 f4 f gis
 a2.
 r2 a4
@@ -419,7 +419,7 @@ gis2 gis8 gis
 gis2 gis8 gis
 gis4 gis gis
 gis2 gis4
-e2 e4
+gis4 (e) e4
 e2 e4 
 a,2. r2.
 %%%%
@@ -435,7 +435,7 @@ b'2.
 gis
 b2 b4
 gis8 gis~gis2
-e2 e4 
+gis4 (e) e4 
 e2 e4
 }
 \alternative {
@@ -454,7 +454,7 @@ b'2.
 gis
 b2 b4
 gis8 gis~gis2
-e2 e4 
+gis4 (e) e4 
 e2 e4
 a,2.~a2.
 }
