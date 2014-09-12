@@ -1,4 +1,4 @@
-\version "2.14.2"
+\version "2.16.2"
 date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 \header {
   title = "Hoist the Colours"
@@ -28,7 +28,7 @@ a:m a:m a:m e
 e e e e e e e a:m
 %%% Ref
 a:m a:m a:m a:m a:m a:m
-a4 e:m f
+a4:m  e:m f
 e2. e
 b:m e b:m e
 e e a:m a:m
