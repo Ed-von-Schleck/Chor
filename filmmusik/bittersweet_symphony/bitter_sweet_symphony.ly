@@ -1,12 +1,14 @@
 \version "2.16.2"
 date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 \header {
-  title = " "
+  title = "Bitter Sweet Symphony "
   composer = "Text und Musik: Richard Ashcroft (The Verve), Mick Jagger "
   arranger = "Arrangement: Andreas Fiebig"
-  subtitle = "Bitter Sweet Symphony"
+  subtitle = "from cruel intentions"
   subsubtitle = \date
 }
+
+
 
 %Größe der Partitur
 #(set-global-staff-size 18)
