@@ -230,17 +230,17 @@ q q q q
 <d g c> q <d g b>  
 \set fontSize = #-0 r8 es8\p
 es c16 c~c4 r2
-r2 c16 d8 es16~es8 d
-d2~d16 c c4.
+r2 c8 d8 es d
+d4. d8 c4 r4
 r2 c8. d16~d c8.
 d4. c8 es2
 r2 c8. d16~d c8.
-d2 r4 r8 c16 g'~
+d2 r4 c8 g'8~
 g4. (f16 g~g8) r8 r4
 
 g2\mf (as a as) \breathe  
 g2 (as a as) \breathe  
-g2 (as a as4) r16 c,8.
+g2 (as a as4) r8 c,8
 d2\<~d4. g8~
 g4. (f16 g~g8) r8
 c,8 c\!
@@ -259,9 +259,9 @@ r2 es4\mp d
 c1
 %%%
 r2 r8 c8 c es
-d8 c16 c~c2.
-r4 r8. c16 d8 c16 d~d8 c
-d c16 es~es2.
+d4 c8 c~c2
+r4 r8 c d8 c16 d~d8 c
+d8 c es2.
 r4 r8 c8 d c16 d~d8 c
 d c16 c~c4 r8 c \times2/3{c8 d es}
 f8 g4 c,16 es f8 g c,4
@@ -318,20 +318,20 @@ r1\!\p
 altMusik = \relative c' {
 s1 s s s s s s s2 s4 r8 c8
 c c16 c~c4 r2
-r2 c16 c8 c16~c8 c
-c2~c16 c c4.
+r2 c8 c8 c8 c
+c4. c8 c4 r4
 r2 as8. c16~c as8.
 c4. c8 c2
 r2 as8. c16~c as8.
-c2 r4 r8 c16 c~
+c2 r4 c8 c8~
 c4~c8. (b16~b8) r8 c8 d
 
 d8 c16 c~c4 r2
-r4 r8 c8 c16 d8 es16~es8. d16
+r4 r8 c8 c8 d8 es d
 d4. (c8) c2
 r4 r8 c d c16 d~d8 c
 d4. es16 (d c bes c4.)
-r2 d8 c16 d~d c8.
+r2 d8 c16 d~d8 c
 c2~c4. c8~
 c4.~c16 (b~b8) r8 c8 c
 
@@ -349,9 +349,9 @@ r2 c4 c
 c1
 %%%
 r2 r8 as8 as c
-c8 c16 c~c2.
-r4 r8. c16 c8 c16 c~c8 c
-c c16 c~c2.
+c4 c8 c~c2
+r4 r8 c c8 c16 c~c8 c
+c c c2.
 r4 r8 c8 c c16 c~c8 c
 c c16 c~c4 r8 c \times2/3{c8 c c}
 c8 c4 c16 c c8 c c4
@@ -375,9 +375,9 @@ r4 r8 c16 c c8 c4.
 r4 r8 c16 c c8 c4.
 r4 r8 c16 c c8 c4.
 %%%
-r2 r8 d8\mf d16 d8.
-d8 c4. r8. d16 d8 es
-d es4. r8. g16 f8 f
+r2 r8 d8\mf d d8
+d8 c4. r8 d d8 es
+d es4. r8 g f8 f
 f16 es c4. c8 c \times 2/3{c8 c es}
 d8 c16 es~es4 r4 c8 c
 c8 c c4 r4 es8 es
@@ -406,20 +406,20 @@ r1 es r1
 tenorMusik = \relative c'{
 R1*7 r2 r4 r8 g8
 g g16 g~g4 r2
-r2 as16 as8 as16~as8 as
-g2~g16 g as4.
+r2 as8 as8 as8 as
+g4.  g8 as4 r4
 r2 as8. as16~as as8.
 g4. g8 as2
 r2 as8. as16~as as8.
-g2 r4 r8 g16 g~
+g2 r4 g8 g~
 g2~g8 r8 c8 b
 
 g g16 g~g4 r2
-r4 r8 f8 as16 as8 as16~as8. as16
+r4 r8 f8 as as8 as as
 g2 as2
 r4 r8 c c c16 c~c8 as
 g4. as8~as2
-r2 as8 as16 as~as as8.
+r2 as8 as16 as~as8 as
 g2~g4. g8~
 g2~g8 r8 g8 g
 
@@ -459,9 +459,9 @@ r4 r8 as16 as as8 as4.
 r4 r8 g16 g g8 g4.
 
 %%
-r2 r8 g8 g16 g8.
-as8 as4. r8. c16 c8 c
-c c4. r8. c16 c8 c
+r2 r8 g8 g g8
+as8 as4. r8 c c8 c
+c c4. r8 c c8 c
 c16 c g4. as8 as \times 2/3{as8 as as}
 g8 g16 g~g4 r4 g8 g
 es es as4 r4 c8 bes
@@ -496,20 +496,20 @@ r1 c r1
 bassMusik = \relative c {
 R1*7 r2 r4 r8 c8\p
 c es16 es~es4 r2
-r2 f16 f8 f16~f8 f
-c2~c16 c c4.
+r2 f8 f8 f8 f
+c4. c8 c4 r4
 r2 f8. f16~f f8.
 c4. c8 c2
 r2 f8. f16~f f8.
-d2 r4 r8 d16 g,~
+d2 r4 d8 g,~
 g2~g8 r8 g'8 g
 
 c,\mf es16 es~es4 r2
-r4 r8 f8 f16 f8 f16~f8. f16
+r4 r8 f8 f f f f
 c2 c2
 r4 r8 f f f16 f~f8 f
 c4. c8~c2
-r2 f8 f16 f~f f8.
+r2 f8 f16 f~f8 f8
 d2\<~d4. g,8~
 g2~g8 r8 g8 g\!
 
@@ -527,9 +527,9 @@ r2 f4\mp f
 es1
 %%%
 r2 r8 f8 f f
-es8 c16 c~c2.
-r4 r8. f16 f8 f16 f~f8 f
-c c16 c~c2.
+es4 c8 c~c2
+r4 r8 f f8 f16 f~f8 f
+c c c2.
 r4 r8 f8 f f16 f~f8 f
 c c16 es~es4 r8 es \times2/3{es8 d c}
 f8 f4 f16 f f8 f f4
@@ -551,9 +551,9 @@ r4 r8 c16 c c8 c4.
 r4 r8 c16 c c8 c4.
 r4 r8 c16 c d8 es4.
 %%
-r2 r8 c8\mf c16 c8.
-f8 f4. r8. f16 g8 g
-as as4. r8. as16 as8 as
+r2 r8 c8\mf c c8
+f8 f4. r8 f g8 g
+as as4. r8 as as8 as
 es16 es es4. d8 d \times 2/3{d8 d es}
 c8 c16 c~c4 r4 bes8 bes
 as8 as as4 r4 g'8 g
