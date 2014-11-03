@@ -666,7 +666,7 @@ LeftHand = \relative c {
 \lhIntro
 }
   \score{
-    \transpose g g {
+    \transpose g a {
        \context ChoirStaff <<
         \new ChordNames \set chordChanges = ##t \harmonies
         \context Lyrics = sopran { s1 }
@@ -714,31 +714,3 @@ LeftHand = \relative c {
 
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

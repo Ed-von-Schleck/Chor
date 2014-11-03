@@ -1,4 +1,4 @@
-\version "2.14.2"
+\version "2.16.2"
 date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 \header {
   title = "Walking in the Air"
@@ -7,7 +7,7 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
   subtitle = "from The Snowman"
   subsubtitle = \date
 }
-#(set-global-staff-size 17.5)
+#(set-global-staff-size 17)
 #(set-default-paper-size "a4")
 
 global = {
@@ -837,7 +837,7 @@ a,8 cis e a s2
         \context Lyrics = alt \lyricsto alt \altText
        \context Lyrics = tenor \lyricsto tenor \tenorText
         \context Lyrics = bass \lyricsto bass \bassText
- %  \new PianoStaff  <<   \new Staff = "up" { \global \RightHand }  \new Staff = "down" { \global \LeftHand }  >>
+   \new PianoStaff  <<   \new Staff = "up" { \global \RightHand }  \new Staff = "down" { \global \LeftHand }  >>
      >>
         }
         \layout {
