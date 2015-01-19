@@ -54,7 +54,7 @@ soprano = \relative c' {
   
   d4 d d c8 b
   a8 a~ a4 a g8 a
-  b4 e, e d8 b
+  b4 e,8 e e e e4
   d2 r4 b
   
   e e e e8 e
@@ -90,7 +90,7 @@ alto = \relative c' {
   
   b4 b b a8 g
   f f~ f4 f e8 f
-  g4 e e d8 b
+  g4 e8 e e e b4
   d2 r4 b
   
   e4 e e e8 e
@@ -126,7 +126,7 @@ tenor = \relative c' {
   
   d4 d d c8 b
   c c~ c4 c c8 c
-  b4 b b b8 b
+  b4 b8 b b b b4 
   b2 r4 b4
   
   e4 e e e8 e
@@ -161,7 +161,7 @@ bass = \relative c {
   
   g4 g g g8 g
   f f~ f4 f e8 d
-  e4 e e d8 d
+  e4 e8 e e e e4
   d2 r4 b4
   
   e4 e b' b8 b
@@ -186,7 +186,7 @@ verseOne = \lyricmode {
   
   \set stanza = "Ref."
   Oh, from Bant -- ry Bay up to Der -- ry Quay,
-  and from Gal -- way to Dub -- lin town
+  and from Gal -- way to Du -- b -- lin town
   no maid I've seen like the sweet col -- leen,
   that I met in the Coun -- ty Down.
   
