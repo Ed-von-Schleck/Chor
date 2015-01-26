@@ -189,10 +189,10 @@ we both go down to -- ge -- ther
 
 altMusik = \relative c' {
 %Strophe1
-r4\mp c c4. c8
-c4 d8 e~ e c~ c4
-r4 b e4. e8
-d4 e8 d~ d d( c4)
+r4\mp e e4. e8
+e4 e8 a~ a a~ a4
+r4 b g4. g8
+g4 g8 g~ g e4.
 
 r4 c c4. c8
 c8 d8~ d e c2
@@ -295,31 +295,31 @@ altText =\lyricmode {
 
   }
   
-tenorMusik = \relative c {
+tenorMusik = \relative c' {
 %Strophe1
-r4  e e4. e8
-e4 e8 a~ a a~ a4
-r4 g g4. g8
-a4 a8 g~ g g( a4)
+r4  c c4. c8
+c4 d8 e~ e c~ c4
+r4 b b4. b8
+b4 a8 g~ g c4.
 
-r4 e e4. e8
-e8 e8~ e a a2
-r4 g g4. g8
-a4 a8 g~ g g( a4)
+r4 c c4. c8
+c8 d8~ d e c2
+r4 b b4. b8
+b4 a8 g~ g c4.
 
 
-r4 e e4. e8
-e8 e8~ e a~ a a~ a4
-r8 g g4 g r
-a4 a8 g~ g g( a4)
+r4 c c4. c8
+c8 d8~ d e~ e c4.
+r8 b b4 b r
+b4 a8 g~ g c4.
 
-r4 e e4. e8
-e8 e8~ e a a2
-r4 g g g
-g4 g8 g~ g g g g~
+r4 c c4. c8
+c8 d8~ d e c2
+r4 b b b
+b4 a8 g~ g a b c~
 
 %Refrain
-g4 r g8( g~ g) g~
+c4 r g8( g~ g) g~
 g4 r g8( g~ g) a~
 a2 r2
 a4( b a) g8 g~
@@ -406,26 +406,26 @@ tenorText = \lyricmode {
 
   }
      
-bassMusik = \relative c {
+bassMusik = \relative c' {
 %Strophe1
 r4\mp a a4. a8
-a4 g8 a~ a c~ c4
+a4 a8 a~ a a4.
 r4 e e4. e8
-e4 e8 b~ b b( c4)
+e4 e8 e~ e e4.
 
 r4 a a4. a8
-a8 g8~ g a c2
+a8 a8~ a a a2
 r4 e e4. e8
-e4 e8 b~ b b( c4)
+e4 e8 e~ e e4.
 
 
 r4 a a4. a8
-a8 g8~ g a~ a c~ c4
+a8 a8~ a a~ a a4.
 r8 e e4 e r
-e4 e8 b~ b b( c4)
+e4 e8 e~ e e4.
 
 r4 a a4. a8
-a8 g8~ g a c2
+a8 a8~ a a a2
 r4 e e e
 f4 e8 d~ d d d c~\mf
 
