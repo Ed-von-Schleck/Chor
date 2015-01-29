@@ -6,7 +6,7 @@
 }
 
 %Größe der Partitur
-#(set-global-staff-size 18)
+#(set-global-staff-size 20)
 
 %Abschalten von Point&Click
 #(ly:set-option 'point-and-click #f)
@@ -14,7 +14,7 @@
   global = {
      \key a \minor
      \time 4/4
-     \tempo 4  = 80
+     \tempo 4  = 100
   }
   
   Coda = \markup { \musicglyph #"scripts-coda" }
@@ -51,7 +51,7 @@ b4 c8 b~ b g( a4)
 
 
 r4 a a4. e8
-a8 b8~ b c~ c a~ a4
+a8 b8~ b c~ c a4.
 r8 b b4 b r
 b4 c8 b~ b g( a4)
 
@@ -189,61 +189,61 @@ we both go down to -- ge -- ther
 
 altMusik = \relative c' {
 %Strophe1
-r4\mp c c4. c8
-c4 d8 e~ e c~ c4
-r4 b e4. e8
-d4 e8 d~ d d( c4)
+r4\mp e e4. e8
+e4 e8 a~ a a~ a4
+r4 g g4. g8
+g4 g8 g~ g e4.
 
-r4 c c4. c8
-c8 d8~ d e c2
-r4 b e4. e8
-d4 e8 d~ d d( c4)
+r4 e e4. e8
+e8 e8~ e a a2
+r4 g g4. g8
+g4 g8 g~ g e4.
 
-r4 c c4. c8
-c8 d8~ d e~ e c~ c4
-r8 b e4 e r
-d4 e8 d~ d d( c4)
+r4 e e4. e8
+e8 e8~ e a~ a a4.
+r8 g g4 g r
+g4 g8 g~ g e4.
 
-r4 c c4. c8
-c8 d8~ d e c2
-r4 b e e
-d4 e8 f~ f f d\mf e~
+r4 e e4. e8
+e8 e8~ e a a2
+r4 g g g
+f4 f8 f~ f f f\mf e~
 
 %Refrain
-e4 r e8( e~ e) d~
-d4 r e8( d~ d) c~
-c2 r2
-c4( b c) d8 e~
+e4 r f8( g~ g) g~
+g4 r g4. f8~
+f2 r2
+f4( g f) g8 e~
 
-e4 r e8( e~ e) d~
-d4 r e8( d~ d) c~
-c2 r4. d8
+e4 r f8( g~ g) g~
+g4 r g4. f8~
+f2 r4. a8
 
-d4-. d-. d-. d8 c
-c4 r2.
+gis4-. gis-. gis-. gis8 gis
+a4 r2.
 
 %Strophe2
-r8\mp c c4 c4. c8
-c d~ d c( d e~ e4)
-r8 e e e e e e e
-d e~ e d~( d d c4)
+r8\mp e e4 e4. e8
+e e~ e e( a2)
+r8 g g g g g g g
+g g~ g g~( g e4.)
 
-r8 c c c  c4 c8 c
-c8 d8~ d c d e~ e4
-r4 e e e8 e
-d4 d8 d~ d d d\mf e~
+r8 e e e  e4 e8 e
+e8 e8~ e e a a4.
+r4 g g g8 g
+f4 f8 f~ f f f\mf e~
 
 %Refrain
-e4 r e8( e~ e) d~
-d4 r e8( d~ d) c~
-c2 r2
-c4( b c) d8 e~
+e4 r f8( g~ g) g~
+g4 r g4. f8~
+f2 r2
+f4( g f) g8 e~
 
-e4 r e8( e~ e) d~
-d4 r e8( d~ d) c~
-c2 r4. d8
+e4 r f8( g~ g) g~
+g4 r g4. f8~
+f2 r4. a8
 
-d4-. d-. d-. d8 e
+gis4-. gis-. gis-. gis8 a
 
 %bridge
 a2\f r8 a8~ a a
@@ -257,102 +257,102 @@ g2) r2
 b,4( d e d)
 
 %Strophe3
-r4\pp c c4 c8 c
-c4 d8 e~ e c~ c4
-r4 b e8 e4.
-d4 d8 d~ d d( c4)
+r4\pp e e4 e8 e
+e4 e8 a~ a a4.
+r4 g g8 g4.
+g4 g8 g~ g e4.
 
-r4 c c4. c8
-c8 d8~ d c d e~ e4
-r4 e e4 e8 e
-d4\< d8 d~ d d d\f e~
+r4 e e4. e8
+e8 e8~ e e a a4.
+r4 g g4 g8 g
+f4\< f8 f~ f f f\f e~
 
 %Refrain
-e4 r e8( e~ e) d~
-d4 r e8( d~ d) c~
-c2 r2
-c4( b c) d8 e~
+e4 r f8( g~ g) g~
+g4 r g4. f8~
+f2 r2
+f4( g f) g8 e~
 
-e4 r e8( e~ e) d~
-d4 r e8( d~ d) c~
-c2 r2
-c4( b c) d8 e~
+e4 r f8( g~ g) g~
+g4 r g4. f8~
+f2 r2
+f4( g f) g8 e~
 
-e4 r e8( e~ e) d~
-d4 r e8( d~ d) c~
-c2 r2
-c4( b c) d8 e~
+e4 r f8( g~ g) g~
+g4 r g4. f8~
+f2 r2
+f4( g f) g8 e~
 
-e4 r e8( e~ e) d~
-d4 r e8( d~ d) c~
-c2 r4. d8
+e4 r f8( g~ g) g~
+g4 r g4. f8~
+f2 r4. a8
 
-d4-. d-. d-. d8 c
-c2 r2
+gis4-. gis-. e-. gis8 gis
+a2 r2
 	}
 		
 altText =\lyricmode {
 
   }
   
-tenorMusik = \relative c {
+tenorMusik = \relative c' {
 %Strophe1
-r4  e e4. e8
-e4 e8 a~ a a~ a4
-r4 g g4. g8
-a4 a8 g~ g g( a4)
+r4  c c4. c8
+c4 d8 e~ e c~ c4
+r4 b b4. b8
+b4 a8 g~ g b4.
 
-r4 e e4. e8
-e8 e8~ e a a2
-r4 g g4. g8
-a4 a8 g~ g g( a4)
+r4 c c4. c8
+c8 d8~ d e c2
+r4 b b4. b8
+b4 a8 g~ g b4.
 
 
-r4 e e4. e8
-e8 e8~ e a~ a a~ a4
-r8 g g4 g r
-a4 a8 g~ g g( a4)
+r4 c c4. c8
+c8 d8~ d e~ e c4.
+r8 b b4 b r
+b4 a8 g~ g b4.
 
-r4 e e4. e8
-e8 e8~ e a a2
-r4 g g g
-g4 g8 g~ g g g g~
+r4 c c4. c8
+c8 d8~ d e c2
+r4 b b b
+b4 a8 g~ g a b c~
 
 %Refrain
-g4 r g8( g~ g) g~
-g4 r g8( g~ g) a~
-a2 r2
-a4( b a) g8 g~
+c4 r c4. d8~
+d4 r d4. c8~
+c2 r2
+a2. b8 c~
 
-g4 r g8( g~ g) g~
-g4 r g8( g~ g) a~
-a2 r4. a8
+c4 r c4. d8~
+d4 r d4. c8~
+c2 r4. c8
 
-gis4-. gis-. gis-. gis8 a
+d4-. d-. d-. b8 c
 a4 r2.
 
 %Strophe2
-r8 e e4 e4. e8
-e e~ e e( e e~ e4)
-r8 g g g g g g g
-g g~ g g~( g g e4)
+r8 c c4 c4. c8
+c d~ d e( e2)
+r8 b b b b b b b
+b a~ a g~( g b4.)
 
-r8 e e e  e4 e8 e
-e8 e8~ e e e e~ e4
-r4 g g g8 g
-g4 g8 g~ g g g g~
+r8 c c c  c4 c8 c
+c8 d8~ d c d e~ e4
+r4 b b b8 b
+b4 a8 g~ g a b c~
 
 %Refrain
-g4 r g8( g~ g) g~
-g4 r g8( g~ g) a~
-a2 r2
-a4( b a) g8 g~
+c4 r c4. d8~
+d4 r d4. c8~
+c2 r2
+a2. b8 c~
 
-g4 r g8( g~ g) g~
-g4 r g8( g~ g) a~
-a2 r4. a8
+c4 r c4. d8~
+d4 r d4. c8~
+c2 r4. c8
 
-gis4-. gis-. gis-. gis8 a
+d4-. d-. d-. b8 c
 
 %bridge
 c2 r8 c8~ c c
@@ -366,38 +366,37 @@ d2) r2
 b4( g2.)
 
 %Strophe3
-r4 e e4 e8 e
-e4 e8 a~ a a~ a4
-r4 g g8 g4.
-a4 g8 g~ g g( a4)
+r4 c c4 c8 c
+c4 d8 e~ e c4.
+r4 b b8 b4.
+b4 a8 g~ g b4.
 
-r4 e e4. e8
-e8 e8~ e e a a~ a4
-r4 g g4 g8 g
-g4 g8 g~ g g g g~
+r4 c c4. c8
+c8 d8~ d c d e~ e4
+r4 b b4 b8 b
+b4 a8 g~ g a b c~
 
 %Refrain
-g4 r g8( g~ g) g~
-g4 r g8( g~ g) a~
-a2 r2
-a4( b a) g8 g~
+c4 r c4. d8~
+d4 r d4. c8~
+c2 r2
+a2. b8 c~
 
-g4 r g8( g~ g) g~
-g4 r g8( g~ g) a~
-a2 r2
-a4( b a) g8 g~
+c4 r c4. d8~
+d4 r d4. c8~
+c2 r2
+a2. b8 c~
 
-g4 r g8( g~ g) g~
-g4 r g8( g~ g) a~
-a2 r2
-a4( b a) g8 g~
+c4 r c4. d8~
+d4 r d4. c8~
+c2 r2
+a2. b8 c~
 
-g4 r g8( g~ g) g~
-g4 r g8( g~ g) a~
-a2 r4. a8
+c4 r c4. d8~
+d4 r d4. c8~
+c2 r4. c8
 
-gis4-. gis-. gis-. gis8 a
-
+d4-. b-. gis-. b8 c
 a2 r
 
   }
@@ -406,61 +405,61 @@ tenorText = \lyricmode {
 
   }
      
-bassMusik = \relative c {
+bassMusik = \relative c' {
 %Strophe1
 r4\mp a a4. a8
-a4 g8 a~ a c~ c4
+a4 a8 a~ a a4.
 r4 e e4. e8
-e4 e8 b~ b b( c4)
+e4 e8 e~ e e4.
 
 r4 a a4. a8
-a8 g8~ g a c2
+a8 a8~ a a a2
 r4 e e4. e8
-e4 e8 b~ b b( c4)
+e4 e8 e~ e e4.
 
 
 r4 a a4. a8
-a8 g8~ g a~ a c~ c4
+a8 a8~ a a~ a a4.
 r8 e e4 e r
-e4 e8 b~ b b( c4)
+e4 e8 e~ e e4.
 
 r4 a a4. a8
-a8 g8~ g a c2
+a8 a8~ a a a2
 r4 e e e
-f4 e8 d~ d d d c~\mf
+g4 g8 g~ g g g c,~\mf
 
 %Refrain
-c4 r c8( c~ c) e~
-e4 r e8( e~ e) f~
+c4 r c4. e8~
+e4 r e4. f8~
 f2 r2
-f4( g f) d8 c~
+f4( e d) d8 c~
 
-c4 r c8( c~ c) e~
-e4 r e8( e~ e) f~
+c4 r c4. e8~
+e4 r e4. f8~
 f2 r4. f8
 
-e4-. e-. e-. e8 a,
+e4-. d-. c-. b8 a
 a4 r2.
 
 %Strophe2
-r8\mp a a4 a4. a8
-a g~ g a( b c~ c4)
+r8\mp a' a4 a4. a8
+a a~ a a( a2)
 r8 e e e e e e e
-e e~ e b~( b b c4)
+e e~ e e~( e2)
 
 r8 a a a  a4 a8 a
-a8 g8~ g a b c~ c4
+a8 a8~ a a a a4.
 r4 e e e8 e
-f4 e8 d~ d d d\mf c~
+g4 g8 g~ g g g\mf c,~
 
 %Refrain
-c4 r c8( c~ c) e~
-e4 r e8( e~ e) f~
+c4 r c4. e8~
+e4 r e4. f8~
 f2 r2
-f4( g f) d8 c~
+f4( e d) d8 c~
 
-c4 r c8( c~ c) e~
-e4 r e8( e~ e) f~
+c4 r c4. e8~
+e4 r e4. f8~
 f2 r4. f8
 
 e4-. e-. e-. e8 f
@@ -477,37 +476,38 @@ g2) r2
 e4( d c b)
 
 %Strophe3
-r4\pp a a4 a8 a
-a4 g8 a~ a c~ c4
+r4\pp a' a4 a8 a
+a4 a8 a~ a a4.
 r4 e e8 e4.
-e4 e8 b~ b b( c4)
+e4 e8 e~ e e4.
 
 r4 a a4. a8
-a8 g8~ g a b c~ c4
+a8 a8~ a a a a4.
 r4 e e4 e8 e
-f4\< e8 d~ d d d\f c~
+g4\< g8 g~ g g g\f c,~
 
 %Refrain
-c4 r c8( c~ c) e~
-e4 r e8( e~ e) f~
+c4 r c4. e8~
+e4 r e4. f8~
 f2 r2
-f4( g f) d8 c~
+f4( e d) d8 c~
 
-c4 r c8( c~ c) e~
-e4 r e8( e~ e) f~
+c4 r c4. e8~
+e4 r e4. f8~
 f2 r2
-f4( g f) d8 c~
+f4( e d) d8 c~
 
-c4 r c8( c~ c) e~
-e4 r e8( e~ e) f~
+c4 r c4. e8~
+e4 r e4. f8~
 f2 r2
-f4( g f) d8 c~
+f4( e d) d8 c~
 
-c4 r c8( c~ c) e~
-e4 r e8( e~ e) f~
+c4 r c4. e8~
+e4 r e4. f8~
 f2 r4. f8
 
-e4-. e-. e-. e8 a,
+e4-. d-. c-. e8 c
+
 a2 r2
   }
   
