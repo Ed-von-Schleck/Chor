@@ -1,4 +1,4 @@
-\version "2.16.0"
+\version "2.16.2"
 
 \header {
   title = "Beyond The Sea"
@@ -215,8 +215,8 @@ bass = \relative c {
   bes2 d
   g8) g4. c,8 c~ c c
   f4 r f f
-  bes2~ bes4. c,8~
-  c2 r4 c'
+  bes2~ bes4. c8~
+  c2 r4 c
   
   
   f,4( e d2
