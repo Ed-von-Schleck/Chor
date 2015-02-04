@@ -63,7 +63,7 @@ b4 c8 d~ d c b c~
 %Refrain
 c4 r d8( e4) b8~
 b4 r c8( d4) c8~(
-c b a4) r2
+c b a2) r4
 r2. b8 c~
 
 c4 r d8( e4) b8~
@@ -87,7 +87,7 @@ b4 c8 d~ d c b c~
 %Refrain
 c4 r d8( e4) b8~
 b4 r c8( d4) c8~(
-c b a4) r2
+c b a2) r4
 r2. b8 c~
 
 c4 r d8( e4) b8~
@@ -121,7 +121,7 @@ b4 c8 d~ d c b c~
 %Refrain
 c4 r d8( e4) b8~
 b4 r c8( d4) c8~(
-c b a4) r2
+c b a2) r4
 r2. b8 c~
 
 c4 r d8( e4) b8~
@@ -131,7 +131,7 @@ r2. b8 c~
 
 c4 r d8( e4) b8~
 b4 r c8( d4) c8~(
-c b a4) r2
+c b a2) r4
 r2. b8 c~
 
 c4 r d8( e4) b8~
@@ -212,7 +212,7 @@ f4 f8 f~ f f f\mf e~
 %Refrain
 e4 r f8( g4) g8~
 g4 r g4. f8~
-f2 r2
+f2. r4
 f4( g f) g8 e~
 
 e4 r f8( g4) g8~
@@ -236,7 +236,7 @@ f4 f8 f~ f f f\mf e~
 %Refrain
 e4 r f8( g4) g8~
 g4 r g4. f8~
-f2 r2
+f2. r4
 f4( g f) g8 e~
 
 e4 r f8( g4) g8~
@@ -253,7 +253,7 @@ e2( g
 
 a) r8 a8 a4
 f4. fis4. g4~
-g2) r2
+g2 r2
 e2( fis4 gis)
 
 %Strophe3
@@ -270,7 +270,7 @@ f4\< f8 f~ f f f\f e~
 %Refrain
 e4 r f8( g4) g8~
 g4 r g4. f8~
-f2 r2
+f2. r4
 f4( g f) g8 e~
 
 e4 r f8( g4) g8~
@@ -280,7 +280,7 @@ f4( g f) g8 e~
 
 e4 r f8( g4) g8~
 g4 r g4. f8~
-f2 r2
+f2. r4
 f4( g f) g8 e~
 
 e4 r f8( g4) g8~
@@ -321,7 +321,7 @@ b4 a8 g~ g a b c~
 %Refrain
 c4 r c4. d8~
 d4 r d4. c8~
-c2 r2
+c2. r4
 a2. b8 c~
 
 c4 r c4. d8~
@@ -345,14 +345,14 @@ b4 a8 g~ g a b c~
 %Refrain
 c4 r c4. d8~
 d4 r d4. c8~
-c2 r2
+c2. r4
 a2. b8 c~
 
 c4 r c4. d8~
 d4 r d4. c8~
 c2 r4. c8
 
-d4-. d-. d-. b8 c
+d4-. d-. d-. d8 c
 
 %bridge
 c2 r8 c4 c8
@@ -379,7 +379,7 @@ b4 a8 g~ g a b c~
 %Refrain
 c4 r c4. d8~
 d4 r d4. c8~
-c2 r2
+c2. r4
 a2. b8 c~
 
 c4 r c4. d8~
@@ -389,7 +389,7 @@ a2. b8 c~
 
 c4 r c4. d8~
 d4 r d4. c8~
-c2 r2
+c2. r4
 a2. b8 c~
 
 c4 r c4. d8~
@@ -431,14 +431,14 @@ g4 g8 g~ g g g c,~\mf
 %Refrain
 c4 r c4. e8~
 e4 r e4. f8~
-f2 r2
+f2. r4
 f4( e d) d8 c~
 
 c4 r c4. e8~
 e4 r e4. f8~
 f2 r4. f8
 
-e4-. d-. c-. b8 a
+e4-. d-. c-. e8 c
 a4 r2.
 
 %Strophe2
@@ -455,7 +455,7 @@ g4 g8 g~ g g g\mf c,~
 %Refrain
 c4 r c4. e8~
 e4 r e4. f8~
-f2 r2
+f2. r4
 f4( e d) d8 c~
 
 c4 r c4. e8~
@@ -489,7 +489,7 @@ g4\< g8 g~ g g g\f c,~
 %Refrain
 c4 r c4. e8~
 e4 r e4. f8~
-f2 r2
+f2. r4
 f4( e d) d8 c~
 
 c4 r c4. e8~
@@ -499,7 +499,7 @@ f4( e d) d8 c~
 
 c4 r c4. e8~
 e4 r e4. f8~
-f2 r2
+f2. r4
 f4( e d) d8 c~
 
 c4 r c4. e8~
