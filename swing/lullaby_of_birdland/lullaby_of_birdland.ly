@@ -1,18 +1,20 @@
-\version "2.12.2"
+\version "2.18.2"
 
 %Größe der Partitur
-#(set-global-staff-size 17)
+#(set-global-staff-size 16)
 
 #(set-default-paper-size "a4")
 
+
 %Abschalten von Point&Click
-#(ly:set-option 'point-and-click #f)
+%#(ly:set-option 'point-and-click #f)
 
 
 \header {
   title = "Lullaby of Birdland"
   composer = "George Shearing"
   arranger = "Andreas Fiebig"
+  subtitle = "17. 02. 2015"
 }
 
 global = {
@@ -157,19 +159,19 @@ des4 \times 2/3 {c'4 bes8~} bes4 r4
 | }
 \alternative {
 	{es,2 \times 2/3 {r4 bes'8} \times 2/3 {as4 des,8~}
-	\times 2/3 {des8 r as'} \times 2/3 {g4 c,8~} c4 r   |}
+	\times 2/3 {des4 as'8} \times 2/3 {g4 c,8~} c4 r   |}
 	{es2 \times 2/3 {r4 es8} \times 2/3 {g4 as8~}
 	as2 r2 |}
 }
 %%%%%%% Bridge %%%%%%%%
 c4 \times 2/3 {des4 d8} \times 2/3 {es4 c8} \times 2/3 {es4 des8~}
 \times 2/3 {des4 bes8~} bes2 r4
-bes4 \times 2/3 {b4 c8} \times 2/3 {des4 bes8} \times 2/3 {des4 c8~}
+bes4 \times 2/3 {b4 c8} \times 2/3 {des4 bes8} \times 2/3 {des4 c8~}\pageBreak
 c2. r4     
  c4 \times 2/3 {des4 d8} \times 2/3 {ees4 c8} \times 2/3 {ees4 des8~}
 \times 2/3 {des4 bes8~} bes2 r4
-bes4 \times 2/3 {b4 c8} \times 2/3 {des4 bes8} \times 2/3 {des4 c8~}
-\times 2/3 {c4 des8} \times 2/3 {c4 bes8~} bes4 r
+bes4 \times 2/3 {b4 c8} \times 2/3 {des4 bes8} \times 2/3 {des4 c8}
+\times 2/3 {r4 des8} \times 2/3 {c4 bes8~} bes4 r
 %%%%%%% Strophe3 %%%%%%%%
 c4 r c r
 b~ \times 2/3 {b4 bes8~} \times 2/3 {bes4 as8} \times 2/3 {f4 es8}
@@ -178,7 +180,7 @@ as4 \times 2/3 {r4 bes8~} bes4 r
 c1
 des
 c2   \times 2/3 {r4 bes8} \times 2/3 {as4 des,8~}
-\times 2/3 {des8 r as'} \times 2/3 {g4 c8~} c4 r 
+\times 2/3 {des4 as'8} \times 2/3 {g4 c8~} c4 r 
 %%%%%%% Repeat2 %%%%%%%%
 \times 2/3 {c4 c8}  \times 2/3 {bes4 as8}  g4 f
 d \times 2/3 {f4 e8~} e4 r4
@@ -195,8 +197,8 @@ bes4 \times 2/3 {b4 c8} \times 2/3 {des4 bes8} \times 2/3 {des4 c8~}
 c2. r4     
  c4 \times 2/3 {des4 d8} \times 2/3 {ees4 c8} \times 2/3 {ees4 des8~}
 \times 2/3 {des4 bes8~} bes2 r4
-bes4 \times 2/3 {b4 c8} \times 2/3 {des4 bes8} \times 2/3 {des4 c8~}
-\times 2/3 {c4 des8} \times 2/3 {c4 bes8~} bes4 r
+bes4 \times 2/3 {b4 c8} \times 2/3 {des4 bes8} \times 2/3 {des4 c8}
+\times 2/3 {r4 des8} \times 2/3 {c4 bes8~} bes4 r
 %%%%%%% Strophe3 %%%%%%%%
 \times 2/3 {c4 c8}  \times 2/3 {bes4 as8}  g4 f
 d \times 2/3 {f4 e8~} e4 r4
@@ -234,7 +236,7 @@ bes4 \times 2/3 {des4 es8~} es4 r4
 | }
 \alternative {
 	{es2 \times 2/3 {r4 c8} \times 2/3 {c4 bes8~}
-	\times 2/3 {bes8 r bes} \times 2/3 {bes4 bes8~} bes4 r |}
+	\times 2/3 {bes4  bes8} \times 2/3 {bes4 bes8~} bes4 r |}
 	{es2 \times 2/3 {r4 es8} \times 2/3 {es4 es8~}
  	es2 r2 |}
 	}    
@@ -245,8 +247,8 @@ g4 \times 2/3 {g4 g8} \times 2/3 {g4 g8} \times 2/3 {g4 g8~}
 g2. r4     
 a4 \times 2/3 {bes4 b8} \times 2/3 {c4 a8} \times 2/3 {a4 f8~}
 \times 2/3 {f4 f8~} f2 r4
-g4 \times 2/3 {g4 g8} \times 2/3 {g4 g8} \times 2/3 {g4 g8~}
-\times 2/3 {g4 es8} \times 2/3 {es4 e8~} e4 r
+g4 \times 2/3 {g4 g8} \times 2/3 {g4 g8} \times 2/3 {g4 g8}
+\times 2/3 {r4 es8} \times 2/3 {es4 e8~} e4 r
 %%%%%%% Strophe3 %%%%%%%%
 as4 r f r
 \times 2/3 {r4 d8} \times 2/3 {as'4 g8~}  \times 2/3 {g4 as8} \times 2/3 {f4 es8}
@@ -272,8 +274,8 @@ g4 \times 2/3 {g4 g8} \times 2/3 {g4 g8} \times 2/3 {g4 g8~}
 g2. r4     
 a4 \times 2/3 {bes4 b8} \times 2/3 {c4 a8} \times 2/3 {a4 f8~}
 \times 2/3 {f4 f8~} f2 r4
-g4 \times 2/3 {g4 g8} \times 2/3 {g4 g8} \times 2/3 {g4 g8~}
-\times 2/3 {g4 es8} \times 2/3 {es4 e8~} e4 r
+g4 \times 2/3 {g4 g8} \times 2/3 {g4 g8} \times 2/3 {g4 g8}
+\times 2/3 {r4 es8} \times 2/3 {es4 e8~} e4 r
 %%%%%%% Strophe3 %%%%%%%%
 \times 2/3 {f4 f8}  \times 2/3 {f4 f8}  c4 c
 b \times 2/3 {b4 bes8~} bes4 r4
@@ -314,7 +316,7 @@ as4 \times 2/3 {as4 g8~} g4 r4
 | }
 \alternative {
 	{c2 \times 2/3 {r4 f,8} \times 2/3 {f4 f8~}
-	\times 2/3 {f8 r f} \times 2/3 {f4 e8~} e4 r    |}
+	\times 2/3 {f4 f8} \times 2/3 {f4 e8~} e4 r    |}
 	{c'2 \times 2/3 {r4 bes8} \times 2/3 {bes4 c8~}
 	c2 r2 |}
 	}
@@ -325,8 +327,8 @@ es'4 \times 2/3 {es4 es8} \times 2/3 {des4 des8} \times 2/3 {fes4 es8~}
 es2. r4     
 f4 \times 2/3 {f4 f8} \times 2/3 {f4 c8} \times 2/3 {a4 as8~}
 \times 2/3 {as4 as8~} as2 r4
-es'4 \times 2/3 {es4 es8} \times 2/3 {des4 des8} \times 2/3 {fes4 es8~}
-\times 2/3 {es4 as,8} \times 2/3 {as4 g8~} g4 r
+es'4 \times 2/3 {es4 es8} \times 2/3 {des4 des8} \times 2/3 {fes4 es8}
+\times 2/3 {r4 as,8} \times 2/3 {as4 g8~} g4 r
 %%%%%%% Strophe3 %%%%%%%%
 c4 r c r
 b~ \times 2/3 {b4 c8~} c4 r
@@ -352,8 +354,8 @@ es'4 \times 2/3 {es4 es8} \times 2/3 {des4 des8} \times 2/3 {fes4 es8~}
 es2. r4     
 f4 \times 2/3 {f4 f8} \times 2/3 {f4 c8} \times 2/3 {a4 as8~}
 \times 2/3 {as4 as8~} as2 r4
-es'4 \times 2/3 {es4 es8} \times 2/3 {des4 des8} \times 2/3 {fes4 es8~}
-\times 2/3 {es4 as,8} \times 2/3 {as4 g8~} g4 r
+es'4 \times 2/3 {es4 es8} \times 2/3 {des4 des8} \times 2/3 {fes4 es8}
+\times 2/3 {r4 as,8} \times 2/3 {as4 g8~} g4 r
 %%%%%%% Strophe3 %%%%%%%%
 \times 2/3 {as4 as8}  \times 2/3 {as4 as8}  as4 as
 g \times 2/3 {g4 g8~} g4 r4
@@ -392,7 +394,7 @@ bes4 \times 2/3 {bes4 es8~} es4 r4
 | }
 \alternative {
 	{as2 \times 2/3 {r4 as,8} \times 2/3 {as4 g8~}
-	\times 2/3 {g8 r g} \times 2/3 {g4 c8~} c4 r  |}
+	\times 2/3 {g4 g8} \times 2/3 {g4 c8~} c4 r  |}
 	{as'2 \times 2/3 {r4 g8} \times 2/3 {g4 as8~}
 	as2 r2 |}
 	}
@@ -403,8 +405,8 @@ es4 \times 2/3 {es4 es8} \times 2/3 {fes4 fes8} \times 2/3 {g4 as8~}
 as2. r4     
 f4 \times 2/3 {f4 f8} \times 2/3 {f4 f8} \times 2/3 {f4 bes,8~}
 \times 2/3 {bes4 bes8~} bes2 r4
-es4 \times 2/3 {es4 es8} \times 2/3 {fes4 fes8} \times 2/3 {g4 as8~}
-\times 2/3 {as4 as,8} \times 2/3 {as4 c8~} c4 r  
+es4 \times 2/3 {es4 es8} \times 2/3 {fes4 fes8} \times 2/3 {g4 as8}
+\times 2/3 {r4 as,8} \times 2/3 {as4 c8~} c4 r  
 
 %%%%%%% Strophe3 %%%%%%%%
 \times 2/3 {c'4 c8}  \times 2/3 {bes4 as8}  g4 f
@@ -431,8 +433,8 @@ es4 \times 2/3 {es4 es8} \times 2/3 {fes4 fes8} \times 2/3 {g4 as8~}
 as2. r4     
 f4 \times 2/3 {f4 f8} \times 2/3 {f4 f8} \times 2/3 {f4 bes,8~}
 \times 2/3 {bes4 bes8~} bes2 r4
-es4 \times 2/3 {es4 es8} \times 2/3 {fes4 fes8} \times 2/3 {g4 as8~}
-\times 2/3 {as4 as,8} \times 2/3 {as4 c8~} c4 r  
+es4 \times 2/3 {es4 es8} \times 2/3 {fes4 fes8} \times 2/3 {g4 as8}
+\times 2/3 {r4 as,8} \times 2/3 {as4 c8~} c4 r  
 %%%%%%% Strophe1u2 %%%%%%%%
 \times 2/3 {f4 f8}  \times 2/3 {f4 f8}  d4 d
 g, \times 2/3 {g4 c8~} c4 r4
@@ -440,7 +442,7 @@ as4  \times 2/3 {as4 des8~} des4 r4
 bes4 \times 2/3 {bes4 es8~} es4 r4
 \times 2/3 {c4 c8} \times 2/3 {c4 c8} f4 f
 \times 2/3 {as4 bes, bes} \times 2/3 {des4 es fes}
-as,2 \times 2/3 {r4 g8} \times 2/3 {g4 as8~}
+as2 \times 2/3 {r4 g8} \times 2/3 {g4 as8~}
 as2 r2  \bar "|."
 }
 
@@ -458,30 +460,6 @@ bassVerseTwo = \lyricmode {
  \set stanza = "1."
 \verseOne
 }
-
-%%%%%% Piano %%%%%%
-rh = \relative c'' {
-  \clef treble
-<as c f>4
-}
-
-lh = \relative c {
-\clef bass
-f8 
-
-}
-
-contrabass = \relative c {
-\clef bass
-f8 
-
-}
-
-%Dynamik = {
-%}
-
-%Pedal = {
-%}
 
 \book {
 \score {
@@ -521,24 +499,13 @@ f8
     \context Lyrics = "tenors" \lyricsto "tenors" \tenorVerseOne
     \context Lyrics = "basses" \lyricsto "basses" \bassVerseOne
   >>
-  
-% \new PianoStaff  <<
-   % \new Staff = "up" { \global \rh }
-    %\new Dynamics = "Dynamics_pf" \Dynamik
-   % \new Staff = "down" { \global \lh }
-    %\new Dynamics = "pedal" \Pedal
- % >>
 
-  %\new Staff = "bass" {\global \contrabass}
 >>
   \layout {
     \context {
       \Staff
-      \override VerticalAxisGroup #'minimum-Y-extent = #'(-2 . 2)
     }
-
   }
-
   \midi {}
 }
 }
