@@ -7,7 +7,7 @@
 }
 
 %Größe der Partitur
-#(set-global-staff-size 18)
+#(set-global-staff-size 16)
 
 #(set-default-paper-size "a4")
 
@@ -181,7 +181,7 @@ bassRefrain = {
 
   g4 g g4 g8 c,~
   c2 r4. e8
-  f f4. c4 c8 d~
+  f f4. f4 c8 d~
   d2 r4 d4
 
   g,4 g g g8 c~
@@ -344,7 +344,7 @@ altMusik = \relative c' {
   f2 es4) r
 
   d8 d d d d4 r
-  d2. d8 d
+  d2 r4 d8 d
   c4 c8 e~ e e4.
   e4 e8 e~ e4 e4
 
@@ -368,7 +368,7 @@ altMusik = \relative c' {
   f2 es8) r8 es8 es
 
   d8 d d d~ d4 r
-  d2. d8 d
+  d2 r4 d8 d
   c4 c8 e~ e4 r8 e
   e4 e8 e~ e4 e4
 
@@ -391,7 +391,7 @@ altMusik = \relative c' {
   f2 es8) es8 es es
 
   d8 d d d d4 r
-  d2. d8 d
+  d2 r4 d8 d
   c4 c8 e~ e4 r8 e
   e4 e8 e~ e4 e4
 
@@ -446,7 +446,7 @@ tenorMusik = \relative c' {
   bes2 c4) r
 
   bes8\f bes bes bes bes4 r
-  bes2. bes8 bes
+  bes2 r4 bes8 bes
   c4 c8 c~ c c4.
   c4 c8 c~ c4 c4
 
@@ -470,7 +470,7 @@ tenorMusik = \relative c' {
   bes2 c8) r8 c8\f c
 
   bes8 bes bes bes~ bes4 r
-  bes2. bes8 bes
+  bes2 r4 bes8 bes
   c4 c8 c~ c4 r8 c
   c4 c8 c~ c4 c4
 
@@ -493,7 +493,7 @@ tenorMusik = \relative c' {
   bes2 c8) c8\f c c
 
   bes8 bes bes bes bes4 r
-  bes2. bes8 bes
+  bes2 r4 bes8 bes
   c4 c8 c~ c4 r8 c
   c4 c8 c~ c4 c4
 
@@ -548,7 +548,7 @@ bassMusik = \relative c {
   g2 a4) r
 
   bes8 bes bes bes bes4 r
-  bes2. bes8 bes
+  bes2 r4 bes8 bes
   a4 a8 a~ a a4.
   a4 a8 a~ a4 a4
 
@@ -573,7 +573,7 @@ bassMusik = \relative c {
   g2 a8) r8 a8 a
 
   bes8 bes bes bes~ bes4 r
-  bes2. bes8 bes
+  bes2 r4 bes8 bes
   a4 a8 a~ a4 r8 a
   a4 a8 a~ a4 a4
 
@@ -596,7 +596,7 @@ bassMusik = \relative c {
   g2 a8) a8 a a
 
   bes8 bes bes bes bes4 r
-  bes2. bes8 bes
+  bes2 r4 bes8 bes
   a4 a8 a~ a4 r8 a
   a4 a8 a~ a4 a4
 
