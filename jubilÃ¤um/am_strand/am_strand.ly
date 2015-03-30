@@ -343,7 +343,7 @@ altMusik = \relative c' {
   fis4 (b a gis
   a cis b a
   gis1)
-  r2. d4
+  r2. fis4
   d d d d
   fis fis d fis
   e e e e
@@ -385,7 +385,7 @@ altMusik = \relative c' {
   fis4 (b a gis
   a cis b a
   gis1)
-  r2. d4
+  r2. fis4
   d d d d
   fis fis d fis
   e e e e
@@ -414,22 +414,22 @@ altMusik = \relative c' {
 %%%Bridge
   cis2\staccato cis\staccato
   cis\staccato cis\staccato
+  e dis
   e e
-  e e
-  fis fis
+  e fis
   fis fis
   f f
   f f
   e2  cis2
   cis2 cis
+  e dis
   e e
-  e e
-  fis1
-  r2 fis4 fis
+  e( fis)
+  r2 fis4\< fis
   f2 f f f
   gis1
   (a2 b a fis
-  f4) r2.
+  f4)\! r2.
    \key bes \major
 %%%%%%% lieg am Strand
   r4 f4 f8 f4  f8~
@@ -641,7 +641,7 @@ bassMusik = \relative c {
 
 %%%%%%% ich lieg am Strand
   r4 a4. a4 a8~
-  a4 a a8 a4 d,8~
+  a8 r a4 a8 a4 d,8~
   d4 d d8 d4 b8~
   b4 cis e8 fis4 a8~
   a8 r8 a4. a4 a8~
@@ -688,7 +688,7 @@ bassMusik = \relative c {
 
 %%%%%%% ich lieg am Strand
   r4 a4. a4 a8~
-  a4 a a8 a4 d,8~
+  a8 r8 a4 a8 a4 d,8~
   d4 d d8 d4 b8~
   b4 cis e8 fis4 a8~
   a8 r8 a4. a4 a8~
@@ -719,7 +719,7 @@ bassMusik = \relative c {
   d d
   a' a
   a a
-  a2 fis2
+  e fis2
   fis fis
   cis cis
   cis cis
@@ -741,7 +741,7 @@ bassMusik = \relative c {
   bes4 bes8 bes8~bes4 r4
   c4 c c8 c4 bes8~
   bes4 bes bes8 bes4 f8~
-  f8 r8 es4 es d8 c8~
+  f8 r8 es4 es8 d4 c8~
   c4 d es8 g4 f8~
   f1
 %%%%%%% ich lieg am Strand
