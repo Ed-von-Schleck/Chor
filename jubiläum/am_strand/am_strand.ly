@@ -120,14 +120,14 @@ Refrain = \lyricmode {
   so geht's doch auch!
 }
 RefrainSchluss = \lyricmode {
-  la la la lieg am Strand  im -- mer so ein biss -- chen ar -- ro -- gant.
+  la la la lieg im -- mer so ein biss -- chen ar -- ro -- gant.
   Das ist ja in -- tres -- sant
   Meer ist es wie mit der Ar -- beit: Ja, 
   es ist ge -- nug für al -- le da!
   
 }
 RefrainTenorSchluss = \lyricmode {
-  Ich lieg am Strand lieg am Strand im -- mer so ein biss -- chen ar -- ro -- gant.
+  Ich lieg am Strand lieg im -- mer so ein biss -- chen ar -- ro -- gant.
   Das ist ja und mit dem
   Meer ist es wie mit der Ar -- beit: Ja, 
   es ist ge -- nug für al -- le da!
@@ -297,7 +297,7 @@ sopranMusik = \relative c'' {
   \key bes \major
   %%%%%%% lieg am Strand
   r4 d4 d8 d4  d8~
-  d8 r bes4 c8 d4 es8~
+  d8 r bes4 c4 d8 es8~
   es4 es es8 es4 es8~
   es4 d c8 bes4 d8~
   d8 r8 r2.
@@ -432,8 +432,8 @@ altMusik = \relative c' {
   f4)\! r2.
    \key bes \major
 %%%%%%% lieg am Strand
-  r4 f4 f8 f4  f8~
-  f8 g4 f4 r4 g8~	
+  r4 f4 f8 f4  f8~(
+  f4 g4 f4) r8 g8~	
   g4 g g8 g4 g8~
   g4 bes a8 g4 f8~
   f r f4 f f 
@@ -482,10 +482,10 @@ tenorMusik = \relative c' {
         b b b b
         a a a a
         gis gis gis gis
-        gis8 r8 e4 fis8 a4 cis8~
+        gis8 r8 e4 fis8 a4 cis8
 
 %%%%%%% lieg am strand
-	cis4 r2.
+	r1
 	r4 cis4 d8 cis4 a8~
 	a4 a a8 a4 b8~
 	b4 a b8 d4 cis8~
@@ -529,10 +529,10 @@ tenorMusik = \relative c' {
         b b b b
         a a a a
         gis gis gis gis
-        gis8 r8 e4 fis8 a4 cis8~
+        gis8 r8 e4 fis8 a4 cis8
 
 %%%%%%% lieg am strand
-	cis4 r2.
+	r1
 	r4 cis4 d8 cis4 a8~
 	a4 a a8 a4 b8~
 	b4 a b8 d4 cis8~
@@ -562,7 +562,7 @@ tenorMusik = \relative c' {
         gis fis
         gis b
         a a 
-        b cis
+        b d
         c c 
         c d
         cis2  a2 
@@ -581,8 +581,8 @@ tenorMusik = \relative c' {
   \key bes \major
         f,4 g8 bes4 d8~
 %%%%%%% lieg am strand
-	d4 r2 r8 d8~
-        d8 es4 d4 r4 bes8~
+	d4 r2 r8 d8~(
+        d4 es4 d4) r8 bes8~
 	bes4 bes bes8 bes4 c8~
 	c4 bes c8 es4 d8~
 	d8 r d4 d d
@@ -593,9 +593,9 @@ tenorMusik = \relative c' {
         c8 r8 g4 c8 d4 es8~
         es4 d c8 bes4 c8~
         c1
-	r4 f,4 g8 bes4 d8~
+	r4 f,4 g8 bes4 d8
 %%%%%%% lieg am strand
-	d4 r2.
+	r1
 	r4 d4 es8 d4 bes8~
 	bes4 bes bes8 bes4 c8~
 	c4 bes c8 es4 d8~
@@ -733,8 +733,8 @@ bassMusik = \relative c {
   des4) r2.
   \key bes \major
 %%%%%%% ich lieg am Strand
-  r4 bes4 bes8 bes4 bes8~
-  bes8 bes4 bes4 r4 es,8~
+  r4 bes4 bes8 bes4 bes8~(
+  bes4 bes4 bes4) r8 es,8~
   es4 es es8 es4 c8~
   c4 d f8 g4 bes8~
   bes8 r8 bes4 bes bes
