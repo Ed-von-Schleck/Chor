@@ -41,7 +41,7 @@ chordNames = \chordmode {
   d1*2 bes1 g:m
   
   d1*2 a1:m f2 c
-  d1*2 bes1 g2:m a:7 a:7
+  d1*2 bes1 g2:m a:7 s
   
   d4. c8 f2 c g
   d4. c8 f2 c a
@@ -223,7 +223,7 @@ soprano = \relative c' {
   
   g'1~
   g2 r4 a
-  b b8 b a4 c4
+  b b8 b bes4 c4
   d2..\fermata
   \bar "|."
 }
