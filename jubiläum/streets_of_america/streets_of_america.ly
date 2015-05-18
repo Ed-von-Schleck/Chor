@@ -618,14 +618,14 @@ bassVerse = \lyricmode {
   the streets of A -- me -- ri -- ca
 }
 
-chordsPart = \new ChordNames \chordNames
+chordsPart = \new ChordNames \transpose d c \chordNames
 
 choirPart = \new ChoirStaff <<
   \new Staff = "sa" \with {
     instrumentName = \markup \center-column { "Soprano" "Alto" }
   } <<
-    \new Voice = "soprano" { \voiceOne \soprano }
-    \new Voice = "alto" { \voiceTwo \alto }
+    \new Voice = "soprano" { \voiceOne \transpose d c \soprano }
+    \new Voice = "alto" { \voiceTwo \transpose d c \alto }
   >>
   \new Lyrics \with {
     alignAboveContext = "sa"
@@ -636,8 +636,8 @@ choirPart = \new ChoirStaff <<
     instrumentName = \markup \center-column { "Tenor" "Bass" }
   } <<
     \clef bass
-    \new Voice = "tenor" { \voiceOne \tenor }
-    \new Voice = "bass" { \voiceTwo \bass }
+    \new Voice = "tenor" { \voiceOne \transpose d c \tenor }
+    \new Voice = "bass" { \voiceTwo \transpose d c \bass }
   >>
   \new Lyrics \with {
     alignAboveContext = "tb"
