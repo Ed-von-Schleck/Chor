@@ -2,7 +2,6 @@
 
 \header {
   title = "The Streets Of America"
-  subtitle = "Alpha 1"
   composer = "Text und Musik: Greg Graffin (Bad Religion)"
   arranger = "Arrangement: Ed von Schleck"
 }
