@@ -1,6 +1,6 @@
 \version "2.14.2"
 date = #(strftime "%d-%m-%Y" (localtime (current-time)))
-#(set-global-staff-size 16)
+#(set-global-staff-size 17)
 #(set-default-paper-size "a4")
 
 
@@ -14,6 +14,7 @@ global = {
   \key f \minor
   \time 6/8
   \tempo 4.= 60
+  %\compressFullBarRests
 }
 VerseOneSop = \lyricmode{
 No sign of life did fli -- cker
@@ -143,6 +144,7 @@ Full of hate full of pride
 Ah we screamed for re -- venge
 } 
 VerseThreeTenor = \lyricmode{
+ah __ ah __
 Va -- la he's that's what you said
 Then your oath's been sworn in vain.
 Ne -- ver trust the nor -- thern winds
@@ -154,6 +156,7 @@ fi -- nal -- ly you may fol -- low me.
 ah __
 }
 VerseThreeSop = \lyricmode{
+ah __ ah __
 Free -- ly you came and
 free -- ly shall de -- part.
 Ne -- ver trust the nor -- thern winds
@@ -166,6 +169,7 @@ ah __ Fare -- well he said.
 }
 
 VerseThree = \lyricmode{
+ah __ ah __
 Va -- la he's that's what you said
 Then your oath's been sworn in vain.
 Ne -- ver trust the nor -- thern winds
@@ -178,6 +182,7 @@ ah __ Fare -- well he said.
 }
 
 VerseThreeBass = \lyricmode{
+ah __ ah __
 Va -- la he's that's what you said
 Then your oath's been sworn in vain
 Ne -- ver trust the nor -- thern winds
@@ -361,11 +366,11 @@ s2. s2.
 }
 %16 r
 RSix = \relative c''{
-\compressFullBarRests
+%\compressFullBarRests
 R2.*16  
 }
 SoloR = \relative c''{
-\compressFullBarRests
+%\compressFullBarRests
 r2.*22
 }
 Ende = \relative c''{
@@ -373,40 +378,38 @@ R2.*9
 }
 soloMusik = \relative c'{
 f4\p as8 c as f
-des' bes  g~g bes des
+des' bes  g~ g bes des
 f,4 as8 c as f
 bes g e~e4.
 des'4 c8 bes4 as8 
-g4.~g4 r8
+g4.~ g4 r8
 f'4 es8 des4 es8 
-c4.~c4 s8
-s2. s2. s2. s2. s2. s2. s2. s2.
-s2. s2. s2. s2. s2. s2. s2. s2.
-s2. s2. s2. s2. s2. s2. s2. s2.
-s2. s2. s2. s2. s2. s2. s2. s2.
-s2. s2. s2. s2. s2. s2. s2. s2.
-s2. s2. s2. s2.
+c4.~ c4 r8
+
+R2.*44
+
 g'16 bes a g f d g8 g, g' 
+\break
 es8 d c d4 g,8
 es'8 d c d4 g,8
 es'8 d c a4.
 d16 es d c bes a g8 c8 es8
 d16 es d c bes a d4 d16 d 
 d16 c c bes c bes c4 d16 c
-es8 f es16 es es8 d s8
-\StrophenPausen
+\break
+es8 f es16 es es8 d r8
+%\StrophenPausen
+R2.*38
 g,8 d' d es d d
-bes16 d c8 bes
-a16 c bes8 a
+bes16 d c8 bes a16 c bes8 a
 g8 d' d es d d
-bes16 d c8 bes
-a16 c bes8 a
+bes16 d c8 bes a16 c bes8 a
 bes8  d d es f es
 d bes d c a f
 bes8  d d es f es
 d bes d c a f
- \break
-g d' e d4 b8 
+ %\break
+g d' e d4 b8
 c8. d16 c b c8 b g
 g d' e d4 b8 
 c8.  d16 c b g4.
@@ -424,44 +427,66 @@ c,8 c'16 bes c8 a8 g f
 d8 d'16 c d8 bes8 a g
 c,8 c'16 bes c8 a8 g f
 
+R2.*13
+r4.
+R2.*29
 
+\break
+g4 bes8 d8 bes g
+es' c a4 c8 es
+g,4 bes8 d bes g
+c a fis~fis r4
+es'4 d8 c4 bes8
+a4. r4.
 
+g'4 f8 es4 f8
+d8 es d d16 es d c d f
+<bes, d g>2.\arpeggio
 }
 
 
 sopMusik = \relative c''{
 \global
-s2.s2. s2. s2. s2. s2. s2.
-s2
-s8
-c8
-c4 bes8 as4 g8 
+R2.*7
+r2 r8 c8
+
+c4\p bes8 as4 g8 
 as4. f4 c8
 f4 f8 f4 as8
 g4. r4.
+
 f4 f8 f4 f8
 e8 e f g4.
 r4 f8 f g f 
 e4. r4.
+
+\break
+
 f8. \< f16 f8 f g as
 as2.
 r8 c,8 c c f as
 bes8. bes16 bes8 bes as g
+
 c8. c16 c8 c bes as
 as4.\! \f \> r4 f8 
 as8 as as as g f
 es4 f8 g4 es8 
+
 f4.\! \mf r4.
 r2. r2.
 bes8 bes bes bes es bes
 c2. r2.
+
 as8 as bes c bes as
- bes4.~bes4 r8
+ bes4.~ bes4 r8
 g8 \mf g g g a bes
 bes4. g4 \breathe g8
-d'4.~d8 es d
-d8 (c4~c8) r8 a
-bes4. \< c d bes
+
+d'4.~ d8 es d
+d8( c4~ c8) r8 a
+bes4. \< c
+d bes
+
 r8 bes bes bes c d
 c4 (bes8 c4 )r8
 %Refrain
@@ -478,11 +503,11 @@ d4. (\(d8. c16 bes8)
 bes4. r4 bes8
 d4 g8 g4 g8
 f8 r8 d8 c4 d8 
-g,4.\) s4.
+g,4.\) r4.
 
 %solo
-s2. s2. s2. s2. s2. s2.
-s2 s8 g8
+R2.*6
+r2 r8 g8
 d'8. d16 d8 d8. c16 bes8
 c4. r4 g8
 d'8 d8. d16 d8 c bes
@@ -495,7 +520,7 @@ f4 c8 c8 r8 c8
 \key a \minor
  a8\mf a a g g4
 e8 e~e16 f  e8  r8 e8
-\(e' d c b a b 
+\(e' d c b a b
 c d e d4 \)r8
  a8 a a a a a
  g g g g g g
@@ -525,15 +550,20 @@ bes4. r4 bes8
 d4 g8 g4 g8
 f8 r8 d8 c4 d8 
 g,4.\) r4.
-r2.*10
+
+R2.*7
+
 \break
-r2.*9
+d'2.(
+c4.~ c4) r8
+d2.(
+c4. d4) r8
+
+R2.*12
+
 \break
-r2.*4
-%\SoloR
 r2. 
-g8 \(a bes
-d4 g,8
+g,8 \(a bes d4 g,8
 bes4 d8 c4 bes8 a2.\)
 
 r4. bes16 bes bes8 bes
@@ -572,23 +602,16 @@ d'2. (es2) r4
 d2. (a2) r4
 bes4.\( (g) bes (a)\) 
 bes\( (g) es' (d)\)
-g,4 bes8 d8 bes g
-es' c a4 c8 es
-g,4 bes8 d bes g
-c a fis~fis r4
-es'4 d8 c4 bes8
-a4. r4.
-g'4 f8 es4 f8
-d8 es d d16 es d c d f
-<bes, d g>2.\arpeggio
+
+R2.*9
 \bar"|."
 }
 
 altoMusik = \relative c'' {
  \global
-s2. s s  s s s s
-s4. r4 c8
-c4\p bes8 as4 g8 
+R2.*7
+r4. r4 c8
+c4 bes8 as4 g8 
 as4. f4 c8
 c4 c8 c4 f8
 e4. r4.
@@ -632,10 +655,10 @@ bes4. (bes8. a16 g8)
 g4. (bes8. a16) g8
 bes4 bes8 bes4 bes8
 bes8 r8 bes8 f4 f8 
-d4. s4.
+d4. r4.
 
-s2. s2. s2. s2. s2.
-s2. s2 s8 g8
+R2.*6
+r2 r8 g8
 bes8.\f bes16 bes8 f8. f16 f8
 a4. r4 g8
 bes8 bes8. bes16 f8 f f
@@ -647,7 +670,7 @@ a4 f8 f8 r8 e8
 %Bridge
 \key a \minor
 a8 a a g g4
-e8 e~e16 f  e8 r8 e8
+e8 e~e16 f  e8 r8 e8 
 \(a e a b e, b' 
 c a c b a g\)
 a2.\(
@@ -678,14 +701,20 @@ g4. (bes8. a16) g8
 bes4 bes8 bes4 bes8
 bes8 r8 bes8 f4 f8 
 d4. r4.
-r2.*10
-\break
-r2.*9
-\break
-r2.*4
-%\SoloR 
+
+R2.*7
+
+g4.( a~
+a4. g4) r8
+g4.( a~
+a4. a4) r8
+
+R2.*12
+
+
+%\break
 %%Strophe
-d8\mf d d d d d
+d,8\mf d d d d d
 d4. r8 bes8 c
 d4 f8 f4 f8
 f2.
@@ -701,9 +730,10 @@ f4 f8 f4\breathe f16 f
 \time 3/8
 g4 g8
 \time 6/8
-g2.\> ~g2.
-f2.
-(g4.)  r4\! a8\mp
+g2.\> ~
+g2.
+f2. (
+g4.)  r4\! a8\mp
 bes4 f8 f4.
 R2.*3
 %Refrain
@@ -725,15 +755,14 @@ g2.\p (c2) r4
 g2. (fis2) r4
 g2.\p\< g4. (fis)\!
 g2.\p\< g4. (fis)\!
-s2. s2. s2. s2.
-s2. s2. s2. s2. s2.
+R2.*9
 
 }
 
 
 tenorMusik = \relative c' {
 \RSix
-as8. \<  as16 as8 as bes c
+as8.\p \<  as16 as8 as bes c
 des2.
 r8 c8 c c c c
 es8. es16 es8 es es es
@@ -755,8 +784,8 @@ es4.~es4 r8
 bes8\mf bes bes bes c d
 d4. bes4\breathe d8
 f4.~f8 es d
-d8 (c4~c8) r8 c8
-\< d4. d d d
+d8 (c4~c8) r8 c8 \<
+d4. d d d
 r8 d8 d d d d
 c4.~c4 r8  
 %Refrain
@@ -775,9 +804,11 @@ d4.~d4.
 es4. (g8. f16) es8
 d4 d8 es4 es8
 bes8 r8 bes8 a4 a8 
-bes4. s4.
-s2. s2. s2. s2. s2.
-s2. s2 s8 g8
+
+bes4. r4.
+R2.*6
+r2 r8 g8
+
 d'8.\f d16 d8 d8. d16 d8
 c4. r4 g8
 d'8 d8. d16 d8 d d
@@ -822,11 +853,16 @@ es4. (g8. f16) es8
 d4 d8 es4 es8
 bes8 r8 bes8 a4 a8 
 bes4. r4.
-r2.*10
-\break
-r2.*9
-\break
-r2.*4
+
+R2.*7
+
+d2.(
+c4 d8 e4) r8
+d2.(
+c4. d4) r8
+
+R2.*12
+
 
 %%Strophe
 bes8 a g bes a g
@@ -939,8 +975,8 @@ c4 a8 a8 r8 a8
 %Bridge
 \key a \minor
 a8 a a a a4
-a8 a~a16 a16 a8 r8 a,8
-\(a8 b c d a' g 
+a8 a~a16 a16 a8 r8 a,8 \(
+a8 b c d a' g 
 a b c g g g\)
 f2.\( f2 r8 f
 f2~f4\)
@@ -970,14 +1006,18 @@ es4.~es4 es8
 bes'4 bes8 es,4 es8
 d8 r8 bes8 f'4 f8 
 g4.\) r4.
-r2.*10
-\break
-r2.*9
-\break
-r2.*4
+
+R2.*7
+
+g4.( d
+f4. c'4) r8
+g4.( d
+f4. g4) r8
+
+R2.*12
+
 g8\mf a bes g a bes
-bes4.
-r8 g g
+bes4.  r8 g g
 bes4 bes8 bes4 bes8 
 c2.
 
@@ -1022,16 +1062,17 @@ es2.\(\p\< c4. (d)\)\!
 \Ende
 }
 
-
-
 \score {
 <<
+  \new ChordNames \set chordChanges = ##t \harmonies
+  \new Staff <<
+    \new Voice = "solo" { \global \soloMusik }
+  >>
   \new ChoirStaff <<
-    \new ChordNames \set chordChanges = ##t \harmonies
     \new Staff = women <<
       \new Voice = "sopranos" { \voiceOne << \global \sopMusik >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusik >> }
-       \new Voice = "solo" { \voiceThree << \global \soloMusik >> }
+       %\new Voice = "solo" { \voiceThree << \global \soloMusik >> }
       >>
     \new Lyrics \with { alignAboveContext = women } \lyricsto sopranos \SopText
     \new Lyrics \with { alignBelowContext = women } \lyricsto altos \AltText
@@ -1049,7 +1090,8 @@ es2.\(\p\< c4. (d)\)\!
     \context {
       \Staff
       \RemoveEmptyStaves
-      \override VerticalAxisGroup #'minimum-Y-extent = #'(-2 . 2)
+      %\override VerticalAxisGroup #'minimum-Y-extent = #'(-2 . 2)
+      \override VerticalAxisGroup #'remove-first = ##t
     }
   }
   \midi {}
