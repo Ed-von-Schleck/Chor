@@ -37,7 +37,7 @@ import email.utils
 TAG_REGEX = re.compile(r"(title|subtitle|composer|arranger)\s?=\s?\"([^\"]+)\"")
 def main():
   categories = {}
-  for root, dirs, files in os.walk(".",  topdown=True):
+  for root, dirs, files in os.walk(".",  topdown=True, followlinks=True):
     if ".git" in dirs:
       dirs.remove(".git")
     for f in files:
