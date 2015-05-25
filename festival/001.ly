@@ -44,7 +44,7 @@ sopranoChoirI = \relative c'' {
   
   e fis g a
   g g a a
-  gis a b gis
+  gis1
   r2 e
   
   fis4 g a b
@@ -62,13 +62,13 @@ sopranoChoirI = \relative c'' {
   e1
   r
   
-  d2 d4 d
+  d2 cis4 b
   cis2 cis4 cis
-  b2 b4 b4
-  a2 a4 r4
+  b2 cis4 b4
+  a2 fis4 r4
   
-  a2 a4 a
-  a2 b4 c
+  bes2 bes4 bes
+  a2 bes4 c
   es2. r4
   d2 es
   
@@ -115,7 +115,7 @@ altoChoirI = \relative c' {
   
   e fis g a
   g g a a
-  gis a b gis
+  gis1
   r2 e
   
   fis4 g a b
@@ -134,7 +134,7 @@ altoChoirI = \relative c' {
   r1
   
   fis2 fis4 fis
-  fis2 fis4 e
+  fis4( gis) a4 fis
   d2 d4 e
   fis2 fis4 r
   
@@ -179,7 +179,7 @@ tenorChoirI = \relative c' {
   
   c c b b
   b cis d e
-  d d d e
+  d1
   r2 cis
   
   a4 b cis d
@@ -197,13 +197,13 @@ tenorChoirI = \relative c' {
   b1
   r
   
-  d2 d4 d
+  d2 e4 d
   cis2 cis4 cis
-  b2 b4 b
+  b2 a4 b
   a2 a4 r
   
   d2 d4 d
-  c2 c4 c
+  c2 d4 es
   c2. r4
   bes2 b
   
@@ -229,7 +229,7 @@ bassChoirI = \relative c {
   
   e c c e
   g g g g
-  gis fis e e
+  gis1
   r2 a
   
   fis4 d d d
@@ -274,7 +274,7 @@ verseChoirI = \lyricmode {
   lei -- se fällt der Re -- gen 
   auf das Dach
   Wind streicht durch die Bäu -- me
-  Wind streicht durch die Bäu -- me
+  hört den Wind
   lauscht:
   Er er -- zählt Ge -- schich -- ten
   er er -- zählt Ge -- schich -- ten
@@ -337,6 +337,21 @@ sopranoChoirII = \relative c'' {
   r
   
   
+  d2 d4 d
+  e2 e4 e
+  e1
+  r
+  
+  d2 cis4 b
+  cis2 cis4 cis
+  b2 cis4 b4
+  a2 fis4 r4
+  
+  a4 a a2
+  a g4 fis
+  g1
+  
+  
 }
 
 altoChoirII = \relative c' {
@@ -371,11 +386,11 @@ altoChoirII = \relative c' {
   
   fis1~
   fis2 fis
-  g( b)
+  g2.( b4)
   a2. r4
   
   f1
-  as2. as4
+  a2. a4
   g1
   g2 r
   
@@ -383,6 +398,21 @@ altoChoirII = \relative c' {
   f2. f4
   g1
   r
+  
+  
+  fis2 fis4 fis
+  a2 g4 g
+  gis1
+  r1
+  
+  fis2 fis4 fis
+  fis4( gis) a4 fis
+  d2 d4 e
+  fis2 fis4 r
+  
+  fis4 fis fis2
+  e2 e4 fis
+  e1
   
   
   
@@ -432,6 +462,19 @@ tenorChoirII = \relative c' {
   e1
   r
   
+  d2 d4 d
+  c2 c4 c
+  b1
+  r
+  
+  d2 e4 d
+  cis2 cis4 cis
+  b2 a4 b
+  a2 a4 r
+  
+  b4 cis dis2
+  e2 b4 b
+  cis1
   
   
 }
@@ -445,8 +488,8 @@ bassChoirII = \relative c {
   e'1
   e2 e
   
-  b2( d
-  fis) fis
+  b2.( d4
+  fis2) fis
   g1
   fis2. r4
   
@@ -459,6 +502,23 @@ bassChoirII = \relative c {
   bes2. bes4
   c1
   r
+  
+  d,2 d4 fis
+  a2 a4 a
+  e1
+  r1
+  
+  b'2 b4 b
+  fis2 fis4 fis
+  g2 g4 g
+  d2 d4 r
+  
+  dis4 dis dis2
+  e2 e4 d
+  cis1
+  ais2 ais
+  
+  b2 b4 b
   
 }
 
