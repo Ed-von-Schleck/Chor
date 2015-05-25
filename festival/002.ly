@@ -1,4 +1,5 @@
-\version "2.19.3"
+%\version "2.19.3"
+\version "2.16.2"
 
 \header {
   title = "002"
@@ -30,6 +31,18 @@ sopranoChoirI = \relative c'' {
   cis4 d a r
   cis4 d a r
   e'2 d
+
+  r4 cis4 d fis,
+  a1
+  r4 cis d cis
+  b1
+
+  d2 d4 cis
+  d2 d4 e
+  d1
+  r
+
+
 }
 
 altoChoirI = \relative c' {
@@ -53,13 +66,43 @@ altoChoirI = \relative c' {
   d4 d d r
   d4 d d r
   d2 d
+
+  r4 fis fis fis
+  fis1
+  r4 g4 g g
+  gis2 (a4 gis)
+
+  fis2 g4 a
+  b2 b4 b
+  a1
+  r
   
 }
 
-tenorChoirI = \relative c' {
+tenorChoirI = \relative c {
   \global
   R1*4
   R1*4
+  
+  r4 d a' b
+  cis d a fis
+  g2 a
+  d a
+  
+  r4 d, a' b
+  cis d a fis
+  g1
+  r1
+
+  r4 d'4 d d
+  cis1
+  r4 d4 d d
+  b1
+
+  d2 d4 cis
+  d2 d4 e
+  d1
+  r
   
 }
 
@@ -68,6 +111,27 @@ bassChoirI = \relative c {
   R1*4
   R1*4
   
+  
+  r4 d a' b
+  cis d a fis
+  g2 a
+  d a
+  
+  r4 d, a' b
+  cis d a fis
+  g1
+  r1
+
+  r4 d'4 d d
+  cis1
+  r4 d4 d d
+  b1
+
+  d2 d4 cis
+  d2 d4 e
+  d1
+  r
+
 }
 
 verseChoirI = \lyricmode {
@@ -96,6 +160,16 @@ sopranoChoirII = \relative c'' {
   cis4 d a r
   cis4 d a r
   e'2 d 
+
+  b4 r2.
+  r4 cis d2
+  b4 r2.
+  r4 cis d2
+
+  a1
+  g
+  a
+  r
   
 }
 
@@ -120,12 +194,43 @@ altoChoirII = \relative c' {
   fis4 fis fis r
   g4 g g r
   g2 g
+
+  fis4 r2.
+  r4 fis fis( e)
+  d4 r2.
+  r4 e( a gis)
+
+  fis1
+  d
+  fis
+  r
   
 }
 
-tenorChoirII = \relative c' {
+tenorChoirII = \relative c {
   \global
-  % Music follows here.
+  R1*4
+  R1*4
+   
+  r4 d a' b
+  cis d a fis
+  g2 a
+  d a
+  
+  r4 d, a' b
+  cis d a fis
+  g1
+  r1
+
+  d'4 r2.
+  r4 a b( cis)
+  d4 r2.
+  r4 b a( b)
+
+  d1
+  b
+  d
+  r
   
 }
 
@@ -143,6 +248,16 @@ bassChoirII = \relative c {
   cis d a fis
   g1
   r1
+
+  b4 r2.
+  r4 fis g( a)
+  g4 r2.
+  r4 e fis( gis)
+
+  a1
+  g
+  fis
+  r
   
 }
 
