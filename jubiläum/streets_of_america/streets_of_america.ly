@@ -181,7 +181,7 @@ soprano = \relative c' {
   
   % verse 2
   
-  d4-. d-. d8 d4.
+  d4-. d-. d8 d4 r8
   d8( a) a a~ a4. r8
   bes4 a8 a~ a g4 f8
   g f g a g4. r8
@@ -243,12 +243,12 @@ alto = \relative c' {
   % Verse 1
   fis4 fis fis r8 g
   fis g4 g8 fis4 r
-  f?4 f8 f~ f e e d
+  f4 f8 f~ f e e d
   e d e d f4 e8 r
   
   fis4 a8 g fis fis fis g
   fis4 fis8 g fis4 r
-  f?4 d8 d~ d d d e
+  f4 d8 d~ d d d e
   e d d cis cis d4 r8
   
   fis4 fis fis8 a a a
@@ -288,7 +288,7 @@ alto = \relative c' {
   
   % verse 2
   
-  fis4-. fis-. fis8 fis4.
+  fis4-. fis-. fis8 fis4 r8
   fis8( a) a a~ a4. r8
   f4 f8 f~ f g4 f8
   g f g a g4. r8
@@ -395,7 +395,7 @@ tenor = \relative c {
   
     % verse 2
   
-  d4-. d-. d8 d4.
+  d4-. d-. d8 d4 r8
   d8( a) a a~ a4. r8
   d4 d8 d~ d d4 d8
   bes bes bes bes bes4. r8
@@ -492,7 +492,7 @@ bass = \relative c {
   
   % verse 2
   
-  d4-. d-. d8 d4.
+  d4-. d-. d8 d4 r8
   d8( a) a a~ a4. r8
   bes4 bes8 bes~ bes bes4 f8
   g g g g g4. r8

@@ -791,12 +791,12 @@ c4.~c4 r8
 %Refrain
  \key g \minor
 d4. \!\ff ~d4. 
-es4.~es4.
+es4.~es4.\breathe
 d8. d16 d8 d d d
 es4 es8 d4 r8
 
 d4.~d4. 
-es4.~es4.
+es4.~es4.\breathe
 d8. d16 d8 d d d
 es4 es8 d4 r8
 
@@ -840,12 +840,12 @@ f8 e d c4 r8
 %Refrain
  \key g \minor
 d4. \!\ff ~d4. 
-es4.~es4.
+es4.~es4.\breathe
 d8. d16 d8 d d d
 es4 es8 d4 r8
 
 d4.~d4. 
-es4.~es4.
+es4.~es4.\breathe
 d8. d16 d8 d d d
 es4 es8 d4 r8
 d4.~d4. 
@@ -891,12 +891,12 @@ R2.*4
 %Refrain
  \key g \minor
 d4. \!\ff ~d4. 
-es4.~es4.
+es4.~es4.\breathe
 d8. d16 d8 d d d
 es4 es8 d4 r8
 
 d4.~d4. 
-es4.~es4.
+es4.~es4.\breathe
 d8. d16 d8 d d d
 es4 es8 d4 r8
 d4.~d4. 
@@ -949,11 +949,11 @@ a4 (bes8 a4) r8
 %Refrain
  \key g \minor
 g4.~g4.\(  
-es4.~es4.
+es4.~es4.\breathe
 bes'8. bes16 bes8 bes8 bes bes
 c4 c8 d4\) r8
 g,4.~g4.\(  
-es4.~es4.
+es4.~es4.\breathe
 bes'8. bes16 bes8 bes8 bes bes
 c4 c8 d4\) r8
 g,4.~g4.\(  
@@ -994,11 +994,11 @@ bes bes bes f4 r8\!
 %Refrain
  \key g \minor
 g4.~g4.\(  
-es4.~es4.
+es4.~es4.\breathe
 bes'8. bes16 bes8 bes8 bes bes
 c4 c8 d4\) r8
 g,4.~g4.\(  
-es4.~es4.
+es4.~es4.\breathe
 bes'8. bes16 bes8 bes8 bes bes
 c4 c8 d4\) r8
 g,4.~g4.\(  
@@ -1030,7 +1030,7 @@ r2 r8 g
 
 bes16 bes bes8 bes f4 f16 f
 d8 d d g8 r8 g8
-d4 d8 f4\breathe f16 f
+bes4 bes8 f4\breathe f16 f
 \time 3/8
 c'4 c8
 \time 6/8
@@ -1040,11 +1040,11 @@ R2.*4
 %Refrain
  \key g \minor
 g4.~g4.\(  
-es4.~es4.
+es4.~es4.\breathe
 bes'8. bes16 bes8 bes8 bes bes
 c4 c8 d4\) r8
 g,4.~g4.\(  
-es4.~es4.
+es4.~es4.\breathe
 bes'8. bes16 bes8 bes8 bes bes
 c4 c8 d4\) r8
 g,4.~g4.\(  

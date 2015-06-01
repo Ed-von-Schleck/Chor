@@ -1,4 +1,5 @@
 \version "2.13.49"
+date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
 \header {
   title = "The Meaning Of Life"
@@ -329,7 +330,7 @@ tenor = \relative c' {
   d4. r
   r r8 g, b
   d d d d4.
-  r4. r8 g, c
+  r4. r8 b d
   e e e e4.
   r4. r4 e8
   
@@ -550,7 +551,7 @@ verseFive = \lyricmode {
 verseSix = \lyricmode {
   So just why, why are we here?
   And just what, what, what, what do we fear?
-  Well çe soir, for a change, it will all be made clear,
+  Well ce soir, for a change, it will all be made clear,
   for this is the Mea -- ning of Life
   
 }
@@ -562,7 +563,7 @@ sopranoVerse = \lyricmode {
   \verseFour
   \verseFive
   \verseSix
-  c'est la sens de la vie,
+  c'est le sens de la vie,
   this is the Mea -- ning of Life.
 }
 
