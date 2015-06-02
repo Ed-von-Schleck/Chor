@@ -642,7 +642,7 @@ pianoPart = \new PianoStaff \with {
   <<
     \choirIPart
     \choirIIPart
-    \pianoPart
+    %\pianoPart
   >>
   \layout { }
   \midi { \tempo 4=135 }
