@@ -1,7 +1,9 @@
 \version "2.19.3"
 
 \header {
-  title = "..."
+  title = "Ankunft und Abend"
+  composer = "Christian H. M. Schramm"
+
 }
 
 global = {
@@ -57,6 +59,8 @@ sopranoChoirI = \relative c'' {
   d
   e2. r4
   
+  \repeat volta 2 {
+  
   d2 d4 d
   e2 e4 e
   e1
@@ -75,9 +79,10 @@ sopranoChoirI = \relative c'' {
   f2 f4 e
   d2 c4 bes
   g2 g4 d'
-  d2 d4 r
+  d2 d4 r\fermata
   
-  
+  }
+  R1*16
   
 }
 
@@ -121,7 +126,7 @@ altoChoirI = \relative c' {
   fis4 g a b
   cis d e, fis
   gis a gis eis
-  fis e d d
+  fis e fis fis
   
   g1
   g1
@@ -147,6 +152,8 @@ altoChoirI = \relative c' {
   bes2 a4 g
   e2 e4 e
   g2 g4 r
+
+  R1*16
   
 }
 
@@ -205,12 +212,14 @@ tenorChoirI = \relative c' {
   d2 d4 d
   c2 d4 es
   c2. r4
-  bes2 b
+  bes2 bes
   
   c2 d4 e
   f2 d4 d
   c2 c4 c
-  b2 b4 r4
+  b2 b4 r4\fermata
+  
+  R1*16
 }
 
 bassChoirI = \relative c {
@@ -262,6 +271,8 @@ bassChoirI = \relative c {
   c2 c4 c
   g2 g4 r
   
+  R1*16
+  
 }
 
 verseChoirI = \lyricmode {
@@ -281,14 +292,35 @@ verseChoirI = \lyricmode {
   sei -- ne Stim -- me
   Lob und Kla -- ge
   
+  \set stanza = "1."
   Fest sind die Mau -- ern aus Stein
   scharf wird das In -- nen vom Au -- ßen ge -- schie -- den
   Dun -- kel -- heit macht die Welt klein
   Licht ver -- grö -- ßert Ge -- dan -- ken und Wor -- te und Lie -- der
+ 
+}
+
+verseChoirI_zwei = \lyricmode {
+  _ _ _ _ _ _
+  _ _ _ _ _ _ _
+  _ _ _ _ _ _ _
+  _ _ _ _ _ _
   
+  _ _ _ _ _ _
+  _ _ _ _ _ _
+  _ _ _
+  _ _ _ _ _ _
+  _ _ _ _
+  _ _ _ _ _ _
+  _ _ _ _ _ _
+  _ _ _ _ _ _ _
   
-  
-  
+  \set stanza = "2."
+  Wor -- te, Ge -- sprä -- che, Ge -- sang
+  Raum wird er -- schaf -- fen für einst frem -- de Men -- schen
+  Zeit oh -- ne Ei -- le und Hast
+  ist der Nacht von den Men -- schen durch Licht ab -- ge -- run -- gen
+ 
 }
 
 sopranoChoirII = \relative c'' {
@@ -337,20 +369,27 @@ sopranoChoirII = \relative c'' {
   r
   
   
-  d2 d4 d
-  e2 e4 e
+  d2 d
+  cis2 d
+  b cis
+  a2. r4
+  
+  a2 b
+  b a
+  fis1(
+  e2) r4 e
+  
+  d'2 d
+  cis2 d
+  b cis
+  a2. r4
+  
+  d2 b
+  g d
+  fis1
   e1
-  r
   
-  d2 cis4 b
-  cis2 cis4 cis
-  b2 cis4 b4
-  a2 fis4 r4
-  
-  a4 a a2
-  a g4 fis
-  g1
-  
+  \bar "|."
   
 }
 
@@ -400,20 +439,25 @@ altoChoirII = \relative c' {
   r
   
   
-  fis2 fis4 fis
-  a2 g4 g
-  gis1
-  r1
+  fis2 fis
+  g2 g
+  gis gis
+  a2. r4
   
-  fis2 fis4 fis
-  fis4( gis) a4 fis
-  d2 d4 e
-  fis2 fis4 r
+  fis2 fis
+  dis dis
+  d( b
+  cis2) r4 cis
   
-  fis4 fis fis2
-  e2 e4 fis
-  e1
+  fis2 fis
+  g2 g
+  gis eis
+  e2. r4
   
+  d2 d
+  d d
+  d1
+  b1
   
   
 }
@@ -445,7 +489,7 @@ tenorChoirII = \relative c' {
   a1
   a2. a4
   gis1
-  g2 g
+  g?2 g
   
   b1(
   cis2) a
@@ -462,20 +506,27 @@ tenorChoirII = \relative c' {
   e1
   r
   
-  d2 d4 d
-  c2 c4 c
-  b1
-  r
   
-  d2 e4 d
-  cis2 cis4 cis
-  b2 a4 b
-  a2 a4 r
   
-  b4 cis dis2
-  e2 b4 b
-  cis1
+  d2 d
+  e2 e
+  eis eis
+  fis4( e d) r
   
+  c2 c
+  b b
+  gis1(
+  a2) r4 a
+  
+  d2 d
+  e2 e
+  eis cis
+  fis,2. r4
+  
+  g2 b
+  bes bes
+  a1
+  a1
   
 }
 
@@ -503,22 +554,27 @@ bassChoirII = \relative c {
   c1
   r
   
-  d,2 d4 fis
-  a2 a4 a
-  e1
-  r1
   
-  b'2 b4 b
-  fis2 fis4 fis
-  g2 g4 g
-  d2 d4 r
+  d,2 d
+  e2 e
+  eis eis
+  fis2. r4
   
-  dis4 dis dis2
-  e2 e4 d
-  cis1
-  ais2 ais
+  d2 d
+  dis dis
+  e1(
+  a2) r4 a
   
-  b2 b4 b
+  d,2 d
+  e2 e
+  eis eis
+  fis2. r4
+  
+  g2 g
+  g g
+  a1
+  a,1
+  
   
 }
 
@@ -528,11 +584,31 @@ verseChoirII = \lyricmode {
   sei uns mehr als Un -- ter -- kunft
   für die näch -- sten Ta -- ge
   
+  \set stanza = "1."
   Mau -- ern aus Stein
   schei -- den Welt __ von Welt -- en
   au -- ßen das Dun -- kel
   in -- nen das Licht
   
+  Scheint die Zeit auch still zu stehn
+  naht sich doch der Tag, und
+  wer -- den wir auch schla -- fen gehn
+  bleibt uns die -- ser A -- bend
+  
+  
+}
+
+verseChoirII_zwei = \lyricmode {
+  _ _ _ _ _ _
+  _ _ _ _ _ _
+  _ _ _ _ _ _ _
+  _ _ _ _ _ _
+  
+  \set stanza = "2."
+  Wort und Ge -- sang
+  schaf -- fen Raum __ für Men -- schen
+  Zeit für ein -- an -- der
+  und für uns selbst
 }
 
 right = \relative c'' {
@@ -584,7 +660,6 @@ choirIPart = \new ChoirStaff \with {
   instrumentName = "Choir I"
 } <<
   \new Staff \with {
-    midiInstrument = "pad 4 (choir)"
     instrumentName = \markup \center-column { "Soprano" "Alto" }
   } <<
     \new Voice = "sopranoI" { \voiceOne \sopranoChoirI }
@@ -593,8 +668,10 @@ choirIPart = \new ChoirStaff \with {
   \new Lyrics \with {
     \override VerticalAxisGroup #'staff-affinity = #CENTER
   } \lyricsto "sopranoI" \verseChoirI
+  \new Lyrics \with {
+    \override VerticalAxisGroup #'staff-affinity = #CENTER
+  } \lyricsto "sopranoI" \verseChoirI_zwei
   \new Staff \with {
-    midiInstrument = "pad 4 (choir)"
     instrumentName = \markup \center-column { "Tenor" "Bass" }
   } <<
     \clef bass
@@ -608,7 +685,6 @@ choirIIPart = \new ChoirStaff \with {
   instrumentName = "Choir II"
 } <<
   \new Staff \with {
-    midiInstrument = "pad 4 (choir)"
     instrumentName = \markup \center-column { "Soprano" "Alto" }
   } <<
     \new Voice = "sopranoII" { \voiceOne \sopranoChoirII }
@@ -617,8 +693,10 @@ choirIIPart = \new ChoirStaff \with {
   \new Lyrics \with {
     \override VerticalAxisGroup #'staff-affinity = #CENTER
   } \lyricsto "sopranoII" \verseChoirII
+  \new Lyrics \with {
+    \override VerticalAxisGroup #'staff-affinity = #CENTER
+  } \lyricsto "sopranoII" \verseChoirII_zwei
   \new Staff \with {
-    midiInstrument = "pad 4 (choir)"
     instrumentName = \markup \center-column { "Tenor" "Bass" }
   } <<
     \clef bass
@@ -627,16 +705,6 @@ choirIIPart = \new ChoirStaff \with {
   >>
 >>
 
-pianoPart = \new PianoStaff \with {
-  instrumentName = "Piano"
-} <<
-  \new Staff = "right" \with {
-    midiInstrument = "acoustic grand"
-  } \right
-  \new Staff = "left" \with {
-    midiInstrument = "acoustic grand"
-  } { \clef bass \left }
->>
 
 \score {
   <<
