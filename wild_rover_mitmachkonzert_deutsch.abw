@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:svg="http://www.w3.org/2000/svg" xid-max="64" xmlns:dc="http://purl.org/dc/elements/1.1/" styles="unlocked" fileformat="1.1" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.9.1" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:de-DE; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="abiword.date_last_changed">Thu Jul  2 17:19:42 2015
+</m>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.creator">Christian Schramm</m>
+<m key="dc.date">Thu Jul  2 17:19:42 2015
+</m>
+<m key="dc.format">application/x-abiword</m>
+</metadata>
+<rdf>
+</rdf>
+<history version="1" edit-time="816" last-saved="1435850382" uid="dcc65b2e-20cb-11e5-810e-891abe7ebe3b">
+<version id="1" started="1435850382" uid="c39048d4-20cd-11e5-810e-891abe7ebe3b" auto="0" top-xid="64"/>
+</history>
+<styles>
+<s type="P" name="Heading 1" basedon="Normal" followedby="Normal" props="keep-with-next:1; margin-top:22pt; font-weight:bold; margin-bottom:3pt; font-family:Liberation Sans; font-size:17pt"/>
+<s type="P" name="Normal" followedby="Current Settings" props="font-family:Times New Roman; margin-top:0pt; color:000000; margin-left:0pt; text-position:normal; widows:2; font-style:normal; text-indent:0in; font-variant:normal; font-weight:normal; margin-right:0pt; font-size:12pt; text-decoration:none; margin-bottom:0pt; line-height:1.0; bgcolor:transparent; text-align:left; font-stretch:normal"/>
+</styles>
+<pagesize pagetype="A4" orientation="portrait" width="210.000000" height="297.000000" units="mm" page-scale="1.000000"/>
+<section xid="63" props="page-margin-footer:0.5000in; page-margin-header:0.5000in; page-margin-right:1.0000in; page-margin-left:1.0000in; page-margin-top:1.0000in; page-margin-bottom:1.0000in">
+<p style="Heading 1" xid="64" props="dom-dir:ltr"><c>Deutsch</c></p>
+<p style="Normal" xid="51" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L"></c></p>
+<p style="Normal" xid="52" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt"></c><c props="font-family:URW Gothic L; font-size:13pt">1. I've been a wild rover for manys the year,</c></p>
+<p style="Normal" xid="45" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-family:URW Gothic L; font-size:13pt; font-style:italic">Ich war viele Jahre lang ein Vagabund </c></p>
+<p style="Normal" xid="23" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt">and I spent all my money on whiskey and beer.</c></p>
+<p style="Normal" xid="46" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-family:URW Gothic L; font-size:13pt; font-style:italic">und habe mein Geld für Whiskey und Bier ausgegeben.</c></p>
+<p style="Normal" xid="24" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt">and now I'm returning with gold in great store,</c></p>
+<p style="Normal" xid="47" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-family:URW Gothic L; font-size:13pt; font-style:italic">Nun kehre ich zurück mit einer Menge Geld</c></p>
+<p style="Normal" xid="25" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt">and I never will play the wild rover no more.</c></p>
+<p style="Normal" xid="48" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-family:URW Gothic L; font-size:13pt; font-style:italic">und ich werde nie mehr den Vagabunden spielen</c></p>
+<p style="Normal" xid="26" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt"></c></p>
+<p style="Normal" xid="27" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt">And it's no, nay, never! No, nay, never, no more,</c></p>
+<p style="Normal" xid="28" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt">will I play the wild rover. No never no more!</c></p>
+<p style="Normal" xid="29" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt"></c></p>
+<p style="Normal" xid="30" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt">2. I went to an alehouse I used to frequent,</c></p>
+<p style="Normal" xid="49" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-family:URW Gothic L; font-size:13pt; font-style:italic">Ich ging in eine Kneipe, die ich oft besucht hatte</c></p>
+<p style="Normal" xid="31" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt">and I told the landlady me money was spent.</c></p>
+<p style="Normal" xid="50" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-family:URW Gothic L; font-size:13pt; font-style:italic">und sagte der Wirtin, ich hätte kein Geld.</c></p>
+<p style="Normal" xid="32" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt">I asked her for credit, she answered me “nay,</c></p>
+<p style="Normal" xid="53" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-family:URW Gothic L; font-size:13pt; font-style:italic">Ich bat um Kredit, sie sagt mir „Nein,</c></p>
+<p style="Normal" xid="33" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt">such a custom as yours I could have any day”.</c></p>
+<p style="Normal" xid="54" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-family:URW Gothic L; font-size:13pt; font-style:italic">solche Kundschaft wie Du könnte ich jeden Tag haben.“</c></p>
+<p style="Normal" xid="34" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt"></c></p>
+<p style="Normal" xid="35" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt">3. I pulled from me pocket a handful of gold,</c></p>
+<p style="Normal" xid="55" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-family:URW Gothic L; font-size:13pt; font-style:italic">Ich zog eine handvoll Gold aus meiner Tasche</c></p>
+<p style="Normal" xid="36" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt">and on the round table it glittered and rolled.</c></p>
+<p style="Normal" xid="56" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-family:URW Gothic L; font-size:13pt; font-style:italic">und auf dem runden Tisch glitzerte und rollte es</c></p>
+<p style="Normal" xid="37" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt">She said “I have whiskeys and wines of the best,</c></p>
+<p style="Normal" xid="57" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-family:URW Gothic L; font-size:13pt; font-style:italic">Sie sagte, „Ich habe Whiskey und Wein vom Feinsten</c></p>
+<p style="Normal" xid="38" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt">and the words that I told you were only in jest”.</c></p>
+<p style="Normal" xid="58" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-family:URW Gothic L; font-size:13pt; font-style:italic">und was ich gerade gesagt habe, war nur zum Spaß.”</c></p>
+<p style="Normal" xid="39" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt"></c></p>
+<p style="Normal" xid="40" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt">4. “I'll have none of your whiskeys nor fine Spanish wines,</c></p>
+<p style="Normal" xid="59" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-family:URW Gothic L; font-size:13pt; font-style:italic">„Ich will keines Deiner Whiskeys oder guten Spanischen Weine,</c></p>
+<p style="Normal" xid="41" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt">for your words show you clearly as no friend of mine.</c></p>
+<p style="Normal" xid="60" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-family:URW Gothic L; font-size:13pt; font-style:italic">denn Deine Worte zeigen, dass Du kein Freund von mir bist.</c></p>
+<p style="Normal" xid="42" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt">there's others most willing to open a door,</c></p>
+<p style="Normal" xid="61" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-family:URW Gothic L; font-size:13pt; font-style:italic">Es gibt andere, die sehr bereit sind, die Tür zu öffnen</c></p>
+<p style="Normal" xid="43" props="text-align:left; dom-dir:ltr"><c props="font-family:URW Gothic L; font-size:13pt">to a man coming home from a far distant shore.”</c></p>
+<p style="Normal" xid="62" props="text-align:left; dom-dir:ltr"><c props="font-weight:bold; font-family:URW Gothic L; font-size:13pt; font-style:italic">für einen Mann, der von fremden Küsten zurückkehrt.”</c></p>
+<p style="Normal" xid="44" props="text-align:left; dom-dir:ltr"><c></c></p>
+</section>
+</abiword>
