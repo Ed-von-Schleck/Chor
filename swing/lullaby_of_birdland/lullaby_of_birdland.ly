@@ -1,5 +1,5 @@
 \version "2.18.2"
-
+date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 %Größe der Partitur
 #(set-global-staff-size 16)
 
@@ -14,7 +14,7 @@
   title = "Lullaby of Birdland"
   composer = "George Shearing"
   arranger = "Andreas Fiebig"
-  subtitle = "17. 02. 2015"
+  subtitle = \date
 }
 
 global = {
@@ -336,8 +336,8 @@ b~ \times 2/3 {b4 c8~} c4 r
 \times 2/3 {bes4 bes8} \times 2/3 {r4 es8~} es4 r
 \times 2/3 {es4 es8} \times 2/3 {des4 c8} bes4 as
 \times 2/3 {f4 c' bes} \times 2/3 {fes4 c'  bes}
-es,2 r4 \times 2/3 {r4 f8~} 
-f4 \times 2/3 {r4 e8~} e4 r
+es,2 r4 \times 2/3 {r4 g8~} 
+g4 \times 2/3 {r4 g8~} g4 r
 %%%%%%% Repeat2 %%%%%%%%
 \times 2/3 {as4 as8}  \times 2/3 {as4 as8}  as4 as
 g \times 2/3 {g4 g8~} g4 r4

@@ -49,7 +49,7 @@ verseTwo = \lyricmode {
 Ich has -- se O -- per und O -- pe -- ret -- te,
 Kan -- ta -- ten, So -- na -- ten und Me -- nu -- et -- te,
 Kom -- po -- nis -- ten und Di -- ri -- gen -- ten,
-Pro -- fis, Am -- a -- teu -- re, Mu -- sik -- stu -- den -- ten
+Pro -- fis, Am -- a -- teu -- re, Phy -- sik -- stu -- den -- ten
 ich has -- se Hör -- ner, Po -- saun -- en, Trom -- pe -- ten
 und auch Fa -- got -- te, O -- bo -- en und Flö -- ten
 ich has -- se Pau -- ken, Trom -- meln und Bec -- ken,
@@ -133,8 +133,8 @@ c8 c8 r e f c r c
 c4 d4 c b
 
 r8 b8~ b b b c r d
-c4 g f4 e8 r
-f f f f a a r b
+c4 g f4 e4 
+f8 f f f a a r b
 a4 gis c b
 
 
@@ -199,7 +199,7 @@ r8 c c c c c c c
 b4 r8 b a4 a
 
 r8 c c c c c b4
-c8 r c r c4 r4
+c8 r c r c8 r4.
 b8 b r b b b r4
 b8 r b r b r b4
 
@@ -285,8 +285,8 @@ f8 f8 r f a a r f
 e4 f a d,
 
 r8 d8~ d d d d r g
-a4 f c4 cis8 r
-d d d d e f r e
+a4 f c4 cis4 
+d8 d d d e f r e
 e4 e e d
 
 
@@ -351,7 +351,7 @@ r8 a a a a a a a
 gis4 r8 gis a4 a
 
 r8 a a a a a a4
-a8 r a r a4 r4
+a8 r a r a8 r4.
 gis8 gis r gis gis gis r4
 gis8 r gis r gis r4.
 
@@ -439,8 +439,8 @@ a8 a8 r c a a r a
 a4 a a gis
 
 r8 b8~ b b b c r b
-c4 c c4 bes8 r
-a a a c c c r b
+c4 c c4 bes4 
+a8 a a c c c r b
 b4 b gis gis
 
 
@@ -505,7 +505,7 @@ r8 f f f f f f f
 e4 r8 e c4 cis
 
 r8 f f f f f e4
-f8 r f r f4 r4
+f8 r f r f8 r4.
 e8 e r e e e r4
 d8 r d r d r4.
 
@@ -592,8 +592,8 @@ f8 f8 r f f f r c
 d4 d e e
 
 r8 g8~ g g g g r g
-f4 d c4 g'8 r
-d d d d d d r d
+f4 d c4 g'4
+d8 d d d d d r d
 e4 d c b
 
 r8 a8 a a a a r a
@@ -627,7 +627,7 @@ f4 es d c)
 bes2( g~
 g2) r
 
-%%%%%%% Strophe 4 %%%%%%
+%%%%%%% Strophe 3 %%%%%%
 r8 a8 a a a a c r
 b4 g c e4
 r8 f8 f f f f f c
@@ -654,7 +654,7 @@ r8 d d d d d d d
 e,4 r8 e a4 a
 
 r8 d d d d d d r8
-d r d r d4 r4
+d r d r d r4.
 e,8 e r e e e r4
 gis8 r gis r gis r4.
 
@@ -670,7 +670,7 @@ bes2( g~
 g2) r
 
 %%%%%% Refrain %%%%%%%
-a1(
+a'1(
 e4 d c b)
 a2( as
 es'4 d c bes)
@@ -976,7 +976,7 @@ r2. a4
 r1
 
 <a~ a'~>1
-<a~ a'~>
+<a a'>
 r1
 r1
 r1
