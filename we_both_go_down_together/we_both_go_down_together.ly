@@ -6,7 +6,7 @@
 }
 
 %Größe der Partitur
-#(set-global-staff-size 20)
+#(set-global-staff-size 19)
 
 %Abschalten von Point&Click
 #(ly:set-option 'point-and-click #f)
@@ -320,12 +320,12 @@ b4 a8 g~ g a b c~
 
 %Refrain
 c4 r c4. d8~
-d4 r d4. c8~
+d4 r e8( d4) c8~
 c2. r4
 a2. b8 c~
 
 c4 r c4. d8~
-d4 r d4. c8~
+d4 r e8( d4) c8~
 c2 r4. c8
 
 d4-. d-. d-. b8 c
@@ -344,12 +344,12 @@ b4 a8 g~ g a b c~
 
 %Refrain
 c4 r c4. d8~
-d4 r d4. c8~
+d4 r e8( d4) c8~
 c2. r4
 a2. b8 c~
 
 c4 r c4. d8~
-d4 r d4. c8~
+d4 r e8( d4) c8~
 c2 r4. c8
 
 d4-. d-. d-. d8 c
@@ -378,22 +378,22 @@ b4 a8 g~ g a b c~
 
 %Refrain
 c4 r c4. d8~
-d4 r d4. c8~
+d4 r e8( d4) c8~
 c2. r4
 a2. b8 c~
 
 c4 r c4. d8~
-d4 r d4. c8~
+d4 r e8( d4) c8~
 c2 r2
 a2. b8 c~
 
 c4 r c4. d8~
-d4 r d4. c8~
+d4 r e8( d4) c8~
 c2. r4
 a2. b8 c~
 
 c4 r c4. d8~
-d4 r d4. c8~
+d4 r e8( d4) c8~
 c2 r4. c8
 
 d4-. b-. gis-. b8 c
