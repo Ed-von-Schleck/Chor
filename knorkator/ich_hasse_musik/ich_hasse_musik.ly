@@ -335,7 +335,7 @@ e4 e e d
 
 
 r8 e8 e e e e r e
-d4 d d r8 e
+d4 g e r8 e
 f4 r8 f a4 r8 f
 e e r f a4( d,)
 

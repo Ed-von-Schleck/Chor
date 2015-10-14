@@ -564,7 +564,7 @@ R2.*12
 \break
 r2. 
 g,8 \(a bes d4 g,8
-bes4 d8 c4 bes8 a2.\)
+bes4 d8 c4 bes8 a4.\) r4.
 
 r4. bes16 bes bes8 bes
 bes a g~g4.
@@ -717,7 +717,7 @@ R2.*12
 d,8\mf d d d d d
 d4. r8 bes8 c
 d4 f8 f4 f8
-f2.
+f4. r4.
 r4. g16\f g g8 g
 g g g~g4.
 r4. f16 f f8 f
@@ -868,7 +868,7 @@ R2.*12
 bes8 a g bes a g
 g4. r8 g a
 bes4 d8 c4 bes8 
-a2.
+a4. r4.
 
 
 
@@ -1019,7 +1019,7 @@ R2.*12
 g8\mf a bes g a bes
 bes4.  r8 g g
 bes4 bes8 bes4 bes8 
-c2.
+c4. r4.
 
 r4. g16\f g g8 g
 g g g~g4.
