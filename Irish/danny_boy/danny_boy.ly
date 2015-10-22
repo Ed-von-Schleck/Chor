@@ -1,12 +1,12 @@
 \version "2.12.2"
 
 %Größe der Partitur
-#(set-global-staff-size 16.5)
+#(set-global-staff-size 16)
 
 #(set-default-paper-size "a4")
 
 %Abschalten von Point&Click
-#(ly:set-option 'point-and-click #f)
+%#(ly:set-option 'point-and-click #f)
 
 
 \header {
@@ -83,10 +83,10 @@ e2 \)r8 cis\( d e
 fis4. e8 fis b a fis 
 e (d) b4\) r8 cis\( d e
 fis4. g8 fis8. e16 d8 e
-d2 r8\) a' \(b cis
+d2\) r8 a' \(b cis
 %%Refrain%%
 d4. cis8 cis b a b 
-a (fis) d4~d8\) a'\( b cis
+a (fis) d4\) r8 a'\( b cis
 d4. cis8 cis8. \)b16\( a8 fis
 e2\) r8 a\( a a
 fis'4. e8  e d b d
@@ -125,14 +125,14 @@ d4. e8 d d d d
  d (b cis4) r8 a b cis
  
  d4. \p cis8 c c c c 
- b4 b r8 \<a8 d cis
+ b4 b r8 a8\< d cis
  d4. \mf  \> d8 d8. b16 b8 cis \!
- d2 r8\< e8 g a
+ d2 r8 e8\< g a
 %%Refrain%%
 fis4. \f fis8 g g g g \>
-d4 d\<~d8 d d e
+d4 d\! r8 d\< d e
 fis4.\f  fis8\>  a8. \p  g16 fis8 d
-d (b cis4) r8 cis \< d e
+d (b cis4) r8 cis\< d e
 a4. \f a8 g g d d
 \> d4 a\p  r8 bes bes bes 
 a8 d d d b b b a
@@ -147,10 +147,10 @@ d4. e8 d d d d
  d4. \p cis8 c c c c 
  b4 b r8 \<a8 d cis
  d4. \mf \> d8 d8 b b8. cis16 \!
- d2 r8\< e8 g a
+ d2 r8 e8\< g a
 %%Refrain%%
 fis4. \f fis8 g g g g \>
-d4 d\<~d8 d d e
+d4 d\!~d8\< d d e
 fis4.\f  fis8\>  a8. \p g16 fis8 d
 d (b cis4) r8 cis \< d e
 a4. \f a8 g g d d
@@ -173,7 +173,7 @@ fis4.  g8 a8. g16 g8 g
 fis2 r8 cis' d e 
 %%Refrain%%
 d4. d8 d d d d 
-a4 a~a8 fis b a
+a4 a r8 fis b a
 fis (g a) cis8 d8. d16 b8 a
 a2 r8 a b cis
 d4. c8 b b b b 

@@ -706,15 +706,15 @@ R2.*7
 
 g4.( a~
 a4. g4) r8
-g4.( a~
-a4. a4) r8
+g4.( fis
+a4. g4) r8
 
 R2.*12
 
 
 %\break
 %%Strophe
-d,8\mf d d d d d
+d8\mf d d d d d
 d4. r8 bes8 c
 d4 f8 f4 f8
 f4. r4.
