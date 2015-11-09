@@ -154,7 +154,7 @@ alto = \relative c' {
   
   fis4 fis8 fis4 fis8 f f f f4 r8
   e4 e8 e4 e8 e4 e8~ e4 e8
-  fis8 fis4 fis4. fis fis4 fis8
+  fis8 fis4 fis4. gis gis4 gis8
   e4. r r2.
 }
 
