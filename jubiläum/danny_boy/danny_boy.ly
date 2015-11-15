@@ -1,4 +1,4 @@
-\version "2.12.2"
+\version "2.18.2"
 
 %Größe der Partitur
 #(set-global-staff-size 16.5)
@@ -52,7 +52,7 @@ Oh, Dan -- ny boy, oh Dan -- ny boy, I love you so!
 RefrainTwo = \lyricmode {
 And I shall hear, tho' soft you tread a -- bove me.
 And all my grave will warm -- er, sweet -- er be.
-For you will bend and tell be that you love me.
+For you will bend and tell me that you love me.
 And I shall sleep in peace un -- til you come to me! 
 }
 
@@ -67,7 +67,7 @@ Oh, Dan -- ny boy, oh Dan -- ny boy, I love you so!
 RefrainBassTwo = \lyricmode {
 I shall hear, tho' soft you tread a -- bove me.
 And all my grave will warm -- er, sweet -- er be.
-For you will bend and tell be that you love me.
+For you will bend and tell me that you love me.
 And I shall sleep in peace un -- til you come to me! 
 }
 
@@ -86,7 +86,7 @@ fis4. g8 fis8. e16 d8 e
 d2 r8\) a' \(b cis
 %%Refrain%%
 d4. cis8 cis b a b 
-a (fis) d4~d8\) a'\( b cis
+a (fis) d4\) r8 a'\( b cis
 d4. cis8 cis8. \)b16\( a8 fis
 e2\) r8 a\( a a
 fis'4. e8  e d b d
@@ -106,7 +106,7 @@ fis4. g8 fis e d8. e16
 d2 r8\) a' \(b cis
 %%Refrain%%
 d4. cis8 cis b a b 
-a (fis) d4~d8\) a'\( b cis
+a (fis) d4\) r8 a'\( b cis
 d4. cis8 cis8. \)b16\( a8 fis
 e2\) r8 a\( a a
 fis'4. e8  e d b d
@@ -120,17 +120,17 @@ d1   \)
 altMusic = \relative c'{
 \partial 2 r8 a d cis \pp
 d4. e8 d d d d
- b4 b r8\< b d d 
+ b4 b r8 b\< d d 
  d4. \mp \>d8 d8. d16 b8 b \!
  d (b cis4) r8 a b cis
  
  d4. \p cis8 c c c c 
- b4 b r8 \<a8 d cis
- d4. \mf  \> d8 d8. b16 b8 cis \!
- d2 r8\< e8 g a
+ b4 b r8 a8\< d cis
+ d4. \mf  \> d8 d8. b16 b8 cis 
+ d2\! r8 e8\< g a
 %%Refrain%%
 fis4. \f fis8 g g g g \>
-d4 d\<~d8 d d e
+d4 d\! r8 d\< d e
 fis4.\f  fis8\>  a8. \p  g16 fis8 d
 d (b cis4) r8 cis \< d e
 a4. \f a8 g g d d
@@ -140,21 +140,21 @@ a2
 %%strophe2%%
 r8 a d cis \p
 d4. e8 d d d d
- b4 b r8\< b d d 
+ b4 b r8 b\< d d 
  d4. \mp \>d8 d8. d16 b8 b \!
  d (b cis4) r8 a b cis
  
  d4. \p cis8 c c c c 
- b4 b r8 \<a8 d cis
+ b4 b r8 a8\< d cis
  d4. \mf \> d8 d8 b b8. cis16 \!
- d2 r8\< e8 g a
+ d2 r8 e8\< g a
 %%Refrain%%
 fis4. \f fis8 g g g g \>
-d4 d\<~d8 d d e
+d4 d\! r8 d\< d e
 fis4.\f  fis8\>  a8. \p g16 fis8 d
 d (b cis4) r8 cis \< d e
 a4. \f a8 g g d d
-\> d4 a\p  r8 bes bes bes 
+\> d4 a\mp  r8 bes\pp bes bes 
 a8 d d d b b b8. a16
 a1
 \bar "|."
@@ -164,7 +164,7 @@ tenorMusic = \relative c'{
 \partial 2 r8 a a g
 fis4. a8 fis fis fis fis 
 g4 d r8 g a b
-a4. g8 fis8.  fis16 gis8 gis
+a4. g8 fis8. fis16 gis8 gis
 a2 r8 a a a
 
 a4. a8 a a a a 
@@ -173,7 +173,7 @@ fis4.  g8 a8. g16 g8 g
 fis2 r8 cis' d e 
 %%Refrain%%
 d4. d8 d d d d 
-a4 a~a8 fis b a
+a4 a r8 fis b a
 fis (g a) cis8 d8. d16 b8 a
 a2 r8 a b cis
 d4. c8 b b b b 
@@ -193,7 +193,7 @@ fis4.  g8 a g g8. g16
 fis2 r8 cis' d e 
 %%Refrain%%
 d4. d8 d d d d 
-a4 a~a8 fis b a
+a4 a r8 fis b a
 fis (g a) cis8 d8. d16 b8 a
 a2 r8 a b cis
 d4. c8 b b b b 

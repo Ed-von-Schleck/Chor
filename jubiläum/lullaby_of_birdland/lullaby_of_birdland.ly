@@ -509,3 +509,134 @@ bassVerseTwo = \lyricmode {
   \midi {}
 }
 }
+
+% MIDI output; adjusted volumes
+\book {
+  \bookOutputSuffix "sopran"
+  \score {\unfoldRepeats {
+  \new ChoirStaff
+  <<
+    \new Staff = "sopranos" {
+      \set Staff.midiInstrument = #"bright acoustic"
+      \set Staff.midiMaximumVolume = #1
+      \new Voice {\voiceOne << \global \sopMusic >>} }
+    \new Staff = "altos" {
+      %\set Staff.midiInstrument = #"bright acoustic"
+      \set Staff.midiMaximumVolume = #0.6
+      \new Voice {\voiceOne << \global \altoMusic >>} }
+    \new Staff = "tenors" {\clef bass
+      %\set Staff.midiInstrument = #"bright acoustic"
+      \set Staff.midiMaximumVolume = #0.6
+      \new Voice {\voiceOne << \global \tenorMusic >>} }
+    \new Staff = "basses" {\clef bass
+      %\set Staff.midiInstrument = #"bright acoustic"
+      \set Staff.midiMaximumVolume = #0.6
+      \new Voice {\voiceOne << \global \bassMusic >>} }
+  >>
+}
+\midi {}
+}
+}
+
+\book {
+  \bookOutputSuffix "alt"
+  \score {\unfoldRepeats {
+  \new ChoirStaff
+  <<
+    \new Staff = "sopranos" {
+      %\set Staff.midiInstrument = #"bright acoustic"
+      \set Staff.midiMaximumVolume = #0.6
+      \new Voice {\voiceOne << \global \sopMusic >>} }
+    \new Staff = "altos" {
+      \set Staff.midiInstrument = #"bright acoustic"
+      \set Staff.midiMaximumVolume = #1
+      \new Voice {\voiceOne << \global \altoMusic >>} }
+    \new Staff = "tenors" {\clef bass
+      %\set Staff.midiInstrument = #"bright acoustic"
+      \set Staff.midiMaximumVolume = #0.6
+      \new Voice {\voiceOne << \global \tenorMusic >>} }
+    \new Staff = "basses" {\clef bass
+      %\set Staff.midiInstrument = #"bright acoustic"
+      \set Staff.midiMaximumVolume = #0.6
+      \new Voice {\voiceOne << \global \bassMusic >>} }
+  >>
+}
+\midi {}
+}
+}
+
+\book {
+  \bookOutputSuffix "tenor"
+  \score {\unfoldRepeats {
+  \new ChoirStaff
+  <<
+    \new Staff = "sopranos" {
+      %\set Staff.midiInstrument = #"bright acoustic"
+      \set Staff.midiMaximumVolume = #0.6
+      \new Voice {\voiceOne << \global \sopMusic >>} }
+    \new Staff = "altos" {
+      %\set Staff.midiInstrument = #"bright acoustic"
+      \set Staff.midiMaximumVolume = #0.6
+      \new Voice {\voiceOne << \global \altoMusic >>} }
+    \new Staff = "tenors" {\clef bass
+      \set Staff.midiInstrument = #"bright acoustic"
+      \set Staff.midiMaximumVolume = #1
+      \new Voice {\voiceOne << \global \tenorMusic >>} }
+    \new Staff = "basses" {\clef bass
+      %\set Staff.midiInstrument = #"bright acoustic"
+      \set Staff.midiMaximumVolume = #0.6
+      \new Voice {\voiceOne << \global \bassMusic >>} }
+  >>
+}
+\midi {}
+}
+}
+
+\book {
+  \bookOutputSuffix "bass"
+  \score {\unfoldRepeats {
+  \new ChoirStaff
+  <<
+    \new Staff = "sopranos" {
+      %\set Staff.midiInstrument = #"bright acoustic"
+      \set Staff.midiMaximumVolume = #0.6
+      \new Voice {\voiceOne << \global \sopMusic >>} }
+    \new Staff = "altos" {
+      %\set Staff.midiInstrument = #"bright acoustic"
+      \set Staff.midiMaximumVolume = #0.6
+      \new Voice {\voiceOne << \global \altoMusic >>} }
+    \new Staff = "tenors" {\clef bass
+      %\set Staff.midiInstrument = #"bright acoustic"
+      \set Staff.midiMaximumVolume = #0.6
+      \new Voice {\voiceOne << \global \tenorMusic >>} }
+    \new Staff = "basses" {\clef bass
+      \set Staff.midiInstrument = #"bright acoustic"
+      \set Staff.midiMaximumVolume = #1
+      \new Voice {\voiceOne << \global \bassMusic >>} }
+  >>
+}
+\midi {}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
