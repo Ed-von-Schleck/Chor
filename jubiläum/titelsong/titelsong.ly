@@ -1,7 +1,9 @@
-%﻿\version "2.13.39"
+\version "2.13.39"
+date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 \header {
   	title = "Titelsong"
 	subtitle = "aus: Er hatte zwei Pistolen und seine Augen waren schwarz und weiß"
+	subsubtitle = \date
 	composer = "Ed von Schleck"
 	poet = "Dario Fo"
 }
@@ -412,14 +414,14 @@ d8. d16 d8 c bes bes r4
 d8. d16 d8 c bes bes bes a
 g2( a4) r4
 
-b4 r8 b fis4 r8 fis
-g4 r8 g d'4 r8 d
-b4 r8 b fis4 r8 fis
-g4 r8 g d'4 r8 d
-b4 r8 b fis4 r8 fis
-g4 r8 g d'4 r8 d
-b4 r8 b fis4 r8 fis
-g4 r8 g d'4 r8 
+b4 r8 b fis'4 r8 fis
+g4 r8 g d4 r8 d
+b4 r8 b fis'4 r8 fis
+g4 r8 g d4 r8 d
+b4 r8 b fis'4 r8 fis
+g4 r8 g d4 r8 d
+b4 r8 b fis'4 r8 fis
+g4 r8 g d4 r8
 
 \override NoteHead #'style = #'cross
 b8 b b~ b4 r2
@@ -457,14 +459,14 @@ cis8 cis cis cis fis e d cis
 b b r2.
 
 %%%%
-b4 r8 b fis4 r8 fis
-g4 r8 g d'4 r8 d
-b4 r8 b fis4 r8 fis
-g4 r8 g d'4 r8 d
-b4 r8 b fis4 r8 fis
-g4 r8 g d'4 r8 d
-b4 r8 b fis4 r8 fis
-g4 r8 g d'4 r8
+b4 r8 b fis'4 r8 fis
+g4 r8 g d4 r8 d
+b4 r8 b fis'4 r8 fis
+g4 r8 g d4 r8 d
+b4 r8 b fis'4 r8 fis
+g4 r8 g d4 r8 d
+b4 r8 b fis'4 r8 fis
+g4 r8 g d4 r8
 
 
 \override NoteHead #'style = #'cross

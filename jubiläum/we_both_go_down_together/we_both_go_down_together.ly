@@ -1,6 +1,8 @@
 \version "2.13.39"
+date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 \header {
   title = "We Both Go Down Together"
+  subtitle = \date
   composer = "Text und Musik: Colin Meloy (The Decemberists)"
   arranger = "Arrangement: Ed von Schleck"
 }
@@ -16,27 +18,8 @@
      \time 4/4
      \tempo 4  = 100
   }
-  
-  Coda = \markup { \musicglyph #"scripts-coda" }
-  Segno = \mark \markup { \musicglyph #"scripts-segno" }
-  Fine = \markup { Fine }
-  Wdh = \markup { \italic { da S. al Fine } }
-  rit = \markup { \italic rit. }
-  Wdhb = \markup { \italic { da Refrain al } \musicglyph #"scripts-coda" }
-
-sixteenrest =  {R1 R R R R R R R R R R R R R R R }
-
-fifteenrest =  {R1 R R R R R R R R R R R R R R }
-
-fourteenrest = {R1 R R R R R R R R R R R R R}
-
-eightrest = 	 {R1 R R R R R R R}
-
-tenrest =      {R1 R R R R R R R R R }
 
 
-
-  
 sopranMusik = \relative c'' {
 %Strophe1
 r4  a a4. e8

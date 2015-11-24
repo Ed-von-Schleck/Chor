@@ -1,4 +1,5 @@
-\version "2.18.2"
+\version "2.18.2"  
+date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
 %Größe der Partitur
 #(set-global-staff-size 16.5)
@@ -11,6 +12,7 @@
 
 \header {
   title = "Danny Boy"
+  subtitle = \date
   composer = "Text: Fred E. Weatherly"
  arranger = "Arrangement: Andreas Fiebig"
 }
@@ -59,7 +61,7 @@ And I shall sleep in peace un -- til you come to me!
 RefrainBass = \lyricmode {
  come ye back when sum -- mer's in the mea -- dow
 Or when the val -- ley's hushed and white with snow
-'Tis I'll be there in sun -- shine or in sha -- dow
+'Tis I'll be there in sun -- shine or \breathe in sha -- dow
 Oh, Dan -- ny boy, oh Dan -- ny boy, I love you so!
 }
 
@@ -219,10 +221,10 @@ g4 g r8 g' d g
  %%Refrain%%
  b8 fis' b a g g g g 
  fis4 fis8 (e) d4 d8 cis
- b4. a'8 g8. g16 g8 g
+ b4. a'8 g8.\p g16 g8 g
  a2 r8 a a a 
  d,4. d8 g g g g 
- fis4 fis r8 e e e 
+ fis4 fis r8 e\pp e e 
  d g, a a a a a a
  d2
  %strophe2%%
@@ -239,10 +241,10 @@ g4 g r8 g' d g
  %%Refrain%%
  b8 fis' b a g g g g 
  fis4 fis8 (e) d4 d8 cis
- b4. a'8 g8. g16 g8 g
+ b4. a'8 g8.\p g16 g8 g
  a2 r8 a a a 
  d,4. d8 g g g g 
- fis4 fis r8 e e e 
+ fis4 fis r8 e\pp e e 
  d g, a a a a a8. a16
  d1
 
