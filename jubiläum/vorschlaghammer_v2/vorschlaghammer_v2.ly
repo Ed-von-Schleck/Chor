@@ -1,7 +1,9 @@
 \version "2.18.0"
+date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
 \header {
   title = "Bring den Vorschlaghammer mit"
+  subtitle = \date
   composer = "Text und Musik: Sven Regener (Element of Crime)"
   arranger = "Arrangement: Ed von Schleck"
 }
@@ -12,7 +14,7 @@
 #(set-default-paper-size "a4")
 
 %Abschalten von Point&Click
-%#(ly:set-option 'point-and-click #f)
+#(ly:set-option 'point-and-click #f)
 
 global = {
   \tempo 4=125

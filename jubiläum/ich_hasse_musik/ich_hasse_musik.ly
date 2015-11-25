@@ -1,4 +1,5 @@
 \version "2.13.39"
+date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
 %Größe der Partitur
 #(set-global-staff-size 15)
@@ -10,6 +11,7 @@
 
 \header {
   title = "Ich hasse Musik"
+  subtitle = \date
   composer = "Alf Ator (Knorkator)"
   arranger = "Ed von Schleck"
 }
@@ -133,7 +135,7 @@ c8 c8 r e f c r c
 c4 d4 c b
 
 r8 b8~ b b b c r d
-c4 g f4 e4 
+c( b) a(g) f4 e4 
 f8 f f f a a r b
 a4 gis c b
 
@@ -198,7 +200,7 @@ r8 c c c c4 b
 r8 c c c c c c c
 b4 r8 b a4 a
 
-r8 c c c c c b4
+r8 c c c c c b r
 c8 r c r c8 r4.
 b8 b r b b b r4
 b8 r b r b r b4
@@ -350,7 +352,7 @@ r8 a a a a4 a
 r8 a a a a a a a
 gis4 r8 gis a4 a
 
-r8 a a a a a a4
+r8 a a a a a a r
 a8 r a r a8 r4.
 gis8 gis r gis gis gis r4
 gis8 r gis r gis r4.
@@ -504,7 +506,7 @@ r8 f f f e4 f
 r8 f f f f f f f
 e4 r8 e c4 cis
 
-r8 f f f f f e4
+r8 f f f f f e r
 f8 r f r f8 r4.
 e8 e r e e e r4
 d8 r d r d r4.
@@ -564,7 +566,7 @@ f4 f c r8 g'
 d d r d d d r d
 e4 e gis r
 
-r8 d' d d d4 d
+r8 a b c d4 d
 r8 d d d d4 d
 r8 d d d d d r d
 e, e r e a4 a
@@ -606,7 +608,7 @@ f8 f r d c4 g'8 r
 d d r d d d r d
 e e  r e gis4 gis
 
-r8 d' d d d4 d
+r8 a b c d4 d
 r8 d d d d4 d
 r8 d d d d d d d
 e, e r e a4 a
@@ -648,7 +650,7 @@ f8 f f r c4 g'8 r
 d4 r8 d d d r d
 e4 e gis gis
 
-r8 d' d d d d d r
+r8 a b c d d d r
 r8 d d d d4 d
 r8 d d d d d d d
 e,4 r8 e a4 a
@@ -996,6 +998,42 @@ Pedal = {
 
 \book {
 \score {
+
+  \new ChoirStaff <<
+    % \new ChordNames \set chordChanges = ##t \harmonies
+    \new Staff = women <<
+      \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
+      \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
+    >>
+    \new Lyrics \with { alignAboveContext = women } \lyricsto sopranos \sopWords
+    \new Lyrics \with { alignBelowContext = women } \lyricsto altos \altoWords
+    \new Staff = men <<
+      \clef bass
+      \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
+      \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
+    >>
+    \new Lyrics \with { alignAboveContext = men } \lyricsto tenors \tenorWords
+    \new Lyrics \with { alignBelowContext = men } \lyricsto basses \bassWords
+>>
+  \layout {
+    \context {
+      \Staff
+      \override VerticalAxisGroup #'minimum-Y-extent = #'(-2 . 2)
+    }
+    % Dynamik-Kontext definieren
+    % [Convert-ly] The Dynamics context is now included by default.
+    % PianoStaff-Kontext verändern, dass er Dynamics-Kontext akzeptiert
+    \context {
+      \PianoStaff
+      \accepts Dynamics
+    }
+  }
+
+  \midi {}
+}
+}
+\book {
+\score {
 <<
   \new ChoirStaff <<
     % \new ChordNames \set chordChanges = ##t \harmonies
@@ -1019,42 +1057,6 @@ Pedal = {
     \new Staff = "down" { \global \lh }
     \new Dynamics = "pedal" \Pedal
   >>
->>
-  \layout {
-    \context {
-      \Staff
-      \override VerticalAxisGroup #'minimum-Y-extent = #'(-2 . 2)
-    }
-    % Dynamik-Kontext definieren
-    % [Convert-ly] The Dynamics context is now included by default.
-    % PianoStaff-Kontext verändern, dass er Dynamics-Kontext akzeptiert
-    \context {
-      \PianoStaff
-      \accepts Dynamics
-    }
-  }
-
-  \midi {}
-}
-}
-\book {
-\score {
-
-  \new ChoirStaff <<
-    % \new ChordNames \set chordChanges = ##t \harmonies
-    \new Staff = women <<
-      \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
-      \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
-    >>
-    \new Lyrics \with { alignAboveContext = women } \lyricsto sopranos \sopWords
-    \new Lyrics \with { alignBelowContext = women } \lyricsto altos \altoWords
-    \new Staff = men <<
-      \clef bass
-      \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
-      \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
-    >>
-    \new Lyrics \with { alignAboveContext = men } \lyricsto tenors \tenorWords
-    \new Lyrics \with { alignBelowContext = men } \lyricsto basses \bassWords
 >>
   \layout {
     \context {

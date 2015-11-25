@@ -1,10 +1,15 @@
 \version "2.16.2"
+date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 
 \header {
   title = "The Galaxy Song"
+  subtitle = \date
   composer = "Eric Ide (Monty Python)"
   arranger = "Ed von Schleck"
 }
+
+%Abschalten von Point&Click
+#(ly:set-option 'point-and-click #f)
 
 \paper {
   #(set-paper-size "a4")
@@ -63,7 +68,7 @@ soprano = \relative c' {
   d2. r2 fis,8 fis
   
   d'8 d d~ d4 d8 d4 d8~ d d d
-  cis4 cis8 cis4 cis8~ cis cis4 cis8 cis cis
+  cis4 cis8 cis4 cis4. cis8 cis8 cis cis
   cis4 cis8~ cis8 cis cis cis4 e,8~ e gis b8
   a2. r2 r8 e
   
@@ -132,7 +137,7 @@ alto = \relative c' {
   fis2. r2 fis8 fis
   
   fis8 fis fis~ fis4 fis8 f4 f8~ f f f
-  e4 e8 e4 e8~ e e4 e8 e e
+  e4 e8 e4 e4. e8 e8 e e
   fis4 fis8~ fis8 fis fis e4 e8~ e e e8
   e2. r2 r8 e
   
@@ -154,7 +159,7 @@ alto = \relative c' {
   
   fis4 fis8 fis4 fis8 f f f f4 r8
   e4 e8 e4 e8 e4 e8~ e4 e8
-  fis8 fis4 fis4. fis fis4 fis8
+  fis8 fis4 fis4. gis gis4 gis8
   e4. r r2.
 }
 
@@ -199,7 +204,7 @@ tenor = \relative c {
   b2. r2 b8 b
   
   a8 a a~ a4 a8 b4 b8~ b b b
-  cis4 cis8 cis4 ais8~ ais ais4 cis8 cis cis
+  cis4 cis8 cis4 ais4. ais8 cis8 cis cis
   dis4 dis8~ dis8 dis dis b4 b8~ b d d8
   cis2. r2 r8 e,
   
@@ -266,7 +271,7 @@ bass = \relative c {
   b,2. r2 b8 b
   
   d8 d d~ d4 d8 d4 d8~ d gis gis
-  a4 a8 a4 fis8~ fis fis4 fis8 fis fis
+  a4 a8 a4 fis4. fis8 fis8 fis fis
   b4 b8~ b8 b b e,4 gis8~ gis gis e8
   a2. r2 r8 e
   
@@ -308,7 +313,7 @@ verse = \lyricmode {
   but out by us it's just three -- thou -- sand light years wide
   we're thir -- ty -- thou -- sand light years from ga -- lac -- tic cen -- tral point,
   we go 'round e -- very two -- hun -- dred mil -- lion years
-  and our ga -- la -- xy is on -- ly one of mil -- lons of bil -- lions
+  and our ga -- la -- xy is on -- ly one of mil -- lions of bil -- lions
   in this a -- ma -- zing and ex -- pan -- ding u -- ni -- verse.
   
   The u -- ni -- verse it -- self keeps on ex -- pan -- ding and ex -- pan -- ding,

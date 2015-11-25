@@ -1,6 +1,8 @@
 \version "2.13.39"
+date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 \header {
   title = "Drunk Sincerity"
+  subtitle = \date
   composer = "Text und Melodie: Greg Graffin (Bad Religion)"
   arranger = "Arrangement: Ed von Schleck"
 }
@@ -112,9 +114,9 @@ d1~
 d2. r8 d
 
 cis cis16 cis~ cis8 cis b a a a
-b a a16 g~ g a~ a8 r d d
+b a a16 g8. a8 r d d
 cis cis16 cis~ cis8 cis b a a a
-b b16 b~ b8 cis d16 r b8 b4
+b b16 b~ b8 cis d16 r a8 a8 r8
 
 fis1
 g
@@ -214,14 +216,14 @@ fis1~
 fis2. r8 fis
 
 e e16 e~ e8 e fis e e e
-d d b16 d~ d fis~ fis8 r fis fis
-e e16 e~ e8 e fis e e e
-d d16 b~ b8 d fis16 r fis8 e cis
+d d b16 d8. fis8 r fis g
+e e16 e~ e8 e e e e e
+d d16 b~ b8 e fis16 r fis8 e cis
 
 d8. cis16~ cis8 b b4 r8 cis
 d8. d16~ d8 d d cis b a
 a a16 a~ a8 b cis cis cis d
-e e e d d cis r8 b
+e e e d d cis r8 cis
 
 %%%%%%% Refrain %%%%%%%
 d8. d16~ d8 e fis8. fis16~ fis8 fis
@@ -236,13 +238,13 @@ fis r4 fis16 e~ e8
 d4 d fis d
 cis4. d8 d4 r8 d
 d4 d fis fis
-e4. e8 fis8 r fis fis
+e4. g8 fis8 r fis fis
 
 %%%%%%% Strophe 2 %%%%%%%
-e e16 e~ e8 e16 fis e8 e e e 
+e e16 e~ e8 e16 e e8 e e e 
 d d b16 d~ d8 fis r4 g8
 e e16 e~ e8 e e e e e
-d b d16 d~ d8 fis r fis fis
+d b d16 e8. fis8 r fis fis
 
 fis8. g16~ g8 fis fis r4.
 g1
@@ -262,13 +264,13 @@ fis r4 fis16 e~ e8
 d4 d fis d
 cis4. d8 d4 r8 d
 d4 d fis fis
-e4. e8 fis8 r4 fis8
+e4. g8 fis8 r4 fis8
 
 %%%%%%% Strophe 3 %%%%%%%
 e r16 e~ e8 e e e e e
 d d b16 d~ d8 fis fis fis d
 e e16 e e8 e16 e e8 e e r
-d d b16 d~ d8 fis r fis fis
+d d b16 e~ e8 fis r fis fis
 
 fis4 r fis8. fis16~ fis8 fis
 g4 r g8. g16~ g8 d
@@ -288,7 +290,7 @@ fis r4 fis16 e~ e8
 d4 d fis d
 cis4. d8 d4 r8 d
 d4 d fis fis
-e4. e8 fis8 r4 fis8
+e4. g8 fis8 r4 fis8
 
 %%%%%%% Schluss %%%%%%%
 d4 d fis fis
@@ -314,9 +316,9 @@ a1~
 a2. r8 a
 
 cis cis16 cis~ cis8 cis d cis cis cis
-b d d16 d~ d d~ d8 r a d 
+b d d16 d8. d8 r a d 
 cis cis16 cis~ cis8 cis d cis cis cis
-b d16 d~ d8 d d16 r d8 cis4
+b d16 d~ d8 cis d16 r d8 cis8 r8
 
 d1
 d
@@ -342,7 +344,7 @@ cis4. a8 a r  a a
 cis cis16 cis~ cis8 cis16 cis d8 cis cis cis 
 b d d16 d~ d8 d r4 d8
 cis cis16 cis~ cis8 cis cis cis cis cis
-b d d16 d~ d8 d r d cis
+b d d16 cis8. d8 r d cis
 
 d8. e16~ e8 d d r4.
 d1
@@ -368,7 +370,7 @@ cis4. a8 a r4  a8
 cis r16 cis~ cis8 cis d cis cis cis
 b d d16 d~ d8 d a a a
 cis cis16 cis cis8 cis16 cis cis8 cis cis r
-b d d16 d~ d8 d r d cis
+b d d16 cis~ cis8 d r d cis
 
 d4 r d8. d16~ d8 cis
 d4 r d8. d16~ d8 d
@@ -415,9 +417,9 @@ d1~
 d2. r8 d
 
 a' a16 a~ a8 a a a a a
-g g g16 g~ g d~ d8 r fis g 
+g g g16 g8. d8 r fis g 
 a a16 a~ a8 a a a a a
-g g16 g~ g8 g d16 r d8 a'4
+g g16 g~ g8 g d16 r d8 a' r8
 
 b1
 g

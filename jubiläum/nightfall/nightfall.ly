@@ -249,7 +249,7 @@ BassText = \lyricmode{
 \Refrain
 \VerseThreeBass
 \Refrain
-\SchlussM
+%\SchlussM
 \SchlussAh
 }
 
@@ -1053,10 +1053,7 @@ bes'4 bes8 es,4 es8
 d8 r8 bes8 f'4 f8 
 g4.\) r4.
 %schluss
-g8\p bes d~d r8 bes
-es c a~a r4
-g8 bes d~d r8 bes
-c a fis~fis r4
+R2.*4
 es2.\(\p\< c4. (d)\)\!
 es2.\(\p\< c4. (d)\)\!
 \Ende

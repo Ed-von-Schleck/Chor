@@ -7,6 +7,9 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
    subtitle = \date
 }
 
+%Abschalten von Point&Click
+#(ly:set-option 'point-and-click #f)
+
 #(set-global-staff-size 18)
 #(set-default-paper-size "a4")
 
@@ -293,7 +296,7 @@ sopranMusik = \relative c'' {
   cis4 (d cis d
   cis d cis d
   cis d cis d
-  des4 )r2.
+  des4\fermata )r2.
   \key bes \major
   %%%%%%% lieg am Strand
   r4 d4 d8 d4  d8~
@@ -381,7 +384,7 @@ altMusik = \relative c' {
   e1
   (b'4 a gis fis
   e8) r e4 e e
-  e e e gis
+  e e fis gis
   fis4 (b a gis
   a cis b a
   gis1)
@@ -576,7 +579,7 @@ tenorMusik = \relative c' {
         c d
         cis4 (d cis d
         cis d cis d
-        cis d cis d) r4
+        cis d cis d) r4\fermata
  
   \key bes \major
         f,4 g8 bes4 d8~

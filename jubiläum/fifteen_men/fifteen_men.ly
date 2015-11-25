@@ -1,4 +1,5 @@
 \version "2.13.39"
+date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 %Größe der Partitur
 #(set-global-staff-size 16)
 #(set-default-paper-size "a4")
@@ -7,6 +8,7 @@
 
 \header {
   title = "Yo Ho Ho And A Bottle Of Rum"
+  subtitle = \date
   composer = "volkstüml. Liedgut"
   arranger = "Ed von Schleck"
 }
@@ -115,7 +117,7 @@ fis4 fis ais4 r8 ais8
 fis4 fis fis fis
 g a bes r8 bes
 b4 a g e8 fis
-e4 e fis2\fermata
+e4 a fis2\fermata
 
 e4 fis g fis8 e
 dis dis~ dis2 dis4
@@ -232,8 +234,8 @@ bassWords = \lyricmode {
   \line{ "Dead and be damned and the rest gone whist!"}
   \line{ "Yo ho ho and a bottle of rum!"}
   \line{ "The skipper lay with his nob in gore"}
-  \line{ "Where the scullion's axe his cheek had shore"}
-  \line{ "And the scullion he was stabbed times four"}
+  \line{ "The scullion's axe his cheek had shore"}
+  \line{ "The scullion he was stabbed times four"}
   \line{ "And there they lay, and the soggy skies"}
   \line{ "Dripped down in up-staring eyes"}
   \line{ "In murk sunset and foul sunrise"}
@@ -245,11 +247,11 @@ bassWords = \lyricmode {
   \line{ "Ten of the crew had the murder mark!"}
   \line{ "Yo ho ho and a bottle of rum!"}
   \line{ "A cutlass swipe or an ounce of lead"}
-  \line{ "A yawing hole in a battered head"}
+  \line{ "A yawning hole in a battered head"}
   \line{ "The scuppers' glut with a rotting red"}
   \line{ "And there they lay, aye, damn my eyes"}
   \line{ "Looking up at paradise"}
-  \line{ "All souls bound just contrawise"}
+  \line{ "All souls bound just contrariwise"}
   \line{ "Yo ho ho and a bottle of rum. "}
   \line{ "\n"}
   
@@ -257,9 +259,9 @@ bassWords = \lyricmode {
 \line{ "Yo ho ho and a bottle of rum!"}
 \line{ "Ev'ry man jack could ha' sailed with Old Pew,"}
 \line{ "Yo ho ho and a bottle of rum!"}
-\line{ "There was chest on chest of Spanish gold"}
-\line{ "With a ton of plate in the middle hold"}
-\line{ "And the cabins riot of stuff untold,"}
+\line{ "Was chest on chest of Spanish gold"}
+\line{ "A ton of plate in the middle hold"}
+\line{ "The cabins riot of stuff untold,"}
 \line{ "And they lay there that took the plum"}
 \line{ "With sightless glare and their lips struck dumb"}
 \line{ "While we shared all by the rule of thumb,"}
