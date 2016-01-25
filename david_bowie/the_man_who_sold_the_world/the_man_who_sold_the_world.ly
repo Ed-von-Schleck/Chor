@@ -103,7 +103,7 @@ alto = \relative c'' {
   f2 r4 f8 e~
   e2 r4 e8 f~
   f2 r4 f8 f
-  f8 f4 f8~ f f8 f4~
+  f8 f4 e8~ e e8 f4~
   
   f1
   r2.   \set Score.repeatCommands = #'(end-repeat)
