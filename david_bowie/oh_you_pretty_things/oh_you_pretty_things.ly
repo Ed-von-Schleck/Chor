@@ -12,6 +12,9 @@ global = {
   \time 4/4
 }
 
+
+#(set-global-staff-size 19)
+
 chordNames = \chordmode {
   \global
   \germanChords
@@ -109,6 +112,45 @@ soprano = \relative c'' {
   e8 e e4 e e8 e
   g8 g g f~ f e d( e
   d1)
+  
+  \bar "||"
+  
+  e2 d
+  b4 a8 fis~( fis e d4)
+  r2 b'4 d8 fis~
+  fis4 e8 d~ d b a4
+  
+  f2 g4 a
+  c d a d~
+  d1
+  r1
+  
+  e2 d
+  b4 a8 fis~( fis e d4)
+  r2 b'4 d8 fis~
+  fis4 e8 d~ d b a4
+  
+  f2 g4 a
+  c d a d~
+  d1
+  r1
+  
+  e2 d
+  b4 a8 fis~( fis e d4)
+  r2 b'4 d8 fis~
+  fis4 e8 d~ d b a4
+  
+  f2 g4 a
+  c d a d~
+  d2 r
+  r2.. a8
+  
+  g8 g g4 g g8 a
+  b8 b b b~ b b b4(
+  d1)
+  
+  \bar "|."
+
 }
 
 alto = \relative c' {
@@ -183,6 +225,42 @@ alto = \relative c' {
   a8 a a4 a a8 a
   b8 b b b~ b g g4(
   fis1)
+  
+  
+  <g b>2 <fis a>
+  g4 fis8 d~( d e d4)
+  r2 e8( g) b8 <b d>~
+  <b d>4 <g b>8 <fis a>~ q <e g> <d fis>4
+  
+  d2 e4 f
+  <f a> <g b> <f a> <fis a>~
+  q1
+  r1
+
+  <g b>2 <fis a>
+  g4 fis8 d~( d e d4)
+  r2 e8( g) b8 <b d>~
+  <b d>4 <g b>8 <fis a>~ q <e g> <d fis>4
+  
+  d2 e4 f
+  <f a> <g b> <f a> <fis a>~
+  q1
+  r1
+  
+  <g b>2 <fis a>
+  g4 fis8 d~( d e d4)
+  r2 e8( g) b8 <b d>~
+  <b d>4 <g b>8 <fis a>~ q <e g> <d fis>4
+  
+  d2 e4 f
+  <f a> <g b> <f a> <fis a>~
+  q2 r4 e8 fis
+  fis fis4 d8~ d4 r8 ^\fermata d
+  
+  e8 e e4 e e8 e
+  f f f f~ f f f4(
+  fis?1)
+
 }
 
 tenor = \relative c' {
@@ -253,6 +331,37 @@ tenor = \relative c' {
   d d d d~
   d2 r4 a8 a
   b8 b4 b8~ b4 r8 d
+  
+  cis8 cis cis4 cis cis8 cis
+  d8 d d d~ d d d4~
+  d1
+  
+  
+  R1*6
+  r2. d4
+  b a b b(
+  
+  a2) r4 a
+  
+  d d8 d~( d b a4
+  g a) b d8 d~
+  d4 r2.
+  r2. d4
+  
+  f d d r
+  r fis,4 g a
+  b d d d~
+  d2
+  
+  r4 a
+  d d8 d~( d b a4
+  g a) b d8 d~
+  d4 r2.
+  
+  r2. d4
+  f d d r
+  r4 a2 a4(
+  <gis b>2.) r8 \fermata b8
   
   cis8 cis cis4 cis cis8 cis
   d8 d d d~ d d d4~
@@ -328,6 +437,36 @@ bass = \relative c {
   a8 a a4 a a8 a
   g g g g~ g g g4(
   d1)
+  
+  
+  
+  R1*6
+  r2. d'4
+  b a fis d~
+  
+  d2 r4 fis
+  g4 g8 g~( g4 fis
+  e2) e4 g8 b~
+  b4 r2.
+  
+  r2. bes4
+  a g f r
+  r d e fis
+  g fis f d~
+  
+  d2 r4 fis
+  g4 g8 g~( g4 fis
+  e2) e4 g8 b~
+  b4 r2.
+  
+  r2. bes4
+  a g f r
+  r d2 e4~
+  e2. r8 e
+  
+  a8 a a4 a a8 a
+  g8 g g g~ g g g4(
+  d1)
 }
 
 verseOne = \lyricmode {
@@ -391,6 +530,22 @@ sopranoVerse = \lyricmode {
   let me make it plain
   you got -- ta make way
   for the ho -- mo su -- pe -- ri -- or 
+  
+  
+  Oh you pret -- ty things
+  don't you know you're dri -- ving your
+  ma -- mas and pa -- pas in -- sane
+  
+  oh you pret -- ty things
+  don't you know you're dri -- ving your
+  ma -- mas and pa -- pas in -- sane
+  
+  oh you pret -- ty things
+  don't you know you're dri -- ving your
+  ma -- mas and pa -- pas in -- sane
+  
+  you got -- ta make way
+  for the ho -- mo su -- pe -- ri -- or __ 
 }
 
 altoVerse = \lyricmode {
@@ -428,6 +583,22 @@ altoVerse = \lyricmode {
   let me make it plain
   you got -- ta make way
   for the ho -- mo su -- pe -- ri -- or 
+  
+  Oh you pret -- ty things
+  don't you know you're dri -- ving your
+  ma -- mas and pa -- pas in -- sane
+  
+  oh you pret -- ty things
+  don't you know you're dri -- ving your
+  ma -- mas and pa -- pas in -- sane
+  
+  oh you pret -- ty things
+  don't you know you're dri -- ving your
+  ma -- mas and pa -- pas in -- sane
+  
+  let me make it plain
+  you got -- ta make way
+  for the ho -- mo su -- pe -- ri -- or __
 }
 
 tenorVerse = \lyricmode {
@@ -465,7 +636,21 @@ tenorVerse = \lyricmode {
   ma -- mas and pa -- pas in -- sane
   let me make it plain
   you got -- ta make way
-  for the ho -- mo su -- pe -- ri -- or 
+  for the ho -- mo su -- pe -- ri -- or
+  
+  
+  you drive them in -- sane
+  you pret -- ty things
+  don't you know
+  you're dri -- ving them
+  you drive your ma -- mas in -- sane
+  
+  you pret -- ty things
+  don't you know
+  you're dri -- ving them
+  in -- sane __
+  you got -- ta make way
+  for the ho -- mo su -- pe -- ri -- or __
 }
 
 bassVerse = \lyricmode {
@@ -498,7 +683,21 @@ bassVerse = \lyricmode {
   ma -- mas and pa -- pas in -- sane
   let me make it plain
   you got -- ta make way
-  for the ho -- mo su -- pe -- ri -- or 
+  for the ho -- mo su -- pe -- ri -- or
+  
+  
+  you drive them in -- sane
+  you pret -- ty things
+  don't you know
+  you're dri -- ving them
+  you drive your ma -- mas in -- sane
+
+  you pret -- ty things
+  don't you know
+  you're dri -- ving them
+  in -- sane __
+  you got -- ta make way
+  for the ho -- mo su -- pe -- ri -- or __
 }
 
 chordsPart = \new ChordNames \chordNames
