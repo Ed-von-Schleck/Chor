@@ -1,12 +1,9 @@
-\version "2.16.2"
+\version "2.19.29"
 
 %Größe der Partitur
 #(set-global-staff-size 16)
 
 #(set-default-paper-size "a4")
-
-%Abschalten von Point&Click
-#(ly:set-option 'point-and-click #f)
 
 
 \header {
@@ -106,7 +103,7 @@ harmonies = \chordmode {
 }
 
 
-\PauseR =  \relative c'{ 
+PauseR =  \relative c'{ 
 r4. r4. r4. r4.
 r4. r4. r4. r4.
 r4. r4. r4. r4.
@@ -116,14 +113,14 @@ r4. r4. r4. r4.
 
 }
 %%5 Takte%%
-\PauseS = \relative c'{ 
+PauseS = \relative c'{ 
 s4. s4. s4. s4.
 s4. s4. s4. s4.
 s4. s4. s4. s4.
 s4. s4. s4. s4.
 s4. s4. s4. s4.
 }
-\PauseSEinTakt = \relative c'{ 
+PauseSEinTakt = \relative c'{ 
 s4. s4. s4. s4.
 }
 VerseOneF = \lyricmode {
@@ -364,7 +361,7 @@ e8. e16 e8 e e e16 e cis8 cis cis  dis e fis
 gis fis e cis a cis b cis dis e4 e8
 %%% Refrain %%%
 a8 r8 a16 a a8 a4 gis8 gis4 fis e8
-e8 e4 cis fis8 e4. r8 cis cis
+e8 e4 cis fis8 e4. r8 e dis
 e4 e8 cis cis dis~dis r8 cis dis dis b~
 b4. s4. s4. s4.
 \PauseSEinTakt
@@ -376,7 +373,7 @@ e8. e16 e8 e e e8 cis8 cis cis  dis e fis16 fis
 gis8 fis e cis a cis b cis dis e4 e8
 %%% Refrain %%%
 a8 r8 a16 a a8 a4 gis8 gis4 fis e8
-e8 e4 cis fis8 e4. r8 cis cis
+e8 e4 cis fis8 e4. r8 e dis
 e4 e8 cis cis dis~dis r8 cis dis dis b~
 b4. s4. s4. s4.
 \PauseSEinTakt
@@ -392,7 +389,7 @@ e4 e8 e4 e8 e4 b8 cis4 cis8
 dis4. e4. r4. r4 e8
 %%% Refrain %%%
 a8 r8 a16 a a8 a4 gis8 gis4 fis e8
-e8 e4 cis fis8 e4. r8 cis cis
+e8 e4 cis fis8 e4. r8 e dis
 e4 e8 cis cis dis~dis r8 cis dis dis b~
 b4. s4. s4. s4.
 \bar "|."
@@ -433,7 +430,7 @@ e fis gis a e e dis e fis gis4 b8
 %%% Refrain %%%
 e8 r8 e16 e e8 b4 cis8 cis4 b a8
 gis8 b4 a b8 cis4. r8 b b
-b4 b8 a a fis~fis r8 a a a gis~
+b4 b8 a a fis~fis r8 a b a gis~
 gis4. r4. r4. r4.
 %%Strophe%%
 r4. r4. r4. r4.
@@ -446,7 +443,7 @@ e8 fis gis a e e dis e fis gis4 b8
 %%% Refrain %%%
 e8 r8 e16 e e8 b4 cis8 cis4 b a8
 gis8 b4 a b8 cis4. r8 b b
-b4 b8 a a fis~fis r8 a a a gis~
+b4 b8 a a fis~fis r8 a b a gis~
 gis4. r4. r4. r4.
 r4. r4. r4. r4.
 r4. r4. r4. r4.
@@ -463,7 +460,7 @@ fis4. gis4. r4. r4 b8
 %%% Refrain %%%
 e8 r8 e16 e e8 b4 cis8 cis4 b a8
 gis8 b4 a b8 cis4. r8 b b
-b4 b8 a a fis~fis r8 a a a gis~
+b4 b8 a a fis~fis r8 a b a gis~
 gis4. r4. r4. r4.
 }
 
@@ -499,10 +496,10 @@ s2 s2 s4
 \time 12/8
 \PauseS
 \PauseSEinTakt
-r4 b16 b e8 e e e e e dis cis e16 e
+r4 b16 b e8 e e e e e b cis b16 cis
 e8 e e a, a a b b b e4 e8
 
-e8. e16 e8 b8 b b16 b a8 a a b b b 
+e8. e16 e8 e8 e e16 e a,8 a a b b b 
 e e e a, a a b b b e4 gis8
 %%% Refrain %%%
 a8 r8 a16 a a8 fis4 cis8 cis4 dis e8
@@ -514,7 +511,7 @@ e4. s4. s4. s4.
 \PauseSEinTakt
 r4. r8 e8 e e e e dis4 e16 e
 e8 e e a, a a b b b e4 e8
-e8. e16 e8 b b b  a a a b b b16 b
+e8. e16 e8 e e e  a, a a b b b16 b
 e8 e e a, a a b b b e4 gis8
 %%% Refrain %%%
 a8 r8 a16 a a8 fis4 cis8 cis4 dis e8
@@ -574,7 +571,7 @@ bassVerse = \lyricmode{
 \score {
 <<
   \new ChoirStaff <<
-  \new ChordNames \set chordChanges = ##t \harmonies
+  \new ChordNames \harmonies
      \new Lyrics = "sopranos"  \with {}
     \new Staff = "women" <<
       \new Voice = "sopranos" {\voiceOne  << \global \sopMusic >> }
@@ -605,7 +602,7 @@ bassVerse = \lyricmode{
   \layout {
     \context {
       \Staff
-      \override VerticalAxisGroup #'minimum-Y-extent = #'(-3 . 3)
+      \override VerticalAxisGroup.minimum-Y-extent = #'(-3 . 3)
     }
 
   }
@@ -622,7 +619,7 @@ bassVerse = \lyricmode{
     }
     \context {
       \Score
-      tempoWholesPerMinute = #(ly:make-moment 72 2)
+      tempoWholesPerMinute = #(ly:make-moment 72/2)
     }
   }
 }
