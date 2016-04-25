@@ -299,9 +299,9 @@ tenor = \relative c' {
   d2.( cis4)
   b8 b b b~ b b4 r8
   
-  b8 b b b cis cis d d
+  b8 cis d d cis cis d d
   cis cis cis d~ d cis r4
-  b8 b b cis~ cis4 d8 d
+  b8 cis d cis~ cis4 d8 d
   cis cis cis d~ d cis4.
   
   r2 cis8 b a b
@@ -335,9 +335,9 @@ tenor = \relative c' {
   d2.( cis4)
   b8 b b b~ b b r b
   
-  b8 b b cis~ cis d4.
+  b8 cis d cis~ cis d4.
   cis8 cis cis d~ d cis r4
-  b8 b b cis~ cis4 d8 d
+  b8 cis d cis~ cis4 d8 d
   cis cis cis d~ d cis4.
   
   r2 cis8 b a b
@@ -371,14 +371,14 @@ tenor = \relative c' {
   d2.( cis4)
   b8 b b b~ b b r b
   
-  b4 b8 cis~ cis4. d8
+  b8( cis) d8 cis~ cis4. d8
   cis8 cis cis d~ d cis r cis
-  b8 b b cis~ cis4 d8 d
+  b8 cis d cis~ cis4 d8 d
   cis cis cis d~ d cis4 r8
   
-  b4 b cis d
+  b4 d cis d
   cis8 cis cis d~ d cis4 r8
-  b4 b cis d
+  b4 d cis d
   cis8 cis cis d~ d cis4.
   
   r2 cis8 b a b
