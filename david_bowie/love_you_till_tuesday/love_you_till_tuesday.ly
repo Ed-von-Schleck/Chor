@@ -364,8 +364,8 @@ tenor = \relative c' {
   b2.) r4
   
   a1(
-  b2.) r4
-  cis2( b
+  b2) r4 b(
+  cis2 b
   ais) r
   
   d2.( cis4)
@@ -478,8 +478,8 @@ bass = \relative c {
   g2.) r4
   
   fis1(
-  gis2.) r4
-  a2( g
+  gis2) r4 gis(
+  a2 g
   fis2) r2
   
   r1
