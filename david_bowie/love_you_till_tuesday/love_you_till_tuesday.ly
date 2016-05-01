@@ -448,7 +448,7 @@ bass = \relative c {
   fis2 r2
   
   r1
-  r2.. e8
+  r2.. fis8
   
   e8 e e fis~ fis gis4.
   a8 a a a~ a a8 r4
