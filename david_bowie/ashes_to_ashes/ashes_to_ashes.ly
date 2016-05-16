@@ -12,7 +12,7 @@ global = {
   \time 4/4
 }
 
-#(set-global-staff-size 19)
+#(set-global-staff-size 20)
 
 
 chordNames = \chordmode {
@@ -38,6 +38,10 @@ chordNames = \chordmode {
   \key a \major
   d e a fis:m
   d e fis:m e
+  
+  b:m fis:m7 e b:m
+  fis:m7 e b:m fis:m7
+  e b:m fis:m7 e
 }
 
 soprano = \relative c'' {
@@ -138,6 +142,32 @@ soprano = \relative c'' {
   d4 r d8 cis b4
   b2 a
   gis r
+  
+  d'4 cis8 cis b4 r8 b
+  e4 d cis r8 cis
+  d8 d cis4 b b
+  d cis8 b~ b4 r
+  
+  e4 d8 d cis4 r8 cis
+  d4 cis b r8 b
+  d8 d cis4 b b
+  e d8 cis~ cis4 r
+  
+  d4 cis8 cis b4 r8 b
+  d4 cis b r8 b
+  e8 e d4 cis cis
+  d cis8 b~ b4 r
+  
+  
+  d8 \p d d cis~ cis4 b
+  d4 d8 cis~ cis b r4
+  e8 e4. d4 cis8 e~
+  e4 e8 d~ d cis r4
+  
+  d8 d4 d8 cis b4.
+  d4 r d8 cis b4
+  b2 a
+  gis1
   \bar "|."
 }
 
@@ -238,6 +268,32 @@ alto = \relative c'' {
   d4 r d8 cis b4
   b2 a
   gis r
+  
+  d'4 cis8 cis b4 r8 b
+  e4 d cis r8 cis
+  d8 d cis4 b b
+  d cis8 b~ b4 r
+  
+  e4 d8 d cis4 r8 cis
+  d4 cis b r8 b
+  d8 d cis4 b b
+  e d8 cis~ cis4 r
+  
+  d4 cis8 cis b4 r8 b
+  d4 cis b r8 b
+  e8 e d4 cis cis
+  d cis8 b~ b4 r
+  
+  
+  d8 d d cis~ cis4 b
+  d4 d8 cis~ cis b r4
+  cis8 cis4. b4 a8 cis~
+  cis4 cis8 b~ b a r4
+  
+  d8 d4 d8 cis b4.
+  d4 r d8 cis b4
+  b2 a
+  gis1
 }
 
 tenor = \relative c' {
@@ -337,6 +393,32 @@ tenor = \relative c' {
   b4 r b8 b b4
   b2 a
   gis r
+  
+  b4 a8 a b4 r8 b
+  cis4  b a r8 a
+  b8 b a4 b b
+  b a8 b~ b4 r
+  
+  cis4 b8 b cis4 r8 a
+  b4 a b r8 b
+  b8 b a4 b b
+  cis b8 a~ a4 r
+  
+  b4 a8 a b4 r8 b
+  b4 a b r8 b
+  cis8 cis b4 a a
+  b a8 gis~ gis4 r
+  
+  
+  d'8 \p d d cis~ cis4 b
+  d4 d8 cis~ cis b r4
+  e8 e4. d4 cis8 cis8~
+  cis4 cis8 d~ d e r4
+  
+  a,8 a4 b8 cis d4.
+  b4 r b8 b b4
+  b2 a
+  gis1
 }
 
 bass = \relative c {
@@ -436,6 +518,32 @@ bass = \relative c {
   e4 r d8 cis b4
   b2 a
   gis r
+  
+  b'4 a8 a b4 r8 b
+  a4 fis fis r8 fis
+  e8 e e4 e gis
+  b a8 b~ b4 r
+  
+  fis4 fis8 fis fis4 r8 fis
+  e4 e e r8 gis
+  b8 b a4 b b
+  fis fis8 fis~ fis4 r
+  
+  e4 e8 e e4 r8 gis
+  b4 a b r8 b
+  a8 fis fis4 fis fis
+  e e8 e~ e4 r
+  
+  
+  d8 d d cis~ cis4 d
+  e4 e8 e~ e e r4
+  a8 a4. a4 gis8 fis~
+  fis4 fis8 fis~ fis fis r4
+  
+  fis8 fis4 fis8 fis fis4.
+  e4 r d8 cis b4
+  b2 a
+  gis1
 }
 
 verseOneOne = \lyricmode {
@@ -485,12 +593,22 @@ chorus = \lyricmode {
   hit -- ting an all -- time low
 }
 
+outro = \lyricmode {
+  my ma -- ma said to get things done
+  you bet -- ter not mess with Ma  -- jor Tom
+}
+
+
 sopranoVerse = \lyricmode {
   \verseOneOne
   \verseOneTwo
   \chorus
   \verseTwoOne
   \verseTwoTwo
+  \chorus
+  \outro
+  \outro
+  \outro
   \chorus
 }
 
@@ -500,6 +618,10 @@ altoVerse = \lyricmode {
   \chorus
   \verseTwoOne
   \verseTwoTwo
+  \chorus
+  \outro
+  \outro
+  \outro
   \chorus
 }
 
@@ -511,6 +633,10 @@ tenorVerse = \lyricmode {
   \verseTwoOne
   \verseTwoTwo
   \chorus
+  \outro
+  \outro
+  \outro
+  \chorus
 }
 
 bassVerse = \lyricmode {
@@ -519,6 +645,10 @@ bassVerse = \lyricmode {
   \chorus
   \verseTwoOne
   \verseTwoTwo
+  \chorus
+  \outro
+  \outro
+  \outro
   \chorus
 }
 
