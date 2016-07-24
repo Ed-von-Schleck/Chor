@@ -343,7 +343,7 @@ tenor = \relative c' {
   
   c a4.~ a2~
   a2 r4 e'8 f~
-  f1
+  f1\fermata
 }
 
 bass = \relative c' {
