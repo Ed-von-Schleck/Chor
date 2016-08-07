@@ -1,4 +1,4 @@
-﻿\version "2.13.39"
+\version "2.13.39"
 \header {
   title = "Photograph"
   composer = "Text und Musik: Rivers Cuomo  (Weezer)"
