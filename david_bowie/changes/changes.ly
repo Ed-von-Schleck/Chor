@@ -32,14 +32,11 @@ chordNames = \chordmode {
   g2 b:m/fis e:m g/d c g/b \time 2/4 a \time 4/4 d c
   g2 b:m/fis e:m g/d c g/b \time 2/4 a
   
-  \time 4/4
-  e4:m d f c
-  \time 2/4
-  s2
-  \time 4/4
-  b4:m a:m c/d g
-  \time 2/4
-  s2
+  \time 3/4
+  e4:m d f
+  c2.
+  b4:m a:m c/d
+  g2.
   \time 4/4
   s1
   
@@ -55,10 +52,9 @@ chordNames = \chordmode {
   g2 b:m/fis e:m g/d c g/b \time 2/4 a \time 4/4 d c
   g2 b:m/fis e:m g/d c g/b \time 2/4 a
   
-  \time 4/4
-  e4:m d f c
-  \time 2/4
-  s2
+  \time 3/4
+  e4:m d f
+  c2.
   \time 4/4
   b4:m a:m c/d g
   s4. a4.:m b4:m
@@ -69,19 +65,14 @@ chordNames = \chordmode {
   g2 b:m/fis e:m g/d c g/b \time 2/4 a \time 4/4 d c
   g2 b:m/fis e:m g/d c g/b \time 2/4 a
   
-  \time 4/4
-  e4:m d f c
-  \time 2/4
-  s2
-  \time 4/4
-  b4:m a:m c/d g
-  \time 2/4
-  s2
-  \time 4/4
-  e4:m d f c
-  \time 2/4
-  s2
-  \time 4/4
+  \time 3/4
+  e4:m d f
+  c2.
+  b4:m a:m c/d
+  g2.
+  e4:m d f
+  c2.
+
   b4:m a:m c/d g
   
 }
@@ -121,8 +112,8 @@ soprano = \relative c'' {
   r4. g8 \tuplet 3/2 {g g g} \tuplet 3/2 {g g g}
   a a b r
   
-  b4 b g c~
-  c4 r8 b
+  b4 b g
+  c2 r8 b
   b4 a g e16( d8.~
   d2)
   r1
@@ -160,10 +151,10 @@ soprano = \relative c'' {
   g8 e16 g8. e16 g16~ g8 g16 g8 g16 g8
   a a b r
   
-  b4 b g c~
-  c4 r8 b
-  b4 a g e16( d8.~
-  d4.) r8 r2
+  b4 b g
+  c2 r8 b
+  b4 a g e16( d8.)
+  r1
   
   a'4. g8~ g4 fis
   a4. g8~ g4 fis
@@ -186,15 +177,15 @@ soprano = \relative c'' {
   g16 g g8~ g g~ g g g16 g g8
   a a( b) r
   
-  b4 b g c~
-  c4 r8 b
+  b4 b g
+  c2 r8 b
   b4 a g e16( d8.)
   r8 b' b b
   
-  b4 b g c~
-  c4 r8 b
-  b4 a g e16( d8.~
-  d1)
+  b4 b g
+  c2 r8 b
+  b4 a g
+  e16( d8.~ d2)
   \bar "|."
 }
 
@@ -233,8 +224,8 @@ alto = \relative c'' {
   r4. c8 \tuplet 3/2 {d d d} \tuplet 3/2 {d d d}
   e e e r
   
-  g4 fis g g~
-  g r8 e
+  g4 fis g
+  g2 r8 e
   d4 e e e16( d8.~
   d2)
   r1
@@ -272,10 +263,10 @@ alto = \relative c'' {
   e8 e16 e8. c16 d16~ d8 d16 d8 d16 d8
   e8 e e r
   
-  g4 fis g g~
-  g r8 e
-  d4 e e e16( d8.~
-  d4.) r8 r2
+  g4 fis g
+  g2 r8 e
+  d4 e e e16( d8.)
+  r1
   
   e4. e8~ e4 d
   fis4. e8~ e4 d
@@ -298,15 +289,15 @@ alto = \relative c'' {
   c16 c c8~ c d~ d d d16 d16 d8 
   e e4 r8
   
-  g4 fis g g~
-  g r8 e
+  g4 fis g
+  g2 r8 e
   d4 e e e16( d8.)
   r8 g g g
   
-  g4 fis g g~
-  g r8 e
-  d4 e e e16( d8.~
-  d1)
+  g4 fis g
+  g2 r8 e
+  d4 e e
+  e16( d8.~ d2)
 }
 
 tenor = \relative c' {
@@ -344,10 +335,10 @@ tenor = \relative c' {
   r4. c8 \tuplet 3/2 {b b b} \tuplet 3/2 {b b b}
   cis cis cis r
   
-  b4 d c c~
-  c r8 b
-  b4 c c b~
-  b2
+  b4 d c
+  c2 r8 b
+  b4 c c
+  b2.
   r1
   
   R1*4
@@ -383,10 +374,10 @@ tenor = \relative c' {
   c8 c16 c8. c16 b16~ b8 b16 b8 b16 b8
   cis cis cis r
   
-  b4 d c c~
-  c r8 b
-  b4 c c b~
-  b4. r8 r2
+  b4 d c
+  c2 r8 b
+  b4 c c b
+  r1
   
   c4. c8~ c4 c
   c4. c8~ c4 b
@@ -409,15 +400,15 @@ tenor = \relative c' {
   c16 c c8~ c b~ b b b16 b b8 
   cis cis4 r8
   
-  b4 d c c~
-  c r8 b
+  b4 d c
+  c2 r8 b
   b4 c c b
   r8 d d d
   
-  b4 d c c~
-  c r8 b
-  b4 c c b~
-  b1
+  b4 d c
+  c2 r8 b
+  b4 c c
+  b2.
   
 }
 
@@ -456,10 +447,10 @@ bass = \relative c {
   r4. g8 \tuplet 3/2 {g g g} \tuplet 3/2 {g g g}
   a a a r
   
-  e4 d f e~
-  e r8 e
-  fis4 a d, g~
-  g2
+  e4 d f
+  e2 r8 e
+  fis4 a d,
+  g2.
   r1
   
   R1*4
@@ -495,10 +486,10 @@ bass = \relative c {
   g8 g16 g8. g16 g16~ g8 g16 g8 g16 g8
   a a a r
   
-  e4 d f e~
-  e r8 e
-  fis4 a d, g~
-  g4. r8 r2
+  e4 d f
+  e2 r8 e
+  fis4 a d, g
+  r1
   
   c,4. c8~ c4 g'
   c,4. e8~ e4 fis
@@ -521,15 +512,15 @@ bass = \relative c {
   g16 g g8~ g g~ g g g16 g g8
   a a4 r8
   
-  e4 d f e~
-  e r8 e
+  e4 d f
+  e2 r8 e
   fis4 a d, g
   r8 g g d
   
-  e4 d f e~
-  e r8 e
-  fis4 a d, g~
-  g1
+  e4 d f
+  e2 r8 e
+  fis4 a d,
+  g2.
 }
 
 verseOneWomen = \lyricmode {
