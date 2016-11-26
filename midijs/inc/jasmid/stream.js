@@ -1,5 +1,4 @@
 /* Wrapper for accessing strings through sequential reads */
-
 function Stream(str) {
 	var position = 0;
 	

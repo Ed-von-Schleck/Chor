@@ -197,7 +197,7 @@ dom.loadScript.prototype.add = function(config) {
 
 dom.loadScript = new dom.loadScript();
 
-function globalExists(path, root) {
+var globalExists = function(path, root) {
 	try {
 		path = path.split('"').join('').split("'").join('').split(']').join('').split('[').join('.');
 		var parts = path.split(".");

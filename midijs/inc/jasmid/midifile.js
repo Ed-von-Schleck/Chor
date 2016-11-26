@@ -2,7 +2,6 @@
 class to parse the .mid file format
 (depends on stream.js)
 */
-
 function MidiFile(data) {
 	function readChunk(stream) {
 		var id = stream.read(4);
@@ -11,7 +10,7 @@ function MidiFile(data) {
 			'id': id,
 			'length': length,
 			'data': stream.read(length)
-		}
+		};
 	}
 	
 	var lastEventTypeByte;
@@ -23,13 +22,10 @@ function MidiFile(data) {
 		if ((eventTypeByte & 0xf0) == 0xf0) {
 			/* system / meta event */
 			if (eventTypeByte == 0xff) {
-				var subtypeByte = stream.readInt8();
-				var length = stream.readVarInt();
-
 				/* meta event */
 				event.type = 'meta';
-				event.status = subtypeByte;
-
+				var subtypeByte = stream.readInt8();
+				var length = stream.readVarInt();
 				switch(subtypeByte) {
 					case 0x00:
 						event.subtype = 'sequenceNumber';
@@ -147,12 +143,9 @@ function MidiFile(data) {
 				param1 = stream.readInt8();
 				lastEventTypeByte = eventTypeByte;
 			}
-
 			var eventType = eventTypeByte >> 4;
 			event.channel = eventTypeByte & 0x0f;
 			event.type = 'channel';
-			event.status = eventTypeByte;
-
 			switch (eventType) {
 				case 0x08:
 					event.subtype = 'noteOff';
@@ -191,9 +184,9 @@ function MidiFile(data) {
 					event.value = param1 + (stream.readInt8() << 7);
 					return event;
 				default:
-					throw 'Unrecognised MIDI event type: ' + eventType
+					throw "Unrecognised MIDI event type: " + eventType
 					/* 
-					console.log('Unrecognised MIDI event type: ' + eventType);
+					console.log("Unrecognised MIDI event type: " + eventType);
 					stream.readInt8();
 					event.subtype = 'unknown';
 					return event;
