@@ -299,7 +299,7 @@ def main():
 		<div id="player-status" style="position: relative;color: #000; z-index: -1;padding: 5px 11px 5px;">Lade MIDI Player ...</div>
 	</div>
 </div>
-<input type="image" src="midijs/images/play.png" align="absmiddle" value="play" onclick="player.loadFile('002.midi', player.start)">
+Test-MIDI: <input type="image" src="midijs/images/play.png" align="absmiddle" value="play" onclick="player.loadFile('002.midi', player.start)">
 """)
     htmlfile.write("<div id=\"all_songs\">\n")
     htmlfile.write("<a class=\"download\" href=\"https://github.com/Ed-von-Schleck/Chor/zipball/master\">Alle Songs als Zipfile <img src=\"download.png\" alt=\"Zip Icon\"></a>")
@@ -316,6 +316,7 @@ def main():
           htmlfile.write("<p>%s</p>"%song["composer"])
         if "arranger" in song:
           htmlfile.write("<p>%s</p>"%song["arranger"])
+        htmlfile.write("<input type=\"image\" src=\"midijs/images/play.png\"  value=\"play\" onclick=\"player.loadFile('%s.midi', player.start)\">"%path)
         htmlfile.write("<a href=\"%s.pdf\"><img class=\"pdf\" src=\"pdf.png\" alt=\"PDF icon\"></a>"%path)
         htmlfile.write("<a href=\"%s.midi\"><img class=\"midi\" src=\"midi.png\" alt=\"midi icon\"></a>"%path)
         htmlfile.write("<a href=\"%s.ly\"><img class=\"ly\" src=\"text.png\" alt=\"Lilypond icon\"></a>"%path)
