@@ -224,6 +224,33 @@ def main():
         right: 111px;
       }
     </style>
+    <!-- midi.js css -->
+    <link href="midijs/css/MIDIPlayer.css" rel="stylesheet" type="text/css" />
+    <!-- shim -->
+    <script src="midijs/inc/shim/Base64.js" type="text/javascript"></script>
+    <script src="midijs/inc/shim/Base64binary.js" type="text/javascript"></script>
+    <script src="midijs/inc/shim/WebAudioAPI.js" type="text/javascript"></script>
+    <script src="midijs/inc/shim/WebMIDIAPI.js" type="text/javascript"></script>
+    <!-- jasmid package -->
+    <script src="midijs/inc/jasmid/stream.js"></script>
+    <script src="midijs/inc/jasmid/midifile.js"></script>
+    <script src="midijs/inc/jasmid/replayer.js"></script>
+    <!-- midi.js package -->
+    <script src="midijs/js/midi/audioDetect.js" type="text/javascript"></script>
+    <script src="midijs/js/midi/gm.js" type="text/javascript"></script>
+    <script src="midijs/js/midi/loader.js" type="text/javascript"></script>
+    <script src="midijs/js/midi/plugin.audiotag.js" type="text/javascript"></script>
+    <script src="midijs/js/midi/plugin.webaudio.js" type="text/javascript"></script>
+    <script src="midijs/js/midi/plugin.webmidi.js" type="text/javascript"></script>
+    <script src="midijs/js/midi/player.js" type="text/javascript"></script>
+    <script src="midijs/js/midi/synesthesia.js" type="text/javascript"></script>
+    <!-- utils -->
+    <script src="midijs/js/util/dom_request_xhr.js" type="text/javascript"></script>
+    <script src="midijs/js/util/dom_request_script.js" type="text/javascript"></script>
+    <!-- includes -->
+    <script src="midijs/inc/timer.js" type="text/javascript"></script>
+    <script src="midijs/inc/colorspace.js" type="text/javascript"></script>
+    <script src="midijs/inc/event.js" type="text/javascript"></script>
     <!-- polyfill -->
     <script src="midijs/inc/shim/Base64.js" type="text/javascript"></script>
     <script src="midijs/inc/shim/Base64binary.js" type="text/javascript"></script>
@@ -268,6 +295,32 @@ window.onload = function () {
     for category, songs in categories.items():
       htmlfile.write("<li><a href=\"#%s\">%s</a></li>\n"%(category, category))
     htmlfile.write("</ul></header>\n")
+    htmlfile.write("""
+<div style="margin: 20px">
+	<div style="position: fixed; top: 0; left: 0; z-index: 4; overflow: hidden;" id="colors"></div>
+	<div style="margin-bottom: 50px; border: 1px solid #000; background: rgba(255,255,255,0.5); border-radius: 11px; float: left; width: 800px; position: relative; z-index: 2;">
+		<div class="player" style="height: 42px; box-shadow: 0 -1px #000; margin-bottom: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0;">
+			<div style="margin: 0 auto; width: 160px; float: right;">
+				<input type="image" src="midijs/images/pause.png" align="absmiddle" value="pause" onclick="pausePlayStop()" id="pausePlayStop">
+				<input type="image" src="midijs/images/stop.png" align="absmiddle" value="stop" onclick="pausePlayStop(true)">
+                <!--<input type="image" src="midijs/images/backward.png" align="absmiddle" value="backward"
+                    onclick="player.getNextSong(-1);">-->
+				<!--<input type="image" src="midijs/images/forward.png" align="absmiddle" value="forwared"
+        onclick="player.getNextSong(+1);">-->
+			</div>
+			<div class="time-controls" style="float: left; margin: 0; position: relative; top: 5px;">
+				<span id="time1" class="time">0:00</span>
+				<span id="capsule">
+					<span id="cursor"></span>
+				</span>
+				<span id="time2" class="time" style="text-align: left;">-0:00</span>
+			</div>
+		</div>
+		<div id="player-status" style="position: relative;color: #000; z-index: -1;padding: 5px 11px 5px;">Lade MIDI Player ...</div>
+	</div>
+</div>
+<input type="image" src="midijs/images/play.png" align="absmiddle" value="play" onclick="player.loadFile('002.midi', player.start)">
+""")
     htmlfile.write("<div id=\"all_songs\">\n")
     htmlfile.write("<a class=\"download\" href=\"https://github.com/Ed-von-Schleck/Chor/zipball/master\">Alle Songs als Zipfile <img src=\"download.png\" alt=\"Zip Icon\"></a>")
     htmlfile.write("<a class=\"download\" href=\"https://github.com/Ed-von-Schleck/Chor\">Alle Songs auf Github <img src=\"github-icon.png\" alt=\"Github Icon\"></a>")
@@ -288,7 +341,133 @@ window.onload = function () {
         htmlfile.write("<a href=\"%s.ly\"><img class=\"ly\" src=\"text.png\" alt=\"Lilypond icon\"></a>"%path)
         htmlfile.write("</div></li>\n")
       htmlfile.write("</ul>\n")
-    htmlfile.write("""</div>\n</body></html>""")
+    htmlfile.write("""</div>
+            
+<script type="text/javascript">
+	if (typeof (console) === "undefined") var console = {
+		log: function() {}
+	};
+	// Toggle between Pause and Play modes.
+	var pausePlayStop = function(stop) {
+		var d = document.getElementById("pausePlayStop");
+		if (stop) {
+			MIDI.Player.stop();
+			d.src = "midijs/images/play.png";
+		} else if (MIDI.Player.playing) {
+			d.src = "midijs/images/play.png";
+			MIDI.Player.pause(true);
+		} else {
+			d.src = "midijs/images/pause.png";
+			MIDI.Player.resume();
+		}
+	};
+	eventjs.add(window, "load", function(event) {
+		
+		/// load up the piano keys
+		var colors = document.getElementById("colors");
+		var colorElements = [];
+		for (var n = 0; n < 88; n++) {
+			var d = document.createElement("div");
+			d.innerHTML = MIDI.noteToKey[n + 21];
+			colorElements.push(d);
+			colors.appendChild(d);
+		}
+		///
+		MIDI.loader = new sketch.ui.Timer;
+		MIDI.loadPlugin({
+			soundfontUrl: "./midijs/soundfont/",
+			onprogress: function(state, progress) {
+				MIDI.loader.setValue(progress * 100);
+			},
+			onsuccess: function() {
+				/// this is the language we are running in
+				var status = document.getElementById("player-status");
+				status.innerHTML = "MIDI Player geladen mit "+ MIDI.api+" API. Song kann unten gew&auml;hlt werden.";// + " " + JSON.stringify(MIDI.supports);
+
+				/// this sets up the MIDI.Player and gets things going...
+				player = MIDI.Player;
+				player.timeWarp = 1; // speed the song is played back
+				//player.loadFile("002.midi", player.start);
+
+				/// control the piano keys colors
+				var colorMap = MIDI.Synesthesia.map();
+				player.addListener(function(data) {
+					var pianoKey = data.note - 21;
+					var d = colorElements[pianoKey];
+					if (d) {
+						if (data.message === 144) {
+							var map = colorMap[data.note - 27];
+							if (map) d.style.background = map.hex;
+							d.style.color = "#fff";
+						} else {
+							d.style.background = "";
+							d.style.color = "";
+						}
+					}
+				});
+				///
+				//ColorSphereBackground();
+				MIDIPlayerPercentage(player);
+			}
+		});
+	});
+
+	var MIDIPlayerPercentage = function(player) {
+		// update the timestamp
+		var time1 = document.getElementById("time1");
+		var time2 = document.getElementById("time2");
+		var capsule = document.getElementById("capsule");
+		var timeCursor = document.getElementById("cursor");
+		//
+		eventjs.add(capsule, "drag", function(event, self) {
+			eventjs.cancel(event);
+			player.currentTime = (self.x) / 420 * player.endTime;
+			if (player.currentTime < 0) player.currentTime = 0;
+			if (player.currentTime > player.endTime) player.currentTime = player.endTime;
+			if (self.state === "down") {
+				player.pause(true);
+			} else if (self.state === "up") {
+				player.resume();
+			}
+		});
+		//
+		function timeFormatting(n) {
+			var minutes = n / 60 >> 0;
+			var seconds = String(n - (minutes * 60) >> 0);
+			if (seconds.length == 1) seconds = "0" + seconds;
+			return minutes + ":" + seconds;
+		};
+		player.getNextSong = function(n) {
+			var id = Math.abs((songid += n) % songs.length);
+			player.loadFile(songs[id], player.start); // load MIDI
+		};
+		player.setAnimation(function(data, element) {
+			var percent = data.now / data.end;
+			var now = data.now >> 0; // where we are now
+
+			var end = data.end >> 0; // end of song
+            /*
+			if (now === end) { // go to next song
+				var id = ++songid % songs.length;
+				player.loadFile(songs[id], player.start); // load MIDI
+			}
+            */
+			// display the information to the user
+			timeCursor.style.width = (percent * 100) + "%";
+			time1.innerHTML = timeFormatting(now);
+			time2.innerHTML = "-" + timeFormatting(end - now);
+		});
+        
+	};
+	
+	
+	// Begin loading indication.
+	var player;
+	var songid = 0;
+	var song = [ ]; // removed base64-encoded songs in data-URLs, we could add our own URL list here
+</script>
+            
+</body></html>""")
 
     rss_root = ElementTree.Element("rss", attrib={"version": "2.0"})
     channel = ElementTree.Element("channel")
