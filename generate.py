@@ -277,16 +277,16 @@ def main():
     htmlfile.write("</ul></header>\n")
     htmlfile.write("""
 <div style="margin: 20px">
-	<div style="position: fixed; top: 0; left: 0; z-index: 4; overflow: hidden;" id="colors"></div>
-	<div style="margin-bottom: 50px; border: 1px solid #000; background: rgba(255,255,255,0.5); border-radius: 11px; float: left; width: 800px; position: relative; z-index: 2;">
+        <div style="position: fixed; top: 0; left: 0; z-index: 4; overflow: hidden;" id="colors"></div>
+	<div style="margin-bottom: 30px; border: 1px solid #000; background: rgba(255,255,255,0.5); border-radius: 11px; float: left; width: 800px; position: relative; z-index: 2;">
 		<div class="player" style="height: 42px; box-shadow: 0 -1px #000; margin-bottom: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0;">
 			<div style="margin: 0 auto; width: 160px; float: right;">
 				<input type="image" src="midijs/images/pause.png" align="absmiddle" value="pause" onclick="pausePlayStop()" id="pausePlayStop">
 				<input type="image" src="midijs/images/stop.png" align="absmiddle" value="stop" onclick="pausePlayStop(true)">
                 <!--<input type="image" src="midijs/images/backward.png" align="absmiddle" value="backward"
-                    onclick="player.getNextSong(-1);">-->
+                    onclick="player.setNextSong(-1);">-->
 				<!--<input type="image" src="midijs/images/forward.png" align="absmiddle" value="forwared"
-        onclick="player.getNextSong(+1);">-->
+        onclick="player.setNextSong(+1);">-->
 			</div>
 			<div class="time-controls" style="float: left; margin: 0; position: relative; top: 5px;">
 				<span id="time1" class="time">0:00</span>
@@ -299,11 +299,12 @@ def main():
 		<div id="player-status" style="position: relative;color: #000; z-index: -1;padding: 5px 11px 5px;">Lade MIDI Player ...</div>
 	</div>
 </div>
-Test-MIDI: <input type="image" src="midijs/images/play.png" align="absmiddle" value="play" onclick="player.loadFile('002.midi', player.start)">
 """)
     htmlfile.write("<div id=\"all_songs\">\n")
+    htmlfile.write("<div id=\"zip_downloads\">\n")
     htmlfile.write("<a class=\"download\" href=\"https://github.com/Ed-von-Schleck/Chor/zipball/master\">Alle Songs als Zipfile <img src=\"download.png\" alt=\"Zip Icon\"></a>")
     htmlfile.write("<a class=\"download\" href=\"https://github.com/Ed-von-Schleck/Chor\">Alle Songs auf Github <img src=\"github-icon.png\" alt=\"Github Icon\"></a>")
+    htmlfile.write("</div>\n")
     for category, songs in categories.items():
       htmlfile.write("<h2 id=\"%s\">%s</h2>\n<ul id=\"content\">"%(category, category))
       for path, song in songs.items():
@@ -316,7 +317,7 @@ Test-MIDI: <input type="image" src="midijs/images/play.png" align="absmiddle" va
           htmlfile.write("<p>%s</p>"%song["composer"])
         if "arranger" in song:
           htmlfile.write("<p>%s</p>"%song["arranger"])
-        htmlfile.write("<input type=\"image\" src=\"midijs/images/play.png\"  value=\"play\" onclick=\"player.loadFile('%s.midi', player.start)\">"%path)
+        htmlfile.write("<input type=\"image\" src=\"midijs/images/play.png\"  value=\"play\" onclick=\"player.setSong('%s.midi')\">"%path)
         htmlfile.write("<a href=\"%s.pdf\"><img class=\"pdf\" src=\"pdf.png\" alt=\"PDF icon\"></a>"%path)
         htmlfile.write("<a href=\"%s.midi\"><img class=\"midi\" src=\"midi.png\" alt=\"midi icon\"></a>"%path)
         htmlfile.write("<a href=\"%s.ly\"><img class=\"ly\" src=\"text.png\" alt=\"Lilypond icon\"></a>"%path)
@@ -342,6 +343,12 @@ Test-MIDI: <input type="image" src="midijs/images/play.png" align="absmiddle" va
 			MIDI.Player.resume();
 		}
 	};
+        var setStatus = function(str)
+        {
+                var status = document.getElementById("player-status");
+                status.innerHTML = str;
+        }
+
 	eventjs.add(window, "load", function(event) {
 		
 		/// load up the piano keys
@@ -361,14 +368,10 @@ Test-MIDI: <input type="image" src="midijs/images/play.png" align="absmiddle" va
 				MIDI.loader.setValue(progress * 100);
 			},
 			onsuccess: function() {
-				/// this is the language we are running in
-				var status = document.getElementById("player-status");
-				status.innerHTML = "MIDI Player geladen mit "+ MIDI.api+" API. Song kann unten gew&auml;hlt werden.";// + " " + JSON.stringify(MIDI.supports);
-
+                                setStatus("MIDI Player ist geladen und verwendet "+ MIDI.api+". Ein Song kann unten gew&auml;hlt werden.");// + " " + JSON.stringify(MIDI.supports)
 				/// this sets up the MIDI.Player and gets things going...
 				player = MIDI.Player;
 				player.timeWarp = 1; // speed the song is played back
-				//player.loadFile("002.midi", player.start);
 
 				/// control the piano keys colors
 				var colorMap = MIDI.Synesthesia.map();
@@ -418,9 +421,16 @@ Test-MIDI: <input type="image" src="midijs/images/play.png" align="absmiddle" va
 			if (seconds.length == 1) seconds = "0" + seconds;
 			return minutes + ":" + seconds;
 		};
-		player.getNextSong = function(n) {
+                player.setSong = function(song)
+                {
+			var name = String(song).substring(song.lastIndexOf('/') + 1); 
+                        setStatus("Lade "+name+" ...");
+                        player.loadFile(song, function() {player.start();setStatus(name); });
+                }
+
+		player.setNextSong = function(n) {
 			var id = Math.abs((songid += n) % songs.length);
-			player.loadFile(songs[id], player.start); // load MIDI
+                        player.setSong(songs[n]);
 		};
 		player.setAnimation(function(data, element) {
 			var percent = data.now / data.end;
