@@ -248,7 +248,6 @@
 		<div id="player-status" style="position: relative;color: #000; z-index: -1;padding: 5px 11px 5px;">Lade MIDI Player ...</div>
 	</div>
 </div>
-Test-MIDI: <input type="image" src="midijs/images/play.png" align="absmiddle" value="play" onclick="player.loadFile('002.midi', player.start)">
 <div id="all_songs">
 <a class="download" href="https://github.com/Ed-von-Schleck/Chor/zipball/master">Alle Songs als Zipfile <img src="download.png" alt="Zip Icon"></a><a class="download" href="https://github.com/Ed-von-Schleck/Chor">Alle Songs auf Github <img src="github-icon.png" alt="Github Icon"></a><h2 id="Ã¼Bungen">Ã¼Bungen</h2>
 <ul id="content"><li><h3>Klopfübungen</h3><div class="song_body"><p>Text: Thomas Lauterbach, Musik: Christoph Lehmann</p><p>Ed von Schleck</p><input type="image" src="midijs/images/play.png"  value="play" onclick="player.loadFile('./Ã¼bungen/klopfen/klopfen.midi', player.start)"><a href="./Ã¼bungen/klopfen/klopfen.pdf"><img class="pdf" src="pdf.png" alt="PDF icon"></a><a href="./Ã¼bungen/klopfen/klopfen.midi"><img class="midi" src="midi.png" alt="midi icon"></a><a href="./Ã¼bungen/klopfen/klopfen.ly"><img class="ly" src="text.png" alt="Lilypond icon"></a></div></li>
@@ -545,6 +544,11 @@ Test-MIDI: <input type="image" src="midijs/images/play.png" align="absmiddle" va
 			MIDI.Player.resume();
 		}
 	};
+    var setStatus = function(str)
+    {
+            var status = document.getElementById("player-status");
+            status.innerHTML = str;
+    }
 	eventjs.add(window, "load", function(event) {
 		
 		/// load up the piano keys
@@ -564,14 +568,11 @@ Test-MIDI: <input type="image" src="midijs/images/play.png" align="absmiddle" va
 				MIDI.loader.setValue(progress * 100);
 			},
 			onsuccess: function() {
-				/// this is the language we are running in
-				var status = document.getElementById("player-status");
-				status.innerHTML = "MIDI Player geladen mit "+ MIDI.api+" API. Song kann unten gew&auml;hlt werden.";// + " " + JSON.stringify(MIDI.supports);
-
 				/// this sets up the MIDI.Player and gets things going...
 				player = MIDI.Player;
 				player.timeWarp = 1; // speed the song is played back
-				//player.loadFile("002.midi", player.start);
+
+                setStatus("MIDI Player ist geladen und verwendet "+ MIDI.api+". Ein Song kann unten gew&auml;hlt werden.");// + " " + JSON.stringify(MIDI.supports);
 
 				/// control the piano keys colors
 				var colorMap = MIDI.Synesthesia.map();
@@ -621,9 +622,14 @@ Test-MIDI: <input type="image" src="midijs/images/play.png" align="absmiddle" va
 			if (seconds.length == 1) seconds = "0" + seconds;
 			return minutes + ":" + seconds;
 		};
+        player.setSong = function(song)
+        {
+            setStatus("Lade "+song+" ...");
+            player.loadFile(song, function() {setStatus(song); player.start();});
+        }
 		player.getNextSong = function(n) {
 			var id = Math.abs((songid += n) % songs.length);
-			player.loadFile(songs[id], player.start); // load MIDI
+            player.setSong(songs[n]);
 		};
 		player.setAnimation(function(data, element) {
 			var percent = data.now / data.end;
