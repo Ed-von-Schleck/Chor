@@ -17,6 +17,7 @@ chordNames = \chordmode {
   % Akkorde folgen hier.
   c1*2
   
+  \bar ".|:"
   d2:sus4 c/e f c/g
   d1/fis f4:6 g:6 c2/g
   
