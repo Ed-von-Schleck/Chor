@@ -409,7 +409,7 @@ tenor = \relative c' {
   c2 c2
   des4 es es es
   des4. des8 r2
-  des4. d8 r4 b
+  des4. b8 r4 b
   
   bes2 bes
   c4 c c bes
@@ -419,7 +419,7 @@ tenor = \relative c' {
   des2 des
   c4 c d d
   des4. des8~ des2
-  des4. d8 r4 des
+  des4. des8 r4 des
   
   c2 b
   bes bes
@@ -431,7 +431,7 @@ tenor = \relative c' {
   c2 c2
   des4 es es es
   des4. des8 r2
-  des4. d8 r4 b
+  des4. b8 r4 b
   
   bes2 bes
   c4 c c bes
@@ -441,7 +441,7 @@ tenor = \relative c' {
   des2 des
   c4 c d d
   des4. des8~ des2
-  des4. d8 r4 des
+  des4. des8 r4 des
   
   c2 b
   bes bes
@@ -478,7 +478,7 @@ tenor = \relative c' {
   c2 c2
   des4 es es es
   des2 r4 dis
-  des4. d8 r4 b
+  des4. b8 r4 b
   
   bes2 bes
   c4 c c bes
@@ -488,7 +488,7 @@ tenor = \relative c' {
   des2 des
   c4 c d d
   des4. des8 r2
-  des4. d8 r4 des
+  des4. des8 r4 des
   
   c c d d
   des des r2
@@ -513,10 +513,10 @@ bass = \relative c {
   r2 fis
   d e
   
-  f r4 fis
+  f r4 d
   g2 g4( e)
   f2. f4
-  e4. e8 r4 es
+  e4. e8 r4 c
   
   d f bes b
   c2 r4 c,
@@ -530,7 +530,7 @@ bass = \relative c {
   d,4. fis8 r4 fis
   g fis e g
   
-  fis4. b8 r4 fis
+  fis4. fis8 r4 fis
   e fis g a
   a g fis e
   d2 c
@@ -538,7 +538,7 @@ bass = \relative c {
   f4 f d fis
   g e c c
   f4. f8~ f2
-  r4 e( es2)
+  r4 c2.
   
   d4 f bes b
   c2 r4 c,
@@ -548,7 +548,7 @@ bass = \relative c {
   %% 3
   as2 g
   ges4 ges ges ges
-  f4. a8 r2
+  f4. f8 r2
   as4. as8 r4 as
   
   g2 g
@@ -570,7 +570,7 @@ bass = \relative c {
   
   as2 g
   ges4 ges ges ges
-  f4. a8 r2
+  f4. f8 r2
   as4. as8 r4 as
   
   g2 g
@@ -593,7 +593,7 @@ bass = \relative c {
   
   d2( dis
   e a2
-  d,2) r4 dis
+  d,2) r4 fis
   e4 g a cis,
   
   d r dis2(
@@ -614,7 +614,7 @@ bass = \relative c {
   %% 3
   as2 g
   ges4 ges ges ges
-  f2 r4 a
+  f2 r4 f
   as4. as8 r4 as
   
   g2 g
