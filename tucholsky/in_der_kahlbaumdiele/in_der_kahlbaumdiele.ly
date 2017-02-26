@@ -87,17 +87,17 @@ alto = \relative c' {
   cis4 cis8 cis4 cis8 cis4 cis8 d4 cis8
   d8 cis d r2. r4 d8
   
-  d4 d8 d4 d8 d4 d8 d4 d8
+  d4 d8 d4 d8 d4 d8 d4 e8
   d4. r2. r4 d8
   d4 d8 d4 d8 d4. r4 d8
   cis4 d8 cis4 cis8 cis4. r4.
   
-  d4 d8 d4 d8 d4 d8 d4 d8
+  d4 d8 d4 d8 d4 f8 e4 d8
   cis4. r2. r4 cis8
-  cis4 cis8 cis4 cis8 cis4 cis8 d4 cis8
+  cis4 cis8 cis4 cis8 cis4 e8 d4 cis8
   d8 cis d r2. r4 d8
   
-  d4 d8 d4 d8 d4 d8 d4 d8
+  d4 d8 d4 d8 d4 g8 f4 e8
   d4. r2. r4 d8
   d4 d8 d4 d8 d4. d
   cis d cis r
@@ -115,12 +115,12 @@ alto = \relative c' {
   
   fis4 fis8 f4 e8
   d4. d
-  g4 a8 ais4 fis8
+  g4 b8 ais4 fis8
   fis4. r
   
   gis4 gis8 gis4 gis8
-  a8 e e a e e
-  a4 e8 e4 e8
+  a8 e e a e fis
+  g4 g8 fis4 e8
   d4 d8 d4 d8
   cis4. r4 cis8
   d4. r
@@ -131,9 +131,9 @@ tenor = \relative c' {
   a4 a8 a4 a8 a4 a8 a4 a8
   a4. r2. r4 a8
   a4 a8 a4 a8 a4 a8 g4 g8
-  a8 a a r2. r4 a8
+  a8 a a r2. r4 c8
   
-  bes4 bes8 bes4 bes8 bes4 bes8 a4 bes8
+  bes4 bes8 bes4 bes8 bes4 bes8 a4 g8
   a4. r2. r4 a8
   gis4 gis8 gis4 gis8 gis4. r4 gis8
   a4 a8 a4 a8 a4. r4.
@@ -143,7 +143,7 @@ tenor = \relative c' {
   a4 a8 a4 a8 a4 a8 g4 g8
   a8 a a r2. r4 a8
   
-  bes4 bes8 bes4 bes8 bes4 bes8 a4 bes8
+  bes4 bes8 bes4 bes8 bes4 bes8 a4 g8
   a4. r2. r4 a8
   gis4 gis8 gis4 gis8 gis4. gis
   a gis a r
@@ -211,7 +211,7 @@ bass = \relative c {
   b4 d8 cis4 fis8
   b4. r
   
-  gis4 e8 e4 e8
+  e,4 e8 e4 e8
   a8 a a a a a
   a4 a8 a4 a8
   d,4 fis8 b4 b8
