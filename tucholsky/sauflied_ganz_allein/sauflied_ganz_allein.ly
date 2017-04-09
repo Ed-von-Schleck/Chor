@@ -31,6 +31,8 @@ chordNames = \chordmode {
   d2:m bes g1:m d2:m bes g1:m
   
   d:m
+  
+  \bar "|."
 }
 
 soprano = \relative c' {
