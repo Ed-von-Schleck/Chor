@@ -249,7 +249,7 @@ verseOne = \lyricmode {
   das be -- kommt mich a -- ber nich,
   denn am näch -- sten Tag bin ich so mü -- de.
   Du mein hol -- des Glas -- ge -- spinst!
-  Ob du dich auf mich be-- sinnst?
+  Ob du dich auf mich be -- sinnst?
   Mor -- gens warst du im -- mer et -- was prü -- de.
   Da -- rum trink ich auf dein Wohl
   die -- ses Gläs -- chen Al -- ko -- hol!
