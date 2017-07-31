@@ -2,6 +2,7 @@
 
 \header {
   title = "Der schlimmste Feind"
+  subtitle = "to be continued"
   composer = "Ed von Schleck"
   poet = "Kurt Tucholsky"
 }
