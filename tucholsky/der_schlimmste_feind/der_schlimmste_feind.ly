@@ -2,7 +2,6 @@
 
 \header {
   title = "Der schlimmste Feind"
-  subtitle = "to be continued"
   composer = "Ed von Schleck"
   poet = "Kurt Tucholsky"
 }
@@ -36,11 +35,15 @@ chordNames = \chordmode {
   g1 g/f c/e g/d
   c e:m/b a:m g
   d1 e2:m a:m c b e1:m
-  %d1 e2:m a:m c b e1:m
+  d1 e2:m a:m c b e1:m
   
-  %e1*3:m b1
-  %a:m d b:7 e2:m e:7
-  %a1*2 e/gis fis:m fis:m7
+  e1*3:m b1
+  a:m d b:7 e1:m
+  g1*2 a:9 e:m e:m/d
+  f c b:sus4 b:7
+  
+  e1:m a:m c2 b:7 e1:m
+  e1:m a:m c2 b:7 e2.:m \bar "|."
 }
 
 soprano = \relative c' {
@@ -113,25 +116,49 @@ soprano = \relative c' {
   g g8 g fis4 fis
   e2 r
   
-  %R1*3
-  %r2. b'4
+  R1*3
+  r2. e4
   
-  %b4 b r8 a8 g4
-  %g8 g4 g r8 g g
-  %g4 g fis e
-  %fis b, r b
+  b'4 b r8 a8 g4
+  g8 g4 g r8 g g
+  g4 g fis e
+  fis b, r b
   
-  %a'4 a8 a4. a4
-  %a a8 a4. a8 a
-  %a4 a8 a4 g8 fis4
-  %g4 b r2
+  a'4 a4 a4. g8
+  fis4 fis8 fis4. fis8 g
+  a4 a8 a4 g8 fis4
+  g4 b r2
   
-  %cis2 cis2~
-  %cis r4 cis
-  %e2 e~
-  %e4 r gis, gis
+  b2 b~
+  b2 r4 b
+  b2 b~
+  b4 r4 b a
   
-  %a
+  b1~
+  b1
+  r
+  b4 b c d
+  
+  c1~
+  c2 b4 a
+  c2 c
+  r c
+  
+  b1~
+  b
+  r
+  r2. b4
+  
+  b4 r8 b b b b4
+  a4 a8 a4. a8 a
+  g4 g8 g fis4 fis
+  e4 r2.
+  
+  r4. b'8 b b b4
+  a4 a8 a4. a8 a
+  g4 g8 g fis4 fis
+  e2.
+  
   
 }
 
@@ -162,7 +189,7 @@ alto = \relative c' {
   
   e4 e8 e4. e4
   d d8 d4 r8 e4
-  fis4 fis e dis
+  fis4 fis dis dis
   e e r e
   
   e4 a8 a4. a4
@@ -204,6 +231,49 @@ alto = \relative c' {
   g4 g e e
   e4 e8 e dis4 dis
   e2 r
+  
+  R1*3
+  r2. e4
+  
+  b'4 b r8 a8 g4
+  g8 g4 g r8 g g
+  g4 g fis e
+  fis b, r b
+  
+  a'4 a4 a4. g8
+  fis4 fis8 fis4. fis8 g
+  a4 a8 a4 g8 fis4
+  g4 b r2
+  
+  g2 g~
+  g2 r4 g
+  e2 e~
+  e4 r4 e fis
+  
+  g1~
+  g1
+  r
+  g4 g g g
+  
+  a1~
+  a2 f4 f
+  g2 g
+  r g
+  
+  fis1~
+  fis
+  r
+  r2. fis4
+  
+  g4 r8 g g g g4
+  e4 e8 e4. e8 e
+  e4 e8 e dis4 dis
+  e4 r2.
+  
+  r4. b'8 b b b4
+  a4 a8 a4. a8 a
+  g4 g8 g fis4 fis
+  e2. 
 }
 
 tenor = \relative c' {
@@ -260,6 +330,49 @@ tenor = \relative c' {
   e4 b c c
   c c8 c b4 b
   e,2 r
+  
+  R1*3
+  r2. e4
+  
+  b'4 b r8 a8 g4
+  g8 g4 g r8 g g
+  g4 g fis e
+  fis b, r b
+  
+  a'4 a4 a4. g8
+  fis4 fis8 fis4. fis8 g
+  a4 a8 a4 g8 fis4
+  g4 b r2
+  
+  d2 d~
+  d2 r4 d
+  cis2 cis~
+  cis4 r4 cis cis
+  
+  b1~
+  b1
+  r
+  b4 b c d
+  
+  f1~
+  f2 f4 c
+  e2 e
+  r e
+  
+  e1~
+  e
+  r1
+  r2. dis4
+  
+  e4 r8 b b b b4
+  c4 c8 c4. c8 c
+  c4 c8 c b4 b
+  e,4 r2.
+  
+  r4. b'8 b b b4
+  a4 a8 a4. a8 a
+  g4 g8 g fis4 fis
+  e2.
 }
 
 bass = \relative c {
@@ -269,7 +382,7 @@ bass = \relative c {
   
   e4 e8 e4 e8 e4
   e e8 e4 r8 e4
-  e e a ais
+  e b' a ais
   b b r b
   
   a a8 a4. a4
@@ -316,6 +429,49 @@ bass = \relative c {
   e4 e a4 a
   c c8 c b4 b
   e,2 r
+  
+  R1*3
+  r2. e4
+  
+  b'4 b r8 a8 g4
+  g8 g4 g r8 g g
+  g4 g fis e
+  fis b, r b
+  
+  a'4 a4 a4. g8
+  fis4 fis8 fis4. fis8 g
+  a4 a8 a4 g8 fis4
+  g4 b r2
+  
+  g2 g~
+  g2 r4 g
+  a2 a~
+  a4 r4 a a
+  
+  e1~
+  e1
+  r
+  e4 e e e
+  
+  f1~
+  f2 f4 f
+  e2 e
+  r g
+  
+  b1~
+  b
+  r1
+  r2. b4
+  
+  e,4 r8 e e e e4
+  a4 a8 a4. a8 a
+  c4 c8 c b4 b
+  e, r2.
+  
+  r4. b'8 b b b4
+  a4 a8 a4. a8 a
+  g4 g8 g fis4 fis
+  e2.
 }
 
 verse = \lyricmode {
@@ -359,7 +515,10 @@ verse = \lyricmode {
   Na -- tio -- na -- le und De -- mo -- kra -- ten.
   Frei -- heit? Er -- lö -- sung? Gu -- te Nacht.
   Ihr seid um die Frucht eu -- res Lei -- dens ge -- bracht.
+  
   Das macht: Ihr konn -- tet euch nicht be -- frein
+  von dem Feind aus den eig -- nen Reihn.
+  Ihr konn -- tet euch nicht be -- frein
   von dem Feind aus den eig -- nen Reihn.
 }
 
@@ -391,6 +550,6 @@ choirPart = \new ChoirStaff <<
   >>
   \layout { }
   \midi {
-    \tempo 4=170
+    \tempo 4=165
   }
 }
