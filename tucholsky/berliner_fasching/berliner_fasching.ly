@@ -520,7 +520,7 @@ bass = \relative c {
   
   d f bes b
   c2 r4 c,
-  d f bes b
+  d f bes gis
   a2 r4 a
   
   %% 2
@@ -603,8 +603,8 @@ bass = \relative c {
   
   f4 f d fis
   g e c c
-  r1
-  e4. es8 r4 es
+  r2 f2(
+  e4.) es8 r4 es
   
   d4 f bes b
   c2 r4 c,
@@ -782,13 +782,105 @@ choirPart = \new ChoirStaff <<
   \new Lyrics \lyricsto "bass" \bassVerse
 >>
 
-\score {
-  <<
-    \chordsPart
-    \choirPart
-  >>
-  \layout { }
-  \midi {
-    \tempo 4=155
+miditempo =155
+
+\book{
+  \score {
+    <<
+      \chordsPart
+      \choirPart
+    >>
+    \layout { }
+    \midi {
+      \tempo 4=\miditempo
+      \context {
+        \Staff
+        \remove "Staff_performer"
+      }
+      \context {
+        \Voice
+        \consists "Staff_performer"
+      }
+    }
+  }
+}
+
+\book{
+  \bookOutputSuffix "sopran"
+  \score {
+    <<
+      \chordsPart
+      \new Voice = "soprano" { \voiceOne \soprano }
+      \new Lyrics \with {
+      } \lyricsto "soprano" \sopranoVerse
+    >>
+    \midi {
+      \tempo 4=\miditempo
+    }
+  }
+}
+
+\book{
+  \bookOutputSuffix "alt"
+  \score {
+    <<
+      \chordsPart
+      \new Voice = "alto" { \voiceTwo \alto }
+      \new Lyrics \with {
+      } \lyricsto "alto" \altoVerse
+    >>
+    \midi {
+      \tempo 4=\miditempo
+    }
+  }
+}
+
+\book{
+  \bookOutputSuffix "tenor"
+  \score {
+    <<
+      \chordsPart
+      \new Voice = "tenor" { \voiceOne \tenor }
+      \new Lyrics \with {
+      } \lyricsto "tenor" \tenorVerse
+    >>
+    \midi {
+      \tempo 4=\miditempo
+    }
+  }
+}
+
+\book{
+  \bookOutputSuffix "bass"
+  \score {
+    <<
+%       \chordsPart
+      \new Voice = "bass" { \voiceTwo \bass }
+      \new Lyrics \with {
+      } \lyricsto "bass" \bassVerse
+    >>
+    \midi {
+      \tempo 4=\miditempo
+    }
+  }
+}
+
+\book{
+  \bookOutputSuffix "noChords"
+  \score {
+    <<
+      \choirPart
+    >>
+    \midi {
+      \tempo 4=\miditempo
+      \context {
+        \Staff
+        \remove "Staff_performer"
+      }
+      \context {
+        \Voice
+        \consists "Staff_performer"
+      }
+    }
   }
 }
