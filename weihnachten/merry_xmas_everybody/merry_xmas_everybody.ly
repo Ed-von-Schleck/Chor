@@ -4,13 +4,14 @@
   title = "Merry Xmas Everybody"
   composer = "Noddy Holder, Jim Lea (Slade)"
   arranger = "Ed von Schleck"
-  % Voreingestellte LilyPond-Tagline entfernen
-  tagline = ##f
 }
 
 \paper {
-  #(set-paper-size "a5")
+  #(set-paper-size "a4")
 }
+
+#(set-global-staff-size 19)
+
 
 \layout {
   \context {
@@ -52,16 +53,15 @@ chordNames = \chordmode {
   c2 a:m e1:m g2 g:sus4 g1
   c2 a:m e1:m g2 g:sus4 g1
   f1 c f c
-  d:m f g g:7
+  d:m f g 
   
-  c e:m es c
-  c e:m es2 es/d es1/c
-  g1 g:7
+  \repeat volta 2 {
+    g:7
   
-  c e:m es c
-  c e:m es2 es/d es1/c
-  g1
-  \bar "|."
+    c e:m es c
+    c e:m es2 es/d es1/c
+    g1 
+  }
 }
 
 soprano = \relative c' {
@@ -139,18 +139,7 @@ soprano = \relative c' {
   bes' bes bes bes
   bes2( g
   b1)
-  r4 g a b
   
-  c2 d8 e4 d8~
-  d b r4 g e8 bes'~
-  bes4 g f8 es4 g8~
-  g2 r
-  
-  c d8 e4 d8~
-  d b4 g8~ g r e4
-  bes' bes bes bes
-  bes2( g
-  b1)
 }
 
 alto = \relative c' {
@@ -230,19 +219,7 @@ alto = \relative c' {
   g1~
   
   g
-  r4 g f f
   
-  e2 g8 g4 g8~
-  g g r4 e4 e8 es~
-  es4 es f8 es4 e8~
-  e2 r
-  
-  e2 g8 g4 g8~
-  g g4 g8~ g r e4
-  g g g g
-  g1~
-  
-  g
 }
 
 tenor = \relative c' {
@@ -322,19 +299,7 @@ tenor = \relative c' {
   es1(
   
   d)
-  r4 b c d
   
-  c2 g8 c4 b8~
-  b b r4 b b8 g~
-  g4 bes a8 bes4 c8~
-  c2 r
-  
-  c2 g8 c4 b8~
-  b b4 d8~ d r d4
-  es4 es bes bes
-  es1(
-  
-  d)
   
 }
 
@@ -415,19 +380,7 @@ bass = \relative c' {
   c4( d es f
   
   g1)
-  r4 g g g
   
-  c,2 c8 c4 e8~
-  e e r4 e e8 es~
-  es4 es c8 g'4 c,8~
-  c2 r
-  
-  c2 c8 c4 e8~
-  e e4 e8~ e r e4
-  es4 es d d
-  c4( d es f
-  
-  g1)
 }
 
 verseOne = \lyricmode {
