@@ -375,7 +375,7 @@ verseTwoThree = \lyricmode {
 
   From the e -- vil sci -- en -- tist com -- mu -- ni -- ty
   I'm sure to get e -- jec -- ted
-  but for Chris -- tmas I can seem to sum -- mon
+  but for Chris -- tmas I can't seem to sum -- mon
   a -- ny true in -- vec -- tive
   be -- cause what is there to hate?
   I mean it's real -- ly so sub -- jec -- tive,
