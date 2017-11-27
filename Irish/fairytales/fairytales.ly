@@ -26,24 +26,24 @@ harmonies = \chordmode {
   a2 e4:9 a4 
   b4:7 e4 b2
   
- e4:9 e2.
+ e1
  a1
- e4:9 e2 a4
+ e2. a4
  b1
  
- e4:9 e2.
+ e1
  a1
- e4:9 e2 a4
+ e2. a4
  b4 e4 b2
 
- e4:9 e2.
+ e1
  a1
- e4:9 e2 a4
+ e2. a4
  b1
  
- e4:9 e2.
+ e1
  a1
- e4:9 e2 a4
+ e2. a4
  b4 e2
   %%%5/4
   a2 e4:9 a4 b4
@@ -88,7 +88,7 @@ harmonies = \chordmode {
   b e e e
   a a a a 
   
-  e e cis:m a
+  e gis:m/dis cis:m a
   b e e e 
   %%Refrain%%
   a4. a8 b4:7 cis4.:m b4 a8
@@ -151,7 +151,7 @@ we kissed on a cor -- ner then danced through the night.
 VerseTwoM = \lyricmode{
 you're an old slut on junk, ly -- ing 
 there al -- most dead on a drip in that bed.
-You scum bag, you mag -- got you chep lou -- sy fag -- got, hap -- py
+You scum bag, you mag -- got you cheap lou -- sy fag -- got, hap -- py
 Christ -- mas your arse, I pray God it's the last.
 }
 
@@ -185,6 +185,14 @@ we kissed on a cor -- ner then danced through the night.
 
 VerseAlt = \lyricmode {
 %%% Strophe 1 %%%%%
+in the drunk tank
+an old man said to me, won't see an -- oth -- er one.
+the rare old moun -- tain dew.
+I turned my face a -- way and dreamed a -- bout you.
+ came in eight -- een to one. 
+I've got a feel -- ing this year's for me and you.
+ I love you ba -- by. 
+I can see a bet -- ter time when all our dreams come true.
 \VerseOneF
 You were hand -- some, when the band fin -- ished play -- ing they howled out for more.
 Si -- na -- tra was swing -- ing all the drunks they were sing -- ing, 
@@ -271,7 +279,7 @@ sopMusic = \relative c'' {
 \cueDuring #"klavier" #UP { R1 }
 s1*15
 \time 3/4
-\cueDuring #"klavier" #UP { R2.}
+\cueDuring #"klavier" #UP { s2.}
 \time 5/4
 \cueDuring #"klavier" #UP { s1 s4 }
 \time 12/8
@@ -329,28 +337,42 @@ e2. r2.
 
 }
 
-altMusic = \relative c'' {
+altMusic = \relative c' {
 \partial 8 s8
-s1 s 
-r1 r1 r1 r1
-r1 r1 r1 r1
-r1 r1 r1 r1
-r1 r1 r1
+s1 s1
+r2 r4 e8. dis16
+dis16 cis8. r4 r8 cis dis e
+e16 fis gis8 r4 r8 e8 a8. gis16 
+gis16 fis fis8 r2
+
+r2 r4 r8. e16 e8 dis
+dis16 cis8. cis4 r8 cis dis e
+e16 fis gis8 r4 r8 e a8. gis16
+fis4 e r2
+
+r2 r8. e16 e8 dis
+dis8. cis16 cis4 r8 cis dis16 e8.
+e16 gis8. r4 r8 e8 a8. gis16
+gis16 fis fis8 r4 r2
+
+r2 r8. e16 e8 dis
+dis16 (cis8.) cis4 r8 cis16 cis dis8. e16
+e16 gis gis8 r4 r8 e a8. gis16
 \time 3/4
-r2.
+fis8. e16 e4 r4
 \time 5/4
 s1 s4
 \time 12/8
-s4.*4 s4. s4. s4. s8 e, e
+s4.*4 s4. s4. s4. s8 e e
 %%Strophe%%
 e8 fis gis  fis e fis  gis16 fis8. e8 cis r e16 e
 e8 fis gis b gis gis16 gis b8 gis e fis r b16 b
 b8 gis e fis e fis gis fis e cis r e8 
 e fis gis b gis e fis gis fis e r e16 e
 
-e8 e r8 r2. r4 e16 fis
+gis8 e r8 r2. r4 e16 fis
 gis8 fis e cis a cis b cis dis e r e
-e8. e16 e8 e e e16 e cis8 cis cis  dis e fis
+e8. e16 e8 e e e16 e e8 e e  dis e fis
 gis fis e cis a cis b cis dis e r e
 %%% Refrain %%%
 a4 a16 a a8 a4 gis8 gis4 fis e8
@@ -362,7 +384,7 @@ s1.
 s4. s4. s4. s4 e16 e
 e8 r e16 e e8 r4 r4.  r4 e16 fis
 gis8 fis e cis a cis b cis dis e r gis
-e8. e16 e8 e e e8 cis8 cis cis  dis e fis16 fis
+e8. e16 e8 e e e8 e8 e e dis e fis16 fis
 gis8 fis e cis a cis b cis dis e r e
 %%% Refrain %%%
 a4 a16 a a8 a4 gis8 gis4 fis e8
@@ -378,7 +400,7 @@ e4 e8 e4. r4 b8 e4 e8
 e4 dis8~dis4. r4. r4.
 r4. r4. r4. r4.
 r4. r4. r4 e8~e fis e
-e4 e8 e4 e8 e4 b8 cis4 cis8
+e4 e8 dis4 dis8 e4 b8 cis4 cis8
 dis4. e4. r4. r4 e8
 %%% Refrain %%%
 a4 a16 a a8 a4 gis8 gis4 fis e8
@@ -391,35 +413,35 @@ b2. r2.
 tenorMusic = \relative c'{
 \partial 8 r8
 r1 r1
-r2 r4 e8. dis16
-dis16 cis8. r4 r8 cis dis16 e8.
-b16 gis gis8 r4 r8 e8 a8. gis16 
-gis16 fis fis8 r2
+r2 r4 b8. b16
+b16 cis8. r4 r8 cis b cis
+b16 a gis8 r4 r8 b8 cis8. e16 
+e16 dis dis8 r2
 
-r2 r4 r8. e'16 e8 dis
-dis16 cis8. cis4 r8 cis dis e
-b16 gis gis8 r4 r8 e a8. gis16
-fis4 e r2
+r2 r4 r8. b16 b8 b
+b16 cis8. cis4 r8 cis b cis
+b16 a gis8 r4 r8 b cis8. e16
+dis4 e r2
 
-r2 r8. e'16 e8 dis
-dis8. cis16 cis4 r8 cis dis16 e8.
-b16 gis8. r4 r8 e8 a8. gis16
-gis16 fis fis8 r4 r2
+r2 r8. b16 b8 b
+b8. cis16 cis4 r8 cis b cis
+b16 gis8. r4 r8 b8 cis8. e16
+e16 dis dis8 r4 r2
 
-r2 r8. e'16 e8 dis
-dis16 (cis8.) cis4 r8 cis16 cis dis8. e16
-b16 gis gis8 r4 r8 e a8. gis16
+r2 r8. b16 b8 b
+b16 (cis8.) cis4 r8 cis16 cis b8 cis
+b16 fis gis8 r4 r8 b cis8. e16
 \time 3/4
-fis8. e16 e4 r4
+dis8. dis16 e4 r4
 \time 5/4
 r1 r4
 \time 12/8
 \PauseR
-r4 b'16 b gis8 e b' b gis e fis e e16 dis
+r4 b16 b gis8 e b' b gis e fis e e16 dis
 e8 fis gis a e e dis e fis gis r b
 
-gis8. a16 b8 b gis gis16 gis a8 gis a fis fis dis
-e fis gis a e e dis e fis gis r b
+gis8. a16 b8 b gis gis16 gis a8 cis cis b cis dis
+e b gis a e e dis e fis gis r b
 %%% Refrain %%%
 e4 e16 e e8 b4 cis8 cis4 b a8
 gis8 b4 a b8 cis4. r8 b b
@@ -430,8 +452,8 @@ R1. * 4
 
 r4. r4 e16 b' b8 gis e fis r e16 e
 e8 fis gis a e e dis e fis gis r b
-gis8. a16 b8 b gis gis a gis a fis fis dis16 dis
-e8 fis gis a e e dis e fis gis r b
+gis8. a16 b8 b gis gis a8 cis cis b cis dis16 dis
+e8 b gis a e e dis e fis gis r b
 %%% Refrain %%%
 e4 e16 e e8 b4 cis8 cis4 b a8
 gis8 b4 a b8 cis4. r8 b b
@@ -442,7 +464,7 @@ R1. * 2
 r2. r4 b8 b4 b8
 dis4 e8 e4. r4 e8 b4 b8
 a4 a8 a4. r4 a8~a a a
-gis4 e8 e4. r4 gis8 a4 b8
+gis4 b8 b4. r4 gis8 a4 b8
 b4 b8~b4. r4 b8~b b b 
 dis8 e e~e4 r8 r4 b8 e dis4
 dis8 cis cis~cis4. r4 a8~a a gis
@@ -462,35 +484,35 @@ bassMusic = \relative c{
 \partial 8 r8
 r1
 r2 r8 b16 b e8. dis16
-fis8. (e16) e4 r4 cis'8. b16
-b16 a8. r4 r8 a gis16 gis8.
-e16 e e8 r4 r8 b a8. a16 
-b16 b b8 r4 r8 b e8. dis16
+fis8. (e16) e4 r4 gis8. gis16
+a16 a8. r4 r8 a a a
+gis16 fis e8 r4 r8 e a8. a16 
+b16 b b8 r4 r8 b, e8. dis16
 
-fis8. e16 e4 r8. cis'16 cis8 b
-b16 a8. a4 r8 a gis gis
-e16 e e8 r4 r8 b a8. a16
-b4 e r8 b8 e8. dis16
+fis8. e16 e4 r8. gis16 gis8 gis
+a16 a8. a4 r8 a a a
+gis16 fis e8 r4 r8 gis a8. a16
+b4 gis r8 b,8 e8. dis16
 
-fis8. e16 e4 r8. cis'16 cis8 b
-b8. a16 a4 r8 a gis16 gis8.
-e16 e8. r4 r8 b8 a8. a16
-b16 b b8 r4 r8 b e8. dis16
+fis8. e16 e4 r8. gis16 gis8 gis
+a8. a16 a4 r8 a a a
+gis16 e8. r4 r8 gis8 a8. a16
+b16 b b8 r4 r8 b, e8. dis16
 
-fis8. (e16) e4 r8. cis'16 cis8 b
-a16 (a8.) a4 r8 a16 a gis8. gis16
-e16 e e8 r4 r8 b a8. a16
+fis8. (e16) e4 r8. gis16 gis8 gis
+a4 a4 r8 a16 a a8 a
+gis16 fis e8 r4 r8 gis a8. a16
 \time 3/4
-b8. b16 e4 r4
+b8. b16 gis4 r4
 \time 5/4
 s2 s2 s4
 \time 12/8
 \PauseS
-r4 b16 b e8 e e e e e b b b16 b
-e8 cis b a a a b b b e r e
+r4 b,16 b e8 e e e e e b b b16 b
+e8 dis b a a a b b b e r b
 
-e8. e16 e8 e8 e e16 e a,8 a a b b b 
-e cis b a a a b b b e r gis8
+e8. e16 e8 e8 e e16 e cis8 cis cis b b b 
+e dis b a a a b b b e r gis8
 %%% Refrain %%%
 a4 a16 a a8 fis4 cis8 cis4 dis e8
 e8 e4 a,8 (e') dis8 cis4. r8 b' a
@@ -500,9 +522,9 @@ s1.
 \PauseSEinTakt
 \PauseSEinTakt
 r4. r4 e16 e e8 e e dis r e16 e
-e8 cis b a a a b b b e r e
-e8. e16 e8 e e e  a, a a b b b16 b
-e8 cis b a a a b b b e r gis
+e8 cis b a a a b b b e r b
+e8. e16 e8 e8 e e cis8 cis cis b b b 16 b
+e8 dis b a a a b b b e r gis
 %%% Refrain %%%
 a4 a16 a a8 fis4 cis8 cis4 dis e8
 e8 e4 a,8 (e') dis8 cis4. r8 b' a
@@ -511,13 +533,13 @@ e4. s4. s4. s4.
 \PauseSEinTakt
 \PauseSEinTakt
 s4. s4. r4 b8 e4 dis8
-fis4 e8 e4. r4 e8 e4 gis8
+fis4 gis8 gis4. r4 e8 e4 gis8
 a4 a,8 a4. r4 a8~a b cis
 e4 e8 e4. r4 e8 cis4 cis8 
 b4 b8~b4. r4 b8~b e dis  
-fis8 e e~e4 r8  r4 e8 e8 fis4
+fis8 gis gis~ gis4 r8  r4 e8 e8 fis4
 a8 a a~a4. r4 a,8~a8 b cis
-e4 e8 e4 dis8 cis4 b8 a4 cis8
+e4 e8 dis4 b8 cis4 b8 a4 cis8
 b4. e4. r4. r4 gis8
 %%% Refrain %%%
 a4 a16 a a8 fis4 cis8 cis4 dis e8
@@ -597,8 +619,7 @@ bassVerse = \lyricmode{
 
   }
 
- 
-      \midi {
+  \midi {
     \context {
       \Staff
       \remove "Staff_performer"
@@ -609,7 +630,7 @@ bassVerse = \lyricmode{
     }
     \context {
       \Score
-      tempoWholesPerMinute = #(ly:make-moment 72/2)
+      tempoWholesPerMinute = #(ly:make-moment 30/2)
     }
   }
 }
