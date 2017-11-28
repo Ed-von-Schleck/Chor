@@ -187,7 +187,7 @@ verse = \lyricmode {
   Christ, by high -- est heav'n a -- dored, Christ, the e -- ver -- las -- ting lord.
   Late in time be -- hold Him come, off -- spring of a vir -- gin's womb.
   
-  Veil'd in flesh the God -- head he, Hail, th'in -- crn -- nate De -- i -- ty
+  Veil'd in flesh the God -- head he, Hail, th'in -- car -- nate De -- i -- ty
   pleased as man with man ap -- pear, Je -- sus our Im -- ma -- nuel here.
   Hark! The he -- rald an -- gels sing, glo -- ry to the new -- born king.
 }

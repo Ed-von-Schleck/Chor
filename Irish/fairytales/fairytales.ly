@@ -430,7 +430,7 @@ e16 dis dis8 r4 r2
 
 r2 r8. b16 b8 b
 b16 (cis8.) cis4 r8 cis16 cis b8 cis
-b16 fis gis8 r4 r8 b cis8. e16
+b16 a gis8 r4 r8 b cis8. e16
 \time 3/4
 dis8. dis16 e4 r4
 \time 5/4
@@ -516,7 +516,7 @@ e dis b a a a b b b e r gis8
 %%% Refrain %%%
 a4 a16 a a8 fis4 cis8 cis4 dis e8
 e8 e4 a,8 (e') dis8 cis4. r8 b' a
-gis4 gis8 cis, a b r4 b8 b b e
+gis4 gis8 e cis b r4 b8 b b e
 s1.
 \PauseSEinTakt
 \PauseSEinTakt
@@ -528,7 +528,7 @@ e8 dis b a a a b b b e r gis
 %%% Refrain %%%
 a4 a16 a a8 fis4 cis8 cis4 dis e8
 e8 e4 a,8 (e') dis8 cis4. r8 b' a
-gis4 gis8 cis, a b r4 b8 b b e~
+gis4 gis8 e cis b r4 b8 b b e~
 e4. s4. s4. s4.
 \PauseSEinTakt
 \PauseSEinTakt
@@ -544,7 +544,7 @@ b4. e4. r4. r4 gis8
 %%% Refrain %%%
 a4 a16 a a8 fis4 cis8 cis4 dis e8
 e8 e4 a,8 (e') dis8 cis4. r8 b' a
-gis4 gis8 cis, a b r4 b8 b b e~
+gis4 gis8 e cis b r4 b8 b b e~
 e2. r
 \bar "|."
 }
