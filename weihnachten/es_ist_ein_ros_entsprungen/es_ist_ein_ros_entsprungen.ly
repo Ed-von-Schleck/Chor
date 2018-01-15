@@ -79,7 +79,7 @@ tenor = \relative c' {
   bes( a2) g4
   a2 r4 c4
   
-  c4 bes bes c
+  c4 c bes c
   c2 a4 r
   d2 c4 bes
   bes( a2) g4
