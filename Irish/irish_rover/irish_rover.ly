@@ -9,20 +9,9 @@
 }
 
 \paper {
-  #(set-paper-size "a5")
+  #(set-paper-size "a4")
 }
 
-\layout {
-  \context {
-    \Score
-    \remove "Bar_number_engraver"
-  }
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-    \override Stem #'neutral-direction = #'()
-  }
-}
 
 global = {
   \key c \major
