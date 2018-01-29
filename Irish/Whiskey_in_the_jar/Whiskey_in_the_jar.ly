@@ -1,7 +1,7 @@
 \version "2.12.2"
 
 %Größe der Partitur
-#(set-global-staff-size 14.5)
+#(set-global-staff-size 18)
 
 #(set-default-paper-size "a4")
 
