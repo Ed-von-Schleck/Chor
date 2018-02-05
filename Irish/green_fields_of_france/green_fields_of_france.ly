@@ -621,7 +621,7 @@ verseOne = \lyricmode {
 }
 
 verseTwo = \lyricmode {
-  sun now it shines on~the green fields of France
+  _ sun now it shines on~the green fields of France
   there's a warm sum -- mer breeze it~makes the red pop -- pies dance
   and look how the sun shines from un -- der the clouds
   there's no gas, no barbed wire, there's~no gun fi -- ring now.
