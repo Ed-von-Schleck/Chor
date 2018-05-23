@@ -22,6 +22,7 @@ chordNames = \chordmode {
 }
 
 soprano = \relative c' {
+  \repeat volta 2 {
   \global
   e8 fis g a g fis
   e4 r8 fis g a
@@ -32,7 +33,8 @@ soprano = \relative c' {
   e4 g fis
   e2 d4
   e2 r4
-  \bar ":|"
+  } 
+  \repeat volta 2 {
   b'4. a8 b cis
   b4 r b
   d8 cis b a g fis
@@ -42,7 +44,8 @@ soprano = \relative c' {
   b4 a8 g fis r
   e2 d4
   e2.
-  \bar "|."
+  }
+  %\bar "|."
 }
 
 alto = \relative c' {
