@@ -41,7 +41,7 @@ chordNames = \chordmode {
   
   
   c2.:m c:m/bes g:sus4/a as
-  c:m/g f:m6 f2.*2:sus4
+  c:m/g f:m6 f2.*2:sus2
   es2.:m as/es es:m7 as/es
   es:m7 c:dim f2.*2:sus4
   
@@ -56,7 +56,7 @@ chordNames = \chordmode {
   a2.:m d:m9 e2.*2:sus4
   
   c2.:m c:m/bes g:sus4/a as
-  c:m/g f:m6 f2.*2:sus4
+  c:m/g f:m6 f2.*2:sus2
   es2.:m as/es es:m7 as/es
   es:m7 c:dim f2.*2:sus4
   
@@ -66,6 +66,23 @@ chordNames = \chordmode {
   
   
   c2. bes/c f/a f:dim/as c/g d/fis g g:7
+  c es:sus2 bes:sus4 f4:sus4 f2 c2. d:m es2:sus2 es4 c2.
+  c es:sus2 bes:sus4 f4:sus4 f2 c2. d:m es2:sus2 es4 g2.
+  as bes:6 f2.*2:9 as2. bes f:9 f
+  as bes c2.*2 f2.:m g2:7sus4 g4:7 c2.*2
+  
+  a2.*4:m bes2. a2.*2:m bes2.
+  c2.*4:m des2. c2.*2:m des2.
+  a2.*4:m bes2. f2. f2.*2:9
+  
+  c2.*2 es:m c f:m9
+  es2.*2 ges:m es as:m9
+  c2.*2 es:m c g2.:sus4 g:7
+  
+  c2. bes/c f/a f:dim/as c/g d/fis g g:7
+  c2. bes/c f/a f:dim/as c/g d/fis g g:7
+  as bes:6 f2.*2:9 as2. bes f:9 f
+  as bes c2.*2 f2.:m g2:7sus4 g4:7 c2.*2
 }
 
 soprano = \relative c' {
@@ -193,6 +210,146 @@ soprano = \relative c' {
   d'2.
   d
   r
+  
+  r4 g, a
+  bes2 bes4
+  bes bes bes
+  bes a r
+  
+  r2 a4
+  bes a f
+  g2.
+  g2.
+  
+  r2.
+  bes4 bes bes
+  bes bes bes
+  bes a a
+  
+  r2 a4
+  bes a f
+  g2.
+  g2 r4
+  
+  c2 c4
+  c c d
+  g,2.
+  g4 r g
+  
+  c c c
+  c c d
+  g,2.
+  f2 r4
+  
+  c' d es
+  d2 c4
+  g2 r4
+  e f g
+  
+  as as as
+  g g g
+  g2.
+  g2 r4
+  
+  e4 fis g
+  a g fis
+  e2 e4
+  d2 c4
+  
+  e d c
+  a'2.
+  e
+  r
+  
+  g4 a bes
+  c( bes) a
+  g g g
+  f2 es4
+  
+  g f es
+  c'2.
+  g
+  r
+  
+  e4( fis) g
+  a( g) fis
+  e e e
+  d2 c4
+  
+  e d c
+  a'2.
+  g
+  r
+  
+  g4 as bes
+  g as bes
+  ges as bes
+  ges( as) bes
+  
+  g as bes
+  c2.
+  g
+  r
+  
+  bes4( ces) des
+  bes ces des
+  beses ces des
+  r2 des4
+  
+  bes( ces des)
+  bes( ces) des
+  bes2.
+  as2 r4
+  
+  g( as) bes
+  g as bes
+  ges as bes
+  ges as bes
+  
+  g as bes
+  c2.
+  g
+  r
+  
+  r4 c, g'
+  bes f bes
+  c c c
+  d d d
+  
+  e c g
+  fis2.
+  f?
+  r
+  
+  r4 c g'
+  bes f bes
+  c c c
+  d2 d4
+  
+  e c g
+  d'2.
+  d
+  r
+  
+  c4 c c
+  c c d
+  g,2.
+  g4 r g
+  
+  c c c
+  c2 d4
+  g,2.
+  f4 r g
+  
+  c d es
+  d d c
+  g2 r4
+  e( f) g
+  
+  as as as
+  g2.
+  g
+  r
 }
 
 alto = \relative c' {
@@ -223,8 +380,8 @@ alto = \relative c' {
   as2 as4
   
   g g g
-  as2.
-  bes
+  f2.
+  g
   r
   
   ges4 r ges
@@ -275,11 +432,11 @@ alto = \relative c' {
   as2 as4
   
   g g g
-  as2.
-  bes
+  f2.
+  g
   r
   
-  es,4 es ges
+  es4 es ges
   as2 as4
   es es es
   es2 r4
@@ -318,6 +475,146 @@ alto = \relative c' {
   <fis a>2.
   <g b>
   r
+  
+  r4 e f
+  f2 g4
+  f f f
+  f f r
+  
+  r2 e4
+  f f f
+  f2 (es4)
+  e?2.
+  
+  r2.
+  f4 f g
+  f f f
+  f f f
+  
+  r2 e4
+  f f f
+  f2( es4)
+  d2 r4
+  
+  es2 es4
+  f es d
+  c2.
+  c4 r c
+  
+  es es es
+  f es d
+  c2.
+  c2 r4
+  
+  es es es
+  f2 f4
+  e?2 r4
+  e d e
+  
+  f f f
+  f f f
+  e2.
+  e2 r4
+  
+  c d e
+  fis e d
+  c2 c4
+  c2 c4
+  
+  bes bes bes
+  c2.
+  c
+  r
+  
+  es4 f g
+  a( g) f
+  es es es
+  es2 es4
+  
+  des des des
+  es2.
+  es
+  r
+  
+  c4( d) e
+  fis( e) d
+  c c c
+  c2 c4
+  
+  bes bes bes
+  c2.
+  c
+  r
+  
+  e4 f g
+  e f g
+  es f ges
+  es f ges
+  
+  e? f g
+  e2.
+  c
+  r
+  
+  g'4( as) bes
+  g as bes
+  ges as beses
+  r2 beses4
+  
+  g?( as bes)
+  g( as) bes
+  es,2.
+  es2 r4
+  
+  e?( f) g
+  e f g
+  es f ges
+  es f ges
+  
+  e? f g
+  e2.
+  d
+  r
+  
+  r4 c e
+  d d f
+  a a a
+  <as b> q q
+  
+  <g c> g g
+  fis2.
+  f
+  r
+  
+  r4 c e
+  d d f
+  a a a
+  <as b>2 q4
+  
+  <g c> g g
+  <fis a>2.
+  <g b>
+  r
+  
+  es4 es es
+  f es d
+  c2.
+  c4 r c
+  
+  es es es
+  f( es) d
+  c2.
+  c4 r c
+  
+  es es es
+  f f f
+  e?2 r4
+  e( d) e
+  
+  f f f
+  f2.
+  e
+  r
 }
 
 tenor = \relative c' {
@@ -348,7 +645,7 @@ tenor = \relative c' {
   d2 es4
   
   d d c
-  d2.
+  as2.
   c
   r
   
@@ -400,7 +697,7 @@ tenor = \relative c' {
   d2 c4
   
   d d es
-  d2.
+  as,2.
   c
   r
   
@@ -442,6 +739,147 @@ tenor = \relative c' {
   <c e> q q
   d2.
   d
+  r2.
+  
+  r4 c c
+  bes2 es4
+  es es d
+  d c r
+  
+  r2 c4
+  d d c
+  bes2.
+  c
+  
+  r
+  bes4 bes es
+  es es d
+  d c c
+  
+  r2 c4
+  d d c
+  bes2.
+  b?2 r4
+  
+  c2 c4
+  bes bes bes
+  a2.
+  a4 r c
+  
+  c c c
+  bes bes bes
+  a2.
+  a2 r4
+  
+  c4 c c
+  d2 d4
+  e2 r4
+  c c c
+  
+  c c c
+  c c b
+  c2.
+  c2 r4
+  
+  a4 a a
+  c c c
+  a2 a4
+  a2 a4
+  
+  f4 f f
+  a2.
+  a
+  r
+  
+  c4 c c
+  es2 es4
+  c c c
+  c2 c4
+  
+  as as as
+  c2.
+  c
+  r
+  
+  a2 a4
+  c2 c4
+  a a a
+  a2 a4
+  
+  f4 f f
+  a2.
+  a
+  r
+  
+  c4 c c
+  c c c
+  bes bes bes
+  bes2 bes4
+  
+  c c c
+  c2.
+  as
+  r
+  
+  bes2 es4
+  es es es
+  des des des
+  r2 des4
+  
+  es2.
+  es2 bes4
+  ces2.
+  ces2 r4
+  
+  c2 c4
+  c c c
+  bes bes bes
+  bes bes bes
+  
+  c c c
+  c2.
+  c
+  r
+  
+  r4 c c
+  bes c d
+  <c f> q q
+  <d f> q q
+  
+  <c e> q q
+  <a d>2.
+  <b d>
+  r2.
+  
+  r4 c c
+  bes c d
+  <c f> q q
+  <d f>2 q4
+  
+  <c e> q q
+  d2.
+  d
+  r2.
+  
+  c4 c c
+  bes bes bes
+  a2.
+  a4 r c
+  
+  c c c
+  bes2 bes4
+  a2.
+  a4 r a
+  
+  c4 c c
+  d d d
+  e2 r4
+  c2 c4
+  
+  c c c
+  c2( b4)
+  c2.
+  r
 }
 
 bass = \relative c {
@@ -566,8 +1004,148 @@ bass = \relative c {
   as as as
   
   g g g
-  fis2.
+  d2.
   g
+  r
+  
+  r4 g f
+  es2 es4
+  bes bes d
+  f f r
+  
+  r2 c4
+  d d d
+  es2.
+  c
+  
+  r2.
+  es4 es es
+  bes bes d
+  f f f
+  
+  r2 c4
+  d d d
+  es2.
+  g2 r4
+  
+  as2 as4
+  bes bes bes
+  f2.
+  f4 r f
+  
+  as as as
+  bes bes bes
+  f2.
+  f2 r4
+  
+  as as as
+  bes2 bes4
+  c2 r4
+  g g g
+  
+  f f f
+  g g g
+  c,2.
+  c2 r4
+  
+  a4 a a
+  a a a
+  a2 a4
+  a2 a4
+  
+  bes bes bes
+  a2.
+  a
+  r
+  
+  c4 c c
+  c2 c4
+  c c c
+  c2 c4
+  
+  des4 des des
+  c2.
+  c
+  r
+  
+  a2 a4
+  a2 a4
+  a a a
+  a2 a4
+  
+  bes bes c
+  f2.
+  f
+  r
+  
+  e4 e e
+  e e e
+  es es es
+  es2 es4
+  
+  c c c
+  c( d e)
+  f2.
+  r
+  
+  es2 es4
+  es es es
+  ges ges ges
+  r2 ges4
+  
+  es2.
+  es2 es4
+  as2.
+  es2 r4
+  
+  c2 c4
+  c c c
+  es es es
+  es es es
+  
+  c c c
+  c2.
+  g'
+  r
+  
+  r4 c, c
+  c c' bes
+  a a a
+  as as as
+  
+  g g g
+  d2.
+  g
+  r
+  
+  r4 c, c
+  c c' bes
+  a a a
+  as2 as4
+  
+  g g g
+  d2.
+  g
+  r
+  
+  as4 as as
+  bes bes bes
+  f2.
+  f4 r f
+  
+  as as as
+  bes2 bes4
+  f2.
+  f4 r f
+  
+  as as as
+  bes bes bes
+  c2 r4
+  g2 g4
+  
+  f f f
+  g2.
+  c,2.
   r
 }
 
@@ -586,11 +1164,23 @@ verse = \lyricmode {
   Wei -- ches mit Har -- tem im Streit und das Schwe -- re -- lo -- se mit Schwe -- rem.
   
   Die -- sen Zwist hat der Gott und die hö -- he -- re Ord -- nung ge -- schie -- den:
-  Denn vom Himmel schnitt er die Lande, vom Lande die Wogen,  
-  trennte das flüchtige Himmelblau vom trägen Gewölke.
-  Und sobald sie entfaltet, gelöst aus der sinnlosen Häufung
-  band er gesondert sie an ihre Orte in Eintracht und Frieden
+  denn vom Him -- mel schnitt er die Lan -- de, vom Lan -- de die Wo -- gen
+  trenn -- te das flüch -- ti -- ge Him -- mel -- blau vom trä -- gen Ge -- wöl -- ke
+  und so -- bald sie ent -- fal -- tet, ge -- löst aus der sinn -- lo -- sen Häu -- fung
+  band er ge -- son -- dert sie an ih -- re Or -- te in Ein -- tracht und Frie -- den.
   
+  Feu -- ri -- ge Macht in des Him -- mels leicht ge -- schwun -- ge -- nem Bo -- gen
+  leuch -- te -- te auf und wähl -- te den Sitz im Schei -- tel der Run -- dung.
+  Luft ist eng dem Him -- mel ver -- wandt an Lei -- chte und Nä -- he.
+  
+  Dich -- ter als bei -- de zog Er -- de sod -- ann den grö -- be -- ren Stoff an,
+  schwer -- be -- drängt von der Ei -- gen -- last. Der flüs -- si -- ge Kreis -- strom
+  nahm den Rand in Be -- schlag und um -- schlang das ge -- grün -- de -- te Welt -- rund.
+  
+  Als nun, wer es auch war von den Göt -- tern, das wir -- re Ge -- men -- ge
+  so zer -- teilt und ge -- schie -- den und dann zu Glie -- dern ge -- ord -- net
+  ball -- te dann, da -- mit das Gleich -- maß ihr feh -- le von kei -- ner
+  Sei -- te, die Er -- de er rund zur Ges -- talt ei -- ner mäch -- ti -- gen Ku -- gel.
 }
 
 chordsPart = \new ChordNames \chordNames
