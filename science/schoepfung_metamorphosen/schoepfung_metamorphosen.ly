@@ -3,7 +3,6 @@
 \header {
   title = "Schöpfung"
   subtitle = "aus: Metarmorphosen"
-  subsubtitle = "(Early Access)"
   arranger = "Ed von Schleck"
   poet = "Ovid"
 }
