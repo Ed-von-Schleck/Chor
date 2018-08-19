@@ -323,23 +323,23 @@ tenor = \relative c' {
   \global
   g8
   
-  g g g4 bes8 c~
-  c r as4 bes8 c~
+  g g g4 bes8 d~
+  d r es4 bes8 c~
   c4 es c8 c
   bes4 r8 bes~ bes bes
   
-  g g g4 bes8 c~
-  c4 as8 r bes c~
+  g g g4 bes8 d~
+  d4 es8 r bes c~
   c4 es c8 bes~
   bes2 r4
   
-  g8 g g4 bes8 c~
-  c4 as8 r bes c~
+  g8 g g4 bes8 d~
+  d4 es8 r bes c~
   c4 es c8 bes~
   bes r bes4 bes
   
-  g8 g g4 bes8 c~
-  c4 as8 r bes c~
+  g8 g g4 bes8 d~
+  d4 es8 r bes c~
   c4 es c8 b~
   b2 r8 d
   
@@ -403,28 +403,28 @@ tenor = \relative c' {
   bes2.
   r2 r8 g
   
-  g g g4 bes8 c~
-  c r as4 bes8 c~
+  g g g4 bes8 d~
+  d r es4 bes8 c~
   c4 es c8 bes~
   bes r bes4 bes8 bes
   
-  g g g4 bes8 c~
-  c4 as8 r bes c~
+  g g g4 bes8 d~
+  d4 es8 r bes c~
   c4 es c8 bes~
   bes2 r4
   
-  g8 g g4 bes8 c~
-  c4 as bes8 c~
+  g8 g g4 bes8 d~
+  d4 es bes8 c~
   c4 es c8 c
   bes4 r8 bes~ bes bes
   
-  g8 g g4 bes8 c~
-  c8 r as4 bes8 c~
+  g8 g g4 bes8 d~
+  d8 r es4 bes8 c~
   c4 es c8 b~
   b2 r8 g
   
-  g g g4 bes8 c~
-  c4 r bes8 c~
+  g g g4 bes8 d~
+  d4 r bes8 c~
   c4 es c8 bes~
   bes4 bes8 r bes4
   
@@ -433,13 +433,13 @@ tenor = \relative c' {
   c4 as c8 bes~
   bes2 r4
   
-  g8 g g4 bes8 c~
-  c4 as8 r bes8 c~
+  g8 g g4 bes8 d~
+  d4 es8 r bes8 c~
   c4 es c8 c
   bes4 r8 bes~ bes bes
   
-  g8 g g4 bes8 c~
-  c4 as8 r bes8 c~
+  g8 g g4 bes8 d~
+  d4 es8 r bes8 c~
   c4 es c8 b~
   b2 r8 b
   

@@ -243,7 +243,7 @@ alto = \relative c' {
   b2 d
   c c4 r
   
-  b1
+  b1 	 	
 }
 
 tenor = \relative c {
