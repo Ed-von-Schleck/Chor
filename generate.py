@@ -469,12 +469,13 @@ Test-MIDI: <input type="image" src="midijs/images/play.png" align="absmiddle" va
     rss_root.append(channel)
     for category, songs in categories.items():
       for path, song in songs.items():
-        item = ElementTree.Element("item")
-        for tag, text in [("title", song["title"]),
-                           ("category", category),
-                           ("pubDate", email.utils.formatdate(song["mtime"])),
-                           ("link", path + ".pdf"),
-                           ("guid", path + ".pdf?mtime=" + str(song["mtime"]))]:
+        if "title" in song:
+          item = ElementTree.Element("item")
+          for tag, text in [("title", song["title"]),
+                            ("category", category),
+                            ("pubDate", email.utils.formatdate(song["mtime"])),
+                            ("link", path + ".pdf"),
+                            ("guid", path + ".pdf?mtime=" + str(song["mtime"]))]:
           element = ElementTree.Element(tag)
           element.text = text
           item.append(element)
