@@ -307,23 +307,24 @@ Test-MIDI: <input type="image" src="midijs/images/play.png" align="absmiddle" va
     for category, songs in categories.items():
       htmlfile.write("<h2 id=\"%s\">%s</h2>\n<ul id=\"content\">"%(category, category))
       for path, song in songs.items():
-        htmlfile.write("<li>")
-        htmlfile.write("<h3>%s</h3>"%song["title"])
-        if "subtitle" in song:
-          htmlfile.write("<h4>%s</h4>"%song["subtitle"])
-        htmlfile.write("<div class=\"song_body\">")
-        if "composer" in song:
-          htmlfile.write("<p>%s</p>"%song["composer"])
-        if "arranger" in song:
-          htmlfile.write("<p>%s</p>"%song["arranger"])
-        htmlfile.write("<input type=\"image\" src=\"midijs/images/play.png\"  value=\"play\" onclick=\"player.loadFile('%s.midi', player.start)\">"%path)
-        htmlfile.write("<a href=\"%s.pdf\"><img class=\"pdf\" src=\"pdf.png\" alt=\"PDF icon\"></a>"%path)
-        htmlfile.write("<a href=\"%s.midi\"><img class=\"midi\" src=\"midi.png\" alt=\"midi icon\"></a>"%path)
-        htmlfile.write("<a href=\"%s.ly\"><img class=\"ly\" src=\"text.png\" alt=\"Lilypond icon\"></a>"%path)
-        htmlfile.write("</div></li>\n")
+        if "title" in song:
+            htmlfile.write("<li>")
+            htmlfile.write("<h3>%s</h3>"%song["title"])
+            if "subtitle" in song:
+            htmlfile.write("<h4>%s</h4>"%song["subtitle"])
+            htmlfile.write("<div class=\"song_body\">")
+            if "composer" in song:
+            htmlfile.write("<p>%s</p>"%song["composer"])
+            if "arranger" in song:
+            htmlfile.write("<p>%s</p>"%song["arranger"])
+            htmlfile.write("<input type=\"image\" src=\"midijs/images/play.png\"  value=\"play\" onclick=\"player.loadFile('%s.midi', player.start)\">"%path)
+            htmlfile.write("<a href=\"%s.pdf\"><img class=\"pdf\" src=\"pdf.png\" alt=\"PDF icon\"></a>"%path)
+            htmlfile.write("<a href=\"%s.midi\"><img class=\"midi\" src=\"midi.png\" alt=\"midi icon\"></a>"%path)
+            htmlfile.write("<a href=\"%s.ly\"><img class=\"ly\" src=\"text.png\" alt=\"Lilypond icon\"></a>"%path)
+            htmlfile.write("</div></li>\n")
       htmlfile.write("</ul>\n")
     htmlfile.write("""</div>
-            
+
 <script type="text/javascript">
 	if (typeof (console) === "undefined") var console = {
 		log: function() {}
@@ -343,7 +344,7 @@ Test-MIDI: <input type="image" src="midijs/images/play.png" align="absmiddle" va
 		}
 	};
 	eventjs.add(window, "load", function(event) {
-		
+
 		/// load up the piano keys
 		var colors = document.getElementById("colors");
 		var colorElements = [];
@@ -438,16 +439,16 @@ Test-MIDI: <input type="image" src="midijs/images/play.png" align="absmiddle" va
 			time1.innerHTML = timeFormatting(now);
 			time2.innerHTML = "-" + timeFormatting(end - now);
 		});
-        
+
 	};
-	
-	
+
+
 	// Begin loading indication.
 	var player;
 	var songid = 0;
 	var song = [ ]; // removed base64-encoded songs in data-URLs, we could add our own URL list here
 </script>
-            
+
 </body></html>""")
 
     rss_root = ElementTree.Element("rss", attrib={"version": "2.0"})
