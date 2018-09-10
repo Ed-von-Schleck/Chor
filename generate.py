@@ -311,12 +311,14 @@ Test-MIDI: <input type="image" src="midijs/images/play.png" align="absmiddle" va
             htmlfile.write("<li>")
             htmlfile.write("<h3>%s</h3>"%song["title"])
             if "subtitle" in song:
-            htmlfile.write("<h4>%s</h4>"%song["subtitle"])
+              htmlfile.write("<h4>%s</h4>"%song["subtitle"])
+
             htmlfile.write("<div class=\"song_body\">")
             if "composer" in song:
-            htmlfile.write("<p>%s</p>"%song["composer"])
+              htmlfile.write("<p>%s</p>"%song["composer"])
             if "arranger" in song:
-            htmlfile.write("<p>%s</p>"%song["arranger"])
+              htmlfile.write("<p>%s</p>"%song["arranger"])
+
             htmlfile.write("<input type=\"image\" src=\"midijs/images/play.png\"  value=\"play\" onclick=\"player.loadFile('%s.midi', player.start)\">"%path)
             htmlfile.write("<a href=\"%s.pdf\"><img class=\"pdf\" src=\"pdf.png\" alt=\"PDF icon\"></a>"%path)
             htmlfile.write("<a href=\"%s.midi\"><img class=\"midi\" src=\"midi.png\" alt=\"midi icon\"></a>"%path)
