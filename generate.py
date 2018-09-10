@@ -476,10 +476,10 @@ Test-MIDI: <input type="image" src="midijs/images/play.png" align="absmiddle" va
                             ("pubDate", email.utils.formatdate(song["mtime"])),
                             ("link", path + ".pdf"),
                             ("guid", path + ".pdf?mtime=" + str(song["mtime"]))]:
-          element = ElementTree.Element(tag)
-          element.text = text
-          item.append(element)
-        channel.append(item)
+            element = ElementTree.Element(tag)
+            element.text = text
+            item.append(element)
+          channel.append(item)
     #rss_tree = ElementTree.ElementTree(rss_root)
 
     #data = [(elem.findtext("pubDate"), elem) for elem in rss_tree.find("channel")]
