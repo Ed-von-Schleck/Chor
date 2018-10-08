@@ -235,17 +235,112 @@ choirPart = \new ChoirStaff <<
   >>
 >>
 
-\score {
-  <<
-    \chordsPart
-    \choirPart
-  >>
-  \layout { }
-  \midi {
-    \tempo 4=80
-  }
-}
 
+miditempo =80
+
+\book{
+  \score {
+    <<
+      \chordsPart
+      \choirPart
+    >>
+    \layout { }
+    \midi {
+      \tempo 4=\miditempo
+      \context {
+        \Staff
+        \remove "Staff_performer"
+      }
+      \context {
+        \Voice
+        \consists "Staff_performer"
+      }
+    }
+  }
+  
+  
 \markup {
   Wenn Sie meinen, dass das stundenlang so weitergeht …
 }
+}
+
+\book{
+  \bookOutputSuffix "sopran"
+  \score {
+    <<
+      \chordsPart
+      \new Voice = "soprano" { \voiceOne \soprano }
+      \new Lyrics \with {
+      } \lyricsto "soprano" \verse
+    >>
+    \midi {
+      \tempo 4=\miditempo
+    }
+  }
+}
+
+\book{
+  \bookOutputSuffix "alt"
+  \score {
+    <<
+      \chordsPart
+      \new Voice = "alto" { \voiceTwo \alto }
+      \new Lyrics \with {
+      } \lyricsto "alto" \verse
+    >>
+    \midi {
+      \tempo 4=\miditempo
+    }
+  }
+}
+
+\book{
+  \bookOutputSuffix "tenor"
+  \score {
+    <<
+      \chordsPart
+      \new Voice = "tenor" { \voiceOne \tenor }
+      \new Lyrics \with {
+      } \lyricsto "tenor" \verse
+    >>
+    \midi {
+      \tempo 4=\miditempo
+    }
+  }
+}
+
+\book{
+  \bookOutputSuffix "bass"
+  \score {
+    <<
+      \chordsPart
+      \new Voice = "bass" { \voiceTwo \bass }
+      \new Lyrics \with {
+      } \lyricsto "bass" \verse
+    >>
+    \midi {
+      \tempo 4=\miditempo
+    }
+  }
+}
+
+\book{
+  \bookOutputSuffix "noChords"
+  \score {
+    <<
+      \choirPart
+    >>
+    \midi {
+      \tempo 4=\miditempo
+      \context {
+        \Staff
+        \remove "Staff_performer"
+      }
+      \context {
+        \Voice
+        \consists "Staff_performer"
+      }
+    }
+  }
+}
+

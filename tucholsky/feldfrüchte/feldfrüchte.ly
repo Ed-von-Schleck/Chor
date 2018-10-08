@@ -237,13 +237,106 @@ choirPart = \new ChoirStaff <<
   >>
 >>
 
-\score {
-  <<
-    \chordsPart
-    \choirPart
-  >>
-  \layout { }
-  \midi {
-    \tempo 4=70
+miditempo =70
+
+\book{
+  \score {
+    <<
+      \chordsPart
+      \choirPart
+    >>
+    \layout { }
+    \midi {
+      \tempo 4=\miditempo
+      \context {
+        \Staff
+        \remove "Staff_performer"
+      }
+      \context {
+        \Voice
+        \consists "Staff_performer"
+      }
+    }
+  }
+}
+
+
+\book{
+  \bookOutputSuffix "sopran"
+  \score {
+    <<
+      \chordsPart
+      \new Voice = "soprano" { \voiceOne \soprano }
+      \new Lyrics \with {
+      } \lyricsto "soprano" \verseOne
+    >>
+    \midi {
+      \tempo 4=\miditempo
+    }
+  }
+}
+
+\book{
+  \bookOutputSuffix "alt"
+  \score {
+    <<
+      \chordsPart
+      \new Voice = "alto" { \voiceTwo \alto }
+      \new Lyrics \with {
+      } \lyricsto "alto" \verseOne
+    >>
+    \midi {
+      \tempo 4=\miditempo
+    }
+  }
+}
+
+\book{
+  \bookOutputSuffix "tenor"
+  \score {
+    <<
+      \chordsPart
+      \new Voice = "tenor" { \voiceOne \tenor }
+      \new Lyrics \with {
+      } \lyricsto "tenor" \verseOne
+    >>
+    \midi {
+      \tempo 4=\miditempo
+    }
+  }
+}
+
+\book{
+  \bookOutputSuffix "bass"
+  \score {
+    <<
+      \chordsPart
+      \new Voice = "bass" { \voiceTwo \bass }
+      \new Lyrics \with {
+      } \lyricsto "bass" \verseOne
+    >>
+    \midi {
+      \tempo 4=\miditempo
+    }
+  }
+}
+
+\book{
+  \bookOutputSuffix "noChords"
+  \score {
+    <<
+      \choirPart
+    >>
+    \midi {
+      \tempo 4=\miditempo
+      \context {
+        \Staff
+        \remove "Staff_performer"
+      }
+      \context {
+        \Voice
+        \consists "Staff_performer"
+      }
+    }
   }
 }
