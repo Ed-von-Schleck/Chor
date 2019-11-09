@@ -628,6 +628,8 @@ choirPart = \new ChoirStaff <<
   \new Lyrics \lyricsto "bass" \verseBass
 >>
 
+miditempo = 115
+
 \score {
   <<
     \chordsPart
@@ -635,6 +637,58 @@ choirPart = \new ChoirStaff <<
   >>
   \layout { }
   \midi {
-    \tempo 4=115
+    \tempo 4=\miditempo
+  }
+}
+
+\book {
+  \bookOutputSuffix "Sopran"
+  \score {
+    <<
+      \new Staff
+      \new Voice {
+        \soprano
+      }
+    >>
+    \midi { \tempo 4 = \miditempo }
+  }
+}
+
+\book {
+  \bookOutputSuffix "Alt"
+  \score {
+    <<
+      \new Staff
+      \new Voice {
+        \alto
+      }
+    >>
+    \midi { \tempo 4 = \miditempo }
+  }
+}
+
+\book {
+  \bookOutputSuffix "Tenor"
+  \score {
+    <<
+      \new Staff
+      \new Voice {
+        \tenor
+      }
+    >>
+    \midi { \tempo 4 = \miditempo }
+  }
+}
+
+\book {
+  \bookOutputSuffix "Bass"
+  \score {
+    <<
+      \new Staff
+      \new Voice {
+        \bass
+      }
+    >>
+    \midi { \tempo 4 = \miditempo }
   }
 }
