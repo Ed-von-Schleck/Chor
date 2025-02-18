@@ -2,8 +2,10 @@
 
 \header {
   title = "I‘m So Worried"
-  composer = "? (Monty Python)"
-  arranger = "Ed von Schleck"
+  subtitle = "SAB"
+  subsubtitle = "from 'Monty Python's Contractual Obligation Album' (1980)"
+  composer = "Terry Jones (Monty Python)"
+  arranger = "CHMS"
 }
 
 
@@ -14,436 +16,436 @@
 }
 
 global = {
-  \key e \major
+  \key d \major
   \time 4/4
   \partial 2
 }
 
 soprano = \relative c'' {
   \global
-  gis b
+  fis, a
   
-  b8 a a a~ a4 a
-  a8 gis gis gis~ gis4 r8 fis~
-  fis fis fis fis fis4 e8 gis~
-  gis4 r8 gis gis4 b
+  a8 g g g~ g4 g
+  g8 fis fis fis~ fis4 r8 e~
+  e e e e e4 d8 fis~
+  fis4 r8 fis fis4 a
   
-  b8 a a a~ a4 a
-  a8 gis gis gis~ gis gis~ gis b~
-  b b b a~ a gis fis4
-  e4 r gis b
+  a8 g g g~ g4 g
+  g8 fis fis fis~ fis fis~ fis a~
+  a a a g~ g fis e4
+  d4 r fis a
   
-  b8 a a a~ a4 a
-  a8 gis gis gis~ gis4 r8 gis
-  fis fis fis fis~ fis e8 fis4
-  gis4 r8 gis gis4 b
+  a8 g g g~ g4 g
+  g8 fis fis fis~ fis4 r8 fis
+  e e e e~ e d8 e4
+  fis4 r8 fis fis4 a
   
-  b8 a a a~ a4 a
-  a8 gis gis gis~ gis4 gis4
-  b8 b b a~ a gis fis4
-  e4 r gis a
-  
-  
-  b8 b b b~ b4 b
-  e8 e e dis~ dis4 cis
-  cis8( b) r8 gis8 gis4 b
-  
-  b8 a a a~ a4 a
-  a8 gis gis gis~ gis gis~ gis b~
-  b b b a~ a gis fis4
-  e4 r gis b
+  a8 g g g~ g4 g
+  g8 fis fis fis~ fis4 fis4
+  a8 a a g~ g fis e4
+  d4 r fis g
   
   
-  b8 a a a~ a4 a
-  a8 gis gis gis~ gis4 gis8 gis
-  fis fis fis fis~ fis4 e8 gis~
-  gis4 r8 gis gis4 b
+  a8 a a a~ a4 a
+  d8 d d cis~ cis4 b
+  b8( a) r8 fis8 fis4 a
   
-  b8 a a a~ a4 a8 b
-  a8 gis gis gis~ gis gis gis4
-  b8 b b a~( a gis) fis4
-  e4 r gis a
-  
-  b8 b b b~ b2
-  e8 e~ e e dis cis~ cis4
-  cis8( b) r4 gis4 a
-  
-  b8 b b b~ b4 b8 b
-  e e e dis~ dis dis cis4
-  cis8( b) r4 gis4 b
-  
-  b8 a a a~ a4 a
-  a8 gis gis gis~ gis4 gis
-  b8 b~ b r a a~ a r
-  a gis r4 gis4 a
+  a8 g g g~ g4 g
+  g8 fis fis fis~ fis fis~ fis a~
+  a a a g~ g fis e4
+  d4 r fis a
   
   
+  a8 g g g~ g4 g
+  g8 fis fis fis~ fis4 fis8 fis
+  e e e e~ e4 d8 fis~
+  fis4 r8 fis fis4 a
   
-  b8 b b b~ b4. e8~
-  e e e e dis cis~ cis cis~
-  cis8( b) r4 gis4 a
+  a8 g g g~ g4 g8 a
+  g8 fis fis fis~ fis fis fis4
+  a8 a a g~( g fis) e4
+  d4 r fis g
   
-  b8 b b b~ b2
-  e8 e e e dis4 cis
-  cis8( b) r4 gis4 b
+  a8 a a a~ a2
+  d8 d~ d d cis b~ b4
+  b8( a) r4 fis4 g
   
-  b8 a a a~ a4 a
-  a8 gis gis gis~ gis4 r8 gis
-  fis fis fis fis~ fis e fis4
-  gis4 r8 gis gis4 b
+  a8 a a a~ a4 a8 a
+  d d d cis~ cis cis b4
+  b8( a) r4 fis4 a
   
-  b8 a a a~ a4 a8 b
-  a8 gis gis gis~ gis4 r8 gis
-  b8 b b a~ a gis fis4
-  e4 r\fermata gis a
+  a8 g g g~ g4 g
+  g8 fis fis fis~ fis4 fis
+  a8 a~ a r g g~ g r
+  g fis r4 fis4 g
   
   
-  b8 b b b~ b2
-  e8 e e dis~ dis b cis4
-  cis8( b) r gis gis4 a
   
-  b8 b b b~ b4 b8 b
-  e e e e dis4 cis
-  cis8( b) r gis gis4 b
+  a8 a a a~ a4. d8~
+  d d d d cis4 b 
+  b8( a) r4 fis4 g
   
-  b8 a a a~ a4 a
-  a8 gis gis gis~ gis gis~ gis b~
-  b b b a~ a gis fis4
-  e4 r\fermata gis b
+  a8 a a a~ a4 r
+  d8 d d d cis4 b
+  b8( a) r4 fis4 a
   
-  b8 b b b~ b2
-  e8 e e dis~ dis b cis4
-  cis8( b) r4 gis a
+  a8 g g g~ g4 g
+  g8 fis fis fis~ fis4 r8 fis
+  e e e e~ e d e4
+  fis4 r8 fis fis4 a
   
-  b8 b b b~ b4 b8 b
-  e e e4 dis cis
-  cis8( b) r gis gis4 b
+  a8 g g g~ g4 g8 a
+  g8 fis fis fis~ fis4 r8 fis
+  a8 a a g~ g fis e4
+  d4 r\fermata fis g
   
-  b8 a a a~ a4 a
-  a8 gis gis gis~ gis gis~ gis b~
-  b b b a~ a gis fis4
-  e4 r \bar "|."
+  
+  a8 a a a~ a4 r
+  d8 d d cis~ cis a b4
+  b8( a) r fis fis4 g
+  
+  a8 a a a~ a4 a8 a
+  d d d d cis4 b
+  b8( a) r fis fis4 a
+  
+  a8 g g g~ g4 g
+  g8 fis fis fis~ fis fis~ fis a~
+  a a a g~ g fis e4
+  d4 r\fermata fis a
+  
+  a8 a a a~ a2
+  d8 d d cis~ cis a b4
+  b8( a) r4 fis g
+  
+  a8 a a a~ a4 a8 a
+  d d d4 cis b
+  b8( a) r fis fis4 a
+  
+  a8 g g g~ g4 g
+  g8 fis fis fis~ fis fis~ fis a~
+  a a a g~ g fis e4
+  d4 r \bar "|."
 }
 
 alto = \relative c'' {
   \global
-  gis gis
+  fis, fis
   
-  fis8 fis fis fis~ fis4 fis
-  e8 e e e~ e4 r8 cis~
-  cis cis cis cis dis4 e8 e~
-  e4 r8 gis gis4 gis
+  e8 e e d~ d4 cis
+  d8 d d d~ d4 r8 b~
+  b b b b cis4 d8 d~
+  d4 r8 fis fis4 fis
   
-  fis8 fis fis fis~ fis4 fis
-  e8 e e e~ e eis~ eis e~
-  e e e dis~ dis dis dis4
-  e4 r gis gis
+  e8 e e d~ d4 cis
+  d8 d d d~ d dis~ dis e~
+  e e e  cis~ cis cis cis4
+  d4 r fis fis
   
-  fis8 fis fis fis~ fis4 fis
-  e8 e e e~ e4 r8 cis
-  cis cis cis dis~ dis e dis4
-  e4 r8 gis gis4 gis
+  e8 e e d~ d4 cis
+  d8 d d d~ d4 r8 b
+  b b b cis~ cis d cis4
+  d4 r8 fis fis4 fis
   
-  fis8 fis fis fis~ fis4 fis
-  e8 e e e~ e4 eis
-  e8 e e dis~ dis dis dis4
-  e4 r gis dis
-  
-  
-  gis8 gis gis gis~ gis4 gis
-  a8 a a b~ b4 a
-  gis4 r8 gis8 gis4 gis
-  
-  fis8 fis fis fis~ fis4 fis
-  e8 e e e~ e eis~ eis e~
-  e e e dis~ dis dis dis4
-  e4 r gis gis
+  e8 e e d~ d4 cis
+  d8 d d d~ d4 dis
+  e8 e e cis~ cis cis cis4
+  d4 r fis cis
   
   
   fis8 fis fis fis~ fis4 fis
+  g8 g g a~ a4 g
+  fis4 r8 fis8 fis4 fis
+  
+  e8 e e d~ d4 cis
+  d8 d d d~ d dis~ dis e~
+  e e e cis~ cis cis cis4
+  d4 r fis fis
+  
+  
+  e8 e e d~ d4 cis
+  d8 d d d~ d4 d8 d
+  b b b cis~ cis4 d8 d~
+  d4 r8 fis fis4 fis
+  
+  e8 e e d~ d4 cis8 cis
+  d8 d d d~ d d dis4
+  e8 e e cis~ cis4 cis4
+  d4 r fis cis
+  
+  
+  fis8 fis fis fis~ fis2
+  g8 g~ g g a g~ g4
+  fis4 r4 fis4 cis
+  
+  fis8 fis fis fis~ fis4 fis8 fis
+  g g g a~ a a g4
+  fis4 r4 fis4 fis
+  
+  e8 e e d~ d4 cis
+  d8 d d d~ d4 dis
+  e8 e~ e r cis cis~ cis r
+  d d r4 fis cis
+  
+  
+  
+  fis8 fis fis fis~ fis4. g8~
+  g g g g a4 g
+  fis4 r fis cis
+  
+  fis8 fis fis fis~ fis4 r
+  g8 g g g a4 g
+  fis4 r fis fis
+  
+  e8 e e d~ d4 cis
+  d8 d d d~ d4 r8 d
+  b b b cis~ cis b cis4
+  d4 r8 d fis4 fis
+  
   e8 e e e~ e4 e8 e
-  cis cis cis dis~ dis4 e8 e~
-  e4 r8 gis gis4 gis
+  d8 d d d~ d4 r8 dis
+  e8 e e cis~ cis4 cis4
+  d4 r fis4 cis
+  
+  
+  fis8 fis fis fis~ fis4 r
+  g8 g g a~ a a g4
+  fis4 r8 fis fis4 cis
   
   fis8 fis fis fis~ fis4 fis8 fis
-  e8 e e e~ e e eis4
-  e8 e e dis~ dis4 dis4
-  e4 r gis dis
+  g g g g a4 g
+  fis4 r8 fis fis4 fis
   
+  e8 e e d~ d4 cis
+  d8 d d d~ d dis~ dis e~
+  e e e cis~ cis cis cis4
+  d4 r fis cis
   
-  gis8 gis gis gis~ gis2
-  a8 a~ a a b a~ a4
-  gis4 r4 gis4 dis
-  
-  gis8 gis gis gis~ gis4 gis8 gis
-  a a a b~ b b a4
-  gis4 r4 gis4 gis
-  
-  fis8 fis fis fis~ fis4 fis
-  e8 e e e~ e4 eis
-  e8 e~ e r dis dis~ dis r
-  e e r4 gis dis
-  
-  
-  
-  gis8 gis gis gis~ gis4. a8~
-  a a a a b a~ a gis~
-  gis4 r gis dis
-  
-  gis8 gis gis gis~ gis2
-  a8 a a a b4 a
-  gis4 r gis gis
-  
-  fis8 fis fis fis~ fis4 fis
-  e8 e e e~ e4 r8 e
-  cis cis cis dis~ dis dis dis4
-  e4 r8 e gis4 gis
+  fis8 fis fis fis~ fis2
+  g8 g g a~ a a g4
+  fis4 r fis cis
   
   fis8 fis fis fis~ fis4 fis8 fis
-  e8 e e e~ e4 r8 eis
-  e8 e e dis~ dis4 dis4
-  e4 r gis4 dis
+  g g g4 a g
+  fis4 r8 fis fis4 fis
   
-  
-  gis8 gis gis gis~ gis2
-  a8 a a b~ b b a4
-  gis4 r8 gis gis4 dis
-  
-  gis8 gis gis gis~ gis4 gis8 gis
-  a a a a b4 a
-  gis4 r8 gis gis4 gis
-  
-  fis8 fis fis fis~ fis4 fis
-  e8 e e e~ e eis~ eis e~
-  e e e dis~ dis dis dis4
-  e4 r gis dis
-  
-  gis8 gis gis gis~ gis2
-  a8 a a b~ b b a4
-  gis4 r gis dis
-  
-  gis8 gis gis gis~ gis4 gis8 gis
-  a a a4 b a
-  gis4 r8 gis gis4 gis
-  
-  fis8 fis fis fis~ fis4 fis
-  e8 e e e~ e eis~ eis e~
-  e e e dis~ dis dis dis4
-  e4 r
+  e8 e e d~ d4 cis
+  d8 d d d~ d dis~ dis e~
+  e e e cis~ cis cis cis4
+  d4 r
 }
 
 tenor = \relative c' {
   \global
-  e d
+  d c
   
-  cis8 cis cis dis~ dis4 dis
-  e8 b b cis~ cis4 r8 a~
-  a a a a b4 b8 b~
-  b4 r8 b e4 d
+  b8 b b cis~ cis4 cis
+  d8 a a b~ b4 r8 g~
+  g g g g a4 a8 a~
+  a4 r8 a d4 c
   
-  cis8 cis cis dis~ dis4 dis
-  e8 b b cis~ cis cis~ cis cis~
-  cis cis cis b~ b b b4
-  gis4 r gis b
+  b8 b b cis~ cis4 cis
+  d8 a a b~ b b~ b b~
+  b b b a~ a a a4
+  fis4 r fis a
   
-  cis8 cis cis dis~ dis4 dis
-  e8 b b cis~ cis4 r8 cis
-  a a a b~ b b b4
-  b4 r8 b e4 d
+  b8 b b cis~ cis4 cis
+  d8 a a b~ b4 r8 b
+  g g g a~ a a a4
+  a4 r8 a d4 c
   
-  cis8 cis cis dis~ dis4 dis
-  e8 b b cis~ cis4 cis
-  cis8 cis cis b~ b b b4
-  gis4 r gis b
+  b8 b b cis~ cis4 cis
+  d8 a a b~ b4 b
+  b8 b b a~ a a a4
+  fis4 r fis a
   
-  e8 e e e~ e4 d
-  cis8 cis cis dis~ dis4 e
-  e4 r8 e8 e4 d
+  d8 d d d~ d4 c
+  b8 b b cis~ cis4 d
+  d4 r8 d8 d4 c
   
-  cis8 cis cis dis~ dis4 dis
-  e8 b b cis~ cis cis~ cis cis~
-  cis cis cis b~ b b b4
-  gis4 r gis b
-  
-  
-  cis8 cis cis dis~ dis4 dis
-  e8 b b cis~ cis4 cis8 cis
-  a a a b~ b4 b8 b~
-  b4 r8 b e4 d
-  
-  cis8 cis cis dis~ dis4 dis8 dis
-  e8 b b cis~ cis cis cis4
-  cis8 cis cis b~ b4 b
-  gis4 r gis b
+  b8 b b cis~ cis4 cis
+  d8 a a b~ b b~ b b~
+  b b b a~ a a a4
+  fis4 r fis a
   
   
-  e8 e e d~ d2
-  cis8 cis~ cis cis dis e~ e4
-  e4 r4 e4 b
+  b8 b b cis~ cis4 cis
+  d8 a a b~ b4 b8 b
+  g g g a~ a4 a8 a~
+  a4 r8 a d4 c
   
-  e8 e e e~ e4 d8 d
-  cis cis cis dis~ dis dis e4
-  e4 r4 e4 d
-  
-  cis8 cis cis dis~ dis4 dis
-  e8 b b cis~ cis4 cis
-  cis8 cis~ cis r b b~ b r
-  b b r4 b b
+  b8 b b cis~ cis4 cis8 cis
+  d8 a a b~ b b b4
+  b8 b b a~ a4 a
+  fis4 r fis a
   
   
+  d8 d d c~ c2
+  b8 b~ b b cis d~ d4
+  d4 r4 d4 a
   
-  e8 e e d~ d4. cis8~
-  cis cis cis cis dis e~ e e~
-  e4 r e b
+  d8 d d d~ d4 c8 c
+  b b b cis~ cis cis d4
+  d4 r4 d4 c
   
-  e8 e e d~ d2
-  cis8 cis cis cis dis4 e
-  e4 r e d
-  
-  cis8 cis cis dis~ dis4 dis
-  e8 b b cis~ cis4 r8 cis
-  a a a b~ b b b4
-  b4 r8 b e4 d
-  
-  cis8 cis cis dis~ dis4 dis8 dis
-  e8 b b cis~ cis4 r8 cis
-  a8 a a b~ b4 b4
-  gis4 r\fermata b b
+  b8 b b cis~ cis4 cis
+  d8 a a b~ b4 b
+  b8 b~ b r a a~ a r
+  a a r4 a a
   
   
-  e8 e e d~ d2
-  cis8 cis cis dis~ dis dis e4
-  e4 r8 e e4 b
   
-  e8 e e e~ e4 d8 d
-  cis cis cis cis dis4 e
-  e4 r8 e e4 d
+  d8 d d c~ c4. b8~
+  b b b b cis d~ d d~
+  d4 r d a
   
-  cis8 cis cis dis~ dis4 dis
-  e8 b b cis~ cis cis~ cis cis~
-  cis cis cis b~ b b b4
-  gis4 r\fermata gis b
+  d8 d d c~ c2
+  b8 b b b cis4 d
+  d4 r d c
+  
+  b8 b b cis~ cis4 cis
+  d8 a a b~ b4 r8 b
+  g g g a~ a a a4
+  a4 r8 a d4 c
+  
+  b8 b b cis~ cis4 cis8 cis
+  d8 a a b~ b4 r8 b
+  g8 g g a~ a4 a4
+  fis4 r\fermata a a
   
   
-  e8 e e d~ d2
-  cis8 cis cis dis~ dis dis e4
-  e4 r e b
+  d8 d d c~ c2
+  b8 b b cis~ cis cis d4
+  d4 r8 d d4 a
   
-  e8 e e e~ e4 d8 d
-  cis cis cis4 dis e
-  e4 r8 e e4 d
+  d8 d d d~ d4 c8 c
+  b b b b cis4 d
+  d4 r8 d d4 c
   
-  cis8 cis cis dis~ dis4 dis
-  e8 b b cis~ cis cis~ cis cis~
-  cis cis cis b~ b b b4
-  gis4 r
+  b8 b b cis~ cis4 cis
+  d8 a a b~ b b~ b b~
+  b b b a~ a a a4
+  fis4 r\fermata fis a
+  
+  
+  d8 d d c~ c2
+  b8 b b cis~ cis cis d4
+  d4 r d a
+  
+  d8 d d d~ d4 c8 c
+  b b b4 cis d
+  d4 r8 d d4 c
+  
+  b8 b b cis~ cis4 cis
+  d8 a a b~ b b~ b b~
+  b b b a~ a a a4
+  fis4 r
 }
 
 bass = \relative c {
   \global
-  e4 eis
+  d4 dis
   
-  fis8 fis fis b~ b4 b
-  e,8 e e cis~ cis4 r8 a'~
-  a a a a b4 b8 e,~
-  e4 r8 e e4 eis
+  e8 e e a~ a4 a
+  d,8 d d b~ b4 r8 g'~
+  g g g g a4 a8 a~
+  a4 r8 d, d4 dis
   
-  fis8 fis fis b~ b4 b
-  e,8 e e cis~ cis eis~ eis a~
-  a a a b~ b b b4
-  e,4 r e eis
+  e8 e e a~ a4 a
+  d,8 d fis b~ b b~ b a~
+  a a a a~ a a a4
+  d,4 r d dis
   
-  fis8 fis fis b~ b4 b
-  e,8 e e cis~ cis4 r8 cis
-  a' a a b~ b b b4
-  e,4 r8 e e4 eis
+  e8 e e a~ a4 a
+  d,8 d d b~ b4 r8 d
+  g g g a~ a a a4
+  a4 r8 d, d4 dis
   
-  fis8 fis fis b~b4 b
-  e,8 e e cis~ cis4 eis
-  a8 a a b~ b b b4
-  e,4 r e b'
-  
-  
-  e8 e e gis,~ gis4 gis
-  a8 a a b~ b4 cis
-  e4 r8 e8 e,4 fis
-  
-  fis8 fis fis b~b4 b
-  e,8 e e cis~ cis eis~ eis a~
-  a a a b~ b b b4
-  e,4 r e eis
+  e8 e e a~a4 a
+  d,8 d fis b~ b4 b
+  a8 a a a~ a a a4
+  d,4 r d a'
   
   
-  fis8 fis fis b~ b4 b
-  e,8 e e cis~ cis4 cis8 cis
-  a' a a b~ b4 b8 e,~
-  e4 r8 e e4 eis
+  d8 d d d~ d4 c
+   b8 b b a~ a4 b
+  d4 r8 a8 d,4 dis
   
-  fis8 fis fis b~b4 b8 b
-  e,8 e e cis~ cis cis eis4
-  a8 a a b~ b4 b
-  e,4 r e b'
-  
-  
-  e8 e e gis,~ gis2
-  a8 a~ a a b cis~ cis4
-  e4 r4 e4 b
-  
-  e8 e e gis,~ gis4 gis8 gis
-  a a a b~ b b cis4
-  e4 r4 e,4 eis
-  
-  fis8 fis fis b~ b4 b
-  e,8 e e cis~ cis4 eis
-  a8 a~ a r b b~ b r
-  e, e r4 e b'
+  e8 e e a~a4 a
+  d,8 d fis b~ b b~ b a~
+  a a a a~ a a a4
+  d,4 r d dis
   
   
+  e8 e e a~ a4 a
+  d,8 d d b~ b4 b8 b
+  g' g g a~ a4 a8 a~
+  a4 r8 d, d4 dis
   
-  e8 e e gis,~ gis4. a8~
-  a a a a b cis~ cis e~
-  e4 r e b
-  
-  e8 e e gis,~ gis2
-  a8 a a a b4 cis
-  e4 r e, eis
-  
-  fis8 fis fis b~ b4 b
-  e,8 e e cis~ cis4 r8 cis
-  a' a a b~ b b b4
-  e,4 r8 e e4 eis
-  
-  fis8 fis fis b~ b4 b8 b
-  e,8 e e cis~ cis4 r8 cis
-  a'8 a a b~ b4 b4
-  e,4 r e b'
+  e8 e e a~a4 a8 a
+  d,8 d fis b~ b b b4
+  a8 a a a~ a4 a
+  d,4 r d a'
   
   
-  e8 e e gis,~ gis2
-  a8 a a b~ b b cis4
-  e4 r8 e e4 b
+  d8 d d c~ c2
+  b8 b~ b b a b~ b4
+  d4 r4 d4 a
   
-  e8 e e gis,~ gis4 gis8 gis
-  a a a a b4 cis
-  e4 r8 e, e4 eis
+  d8 d d c~ c4 c8 c
+  b b b a~ a a b4
+  d4 r4 d,4 dis
   
-  fis8 fis fis b~ b4 b
-  e,8 e e cis~ cis eis~ eis a~
-  a a a b~ b b b4
-  e,4 r e b'
+  e8 e e a~ a4 a
+  d,8 d fis b~ b4 b
+  a8 a~ a r a a~ a r
+  d, d r4 d a'
   
-  e8 e e gis,~ gis2
-  a8 a a b~ b b cis4
-  e4 r e b
   
-  e8 e e gis,~ gis4 gis8 gis
-  a a a4 b cis
-  e4 r8 e, e4 eis
   
-  fis8 fis fis b~ b4 b
-  e,8 e e cis~ cis eis~ eis a~
-  a a a b~ b b b4
-  e,4 r
+  d8 d d c~ c4. b8~
+  b b b b a4 b
+  d4 r d a
+  
+  d8 d d c~ c4 r
+  b8 b b b a4 b
+  d4 r d, dis
+  
+  e8 e e a~ a4 a
+  d,8 d d b~ b4 r8 b
+  g' g g a~ a a a4
+  a4 r8 d, d4 dis
+  
+  e8 e e a~ a4 a8 a
+  d,8 d fis b~ b4 r8 b
+  a8 a a a~ a4 a4
+  d,4 r d a'
+  
+  
+  d8 d d c~ c4 r
+  b8 b b a~ a a b4
+  d4 r8 d d4 a
+  
+  d8 d d c~ c4 c8 c
+  b b b b a4 b
+  d4 r8 d, d4 dis
+  
+  e8 e e a~ a4 a
+  d,8 d fis b~ b b~ b a~
+  a a a a~ a a a4
+  d,4 r d a'
+  
+  d8 d d c~ c2
+  b8 b b a~ a a b4
+  d4 r d a
+  
+  d8 d d c~ c4 c8 c
+  b b b4 a b
+  d4 r8 d, d4 dis
+  
+  e8 e e a~ a4 a
+  d,8 d fis b~ b b~ b a~
+  a a a a~ a a a4
+  d,4 r
 }
 
 verseOne = \lyricmode {
@@ -512,16 +514,16 @@ verseOne = \lyricmode {
     \new Staff \with {
       instrumentName = \markup \center-column { "Sopran" "Alt" }
     } <<
-      \new Voice = "soprano" { \voiceOne \transpose e d \soprano }
-      \new Voice = "alto" { \voiceTwo \transpose e d \alto }
+      \new Voice = "soprano" { \voiceOne \soprano }
+      \new Voice = "alto" { \voiceTwo \alto }
     >>
     \new Lyrics \lyricsto "soprano" \verseOne
     \new Staff \with {
-      instrumentName = \markup \center-column { "Tenor" "Bass" }
+      instrumentName = \markup \center-column {  "Bass" }
     } <<
       \clef bass
-      \new Voice = "tenor" { \voiceOne \transpose e d \tenor }
-      \new Voice = "bass" { \voiceTwo \transpose e d \bass }
+      %\new Voice = "tenor" { \voiceOne \tenor }
+      \new Voice = "bass" { \voiceTwo \bass }
     >>
   >>
   \layout { }
