@@ -1,9 +1,10 @@
-\version "2.12.12"
+\version "2.22.0"
 
 \header {
   title = "Oh Lord, Please Don't Burn Us"
+  subtitle = "SATB"
   composer = "Eric Ide (Monty Python)"
-  arranger = "Ed von Schleck"
+  arranger = "CHMS"
 }
 
 \paper {
@@ -48,16 +49,16 @@ alto = \relative c' {
   \repeat volta 2 {
   f( bes) f a
   g( fis) g4 f
-  d d fis fis
+  d fis a fis
   g2 r4 g
   
-  a a f a
+  a es f a
   bes f f as
   g g g g
   a2 r4 f
   
   es es fis fis
-  g f g a
+  g g g a
   bes g f f
   }  \alternative {
   { f2 r4 f }
@@ -154,9 +155,6 @@ in a Ro -- tis -- so -- _ _ mat.
   >>
   \layout { }
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 100 4)
-    }
+    \tempo 4 = 100
   }
 }
