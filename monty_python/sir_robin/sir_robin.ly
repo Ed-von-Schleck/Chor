@@ -2,7 +2,7 @@
 
 \header {
   title = "Brave Sir Robin"
-  arranger = "Andreas Fiebig"
+  arranger = "CHMS"
   composer = "Monty Python"
 }
 
@@ -12,7 +12,7 @@
 
 }
 
-#(set-global-staff-size 19)
+%#(set-global-staff-size 19)
 
 global = {
   \key g \minor

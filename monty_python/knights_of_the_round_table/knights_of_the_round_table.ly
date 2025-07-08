@@ -1,8 +1,9 @@
-\version "2.13.39"
+\version "2.25.18"
 
 \header {
   title = "Knights of the Round Table"
-  composer = "? (Monty Python)"
+  poet = "Graham Chapman, John Cleese (Monty Python)"
+  composer = "Neil Innes"
   arranger = "Ed von Schleck"
 }
 
@@ -400,9 +401,6 @@ pianoPart = \new PianoStaff \with {
   >>
   \layout { }
   \midi {
-    \context {
-      \Score
-      tempoWholesPerMinute = #(ly:make-moment 120 4)
-    }
+    \tempo 4 = 120
   }
 }
