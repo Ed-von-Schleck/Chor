@@ -390,7 +390,7 @@ g, \times 2/3 {g4 c8~} c4 r4
 as4  \times 2/3 {as4 des8~} des4 r4 
 bes4 \times 2/3 {bes4 es8~} es4 r4
 \times 2/3 {c4 c8} \times 2/3 {c4 c8} f4 f
-\times 2/3 {as4 bes, bes} \times 2/3 {des4 es fes}
+\times 2/3 {bes4 f f} \times 2/3 {fes4 fes fes}
 | }
 \alternative {
 	{as2 \times 2/3 {r4 as,8} \times 2/3 {as4 g8~}
@@ -423,7 +423,7 @@ g, \times 2/3 {g4 c8~} c4 r4
 as4  \times 2/3 {as4 des8~} des4 r4 
 bes4 \times 2/3 {bes4 es8~} es4 r4
 \times 2/3 {c4 c8} \times 2/3 {c4 c8} f4 f
-\times 2/3 {as4 bes, bes} \times 2/3 {des4 es fes}
+\times 2/3 {bes4 f f} \times 2/3 {fes4 fes fes}
 as2 \times 2/3 {r4 g8} \times 2/3 {g4 as8~}
 as2 r2
 %%%%%%% Bridge %%%%%%%%
@@ -441,7 +441,7 @@ g, \times 2/3 {g4 c8~} c4 r4
 as4  \times 2/3 {as4 des8~} des4 r4 
 bes4 \times 2/3 {bes4 es8~} es4 r4
 \times 2/3 {c4 c8} \times 2/3 {c4 c8} f4 f
-\times 2/3 {as4 bes, bes} \times 2/3 {des4 es fes}
+\times 2/3 {bes4 f f} \times 2/3 {fes4 fes fes}
 as2 \times 2/3 {r4 g8} \times 2/3 {g4 as8~}
 as2 r2  \bar "|."
 }
